@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">messageclient</string>
+    <string name="confirm">confirm</string>
+    <string name="exit_app">Log out</string>
+    <string name="go_login">To login</string>
+    <string name="no_install">ser center not installed，Please go to the app market to install and log in,and try again.</string>
+    <string name="no_login">User center is not logged in，Please log in and try again</string>
+</resources>
