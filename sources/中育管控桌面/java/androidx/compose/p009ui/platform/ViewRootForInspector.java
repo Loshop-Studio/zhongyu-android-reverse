@@ -1,0 +1,30 @@
+package androidx.compose.p009ui.platform;
+
+import android.view.View;
+import kotlin.Metadata;
+
+@Metadata(m7879d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\bf\u0018\u00002\u00020\u0001R\u0016\u0010\u0002\u001a\u0004\u0018\u00010\u00038VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0016\u0010\u0006\u001a\u0004\u0018\u00010\u00078VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001¨\u0006\nÀ\u0006\u0003"}, m7880d2 = {"Landroidx/compose/ui/platform/ViewRootForInspector;", "", "subCompositionView", "Landroidx/compose/ui/platform/AbstractComposeView;", "getSubCompositionView", "()Landroidx/compose/ui/platform/AbstractComposeView;", "viewRoot", "Landroid/view/View;", "getViewRoot", "()Landroid/view/View;", "ui_release"}, m7881k = 1, m7882mv = {1, 9, 0}, m7884xi = 48)
+/* loaded from: classes2.dex */
+public interface ViewRootForInspector {
+
+    @Metadata(m7881k = 3, m7882mv = {1, 9, 0}, m7884xi = 48)
+    public static final class DefaultImpls {
+        @Deprecated
+        public static AbstractComposeView getSubCompositionView(ViewRootForInspector viewRootForInspector) {
+            return ViewRootForInspector.super.getSubCompositionView();
+        }
+
+        @Deprecated
+        public static View getViewRoot(ViewRootForInspector viewRootForInspector) {
+            return ViewRootForInspector.super.getViewRoot();
+        }
+    }
+
+    default AbstractComposeView getSubCompositionView() {
+        return null;
+    }
+
+    default View getViewRoot() {
+        return null;
+    }
+}

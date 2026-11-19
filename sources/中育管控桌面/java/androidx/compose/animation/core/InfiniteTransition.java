@@ -1,0 +1,269 @@
+package androidx.compose.animation.core;
+
+import androidx.compose.runtime.Composable;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.EffectsKt;
+import androidx.compose.runtime.MutableState;
+import androidx.compose.runtime.RecomposeScopeImplKt;
+import androidx.compose.runtime.ScopeUpdateScope;
+import androidx.compose.runtime.SnapshotStateKt__SnapshotStateKt;
+import androidx.compose.runtime.State;
+import androidx.compose.runtime.collection.MutableVector;
+import androidx.compose.runtime.internal.StabilityInferred;
+import androidx.exifinterface.media.ExifInterface;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlinx.coroutines.CoroutineScope;
+
+@StabilityInferred(parameters = 0)
+@Metadata(m7879d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\r\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u000b\b\u0007\u0018\u00002\u00020\u0001:\u0001'B\u000f\b\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J!\u0010\u001c\u001a\u00020\u001d2\u0012\u0010\u001e\u001a\u000e\u0012\u0002\b\u0003\u0012\u0002\b\u00030\u0007R\u00020\u0000H\u0000¢\u0006\u0002\b\u001fJ\u0010\u0010 \u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\u001bH\u0002J!\u0010\"\u001a\u00020\u001d2\u0012\u0010\u001e\u001a\u000e\u0012\u0002\b\u0003\u0012\u0002\b\u00030\u0007R\u00020\u0000H\u0000¢\u0006\u0002\b#J\u000f\u0010$\u001a\u00020\u001dH\u0001¢\u0006\u0004\b%\u0010&R \u0010\u0005\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0002\b\u0003\u0012\u0002\b\u00030\u0007R\u00020\u00000\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R#\u0010\b\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0002\b\u0003\u0012\u0002\b\u00030\u0007R\u00020\u00000\t8F¢\u0006\u0006\u001a\u0004\b\n\u0010\u000bR+\u0010\u000e\u001a\u00020\r2\u0006\u0010\f\u001a\u00020\r8B@BX\u0082\u008e\u0002¢\u0006\u0012\n\u0004\b\u0012\u0010\u0013\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R+\u0010\u0016\u001a\u00020\r2\u0006\u0010\f\u001a\u00020\r8B@BX\u0082\u008e\u0002¢\u0006\u0012\n\u0004\b\u0019\u0010\u0013\u001a\u0004\b\u0017\u0010\u000f\"\u0004\b\u0018\u0010\u0011R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006("}, m7880d2 = {"Landroidx/compose/animation/core/InfiniteTransition;", "", "label", "", "(Ljava/lang/String;)V", "_animations", "Landroidx/compose/runtime/collection/MutableVector;", "Landroidx/compose/animation/core/InfiniteTransition$TransitionAnimationState;", "animations", "", "getAnimations", "()Ljava/util/List;", "<set-?>", "", "isRunning", "()Z", "setRunning", "(Z)V", "isRunning$delegate", "Landroidx/compose/runtime/MutableState;", "getLabel", "()Ljava/lang/String;", "refreshChildNeeded", "getRefreshChildNeeded", "setRefreshChildNeeded", "refreshChildNeeded$delegate", "startTimeNanos", "", "addAnimation", "", "animation", "addAnimation$animation_core_release", "onFrame", "playTimeNanos", "removeAnimation", "removeAnimation$animation_core_release", "run", "run$animation_core_release", "(Landroidx/compose/runtime/Composer;I)V", "TransitionAnimationState", "animation-core_release"}, m7881k = 1, m7882mv = {1, 9, 0}, m7884xi = 48)
+@SourceDebugExtension({"SMAP\nInfiniteTransition.kt\nKotlin\n*S Kotlin\n*F\n+ 1 InfiniteTransition.kt\nandroidx/compose/animation/core/InfiniteTransition\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n+ 3 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n*L\n1#1,345:1\n1101#2:346\n1083#2,2:347\n85#3:349\n113#3,2:350\n85#3:352\n113#3,2:353\n1247#4,6:355\n1247#4,6:361\n423#5,9:367\n*S KotlinDebug\n*F\n+ 1 InfiniteTransition.kt\nandroidx/compose/animation/core/InfiniteTransition\n*L\n145#1:346\n145#1:347,2\n146#1:349\n146#1:350,2\n148#1:352\n148#1:353,2\n166#1:355,6\n168#1:361,6\n203#1:367,9\n*E\n"})
+/* loaded from: classes.dex */
+public final class InfiniteTransition {
+    public static final int $stable = 8;
+    private final String label;
+    private final MutableVector<TransitionAnimationState<?, ?>> _animations = new MutableVector<>(new TransitionAnimationState[16], 0);
+
+    /* renamed from: refreshChildNeeded$delegate, reason: from kotlin metadata */
+    private final MutableState refreshChildNeeded = SnapshotStateKt__SnapshotStateKt.mutableStateOf$default(Boolean.FALSE, null, 2, null);
+    private long startTimeNanos = Long.MIN_VALUE;
+
+    /* renamed from: isRunning$delegate, reason: from kotlin metadata */
+    private final MutableState isRunning = SnapshotStateKt__SnapshotStateKt.mutableStateOf$default(Boolean.TRUE, null, 2, null);
+
+    @Metadata(m7879d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0010\t\n\u0002\b\u000b\n\u0002\u0010\u0002\n\u0002\b\n\b\u0086\u0004\u0018\u0000*\u0004\b\u0000\u0010\u0001*\b\b\u0001\u0010\u0002*\u00020\u00032\b\u0012\u0004\u0012\u0002H\u00010\u0004BA\b\u0000\u0012\u0006\u0010\u0005\u001a\u00028\u0000\u0012\u0006\u0010\u0006\u001a\u00028\u0000\u0012\u0012\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\b\u0012\f\u0010\t\u001a\b\u0012\u0004\u0012\u00028\u00000\n\u0012\u0006\u0010\u000b\u001a\u00020\f¢\u0006\u0002\u0010\rJ\u0015\u00100\u001a\u0002012\u0006\u00102\u001a\u00020%H\u0000¢\u0006\u0002\b3J\r\u00104\u001a\u000201H\u0000¢\u0006\u0002\b5J\r\u00106\u001a\u000201H\u0000¢\u0006\u0002\b7J-\u00108\u001a\u0002012\u0006\u0010\u0005\u001a\u00028\u00002\u0006\u0010\u0006\u001a\u00028\u00002\f\u0010\t\u001a\b\u0012\u0004\u0012\u00028\u00000\nH\u0000¢\u0006\u0004\b9\u0010:R<\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u000f2\u0012\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u000f@@X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R*\u0010\t\u001a\b\u0012\u0004\u0012\u00028\u00000\n2\f\u0010\u000e\u001a\b\u0012\u0004\u0012\u00028\u00000\n@BX\u0086\u000e¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u001c\u0010\u0005\u001a\u00028\u0000X\u0080\u000e¢\u0006\u0010\n\u0002\u0010\u001b\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR\u001a\u0010\u001c\u001a\u00020\u001dX\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001e\u0010\u001f\"\u0004\b \u0010!R\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010#R\u000e\u0010$\u001a\u00020%X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010&\u001a\u00020\u001dX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u0006\u001a\u00028\u0000X\u0080\u000e¢\u0006\u0010\n\u0002\u0010\u001b\u001a\u0004\b'\u0010\u0018\"\u0004\b(\u0010\u001aR\u001d\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b)\u0010*R+\u0010+\u001a\u00028\u00002\u0006\u0010\u000e\u001a\u00028\u00008V@PX\u0096\u008e\u0002¢\u0006\u0012\n\u0004\b.\u0010/\u001a\u0004\b,\u0010\u0018\"\u0004\b-\u0010\u001a¨\u0006;"}, m7880d2 = {"Landroidx/compose/animation/core/InfiniteTransition$TransitionAnimationState;", ExifInterface.GPS_DIRECTION_TRUE, ExifInterface.GPS_MEASUREMENT_INTERRUPTED, "Landroidx/compose/animation/core/AnimationVector;", "Landroidx/compose/runtime/State;", "initialValue", "targetValue", "typeConverter", "Landroidx/compose/animation/core/TwoWayConverter;", "animationSpec", "Landroidx/compose/animation/core/AnimationSpec;", "label", "", "(Landroidx/compose/animation/core/InfiniteTransition;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/TwoWayConverter;Landroidx/compose/animation/core/AnimationSpec;Ljava/lang/String;)V", "<set-?>", "Landroidx/compose/animation/core/TargetBasedAnimation;", "animation", "getAnimation", "()Landroidx/compose/animation/core/TargetBasedAnimation;", "setAnimation$animation_core_release", "(Landroidx/compose/animation/core/TargetBasedAnimation;)V", "getAnimationSpec", "()Landroidx/compose/animation/core/AnimationSpec;", "getInitialValue$animation_core_release", "()Ljava/lang/Object;", "setInitialValue$animation_core_release", "(Ljava/lang/Object;)V", "Ljava/lang/Object;", "isFinished", "", "isFinished$animation_core_release", "()Z", "setFinished$animation_core_release", "(Z)V", "getLabel", "()Ljava/lang/String;", "playTimeNanosOffset", "", "startOnTheNextFrame", "getTargetValue$animation_core_release", "setTargetValue$animation_core_release", "getTypeConverter", "()Landroidx/compose/animation/core/TwoWayConverter;", "value", "getValue", "setValue$animation_core_release", "value$delegate", "Landroidx/compose/runtime/MutableState;", "onPlayTimeChanged", "", "playTimeNanos", "onPlayTimeChanged$animation_core_release", "reset", "reset$animation_core_release", "skipToEnd", "skipToEnd$animation_core_release", "updateValues", "updateValues$animation_core_release", "(Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/AnimationSpec;)V", "animation-core_release"}, m7881k = 1, m7882mv = {1, 9, 0}, m7884xi = 48)
+    @SourceDebugExtension({"SMAP\nInfiniteTransition.kt\nKotlin\n*S Kotlin\n*F\n+ 1 InfiniteTransition.kt\nandroidx/compose/animation/core/InfiniteTransition$TransitionAnimationState\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,345:1\n85#2:346\n113#2,2:347\n*S KotlinDebug\n*F\n+ 1 InfiniteTransition.kt\nandroidx/compose/animation/core/InfiniteTransition$TransitionAnimationState\n*L\n79#1:346\n79#1:347,2\n*E\n"})
+    public final class TransitionAnimationState<T, V extends AnimationVector> implements State<T> {
+        private TargetBasedAnimation<T, V> animation;
+        private AnimationSpec<T> animationSpec;
+        private T initialValue;
+        private boolean isFinished;
+        private final String label;
+        private long playTimeNanosOffset;
+        private boolean startOnTheNextFrame;
+        private T targetValue;
+        private final TwoWayConverter<T, V> typeConverter;
+
+        /* renamed from: value$delegate, reason: from kotlin metadata */
+        private final MutableState value;
+
+        public TransitionAnimationState(T t6, T t7, TwoWayConverter<T, V> twoWayConverter, AnimationSpec<T> animationSpec, String str) {
+            this.initialValue = t6;
+            this.targetValue = t7;
+            this.typeConverter = twoWayConverter;
+            this.label = str;
+            this.value = SnapshotStateKt__SnapshotStateKt.mutableStateOf$default(t6, null, 2, null);
+            this.animationSpec = animationSpec;
+            this.animation = new TargetBasedAnimation<>(this.animationSpec, twoWayConverter, this.initialValue, this.targetValue, (AnimationVector) null, 16, (DefaultConstructorMarker) null);
+        }
+
+        public final TargetBasedAnimation<T, V> getAnimation() {
+            return this.animation;
+        }
+
+        public final AnimationSpec<T> getAnimationSpec() {
+            return this.animationSpec;
+        }
+
+        public final T getInitialValue$animation_core_release() {
+            return this.initialValue;
+        }
+
+        public final String getLabel() {
+            return this.label;
+        }
+
+        public final T getTargetValue$animation_core_release() {
+            return this.targetValue;
+        }
+
+        public final TwoWayConverter<T, V> getTypeConverter() {
+            return this.typeConverter;
+        }
+
+        @Override // androidx.compose.runtime.State
+        public T getValue() {
+            return this.value.getValue();
+        }
+
+        /* renamed from: isFinished$animation_core_release, reason: from getter */
+        public final boolean getIsFinished() {
+            return this.isFinished;
+        }
+
+        public final void onPlayTimeChanged$animation_core_release(long playTimeNanos) {
+            InfiniteTransition.this.setRefreshChildNeeded(false);
+            if (this.startOnTheNextFrame) {
+                this.startOnTheNextFrame = false;
+                this.playTimeNanosOffset = playTimeNanos;
+            }
+            long j6 = playTimeNanos - this.playTimeNanosOffset;
+            setValue$animation_core_release(this.animation.getValueFromNanos(j6));
+            this.isFinished = this.animation.isFinishedFromNanos(j6);
+        }
+
+        public final void reset$animation_core_release() {
+            this.startOnTheNextFrame = true;
+        }
+
+        public final void setAnimation$animation_core_release(TargetBasedAnimation<T, V> targetBasedAnimation) {
+            this.animation = targetBasedAnimation;
+        }
+
+        public final void setFinished$animation_core_release(boolean z6) {
+            this.isFinished = z6;
+        }
+
+        public final void setInitialValue$animation_core_release(T t6) {
+            this.initialValue = t6;
+        }
+
+        public final void setTargetValue$animation_core_release(T t6) {
+            this.targetValue = t6;
+        }
+
+        public void setValue$animation_core_release(T t6) {
+            this.value.setValue(t6);
+        }
+
+        public final void skipToEnd$animation_core_release() {
+            setValue$animation_core_release(this.animation.getTargetValue());
+            this.startOnTheNextFrame = true;
+        }
+
+        public final void updateValues$animation_core_release(T initialValue, T targetValue, AnimationSpec<T> animationSpec) {
+            this.initialValue = initialValue;
+            this.targetValue = targetValue;
+            this.animationSpec = animationSpec;
+            this.animation = new TargetBasedAnimation<>(animationSpec, this.typeConverter, initialValue, targetValue, (AnimationVector) null, 16, (DefaultConstructorMarker) null);
+            InfiniteTransition.this.setRefreshChildNeeded(true);
+            this.isFinished = false;
+            this.startOnTheNextFrame = true;
+        }
+    }
+
+    public InfiniteTransition(String str) {
+        this.label = str;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    private final boolean getRefreshChildNeeded() {
+        return ((Boolean) this.refreshChildNeeded.getValue()).booleanValue();
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    private final boolean isRunning() {
+        return ((Boolean) this.isRunning.getValue()).booleanValue();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final void onFrame(long playTimeNanos) {
+        MutableVector<TransitionAnimationState<?, ?>> mutableVector = this._animations;
+        TransitionAnimationState<?, ?>[] transitionAnimationStateArr = mutableVector.content;
+        int size = mutableVector.getSize();
+        boolean z6 = true;
+        for (int i6 = 0; i6 < size; i6++) {
+            TransitionAnimationState<?, ?> transitionAnimationState = transitionAnimationStateArr[i6];
+            if (!transitionAnimationState.getIsFinished()) {
+                transitionAnimationState.onPlayTimeChanged$animation_core_release(playTimeNanos);
+            }
+            if (!transitionAnimationState.getIsFinished()) {
+                z6 = false;
+            }
+        }
+        setRunning(!z6);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final void setRefreshChildNeeded(boolean z6) {
+        this.refreshChildNeeded.setValue(Boolean.valueOf(z6));
+    }
+
+    private final void setRunning(boolean z6) {
+        this.isRunning.setValue(Boolean.valueOf(z6));
+    }
+
+    public final void addAnimation$animation_core_release(TransitionAnimationState<?, ?> animation) {
+        this._animations.add(animation);
+        setRefreshChildNeeded(true);
+    }
+
+    public final List<TransitionAnimationState<?, ?>> getAnimations() {
+        return this._animations.asMutableList();
+    }
+
+    public final String getLabel() {
+        return this.label;
+    }
+
+    public final void removeAnimation$animation_core_release(TransitionAnimationState<?, ?> animation) {
+        this._animations.remove(animation);
+    }
+
+    @Composable
+    public final void run$animation_core_release(Composer composer, final int i6) {
+        int i7;
+        Composer composerStartRestartGroup = composer.startRestartGroup(-318043801);
+        if ((i6 & 6) == 0) {
+            i7 = (composerStartRestartGroup.changedInstance(this) ? 4 : 2) | i6;
+        } else {
+            i7 = i6;
+        }
+        if (composerStartRestartGroup.shouldExecute((i7 & 3) != 2, i7 & 1)) {
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventStart(-318043801, i7, -1, "androidx.compose.animation.core.InfiniteTransition.run (InfiniteTransition.kt:164)");
+            }
+            Object objRememberedValue = composerStartRestartGroup.rememberedValue();
+            Composer.Companion companion = Composer.INSTANCE;
+            if (objRememberedValue == companion.getEmpty()) {
+                objRememberedValue = SnapshotStateKt__SnapshotStateKt.mutableStateOf$default(null, null, 2, null);
+                composerStartRestartGroup.updateRememberedValue(objRememberedValue);
+            }
+            MutableState mutableState = (MutableState) objRememberedValue;
+            if (isRunning() || getRefreshChildNeeded()) {
+                composerStartRestartGroup.startReplaceGroup(1719883733);
+                boolean zChangedInstance = composerStartRestartGroup.changedInstance(this);
+                Object objRememberedValue2 = composerStartRestartGroup.rememberedValue();
+                if (zChangedInstance || objRememberedValue2 == companion.getEmpty()) {
+                    objRememberedValue2 = new InfiniteTransition$run$1$1(mutableState, this, null);
+                    composerStartRestartGroup.updateRememberedValue(objRememberedValue2);
+                }
+                EffectsKt.LaunchedEffect(this, (Function2<? super CoroutineScope, ? super Continuation<? super Unit>, ? extends Object>) objRememberedValue2, composerStartRestartGroup, i7 & 14);
+                composerStartRestartGroup.endReplaceGroup();
+            } else {
+                composerStartRestartGroup.startReplaceGroup(1721270456);
+                composerStartRestartGroup.endReplaceGroup();
+            }
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventEnd();
+            }
+        } else {
+            composerStartRestartGroup.skipToGroupEnd();
+        }
+        ScopeUpdateScope scopeUpdateScopeEndRestartGroup = composerStartRestartGroup.endRestartGroup();
+        if (scopeUpdateScopeEndRestartGroup != null) {
+            scopeUpdateScopeEndRestartGroup.updateScope(new Function2<Composer, Integer, Unit>() { // from class: androidx.compose.animation.core.InfiniteTransition$run$2
+                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                {
+                    super(2);
+                }
+
+                @Override // kotlin.jvm.functions.Function2
+                public /* bridge */ /* synthetic */ Unit invoke(Composer composer2, Integer num) {
+                    invoke(composer2, num.intValue());
+                    return Unit.INSTANCE;
+                }
+
+                public final void invoke(Composer composer2, int i8) {
+                    this.$tmp2_rcvr.run$animation_core_release(composer2, RecomposeScopeImplKt.updateChangedFlags(i6 | 1));
+                }
+            });
+        }
+    }
+}

@@ -1,0 +1,63 @@
+package androidx.compose.material3;
+
+import androidx.compose.animation.core.Animatable;
+import androidx.compose.animation.core.AnimationSpec;
+import androidx.compose.animation.core.AnimationVector1D;
+import androidx.compose.p009ui.unit.C2452Dp;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.CoroutineScope;
+
+@Metadata(m7879d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, m7880d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m7881k = 3, m7882mv = {1, 8, 0}, m7884xi = 48)
+@DebugMetadata(m7917c = "androidx.compose.material3.TabIndicatorOffsetNode$measure$3", m7918f = "TabRow.kt", m7919i = {}, m7920l = {917}, m7921m = "invokeSuspend", m7922n = {}, m7923s = {})
+/* loaded from: classes.dex */
+public final class TabIndicatorOffsetNode$measure$3 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final /* synthetic */ float $indicatorOffset;
+    final /* synthetic */ Animatable<C2452Dp, AnimationVector1D> $offsetAnim;
+    int label;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public TabIndicatorOffsetNode$measure$3(Animatable<C2452Dp, AnimationVector1D> animatable, float f6, Continuation<? super TabIndicatorOffsetNode$measure$3> continuation) {
+        super(2, continuation);
+        this.$offsetAnim = animatable;
+        this.$indicatorOffset = f6;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new TabIndicatorOffsetNode$measure$3(this.$offsetAnim, this.$indicatorOffset, continuation);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i6 = this.label;
+        if (i6 == 0) {
+            ResultKt.throwOnFailure(obj);
+            Animatable<C2452Dp, AnimationVector1D> animatable = this.$offsetAnim;
+            C2452Dp c2452DpM16482boximpl = C2452Dp.m16482boximpl(this.$indicatorOffset);
+            AnimationSpec animationSpec = TabRowKt.TabRowIndicatorSpec;
+            this.label = 1;
+            if (Animatable.animateTo$default(animatable, c2452DpM16482boximpl, animationSpec, null, null, this, 12, null) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else {
+            if (i6 != 1) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            ResultKt.throwOnFailure(obj);
+        }
+        return Unit.INSTANCE;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        return ((TabIndicatorOffsetNode$measure$3) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+}

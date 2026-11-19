@@ -1,0 +1,71 @@
+package com.google.android.material.transition;
+
+import android.graphics.RectF;
+
+/* loaded from: classes3.dex */
+class FitModeEvaluators {
+    private static final FitModeEvaluator WIDTH = new FitModeEvaluator() { // from class: com.google.android.material.transition.FitModeEvaluators.1
+        @Override // com.google.android.material.transition.FitModeEvaluator
+        public void applyMask(RectF rectF, float f6, FitModeResult fitModeResult) {
+            rectF.bottom -= Math.abs(fitModeResult.currentEndHeight - fitModeResult.currentStartHeight) * f6;
+        }
+
+        @Override // com.google.android.material.transition.FitModeEvaluator
+        public FitModeResult evaluate(float f6, float f7, float f8, float f9, float f10, float f11, float f12) {
+            float fLerp = TransitionUtils.lerp(f9, f11, f7, f8, f6, true);
+            float f13 = fLerp / f9;
+            float f14 = fLerp / f11;
+            return new FitModeResult(f13, f14, fLerp, f10 * f13, fLerp, f12 * f14);
+        }
+
+        @Override // com.google.android.material.transition.FitModeEvaluator
+        public boolean shouldMaskStartBounds(FitModeResult fitModeResult) {
+            return fitModeResult.currentStartHeight > fitModeResult.currentEndHeight;
+        }
+    };
+    private static final FitModeEvaluator HEIGHT = new FitModeEvaluator() { // from class: com.google.android.material.transition.FitModeEvaluators.2
+        @Override // com.google.android.material.transition.FitModeEvaluator
+        public void applyMask(RectF rectF, float f6, FitModeResult fitModeResult) {
+            float fAbs = (Math.abs(fitModeResult.currentEndWidth - fitModeResult.currentStartWidth) / 2.0f) * f6;
+            rectF.left += fAbs;
+            rectF.right -= fAbs;
+        }
+
+        @Override // com.google.android.material.transition.FitModeEvaluator
+        public FitModeResult evaluate(float f6, float f7, float f8, float f9, float f10, float f11, float f12) {
+            float fLerp = TransitionUtils.lerp(f10, f12, f7, f8, f6, true);
+            float f13 = fLerp / f10;
+            float f14 = fLerp / f12;
+            return new FitModeResult(f13, f14, f9 * f13, fLerp, f11 * f14, fLerp);
+        }
+
+        @Override // com.google.android.material.transition.FitModeEvaluator
+        public boolean shouldMaskStartBounds(FitModeResult fitModeResult) {
+            return fitModeResult.currentStartWidth > fitModeResult.currentEndWidth;
+        }
+    };
+
+    private FitModeEvaluators() {
+    }
+
+    public static FitModeEvaluator get(int i6, boolean z6, RectF rectF, RectF rectF2) {
+        if (i6 == 0) {
+            return shouldAutoFitToWidth(z6, rectF, rectF2) ? WIDTH : HEIGHT;
+        }
+        if (i6 == 1) {
+            return WIDTH;
+        }
+        if (i6 == 2) {
+            return HEIGHT;
+        }
+        throw new IllegalArgumentException("Invalid fit mode: " + i6);
+    }
+
+    private static boolean shouldAutoFitToWidth(boolean z6, RectF rectF, RectF rectF2) {
+        float fWidth = rectF.width();
+        float fHeight = rectF.height();
+        float fWidth2 = rectF2.width();
+        float fHeight2 = rectF2.height();
+        return z6 ? (fHeight2 * fWidth) / fWidth2 >= fHeight : (fWidth2 * fHeight) / fWidth >= fHeight2;
+    }
+}

@@ -1,0 +1,8 @@
+package androidx.navigation;
+
+import kotlin.Metadata;
+
+@Metadata(m7879d1 = {"androidx/navigation/ActivityNavArgsLazyKt__ActivityNavArgsLazy_androidKt"}, m7881k = 4, m7882mv = {2, 0, 0}, m7884xi = 48)
+/* loaded from: classes3.dex */
+public final class ActivityNavArgsLazyKt {
+}

@@ -1,0 +1,44 @@
+.class public interface abstract Lcom/zykj/huiwei/launcher/proto/o;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# virtual methods
+.method public abstract getAvatar()Ljava/lang/String;
+.end method
+
+.method public abstract getAvatarBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getId()Ljava/lang/String;
+.end method
+
+.method public abstract getIdBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getPassword()Ljava/lang/String;
+.end method
+
+.method public abstract getPasswordBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getRealName()Ljava/lang/String;
+.end method
+
+.method public abstract getRealNameBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getRole()Lcom/zykj/huiwei/launcher/proto/RoleType;
+.end method
+
+.method public abstract getRoleValue()I
+.end method
+
+.method public abstract getUserName()Ljava/lang/String;
+.end method
+
+.method public abstract getUserNameBytes()Lcom/google/protobuf/ByteString;
+.end method

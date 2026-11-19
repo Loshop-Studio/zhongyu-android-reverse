@@ -1,0 +1,80 @@
+package androidx.paging;
+
+import androidx.exifinterface.media.ExifInterface;
+import java.lang.ref.WeakReference;
+import java.util.Iterator;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.collections.CollectionsKt;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlinx.coroutines.CoroutineScope;
+
+@Metadata(m7879d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003*\u00020\u0004H\u008a@"}, m7880d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "Lkotlinx/coroutines/CoroutineScope;"}, m7881k = 3, m7882mv = {1, 8, 0}, m7884xi = 48)
+@DebugMetadata(m7917c = "androidx.paging.PagedList$dispatchStateChangeAsync$1", m7918f = "PagedList.kt", m7919i = {}, m7920l = {}, m7921m = "invokeSuspend", m7922n = {}, m7923s = {})
+@SourceDebugExtension({"SMAP\nPagedList.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PagedList.kt\nandroidx/paging/PagedList$dispatchStateChangeAsync$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,1290:1\n1855#2,2:1291\n*S KotlinDebug\n*F\n+ 1 PagedList.kt\nandroidx/paging/PagedList$dispatchStateChangeAsync$1\n*L\n1091#1:1291,2\n*E\n"})
+/* loaded from: classes3.dex */
+public final class PagedList$dispatchStateChangeAsync$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final /* synthetic */ LoadState $state;
+    final /* synthetic */ LoadType $type;
+    int label;
+    final /* synthetic */ PagedList<T> this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public PagedList$dispatchStateChangeAsync$1(PagedList<T> pagedList, LoadType loadType, LoadState loadState, Continuation<? super PagedList$dispatchStateChangeAsync$1> continuation) {
+        super(2, continuation);
+        this.this$0 = pagedList;
+        this.$type = loadType;
+        this.$state = loadState;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new PagedList$dispatchStateChangeAsync$1(this.this$0, this.$type, this.$state, continuation);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        if (this.label != 0) {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        ResultKt.throwOnFailure(obj);
+        CollectionsKt.removeAll(((PagedList) this.this$0).loadStateListeners, (Function1) new Function1<WeakReference<Function2<? super LoadType, ? super LoadState, ? extends Unit>>, Boolean>() { // from class: androidx.paging.PagedList$dispatchStateChangeAsync$1.1
+            /* renamed from: invoke, reason: avoid collision after fix types in other method */
+            public final Boolean invoke2(WeakReference<Function2<LoadType, LoadState, Unit>> it) {
+                Intrinsics.checkNotNullParameter(it, "it");
+                return Boolean.valueOf(it.get() == null);
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Boolean invoke(WeakReference<Function2<? super LoadType, ? super LoadState, ? extends Unit>> weakReference) {
+                return invoke2((WeakReference<Function2<LoadType, LoadState, Unit>>) weakReference);
+            }
+        });
+        List list = ((PagedList) this.this$0).loadStateListeners;
+        LoadType loadType = this.$type;
+        LoadState loadState = this.$state;
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            Function2 function2 = (Function2) ((WeakReference) it.next()).get();
+            if (function2 != null) {
+                function2.invoke(loadType, loadState);
+            }
+        }
+        return Unit.INSTANCE;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        return ((PagedList$dispatchStateChangeAsync$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+}

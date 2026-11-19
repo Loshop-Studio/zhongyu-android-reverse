@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/homeWorkBg" android:tag="layout/hw_include_home_homework_0" android:background="@mipmap/hw_home_homework_todo" android:layout_width="@dimen/pt253" android:layout_height="@dimen/pt238" android:layout_marginTop="@dimen/pt14" app:layout_constraintStart_toStartOf="@id/ivAvatar" app:layout_constraintTop_toBottomOf="@id/tvDate" />
+    <TextView android:textSize="@dimen/pt11" android:id="@id/tvHomeWorkTitle" android:tag="layout/hw_include_home_homework_1" android:layout_marginTop="@dimen/pt8" android:layout_marginStart="@dimen/pt9" app:layout_constraintStart_toStartOf="@id/homeWorkBg" app:layout_constraintTop_toTopOf="@id/homeWorkBg" style="@style/WhiteTextStyle" />
+    <TextView android:id="@id/tvShowAll" android:tag="layout/hw_include_home_homework_2" android:padding="@dimen/pt8" android:text="@string/hw_show_all" app:layout_constraintBottom_toBottomOf="@id/tvHomeWorkTitle" app:layout_constraintEnd_toEndOf="@id/homeWorkBg" app:layout_constraintTop_toTopOf="@id/tvHomeWorkTitle" style="@style/WhiteTextStyle" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvHomeWork" android:tag="layout/hw_include_home_homework_3" android:layout_width="@dimen/pt173" android:layout_height="0.0px" android:layout_marginTop="@dimen/pt4" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="@id/homeWorkBg" app:layout_constraintStart_toStartOf="@id/tvHomeWorkTitle" app:layout_constraintTop_toBottomOf="@id/tvHomeWorkTitle" />
+</merge>

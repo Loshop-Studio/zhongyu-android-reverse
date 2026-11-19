@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivIcon" android:tag="layout/hw_menu_item_view_0" android:layout_width="@dimen/pt11" android:layout_height="@dimen/pt11" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:id="@id/tvTitle" android:tag="layout/hw_menu_item_view_1" android:layout_marginStart="@dimen/pt5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/ivIcon" app:layout_constraintTop_toTopOf="parent" style="@style/WhiteTextStyle" />
+    <TextView android:id="@id/tvContent" android:tag="layout/hw_menu_item_view_2" android:layout_marginStart="@dimen/pt5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/spacer" app:layout_constraintTop_toTopOf="parent" style="@style/WhiteTextStyle" />
+    <androidx.constraintlayout.widget.Group android:id="@id/groupEnter" android:tag="layout/hw_menu_item_view_3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="spacer,ivEnter" />
+    <Space android:id="@id/spacer" android:tag="layout/hw_menu_item_view_4" android:layout_width="@dimen/pt5" android:layout_height="0.0px" app:layout_constraintBottom_toBottomOf="@id/ivEnter" app:layout_constraintEnd_toStartOf="@id/ivEnter" app:layout_constraintTop_toTopOf="@id/ivEnter" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivEnter" android:tag="layout/hw_menu_item_view_5" android:layout_width="@dimen/pt11" android:layout_height="@dimen/pt11" android:src="@mipmap/hw_menu_enter" android:layout_marginEnd="@dimen/pt2" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</merge>

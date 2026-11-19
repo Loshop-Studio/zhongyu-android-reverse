@@ -1,0 +1,63 @@
+package androidx.compose.material.icons.outlined;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.p009ui.graphics.Color;
+import androidx.compose.p009ui.graphics.SolidColor;
+import androidx.compose.p009ui.graphics.StrokeCap;
+import androidx.compose.p009ui.graphics.StrokeJoin;
+import androidx.compose.p009ui.graphics.vector.ImageVector;
+import androidx.compose.p009ui.graphics.vector.PathBuilder;
+import androidx.compose.p009ui.graphics.vector.VectorKt;
+import androidx.compose.p009ui.unit.C2452Dp;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@Metadata(m7879d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\"\u0010\u0010\u0000\u001a\u0004\u0018\u00010\u0001X\u0082\u000e¢\u0006\u0002\n\u0000\"\u0015\u0010\u0002\u001a\u00020\u0001*\u00020\u00038F¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, m7880d2 = {"_starBorderPurple500", "Landroidx/compose/ui/graphics/vector/ImageVector;", "StarBorderPurple500", "Landroidx/compose/material/icons/Icons$Outlined;", "getStarBorderPurple500", "(Landroidx/compose/material/icons/Icons$Outlined;)Landroidx/compose/ui/graphics/vector/ImageVector;", "material-icons-extended_release"}, m7881k = 2, m7882mv = {1, 8, 0}, m7884xi = 48)
+@SourceDebugExtension({"SMAP\nStarBorderPurple500.kt\nKotlin\n*S Kotlin\n*F\n+ 1 StarBorderPurple500.kt\nandroidx/compose/material/icons/outlined/StarBorderPurple500Kt\n+ 2 Icons.kt\nandroidx/compose/material/icons/IconsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 4 ImageVector.kt\nandroidx/compose/ui/graphics/vector/ImageVectorKt\n+ 5 Vector.kt\nandroidx/compose/ui/graphics/vector/VectorKt\n*L\n1#1,61:1\n212#2,12:62\n233#2,18:75\n253#2:112\n174#3:74\n705#4,2:93\n717#4,2:95\n719#4,11:101\n72#5,4:97\n*S KotlinDebug\n*F\n+ 1 StarBorderPurple500.kt\nandroidx/compose/material/icons/outlined/StarBorderPurple500Kt\n*L\n29#1:62,12\n30#1:75,18\n30#1:112\n29#1:74\n30#1:93,2\n30#1:95,2\n30#1:101,11\n30#1:97,4\n*E\n"})
+/* loaded from: classes.dex */
+public final class StarBorderPurple500Kt {
+    private static ImageVector _starBorderPurple500;
+
+    public static final ImageVector getStarBorderPurple500(Icons.Outlined outlined) {
+        ImageVector imageVector = _starBorderPurple500;
+        if (imageVector != null) {
+            Intrinsics.checkNotNull(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Outlined.StarBorderPurple500", C2452Dp.m16484constructorimpl(24.0f), C2452Dp.m16484constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.INSTANCE.m13925getBlack0d7_KjU(), null);
+        int iM14252getButtKaPHkGw = StrokeCap.INSTANCE.m14252getButtKaPHkGw();
+        int iM14262getBevelLxFBmk8 = StrokeJoin.INSTANCE.m14262getBevelLxFBmk8();
+        PathBuilder pathBuilder = new PathBuilder();
+        pathBuilder.moveTo(22.0f, 9.24f);
+        pathBuilder.lineToRelative(-7.19f, -0.62f);
+        pathBuilder.lineTo(12.0f, 2.0f);
+        pathBuilder.lineTo(9.19f, 8.63f);
+        pathBuilder.lineTo(2.0f, 9.24f);
+        pathBuilder.lineToRelative(5.46f, 4.73f);
+        pathBuilder.lineTo(5.82f, 21.0f);
+        pathBuilder.lineTo(12.0f, 17.27f);
+        pathBuilder.lineTo(18.18f, 21.0f);
+        pathBuilder.lineToRelative(-1.63f, -7.03f);
+        pathBuilder.lineTo(22.0f, 9.24f);
+        pathBuilder.close();
+        pathBuilder.moveTo(12.0f, 15.4f);
+        pathBuilder.lineToRelative(-3.76f, 2.27f);
+        pathBuilder.lineToRelative(1.0f, -4.28f);
+        pathBuilder.lineToRelative(-3.32f, -2.88f);
+        pathBuilder.lineToRelative(4.38f, -0.38f);
+        pathBuilder.lineTo(12.0f, 6.1f);
+        pathBuilder.lineToRelative(1.71f, 4.04f);
+        pathBuilder.lineToRelative(4.38f, 0.38f);
+        pathBuilder.lineToRelative(-3.32f, 2.88f);
+        pathBuilder.lineToRelative(1.0f, 4.28f);
+        pathBuilder.lineTo(12.0f, 15.4f);
+        pathBuilder.close();
+        ImageVector imageVectorBuild = ImageVector.Builder.m14584addPathoIyEayM$default(builder, pathBuilder.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, iM14252getButtKaPHkGw, iM14262getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _starBorderPurple500 = imageVectorBuild;
+        Intrinsics.checkNotNull(imageVectorBuild);
+        return imageVectorBuild;
+    }
+}

@@ -1,0 +1,64 @@
+package androidx.compose.foundation.lazy.layout;
+
+import android.os.Build;
+import android.view.View;
+import androidx.compose.foundation.ExperimentalFoundationApi;
+import androidx.compose.p009ui.platform.AndroidCompositionLocals_androidKt;
+import androidx.compose.runtime.Composable;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import java.util.Locale;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@Metadata(m7879d1 = {"\u0000\u0011\n\u0000\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002*\u0001\u0001\u001a\r\u0010\u0005\u001a\u00020\u0006H\u0001¢\u0006\u0002\u0010\u0007\"\u001a\u0010\u0000\u001a\u0004\u0018\u00010\u00018\u0002X\u0083\u0004¢\u0006\n\n\u0002\u0010\u0004\u0012\u0004\b\u0002\u0010\u0003¨\u0006\b"}, m7880d2 = {"RobolectricImpl", "androidx/compose/foundation/lazy/layout/PrefetchScheduler_androidKt$RobolectricImpl$1", "getRobolectricImpl$annotations", "()V", "Landroidx/compose/foundation/lazy/layout/PrefetchScheduler_androidKt$RobolectricImpl$1;", "rememberDefaultPrefetchScheduler", "Landroidx/compose/foundation/lazy/layout/PrefetchScheduler;", "(Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/lazy/layout/PrefetchScheduler;", "foundation_release"}, m7881k = 2, m7882mv = {1, 9, 0}, m7884xi = 48)
+@SourceDebugExtension({"SMAP\nPrefetchScheduler.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PrefetchScheduler.android.kt\nandroidx/compose/foundation/lazy/layout/PrefetchScheduler_androidKt\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,220:1\n75#2:221\n1247#3,6:222\n*S KotlinDebug\n*F\n+ 1 PrefetchScheduler.android.kt\nandroidx/compose/foundation/lazy/layout/PrefetchScheduler_androidKt\n*L\n37#1:221\n38#1:222,6\n*E\n"})
+/* loaded from: classes.dex */
+public final class PrefetchScheduler_androidKt {
+    private static final PrefetchScheduler_androidKt$RobolectricImpl$1 RobolectricImpl;
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r0v5, types: [androidx.compose.foundation.lazy.layout.PrefetchScheduler_androidKt$RobolectricImpl$1] */
+    static {
+        String lowerCase = Build.FINGERPRINT.toLowerCase(Locale.ROOT);
+        Intrinsics.checkNotNullExpressionValue(lowerCase, "toLowerCase(...)");
+        RobolectricImpl = Intrinsics.areEqual(lowerCase, "robolectric") ? new PrefetchScheduler() { // from class: androidx.compose.foundation.lazy.layout.PrefetchScheduler_androidKt$RobolectricImpl$1
+            @Override // androidx.compose.foundation.lazy.layout.PrefetchScheduler
+            public void schedulePrefetch(PrefetchRequest prefetchRequest) {
+            }
+        } : null;
+    }
+
+    @ExperimentalFoundationApi
+    private static /* synthetic */ void getRobolectricImpl$annotations() {
+    }
+
+    @Composable
+    @ExperimentalFoundationApi
+    public static final PrefetchScheduler rememberDefaultPrefetchScheduler(Composer composer, int i6) {
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(1141871251, i6, -1, "androidx.compose.foundation.lazy.layout.rememberDefaultPrefetchScheduler (PrefetchScheduler.android.kt:32)");
+        }
+        PrefetchScheduler prefetchScheduler = RobolectricImpl;
+        if (prefetchScheduler != null) {
+            composer.startReplaceGroup(1213893039);
+            composer.endReplaceGroup();
+        } else {
+            composer.startReplaceGroup(1213931944);
+            View view = (View) composer.consume(AndroidCompositionLocals_androidKt.getLocalView());
+            boolean zChanged = composer.changed(view);
+            Object objRememberedValue = composer.rememberedValue();
+            if (zChanged || objRememberedValue == Composer.INSTANCE.getEmpty()) {
+                objRememberedValue = new AndroidPrefetchScheduler(view);
+                composer.updateRememberedValue(objRememberedValue);
+            }
+            prefetchScheduler = (AndroidPrefetchScheduler) objRememberedValue;
+            composer.endReplaceGroup();
+        }
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        return prefetchScheduler;
+    }
+}

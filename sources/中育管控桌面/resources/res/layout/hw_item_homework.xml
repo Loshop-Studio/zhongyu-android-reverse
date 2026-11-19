@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="vertical" android:tag="layout/hw_item_homework_0" android:background="@drawable/hw_shape_item_homework_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/pt28" android:paddingStart="@dimen/pt9" android:paddingEnd="@dimen/pt2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/tvTitle" android:singleLine="true" style="@style/WhiteTextStyle" />
+    <TextView android:textSize="@dimen/pt7" android:textColor="@color/colorC0D2FF" android:id="@id/tvTime" style="@style/WhiteTextStyle" />
+</androidx.appcompat.widget.LinearLayoutCompat>

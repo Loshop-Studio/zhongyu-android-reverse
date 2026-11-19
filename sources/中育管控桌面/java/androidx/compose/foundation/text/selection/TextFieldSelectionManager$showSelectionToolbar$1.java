@@ -1,0 +1,53 @@
+package androidx.compose.foundation.text.selection;
+
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.CoroutineScope;
+
+@Metadata(m7879d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, m7880d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m7881k = 3, m7882mv = {1, 9, 0}, m7884xi = 48)
+@DebugMetadata(m7917c = "androidx.compose.foundation.text.selection.TextFieldSelectionManager$showSelectionToolbar$1", m7918f = "TextFieldSelectionManager.kt", m7919i = {0, 0}, m7920l = {781}, m7921m = "invokeSuspend", m7922n = {"copy", "cut"}, m7923s = {"L$0", "L$1"})
+/* loaded from: classes.dex */
+public final class TextFieldSelectionManager$showSelectionToolbar$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    Object L$0;
+    Object L$1;
+    int label;
+    final /* synthetic */ TextFieldSelectionManager this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public TextFieldSelectionManager$showSelectionToolbar$1(TextFieldSelectionManager textFieldSelectionManager, Continuation<? super TextFieldSelectionManager$showSelectionToolbar$1> continuation) {
+        super(2, continuation);
+        this.this$0 = textFieldSelectionManager;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new TextFieldSelectionManager$showSelectionToolbar$1(this.this$0, continuation);
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:42:0x00b3  */
+    /* JADX WARN: Removed duplicated region for block: B:47:0x00de  */
+    /* JADX WARN: Removed duplicated region for block: B:48:0x00e7  */
+    /* JADX WARN: Removed duplicated region for block: B:51:0x00f0  */
+    /* JADX WARN: Removed duplicated region for block: B:56:0x0110  */
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final java.lang.Object invokeSuspend(java.lang.Object r13) {
+        /*
+            Method dump skipped, instructions count: 287
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.compose.foundation.text.selection.TextFieldSelectionManager$showSelectionToolbar$1.invokeSuspend(java.lang.Object):java.lang.Object");
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        return ((TextFieldSelectionManager$showSelectionToolbar$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+}

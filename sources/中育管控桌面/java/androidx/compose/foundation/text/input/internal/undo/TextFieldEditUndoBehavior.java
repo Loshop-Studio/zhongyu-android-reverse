@@ -1,0 +1,42 @@
+package androidx.compose.foundation.text.input.internal.undo;
+
+import kotlin.Metadata;
+import kotlin.enums.EnumEntries;
+import kotlin.enums.EnumEntriesKt;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+@Metadata(m7879d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0005\b\u0080\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005¨\u0006\u0006"}, m7880d2 = {"Landroidx/compose/foundation/text/input/internal/undo/TextFieldEditUndoBehavior;", "", "(Ljava/lang/String;I)V", "MergeIfPossible", "ClearHistory", "NeverMerge", "foundation_release"}, m7881k = 1, m7882mv = {1, 9, 0}, m7884xi = 48)
+/* loaded from: classes.dex */
+public final class TextFieldEditUndoBehavior {
+    private static final /* synthetic */ EnumEntries $ENTRIES;
+    private static final /* synthetic */ TextFieldEditUndoBehavior[] $VALUES;
+    public static final TextFieldEditUndoBehavior MergeIfPossible = new TextFieldEditUndoBehavior("MergeIfPossible", 0);
+    public static final TextFieldEditUndoBehavior ClearHistory = new TextFieldEditUndoBehavior("ClearHistory", 1);
+    public static final TextFieldEditUndoBehavior NeverMerge = new TextFieldEditUndoBehavior("NeverMerge", 2);
+
+    private static final /* synthetic */ TextFieldEditUndoBehavior[] $values() {
+        return new TextFieldEditUndoBehavior[]{MergeIfPossible, ClearHistory, NeverMerge};
+    }
+
+    static {
+        TextFieldEditUndoBehavior[] textFieldEditUndoBehaviorArr$values = $values();
+        $VALUES = textFieldEditUndoBehaviorArr$values;
+        $ENTRIES = EnumEntriesKt.enumEntries(textFieldEditUndoBehaviorArr$values);
+    }
+
+    private TextFieldEditUndoBehavior(String str, int i6) {
+    }
+
+    public static EnumEntries<TextFieldEditUndoBehavior> getEntries() {
+        return $ENTRIES;
+    }
+
+    public static TextFieldEditUndoBehavior valueOf(String str) {
+        return (TextFieldEditUndoBehavior) Enum.valueOf(TextFieldEditUndoBehavior.class, str);
+    }
+
+    public static TextFieldEditUndoBehavior[] values() {
+        return (TextFieldEditUndoBehavior[]) $VALUES.clone();
+    }
+}

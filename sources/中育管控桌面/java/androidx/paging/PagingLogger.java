@@ -1,0 +1,36 @@
+package androidx.paging;
+
+import android.os.Build;
+import android.util.Log;
+import androidx.annotation.RestrictTo;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+@Metadata(m7879d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0003\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006J\"\u0010\u0007\u001a\u00020\b2\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f¨\u0006\r"}, m7880d2 = {"Landroidx/paging/PagingLogger;", "", "()V", "isLoggable", "", "level", "", "log", "", "message", "", "tr", "", "paging-common_release"}, m7881k = 1, m7882mv = {1, 8, 0}, m7884xi = 48)
+@RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+/* loaded from: classes3.dex */
+public final class PagingLogger {
+    public static final PagingLogger INSTANCE = new PagingLogger();
+
+    private PagingLogger() {
+    }
+
+    public static /* synthetic */ void log$default(PagingLogger pagingLogger, int i6, String str, Throwable th, int i7, Object obj) {
+        if ((i7 & 4) != 0) {
+            th = null;
+        }
+        pagingLogger.log(i6, str, th);
+    }
+
+    public final boolean isLoggable(int level) {
+        return Build.ID != null && Log.isLoggable(PagingLoggerKt.LOG_TAG, level);
+    }
+
+    public final void log(int level, String message, Throwable tr) {
+        Intrinsics.checkNotNullParameter(message, "message");
+        if (level == 2 || level == 3) {
+            return;
+        }
+        throw new IllegalArgumentException("debug level " + level + " is requested but Paging only supports default logging for level 2 (VERBOSE) or level 3 (DEBUG)");
+    }
+}

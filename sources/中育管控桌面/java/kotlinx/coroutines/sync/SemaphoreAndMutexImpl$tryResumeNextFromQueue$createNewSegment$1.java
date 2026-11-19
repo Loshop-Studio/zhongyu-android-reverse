@@ -1,0 +1,24 @@
+package kotlinx.coroutines.sync;
+
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+
+@Metadata(m7881k = 3, m7882mv = {2, 1, 0}, m7884xi = 48)
+/* loaded from: classes4.dex */
+public /* synthetic */ class SemaphoreAndMutexImpl$tryResumeNextFromQueue$createNewSegment$1 extends FunctionReferenceImpl implements Function2<Long, SemaphoreSegment, SemaphoreSegment> {
+    public static final SemaphoreAndMutexImpl$tryResumeNextFromQueue$createNewSegment$1 INSTANCE = new SemaphoreAndMutexImpl$tryResumeNextFromQueue$createNewSegment$1();
+
+    public SemaphoreAndMutexImpl$tryResumeNextFromQueue$createNewSegment$1() {
+        super(2, SemaphoreKt.class, "createSegment", "createSegment(JLkotlinx/coroutines/sync/SemaphoreSegment;)Lkotlinx/coroutines/sync/SemaphoreSegment;", 1);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public /* bridge */ /* synthetic */ SemaphoreSegment invoke(Long l6, SemaphoreSegment semaphoreSegment) {
+        return invoke(l6.longValue(), semaphoreSegment);
+    }
+
+    public final SemaphoreSegment invoke(long j6, SemaphoreSegment semaphoreSegment) {
+        return SemaphoreKt.createSegment(j6, semaphoreSegment);
+    }
+}

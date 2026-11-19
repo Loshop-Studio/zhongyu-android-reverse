@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/hw_dialog_tips_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:tag="binding_1" android:background="@drawable/hw_shape_dialog_bg" android:layout_width="@dimen/pt216" android:layout_height="@dimen/pt88" android:minHeight="@dimen/pt88">
+        <TextView android:textSize="@dimen/pt8" android:textColor="@color/white" android:id="@id/tvTitle" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pt19" android:maxWidth="@dimen/pt180" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:id="@id/tvCancel" android:tag="binding_3" android:background="@drawable/hw_shape_btn_cancel_bg" android:layout_width="@dimen/pt56" android:layout_height="@dimen/pt19" android:layout_marginTop="@dimen/pt19" android:layout_marginEnd="@dimen/pt28" app:layout_constraintEnd_toStartOf="@id/tvConfirm" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvTitle" style="@style/WhiteTextStyle" />
+        <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:id="@id/tvConfirm" android:tag="binding_4" android:background="@drawable/hw_selector_btn_bg" android:layout_width="@dimen/pt56" android:layout_height="@dimen/pt19" android:layout_marginTop="@dimen/pt19" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tvCancel" app:layout_constraintTop_toBottomOf="@id/tvTitle" style="@style/WhiteTextStyle" />
+        <include layout="@layout/hw_state_view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

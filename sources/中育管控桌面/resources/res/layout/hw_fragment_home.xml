@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawLayout" android:tag="layout/hw_fragment_home_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/includeTitle" layout="@layout/hw_include_home_title" />
+        <include android:id="@id/includeHomework" layout="@layout/hw_include_home_homework" />
+        <include android:id="@id/includeApp" layout="@layout/hw_include_home_app" />
+        <include layout="@layout/hw_state_view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:id="@id/includeSideBar" layout="@layout/hw_include_home_sidebar" />
+</androidx.drawerlayout.widget.DrawerLayout>

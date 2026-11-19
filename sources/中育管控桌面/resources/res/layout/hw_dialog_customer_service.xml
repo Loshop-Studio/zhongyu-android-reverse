@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/hw_dialog_customer_service_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:background="@drawable/hw_shape_dialog_bg" android:paddingBottom="@dimen/pt19" android:layout_width="@dimen/pt216" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/pt8" android:textColor="@color/white" android:id="@id/tvTitle" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pt19" android:text="@string/hw_customer_service_contact" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivClose" android:tag="binding_2" android:layout_width="@dimen/pt8" android:layout_height="@dimen/pt8" android:layout_marginTop="@dimen/pt7" android:src="@mipmap/hw_dialog_close" android:layout_marginEnd="@dimen/pt7" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/llContent" android:background="@drawable/hw_shape_dialog_edit_bg" android:paddingLeft="@dimen/pt9" android:paddingRight="@dimen/pt9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pt9" android:divider="@drawable/hw_shape_divider" android:showDividers="middle" android:dividerPadding="@dimen/hwDivider" android:layout_marginStart="@dimen/pt19" android:layout_marginEnd="@dimen/pt19" android:paddingHorizontal="@dimen/pt9" app:layout_constraintTop_toBottomOf="@id/tvTitle">
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/hw_customer_mobile" android:layout_centerVertical="true" style="@style/WhiteTextStyle" />
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="center_vertical" android:id="@id/tvCustomerMobile" android:tag="binding_3" android:layout_width="match_parent" android:minHeight="@dimen/pt26" android:layout_centerVertical="true" android:layout_marginStart="@dimen/pt19" style="@style/WhiteTextStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/hw_customer_email" android:layout_centerVertical="true" style="@style/WhiteTextStyle" />
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="center_vertical" android:id="@id/tv_customer_email" android:tag="binding_4" android:layout_width="match_parent" android:minHeight="@dimen/pt26" android:layout_marginStart="@dimen/pt19" style="@style/WhiteTextStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/hw_customer_chat" android:layout_centerVertical="true" style="@style/WhiteTextStyle" />
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="center_vertical" android:id="@id/tv_customer_chat" android:tag="binding_5" android:layout_width="match_parent" android:minHeight="@dimen/pt26" android:layout_marginStart="@dimen/pt19" style="@style/WhiteTextStyle" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

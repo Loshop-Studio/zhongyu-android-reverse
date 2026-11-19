@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="138.0dp" android:width="200.0dp" android:viewportWidth="200.0" android:viewportHeight="138.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#487bff" android:pathData="M10,0L190,0A10,10 0,0 1,200 10L200,128A10,10 0,0 1,190 138L10,138A10,10 0,0 1,0 128L0,10A10,10 0,0 1,10 0z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <group>
+        <clip-path android:pathData="M10,0L190,0A10,10 0,0 1,200 10L200,128A10,10 0,0 1,190 138L10,138A10,10 0,0 1,0 128L0,10A10,10 0,0 1,10 0z" />
+        <path android:fillColor="@drawable/$bg_gallery__0" android:pathData="M11.72,123.1C11.72,123.1 36.41,55.38 76.86,73.22C117.31,91.07 107.02,-7.75 203.01,0.49C223.25,2.23 237.07,-3.84 237.07,4.69C237.07,44.19 237.41,96.56 237.41,96.56L238.08,138L221.52,138L176.95,137.85L100.94,138L26.29,138L-7.02,138L11.72,123.1Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    </group>
+    <group>
+        <clip-path android:pathData="M10,0L190,0A10,10 0,0 1,200 10L200,128A10,10 0,0 1,190 138L10,138A10,10 0,0 1,0 128L0,10A10,10 0,0 1,10 0z" />
+        <path android:fillColor="@drawable/$bg_gallery__1" android:pathData="M184,76.42L225.38,140L225.38,140L115.79,140L157.18,76.42C162,69.02 171.91,66.92 179.32,71.74C181.19,72.96 182.78,74.55 184,76.42Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    </group>
+    <group>
+        <clip-path android:pathData="M10,0L190,0A10,10 0,0 1,200 10L200,128A10,10 0,0 1,190 138L10,138A10,10 0,0 1,0 128L0,10A10,10 0,0 1,10 0z" />
+        <path android:fillColor="#acc3ea" android:pathData="M171.09,51m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:strokeAlpha="0.2" android:fillAlpha="0.2" android:fillType="nonZero" />
+    </group>
+    <group>
+        <clip-path android:pathData="M10,0L190,0A10,10 0,0 1,200 10L200,128A10,10 0,0 1,190 138L10,138A10,10 0,0 1,0 128L0,10A10,10 0,0 1,10 0z" />
+        <path android:fillColor="@drawable/$bg_gallery__2" android:pathData="M129.68,52.75L185.27,138.15L185.27,138.15L47.27,138.15L102.86,52.75C107.68,45.34 117.59,43.25 125,48.07C126.87,49.28 128.46,50.88 129.68,52.75Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    </group>
+</vector>

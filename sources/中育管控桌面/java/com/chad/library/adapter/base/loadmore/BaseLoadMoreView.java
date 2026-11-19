@@ -1,0 +1,75 @@
+package com.chad.library.adapter.base.loadmore;
+
+import android.view.View;
+import android.view.ViewGroup;
+import com.alibaba.sdk.android.oss.common.RequestParameters;
+import com.chad.library.adapter.base.viewholder.BaseViewHolder;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+@Metadata(m7879d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\b&\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J \u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0016J\u0010\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0005\u001a\u00020\u0006H&J\u0010\u0010\r\u001a\u00020\f2\u0006\u0010\u0005\u001a\u00020\u0006H&J\u0010\u0010\u000e\u001a\u00020\f2\u0006\u0010\u0005\u001a\u00020\u0006H&J\u0010\u0010\u000f\u001a\u00020\f2\u0006\u0010\u0005\u001a\u00020\u0006H&J\u0010\u0010\u0010\u001a\u00020\f2\u0006\u0010\u0011\u001a\u00020\u0012H&J\u0014\u0010\u0013\u001a\u00020\u0004*\u00020\f2\u0006\u0010\u0014\u001a\u00020\u0015H\u0002¨\u0006\u0016"}, m7880d2 = {"Lcom/chad/library/adapter/base/loadmore/BaseLoadMoreView;", "", "()V", "convert", "", "holder", "Lcom/chad/library/adapter/base/viewholder/BaseViewHolder;", RequestParameters.POSITION, "", "loadMoreStatus", "Lcom/chad/library/adapter/base/loadmore/LoadMoreStatus;", "getLoadComplete", "Landroid/view/View;", "getLoadEndView", "getLoadFailView", "getLoadingView", "getRootView", "parent", "Landroid/view/ViewGroup;", "isVisible", "visible", "", "com.github.CymChad.brvah"}, m7881k = 1, m7882mv = {1, 5, 1}, m7884xi = 48)
+/* loaded from: classes3.dex */
+public abstract class BaseLoadMoreView {
+
+    @Metadata(m7881k = 3, m7882mv = {1, 5, 1}, m7884xi = 48)
+    public /* synthetic */ class WhenMappings {
+        public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+
+        static {
+            int[] iArr = new int[LoadMoreStatus.values().length];
+            iArr[LoadMoreStatus.Complete.ordinal()] = 1;
+            iArr[LoadMoreStatus.Loading.ordinal()] = 2;
+            iArr[LoadMoreStatus.Fail.ordinal()] = 3;
+            iArr[LoadMoreStatus.End.ordinal()] = 4;
+            $EnumSwitchMapping$0 = iArr;
+        }
+    }
+
+    private final void isVisible(View view, boolean z6) {
+        view.setVisibility(z6 ? 0 : 8);
+    }
+
+    public void convert(BaseViewHolder holder, int position, LoadMoreStatus loadMoreStatus) {
+        Intrinsics.checkNotNullParameter(holder, "holder");
+        Intrinsics.checkNotNullParameter(loadMoreStatus, "loadMoreStatus");
+        int i6 = WhenMappings.$EnumSwitchMapping$0[loadMoreStatus.ordinal()];
+        if (i6 == 1) {
+            isVisible(getLoadingView(holder), false);
+            isVisible(getLoadComplete(holder), true);
+            isVisible(getLoadFailView(holder), false);
+            isVisible(getLoadEndView(holder), false);
+            return;
+        }
+        if (i6 == 2) {
+            isVisible(getLoadingView(holder), true);
+            isVisible(getLoadComplete(holder), false);
+            isVisible(getLoadFailView(holder), false);
+            isVisible(getLoadEndView(holder), false);
+            return;
+        }
+        if (i6 == 3) {
+            isVisible(getLoadingView(holder), false);
+            isVisible(getLoadComplete(holder), false);
+            isVisible(getLoadFailView(holder), true);
+            isVisible(getLoadEndView(holder), false);
+            return;
+        }
+        if (i6 != 4) {
+            return;
+        }
+        isVisible(getLoadingView(holder), false);
+        isVisible(getLoadComplete(holder), false);
+        isVisible(getLoadFailView(holder), false);
+        isVisible(getLoadEndView(holder), true);
+    }
+
+    public abstract View getLoadComplete(BaseViewHolder holder);
+
+    public abstract View getLoadEndView(BaseViewHolder holder);
+
+    public abstract View getLoadFailView(BaseViewHolder holder);
+
+    public abstract View getLoadingView(BaseViewHolder holder);
+
+    public abstract View getRootView(ViewGroup parent);
+}

@@ -1,0 +1,41 @@
+package com.google.android.material.sidesheet;
+
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.annotation.NonNull;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
+/* loaded from: classes3.dex */
+abstract class SheetDelegate {
+    public abstract int calculateInnerMargin(@NonNull ViewGroup.MarginLayoutParams marginLayoutParams);
+
+    public abstract float calculateSlideOffset(int i6);
+
+    public abstract int getCoplanarSiblingAdjacentMargin(@NonNull ViewGroup.MarginLayoutParams marginLayoutParams);
+
+    public abstract int getExpandedOffset();
+
+    public abstract int getHiddenOffset();
+
+    public abstract int getMaxViewPositionHorizontal();
+
+    public abstract int getMinViewPositionHorizontal();
+
+    public abstract <V extends View> int getOuterEdge(@NonNull V v6);
+
+    public abstract int getParentInnerEdge(@NonNull CoordinatorLayout coordinatorLayout);
+
+    public abstract int getSheetEdge();
+
+    public abstract boolean isExpandingOutwards(float f6);
+
+    public abstract boolean isReleasedCloseToInnerEdge(@NonNull View view);
+
+    public abstract boolean isSwipeSignificant(float f6, float f7);
+
+    public abstract boolean shouldHide(@NonNull View view, float f6);
+
+    public abstract void updateCoplanarSiblingAdjacentMargin(@NonNull ViewGroup.MarginLayoutParams marginLayoutParams, int i6);
+
+    public abstract void updateCoplanarSiblingLayoutParams(@NonNull ViewGroup.MarginLayoutParams marginLayoutParams, int i6, int i7);
+}

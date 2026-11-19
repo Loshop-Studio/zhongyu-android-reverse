@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/hw_dialog_change_avatar_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:tag="binding_1" android:background="@drawable/hw_shape_dialog_bg" android:layout_width="@dimen/pt216" android:layout_height="@dimen/pt204">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:id="@id/ivClose" android:tag="binding_2" android:layout_width="@dimen/pt8" android:layout_height="@dimen/pt8" android:layout_marginTop="@dimen/pt7" android:src="@mipmap/hw_dialog_close" android:layout_marginEnd="@dimen/pt7" />
+        <TextView android:textSize="@dimen/pt8" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tvTitle" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pt4" android:text="@string/hw_change_avatar" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvAvatar" android:layout_width="match_parent" android:layout_height="0.0px" android:layout_marginTop="@dimen/pt5" android:layout_marginBottom="@dimen/pt5" android:layout_weight="1.0" android:overScrollMode="never" android:layout_marginStart="@dimen/pt11" android:layout_marginEnd="@dimen/pt11" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="4" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvModify" android:tag="binding_4" android:background="@drawable/hw_selector_btn_bg" android:layout_width="@dimen/pt56" android:layout_height="@dimen/pt19" android:layout_marginBottom="@dimen/pt19" android:text="@string/hw_confirm_modify" style="@style/WhiteTextStyle" />
+        <include layout="@layout/hw_state_view" />
+    </LinearLayout>
+</FrameLayout>

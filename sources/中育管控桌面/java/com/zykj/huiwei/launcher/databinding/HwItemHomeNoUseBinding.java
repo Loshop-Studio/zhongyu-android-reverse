@@ -1,0 +1,71 @@
+package com.zykj.huiwei.launcher.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import com.zykj.manage.R;
+
+/* loaded from: classes4.dex */
+public final class HwItemHomeNoUseBinding implements ViewBinding {
+
+    @NonNull
+    public final ConstraintLayout itemHomeNoUse;
+
+    @NonNull
+    public final ImageView ivImage;
+
+    @NonNull
+    private final ConstraintLayout rootView;
+
+    @NonNull
+    public final TextView tvTip;
+
+    private HwItemHomeNoUseBinding(@NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout constraintLayout2, @NonNull ImageView imageView, @NonNull TextView textView) {
+        this.rootView = constraintLayout;
+        this.itemHomeNoUse = constraintLayout2;
+        this.ivImage = imageView;
+        this.tvTip = textView;
+    }
+
+    @NonNull
+    public static HwItemHomeNoUseBinding bind(@NonNull View view) {
+        ConstraintLayout constraintLayout = (ConstraintLayout) view;
+        int i6 = R.id.iv_image;
+        ImageView imageView = (ImageView) ViewBindings.findChildViewById(view, R.id.iv_image);
+        if (imageView != null) {
+            i6 = R.id.tv_tip;
+            TextView textView = (TextView) ViewBindings.findChildViewById(view, R.id.tv_tip);
+            if (textView != null) {
+                return new HwItemHomeNoUseBinding(constraintLayout, constraintLayout, imageView, textView);
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i6)));
+    }
+
+    @NonNull
+    public static HwItemHomeNoUseBinding inflate(@NonNull LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+
+    @NonNull
+    public static HwItemHomeNoUseBinding inflate(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, boolean z6) {
+        View viewInflate = layoutInflater.inflate(R.layout.hw_item_home_no_use, viewGroup, false);
+        if (z6) {
+            viewGroup.addView(viewInflate);
+        }
+        return bind(viewInflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    @NonNull
+    public ConstraintLayout getRoot() {
+        return this.rootView;
+    }
+}

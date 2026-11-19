@@ -1,0 +1,21 @@
+version: 3.0.2
+apkFileName: 中育管控桌面.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 24
+  targetSdkVersion: 28
+versionInfo:
+  versionCode: 10034
+  versionName: 1.0.34
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- jpg
+- png
+- so
+- webp
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm

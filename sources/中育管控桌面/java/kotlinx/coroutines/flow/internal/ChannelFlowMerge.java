@@ -1,0 +1,213 @@
+package kotlinx.coroutines.flow.internal;
+
+import androidx.exifinterface.media.ExifInterface;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.EmptyCoroutineContext;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Job;
+import kotlinx.coroutines.channels.BufferOverflow;
+import kotlinx.coroutines.channels.ProduceKt;
+import kotlinx.coroutines.channels.ProducerScope;
+import kotlinx.coroutines.channels.ReceiveChannel;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowCollector;
+import kotlinx.coroutines.sync.Semaphore;
+import kotlinx.coroutines.sync.SemaphoreKt;
+
+@Metadata(m7879d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0000\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u0002H\u00010\u0002BA\u0012\u0012\u0010\u0003\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\u00040\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\b\b\u0002\u0010\u0007\u001a\u00020\b\u0012\b\b\u0002\u0010\t\u001a\u00020\u0006\u0012\b\b\u0002\u0010\n\u001a\u00020\u000b¢\u0006\u0004\b\f\u0010\rJ&\u0010\u000e\u001a\b\u0012\u0004\u0012\u00028\u00000\u00022\u0006\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u000bH\u0014J\u0016\u0010\u000f\u001a\b\u0012\u0004\u0012\u00028\u00000\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016J\u001c\u0010\u0013\u001a\u00020\u00142\f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00028\u00000\u0015H\u0094@¢\u0006\u0002\u0010\u0016J\b\u0010\u0017\u001a\u00020\u0018H\u0014R\u001a\u0010\u0003\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\u00040\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0019"}, m7880d2 = {"Lkotlinx/coroutines/flow/internal/ChannelFlowMerge;", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/flow/internal/ChannelFlow;", "flow", "Lkotlinx/coroutines/flow/Flow;", "concurrency", "", "context", "Lkotlin/coroutines/CoroutineContext;", "capacity", "onBufferOverflow", "Lkotlinx/coroutines/channels/BufferOverflow;", "<init>", "(Lkotlinx/coroutines/flow/Flow;ILkotlin/coroutines/CoroutineContext;ILkotlinx/coroutines/channels/BufferOverflow;)V", "create", "produceImpl", "Lkotlinx/coroutines/channels/ReceiveChannel;", "scope", "Lkotlinx/coroutines/CoroutineScope;", "collectTo", "", "Lkotlinx/coroutines/channels/ProducerScope;", "(Lkotlinx/coroutines/channels/ProducerScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "additionalToStringProps", "", "kotlinx-coroutines-core"}, m7881k = 1, m7882mv = {2, 1, 0}, m7884xi = 48)
+/* loaded from: classes4.dex */
+public final class ChannelFlowMerge<T> extends ChannelFlow<T> {
+    private final int concurrency;
+    private final Flow<Flow<T>> flow;
+
+    @Metadata(m7881k = 3, m7882mv = {2, 1, 0}, m7884xi = 48)
+    /* renamed from: kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2 */
+    public static final class C71822<T> implements FlowCollector {
+        final /* synthetic */ SendingCollector<T> $collector;
+        final /* synthetic */ Job $job;
+        final /* synthetic */ ProducerScope<T> $scope;
+        final /* synthetic */ Semaphore $semaphore;
+
+        @Metadata(m7879d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m7880d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m7881k = 3, m7882mv = {2, 1, 0}, m7884xi = 48)
+        @DebugMetadata(m7917c = "kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2$1", m7918f = "Merge.kt", m7919i = {}, m7920l = {65}, m7921m = "invokeSuspend", m7922n = {}, m7923s = {})
+        /* renamed from: kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2$1, reason: invalid class name */
+        public static final class AnonymousClass1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+            final /* synthetic */ SendingCollector<T> $collector;
+            final /* synthetic */ Flow<T> $inner;
+            final /* synthetic */ Semaphore $semaphore;
+            int label;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* JADX WARN: Multi-variable type inference failed */
+            public AnonymousClass1(Flow<? extends T> flow, SendingCollector<T> sendingCollector, Semaphore semaphore, Continuation<? super AnonymousClass1> continuation) {
+                super(2, continuation);
+                this.$inner = flow;
+                this.$collector = sendingCollector;
+                this.$semaphore = semaphore;
+            }
+
+            @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+            public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+                return new AnonymousClass1(this.$inner, this.$collector, this.$semaphore, continuation);
+            }
+
+            @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+            public final Object invokeSuspend(Object obj) {
+                Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                int i6 = this.label;
+                try {
+                    if (i6 == 0) {
+                        ResultKt.throwOnFailure(obj);
+                        Flow<T> flow = this.$inner;
+                        SendingCollector<T> sendingCollector = this.$collector;
+                        this.label = 1;
+                        if (flow.collect(sendingCollector, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    } else {
+                        if (i6 != 1) {
+                            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                        }
+                        ResultKt.throwOnFailure(obj);
+                    }
+                    this.$semaphore.release();
+                    return Unit.INSTANCE;
+                } catch (Throwable th) {
+                    this.$semaphore.release();
+                    throw th;
+                }
+            }
+
+            @Override // kotlin.jvm.functions.Function2
+            public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+                return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+            }
+        }
+
+        /* JADX WARN: Multi-variable type inference failed */
+        public C71822(Job job, Semaphore semaphore, ProducerScope<? super T> producerScope, SendingCollector<T> sendingCollector) {
+            this.$job = job;
+            this.$semaphore = semaphore;
+            this.$scope = producerScope;
+            this.$collector = sendingCollector;
+        }
+
+        @Override // kotlinx.coroutines.flow.FlowCollector
+        public /* bridge */ /* synthetic */ Object emit(Object obj, Continuation continuation) {
+            return emit((Flow) obj, (Continuation<? super Unit>) continuation);
+        }
+
+        /* JADX WARN: Removed duplicated region for block: B:7:0x0013  */
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public final java.lang.Object emit(kotlinx.coroutines.flow.Flow<? extends T> r8, kotlin.coroutines.Continuation<? super kotlin.Unit> r9) {
+            /*
+                r7 = this;
+                boolean r0 = r9 instanceof kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2$emit$1
+                if (r0 == 0) goto L13
+                r0 = r9
+                kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2$emit$1 r0 = (kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2$emit$1) r0
+                int r1 = r0.label
+                r2 = -2147483648(0xffffffff80000000, float:-0.0)
+                r3 = r1 & r2
+                if (r3 == 0) goto L13
+                int r1 = r1 - r2
+                r0.label = r1
+                goto L18
+            L13:
+                kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2$emit$1 r0 = new kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2$emit$1
+                r0.<init>(r7, r9)
+            L18:
+                java.lang.Object r9 = r0.result
+                java.lang.Object r1 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
+                int r2 = r0.label
+                r3 = 1
+                if (r2 == 0) goto L39
+                if (r2 != r3) goto L31
+                java.lang.Object r8 = r0.L$1
+                kotlinx.coroutines.flow.Flow r8 = (kotlinx.coroutines.flow.Flow) r8
+                java.lang.Object r0 = r0.L$0
+                kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2 r0 = (kotlinx.coroutines.flow.internal.ChannelFlowMerge.C71822) r0
+                kotlin.ResultKt.throwOnFailure(r9)
+                goto L53
+            L31:
+                java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
+                java.lang.String r9 = "call to 'resume' before 'invoke' with coroutine"
+                r8.<init>(r9)
+                throw r8
+            L39:
+                kotlin.ResultKt.throwOnFailure(r9)
+                kotlinx.coroutines.Job r9 = r7.$job
+                if (r9 == 0) goto L43
+                kotlinx.coroutines.JobKt.ensureActive(r9)
+            L43:
+                kotlinx.coroutines.sync.Semaphore r9 = r7.$semaphore
+                r0.L$0 = r7
+                r0.L$1 = r8
+                r0.label = r3
+                java.lang.Object r9 = r9.acquire(r0)
+                if (r9 != r1) goto L52
+                return r1
+            L52:
+                r0 = r7
+            L53:
+                kotlinx.coroutines.channels.ProducerScope<T> r1 = r0.$scope
+                kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2$1 r4 = new kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2$1
+                kotlinx.coroutines.flow.internal.SendingCollector<T> r9 = r0.$collector
+                kotlinx.coroutines.sync.Semaphore r0 = r0.$semaphore
+                r2 = 0
+                r4.<init>(r8, r9, r0, r2)
+                r5 = 3
+                r6 = 0
+                r3 = 0
+                kotlinx.coroutines.BuildersKt.launch$default(r1, r2, r3, r4, r5, r6)
+                kotlin.Unit r8 = kotlin.Unit.INSTANCE
+                return r8
+            */
+            throw new UnsupportedOperationException("Method not decompiled: kotlinx.coroutines.flow.internal.ChannelFlowMerge.C71822.emit(kotlinx.coroutines.flow.Flow, kotlin.coroutines.Continuation):java.lang.Object");
+        }
+    }
+
+    public /* synthetic */ ChannelFlowMerge(Flow flow, int i6, CoroutineContext coroutineContext, int i7, BufferOverflow bufferOverflow, int i8, DefaultConstructorMarker defaultConstructorMarker) {
+        this(flow, i6, (i8 & 4) != 0 ? EmptyCoroutineContext.INSTANCE : coroutineContext, (i8 & 8) != 0 ? -2 : i7, (i8 & 16) != 0 ? BufferOverflow.SUSPEND : bufferOverflow);
+    }
+
+    @Override // kotlinx.coroutines.flow.internal.ChannelFlow
+    public String additionalToStringProps() {
+        return "concurrency=" + this.concurrency;
+    }
+
+    @Override // kotlinx.coroutines.flow.internal.ChannelFlow
+    public Object collectTo(ProducerScope<? super T> producerScope, Continuation<? super Unit> continuation) {
+        Object objCollect = this.flow.collect(new C71822((Job) continuation.get$context().get(Job.INSTANCE), SemaphoreKt.Semaphore$default(this.concurrency, 0, 2, null), producerScope, new SendingCollector(producerScope)), continuation);
+        return objCollect == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objCollect : Unit.INSTANCE;
+    }
+
+    @Override // kotlinx.coroutines.flow.internal.ChannelFlow
+    public ChannelFlow<T> create(CoroutineContext context, int capacity, BufferOverflow onBufferOverflow) {
+        return new ChannelFlowMerge(this.flow, this.concurrency, context, capacity, onBufferOverflow);
+    }
+
+    @Override // kotlinx.coroutines.flow.internal.ChannelFlow
+    public ReceiveChannel<T> produceImpl(CoroutineScope scope) {
+        return ProduceKt.produce(scope, this.context, this.capacity, getCollectToFun$kotlinx_coroutines_core());
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public ChannelFlowMerge(Flow<? extends Flow<? extends T>> flow, int i6, CoroutineContext coroutineContext, int i7, BufferOverflow bufferOverflow) {
+        super(coroutineContext, i7, bufferOverflow);
+        this.flow = flow;
+        this.concurrency = i6;
+    }
+}

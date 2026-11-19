@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_main" app:startDestination="@id/loginFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="LoginFragment" android:name="com.zykj.huiwei.launcher.ui.fragment.LoginFragment" android:id="@id/loginFragment">
+        <deepLink app:action="com.zykj.launcher.login" app:uri="www.zykj.login" />
+        <action android:id="@id/action_loginFragment_to_mainFragment" app:destination="@id/mainFragment" app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right" app:popUpTo="@id/loginFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="HomeFragment" android:name="com.zykj.huiwei.launcher.ui.fragment.HomeFragment" android:id="@id/homeFragment" />
+    <fragment android:label="MainFragment" android:name="com.zykj.huiwei.launcher.ui.fragment.MainFragment" android:id="@id/mainFragment">
+        <deepLink app:action="com.zykj.launcher.home" app:uri="www.zykj.home" />
+    </fragment>
+    <fragment android:label="NotificationFragment" android:name="com.zykj.huiwei.launcher.ui.fragment.NotificationFragment" android:id="@id/notificationFragment">
+        <action android:id="@id/action_notificationFragment_to_notificationDetailFragment" app:destination="@id/notificationDetailFragment" app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment android:label="NotificationDetailFragment" android:name="com.zykj.huiwei.launcher.ui.fragment.NotificationDetailFragment" android:id="@id/notificationDetailFragment">
+        <argument android:name="messageId" app:argType="long" />
+        <argument android:name="parameterId" app:argType="long" />
+        <argument android:name="creatorName" app:argType="string" />
+        <argument android:name="createTime" app:argType="string" app:nullable="true" />
+    </fragment>
+    <dialog android:label="ResetPwdDialogFragment" android:name="com.zykj.huiwei.launcher.ui.dialog.changePsdDialog.ComposeModifyPasswordDialog" android:id="@id/composeModifyPasswordDialog">
+        <argument android:name="arg_pwd_level" android:defaultValue="1" app:argType="integer" />
+    </dialog>
+    <dialog android:label="TipsDialog" android:name="com.zykj.huiwei.launcher.ui.dialog.TipsDialog" android:id="@id/tipsDialog">
+        <argument android:name="content" app:argType="string" />
+        <argument android:name="cancel" android:defaultValue="取消" app:argType="string" />
+        <argument android:name="confirm" android:defaultValue="确定" app:argType="string" />
+        <argument android:name="isShowCancel" android:defaultValue="true" app:argType="boolean" />
+        <argument android:name="cancelable" android:defaultValue="true" app:argType="boolean" />
+        <argument android:name="canceledOnTouchOutside" android:defaultValue="true" app:argType="boolean" />
+    </dialog>
+    <dialog android:label="CustomerServiceDialog" android:name="com.zykj.huiwei.launcher.ui.dialog.CustomerServiceDialog" android:id="@id/customerServiceDialog" />
+    <dialog android:label="UnAuthorDialog" android:name="com.zykj.huiwei.launcher.ui.dialog.UnAuthorDialog" android:id="@id/unAuthorDialog" />
+    <dialog android:label="AppUpdateDialog" android:name="com.zykj.huiwei.launcher.ui.dialog.AppUpdateDialog" android:id="@id/appUpdateDialog">
+        <argument android:name="versionInfo" app:argType="com.zykj.huiwei.launcher.bean.resp.VersionInfo" />
+    </dialog>
+    <dialog android:label="ChangeAvatarDialog" android:name="com.zykj.huiwei.launcher.ui.dialog.ChangeAvatarDialog" android:id="@id/changeAvatarDialog">
+        <argument android:name="url" app:argType="string" />
+    </dialog>
+    <dialog android:label="ModifyGestureDialog" android:name="com.zykj.huiwei.launcher.ui.dialog.ModifyGestureDialog" android:id="@id/modifyGestureDialog" />
+</navigation>

@@ -1,0 +1,155 @@
+package androidx.constraintlayout.compose;
+
+import androidx.compose.p009ui.geometry.Offset;
+import androidx.compose.p009ui.input.pointer.PointerInputChange;
+import androidx.compose.p009ui.input.pointer.PointerInputScope;
+import androidx.compose.p009ui.input.pointer.util.VelocityTracker;
+import androidx.compose.p009ui.input.pointer.util.VelocityTrackerKt;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.channels.Channel;
+
+@Metadata(m7879d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, m7880d2 = {"<anonymous>", "", "Landroidx/compose/ui/input/pointer/PointerInputScope;"}, m7881k = 3, m7882mv = {1, 8, 0}, m7884xi = 48)
+@DebugMetadata(m7917c = "androidx.constraintlayout.compose.MotionDragHandlerKt$motionPointerInput$2$2$1", m7918f = "MotionDragHandler.kt", m7919i = {}, m7920l = {110}, m7921m = "invokeSuspend", m7922n = {}, m7923s = {})
+/* loaded from: classes2.dex */
+public final class MotionDragHandlerKt$motionPointerInput$2$2$1 extends SuspendLambda implements Function2<PointerInputScope, Continuation<? super Unit>, Object> {
+    final /* synthetic */ Channel<MotionDragState> $dragChannel;
+    final /* synthetic */ TransitionHandler $swipeHandler;
+    private /* synthetic */ Object L$0;
+    int label;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public MotionDragHandlerKt$motionPointerInput$2$2$1(TransitionHandler transitionHandler, Channel<MotionDragState> channel, Continuation<? super MotionDragHandlerKt$motionPointerInput$2$2$1> continuation) {
+        super(2, continuation);
+        this.$swipeHandler = transitionHandler;
+        this.$dragChannel = channel;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        MotionDragHandlerKt$motionPointerInput$2$2$1 motionDragHandlerKt$motionPointerInput$2$2$1 = new MotionDragHandlerKt$motionPointerInput$2$2$1(this.$swipeHandler, this.$dragChannel, continuation);
+        motionDragHandlerKt$motionPointerInput$2$2$1.L$0 = obj;
+        return motionDragHandlerKt$motionPointerInput$2$2$1;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(PointerInputScope pointerInputScope, Continuation<? super Unit> continuation) {
+        return ((MotionDragHandlerKt$motionPointerInput$2$2$1) create(pointerInputScope, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i6 = this.label;
+        if (i6 == 0) {
+            ResultKt.throwOnFailure(obj);
+            PointerInputScope pointerInputScope = (PointerInputScope) this.L$0;
+            final VelocityTracker velocityTracker = new VelocityTracker();
+            final TransitionHandler transitionHandler = this.$swipeHandler;
+            Function1<Offset, Boolean> function1 = new Function1<Offset, Boolean>() { // from class: androidx.constraintlayout.compose.MotionDragHandlerKt$motionPointerInput$2$2$1.1
+                {
+                    super(1);
+                }
+
+                @Override // kotlin.jvm.functions.Function1
+                public /* bridge */ /* synthetic */ Boolean invoke(Offset offset) {
+                    return m16888invokek4lQ0M(offset.m13668unboximpl());
+                }
+
+                /* renamed from: invoke-k-4lQ0M, reason: not valid java name */
+                public final Boolean m16888invokek4lQ0M(long j6) {
+                    return Boolean.valueOf(transitionHandler.m16954onAcceptFirstDownForOnSwipek4lQ0M(j6));
+                }
+            };
+            Function1<Offset, Unit> function12 = new Function1<Offset, Unit>() { // from class: androidx.constraintlayout.compose.MotionDragHandlerKt$motionPointerInput$2$2$1.2
+                {
+                    super(1);
+                }
+
+                @Override // kotlin.jvm.functions.Function1
+                public /* bridge */ /* synthetic */ Unit invoke(Offset offset) {
+                    m16889invokek4lQ0M(offset.m13668unboximpl());
+                    return Unit.INSTANCE;
+                }
+
+                /* renamed from: invoke-k-4lQ0M, reason: not valid java name */
+                public final void m16889invokek4lQ0M(long j6) {
+                    velocityTracker.resetTracking();
+                }
+            };
+            final Channel<MotionDragState> channel = this.$dragChannel;
+            Function0<Unit> function0 = new Function0<Unit>() { // from class: androidx.constraintlayout.compose.MotionDragHandlerKt$motionPointerInput$2$2$1.3
+                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                {
+                    super(0);
+                }
+
+                @Override // kotlin.jvm.functions.Function0
+                public /* bridge */ /* synthetic */ Unit invoke() {
+                    invoke2();
+                    return Unit.INSTANCE;
+                }
+
+                /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                public final void invoke2() {
+                    channel.mo16995trySendJP2dKIU(MotionDragState.INSTANCE.m16898onDragEndTH1AsA0(velocityTracker.m15219calculateVelocity9UxMQ8M()));
+                }
+            };
+            final Channel<MotionDragState> channel2 = this.$dragChannel;
+            Function0<Unit> function02 = new Function0<Unit>() { // from class: androidx.constraintlayout.compose.MotionDragHandlerKt$motionPointerInput$2$2$1.4
+                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                {
+                    super(0);
+                }
+
+                @Override // kotlin.jvm.functions.Function0
+                public /* bridge */ /* synthetic */ Unit invoke() {
+                    invoke2();
+                    return Unit.INSTANCE;
+                }
+
+                /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                public final void invoke2() {
+                    channel2.mo16995trySendJP2dKIU(MotionDragState.INSTANCE.m16898onDragEndTH1AsA0(velocityTracker.m15219calculateVelocity9UxMQ8M()));
+                }
+            };
+            final Channel<MotionDragState> channel3 = this.$dragChannel;
+            Function2<PointerInputChange, Offset, Unit> function2 = new Function2<PointerInputChange, Offset, Unit>() { // from class: androidx.constraintlayout.compose.MotionDragHandlerKt$motionPointerInput$2$2$1.5
+                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                {
+                    super(2);
+                }
+
+                @Override // kotlin.jvm.functions.Function2
+                public /* bridge */ /* synthetic */ Unit invoke(PointerInputChange pointerInputChange, Offset offset) {
+                    m16890invokeUv8p0NA(pointerInputChange, offset.m13668unboximpl());
+                    return Unit.INSTANCE;
+                }
+
+                /* renamed from: invoke-Uv8p0NA, reason: not valid java name */
+                public final void m16890invokeUv8p0NA(PointerInputChange pointerInputChange, long j6) {
+                    VelocityTrackerKt.addPointerInputChange(velocityTracker, pointerInputChange);
+                    channel3.mo16995trySendJP2dKIU(MotionDragState.INSTANCE.m16897onDragk4lQ0M(j6));
+                }
+            };
+            this.label = 1;
+            if (MotionDragHandlerKt.detectDragGesturesWhenNeeded(pointerInputScope, function1, function12, function0, function02, function2, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else {
+            if (i6 != 1) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            ResultKt.throwOnFailure(obj);
+        }
+        return Unit.INSTANCE;
+    }
+}

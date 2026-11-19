@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zykj.base.view.LoadingDialogView android:tag="layout/hw_state_view_0" android:layout_width="0.0px" android:layout_height="0.0px" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.zykj.base.view.ToastView android:tag="layout/hw_state_view_1" android:layout_width="0.0px" android:layout_height="0.0px" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</merge>

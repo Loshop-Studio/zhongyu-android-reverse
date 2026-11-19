@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/hw_item_avatar_0" android:layout_width="match_parent" android:layout_height="@dimen/pt38"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/ivAvatar" android:layout_width="@dimen/pt38" android:layout_height="@dimen/pt38" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ivChecked" android:background="@drawable/hw_shape_avatar_check_cover" android:padding="@dimen/pt13" android:visibility="gone" android:layout_width="@dimen/pt38" android:layout_height="@dimen/pt38" android:src="@drawable/hw_ic_avatar_check" />
+</FrameLayout>

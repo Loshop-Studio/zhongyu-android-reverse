@@ -1,0 +1,220 @@
+package io.reactivex.internal.operators.mixed;
+
+import androidx.compose.animation.core.AbstractC0433h;
+import io.reactivex.Flowable;
+import io.reactivex.FlowableSubscriber;
+import io.reactivex.SingleObserver;
+import io.reactivex.SingleSource;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.exceptions.Exceptions;
+import io.reactivex.functions.Function;
+import io.reactivex.internal.disposables.DisposableHelper;
+import io.reactivex.internal.functions.ObjectHelper;
+import io.reactivex.internal.subscriptions.SubscriptionHelper;
+import io.reactivex.internal.util.AtomicThrowable;
+import io.reactivex.internal.util.BackpressureHelper;
+import io.reactivex.plugins.RxJavaPlugins;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.atomic.AtomicReference;
+import p193y5.InterfaceC7917c;
+import p193y5.InterfaceC7918d;
+
+/* loaded from: classes4.dex */
+public final class FlowableSwitchMapSingle<T, R> extends Flowable<R> {
+    final boolean delayErrors;
+    final Function<? super T, ? extends SingleSource<? extends R>> mapper;
+    final Flowable<T> source;
+
+    public static final class SwitchMapSingleSubscriber<T, R> extends AtomicInteger implements FlowableSubscriber<T>, InterfaceC7918d {
+        static final SwitchMapSingleObserver<Object> INNER_DISPOSED = new SwitchMapSingleObserver<>(null);
+        private static final long serialVersionUID = -5402190102429853762L;
+        volatile boolean cancelled;
+        final boolean delayErrors;
+        volatile boolean done;
+        final InterfaceC7917c downstream;
+        long emitted;
+        final Function<? super T, ? extends SingleSource<? extends R>> mapper;
+        InterfaceC7918d upstream;
+        final AtomicThrowable errors = new AtomicThrowable();
+        final AtomicLong requested = new AtomicLong();
+        final AtomicReference<SwitchMapSingleObserver<R>> inner = new AtomicReference<>();
+
+        public static final class SwitchMapSingleObserver<R> extends AtomicReference<Disposable> implements SingleObserver<R> {
+            private static final long serialVersionUID = 8042919737683345351L;
+            volatile R item;
+            final SwitchMapSingleSubscriber<?, R> parent;
+
+            public SwitchMapSingleObserver(SwitchMapSingleSubscriber<?, R> switchMapSingleSubscriber) {
+                this.parent = switchMapSingleSubscriber;
+            }
+
+            public void dispose() {
+                DisposableHelper.dispose(this);
+            }
+
+            @Override // io.reactivex.SingleObserver
+            public void onError(Throwable th) {
+                this.parent.innerError(this, th);
+            }
+
+            @Override // io.reactivex.SingleObserver
+            public void onSubscribe(Disposable disposable) {
+                DisposableHelper.setOnce(this, disposable);
+            }
+
+            @Override // io.reactivex.SingleObserver
+            public void onSuccess(R r6) {
+                this.item = r6;
+                this.parent.drain();
+            }
+        }
+
+        public SwitchMapSingleSubscriber(InterfaceC7917c interfaceC7917c, Function<? super T, ? extends SingleSource<? extends R>> function, boolean z6) {
+            this.downstream = interfaceC7917c;
+            this.mapper = function;
+            this.delayErrors = z6;
+        }
+
+        @Override // p193y5.InterfaceC7918d
+        public void cancel() {
+            this.cancelled = true;
+            this.upstream.cancel();
+            disposeInner();
+        }
+
+        public void disposeInner() {
+            AtomicReference<SwitchMapSingleObserver<R>> atomicReference = this.inner;
+            SwitchMapSingleObserver<Object> switchMapSingleObserver = INNER_DISPOSED;
+            SwitchMapSingleObserver<Object> switchMapSingleObserver2 = (SwitchMapSingleObserver) atomicReference.getAndSet(switchMapSingleObserver);
+            if (switchMapSingleObserver2 == null || switchMapSingleObserver2 == switchMapSingleObserver) {
+                return;
+            }
+            switchMapSingleObserver2.dispose();
+        }
+
+        public void drain() {
+            if (getAndIncrement() != 0) {
+                return;
+            }
+            InterfaceC7917c interfaceC7917c = this.downstream;
+            AtomicThrowable atomicThrowable = this.errors;
+            AtomicReference<SwitchMapSingleObserver<R>> atomicReference = this.inner;
+            AtomicLong atomicLong = this.requested;
+            long j6 = this.emitted;
+            int iAddAndGet = 1;
+            while (!this.cancelled) {
+                if (atomicThrowable.get() != null && !this.delayErrors) {
+                    interfaceC7917c.onError(atomicThrowable.terminate());
+                    return;
+                }
+                boolean z6 = this.done;
+                SwitchMapSingleObserver<R> switchMapSingleObserver = atomicReference.get();
+                boolean z7 = switchMapSingleObserver == null;
+                if (z6 && z7) {
+                    Throwable thTerminate = atomicThrowable.terminate();
+                    if (thTerminate != null) {
+                        interfaceC7917c.onError(thTerminate);
+                        return;
+                    } else {
+                        interfaceC7917c.onComplete();
+                        return;
+                    }
+                }
+                if (z7 || switchMapSingleObserver.item == null || j6 == atomicLong.get()) {
+                    this.emitted = j6;
+                    iAddAndGet = addAndGet(-iAddAndGet);
+                    if (iAddAndGet == 0) {
+                        return;
+                    }
+                } else {
+                    AbstractC0433h.m112a(atomicReference, switchMapSingleObserver, null);
+                    interfaceC7917c.onNext(switchMapSingleObserver.item);
+                    j6++;
+                }
+            }
+        }
+
+        public void innerError(SwitchMapSingleObserver<R> switchMapSingleObserver, Throwable th) {
+            if (!AbstractC0433h.m112a(this.inner, switchMapSingleObserver, null) || !this.errors.addThrowable(th)) {
+                RxJavaPlugins.onError(th);
+                return;
+            }
+            if (!this.delayErrors) {
+                this.upstream.cancel();
+                disposeInner();
+            }
+            drain();
+        }
+
+        @Override // io.reactivex.FlowableSubscriber, p193y5.InterfaceC7917c
+        public void onComplete() {
+            this.done = true;
+            drain();
+        }
+
+        @Override // io.reactivex.FlowableSubscriber, p193y5.InterfaceC7917c
+        public void onError(Throwable th) {
+            if (!this.errors.addThrowable(th)) {
+                RxJavaPlugins.onError(th);
+                return;
+            }
+            if (!this.delayErrors) {
+                disposeInner();
+            }
+            this.done = true;
+            drain();
+        }
+
+        @Override // io.reactivex.FlowableSubscriber, p193y5.InterfaceC7917c
+        public void onNext(T t6) {
+            SwitchMapSingleObserver<R> switchMapSingleObserver;
+            SwitchMapSingleObserver<R> switchMapSingleObserver2 = this.inner.get();
+            if (switchMapSingleObserver2 != null) {
+                switchMapSingleObserver2.dispose();
+            }
+            try {
+                SingleSource singleSource = (SingleSource) ObjectHelper.requireNonNull(this.mapper.apply(t6), "The mapper returned a null SingleSource");
+                SwitchMapSingleObserver switchMapSingleObserver3 = new SwitchMapSingleObserver(this);
+                do {
+                    switchMapSingleObserver = this.inner.get();
+                    if (switchMapSingleObserver == INNER_DISPOSED) {
+                        return;
+                    }
+                } while (!AbstractC0433h.m112a(this.inner, switchMapSingleObserver, switchMapSingleObserver3));
+                singleSource.subscribe(switchMapSingleObserver3);
+            } catch (Throwable th) {
+                Exceptions.throwIfFatal(th);
+                this.upstream.cancel();
+                this.inner.getAndSet(INNER_DISPOSED);
+                onError(th);
+            }
+        }
+
+        @Override // io.reactivex.FlowableSubscriber, p193y5.InterfaceC7917c
+        public void onSubscribe(InterfaceC7918d interfaceC7918d) {
+            if (SubscriptionHelper.validate(this.upstream, interfaceC7918d)) {
+                this.upstream = interfaceC7918d;
+                this.downstream.onSubscribe(this);
+                interfaceC7918d.request(Long.MAX_VALUE);
+            }
+        }
+
+        @Override // p193y5.InterfaceC7918d
+        public void request(long j6) {
+            BackpressureHelper.add(this.requested, j6);
+            drain();
+        }
+    }
+
+    public FlowableSwitchMapSingle(Flowable<T> flowable, Function<? super T, ? extends SingleSource<? extends R>> function, boolean z6) {
+        this.source = flowable;
+        this.mapper = function;
+        this.delayErrors = z6;
+    }
+
+    @Override // io.reactivex.Flowable
+    public void subscribeActual(InterfaceC7917c interfaceC7917c) {
+        this.source.subscribe((FlowableSubscriber) new SwitchMapSingleSubscriber(interfaceC7917c, this.mapper, this.delayErrors));
+    }
+}

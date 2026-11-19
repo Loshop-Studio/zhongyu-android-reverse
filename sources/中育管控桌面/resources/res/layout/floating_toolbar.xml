@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/img_linear" android:background="@drawable/service_gradient_bg_right" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_screen_turn_open" android:padding="@dimen/view_4" android:layout_width="@dimen/view_20" android:layout_height="@dimen/view_20" android:src="@drawable/screen_turn_open_right" />
+    <LinearLayout android:id="@id/linear_menu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_arrow_left" android:padding="@dimen/view_4" android:layout_width="@dimen/view_20" android:layout_height="@dimen/view_20" android:src="@drawable/screen_turn_close_right" />
+        <ImageView android:id="@id/img_screen_shot" android:padding="@dimen/view_4" android:layout_width="@dimen/view_20" android:layout_height="@dimen/view_20" android:src="@drawable/screen_take" />
+        <ImageView android:id="@id/img_arrow_right" android:padding="@dimen/view_4" android:visibility="gone" android:layout_width="@dimen/view_20" android:layout_height="@dimen/view_20" android:src="@drawable/screen_turn_close_left" />
+    </LinearLayout>
+</LinearLayout>
