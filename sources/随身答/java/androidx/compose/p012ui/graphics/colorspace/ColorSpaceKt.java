@@ -1,0 +1,244 @@
+package androidx.compose.p012ui.graphics.colorspace;
+
+import androidx.camera.video.AudioStats;
+import androidx.collection.MutableIntObjectMap;
+import androidx.compose.p012ui.graphics.colorspace.ColorModel;
+import androidx.compose.p012ui.graphics.colorspace.Connector;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.jvm.JvmOverloads;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@Metadata(m13412d1 = {"\u0000F\n\u0000\n\u0002\u0010\u0006\n\u0002\b\b\n\u0002\u0010\u0014\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u0007\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a8\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u00012\u0006\u0010\u0004\u001a\u00020\u00012\u0006\u0010\u0005\u001a\u00020\u00012\u0006\u0010\u0006\u001a\u00020\u00012\u0006\u0010\u0007\u001a\u00020\u0001H\u0000\u001a8\u0010\b\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u00012\u0006\u0010\u0004\u001a\u00020\u00012\u0006\u0010\u0005\u001a\u00020\u00012\u0006\u0010\u0006\u001a\u00020\u00012\u0006\u0010\u0007\u001a\u00020\u0001H\u0000\u001a \u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\nH\u0000\u001a\u001a\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0003\u001a\u00020\u00102\b\u0010\u0004\u001a\u0004\u0018\u00010\u0010H\u0000\u001a\u0018\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0003\u001a\u00020\u00112\u0006\u0010\u0004\u001a\u00020\u0011H\u0000\u001a\u0018\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0003\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\nH\u0000\u001a*\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u0018H\u0002ø\u0001\u0000¢\u0006\u0004\b\u0019\u0010\u001a\u001a\u0010\u0010\u001b\u001a\u00020\n2\u0006\u0010\u001c\u001a\u00020\nH\u0000\u001a\u0018\u0010\u001d\u001a\u00020\n2\u0006\u0010\u001e\u001a\u00020\n2\u0006\u0010\u001f\u001a\u00020\nH\u0000\u001a\u0018\u0010 \u001a\u00020\n2\u0006\u0010\u001e\u001a\u00020\n2\u0006\u0010\u001f\u001a\u00020\nH\u0000\u001a\u0018\u0010!\u001a\u00020\n2\u0006\u0010\u001e\u001a\u00020\n2\u0006\u0010\u001f\u001a\u00020\nH\u0000\u001a)\u0010\"\u001a\u00020#2\u0006\u0010\u001e\u001a\u00020\n2\u0006\u0010$\u001a\u00020#2\u0006\u0010%\u001a\u00020#2\u0006\u0010&\u001a\u00020#H\u0080\b\u001a)\u0010'\u001a\u00020#2\u0006\u0010\u001e\u001a\u00020\n2\u0006\u0010$\u001a\u00020#2\u0006\u0010%\u001a\u00020#2\u0006\u0010&\u001a\u00020#H\u0080\b\u001a)\u0010(\u001a\u00020#2\u0006\u0010\u001e\u001a\u00020\n2\u0006\u0010$\u001a\u00020#2\u0006\u0010%\u001a\u00020#2\u0006\u0010&\u001a\u00020#H\u0080\b\u001a8\u0010)\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u00012\u0006\u0010\u0004\u001a\u00020\u00012\u0006\u0010\u0005\u001a\u00020\u00012\u0006\u0010\u0006\u001a\u00020\u00012\u0006\u0010\u0007\u001a\u00020\u0001H\u0000\u001aH\u0010)\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u00012\u0006\u0010\u0004\u001a\u00020\u00012\u0006\u0010\u0005\u001a\u00020\u00012\u0006\u0010\u0006\u001a\u00020\u00012\u0006\u0010*\u001a\u00020\u00012\u0006\u0010+\u001a\u00020\u00012\u0006\u0010\u0007\u001a\u00020\u0001H\u0000\u001a8\u0010,\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u00012\u0006\u0010\u0004\u001a\u00020\u00012\u0006\u0010\u0005\u001a\u00020\u00012\u0006\u0010\u0006\u001a\u00020\u00012\u0006\u0010\u0007\u001a\u00020\u0001H\u0000\u001aH\u0010,\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u00012\u0006\u0010\u0004\u001a\u00020\u00012\u0006\u0010\u0005\u001a\u00020\u00012\u0006\u0010\u0006\u001a\u00020\u00012\u0006\u0010*\u001a\u00020\u00012\u0006\u0010+\u001a\u00020\u00012\u0006\u0010\u0007\u001a\u00020\u0001H\u0000\u001a\u001e\u0010-\u001a\u00020\u0015*\u00020\u00152\u0006\u0010.\u001a\u00020\u00112\b\b\u0002\u0010/\u001a\u000200H\u0007\u001a(\u00101\u001a\u00020\u0013*\u00020\u00152\b\b\u0002\u0010\u0016\u001a\u00020\u00152\b\b\u0002\u0010\u0017\u001a\u00020\u0018ø\u0001\u0000¢\u0006\u0004\b2\u0010\u001a\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u00063"}, m13413d2 = {"absRcpResponse", "", "x", "a", "b", "c", "d", "g", "absResponse", "chromaticAdaptation", "", "matrix", "srcWhitePoint", "dstWhitePoint", "compare", "", "Landroidx/compose/ui/graphics/colorspace/TransferParameters;", "Landroidx/compose/ui/graphics/colorspace/WhitePoint;", "createConnector", "Landroidx/compose/ui/graphics/colorspace/Connector;", "source", "Landroidx/compose/ui/graphics/colorspace/ColorSpace;", "destination", "intent", "Landroidx/compose/ui/graphics/colorspace/RenderIntent;", "createConnector-YBCOT_4", "(Landroidx/compose/ui/graphics/colorspace/ColorSpace;Landroidx/compose/ui/graphics/colorspace/ColorSpace;I)Landroidx/compose/ui/graphics/colorspace/Connector;", "inverse3x3", "m", "mul3x3", "lhs", "rhs", "mul3x3Diag", "mul3x3Float3", "mul3x3Float3_0", "", "r0", "r1", "r2", "mul3x3Float3_1", "mul3x3Float3_2", "rcpResponse", "e", "f", "response", "adapt", "whitePoint", "adaptation", "Landroidx/compose/ui/graphics/colorspace/Adaptation;", "connect", "connect-YBCOT_4", "ui-graphics_release"}, m13414k = 2, m13415mv = {1, 9, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@SourceDebugExtension({"SMAP\nColorSpace.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ColorSpace.kt\nandroidx/compose/ui/graphics/colorspace/ColorSpaceKt\n+ 2 Connector.kt\nandroidx/compose/ui/graphics/colorspace/ConnectorKt\n+ 3 IntObjectMap.kt\nandroidx/collection/MutableIntObjectMap\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,717:1\n326#2:718\n679#3:719\n1#4:720\n*S KotlinDebug\n*F\n+ 1 ColorSpace.kt\nandroidx/compose/ui/graphics/colorspace/ColorSpaceKt\n*L\n401#1:718\n401#1:719\n401#1:720\n*E\n"})
+/* loaded from: classes2.dex */
+public final class ColorSpaceKt {
+    public static final double absRcpResponse(double d10, double d11, double d12, double d13, double d14, double d15) {
+        return Math.copySign(rcpResponse(d10 < AudioStats.AUDIO_AMPLITUDE_NONE ? -d10 : d10, d11, d12, d13, d14, d15), d10);
+    }
+
+    public static final double absResponse(double d10, double d11, double d12, double d13, double d14, double d15) {
+        return Math.copySign(response(d10 < AudioStats.AUDIO_AMPLITUDE_NONE ? -d10 : d10, d11, d12, d13, d14, d15), d10);
+    }
+
+    @JvmOverloads
+    public static final ColorSpace adapt(ColorSpace colorSpace, WhitePoint whitePoint) {
+        return adapt$default(colorSpace, whitePoint, null, 2, null);
+    }
+
+    public static /* synthetic */ ColorSpace adapt$default(ColorSpace colorSpace, WhitePoint whitePoint, Adaptation adaptation, int i9, Object obj) {
+        if ((i9 & 2) != 0) {
+            adaptation = Adaptation.INSTANCE.getBradford();
+        }
+        return adapt(colorSpace, whitePoint, adaptation);
+    }
+
+    public static final float[] chromaticAdaptation(float[] fArr, float[] fArr2, float[] fArr3) {
+        float[] fArrMul3x3Float3 = mul3x3Float3(fArr, fArr2);
+        float[] fArrMul3x3Float32 = mul3x3Float3(fArr, fArr3);
+        return mul3x3(inverse3x3(fArr), mul3x3Diag(new float[]{fArrMul3x3Float32[0] / fArrMul3x3Float3[0], fArrMul3x3Float32[1] / fArrMul3x3Float3[1], fArrMul3x3Float32[2] / fArrMul3x3Float3[2]}, fArr));
+    }
+
+    public static final boolean compare(TransferParameters transferParameters, TransferParameters transferParameters2) {
+        return transferParameters2 != null && Math.abs(transferParameters.getA() - transferParameters2.getA()) < 0.001d && Math.abs(transferParameters.getB() - transferParameters2.getB()) < 0.001d && Math.abs(transferParameters.getC() - transferParameters2.getC()) < 0.001d && Math.abs(transferParameters.getD() - transferParameters2.getD()) < 0.002d && Math.abs(transferParameters.getE() - transferParameters2.getE()) < 0.001d && Math.abs(transferParameters.getF() - transferParameters2.getF()) < 0.001d && Math.abs(transferParameters.getGamma() - transferParameters2.getGamma()) < 0.001d;
+    }
+
+    /* renamed from: connect-YBCOT_4, reason: not valid java name */
+    public static final Connector m21827connectYBCOT_4(ColorSpace colorSpace, ColorSpace colorSpace2, int i9) {
+        int id$ui_graphics_release = colorSpace.getId();
+        int id$ui_graphics_release2 = colorSpace2.getId();
+        if ((id$ui_graphics_release | id$ui_graphics_release2) < 0) {
+            return m21829createConnectorYBCOT_4(colorSpace, colorSpace2, i9);
+        }
+        MutableIntObjectMap<Connector> connectors = ConnectorKt.getConnectors();
+        int i10 = id$ui_graphics_release | (id$ui_graphics_release2 << 6) | (i9 << 12);
+        Connector connectorM21829createConnectorYBCOT_4 = connectors.get(i10);
+        if (connectorM21829createConnectorYBCOT_4 == null) {
+            connectorM21829createConnectorYBCOT_4 = m21829createConnectorYBCOT_4(colorSpace, colorSpace2, i9);
+            connectors.set(i10, connectorM21829createConnectorYBCOT_4);
+        }
+        return connectorM21829createConnectorYBCOT_4;
+    }
+
+    /* renamed from: connect-YBCOT_4$default, reason: not valid java name */
+    public static /* synthetic */ Connector m21828connectYBCOT_4$default(ColorSpace colorSpace, ColorSpace colorSpace2, int i9, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            colorSpace2 = ColorSpaces.INSTANCE.getSrgb();
+        }
+        if ((i10 & 2) != 0) {
+            i9 = RenderIntent.INSTANCE.m21844getPerceptualuksYyKA();
+        }
+        return m21827connectYBCOT_4(colorSpace, colorSpace2, i9);
+    }
+
+    /* renamed from: createConnector-YBCOT_4, reason: not valid java name */
+    private static final Connector m21829createConnectorYBCOT_4(ColorSpace colorSpace, ColorSpace colorSpace2, int i9) {
+        if (colorSpace == colorSpace2) {
+            return Connector.INSTANCE.identity$ui_graphics_release(colorSpace);
+        }
+        long jM21825getModelxdoWZVw = colorSpace.getModel();
+        ColorModel.Companion companion = ColorModel.INSTANCE;
+        DefaultConstructorMarker defaultConstructorMarker = null;
+        if (!ColorModel.m21816equalsimpl0(jM21825getModelxdoWZVw, companion.m21823getRgbxdoWZVw()) || !ColorModel.m21816equalsimpl0(colorSpace2.getModel(), companion.m21823getRgbxdoWZVw())) {
+            return new Connector(colorSpace, colorSpace2, i9, defaultConstructorMarker);
+        }
+        Intrinsics.checkNotNull(colorSpace, "null cannot be cast to non-null type androidx.compose.ui.graphics.colorspace.Rgb");
+        Intrinsics.checkNotNull(colorSpace2, "null cannot be cast to non-null type androidx.compose.ui.graphics.colorspace.Rgb");
+        return new Connector.RgbConnector((Rgb) colorSpace, (Rgb) colorSpace2, i9, defaultConstructorMarker);
+    }
+
+    public static final float[] inverse3x3(float[] fArr) {
+        float f10 = fArr[0];
+        float f11 = fArr[3];
+        float f12 = fArr[6];
+        float f13 = fArr[1];
+        float f14 = fArr[4];
+        float f15 = fArr[7];
+        float f16 = fArr[2];
+        float f17 = fArr[5];
+        float f18 = fArr[8];
+        float f19 = (f14 * f18) - (f15 * f17);
+        float f20 = (f15 * f16) - (f13 * f18);
+        float f21 = (f13 * f17) - (f14 * f16);
+        float f22 = (f10 * f19) + (f11 * f20) + (f12 * f21);
+        float[] fArr2 = new float[fArr.length];
+        fArr2[0] = f19 / f22;
+        fArr2[1] = f20 / f22;
+        fArr2[2] = f21 / f22;
+        fArr2[3] = ((f12 * f17) - (f11 * f18)) / f22;
+        fArr2[4] = ((f18 * f10) - (f12 * f16)) / f22;
+        fArr2[5] = ((f16 * f11) - (f17 * f10)) / f22;
+        fArr2[6] = ((f11 * f15) - (f12 * f14)) / f22;
+        fArr2[7] = ((f12 * f13) - (f15 * f10)) / f22;
+        fArr2[8] = ((f10 * f14) - (f11 * f13)) / f22;
+        return fArr2;
+    }
+
+    public static final float[] mul3x3(float[] fArr, float[] fArr2) {
+        float[] fArr3 = new float[9];
+        if (fArr.length < 9 || fArr2.length < 9) {
+            return fArr3;
+        }
+        float f10 = fArr[0] * fArr2[0];
+        float f11 = fArr[3];
+        float f12 = fArr2[1];
+        float f13 = fArr[6];
+        float f14 = fArr2[2];
+        fArr3[0] = f10 + (f11 * f12) + (f13 * f14);
+        float f15 = fArr[1];
+        float f16 = fArr2[0];
+        float f17 = fArr[4];
+        float f18 = fArr[7];
+        fArr3[1] = (f15 * f16) + (f12 * f17) + (f18 * f14);
+        float f19 = fArr[2] * f16;
+        float f20 = fArr[5];
+        float f21 = f19 + (fArr2[1] * f20);
+        float f22 = fArr[8];
+        fArr3[2] = f21 + (f14 * f22);
+        float f23 = fArr[0];
+        float f24 = fArr2[3] * f23;
+        float f25 = fArr2[4];
+        float f26 = f24 + (f11 * f25);
+        float f27 = fArr2[5];
+        fArr3[3] = f26 + (f13 * f27);
+        float f28 = fArr[1];
+        float f29 = fArr2[3];
+        fArr3[4] = (f28 * f29) + (f17 * f25) + (f18 * f27);
+        float f30 = fArr[2];
+        fArr3[5] = (f29 * f30) + (f20 * fArr2[4]) + (f27 * f22);
+        float f31 = f23 * fArr2[6];
+        float f32 = fArr[3];
+        float f33 = fArr2[7];
+        float f34 = f31 + (f32 * f33);
+        float f35 = fArr2[8];
+        fArr3[6] = f34 + (f13 * f35);
+        float f36 = fArr2[6];
+        fArr3[7] = (f28 * f36) + (fArr[4] * f33) + (f18 * f35);
+        fArr3[8] = (f30 * f36) + (fArr[5] * fArr2[7]) + (f22 * f35);
+        return fArr3;
+    }
+
+    public static final float[] mul3x3Diag(float[] fArr, float[] fArr2) {
+        float f10 = fArr[0];
+        float f11 = fArr2[0] * f10;
+        float f12 = fArr[1];
+        float f13 = fArr2[1] * f12;
+        float f14 = fArr[2];
+        return new float[]{f11, f13, fArr2[2] * f14, fArr2[3] * f10, fArr2[4] * f12, fArr2[5] * f14, f10 * fArr2[6], f12 * fArr2[7], f14 * fArr2[8]};
+    }
+
+    public static final float[] mul3x3Float3(float[] fArr, float[] fArr2) {
+        if (fArr.length < 9 || fArr2.length < 3) {
+            return fArr2;
+        }
+        float f10 = fArr2[0];
+        float f11 = fArr2[1];
+        float f12 = fArr2[2];
+        fArr2[0] = (fArr[0] * f10) + (fArr[3] * f11) + (fArr[6] * f12);
+        fArr2[1] = (fArr[1] * f10) + (fArr[4] * f11) + (fArr[7] * f12);
+        fArr2[2] = (fArr[2] * f10) + (fArr[5] * f11) + (fArr[8] * f12);
+        return fArr2;
+    }
+
+    public static final float mul3x3Float3_0(float[] fArr, float f10, float f11, float f12) {
+        return (fArr[0] * f10) + (fArr[3] * f11) + (fArr[6] * f12);
+    }
+
+    public static final float mul3x3Float3_1(float[] fArr, float f10, float f11, float f12) {
+        return (fArr[1] * f10) + (fArr[4] * f11) + (fArr[7] * f12);
+    }
+
+    public static final float mul3x3Float3_2(float[] fArr, float f10, float f11, float f12) {
+        return (fArr[2] * f10) + (fArr[5] * f11) + (fArr[8] * f12);
+    }
+
+    public static final double rcpResponse(double d10, double d11, double d12, double d13, double d14, double d15) {
+        return d10 >= d14 * d13 ? (Math.pow(d10, 1.0d / d15) - d12) / d11 : d10 / d13;
+    }
+
+    public static final double response(double d10, double d11, double d12, double d13, double d14, double d15) {
+        return d10 >= d14 ? Math.pow((d11 * d10) + d12, d15) : d13 * d10;
+    }
+
+    @JvmOverloads
+    public static final ColorSpace adapt(ColorSpace colorSpace, WhitePoint whitePoint, Adaptation adaptation) {
+        if (ColorModel.m21816equalsimpl0(colorSpace.getModel(), ColorModel.INSTANCE.m21823getRgbxdoWZVw())) {
+            Intrinsics.checkNotNull(colorSpace, "null cannot be cast to non-null type androidx.compose.ui.graphics.colorspace.Rgb");
+            Rgb rgb = (Rgb) colorSpace;
+            if (!compare(rgb.getWhitePoint(), whitePoint)) {
+                return new Rgb(rgb, mul3x3(chromaticAdaptation(adaptation.getTransform(), rgb.getWhitePoint().toXyz$ui_graphics_release(), whitePoint.toXyz$ui_graphics_release()), rgb.getTransform()), whitePoint);
+            }
+        }
+        return colorSpace;
+    }
+
+    public static final double rcpResponse(double d10, double d11, double d12, double d13, double d14, double d15, double d16, double d17) {
+        return d10 >= d14 * d13 ? (Math.pow(d10 - d15, 1.0d / d17) - d12) / d11 : (d10 - d16) / d13;
+    }
+
+    public static final double response(double d10, double d11, double d12, double d13, double d14, double d15, double d16, double d17) {
+        return d10 >= d14 ? Math.pow((d11 * d10) + d12, d17) + d15 : (d13 * d10) + d16;
+    }
+
+    public static final boolean compare(WhitePoint whitePoint, WhitePoint whitePoint2) {
+        if (whitePoint == whitePoint2) {
+            return true;
+        }
+        return Math.abs(whitePoint.getX() - whitePoint2.getX()) < 0.001f && Math.abs(whitePoint.getY() - whitePoint2.getY()) < 0.001f;
+    }
+
+    public static final boolean compare(float[] fArr, float[] fArr2) {
+        if (fArr == fArr2) {
+            return true;
+        }
+        int length = fArr.length;
+        for (int i9 = 0; i9 < length; i9++) {
+            if (Float.compare(fArr[i9], fArr2[i9]) != 0 && Math.abs(fArr[i9] - fArr2[i9]) > 0.001f) {
+                return false;
+            }
+        }
+        return true;
+    }
+}

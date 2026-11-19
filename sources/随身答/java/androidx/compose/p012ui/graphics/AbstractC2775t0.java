@@ -1,0 +1,9 @@
+package androidx.compose.p012ui.graphics;
+
+/* renamed from: androidx.compose.ui.graphics.t0 */
+/* loaded from: classes2.dex */
+public abstract /* synthetic */ class AbstractC2775t0 {
+    /* renamed from: a */
+    public static /* synthetic */ void m1163a() {
+    }
+}

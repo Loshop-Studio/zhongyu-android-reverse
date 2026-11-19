@@ -1,0 +1,290 @@
+package androidx.core;
+
+/* renamed from: androidx.core.R */
+/* loaded from: classes2.dex */
+public final class C3266R {
+
+    /* renamed from: androidx.core.R$attr */
+    public static final class attr {
+        public static int alpha = 2130968667;
+        public static int font = 2130969444;
+        public static int fontProviderAuthority = 2130969447;
+        public static int fontProviderCerts = 2130969448;
+        public static int fontProviderFallbackQuery = 2130969449;
+        public static int fontProviderFetchStrategy = 2130969450;
+        public static int fontProviderFetchTimeout = 2130969451;
+        public static int fontProviderPackage = 2130969452;
+        public static int fontProviderQuery = 2130969453;
+        public static int fontProviderSystemFontFamily = 2130969454;
+        public static int fontStyle = 2130969455;
+        public static int fontVariationSettings = 2130969456;
+        public static int fontWeight = 2130969457;
+        public static int lStar = 2130969609;
+        public static int nestedScrollViewStyle = 2130970041;
+        public static int queryPatterns = 2130970138;
+        public static int shortcutMatchRequired = 2130970472;
+        public static int ttcIndex = 2130970864;
+
+        private attr() {
+        }
+    }
+
+    /* renamed from: androidx.core.R$color */
+    public static final class color {
+        public static int androidx_core_ripple_material_light = 2131099675;
+        public static int androidx_core_secondary_text_default_material_light = 2131099676;
+        public static int call_notification_answer_color = 2131099717;
+        public static int call_notification_decline_color = 2131099718;
+        public static int notification_action_color_filter = 2131100492;
+        public static int notification_icon_bg_color = 2131100493;
+
+        private color() {
+        }
+    }
+
+    /* renamed from: androidx.core.R$dimen */
+    public static final class dimen {
+        public static int compat_button_inset_horizontal_material = 2131165271;
+        public static int compat_button_inset_vertical_material = 2131165272;
+        public static int compat_button_padding_horizontal_material = 2131165273;
+        public static int compat_button_padding_vertical_material = 2131165274;
+        public static int compat_control_corner_material = 2131165275;
+        public static int compat_notification_large_icon_max_height = 2131165276;
+        public static int compat_notification_large_icon_max_width = 2131165277;
+        public static int notification_action_icon_size = 2131166141;
+        public static int notification_action_text_size = 2131166142;
+        public static int notification_big_circle_margin = 2131166143;
+        public static int notification_content_margin_start = 2131166144;
+        public static int notification_large_icon_height = 2131166145;
+        public static int notification_large_icon_width = 2131166146;
+        public static int notification_main_column_padding_top = 2131166147;
+        public static int notification_media_narrow_margin = 2131166148;
+        public static int notification_right_icon_size = 2131166149;
+        public static int notification_right_side_padding_top = 2131166150;
+        public static int notification_small_icon_background_padding = 2131166151;
+        public static int notification_small_icon_size_as_large = 2131166152;
+        public static int notification_subtext_size = 2131166153;
+        public static int notification_top_pad = 2131166154;
+        public static int notification_top_pad_large_text = 2131166155;
+
+        private dimen() {
+        }
+    }
+
+    /* renamed from: androidx.core.R$drawable */
+    public static final class drawable {
+        public static int ic_call_answer = 2131230919;
+        public static int ic_call_answer_low = 2131230920;
+        public static int ic_call_answer_video = 2131230921;
+        public static int ic_call_answer_video_low = 2131230922;
+        public static int ic_call_decline = 2131230923;
+        public static int ic_call_decline_low = 2131230924;
+        public static int notification_action_background = 2131231057;
+        public static int notification_bg = 2131231058;
+        public static int notification_bg_low = 2131231059;
+        public static int notification_bg_low_normal = 2131231060;
+        public static int notification_bg_low_pressed = 2131231061;
+        public static int notification_bg_normal = 2131231062;
+        public static int notification_bg_normal_pressed = 2131231063;
+        public static int notification_icon_background = 2131231064;
+        public static int notification_oversize_large_icon_bg = 2131231065;
+        public static int notification_template_icon_bg = 2131231066;
+        public static int notification_template_icon_low_bg = 2131231067;
+        public static int notification_tile_bg = 2131231068;
+        public static int notify_panel_notification_icon_bg = 2131231069;
+
+        private drawable() {
+        }
+    }
+
+    /* renamed from: androidx.core.R$id */
+    public static final class id {
+        public static int accessibility_action_clickable_span = 2131296305;
+        public static int accessibility_custom_action_0 = 2131296306;
+        public static int accessibility_custom_action_1 = 2131296307;
+        public static int accessibility_custom_action_10 = 2131296308;
+        public static int accessibility_custom_action_11 = 2131296309;
+        public static int accessibility_custom_action_12 = 2131296310;
+        public static int accessibility_custom_action_13 = 2131296311;
+        public static int accessibility_custom_action_14 = 2131296312;
+        public static int accessibility_custom_action_15 = 2131296313;
+        public static int accessibility_custom_action_16 = 2131296314;
+        public static int accessibility_custom_action_17 = 2131296315;
+        public static int accessibility_custom_action_18 = 2131296316;
+        public static int accessibility_custom_action_19 = 2131296317;
+        public static int accessibility_custom_action_2 = 2131296318;
+        public static int accessibility_custom_action_20 = 2131296319;
+        public static int accessibility_custom_action_21 = 2131296320;
+        public static int accessibility_custom_action_22 = 2131296321;
+        public static int accessibility_custom_action_23 = 2131296322;
+        public static int accessibility_custom_action_24 = 2131296323;
+        public static int accessibility_custom_action_25 = 2131296324;
+        public static int accessibility_custom_action_26 = 2131296325;
+        public static int accessibility_custom_action_27 = 2131296326;
+        public static int accessibility_custom_action_28 = 2131296327;
+        public static int accessibility_custom_action_29 = 2131296328;
+        public static int accessibility_custom_action_3 = 2131296329;
+        public static int accessibility_custom_action_30 = 2131296330;
+        public static int accessibility_custom_action_31 = 2131296331;
+        public static int accessibility_custom_action_4 = 2131296332;
+        public static int accessibility_custom_action_5 = 2131296333;
+        public static int accessibility_custom_action_6 = 2131296334;
+        public static int accessibility_custom_action_7 = 2131296335;
+        public static int accessibility_custom_action_8 = 2131296336;
+        public static int accessibility_custom_action_9 = 2131296337;
+        public static int action_container = 2131296351;
+        public static int action_divider = 2131296353;
+        public static int action_image = 2131296354;
+        public static int action_text = 2131296360;
+        public static int actions = 2131296363;
+        public static int async = 2131296386;
+        public static int blocking = 2131296401;
+        public static int chronometer = 2131296464;
+        public static int dialog_button = 2131296548;
+        public static int edit_text_id = 2131296586;
+        public static int forever = 2131296638;
+        public static int hide_ime_id = 2131296679;
+        public static int icon = 2131296696;
+        public static int icon_group = 2131296698;
+        public static int info = 2131296721;
+        public static int italic = 2131296726;
+        public static int line1 = 2131296798;
+        public static int line3 = 2131296799;
+        public static int normal = 2131296937;
+        public static int notification_background = 2131296939;
+        public static int notification_main_column = 2131296940;
+        public static int notification_main_column_container = 2131296941;
+        public static int right_icon = 2131297050;
+        public static int right_side = 2131297051;
+        public static int tag_accessibility_actions = 2131297176;
+        public static int tag_accessibility_clickable_spans = 2131297177;
+        public static int tag_accessibility_heading = 2131297178;
+        public static int tag_accessibility_pane_title = 2131297179;
+        public static int tag_compat_insets_dispatch = 2131297180;
+        public static int tag_on_apply_window_listener = 2131297181;
+        public static int tag_on_receive_content_listener = 2131297182;
+        public static int tag_on_receive_content_mime_types = 2131297183;
+        public static int tag_screen_reader_focusable = 2131297184;
+        public static int tag_state_description = 2131297185;
+        public static int tag_system_bar_state_monitor = 2131297186;
+        public static int tag_transition_group = 2131297187;
+        public static int tag_unhandled_key_event_manager = 2131297188;
+        public static int tag_unhandled_key_listeners = 2131297189;
+        public static int tag_window_insets_animation_callback = 2131297190;
+        public static int text = 2131297192;
+        public static int text2 = 2131297193;
+        public static int time = 2131297217;
+        public static int title = 2131297221;
+
+        private id() {
+        }
+    }
+
+    /* renamed from: androidx.core.R$integer */
+    public static final class integer {
+        public static int status_bar_notification_info_maxnum = 2131361862;
+
+        private integer() {
+        }
+    }
+
+    /* renamed from: androidx.core.R$layout */
+    public static final class layout {
+        public static int custom_dialog = 2131492906;
+        public static int ime_base_split_test_activity = 2131492952;
+        public static int ime_secondary_split_test_activity = 2131492953;
+        public static int notification_action = 2131493017;
+        public static int notification_action_tombstone = 2131493018;
+        public static int notification_template_custom_big = 2131493025;
+        public static int notification_template_icon_group = 2131493026;
+        public static int notification_template_part_chronometer = 2131493030;
+        public static int notification_template_part_time = 2131493031;
+
+        private layout() {
+        }
+    }
+
+    /* renamed from: androidx.core.R$string */
+    public static final class string {
+        public static int call_notification_answer_action = 2131886125;
+        public static int call_notification_answer_video_action = 2131886126;
+        public static int call_notification_decline_action = 2131886127;
+        public static int call_notification_hang_up_action = 2131886128;
+        public static int call_notification_incoming_text = 2131886129;
+        public static int call_notification_ongoing_text = 2131886130;
+        public static int call_notification_screening_text = 2131886131;
+        public static int status_bar_notification_info_overflow = 2131886589;
+
+        private string() {
+        }
+    }
+
+    /* renamed from: androidx.core.R$style */
+    public static final class style {
+        public static int TextAppearance_Compat_Notification = 2131952210;
+        public static int TextAppearance_Compat_Notification_Info = 2131952211;
+        public static int TextAppearance_Compat_Notification_Line2 = 2131952213;
+        public static int TextAppearance_Compat_Notification_Time = 2131952216;
+        public static int TextAppearance_Compat_Notification_Title = 2131952218;
+        public static int Widget_Compat_NotificationActionContainer = 2131952595;
+        public static int Widget_Compat_NotificationActionText = 2131952596;
+
+        private style() {
+        }
+    }
+
+    /* renamed from: androidx.core.R$styleable */
+    public static final class styleable {
+        public static int Capability_queryPatterns = 0;
+        public static int Capability_shortcutMatchRequired = 1;
+        public static int ColorStateListItem_alpha = 3;
+        public static int ColorStateListItem_android_alpha = 1;
+        public static int ColorStateListItem_android_color = 0;
+        public static int ColorStateListItem_android_lStar = 2;
+        public static int ColorStateListItem_lStar = 4;
+        public static int FontFamilyFont_android_font = 0;
+        public static int FontFamilyFont_android_fontStyle = 2;
+        public static int FontFamilyFont_android_fontVariationSettings = 4;
+        public static int FontFamilyFont_android_fontWeight = 1;
+        public static int FontFamilyFont_android_ttcIndex = 3;
+        public static int FontFamilyFont_font = 5;
+        public static int FontFamilyFont_fontStyle = 6;
+        public static int FontFamilyFont_fontVariationSettings = 7;
+        public static int FontFamilyFont_fontWeight = 8;
+        public static int FontFamilyFont_ttcIndex = 9;
+        public static int FontFamily_fontProviderAuthority = 0;
+        public static int FontFamily_fontProviderCerts = 1;
+        public static int FontFamily_fontProviderFallbackQuery = 2;
+        public static int FontFamily_fontProviderFetchStrategy = 3;
+        public static int FontFamily_fontProviderFetchTimeout = 4;
+        public static int FontFamily_fontProviderPackage = 5;
+        public static int FontFamily_fontProviderQuery = 6;
+        public static int FontFamily_fontProviderSystemFontFamily = 7;
+        public static int GradientColorItem_android_color = 0;
+        public static int GradientColorItem_android_offset = 1;
+        public static int GradientColor_android_centerColor = 7;
+        public static int GradientColor_android_centerX = 3;
+        public static int GradientColor_android_centerY = 4;
+        public static int GradientColor_android_endColor = 1;
+        public static int GradientColor_android_endX = 10;
+        public static int GradientColor_android_endY = 11;
+        public static int GradientColor_android_gradientRadius = 5;
+        public static int GradientColor_android_startColor = 0;
+        public static int GradientColor_android_startX = 8;
+        public static int GradientColor_android_startY = 9;
+        public static int GradientColor_android_tileMode = 6;
+        public static int GradientColor_android_type = 2;
+        public static int[] Capability = {com.zykj.student.dialogue.R.attr.queryPatterns, com.zykj.student.dialogue.R.attr.shortcutMatchRequired};
+        public static int[] ColorStateListItem = {android.R.attr.color, android.R.attr.alpha, android.R.attr.lStar, com.zykj.student.dialogue.R.attr.alpha, com.zykj.student.dialogue.R.attr.lStar};
+        public static int[] FontFamily = {com.zykj.student.dialogue.R.attr.fontProviderAuthority, com.zykj.student.dialogue.R.attr.fontProviderCerts, com.zykj.student.dialogue.R.attr.fontProviderFallbackQuery, com.zykj.student.dialogue.R.attr.fontProviderFetchStrategy, com.zykj.student.dialogue.R.attr.fontProviderFetchTimeout, com.zykj.student.dialogue.R.attr.fontProviderPackage, com.zykj.student.dialogue.R.attr.fontProviderQuery, com.zykj.student.dialogue.R.attr.fontProviderSystemFontFamily};
+        public static int[] FontFamilyFont = {android.R.attr.font, android.R.attr.fontWeight, android.R.attr.fontStyle, android.R.attr.ttcIndex, android.R.attr.fontVariationSettings, com.zykj.student.dialogue.R.attr.font, com.zykj.student.dialogue.R.attr.fontStyle, com.zykj.student.dialogue.R.attr.fontVariationSettings, com.zykj.student.dialogue.R.attr.fontWeight, com.zykj.student.dialogue.R.attr.ttcIndex};
+        public static int[] GradientColor = {android.R.attr.startColor, android.R.attr.endColor, android.R.attr.type, android.R.attr.centerX, android.R.attr.centerY, android.R.attr.gradientRadius, android.R.attr.tileMode, android.R.attr.centerColor, android.R.attr.startX, android.R.attr.startY, android.R.attr.endX, android.R.attr.endY};
+        public static int[] GradientColorItem = {android.R.attr.color, android.R.attr.offset};
+
+        private styleable() {
+        }
+    }
+
+    private C3266R() {
+    }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:background="@color/list_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.compose.ui.platform.ComposeView android:id="@id/compose_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+                <androidx.compose.ui.platform.ComposeView android:id="@id/compose_tab" android:layout_width="wrap_content" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/compose_title" />
+                <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager2" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/compose_tab" app:layout_constraintTop_toBottomOf="@id/compose_title" />
+                <ImageView android:id="@id/iv_ask" android:layout_width="@dimen/view_36" android:layout_height="@dimen/view_36" android:layout_marginBottom="@dimen/view_24" android:src="@mipmap/icon_home_ask" android:layout_marginEnd="@dimen/view_24" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <FrameLayout android:layout_gravity="end" android:id="@id/fl_drawer" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.compose.ui.platform.ComposeView android:id="@id/compose_drawer_subject" android:layout_width="wrap_content" android:layout_height="match_parent" />
+            <androidx.compose.ui.platform.ComposeView android:id="@id/compose_drawer_sort" android:layout_width="wrap_content" android:layout_height="match_parent" />
+            <androidx.compose.ui.platform.ComposeView android:id="@id/compose_drawer_filter" android:layout_width="wrap_content" android:layout_height="match_parent" />
+            <androidx.compose.ui.platform.ComposeView android:id="@id/compose_drawer_favorite_filter" android:layout_width="wrap_content" android:layout_height="match_parent" />
+        </FrameLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</FrameLayout>

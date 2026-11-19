@@ -1,0 +1,429 @@
+package androidx.datastore.core;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.datastore.core.SharedCounter;
+import androidx.exifinterface.media.ExifInterface;
+import java.io.File;
+import java.io.IOException;
+import kotlin.Lazy;
+import kotlin.LazyKt;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.Boxing;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.InlineMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.sync.Mutex;
+import kotlinx.coroutines.sync.MutexKt;
+
+@Metadata(m13412d1 = {"\u0000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0006\b\u0000\u0018\u0000 42\u00020\u0001:\u00014B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0010\u0010 \u001a\u00020\u00052\u0006\u0010!\u001a\u00020\bH\u0002J\u000e\u0010\"\u001a\u00020#H\u0096@¢\u0006\u0002\u0010$J\u000e\u0010%\u001a\u00020#H\u0096@¢\u0006\u0002\u0010$J2\u0010&\u001a\u0002H'\"\u0004\b\u0000\u0010'2\u001c\u0010(\u001a\u0018\b\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u0002H'0*\u0012\u0006\u0012\u0004\u0018\u00010+0)H\u0096@¢\u0006\u0002\u0010,J8\u0010-\u001a\u0002H'\"\u0004\b\u0000\u0010'2\"\u0010(\u001a\u001e\b\u0001\u0012\u0004\u0012\u00020/\u0012\n\u0012\b\u0012\u0004\u0012\u0002H'0*\u0012\u0006\u0012\u0004\u0018\u00010+0.H\u0096@¢\u0006\u0002\u00100J:\u00101\u001a\u0002H'\"\u0004\b\u0000\u0010'2$\b\u0004\u0010(\u001a\u001e\b\u0001\u0012\u0004\u0012\u00020\u0011\u0012\n\u0012\b\u0012\u0004\u0012\u0002H'0*\u0012\u0006\u0012\u0004\u0018\u00010+0.H\u0082H¢\u0006\u0002\u00100J\f\u00102\u001a\u00020\u001d*\u00020\u0005H\u0002J\f\u00103\u001a\u00020\u001d*\u00020\u0005H\u0002R\u000e\u0010\u0007\u001a\u00020\bX\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\bX\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\bX\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0004\u001a\u00020\u0005X\u0084\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u001b\u0010\u0012\u001a\u00020\u00058BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0013\u0010\fR\u001b\u0010\u0016\u001a\u00020\u00118BX\u0082\u0084\u0002¢\u0006\f\u001a\u0004\b\u0019\u0010\u001a*\u0004\b\u0017\u0010\u0018R\u001a\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u001d0\u001cX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001f¨\u00065"}, m13413d2 = {"Landroidx/datastore/core/MultiProcessCoordinator;", "Landroidx/datastore/core/InterProcessCoordinator;", "context", "Lkotlin/coroutines/CoroutineContext;", "file", "Ljava/io/File;", "(Lkotlin/coroutines/CoroutineContext;Ljava/io/File;)V", "LOCK_ERROR_MESSAGE", "", "LOCK_SUFFIX", "VERSION_SUFFIX", "getFile", "()Ljava/io/File;", "inMemoryMutex", "Lkotlinx/coroutines/sync/Mutex;", "lazySharedCounter", "Lkotlin/Lazy;", "Landroidx/datastore/core/SharedCounter;", "lockFile", "getLockFile", "lockFile$delegate", "Lkotlin/Lazy;", "sharedCounter", "getSharedCounter$delegate", "(Landroidx/datastore/core/MultiProcessCoordinator;)Ljava/lang/Object;", "getSharedCounter", "()Landroidx/datastore/core/SharedCounter;", "updateNotifications", "Lkotlinx/coroutines/flow/Flow;", "", "getUpdateNotifications", "()Lkotlinx/coroutines/flow/Flow;", "fileWithSuffix", "suffix", "getVersion", "", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "incrementAndGetVersion", "lock", ExifInterface.GPS_DIRECTION_TRUE, "block", "Lkotlin/Function1;", "Lkotlin/coroutines/Continuation;", "", "(Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "tryLock", "Lkotlin/Function2;", "", "(Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "withLazyCounter", "createIfNotExists", "createParentDirectories", "Companion", "datastore-core_release"}, m13414k = 1, m13415mv = {1, 8, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@SourceDebugExtension({"SMAP\nMultiProcessCoordinator.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MultiProcessCoordinator.android.kt\nandroidx/datastore/core/MultiProcessCoordinator\n+ 2 Mutex.kt\nkotlinx/coroutines/sync/MutexKt\n+ 3 MutexUtils.kt\nandroidx/datastore/core/MutexUtilsKt\n*L\n1#1,205:1\n159#1,8:226\n159#1,8:234\n120#2,10:206\n32#3,10:216\n*S KotlinDebug\n*F\n+ 1 MultiProcessCoordinator.android.kt\nandroidx/datastore/core/MultiProcessCoordinator\n*L\n99#1:226,8\n106#1:234,8\n43#1:206,10\n60#1:216,10\n*E\n"})
+/* loaded from: classes2.dex */
+public final class MultiProcessCoordinator implements InterProcessCoordinator {
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+    private static final String DEADLOCK_ERROR_MESSAGE = "Resource deadlock would occur";
+    private static final long INITIAL_WAIT_MILLIS = 10;
+    private static final long MAX_WAIT_MILLIS = 60000;
+    private final String LOCK_ERROR_MESSAGE;
+    private final String LOCK_SUFFIX;
+    private final String VERSION_SUFFIX;
+    private final CoroutineContext context;
+    private final File file;
+    private final Mutex inMemoryMutex;
+    private final Lazy<SharedCounter> lazySharedCounter;
+
+    /* renamed from: lockFile$delegate, reason: from kotlin metadata */
+    private final Lazy lockFile;
+    private final Flow<Unit> updateNotifications;
+
+    @Metadata(m13412d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0016\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0082@¢\u0006\u0002\u0010\fR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0006X\u0082D¢\u0006\u0002\n\u0000¨\u0006\r"}, m13413d2 = {"Landroidx/datastore/core/MultiProcessCoordinator$Companion;", "", "()V", "DEADLOCK_ERROR_MESSAGE", "", "INITIAL_WAIT_MILLIS", "", "MAX_WAIT_MILLIS", "getExclusiveFileLockWithRetryIfDeadlock", "Ljava/nio/channels/FileLock;", "lockFileStream", "Ljava/io/FileOutputStream;", "(Ljava/io/FileOutputStream;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "datastore-core_release"}, m13414k = 1, m13415mv = {1, 8, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        /* JADX WARN: Removed duplicated region for block: B:29:0x0083  */
+        /* JADX WARN: Removed duplicated region for block: B:31:0x004b A[EXC_TOP_SPLITTER, SYNTHETIC] */
+        /* JADX WARN: Removed duplicated region for block: B:7:0x0013  */
+        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:25:0x007c -> B:27:0x007f). Please report as a decompilation issue!!! */
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public final java.lang.Object getExclusiveFileLockWithRetryIfDeadlock(java.io.FileOutputStream r14, kotlin.coroutines.Continuation<? super java.nio.channels.FileLock> r15) throws java.io.IOException {
+            /*
+                r13 = this;
+                boolean r0 = r15 instanceof androidx.datastore.core.C3772xe413854a
+                if (r0 == 0) goto L13
+                r0 = r15
+                androidx.datastore.core.MultiProcessCoordinator$Companion$getExclusiveFileLockWithRetryIfDeadlock$1 r0 = (androidx.datastore.core.C3772xe413854a) r0
+                int r1 = r0.label
+                r2 = -2147483648(0xffffffff80000000, float:-0.0)
+                r3 = r1 & r2
+                if (r3 == 0) goto L13
+                int r1 = r1 - r2
+                r0.label = r1
+                goto L18
+            L13:
+                androidx.datastore.core.MultiProcessCoordinator$Companion$getExclusiveFileLockWithRetryIfDeadlock$1 r0 = new androidx.datastore.core.MultiProcessCoordinator$Companion$getExclusiveFileLockWithRetryIfDeadlock$1
+                r0.<init>(r13, r15)
+            L18:
+                java.lang.Object r15 = r0.result
+                java.lang.Object r1 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
+                int r2 = r0.label
+                r3 = 2
+                r4 = 1
+                if (r2 == 0) goto L39
+                if (r2 != r4) goto L31
+                long r5 = r0.J$0
+                java.lang.Object r14 = r0.L$0
+                java.io.FileOutputStream r14 = (java.io.FileOutputStream) r14
+                kotlin.ResultKt.throwOnFailure(r15)
+                r15 = r0
+                goto L7f
+            L31:
+                java.lang.IllegalStateException r14 = new java.lang.IllegalStateException
+                java.lang.String r15 = "call to 'resume' before 'invoke' with coroutine"
+                r14.<init>(r15)
+                throw r14
+            L39:
+                kotlin.ResultKt.throwOnFailure(r15)
+                long r5 = androidx.datastore.core.MultiProcessCoordinator.access$getINITIAL_WAIT_MILLIS$cp()
+                r15 = r0
+            L41:
+                long r7 = androidx.datastore.core.MultiProcessCoordinator.access$getMAX_WAIT_MILLIS$cp()
+                int r0 = (r5 > r7 ? 1 : (r5 == r7 ? 0 : -1))
+            */
+            //  java.lang.String r2 = "lockFileStream.getChanne…LUE, /* shared= */ false)"
+            /*
+                if (r0 > 0) goto L83
+                java.nio.channels.FileChannel r7 = r14.getChannel()     // Catch: java.io.IOException -> L5f
+                r10 = 9223372036854775807(0x7fffffffffffffff, double:NaN)
+                r12 = 0
+                r8 = 0
+                java.nio.channels.FileLock r0 = r7.lock(r8, r10, r12)     // Catch: java.io.IOException -> L5f
+                kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r0, r2)     // Catch: java.io.IOException -> L5f
+                return r0
+            L5f:
+                r0 = move-exception
+                java.lang.String r2 = r0.getMessage()
+                if (r2 == 0) goto L82
+                java.lang.String r7 = androidx.datastore.core.MultiProcessCoordinator.access$getDEADLOCK_ERROR_MESSAGE$cp()
+                r8 = 0
+                r9 = 0
+                boolean r2 = kotlin.text.StringsKt.contains$default(r2, r7, r8, r3, r9)
+                if (r2 != r4) goto L82
+                r15.L$0 = r14
+                r15.J$0 = r5
+                r15.label = r4
+                java.lang.Object r0 = kotlinx.coroutines.DelayKt.delay(r5, r15)
+                if (r0 != r1) goto L7f
+                return r1
+            L7f:
+                long r7 = (long) r3
+                long r5 = r5 * r7
+                goto L41
+            L82:
+                throw r0
+            L83:
+                java.nio.channels.FileChannel r7 = r14.getChannel()
+                r10 = 9223372036854775807(0x7fffffffffffffff, double:NaN)
+                r12 = 0
+                r8 = 0
+                java.nio.channels.FileLock r14 = r7.lock(r8, r10, r12)
+                kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r14, r2)
+                return r14
+            */
+            throw new UnsupportedOperationException("Method not decompiled: androidx.datastore.core.MultiProcessCoordinator.Companion.getExclusiveFileLockWithRetryIfDeadlock(java.io.FileOutputStream, kotlin.coroutines.Continuation):java.lang.Object");
+        }
+
+        private Companion() {
+        }
+    }
+
+    @Metadata(m13414k = 3, m13415mv = {1, 8, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+    @DebugMetadata(m13450c = "androidx.datastore.core.MultiProcessCoordinator", m13451f = "MultiProcessCoordinator.android.kt", m13452i = {0, 0, 0, 1, 1, 2, 2}, m13453l = {211, 47, ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE}, m13454m = "lock", m13455n = {"this", "block", "$this$withLock_u24default$iv", "block", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv", "lock"}, m13456s = {"L$0", "L$1", "L$2", "L$0", "L$1", "L$0", "L$2"})
+    /* renamed from: androidx.datastore.core.MultiProcessCoordinator$lock$1 */
+    public static final class C37741<T> extends ContinuationImpl {
+        Object L$0;
+        Object L$1;
+        Object L$2;
+        int label;
+        /* synthetic */ Object result;
+
+        public C37741(Continuation<? super C37741> continuation) {
+            super(continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Object invokeSuspend(Object obj) {
+            this.result = obj;
+            this.label |= Integer.MIN_VALUE;
+            return MultiProcessCoordinator.this.lock(null, this);
+        }
+    }
+
+    @Metadata(m13414k = 3, m13415mv = {1, 8, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+    @DebugMetadata(m13450c = "androidx.datastore.core.MultiProcessCoordinator", m13451f = "MultiProcessCoordinator.android.kt", m13452i = {0, 0, 1, 1, 1}, m13453l = {62, 87}, m13454m = "tryLock", m13455n = {"$this$withTryLock_u24default$iv", "locked$iv", "$this$withTryLock_u24default$iv", "lock", "locked$iv"}, m13456s = {"L$0", "Z$0", "L$0", "L$2", "Z$0"})
+    /* renamed from: androidx.datastore.core.MultiProcessCoordinator$tryLock$1 */
+    public static final class C37751<T> extends ContinuationImpl {
+        Object L$0;
+        Object L$1;
+        Object L$2;
+        boolean Z$0;
+        int label;
+        /* synthetic */ Object result;
+
+        public C37751(Continuation<? super C37751> continuation) {
+            super(continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Object invokeSuspend(Object obj) {
+            this.result = obj;
+            this.label |= Integer.MIN_VALUE;
+            return MultiProcessCoordinator.this.tryLock(null, this);
+        }
+    }
+
+    /* JADX INFO: Add missing generic type declarations: [T] */
+    @Metadata(m13412d1 = {"\u0000\b\n\u0002\b\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0002H\u0001\"\u0004\b\u0000\u0010\u0001*\u00020\u0002H\u008a@"}, m13413d2 = {"<anonymous>", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/CoroutineScope;"}, m13414k = 3, m13415mv = {1, 8, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+    @DebugMetadata(m13450c = "androidx.datastore.core.MultiProcessCoordinator$withLazyCounter$2", m13451f = "MultiProcessCoordinator.android.kt", m13452i = {}, m13453l = {163}, m13454m = "invokeSuspend", m13455n = {}, m13456s = {})
+    @SourceDebugExtension({"SMAP\nMultiProcessCoordinator.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MultiProcessCoordinator.android.kt\nandroidx/datastore/core/MultiProcessCoordinator$withLazyCounter$2\n*L\n1#1,205:1\n*E\n"})
+    /* renamed from: androidx.datastore.core.MultiProcessCoordinator$withLazyCounter$2 */
+    public static final class C37762<T> extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super T>, Object> {
+        final /* synthetic */ Function2<SharedCounter, Continuation<? super T>, Object> $block;
+        int label;
+        final /* synthetic */ MultiProcessCoordinator this$0;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* JADX WARN: Multi-variable type inference failed */
+        public C37762(Function2<? super SharedCounter, ? super Continuation<? super T>, ? extends Object> function2, MultiProcessCoordinator multiProcessCoordinator, Continuation<? super C37762> continuation) {
+            super(2, continuation);
+            this.$block = function2;
+            this.this$0 = multiProcessCoordinator;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+            return new C37762(this.$block, this.this$0, continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Object invokeSuspend(Object obj) {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i9 = this.label;
+            if (i9 != 0) {
+                if (i9 != 1) {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                ResultKt.throwOnFailure(obj);
+                return obj;
+            }
+            ResultKt.throwOnFailure(obj);
+            Function2<SharedCounter, Continuation<? super T>, Object> function2 = this.$block;
+            SharedCounter sharedCounter = this.this$0.getSharedCounter();
+            this.label = 1;
+            Object objInvoke = function2.invoke(sharedCounter, this);
+            return objInvoke == coroutine_suspended ? coroutine_suspended : objInvoke;
+        }
+
+        public final Object invokeSuspend$$forInline(Object obj) {
+            return this.$block.invoke(this.this$0.getSharedCounter(), this);
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super T> continuation) {
+            return ((C37762) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        }
+    }
+
+    public MultiProcessCoordinator(CoroutineContext context, File file) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        Intrinsics.checkNotNullParameter(file, "file");
+        this.context = context;
+        this.file = file;
+        this.updateNotifications = MulticastFileObserver.INSTANCE.observe(file);
+        this.LOCK_SUFFIX = ".lock";
+        this.VERSION_SUFFIX = ".version";
+        this.LOCK_ERROR_MESSAGE = "fcntl failed: EAGAIN";
+        this.inMemoryMutex = MutexKt.Mutex$default(false, 1, null);
+        this.lockFile = LazyKt.lazy(new Function0<File>() { // from class: androidx.datastore.core.MultiProcessCoordinator$lockFile$2
+            {
+                super(0);
+            }
+
+            /* JADX WARN: Can't rename method to resolve collision */
+            @Override // kotlin.jvm.functions.Function0
+            public final File invoke() throws IOException {
+                MultiProcessCoordinator multiProcessCoordinator = this.this$0;
+                File fileFileWithSuffix = multiProcessCoordinator.fileWithSuffix(multiProcessCoordinator.LOCK_SUFFIX);
+                this.this$0.createIfNotExists(fileFileWithSuffix);
+                return fileFileWithSuffix;
+            }
+        });
+        this.lazySharedCounter = LazyKt.lazy(new Function0<SharedCounter>() { // from class: androidx.datastore.core.MultiProcessCoordinator$lazySharedCounter$1
+            {
+                super(0);
+            }
+
+            /* JADX WARN: Can't rename method to resolve collision */
+            @Override // kotlin.jvm.functions.Function0
+            public final SharedCounter invoke() {
+                SharedCounter.Companion companion = SharedCounter.INSTANCE;
+                companion.loadLib();
+                final MultiProcessCoordinator multiProcessCoordinator = this.this$0;
+                return companion.create$datastore_core_release(new Function0<File>() { // from class: androidx.datastore.core.MultiProcessCoordinator$lazySharedCounter$1.1
+                    {
+                        super(0);
+                    }
+
+                    /* JADX WARN: Can't rename method to resolve collision */
+                    @Override // kotlin.jvm.functions.Function0
+                    public final File invoke() throws IOException {
+                        MultiProcessCoordinator multiProcessCoordinator2 = multiProcessCoordinator;
+                        File fileFileWithSuffix = multiProcessCoordinator2.fileWithSuffix(multiProcessCoordinator2.VERSION_SUFFIX);
+                        multiProcessCoordinator.createIfNotExists(fileFileWithSuffix);
+                        return fileFileWithSuffix;
+                    }
+                });
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final void createIfNotExists(File file) throws IOException {
+        createParentDirectories(file);
+        if (file.exists()) {
+            return;
+        }
+        file.createNewFile();
+    }
+
+    private final void createParentDirectories(File file) throws IOException {
+        File parentFile = file.getCanonicalFile().getParentFile();
+        if (parentFile != null) {
+            parentFile.mkdirs();
+            if (parentFile.isDirectory()) {
+                return;
+            }
+            throw new IOException("Unable to create parent directories of " + file);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final File fileWithSuffix(String suffix) {
+        return new File(this.file.getAbsolutePath() + suffix);
+    }
+
+    private final File getLockFile() {
+        return (File) this.lockFile.getValue();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final SharedCounter getSharedCounter() {
+        return this.lazySharedCounter.getValue();
+    }
+
+    private final <T> Object withLazyCounter(Function2<? super SharedCounter, ? super Continuation<? super T>, ? extends Object> function2, Continuation<? super T> continuation) {
+        if (this.lazySharedCounter.isInitialized()) {
+            return function2.invoke(getSharedCounter(), continuation);
+        }
+        CoroutineContext coroutineContext = this.context;
+        C37762 c37762 = new C37762(function2, this, null);
+        InlineMarker.mark(0);
+        Object objWithContext = BuildersKt.withContext(coroutineContext, c37762, continuation);
+        InlineMarker.mark(1);
+        return objWithContext;
+    }
+
+    public final File getFile() {
+        return this.file;
+    }
+
+    @Override // androidx.datastore.core.InterProcessCoordinator
+    public Flow<Unit> getUpdateNotifications() {
+        return this.updateNotifications;
+    }
+
+    @Override // androidx.datastore.core.InterProcessCoordinator
+    public Object getVersion(Continuation<? super Integer> continuation) {
+        return this.lazySharedCounter.isInitialized() ? Boxing.boxInt(getSharedCounter().getValue()) : BuildersKt.withContext(this.context, new MultiProcessCoordinator$getVersion$$inlined$withLazyCounter$1(this, null), continuation);
+    }
+
+    @Override // androidx.datastore.core.InterProcessCoordinator
+    public Object incrementAndGetVersion(Continuation<? super Integer> continuation) {
+        return this.lazySharedCounter.isInitialized() ? Boxing.boxInt(getSharedCounter().incrementAndGetValue()) : BuildersKt.withContext(this.context, new C3771xb55e9682(this, null), continuation);
+    }
+
+    /* JADX WARN: Finally extract failed */
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:40:0x00b5  */
+    /* JADX WARN: Removed duplicated region for block: B:42:0x00bb A[Catch: all -> 0x00bf, TRY_ENTER, TRY_LEAVE, TryCatch #7 {all -> 0x00bf, blocks: (B:42:0x00bb, B:56:0x00d9, B:57:0x00dc), top: B:78:0x0024, outer: #1 }] */
+    /* JADX WARN: Removed duplicated region for block: B:56:0x00d9 A[Catch: all -> 0x00bf, TRY_ENTER, TryCatch #7 {all -> 0x00bf, blocks: (B:42:0x00bb, B:56:0x00d9, B:57:0x00dc), top: B:78:0x0024, outer: #1 }] */
+    /* JADX WARN: Removed duplicated region for block: B:7:0x0013  */
+    /* JADX WARN: Type inference failed for: r10v1, types: [java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r10v17 */
+    /* JADX WARN: Type inference failed for: r10v18 */
+    /* JADX WARN: Type inference failed for: r10v2 */
+    /* JADX WARN: Type inference failed for: r10v23 */
+    /* JADX WARN: Type inference failed for: r10v3 */
+    /* JADX WARN: Type inference failed for: r10v4, types: [kotlinx.coroutines.sync.Mutex] */
+    /* JADX WARN: Type inference failed for: r10v6, types: [java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r1v0, types: [java.io.Closeable, java.lang.Object] */
+    @Override // androidx.datastore.core.InterProcessCoordinator
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public <T> java.lang.Object lock(kotlin.jvm.functions.Function1<? super kotlin.coroutines.Continuation<? super T>, ? extends java.lang.Object> r9, kotlin.coroutines.Continuation<? super T> r10) throws java.lang.Throwable {
+        /*
+            Method dump skipped, instructions count: 232
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.datastore.core.MultiProcessCoordinator.lock(kotlin.jvm.functions.Function1, kotlin.coroutines.Continuation):java.lang.Object");
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:31:0x007c  */
+    /* JADX WARN: Removed duplicated region for block: B:59:0x00e6 A[Catch: all -> 0x00ea, TRY_ENTER, TRY_LEAVE, TryCatch #7 {all -> 0x00ea, blocks: (B:59:0x00e6, B:71:0x0101, B:72:0x0104), top: B:91:0x0029 }] */
+    /* JADX WARN: Removed duplicated region for block: B:65:0x00f4  */
+    /* JADX WARN: Removed duplicated region for block: B:71:0x0101 A[Catch: all -> 0x00ea, TRY_ENTER, TryCatch #7 {all -> 0x00ea, blocks: (B:59:0x00e6, B:71:0x0101, B:72:0x0104), top: B:91:0x0029 }] */
+    /* JADX WARN: Removed duplicated region for block: B:7:0x0019  */
+    /* JADX WARN: Removed duplicated region for block: B:80:0x0110  */
+    /* JADX WARN: Type inference failed for: r3v2, types: [androidx.datastore.core.MultiProcessCoordinator$tryLock$1, java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r3v4 */
+    /* JADX WARN: Type inference failed for: r3v42 */
+    /* JADX WARN: Type inference failed for: r3v43 */
+    /* JADX WARN: Type inference failed for: r3v5, types: [kotlinx.coroutines.sync.Mutex] */
+    /* JADX WARN: Type inference failed for: r3v6 */
+    /* JADX WARN: Type inference failed for: r5v0, types: [int, java.io.Closeable] */
+    @Override // androidx.datastore.core.InterProcessCoordinator
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public <T> java.lang.Object tryLock(kotlin.jvm.functions.Function2<? super java.lang.Boolean, ? super kotlin.coroutines.Continuation<? super T>, ? extends java.lang.Object> r19, kotlin.coroutines.Continuation<? super T> r20) throws java.lang.Throwable {
+        /*
+            Method dump skipped, instructions count: 276
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.datastore.core.MultiProcessCoordinator.tryLock(kotlin.jvm.functions.Function2, kotlin.coroutines.Continuation):java.lang.Object");
+    }
+}

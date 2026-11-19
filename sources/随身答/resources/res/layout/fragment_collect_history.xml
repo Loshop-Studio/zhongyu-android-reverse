@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.compose.ui.platform.ComposeView android:id="@id/compose_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:background="@color/list_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingLeft="@dimen/view_4" android:paddingRight="@dimen/view_4" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/view_4" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_empty" android:background="@color/list_background_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_empty_place_holder" />
+                        <TextView android:textSize="@dimen/text_8" android:textColor="@color/color_646566" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无数据" />
+                    </LinearLayout>
+                </FrameLayout>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</FrameLayout>

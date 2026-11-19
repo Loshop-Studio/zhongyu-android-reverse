@@ -1,0 +1,72 @@
+package androidx.compose.material.icons.outlined;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.p012ui.graphics.Color;
+import androidx.compose.p012ui.graphics.SolidColor;
+import androidx.compose.p012ui.graphics.StrokeCap;
+import androidx.compose.p012ui.graphics.StrokeJoin;
+import androidx.compose.p012ui.graphics.vector.ImageVector;
+import androidx.compose.p012ui.graphics.vector.PathBuilder;
+import androidx.compose.p012ui.graphics.vector.VectorKt;
+import androidx.compose.p012ui.unit.C3115Dp;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@Metadata(m13412d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\"\u0010\u0010\u0000\u001a\u0004\u0018\u00010\u0001X\u0082\u000e¢\u0006\u0002\n\u0000\"\u0015\u0010\u0002\u001a\u00020\u0001*\u00020\u00038F¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, m13413d2 = {"_dataSaverOn", "Landroidx/compose/ui/graphics/vector/ImageVector;", "DataSaverOn", "Landroidx/compose/material/icons/Icons$Outlined;", "getDataSaverOn", "(Landroidx/compose/material/icons/Icons$Outlined;)Landroidx/compose/ui/graphics/vector/ImageVector;", "material-icons-extended_release"}, m13414k = 2, m13415mv = {1, 8, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@SourceDebugExtension({"SMAP\nDataSaverOn.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DataSaverOn.kt\nandroidx/compose/material/icons/outlined/DataSaverOnKt\n+ 2 Icons.kt\nandroidx/compose/material/icons/IconsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 4 ImageVector.kt\nandroidx/compose/ui/graphics/vector/ImageVectorKt\n+ 5 Vector.kt\nandroidx/compose/ui/graphics/vector/VectorKt\n*L\n1#1,69:1\n212#2,12:70\n233#2,18:83\n253#2:120\n174#3:82\n705#4,2:101\n717#4,2:103\n719#4,11:109\n72#5,4:105\n*S KotlinDebug\n*F\n+ 1 DataSaverOn.kt\nandroidx/compose/material/icons/outlined/DataSaverOnKt\n*L\n29#1:70,12\n30#1:83,18\n30#1:120\n29#1:82\n30#1:101,2\n30#1:103,2\n30#1:109,11\n30#1:105,4\n*E\n"})
+/* loaded from: classes.dex */
+public final class DataSaverOnKt {
+    private static ImageVector _dataSaverOn;
+
+    public static final ImageVector getDataSaverOn(Icons.Outlined outlined) {
+        ImageVector imageVector = _dataSaverOn;
+        if (imageVector != null) {
+            Intrinsics.checkNotNull(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Outlined.DataSaverOn", C3115Dp.m23994constructorimpl(24.0f), C3115Dp.m23994constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.INSTANCE.m21435getBlack0d7_KjU(), null);
+        int iM21762getButtKaPHkGw = StrokeCap.INSTANCE.m21762getButtKaPHkGw();
+        int iM21772getBevelLxFBmk8 = StrokeJoin.INSTANCE.m21772getBevelLxFBmk8();
+        PathBuilder pathBuilder = new PathBuilder();
+        pathBuilder.moveTo(11.0f, 8.0f);
+        pathBuilder.verticalLineToRelative(3.0f);
+        pathBuilder.horizontalLineTo(8.0f);
+        pathBuilder.verticalLineToRelative(2.0f);
+        pathBuilder.horizontalLineToRelative(3.0f);
+        pathBuilder.verticalLineToRelative(3.0f);
+        pathBuilder.horizontalLineToRelative(2.0f);
+        pathBuilder.verticalLineToRelative(-3.0f);
+        pathBuilder.horizontalLineToRelative(3.0f);
+        pathBuilder.verticalLineToRelative(-2.0f);
+        pathBuilder.horizontalLineToRelative(-3.0f);
+        pathBuilder.verticalLineTo(8.0f);
+        pathBuilder.horizontalLineTo(11.0f);
+        pathBuilder.close();
+        pathBuilder.moveTo(13.0f, 2.05f);
+        pathBuilder.verticalLineToRelative(3.03f);
+        pathBuilder.curveToRelative(3.39f, 0.49f, 6.0f, 3.39f, 6.0f, 6.92f);
+        pathBuilder.curveToRelative(0.0f, 0.9f, -0.18f, 1.75f, -0.48f, 2.54f);
+        pathBuilder.lineToRelative(2.6f, 1.53f);
+        pathBuilder.curveTo(21.68f, 14.83f, 22.0f, 13.45f, 22.0f, 12.0f);
+        pathBuilder.curveTo(22.0f, 6.82f, 18.05f, 2.55f, 13.0f, 2.05f);
+        pathBuilder.close();
+        pathBuilder.moveTo(12.0f, 19.0f);
+        pathBuilder.curveToRelative(-3.87f, 0.0f, -7.0f, -3.13f, -7.0f, -7.0f);
+        pathBuilder.curveToRelative(0.0f, -3.53f, 2.61f, -6.43f, 6.0f, -6.92f);
+        pathBuilder.verticalLineTo(2.05f);
+        pathBuilder.curveTo(5.94f, 2.55f, 2.0f, 6.81f, 2.0f, 12.0f);
+        pathBuilder.curveToRelative(0.0f, 5.52f, 4.47f, 10.0f, 9.99f, 10.0f);
+        pathBuilder.curveToRelative(3.31f, 0.0f, 6.24f, -1.61f, 8.06f, -4.09f);
+        pathBuilder.lineToRelative(-2.6f, -1.53f);
+        pathBuilder.curveTo(16.17f, 17.98f, 14.21f, 19.0f, 12.0f, 19.0f);
+        pathBuilder.close();
+        ImageVector imageVectorBuild = ImageVector.Builder.m22094addPathoIyEayM$default(builder, pathBuilder.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, iM21762getButtKaPHkGw, iM21772getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _dataSaverOn = imageVectorBuild;
+        Intrinsics.checkNotNull(imageVectorBuild);
+        return imageVectorBuild;
+    }
+}

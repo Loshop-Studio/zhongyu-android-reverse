@@ -1,0 +1,75 @@
+package androidx.compose.foundation.text;
+
+import androidx.annotation.VisibleForTesting;
+import androidx.compose.foundation.internal.InlineClassHelperKt;
+import androidx.compose.p012ui.text.AnnotatedString;
+import androidx.compose.p012ui.text.input.OffsetMapping;
+import androidx.compose.p012ui.text.input.TransformedText;
+import androidx.compose.p012ui.text.input.VisualTransformation;
+import androidx.constraintlayout.core.motion.utils.TypedValues;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@Metadata(m13412d1 = {"\u0000*\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a \u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\u0007H\u0002\u001a \u0010\n\u001a\u00020\u00052\u0006\u0010\u000b\u001a\u00020\u00072\u0006\u0010\f\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\u0007H\u0002\u001a\u0014\u0010\r\u001a\u00020\u000e*\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0011H\u0000\u001a\u001e\u0010\u0012\u001a\u00020\u0005*\u00020\u000e2\u0006\u0010\f\u001a\u00020\u00072\b\b\u0002\u0010\u0013\u001a\u00020\u0007H\u0001\"\u0014\u0010\u0000\u001a\u00020\u0001X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0002\u0010\u0003¨\u0006\u0014"}, m13413d2 = {"ValidatingEmptyOffsetMappingIdentity", "Landroidx/compose/ui/text/input/OffsetMapping;", "getValidatingEmptyOffsetMappingIdentity", "()Landroidx/compose/ui/text/input/OffsetMapping;", "validateOriginalToTransformed", "", "transformedOffset", "", "transformedLength", TypedValues.CycleType.S_WAVE_OFFSET, "validateTransformedToOriginal", "originalOffset", "originalLength", "filterWithValidation", "Landroidx/compose/ui/text/input/TransformedText;", "Landroidx/compose/ui/text/input/VisualTransformation;", "text", "Landroidx/compose/ui/text/AnnotatedString;", "throwIfNotValidTransform", "limit", "foundation_release"}, m13414k = 2, m13415mv = {1, 9, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@SourceDebugExtension({"SMAP\nValidatingOffsetMapping.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ValidatingOffsetMapping.kt\nandroidx/compose/foundation/text/ValidatingOffsetMappingKt\n+ 2 InlineClassHelper.kt\nandroidx/compose/foundation/internal/InlineClassHelperKt\n*L\n1#1,135:1\n50#2,5:136\n50#2,5:141\n*S KotlinDebug\n*F\n+ 1 ValidatingOffsetMapping.kt\nandroidx/compose/foundation/text/ValidatingOffsetMappingKt\n*L\n117#1:136,5\n129#1:141,5\n*E\n"})
+/* loaded from: classes.dex */
+public final class ValidatingOffsetMappingKt {
+    private static final OffsetMapping ValidatingEmptyOffsetMappingIdentity = new ValidatingOffsetMapping(OffsetMapping.INSTANCE.getIdentity(), 0, 0);
+
+    public static final TransformedText filterWithValidation(VisualTransformation visualTransformation, AnnotatedString annotatedString) {
+        TransformedText transformedTextFilter = visualTransformation.filter(annotatedString);
+        throwIfNotValidTransform$default(transformedTextFilter, annotatedString.length(), 0, 2, null);
+        return new TransformedText(transformedTextFilter.getText(), new ValidatingOffsetMapping(transformedTextFilter.getOffsetMapping(), annotatedString.length(), transformedTextFilter.getText().length()));
+    }
+
+    public static final OffsetMapping getValidatingEmptyOffsetMappingIdentity() {
+        return ValidatingEmptyOffsetMappingIdentity;
+    }
+
+    @VisibleForTesting
+    public static final void throwIfNotValidTransform(TransformedText transformedText, int i9, int i10) {
+        int length = transformedText.getText().length();
+        int iMin = Math.min(i9, i10);
+        for (int i11 = 0; i11 < iMin; i11++) {
+            validateOriginalToTransformed(transformedText.getOffsetMapping().originalToTransformed(i11), length, i11);
+        }
+        validateOriginalToTransformed(transformedText.getOffsetMapping().originalToTransformed(i9), length, i9);
+        int iMin2 = Math.min(length, i10);
+        for (int i12 = 0; i12 < iMin2; i12++) {
+            validateTransformedToOriginal(transformedText.getOffsetMapping().transformedToOriginal(i12), i9, i12);
+        }
+        validateTransformedToOriginal(transformedText.getOffsetMapping().transformedToOriginal(length), i9, length);
+    }
+
+    public static /* synthetic */ void throwIfNotValidTransform$default(TransformedText transformedText, int i9, int i10, int i11, Object obj) {
+        if ((i11 & 2) != 0) {
+            i10 = 100;
+        }
+        throwIfNotValidTransform(transformedText, i9, i10);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void validateOriginalToTransformed(int i9, int i10, int i11) {
+        boolean z9 = false;
+        if (i9 >= 0 && i9 <= i10) {
+            z9 = true;
+        }
+        if (z9) {
+            return;
+        }
+        InlineClassHelperKt.throwIllegalStateException("OffsetMapping.originalToTransformed returned invalid mapping: " + i11 + " -> " + i9 + " is not in range of transformed text [0, " + i10 + ']');
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void validateTransformedToOriginal(int i9, int i10, int i11) {
+        boolean z9 = false;
+        if (i9 >= 0 && i9 <= i10) {
+            z9 = true;
+        }
+        if (z9) {
+            return;
+        }
+        InlineClassHelperKt.throwIllegalStateException("OffsetMapping.transformedToOriginal returned invalid mapping: " + i11 + " -> " + i9 + " is not in range of original text [0, " + i10 + ']');
+    }
+}

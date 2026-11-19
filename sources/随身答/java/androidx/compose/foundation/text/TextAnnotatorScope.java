@@ -1,0 +1,68 @@
+package androidx.compose.foundation.text;
+
+import androidx.compose.p012ui.graphics.Shadow;
+import androidx.compose.p012ui.graphics.drawscope.DrawStyle;
+import androidx.compose.p012ui.text.AnnotatedString;
+import androidx.compose.p012ui.text.LinkAnnotation;
+import androidx.compose.p012ui.text.PlatformSpanStyle;
+import androidx.compose.p012ui.text.SpanStyle;
+import androidx.compose.p012ui.text.font.FontFamily;
+import androidx.compose.p012ui.text.font.FontStyle;
+import androidx.compose.p012ui.text.font.FontSynthesis;
+import androidx.compose.p012ui.text.font.FontWeight;
+import androidx.compose.p012ui.text.intl.LocaleList;
+import androidx.compose.p012ui.text.style.BaselineShift;
+import androidx.compose.p012ui.text.style.TextDecoration;
+import androidx.compose.p012ui.text.style.TextGeometricTransform;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Ref;
+
+@Metadata(m13412d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u001e\u0010\t\u001a\u00020\n2\f\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\r0\f2\b\u0010\u000e\u001a\u0004\u0018\u00010\u000fR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0005\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\u0004¨\u0006\u0010"}, m13413d2 = {"Landroidx/compose/foundation/text/TextAnnotatorScope;", "", "initialText", "Landroidx/compose/ui/text/AnnotatedString;", "(Landroidx/compose/ui/text/AnnotatedString;)V", "styledText", "getStyledText", "()Landroidx/compose/ui/text/AnnotatedString;", "setStyledText", "replaceStyle", "", "linkRange", "Landroidx/compose/ui/text/AnnotatedString$Range;", "Landroidx/compose/ui/text/LinkAnnotation;", "newStyle", "Landroidx/compose/ui/text/SpanStyle;", "foundation_release"}, m13414k = 1, m13415mv = {1, 9, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes.dex */
+final class TextAnnotatorScope {
+    private final AnnotatedString initialText;
+    private AnnotatedString styledText;
+
+    public TextAnnotatorScope(AnnotatedString annotatedString) {
+        this.initialText = annotatedString;
+        this.styledText = annotatedString;
+    }
+
+    public final AnnotatedString getStyledText() {
+        return this.styledText;
+    }
+
+    public final void replaceStyle(final AnnotatedString.Range<LinkAnnotation> linkRange, final SpanStyle newStyle) {
+        final Ref.BooleanRef booleanRef = new Ref.BooleanRef();
+        this.styledText = this.initialText.mapAnnotations(new Function1<AnnotatedString.Range<? extends AnnotatedString.Annotation>, AnnotatedString.Range<? extends AnnotatedString.Annotation>>() { // from class: androidx.compose.foundation.text.TextAnnotatorScope.replaceStyle.1
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            {
+                super(1);
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public final AnnotatedString.Range<? extends AnnotatedString.Annotation> invoke(AnnotatedString.Range<? extends AnnotatedString.Annotation> range) {
+                AnnotatedString.Range<? extends AnnotatedString.Annotation> range2;
+                if (booleanRef.element && (range.getItem() instanceof SpanStyle) && range.getStart() == linkRange.getStart() && range.getEnd() == linkRange.getEnd()) {
+                    SpanStyle spanStyle = newStyle;
+                    if (spanStyle == null) {
+                        spanStyle = new SpanStyle(0L, 0L, (FontWeight) null, (FontStyle) null, (FontSynthesis) null, (FontFamily) null, (String) null, 0L, (BaselineShift) null, (TextGeometricTransform) null, (LocaleList) null, 0L, (TextDecoration) null, (Shadow) null, (PlatformSpanStyle) null, (DrawStyle) null, 65535, (DefaultConstructorMarker) null);
+                    }
+                    range2 = new AnnotatedString.Range<>(spanStyle, range.getStart(), range.getEnd());
+                } else {
+                    range2 = range;
+                }
+                booleanRef.element = Intrinsics.areEqual(linkRange, range);
+                return range2;
+            }
+        });
+    }
+
+    public final void setStyledText(AnnotatedString annotatedString) {
+        this.styledText = annotatedString;
+    }
+}

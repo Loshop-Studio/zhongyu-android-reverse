@@ -1,0 +1,112 @@
+package io.reactivex.internal.operators.flowable;
+
+import io.reactivex.Flowable;
+import io.reactivex.FlowableSubscriber;
+import io.reactivex.Single;
+import io.reactivex.SingleObserver;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.internal.fuseable.FuseToFlowable;
+import io.reactivex.internal.subscriptions.SubscriptionHelper;
+import io.reactivex.plugins.RxJavaPlugins;
+import java.util.NoSuchElementException;
+import p010a9.InterfaceC0051d;
+
+/* loaded from: classes5.dex */
+public final class FlowableElementAtSingle<T> extends Single<T> implements FuseToFlowable<T> {
+    final T defaultValue;
+    final long index;
+    final Flowable<T> source;
+
+    public static final class ElementAtSubscriber<T> implements FlowableSubscriber<T>, Disposable {
+        long count;
+        final T defaultValue;
+        boolean done;
+        final SingleObserver<? super T> downstream;
+        final long index;
+        InterfaceC0051d upstream;
+
+        public ElementAtSubscriber(SingleObserver<? super T> singleObserver, long j9, T t9) {
+            this.downstream = singleObserver;
+            this.index = j9;
+            this.defaultValue = t9;
+        }
+
+        @Override // io.reactivex.disposables.Disposable
+        public void dispose() {
+            this.upstream.cancel();
+            this.upstream = SubscriptionHelper.CANCELLED;
+        }
+
+        @Override // io.reactivex.disposables.Disposable
+        public boolean isDisposed() {
+            return this.upstream == SubscriptionHelper.CANCELLED;
+        }
+
+        @Override // io.reactivex.FlowableSubscriber, p010a9.InterfaceC0050c
+        public void onComplete() {
+            this.upstream = SubscriptionHelper.CANCELLED;
+            if (this.done) {
+                return;
+            }
+            this.done = true;
+            T t9 = this.defaultValue;
+            if (t9 != null) {
+                this.downstream.onSuccess(t9);
+            } else {
+                this.downstream.onError(new NoSuchElementException());
+            }
+        }
+
+        @Override // io.reactivex.FlowableSubscriber, p010a9.InterfaceC0050c
+        public void onError(Throwable th) {
+            if (this.done) {
+                RxJavaPlugins.onError(th);
+                return;
+            }
+            this.done = true;
+            this.upstream = SubscriptionHelper.CANCELLED;
+            this.downstream.onError(th);
+        }
+
+        @Override // io.reactivex.FlowableSubscriber, p010a9.InterfaceC0050c
+        public void onNext(T t9) {
+            if (this.done) {
+                return;
+            }
+            long j9 = this.count;
+            if (j9 != this.index) {
+                this.count = j9 + 1;
+                return;
+            }
+            this.done = true;
+            this.upstream.cancel();
+            this.upstream = SubscriptionHelper.CANCELLED;
+            this.downstream.onSuccess(t9);
+        }
+
+        @Override // io.reactivex.FlowableSubscriber, p010a9.InterfaceC0050c
+        public void onSubscribe(InterfaceC0051d interfaceC0051d) {
+            if (SubscriptionHelper.validate(this.upstream, interfaceC0051d)) {
+                this.upstream = interfaceC0051d;
+                this.downstream.onSubscribe(this);
+                interfaceC0051d.request(Long.MAX_VALUE);
+            }
+        }
+    }
+
+    public FlowableElementAtSingle(Flowable<T> flowable, long j9, T t9) {
+        this.source = flowable;
+        this.index = j9;
+        this.defaultValue = t9;
+    }
+
+    @Override // io.reactivex.internal.fuseable.FuseToFlowable
+    public Flowable<T> fuseToFlowable() {
+        return RxJavaPlugins.onAssembly(new FlowableElementAt(this.source, this.index, this.defaultValue, true));
+    }
+
+    @Override // io.reactivex.Single
+    public void subscribeActual(SingleObserver<? super T> singleObserver) {
+        this.source.subscribe((FlowableSubscriber) new ElementAtSubscriber(singleObserver, this.index, this.defaultValue));
+    }
+}

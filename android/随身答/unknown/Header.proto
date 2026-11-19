@@ -1,0 +1,78 @@
+﻿syntax = "proto3";
+import "PageRouter.proto";
+import "enums/BackgroundLineTypeEnum.proto";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyHeader";
+
+//画板
+message Header {
+    int32 version = 1; //当前版本号
+
+    int32 width = 2; //分辨率宽度
+
+    int32 height = 3; //分辨率高度
+
+    int64 createDate = 4; //创建时间
+
+    int64 updateDate = 5; //更新时间
+
+    int64 duration = 6; //录制时长
+
+    Author author = 7; //作者(编辑这个微课的人)
+
+    string convertUrl = 8; //转化来源(可能是老版本转化过来的)
+
+    repeated Author provider = 9; // 素材提供人
+
+    int32 defaultBackgroundColor = 10; //默认颜色
+
+    int32 lastBackgroundColor = 11; //最后的颜色(这个颜色会随着变换背景色变)
+
+    MoveConfig moveConfig = 12; // 移动配置
+
+    BackgroundLineConfig defaultBackgroundLineConfig = 13;
+
+    BackgroundLineConfig lastBackgroundLineConfig = 14;
+}
+
+message MoveConfig {
+    bool isEnable = 1; // 移动功能是否打开
+
+    bool verticalTranslate = 2; // 竖直方向移动开关
+
+    bool horizontalTranslate = 3; // 水平移动开关
+
+    bool scale = 4; // 缩放开关
+
+    bool rotate = 5; //旋转开关
+
+    int32 maxHeightTimes = 6; // 竖直最大系数
+
+    int32 maxWidthTimes = 7; // 水平最大系数
+}
+
+
+message BackgroundLineConfig {
+
+    int32 lineColor = 1;// 背景线条颜色
+
+    float lineSpace = 2; // 背景线条间距
+
+    BackgroundLineTypeEnum lineType = 3; // 背景线条类型
+
+    float lineWidth = 4; // 背景线条粗细
+}
+
+message Author {
+    string authorName = 1; // 作者的名字
+
+    string schoolId = 2; // 作者的学校Id
+
+    string authorId = 3; // 作者的Id
+
+    string url = 4; // 提供的微课地址
+
+    int64 startTime = 5; //素材开始时间
+
+    int64 duration = 6; // 素材持续时间
+}

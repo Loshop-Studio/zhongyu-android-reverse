@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cv_import" android:layout_width="@dimen/view_28" android:layout_height="@dimen/view_28" android:src="@mipmap/dialogue_icon_import" />
+    <ImageView android:id="@id/cv_record" android:layout_width="@dimen/view_28" android:layout_height="@dimen/view_28" android:layout_marginTop="@dimen/view_5" android:src="@mipmap/dialogue_icon_record" />
+    <ImageView android:id="@id/cv_cancel" android:layout_width="@dimen/view_28" android:layout_height="@dimen/view_28" android:layout_marginTop="@dimen/view_5" android:src="@mipmap/dialogue_icon_cancel" />
+</androidx.appcompat.widget.LinearLayoutCompat>

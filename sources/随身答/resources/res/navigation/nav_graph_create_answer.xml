@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/dialogue_nav_new_answer" app:startDestination="@id/dialogue_new_answer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="AnswerFragment" android:name="com.zykj.student.dialogue.ui.detail.NewAnswerFragment" android:id="@id/dialogue_new_answer">
+        <argument android:name="previewImagePath" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="imagePathList" android:defaultValue="@null" app:argType="string[]" app:nullable="true" />
+        <argument android:name="sessionId" android:defaultValue="" app:argType="string" app:nullable="false" />
+        <argument android:name="answerUserIds" android:defaultValue="@null" app:argType="string[]" app:nullable="true" />
+        <argument android:name="summary" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="courseId" android:defaultValue="" app:argType="string" app:nullable="false" />
+    </fragment>
+    <fragment android:label="SketchCropFragment" android:name="com.zykj.student.dialogue.ui.detail.DialogueSketchCropFragment" android:id="@id/dialogue_sketch_crop_fragment">
+        <argument android:name="requestKey" app:argType="string" />
+        <argument android:name="localPath" app:argType="string" />
+    </fragment>
+    <fragment android:name="com.zykj.student.dialogue.ui.detail.PlayLessonFragment" android:id="@id/play_lesson_fragment">
+        <argument android:name="path" app:argType="string" app:nullable="false" />
+    </fragment>
+</navigation>

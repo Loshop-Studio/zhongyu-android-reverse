@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="layout/view_include_eraser_0" android:background="@drawable/white_frame_border" android:paddingTop="@dimen/view_3" android:paddingBottom="@dimen/view_3" android:focusable="true" android:clickable="true" android:layout_width="@dimen/view_18" android:layout_height="wrap_content" android:paddingVertical="@dimen/view_3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:id="@id/rg_eraser_size" android:layout_width="@dimen/view_18" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/rb_eraser_size_little" android:tag="0" android:background="@drawable/selector_paint_level1" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <RadioButton android:id="@id/rb_eraser_size_medium" android:tag="1" android:background="@drawable/selector_paint_level2" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <RadioButton android:id="@id/rb_eraser_size_big" android:tag="2" android:background="@drawable/selector_paint_level3" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+    </RadioGroup>
+</androidx.appcompat.widget.LinearLayoutCompat>

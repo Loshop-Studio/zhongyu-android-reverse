@@ -1,0 +1,15 @@
+package com.google.flatbuffers;
+
+import java.nio.ByteBuffer;
+
+/* loaded from: classes3.dex */
+public final class FloatVector extends BaseVector {
+    public FloatVector __assign(int i9, ByteBuffer byteBuffer) {
+        __reset(i9, 4, byteBuffer);
+        return this;
+    }
+
+    public float get(int i9) {
+        return this.f5059bb.getFloat(__element(i9));
+    }
+}

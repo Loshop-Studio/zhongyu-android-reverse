@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+option java_package = "com.zykj.sketch";
+option java_outer_classname = "SketchHeader";
+
+//画板
+message Header {
+    int32 version = 1; //当前版本号
+
+    int32 width = 2; //分辨率宽度
+
+    int32 height = 3; //分辨率高度
+
+    int64 createDate = 4; //创建时间
+
+    int64 updateDate = 5; //更新时间
+
+    string author = 6; //作者名字
+
+    int32 type = 7;
+}

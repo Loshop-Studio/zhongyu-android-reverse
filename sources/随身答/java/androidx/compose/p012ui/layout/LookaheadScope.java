@@ -1,0 +1,34 @@
+package androidx.compose.p012ui.layout;
+
+import androidx.compose.p012ui.geometry.Offset;
+import androidx.compose.p012ui.layout.Placeable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+
+@Metadata(m13412d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0004\bf\u0018\u00002\u00020\u0001J2\u0010\u0007\u001a\u00020\b*\u00020\u00032\u0006\u0010\t\u001a\u00020\u00032\b\b\u0002\u0010\n\u001a\u00020\b2\b\b\u0002\u0010\u000b\u001a\u00020\fH\u0016ø\u0001\u0000¢\u0006\u0004\b\r\u0010\u000eJ\f\u0010\u000f\u001a\u00020\u0003*\u00020\u0003H&R\u0016\u0010\u0002\u001a\u00020\u0003*\u00020\u0004X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006ø\u0001\u0001\u0082\u0002\r\n\u0005\b¡\u001e0\u0001\n\u0004\b!0\u0001¨\u0006\u0010À\u0006\u0001"}, m13413d2 = {"Landroidx/compose/ui/layout/LookaheadScope;", "", "lookaheadScopeCoordinates", "Landroidx/compose/ui/layout/LayoutCoordinates;", "Landroidx/compose/ui/layout/Placeable$PlacementScope;", "getLookaheadScopeCoordinates", "(Landroidx/compose/ui/layout/Placeable$PlacementScope;)Landroidx/compose/ui/layout/LayoutCoordinates;", "localLookaheadPositionOf", "Landroidx/compose/ui/geometry/Offset;", "sourceCoordinates", "relativeToSource", "includeMotionFrameOfReference", "", "localLookaheadPositionOf-au-aQtc", "(Landroidx/compose/ui/layout/LayoutCoordinates;Landroidx/compose/ui/layout/LayoutCoordinates;JZ)J", "toLookaheadCoordinates", "ui_release"}, m13414k = 1, m13415mv = {1, 9, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes2.dex */
+public interface LookaheadScope {
+    /* renamed from: localLookaheadPositionOf-au-aQtc$default, reason: not valid java name */
+    static /* synthetic */ long m22785localLookaheadPositionOfauaQtc$default(LookaheadScope lookaheadScope, LayoutCoordinates layoutCoordinates, LayoutCoordinates layoutCoordinates2, long j9, boolean z9, int i9, Object obj) {
+        if (obj != null) {
+            throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: localLookaheadPositionOf-au-aQtc");
+        }
+        if ((i9 & 2) != 0) {
+            j9 = Offset.INSTANCE.m21184getZeroF1C5BW0();
+        }
+        long j10 = j9;
+        if ((i9 & 4) != 0) {
+            z9 = true;
+        }
+        return lookaheadScope.mo17497localLookaheadPositionOfauaQtc(layoutCoordinates, layoutCoordinates2, j10, z9);
+    }
+
+    LayoutCoordinates getLookaheadScopeCoordinates(Placeable.PlacementScope placementScope);
+
+    /* renamed from: localLookaheadPositionOf-au-aQtc */
+    default long mo17497localLookaheadPositionOfauaQtc(LayoutCoordinates layoutCoordinates, LayoutCoordinates layoutCoordinates2, long j9, boolean z9) {
+        return LookaheadScopeKt.m22786localLookaheadPositionOfFgt4K4Q(this, layoutCoordinates, layoutCoordinates2, j9, z9);
+    }
+
+    LayoutCoordinates toLookaheadCoordinates(LayoutCoordinates layoutCoordinates);
+}

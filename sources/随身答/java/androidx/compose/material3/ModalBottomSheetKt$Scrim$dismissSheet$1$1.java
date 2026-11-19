@@ -1,0 +1,81 @@
+package androidx.compose.material3;
+
+import androidx.compose.foundation.gestures.TapGestureDetectorKt;
+import androidx.compose.p012ui.geometry.Offset;
+import androidx.compose.p012ui.input.pointer.PointerInputScope;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+
+@Metadata(m13412d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, m13413d2 = {"<anonymous>", "", "Landroidx/compose/ui/input/pointer/PointerInputScope;"}, m13414k = 3, m13415mv = {1, 8, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@DebugMetadata(m13450c = "androidx.compose.material3.ModalBottomSheetKt$Scrim$dismissSheet$1$1", m13451f = "ModalBottomSheet.kt", m13452i = {}, m13453l = {415}, m13454m = "invokeSuspend", m13455n = {}, m13456s = {})
+/* loaded from: classes2.dex */
+public final class ModalBottomSheetKt$Scrim$dismissSheet$1$1 extends SuspendLambda implements Function2<PointerInputScope, Continuation<? super Unit>, Object> {
+    final /* synthetic */ Function0<Unit> $onDismissRequest;
+    private /* synthetic */ Object L$0;
+    int label;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ModalBottomSheetKt$Scrim$dismissSheet$1$1(Function0<Unit> function0, Continuation<? super ModalBottomSheetKt$Scrim$dismissSheet$1$1> continuation) {
+        super(2, continuation);
+        this.$onDismissRequest = function0;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        ModalBottomSheetKt$Scrim$dismissSheet$1$1 modalBottomSheetKt$Scrim$dismissSheet$1$1 = new ModalBottomSheetKt$Scrim$dismissSheet$1$1(this.$onDismissRequest, continuation);
+        modalBottomSheetKt$Scrim$dismissSheet$1$1.L$0 = obj;
+        return modalBottomSheetKt$Scrim$dismissSheet$1$1;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(PointerInputScope pointerInputScope, Continuation<? super Unit> continuation) {
+        return ((ModalBottomSheetKt$Scrim$dismissSheet$1$1) create(pointerInputScope, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i9 = this.label;
+        if (i9 == 0) {
+            ResultKt.throwOnFailure(obj);
+            PointerInputScope pointerInputScope = (PointerInputScope) this.L$0;
+            final Function0<Unit> function0 = this.$onDismissRequest;
+            Function1<Offset, Unit> function1 = new Function1<Offset, Unit>() { // from class: androidx.compose.material3.ModalBottomSheetKt$Scrim$dismissSheet$1$1.1
+                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                {
+                    super(1);
+                }
+
+                @Override // kotlin.jvm.functions.Function1
+                public /* bridge */ /* synthetic */ Unit invoke(Offset offset) {
+                    m19417invokek4lQ0M(offset.m21178unboximpl());
+                    return Unit.INSTANCE;
+                }
+
+                /* renamed from: invoke-k-4lQ0M, reason: not valid java name */
+                public final void m19417invokek4lQ0M(long j9) {
+                    function0.invoke();
+                }
+            };
+            this.label = 1;
+            if (TapGestureDetectorKt.detectTapGestures$default(pointerInputScope, null, null, null, function1, this, 7, null) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else {
+            if (i9 != 1) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            ResultKt.throwOnFailure(obj);
+        }
+        return Unit.INSTANCE;
+    }
+}

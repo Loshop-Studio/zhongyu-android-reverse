@@ -1,0 +1,88 @@
+package androidx.compose.material.icons.rounded;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.p012ui.graphics.Color;
+import androidx.compose.p012ui.graphics.SolidColor;
+import androidx.compose.p012ui.graphics.StrokeCap;
+import androidx.compose.p012ui.graphics.StrokeJoin;
+import androidx.compose.p012ui.graphics.vector.ImageVector;
+import androidx.compose.p012ui.graphics.vector.PathBuilder;
+import androidx.compose.p012ui.graphics.vector.VectorKt;
+import androidx.compose.p012ui.unit.C3115Dp;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@Metadata(m13412d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\"\u0010\u0010\u0000\u001a\u0004\u0018\u00010\u0001X\u0082\u000e¢\u0006\u0002\n\u0000\"\u0015\u0010\u0002\u001a\u00020\u0001*\u00020\u00038F¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, m13413d2 = {"_movieFilter", "Landroidx/compose/ui/graphics/vector/ImageVector;", "MovieFilter", "Landroidx/compose/material/icons/Icons$Rounded;", "getMovieFilter", "(Landroidx/compose/material/icons/Icons$Rounded;)Landroidx/compose/ui/graphics/vector/ImageVector;", "material-icons-extended_release"}, m13414k = 2, m13415mv = {1, 8, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@SourceDebugExtension({"SMAP\nMovieFilter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MovieFilter.kt\nandroidx/compose/material/icons/rounded/MovieFilterKt\n+ 2 Icons.kt\nandroidx/compose/material/icons/IconsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 4 ImageVector.kt\nandroidx/compose/ui/graphics/vector/ImageVectorKt\n+ 5 Vector.kt\nandroidx/compose/ui/graphics/vector/VectorKt\n*L\n1#1,85:1\n212#2,12:86\n233#2,18:99\n253#2:136\n174#3:98\n705#4,2:117\n717#4,2:119\n719#4,11:125\n72#5,4:121\n*S KotlinDebug\n*F\n+ 1 MovieFilter.kt\nandroidx/compose/material/icons/rounded/MovieFilterKt\n*L\n29#1:86,12\n30#1:99,18\n30#1:136\n29#1:98\n30#1:117,2\n30#1:119,2\n30#1:125,11\n30#1:121,4\n*E\n"})
+/* loaded from: classes.dex */
+public final class MovieFilterKt {
+    private static ImageVector _movieFilter;
+
+    public static final ImageVector getMovieFilter(Icons.Rounded rounded) {
+        ImageVector imageVector = _movieFilter;
+        if (imageVector != null) {
+            Intrinsics.checkNotNull(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Rounded.MovieFilter", C3115Dp.m23994constructorimpl(24.0f), C3115Dp.m23994constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.INSTANCE.m21435getBlack0d7_KjU(), null);
+        int iM21762getButtKaPHkGw = StrokeCap.INSTANCE.m21762getButtKaPHkGw();
+        int iM21772getBevelLxFBmk8 = StrokeJoin.INSTANCE.m21772getBevelLxFBmk8();
+        PathBuilder pathBuilder = new PathBuilder();
+        pathBuilder.moveTo(21.5f, 4.0f);
+        pathBuilder.lineTo(18.0f, 4.0f);
+        pathBuilder.lineToRelative(1.74f, 2.61f);
+        pathBuilder.curveToRelative(0.11f, 0.17f, -0.01f, 0.39f, -0.21f, 0.39f);
+        pathBuilder.horizontalLineToRelative(-2.0f);
+        pathBuilder.curveToRelative(-0.33f, 0.0f, -0.65f, -0.17f, -0.83f, -0.45f);
+        pathBuilder.lineTo(15.0f, 4.0f);
+        pathBuilder.horizontalLineToRelative(-2.0f);
+        pathBuilder.lineToRelative(1.74f, 2.61f);
+        pathBuilder.curveToRelative(0.11f, 0.17f, -0.01f, 0.39f, -0.21f, 0.39f);
+        pathBuilder.horizontalLineToRelative(-2.0f);
+        pathBuilder.curveToRelative(-0.33f, 0.0f, -0.65f, -0.17f, -0.83f, -0.45f);
+        pathBuilder.lineTo(10.0f, 4.0f);
+        pathBuilder.lineTo(8.0f, 4.0f);
+        pathBuilder.lineToRelative(1.74f, 2.61f);
+        pathBuilder.curveToRelative(0.11f, 0.17f, -0.01f, 0.39f, -0.21f, 0.39f);
+        pathBuilder.horizontalLineToRelative(-2.0f);
+        pathBuilder.curveToRelative(-0.33f, 0.0f, -0.64f, -0.17f, -0.83f, -0.45f);
+        pathBuilder.lineTo(5.0f, 4.0f);
+        pathBuilder.lineTo(4.0f, 4.0f);
+        pathBuilder.curveToRelative(-1.1f, 0.0f, -1.99f, 0.9f, -1.99f, 2.0f);
+        pathBuilder.lineTo(2.0f, 18.0f);
+        pathBuilder.curveToRelative(0.0f, 1.1f, 0.9f, 2.0f, 2.0f, 2.0f);
+        pathBuilder.horizontalLineToRelative(16.0f);
+        pathBuilder.curveToRelative(1.1f, 0.0f, 2.0f, -0.9f, 2.0f, -2.0f);
+        pathBuilder.lineTo(22.0f, 4.5f);
+        pathBuilder.curveToRelative(0.0f, -0.28f, -0.22f, -0.5f, -0.5f, -0.5f);
+        pathBuilder.close();
+        pathBuilder.moveTo(11.25f, 15.25f);
+        pathBuilder.lineTo(10.0f, 18.0f);
+        pathBuilder.lineToRelative(-1.25f, -2.75f);
+        pathBuilder.lineTo(6.0f, 14.0f);
+        pathBuilder.lineToRelative(2.75f, -1.25f);
+        pathBuilder.lineTo(10.0f, 10.0f);
+        pathBuilder.lineToRelative(1.25f, 2.75f);
+        pathBuilder.lineTo(14.0f, 14.0f);
+        pathBuilder.lineToRelative(-2.75f, 1.25f);
+        pathBuilder.close();
+        pathBuilder.moveTo(16.94f, 11.94f);
+        pathBuilder.lineTo(16.0f, 14.0f);
+        pathBuilder.lineToRelative(-0.94f, -2.06f);
+        pathBuilder.lineTo(13.0f, 11.0f);
+        pathBuilder.lineToRelative(2.06f, -0.94f);
+        pathBuilder.lineTo(16.0f, 8.0f);
+        pathBuilder.lineToRelative(0.94f, 2.06f);
+        pathBuilder.lineTo(19.0f, 11.0f);
+        pathBuilder.lineToRelative(-2.06f, 0.94f);
+        pathBuilder.close();
+        ImageVector imageVectorBuild = ImageVector.Builder.m22094addPathoIyEayM$default(builder, pathBuilder.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, iM21762getButtKaPHkGw, iM21772getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _movieFilter = imageVectorBuild;
+        Intrinsics.checkNotNull(imageVectorBuild);
+        return imageVectorBuild;
+    }
+}

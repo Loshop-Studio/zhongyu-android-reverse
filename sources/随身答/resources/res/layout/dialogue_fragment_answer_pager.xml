@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/dialogue_fragment_answer_pager_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/fl_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.xuexiang.xui.widget.imageview.photoview.PhotoView android:id="@id/photo_view" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/iv_start" android:padding="@dimen/view_2" android:visibility="gone" android:layout_width="@dimen/view_14" android:layout_height="@dimen/view_28" android:src="@drawable/icon_record_start" android:scaleType="center" android:layout_marginStart="@dimen/view_7" />
+        <ImageView android:layout_gravity="end|bottom" android:id="@id/iv_fullscreen" android:padding="@dimen/view_4" android:layout_width="@dimen/view_23" android:layout_height="@dimen/view_23" android:src="@drawable/icon_exit_fullscreen" android:layout_marginEnd="@dimen/view_5" android:backgroundTint="@color/app_red" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_load_error" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialogue_icon_load_lesson_error" />
+        <TextView android:textSize="@dimen/text_7" android:textColor="#ff646566" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialogue_load_micro_lesson_error" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_answer" android:layout_width="@dimen/view_28" android:layout_height="@dimen/view_28" android:layout_marginBottom="@dimen/view_38" android:src="@mipmap/dialogue_icon_answer" android:layout_marginEnd="@dimen/view_9" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+    <View android:id="@id/anchor_view" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/iv_answer" app:layout_constraintEnd_toEndOf="@id/iv_answer" app:layout_constraintStart_toStartOf="@id/iv_answer" />
+    <View android:id="@id/view_tutorial_4" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginBottom="@dimen/view_5" android:layout_marginEnd="@dimen/view_5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/iv_answer" app:layout_constraintTop_toTopOf="@id/iv_answer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

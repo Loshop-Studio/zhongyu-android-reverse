@@ -1,0 +1,267 @@
+﻿syntax = "proto3";
+import "google/protobuf/any.proto";
+import "google/protobuf/wrappers.proto";
+import "SketchGraphSnapshot.proto";
+option java_package = "com.zykj.sketch";
+option java_outer_classname = "EzyDrawBoard";
+
+//画板
+message DrawBoard {
+    BoardHead boardHead = 1;
+    BoardBody boardBody = 2;
+}
+
+//画板V1
+message DrawBoardV1 {
+    BoardHead boardHead = 1;
+    BoardBodyV1 boardBodyV1 = 2;
+}
+
+//头部信息 记录裁剪的时间
+message BoardHead {
+
+    int32 version = 1; //当前版本号
+
+    int32 width = 3; //分辨率宽度
+
+    int32 height = 4; //分辨率高度
+
+    int64 createDate = 5; //创建时间
+
+    int64 updateDate = 6; //更新时间
+
+    string author = 7; //作者名字
+
+    int32 type = 8; //1：画板，只展示缩略图， 2：视频，需要播放
+}
+
+// 画板的具体数据
+message BoardBody {
+    repeated ActionContent ActionContent = 1;
+}
+
+// 画板的具体数据
+message BoardBodyV1 {
+    repeated google.protobuf.Any ActionContent = 1;
+}
+
+message ActionContent{
+    ActionEnum type = 1;
+    google.protobuf.Any action = 2;
+    GraphData graphSnapshot = 3;
+
+    GraphResetData resetData = 5;//恢复时需要的数据
+}
+
+//触摸数据
+message ActionTouchEvent {
+    int32 type = 1;
+
+    int64 startTime = 2; //开始时间
+
+    int64 endTime = 3; //结束时间
+
+    repeated TouchEvent touchEvent = 4;
+
+    message TouchEvent {
+        int64 eventTime = 2;
+        int32 action = 3;
+        int32 pointerCount = 4;
+        repeated PointerProperties pointerProperties = 5;
+        repeated PointerCoords pointerCoords = 6;
+
+        float x = 15;
+        float y = 16;
+
+        message PointerProperties {
+            int32 id = 1;
+            int32 toolType = 2;
+        }
+        message PointerCoords {
+            float x = 1;
+            float y = 2;
+        }
+    }
+}
+
+message ActionImageConfig {
+    int32 type = 1;
+
+    int64 startTime = 2; //动作类型
+
+    string path = 3; //图片文件名，并非绝对路径
+
+    int32 width = 4;//图片宽度
+
+    int32 height = 5;//图片高度
+
+    int32 viewWidth = 6;//绘图区域宽度
+
+    int32 viewHeight = 7;//绘图区域高度
+
+    int32 positionFlag = 8;//位置标记
+}
+
+message ActionWebViewConfig {
+    int32 type = 1;
+    int64 startTime = 2; //动作类型
+
+    string path = 3; //PPT文件名，并非绝对路径
+
+    int32 width = 4;//宽度
+
+    int32 height = 5;//高度
+
+    int32 viewWidth = 6;//绘图区域宽度
+
+    int32 viewHeight = 7;//绘图区域高度
+}
+
+message ActionGraphConfig {
+    int32 type = 1;
+    int64 startTime = 2; //动作类型
+
+    GraphConfig config = 4;
+
+    message GraphConfig {
+
+        float width = 1; //画笔宽度
+
+        int32 color = 2; //画笔颜色
+
+    }
+}
+
+message ActionDrawConfig {
+    int32 type = 1;
+    int64 startTime = 2; //动作类型
+
+    int32 backgroundColor = 3;//画板背景色
+
+    DrawArea drawArea = 4;
+}
+
+message DrawArea{
+
+    PointF leftTopPoint = 1;
+
+    PointF rightBottomPoint = 2;
+
+    repeated float matrix = 3;//当时根图元的变换对象
+}
+
+message ActionModeConfig {
+    int32 type = 1;
+    int64 startTime = 2; //动作类型
+
+    Mode mode = 4;
+
+    enum Mode {
+        ACTION_SELECT = 0; //选择
+        ACTION_WRITING = 1; //手绘
+        ACTION_SHAPE_CIRCLE = 2; //圆形
+        ACTION_SHAPE_RECT = 3; //矩形
+        ACTION_ERASER_VIEW = 5; //橡皮擦
+        ACTION_ERASER_WRITING = 6; //橡皮擦
+        ACTION_DELETE = 7; //删除
+        ACTION_WRITING_MOVE = 8; //手绘加双指移动
+        ACTION_WRITING_MOVE_VERTICAL = 9; //手绘加双指移动-只能上下移动
+    }
+}
+
+message ActionFitterConfig {
+    int32 type = 1;
+    int64 startTime = 2; //动作类型
+
+    float scale = 3;//缩放
+    int32 centerX = 4;//中心点
+    int32 centerY = 5;//中心点
+    int32 px = 6;//位移X距离
+    int32 py = 7;//位移Y距离
+}
+
+message ActionClearBoard {
+    int32 type = 1;
+    int64 startTime = 2; //动作类型
+}
+
+message ActionPrevAction {
+    int32 type = 1;
+    int64 startTime = 2; //动作类型
+}
+
+message ActionNextAction {
+    int32 type = 1;
+    int64 startTime = 2; //动作类型
+}
+
+message ActionZoom {
+    int32 type = 1;
+    int64 startTime = 2; //动作类型
+    float scaleX = 3;
+    float scaleY = 4;
+    float centerX = 5;
+    float centerY = 6;
+    bool keep = 7;
+}
+
+message ActionTranslation {
+    int32 type = 1;
+    int64 startTime = 2; //动作类型
+    google.protobuf.FloatValue transX = 3;
+    google.protobuf.FloatValue transY = 4;
+    bool keep = 5;
+}
+
+message ActionResetMatrix {
+    int64 startTime = 1; //动作类型
+}
+
+message AudioStartAction {
+
+    int64 startTime = 1; //动作类型
+
+    string fileName = 2; //文件名称
+}
+
+message AudioStopAction {
+
+    int64 startTime = 1; //动作类型
+
+    string fileName = 2; //文件名称
+}
+
+enum ActionEnum //枚举消息类型 proto3版本中，首成员必须为0，成员不应有相同的值
+{
+    ACTION_TOUCH = 0;
+    ACTION_MODE = 1;
+    ACTION_GRAPH = 2;
+    ACTION_WEB = 3;
+    ACTION_IMAGE = 4;
+    ACTION_FILTER = 5;
+    ACTION_CLEAR_BOARD = 6;
+    ACTION_NEXT = 7;
+    ACTION_PREV = 8;
+    ACTION_AUDIO_START = 9;
+    ACTION_AUDIO_STOP = 10;
+    ACTION_ZOOM = 11;
+    ACTION_TRANS = 12;
+    ACTION_DRAW_CONFIG = 13;
+    ACTION_RESET_MATRIX = 14;
+}
+
+message GraphResetData {
+    string factoryGraphName = 1;
+    string factoryActionGraphName = 2;
+    ActionFactory action = 5;
+    ActionGraphConfig.GraphConfig graphConfig = 6;
+    ActionModeConfig.Mode modeConfig = 7;
+    int32 backgroundColor = 8;//画板背景色
+    DrawArea drawArea = 9;
+
+    message ActionFactory {
+        ActionModeConfig.Mode baseAction = 1;
+        string factoryGraphName = 2;
+        string factoryActionGraphName = 3;
+    }
+}

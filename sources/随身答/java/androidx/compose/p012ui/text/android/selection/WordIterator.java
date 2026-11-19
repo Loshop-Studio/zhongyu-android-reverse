@@ -1,0 +1,214 @@
+package androidx.compose.p012ui.text.android.selection;
+
+import androidx.compose.p012ui.text.android.CharSequenceCharacterIterator;
+import androidx.compose.p012ui.text.internal.InlineClassHelperKt;
+import androidx.compose.runtime.internal.StabilityInferred;
+import androidx.constraintlayout.core.motion.utils.TypedValues;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.emoji2.text.EmojiCompat;
+import java.lang.Character;
+import java.text.BreakIterator;
+import java.util.Locale;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@StabilityInferred(parameters = 0)
+@Metadata(m13412d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0010\b\u0000\u0018\u0000 \"2\u00020\u0001:\u0001\"B'\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b¢\u0006\u0002\u0010\tJ\u0010\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0005H\u0002J\u0018\u0010\u0011\u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u00052\u0006\u0010\u0012\u001a\u00020\u0013H\u0002J\u0018\u0010\u0014\u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u00052\u0006\u0010\u0015\u001a\u00020\u0013H\u0002J\u000e\u0010\u0015\u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u0005J\u000e\u0010\u0012\u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u0005J\u000e\u0010\u0016\u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u0005J\u000e\u0010\u0017\u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u0005J\u0010\u0010\u0018\u001a\u00020\u00132\u0006\u0010\u0010\u001a\u00020\u0005H\u0002J\u000e\u0010\u0019\u001a\u00020\u00132\u0006\u0010\u0010\u001a\u00020\u0005J\u0010\u0010\u001a\u001a\u00020\u00132\u0006\u0010\u0010\u001a\u00020\u0005H\u0002J\u0010\u0010\u001b\u001a\u00020\u00132\u0006\u0010\u0010\u001a\u00020\u0005H\u0002J\u0010\u0010\u001c\u001a\u00020\u00132\u0006\u0010\u0010\u001a\u00020\u0005H\u0002J\u000e\u0010\u001d\u001a\u00020\u00132\u0006\u0010\u0010\u001a\u00020\u0005J\u0010\u0010\u001e\u001a\u00020\u00132\u0006\u0010\u0010\u001a\u00020\u0005H\u0002J\u0010\u0010\u001f\u001a\u00020\u00132\u0006\u0010\u0010\u001a\u00020\u0005H\u0002J\u000e\u0010 \u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u0005J\u000e\u0010!\u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u0005R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u000e\u0010\u0006\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006#"}, m13413d2 = {"Landroidx/compose/ui/text/android/selection/WordIterator;", "", "charSequence", "", "start", "", "end", "locale", "Ljava/util/Locale;", "(Ljava/lang/CharSequence;IILjava/util/Locale;)V", "getCharSequence", "()Ljava/lang/CharSequence;", "iterator", "Ljava/text/BreakIterator;", "checkOffsetIsValid", "", TypedValues.CycleType.S_WAVE_OFFSET, "getBeginning", "getPrevWordBeginningOnTwoWordsBoundary", "", "getEnd", "getNextWordEndOnTwoWordBoundary", "getPunctuationBeginning", "getPunctuationEnd", "isAfterLetterOrDigitOrEmoji", "isAfterPunctuation", "isBoundary", "isHiraganaKatakanaBoundary", "isOnLetterOrDigitOrEmoji", "isOnPunctuation", "isPunctuationEndBoundary", "isPunctuationStartBoundary", "nextBoundary", "prevBoundary", "Companion", "ui-text_release"}, m13414k = 1, m13415mv = {1, 9, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@SourceDebugExtension({"SMAP\nWordIterator.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 WordIterator.android.kt\nandroidx/compose/ui/text/android/selection/WordIterator\n+ 2 InlineClassHelper.kt\nandroidx/compose/ui/text/internal/InlineClassHelperKt\n*L\n1#1,377:1\n114#2,8:378\n114#2,8:386\n114#2,8:394\n*S KotlinDebug\n*F\n+ 1 WordIterator.android.kt\nandroidx/compose/ui/text/android/selection/WordIterator\n*L\n44#1:378,8\n47#1:386,8\n323#1:394,8\n*E\n"})
+/* loaded from: classes2.dex */
+public final class WordIterator {
+    private static final int WINDOW_WIDTH = 50;
+    private final CharSequence charSequence;
+    private final int end;
+    private final BreakIterator iterator;
+    private final int start;
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+    public static final int $stable = 8;
+
+    @Metadata(m13412d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0015\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0004H\u0000¢\u0006\u0002\b\bR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000¨\u0006\t"}, m13413d2 = {"Landroidx/compose/ui/text/android/selection/WordIterator$Companion;", "", "()V", "WINDOW_WIDTH", "", "isPunctuation", "", "cp", "isPunctuation$ui_text_release", "ui-text_release"}, m13414k = 1, m13415mv = {1, 9, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final boolean isPunctuation$ui_text_release(int cp) {
+            int type = Character.getType(cp);
+            return type == 23 || type == 20 || type == 22 || type == 30 || type == 29 || type == 24 || type == 21;
+        }
+
+        private Companion() {
+        }
+    }
+
+    public WordIterator(CharSequence charSequence, int i9, int i10, Locale locale) {
+        this.charSequence = charSequence;
+        if (!(i9 >= 0 && i9 <= charSequence.length())) {
+            InlineClassHelperKt.throwIllegalArgumentException("input start index is outside the CharSequence");
+        }
+        if (!(i10 >= 0 && i10 <= charSequence.length())) {
+            InlineClassHelperKt.throwIllegalArgumentException("input end index is outside the CharSequence");
+        }
+        BreakIterator wordInstance = BreakIterator.getWordInstance(locale);
+        this.iterator = wordInstance;
+        this.start = Math.max(0, i9 - 50);
+        this.end = Math.min(charSequence.length(), i10 + 50);
+        wordInstance.setText(new CharSequenceCharacterIterator(charSequence, i9, i10));
+    }
+
+    private final void checkOffsetIsValid(int offset) {
+        int i9 = this.start;
+        boolean z9 = false;
+        if (offset <= this.end && i9 <= offset) {
+            z9 = true;
+        }
+        if (z9) {
+            return;
+        }
+        InlineClassHelperKt.throwIllegalArgumentException("Invalid offset: " + offset + ". Valid range is [" + this.start + " , " + this.end + ']');
+    }
+
+    private final int getBeginning(int offset, boolean getPrevWordBeginningOnTwoWordsBoundary) {
+        checkOffsetIsValid(offset);
+        if (isOnLetterOrDigitOrEmoji(offset)) {
+            return (!isBoundary(offset) || (isAfterLetterOrDigitOrEmoji(offset) && getPrevWordBeginningOnTwoWordsBoundary)) ? prevBoundary(offset) : offset;
+        }
+        if (isAfterLetterOrDigitOrEmoji(offset)) {
+            return prevBoundary(offset);
+        }
+        return -1;
+    }
+
+    private final int getEnd(int offset, boolean getNextWordEndOnTwoWordBoundary) {
+        checkOffsetIsValid(offset);
+        if (isAfterLetterOrDigitOrEmoji(offset)) {
+            return (!isBoundary(offset) || (isOnLetterOrDigitOrEmoji(offset) && getNextWordEndOnTwoWordBoundary)) ? nextBoundary(offset) : offset;
+        }
+        if (isOnLetterOrDigitOrEmoji(offset)) {
+            return nextBoundary(offset);
+        }
+        return -1;
+    }
+
+    private final boolean isAfterLetterOrDigitOrEmoji(int offset) {
+        int i9 = this.start + 1;
+        if (offset > this.end || i9 > offset) {
+            return false;
+        }
+        if (Character.isLetterOrDigit(Character.codePointBefore(this.charSequence, offset))) {
+            return true;
+        }
+        int i10 = offset - 1;
+        if (Character.isSurrogate(this.charSequence.charAt(i10))) {
+            return true;
+        }
+        if (!EmojiCompat.isConfigured()) {
+            return false;
+        }
+        EmojiCompat emojiCompat = EmojiCompat.get();
+        return emojiCompat.getLoadState() == 1 && emojiCompat.getEmojiStart(this.charSequence, i10) != -1;
+    }
+
+    private final boolean isBoundary(int offset) {
+        checkOffsetIsValid(offset);
+        if (!this.iterator.isBoundary(offset)) {
+            return false;
+        }
+        if (isOnLetterOrDigitOrEmoji(offset) && isOnLetterOrDigitOrEmoji(offset - 1) && isOnLetterOrDigitOrEmoji(offset + 1)) {
+            return false;
+        }
+        return offset <= 0 || offset >= this.charSequence.length() - 1 || !(isHiraganaKatakanaBoundary(offset) || isHiraganaKatakanaBoundary(offset + 1));
+    }
+
+    private final boolean isHiraganaKatakanaBoundary(int offset) {
+        int i9 = offset - 1;
+        Character.UnicodeBlock unicodeBlockOf = Character.UnicodeBlock.of(this.charSequence.charAt(i9));
+        Character.UnicodeBlock unicodeBlock = Character.UnicodeBlock.HIRAGANA;
+        if (Intrinsics.areEqual(unicodeBlockOf, unicodeBlock) && Intrinsics.areEqual(Character.UnicodeBlock.of(this.charSequence.charAt(offset)), Character.UnicodeBlock.KATAKANA)) {
+            return true;
+        }
+        return Intrinsics.areEqual(Character.UnicodeBlock.of(this.charSequence.charAt(offset)), unicodeBlock) && Intrinsics.areEqual(Character.UnicodeBlock.of(this.charSequence.charAt(i9)), Character.UnicodeBlock.KATAKANA);
+    }
+
+    private final boolean isOnLetterOrDigitOrEmoji(int offset) {
+        int i9 = this.start;
+        if (offset >= this.end || i9 > offset) {
+            return false;
+        }
+        if (Character.isLetterOrDigit(Character.codePointAt(this.charSequence, offset)) || Character.isSurrogate(this.charSequence.charAt(offset))) {
+            return true;
+        }
+        if (!EmojiCompat.isConfigured()) {
+            return false;
+        }
+        EmojiCompat emojiCompat = EmojiCompat.get();
+        return emojiCompat.getLoadState() == 1 && emojiCompat.getEmojiStart(this.charSequence, offset) != -1;
+    }
+
+    private final boolean isPunctuationEndBoundary(int offset) {
+        return !isOnPunctuation(offset) && isAfterPunctuation(offset);
+    }
+
+    private final boolean isPunctuationStartBoundary(int offset) {
+        return isOnPunctuation(offset) && !isAfterPunctuation(offset);
+    }
+
+    public final CharSequence getCharSequence() {
+        return this.charSequence;
+    }
+
+    public final int getNextWordEndOnTwoWordBoundary(int offset) {
+        return getEnd(offset, true);
+    }
+
+    public final int getPrevWordBeginningOnTwoWordsBoundary(int offset) {
+        return getBeginning(offset, true);
+    }
+
+    public final int getPunctuationBeginning(int offset) {
+        checkOffsetIsValid(offset);
+        while (offset != -1 && !isPunctuationStartBoundary(offset)) {
+            offset = prevBoundary(offset);
+        }
+        return offset;
+    }
+
+    public final int getPunctuationEnd(int offset) {
+        checkOffsetIsValid(offset);
+        while (offset != -1 && !isPunctuationEndBoundary(offset)) {
+            offset = nextBoundary(offset);
+        }
+        return offset;
+    }
+
+    public final boolean isAfterPunctuation(int offset) {
+        int i9 = this.start + 1;
+        if (offset > this.end || i9 > offset) {
+            return false;
+        }
+        return INSTANCE.isPunctuation$ui_text_release(Character.codePointBefore(this.charSequence, offset));
+    }
+
+    public final boolean isOnPunctuation(int offset) {
+        int i9 = this.start;
+        if (offset >= this.end || i9 > offset) {
+            return false;
+        }
+        return INSTANCE.isPunctuation$ui_text_release(Character.codePointAt(this.charSequence, offset));
+    }
+
+    public final int nextBoundary(int offset) {
+        checkOffsetIsValid(offset);
+        int iFollowing = this.iterator.following(offset);
+        return (isOnLetterOrDigitOrEmoji(iFollowing + (-1)) && isOnLetterOrDigitOrEmoji(iFollowing) && !isHiraganaKatakanaBoundary(iFollowing)) ? nextBoundary(iFollowing) : iFollowing;
+    }
+
+    public final int prevBoundary(int offset) {
+        checkOffsetIsValid(offset);
+        int iPreceding = this.iterator.preceding(offset);
+        return (isOnLetterOrDigitOrEmoji(iPreceding) && isAfterLetterOrDigitOrEmoji(iPreceding) && !isHiraganaKatakanaBoundary(iPreceding)) ? prevBoundary(iPreceding) : iPreceding;
+    }
+}

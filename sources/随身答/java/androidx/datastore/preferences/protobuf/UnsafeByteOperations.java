@@ -1,0 +1,26 @@
+package androidx.datastore.preferences.protobuf;
+
+import java.io.IOException;
+import java.nio.ByteBuffer;
+
+/* loaded from: classes3.dex */
+public final class UnsafeByteOperations {
+    private UnsafeByteOperations() {
+    }
+
+    public static ByteString unsafeWrap(byte[] bArr) {
+        return ByteString.wrap(bArr);
+    }
+
+    public static void unsafeWriteTo(ByteString byteString, ByteOutput byteOutput) throws IOException {
+        byteString.writeTo(byteOutput);
+    }
+
+    public static ByteString unsafeWrap(byte[] bArr, int i9, int i10) {
+        return ByteString.wrap(bArr, i9, i10);
+    }
+
+    public static ByteString unsafeWrap(ByteBuffer byteBuffer) {
+        return ByteString.wrap(byteBuffer);
+    }
+}

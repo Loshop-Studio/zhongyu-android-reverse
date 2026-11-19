@@ -1,0 +1,47 @@
+package androidx.transition;
+
+import android.annotation.SuppressLint;
+import android.view.View;
+import androidx.annotation.NonNull;
+import com.efs.sdk.base.protocol.file.section.AbsSection;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+/* loaded from: classes3.dex */
+public class TransitionValues {
+
+    @SuppressLint({"UnknownNullness"})
+    public View view;
+    public final Map<String, Object> values = new HashMap();
+    final ArrayList<Transition> mTargetedTransitions = new ArrayList<>();
+
+    @Deprecated
+    public TransitionValues() {
+    }
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof TransitionValues)) {
+            return false;
+        }
+        TransitionValues transitionValues = (TransitionValues) obj;
+        return this.view == transitionValues.view && this.values.equals(transitionValues.values);
+    }
+
+    public int hashCode() {
+        return (this.view.hashCode() * 31) + this.values.hashCode();
+    }
+
+    @NonNull
+    public String toString() {
+        String str = (("TransitionValues@" + Integer.toHexString(hashCode()) + ":\n") + "    view = " + this.view + AbsSection.SEP_ORIGIN_LINE_BREAK) + "    values:";
+        for (String str2 : this.values.keySet()) {
+            str = str + "    " + str2 + ": " + this.values.get(str2) + AbsSection.SEP_ORIGIN_LINE_BREAK;
+        }
+        return str;
+    }
+
+    public TransitionValues(@NonNull View view) {
+        this.view = view;
+    }
+}

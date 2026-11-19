@@ -1,0 +1,53 @@
+package androidx.compose.foundation.relocation;
+
+import androidx.compose.p012ui.Modifier;
+import androidx.compose.runtime.internal.StabilityInferred;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@StabilityInferred(parameters = 0)
+@Metadata(m13412d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0004\b\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\t\u001a\u00020\nH\u0002J\b\u0010\u000b\u001a\u00020\nH\u0016J\b\u0010\f\u001a\u00020\nH\u0016J\u000e\u0010\r\u001a\u00020\n2\u0006\u0010\u0002\u001a\u00020\u0003R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\u00020\u0006X\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\b¨\u0006\u000e"}, m13413d2 = {"Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode;", "Landroidx/compose/ui/Modifier$Node;", "requester", "Landroidx/compose/foundation/relocation/BringIntoViewRequester;", "(Landroidx/compose/foundation/relocation/BringIntoViewRequester;)V", "shouldAutoInvalidate", "", "getShouldAutoInvalidate", "()Z", "disposeRequester", "", "onAttach", "onDetach", "updateRequester", "foundation_release"}, m13414k = 1, m13415mv = {1, 9, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@SourceDebugExtension({"SMAP\nBringIntoViewRequester.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BringIntoViewRequester.kt\nandroidx/compose/foundation/relocation/BringIntoViewRequesterNode\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n*L\n1#1,159:1\n641#2,2:160\n646#2,2:162\n*S KotlinDebug\n*F\n+ 1 BringIntoViewRequester.kt\nandroidx/compose/foundation/relocation/BringIntoViewRequesterNode\n*L\n144#1:160,2\n151#1:162,2\n*E\n"})
+/* loaded from: classes.dex */
+public final class BringIntoViewRequesterNode extends Modifier.Node {
+    public static final int $stable = 8;
+    private BringIntoViewRequester requester;
+    private final boolean shouldAutoInvalidate;
+
+    public BringIntoViewRequesterNode(BringIntoViewRequester bringIntoViewRequester) {
+        this.requester = bringIntoViewRequester;
+    }
+
+    private final void disposeRequester() {
+        BringIntoViewRequester bringIntoViewRequester = this.requester;
+        if (bringIntoViewRequester instanceof BringIntoViewRequesterImpl) {
+            Intrinsics.checkNotNull(bringIntoViewRequester, "null cannot be cast to non-null type androidx.compose.foundation.relocation.BringIntoViewRequesterImpl");
+            ((BringIntoViewRequesterImpl) bringIntoViewRequester).getNodes().remove(this);
+        }
+    }
+
+    @Override // androidx.compose.ui.Modifier.Node
+    public boolean getShouldAutoInvalidate() {
+        return this.shouldAutoInvalidate;
+    }
+
+    @Override // androidx.compose.ui.Modifier.Node
+    public void onAttach() {
+        updateRequester(this.requester);
+    }
+
+    @Override // androidx.compose.ui.Modifier.Node
+    public void onDetach() {
+        disposeRequester();
+    }
+
+    public final void updateRequester(BringIntoViewRequester requester) {
+        disposeRequester();
+        if (requester instanceof BringIntoViewRequesterImpl) {
+            ((BringIntoViewRequesterImpl) requester).getNodes().add(this);
+        }
+        this.requester = requester;
+    }
+}

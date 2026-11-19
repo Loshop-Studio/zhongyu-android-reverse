@@ -1,0 +1,141 @@
+package okio;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+import java.io.IOException;
+import java.util.zip.Deflater;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import okio.internal._ZlibJvmKt;
+
+@Metadata(m13412d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0018\u00002\u00020\u0001B\u0019\b\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007B\u0019\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0001\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\bJ\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0016J\u0010\u0010\u0011\u001a\u00020\f2\u0006\u0010\u0012\u001a\u00020\nH\u0002J\b\u0010\u0013\u001a\u00020\fH\u0016J\r\u0010\u0014\u001a\u00020\fH\u0000¢\u0006\u0002\b\u0015J\b\u0010\u0016\u001a\u00020\fH\u0016J\b\u0010\u0017\u001a\u00020\u0018H\u0016J\b\u0010\u0019\u001a\u00020\u001aH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u001b"}, m13413d2 = {"Lokio/DeflaterSink;", "Lokio/Sink;", "sink", "Lokio/BufferedSink;", "deflater", "Ljava/util/zip/Deflater;", "<init>", "(Lokio/BufferedSink;Ljava/util/zip/Deflater;)V", "(Lokio/Sink;Ljava/util/zip/Deflater;)V", "closed", "", "write", "", "source", "Lokio/Buffer;", "byteCount", "", "deflate", "syncFlush", "flush", "finishDeflate", "finishDeflate$okio", "close", "timeout", "Lokio/Timeout;", "toString", "", "okio"}, m13414k = 1, m13415mv = {2, 1, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@SourceDebugExtension({"SMAP\nDeflaterSink.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DeflaterSink.kt\nokio/DeflaterSink\n+ 2 Util.kt\nokio/-SegmentedByteString\n*L\n1#1,140:1\n85#2:141\n*S KotlinDebug\n*F\n+ 1 DeflaterSink.kt\nokio/DeflaterSink\n*L\n39#1:141\n*E\n"})
+/* loaded from: classes5.dex */
+public final class DeflaterSink implements Sink {
+    private boolean closed;
+    private final Deflater deflater;
+    private final BufferedSink sink;
+
+    public DeflaterSink(BufferedSink sink, Deflater deflater) {
+        Intrinsics.checkNotNullParameter(sink, "sink");
+        Intrinsics.checkNotNullParameter(deflater, "deflater");
+        this.sink = sink;
+        this.deflater = deflater;
+    }
+
+    private final void deflate(boolean syncFlush) throws IOException {
+        Segment segmentWritableSegment$okio;
+        int iDeflate;
+        Buffer buffer = this.sink.getBuffer();
+        while (true) {
+            segmentWritableSegment$okio = buffer.writableSegment$okio(1);
+            if (syncFlush) {
+                try {
+                    Deflater deflater = this.deflater;
+                    byte[] bArr = segmentWritableSegment$okio.data;
+                    int i9 = segmentWritableSegment$okio.limit;
+                    iDeflate = deflater.deflate(bArr, i9, 8192 - i9, 2);
+                } catch (NullPointerException e10) {
+                    throw new IOException("Deflater already closed", e10);
+                }
+            } else {
+                Deflater deflater2 = this.deflater;
+                byte[] bArr2 = segmentWritableSegment$okio.data;
+                int i10 = segmentWritableSegment$okio.limit;
+                iDeflate = deflater2.deflate(bArr2, i10, 8192 - i10);
+            }
+            if (iDeflate > 0) {
+                segmentWritableSegment$okio.limit += iDeflate;
+                buffer.setSize$okio(buffer.size() + iDeflate);
+                this.sink.emitCompleteSegments();
+            } else if (this.deflater.needsInput()) {
+                break;
+            }
+        }
+        if (segmentWritableSegment$okio.pos == segmentWritableSegment$okio.limit) {
+            buffer.head = segmentWritableSegment$okio.pop();
+            SegmentPool.recycle(segmentWritableSegment$okio);
+        }
+    }
+
+    @Override // okio.Sink, java.io.Closeable, java.lang.AutoCloseable
+    public void close() throws Throwable {
+        if (this.closed) {
+            return;
+        }
+        try {
+            finishDeflate$okio();
+            th = null;
+        } catch (Throwable th) {
+            th = th;
+        }
+        try {
+            this.deflater.end();
+        } catch (Throwable th2) {
+            if (th == null) {
+                th = th2;
+            }
+        }
+        try {
+            this.sink.close();
+        } catch (Throwable th3) {
+            if (th == null) {
+                th = th3;
+            }
+        }
+        this.closed = true;
+        if (th != null) {
+            throw th;
+        }
+    }
+
+    public final void finishDeflate$okio() throws IOException {
+        this.deflater.finish();
+        deflate(false);
+    }
+
+    @Override // okio.Sink, java.io.Flushable
+    public void flush() throws IOException {
+        deflate(true);
+        this.sink.flush();
+    }
+
+    @Override // okio.Sink
+    public Timeout timeout() {
+        return this.sink.timeout();
+    }
+
+    public String toString() {
+        return "DeflaterSink(" + this.sink + ')';
+    }
+
+    @Override // okio.Sink
+    public void write(Buffer source, long byteCount) throws IOException {
+        Intrinsics.checkNotNullParameter(source, "source");
+        SegmentedByteString.checkOffsetAndCount(source.size(), 0L, byteCount);
+        while (byteCount > 0) {
+            Segment segment = source.head;
+            Intrinsics.checkNotNull(segment);
+            int iMin = (int) Math.min(byteCount, segment.limit - segment.pos);
+            this.deflater.setInput(segment.data, segment.pos, iMin);
+            deflate(false);
+            long j9 = iMin;
+            source.setSize$okio(source.size() - j9);
+            int i9 = segment.pos + iMin;
+            segment.pos = i9;
+            if (i9 == segment.limit) {
+                source.head = segment.pop();
+                SegmentPool.recycle(segment);
+            }
+            byteCount -= j9;
+        }
+        this.deflater.setInput(_ZlibJvmKt.getEMPTY_BYTE_ARRAY(), 0, 0);
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public DeflaterSink(Sink sink, Deflater deflater) {
+        this(Okio.buffer(sink), deflater);
+        Intrinsics.checkNotNullParameter(sink, "sink");
+        Intrinsics.checkNotNullParameter(deflater, "deflater");
+    }
+}

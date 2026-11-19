@@ -1,0 +1,8 @@
+package androidx.lifecycle.service;
+
+/* renamed from: androidx.lifecycle.service.R */
+/* loaded from: classes3.dex */
+public final class C4135R {
+    private C4135R() {
+    }
+}

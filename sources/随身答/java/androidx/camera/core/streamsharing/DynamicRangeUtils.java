@@ -1,0 +1,72 @@
+package androidx.camera.core.streamsharing;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.camera.core.DynamicRange;
+import androidx.camera.core.impl.UseCaseConfig;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+/* loaded from: classes.dex */
+public class DynamicRangeUtils {
+    private DynamicRangeUtils() {
+    }
+
+    @Nullable
+    private static DynamicRange intersectDynamicRange(@NonNull List<DynamicRange> list) {
+        if (list.isEmpty()) {
+            return null;
+        }
+        DynamicRange dynamicRange = list.get(0);
+        Integer numValueOf = Integer.valueOf(dynamicRange.getEncoding());
+        Integer numValueOf2 = Integer.valueOf(dynamicRange.getBitDepth());
+        for (int i9 = 1; i9 < list.size(); i9++) {
+            DynamicRange dynamicRange2 = list.get(i9);
+            numValueOf = intersectDynamicRangeEncoding(numValueOf, Integer.valueOf(dynamicRange2.getEncoding()));
+            numValueOf2 = intersectDynamicRangeBitDepth(numValueOf2, Integer.valueOf(dynamicRange2.getBitDepth()));
+            if (numValueOf == null || numValueOf2 == null) {
+                return null;
+            }
+        }
+        return new DynamicRange(numValueOf.intValue(), numValueOf2.intValue());
+    }
+
+    @Nullable
+    private static Integer intersectDynamicRangeBitDepth(@NonNull Integer num, @NonNull Integer num2) {
+        if (num.equals(0)) {
+            return num2;
+        }
+        if (num2.equals(0) || num.equals(num2)) {
+            return num;
+        }
+        return null;
+    }
+
+    @Nullable
+    private static Integer intersectDynamicRangeEncoding(@NonNull Integer num, @NonNull Integer num2) {
+        if (num.equals(0)) {
+            return num2;
+        }
+        if (!num2.equals(0)) {
+            if (num.equals(2) && !num2.equals(1)) {
+                return num2;
+            }
+            if ((!num2.equals(2) || num.equals(1)) && !num.equals(num2)) {
+                return null;
+            }
+        }
+        return num;
+    }
+
+    @Nullable
+    public static DynamicRange resolveDynamicRange(@NonNull Set<UseCaseConfig<?>> set) {
+        ArrayList arrayList = new ArrayList();
+        Iterator<UseCaseConfig<?>> it = set.iterator();
+        while (it.hasNext()) {
+            arrayList.add(it.next().getDynamicRange());
+        }
+        return intersectDynamicRange(arrayList);
+    }
+}

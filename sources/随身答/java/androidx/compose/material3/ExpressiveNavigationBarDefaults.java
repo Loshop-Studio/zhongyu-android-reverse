@@ -1,0 +1,72 @@
+package androidx.compose.material3;
+
+import androidx.compose.foundation.layout.WindowInsets;
+import androidx.compose.foundation.layout.WindowInsetsKt;
+import androidx.compose.foundation.layout.WindowInsetsSides;
+import androidx.compose.material3.internal.SystemBarsDefaultInsets_androidKt;
+import androidx.compose.material3.tokens.ColorSchemeKeyTokens;
+import androidx.compose.runtime.Composable;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.internal.StabilityInferred;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.jvm.JvmName;
+
+@StabilityInferred(parameters = 1)
+@ExperimentalMaterial3Api
+@Metadata(m13412d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\bÁ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0017\u0010\u0003\u001a\u00020\u00048Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006R\u0017\u0010\u0007\u001a\u00020\b8Gø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\t\u0010\nR\u0017\u0010\u000b\u001a\u00020\b8Gø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\f\u0010\nR\u0011\u0010\r\u001a\u00020\u000e8G¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0010\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0011"}, m13413d2 = {"Landroidx/compose/material3/ExpressiveNavigationBarDefaults;", "", "()V", "arrangement", "Landroidx/compose/material3/NavigationBarArrangement;", "getArrangement-Ebr7WPU", "()I", "containerColor", "Landroidx/compose/ui/graphics/Color;", "getContainerColor", "(Landroidx/compose/runtime/Composer;I)J", "contentColor", "getContentColor", "windowInsets", "Landroidx/compose/foundation/layout/WindowInsets;", "getWindowInsets", "(Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/layout/WindowInsets;", "material3_release"}, m13414k = 1, m13415mv = {1, 8, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes2.dex */
+public final class ExpressiveNavigationBarDefaults {
+    public static final int $stable = 0;
+    public static final ExpressiveNavigationBarDefaults INSTANCE = new ExpressiveNavigationBarDefaults();
+
+    private ExpressiveNavigationBarDefaults() {
+    }
+
+    /* renamed from: getArrangement-Ebr7WPU, reason: not valid java name */
+    public final int m19264getArrangementEbr7WPU() {
+        return NavigationBarArrangement.INSTANCE.m19427getEqualWeightEbr7WPU();
+    }
+
+    @Composable
+    @JvmName(name = "getContainerColor")
+    public final long getContainerColor(Composer composer, int i9) {
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(1666471887, i9, -1, "androidx.compose.material3.ExpressiveNavigationBarDefaults.<get-containerColor> (ExpressiveNavigationBar.kt:244)");
+        }
+        long value = ColorSchemeKt.getValue(ColorSchemeKeyTokens.SurfaceContainer, composer, 6);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        return value;
+    }
+
+    @Composable
+    @JvmName(name = "getContentColor")
+    public final long getContentColor(Composer composer, int i9) {
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(190518351, i9, -1, "androidx.compose.material3.ExpressiveNavigationBarDefaults.<get-contentColor> (ExpressiveNavigationBar.kt:249)");
+        }
+        long value = ColorSchemeKt.getValue(ColorSchemeKeyTokens.OnSurfaceVariant, composer, 6);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        return value;
+    }
+
+    @Composable
+    @JvmName(name = "getWindowInsets")
+    public final WindowInsets getWindowInsets(Composer composer, int i9) {
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(-1317880490, i9, -1, "androidx.compose.material3.ExpressiveNavigationBarDefaults.<get-windowInsets> (ExpressiveNavigationBar.kt:259)");
+        }
+        WindowInsets systemBarsForVisualComponents = SystemBarsDefaultInsets_androidKt.getSystemBarsForVisualComponents(WindowInsets.INSTANCE, composer, 6);
+        WindowInsetsSides.Companion companion = WindowInsetsSides.INSTANCE;
+        WindowInsets windowInsetsM18187onlybOOhFvg = WindowInsetsKt.m18187onlybOOhFvg(systemBarsForVisualComponents, WindowInsetsSides.m18199plusgK_yJZ4(companion.m18209getHorizontalJoeWqyM(), companion.m18207getBottomJoeWqyM()));
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        return windowInsetsM18187onlybOOhFvg;
+    }
+}

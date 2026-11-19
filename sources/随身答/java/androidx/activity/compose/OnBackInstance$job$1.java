@@ -1,0 +1,113 @@
+package androidx.activity.compose;
+
+import androidx.activity.BackEventCompat;
+import androidx.activity.OnBackPressedCallback;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import com.taobao.sophix.PatchStatus;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.Ref;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowCollector;
+import kotlinx.coroutines.flow.FlowKt;
+
+@Metadata(m13412d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, m13413d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m13414k = 3, m13415mv = {1, 8, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@DebugMetadata(m13450c = "androidx.activity.compose.OnBackInstance$job$1", m13451f = "PredictiveBackHandler.kt", m13452i = {0}, m13453l = {PatchStatus.CODE_LOAD_RES_INJECT_PATH}, m13454m = "invokeSuspend", m13455n = {"completed"}, m13456s = {"L$0"})
+@SourceDebugExtension({"SMAP\nPredictiveBackHandler.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PredictiveBackHandler.kt\nandroidx/activity/compose/OnBackInstance$job$1\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,200:1\n1#2:201\n*E\n"})
+/* loaded from: classes.dex */
+public final class OnBackInstance$job$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final /* synthetic */ OnBackPressedCallback $callback;
+    final /* synthetic */ Function2<Flow<BackEventCompat>, Continuation<? super Unit>, Object> $onBack;
+    Object L$0;
+    int label;
+    final /* synthetic */ OnBackInstance this$0;
+
+    @Metadata(m13412d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0003\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00030\u00022\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u008a@"}, m13413d2 = {"<anonymous>", "", "Lkotlinx/coroutines/flow/FlowCollector;", "Landroidx/activity/BackEventCompat;", "it", ""}, m13414k = 3, m13415mv = {1, 8, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+    @DebugMetadata(m13450c = "androidx.activity.compose.OnBackInstance$job$1$1", m13451f = "PredictiveBackHandler.kt", m13452i = {}, m13453l = {}, m13454m = "invokeSuspend", m13455n = {}, m13456s = {})
+    /* renamed from: androidx.activity.compose.OnBackInstance$job$1$1 */
+    public static final class C01091 extends SuspendLambda implements Function3<FlowCollector<? super BackEventCompat>, Throwable, Continuation<? super Unit>, Object> {
+        final /* synthetic */ Ref.BooleanRef $completed;
+        int label;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public C01091(Ref.BooleanRef booleanRef, Continuation<? super C01091> continuation) {
+            super(3, continuation);
+            this.$completed = booleanRef;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Object invokeSuspend(Object obj) {
+            IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            if (this.label != 0) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            ResultKt.throwOnFailure(obj);
+            this.$completed.element = true;
+            return Unit.INSTANCE;
+        }
+
+        @Override // kotlin.jvm.functions.Function3
+        public final Object invoke(FlowCollector<? super BackEventCompat> flowCollector, Throwable th, Continuation<? super Unit> continuation) {
+            return new C01091(this.$completed, continuation).invokeSuspend(Unit.INSTANCE);
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* JADX WARN: Multi-variable type inference failed */
+    public OnBackInstance$job$1(OnBackPressedCallback onBackPressedCallback, Function2<? super Flow<BackEventCompat>, ? super Continuation<? super Unit>, ? extends Object> function2, OnBackInstance onBackInstance, Continuation<? super OnBackInstance$job$1> continuation) {
+        super(2, continuation);
+        this.$callback = onBackPressedCallback;
+        this.$onBack = function2;
+        this.this$0 = onBackInstance;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new OnBackInstance$job$1(this.$callback, this.$onBack, this.this$0, continuation);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        Ref.BooleanRef booleanRef;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i9 = this.label;
+        if (i9 == 0) {
+            ResultKt.throwOnFailure(obj);
+            if (this.$callback.getIsEnabled()) {
+                Ref.BooleanRef booleanRef2 = new Ref.BooleanRef();
+                Function2<Flow<BackEventCompat>, Continuation<? super Unit>, Object> function2 = this.$onBack;
+                Flow<BackEventCompat> flowOnCompletion = FlowKt.onCompletion(FlowKt.consumeAsFlow(this.this$0.getChannel()), new C01091(booleanRef2, null));
+                this.L$0 = booleanRef2;
+                this.label = 1;
+                if (function2.invoke(flowOnCompletion, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                booleanRef = booleanRef2;
+            }
+            return Unit.INSTANCE;
+        }
+        if (i9 != 1) {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        booleanRef = (Ref.BooleanRef) this.L$0;
+        ResultKt.throwOnFailure(obj);
+        if (!booleanRef.element) {
+            throw new IllegalStateException("You must collect the progress flow");
+        }
+        return Unit.INSTANCE;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        return ((OnBackInstance$job$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+}

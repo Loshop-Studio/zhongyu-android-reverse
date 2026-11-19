@@ -1,0 +1,83 @@
+.class public final Lc9/a$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lc9/f;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lc9/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "c"
+.end annotation
+
+
+# static fields
+.field public static final a:Lc9/a$c;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lc9/a$c;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lc9/a$c;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lc9/a$c;->a:Lc9/a$c;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ll8/z;)Ll8/z;
+    .locals 0
+
+    .line 1
+    return-object p1
+.end method
+
+.method public bridge synthetic convert(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Ll8/z;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lc9/a$c;->a(Ll8/z;)Ll8/z;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method

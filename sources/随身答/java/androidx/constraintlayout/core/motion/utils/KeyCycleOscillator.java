@@ -1,0 +1,290 @@
+package androidx.constraintlayout.core.motion.utils;
+
+import androidx.camera.video.AudioStats;
+import androidx.constraintlayout.core.motion.MotionWidget;
+import androidx.constraintlayout.core.motion.utils.TypedValues;
+import java.lang.reflect.Array;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+/* loaded from: classes2.dex */
+public abstract class KeyCycleOscillator {
+    private static final String TAG = "KeyCycleOscillator";
+    private CurveFit mCurveFit;
+    private CycleOscillator mCycleOscillator;
+    private String mType;
+    private int mWaveShape = 0;
+    private String mWaveString = null;
+    public int mVariesBy = 0;
+    ArrayList<WavePoint> mWavePoints = new ArrayList<>();
+
+    public static class CoreSpline extends KeyCycleOscillator {
+        String mType;
+        int mTypeId;
+
+        public CoreSpline(String str) {
+            this.mType = str;
+            this.mTypeId = TypedValues.CycleType.getId(str);
+        }
+
+        @Override // androidx.constraintlayout.core.motion.utils.KeyCycleOscillator
+        public void setProperty(MotionWidget motionWidget, float f10) {
+            motionWidget.setValue(this.mTypeId, get(f10));
+        }
+    }
+
+    public static class CycleOscillator {
+        private static final String TAG = "CycleOscillator";
+        static final int UNSET = -1;
+        CurveFit mCurveFit;
+        float[] mOffsetArr;
+        private final int mOffst;
+        Oscillator mOscillator;
+        float mPathLength;
+        float[] mPeriod;
+        private final int mPhase;
+        float[] mPhaseArr;
+        double[] mPosition;
+        float[] mScale;
+        double[] mSplineSlopeCache;
+        double[] mSplineValueCache;
+        private final int mValue;
+        float[] mValues;
+        private final int mVariesBy;
+        int mWaveShape;
+
+        public CycleOscillator(int i9, String str, int i10, int i11) {
+            Oscillator oscillator = new Oscillator();
+            this.mOscillator = oscillator;
+            this.mOffst = 0;
+            this.mPhase = 1;
+            this.mValue = 2;
+            this.mWaveShape = i9;
+            this.mVariesBy = i10;
+            oscillator.setType(i9, str);
+            this.mValues = new float[i11];
+            this.mPosition = new double[i11];
+            this.mPeriod = new float[i11];
+            this.mOffsetArr = new float[i11];
+            this.mPhaseArr = new float[i11];
+            this.mScale = new float[i11];
+        }
+
+        public double getLastPhase() {
+            return this.mSplineValueCache[1];
+        }
+
+        public double getSlope(float f10) {
+            CurveFit curveFit = this.mCurveFit;
+            if (curveFit != null) {
+                double d10 = f10;
+                curveFit.getSlope(d10, this.mSplineSlopeCache);
+                this.mCurveFit.getPos(d10, this.mSplineValueCache);
+            } else {
+                double[] dArr = this.mSplineSlopeCache;
+                dArr[0] = 0.0d;
+                dArr[1] = 0.0d;
+                dArr[2] = 0.0d;
+            }
+            double d11 = f10;
+            double value = this.mOscillator.getValue(d11, this.mSplineValueCache[1]);
+            double slope = this.mOscillator.getSlope(d11, this.mSplineValueCache[1], this.mSplineSlopeCache[1]);
+            double[] dArr2 = this.mSplineSlopeCache;
+            return dArr2[0] + (value * dArr2[2]) + (slope * this.mSplineValueCache[2]);
+        }
+
+        public double getValues(float f10) {
+            CurveFit curveFit = this.mCurveFit;
+            if (curveFit != null) {
+                curveFit.getPos(f10, this.mSplineValueCache);
+            } else {
+                double[] dArr = this.mSplineValueCache;
+                dArr[0] = this.mOffsetArr[0];
+                dArr[1] = this.mPhaseArr[0];
+                dArr[2] = this.mValues[0];
+            }
+            double[] dArr2 = this.mSplineValueCache;
+            return dArr2[0] + (this.mOscillator.getValue(f10, dArr2[1]) * this.mSplineValueCache[2]);
+        }
+
+        public void setPoint(int i9, int i10, float f10, float f11, float f12, float f13) {
+            this.mPosition[i9] = i10 / 100.0d;
+            this.mPeriod[i9] = f10;
+            this.mOffsetArr[i9] = f11;
+            this.mPhaseArr[i9] = f12;
+            this.mValues[i9] = f13;
+        }
+
+        public void setup(float f10) {
+            this.mPathLength = f10;
+            double[][] dArr = (double[][]) Array.newInstance((Class<?>) Double.TYPE, this.mPosition.length, 3);
+            float[] fArr = this.mValues;
+            this.mSplineValueCache = new double[fArr.length + 2];
+            this.mSplineSlopeCache = new double[fArr.length + 2];
+            if (this.mPosition[0] > AudioStats.AUDIO_AMPLITUDE_NONE) {
+                this.mOscillator.addPoint(AudioStats.AUDIO_AMPLITUDE_NONE, this.mPeriod[0]);
+            }
+            double[] dArr2 = this.mPosition;
+            int length = dArr2.length - 1;
+            if (dArr2[length] < 1.0d) {
+                this.mOscillator.addPoint(1.0d, this.mPeriod[length]);
+            }
+            for (int i9 = 0; i9 < dArr.length; i9++) {
+                double[] dArr3 = dArr[i9];
+                dArr3[0] = this.mOffsetArr[i9];
+                dArr3[1] = this.mPhaseArr[i9];
+                dArr3[2] = this.mValues[i9];
+                this.mOscillator.addPoint(this.mPosition[i9], this.mPeriod[i9]);
+            }
+            this.mOscillator.normalize();
+            double[] dArr4 = this.mPosition;
+            if (dArr4.length > 1) {
+                this.mCurveFit = CurveFit.get(0, dArr4, dArr);
+            } else {
+                this.mCurveFit = null;
+            }
+        }
+    }
+
+    public static class PathRotateSet extends KeyCycleOscillator {
+        String mType;
+        int mTypeId;
+
+        public PathRotateSet(String str) {
+            this.mType = str;
+            this.mTypeId = TypedValues.CycleType.getId(str);
+        }
+
+        public void setPathRotate(MotionWidget motionWidget, float f10, double d10, double d11) {
+            motionWidget.setRotationZ(get(f10) + ((float) Math.toDegrees(Math.atan2(d11, d10))));
+        }
+
+        @Override // androidx.constraintlayout.core.motion.utils.KeyCycleOscillator
+        public void setProperty(MotionWidget motionWidget, float f10) {
+            motionWidget.setValue(this.mTypeId, get(f10));
+        }
+    }
+
+    public static class WavePoint {
+        float mOffset;
+        float mPeriod;
+        float mPhase;
+        int mPosition;
+        float mValue;
+
+        public WavePoint(int i9, float f10, float f11, float f12, float f13) {
+            this.mPosition = i9;
+            this.mValue = f13;
+            this.mOffset = f11;
+            this.mPeriod = f10;
+            this.mPhase = f12;
+        }
+    }
+
+    public static KeyCycleOscillator makeWidgetCycle(String str) {
+        return str.equals("pathRotate") ? new PathRotateSet(str) : new CoreSpline(str);
+    }
+
+    public float get(float f10) {
+        return (float) this.mCycleOscillator.getValues(f10);
+    }
+
+    public CurveFit getCurveFit() {
+        return this.mCurveFit;
+    }
+
+    public float getSlope(float f10) {
+        return (float) this.mCycleOscillator.getSlope(f10);
+    }
+
+    public void setCustom(Object obj) {
+    }
+
+    public void setPoint(int i9, int i10, String str, int i11, float f10, float f11, float f12, float f13, Object obj) {
+        this.mWavePoints.add(new WavePoint(i9, f10, f11, f12, f13));
+        if (i11 != -1) {
+            this.mVariesBy = i11;
+        }
+        this.mWaveShape = i10;
+        setCustom(obj);
+        this.mWaveString = str;
+    }
+
+    public void setProperty(MotionWidget motionWidget, float f10) {
+    }
+
+    public void setType(String str) {
+        this.mType = str;
+    }
+
+    public void setup(float f10) {
+        int size = this.mWavePoints.size();
+        if (size == 0) {
+            return;
+        }
+        Collections.sort(this.mWavePoints, new Comparator<WavePoint>() { // from class: androidx.constraintlayout.core.motion.utils.KeyCycleOscillator.1
+            @Override // java.util.Comparator
+            public int compare(WavePoint wavePoint, WavePoint wavePoint2) {
+                return Integer.compare(wavePoint.mPosition, wavePoint2.mPosition);
+            }
+        });
+        double[] dArr = new double[size];
+        char c10 = 2;
+        double[][] dArr2 = (double[][]) Array.newInstance((Class<?>) Double.TYPE, size, 3);
+        this.mCycleOscillator = new CycleOscillator(this.mWaveShape, this.mWaveString, this.mVariesBy, size);
+        ArrayList<WavePoint> arrayList = this.mWavePoints;
+        int size2 = arrayList.size();
+        int i9 = 0;
+        int i10 = 0;
+        while (i9 < size2) {
+            int i11 = i9 + 1;
+            WavePoint wavePoint = arrayList.get(i9);
+            float f11 = wavePoint.mPeriod;
+            dArr[i10] = f11 * 0.01d;
+            double[] dArr3 = dArr2[i10];
+            float f12 = wavePoint.mValue;
+            dArr3[0] = f12;
+            float f13 = wavePoint.mOffset;
+            char c11 = c10;
+            dArr3[1] = f13;
+            float f14 = wavePoint.mPhase;
+            dArr3[c11] = f14;
+            this.mCycleOscillator.setPoint(i10, wavePoint.mPosition, f11, f13, f14, f12);
+            i10++;
+            i9 = i11;
+            c10 = c11;
+            dArr2 = dArr2;
+        }
+        this.mCycleOscillator.setup(f10);
+        this.mCurveFit = CurveFit.get(0, dArr, dArr2);
+    }
+
+    public String toString() {
+        String str = this.mType;
+        DecimalFormat decimalFormat = new DecimalFormat("##.##");
+        ArrayList<WavePoint> arrayList = this.mWavePoints;
+        int size = arrayList.size();
+        int i9 = 0;
+        while (i9 < size) {
+            WavePoint wavePoint = arrayList.get(i9);
+            i9++;
+            str = str + "[" + wavePoint.mPosition + " , " + decimalFormat.format(r5.mValue) + "] ";
+        }
+        return str;
+    }
+
+    public boolean variesByPath() {
+        return this.mVariesBy == 1;
+    }
+
+    public void setPoint(int i9, int i10, String str, int i11, float f10, float f11, float f12, float f13) {
+        this.mWavePoints.add(new WavePoint(i9, f10, f11, f12, f13));
+        if (i11 != -1) {
+            this.mVariesBy = i11;
+        }
+        this.mWaveShape = i10;
+        this.mWaveString = str;
+    }
+}

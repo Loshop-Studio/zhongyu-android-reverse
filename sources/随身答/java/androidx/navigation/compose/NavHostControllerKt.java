@@ -1,0 +1,26 @@
+package androidx.navigation.compose;
+
+import androidx.compose.runtime.Composable;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.State;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.navigation.NavBackStackEntry;
+import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
+import androidx.navigation.NavHostController;
+import androidx.navigation.Navigator;
+import kotlin.Metadata;
+
+@Metadata(m13412d1 = {"androidx/navigation/compose/NavHostControllerKt__NavHostControllerKt", "androidx/navigation/compose/NavHostControllerKt__NavHostController_androidKt"}, m13414k = 4, m13415mv = {2, 0, 0}, m13417xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes3.dex */
+public final class NavHostControllerKt {
+    @Composable
+    public static final State<NavBackStackEntry> currentBackStackEntryAsState(NavController navController, Composer composer, int i9) {
+        return NavHostControllerKt__NavHostControllerKt.currentBackStackEntryAsState(navController, composer, i9);
+    }
+
+    @Composable
+    public static final NavHostController rememberNavController(Navigator<? extends NavDestination>[] navigatorArr, Composer composer, int i9) {
+        return NavHostControllerKt__NavHostController_androidKt.rememberNavController(navigatorArr, composer, i9);
+    }
+}

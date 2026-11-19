@@ -1,0 +1,76 @@
+package com.chad.library;
+
+import android.R;
+
+/* loaded from: classes3.dex */
+public final class R$styleable {
+    public static int ColorStateListItem_alpha = 3;
+    public static int ColorStateListItem_android_alpha = 1;
+    public static int ColorStateListItem_android_color = 0;
+    public static int ColorStateListItem_android_lStar = 2;
+    public static int ColorStateListItem_lStar = 4;
+    public static int CoordinatorLayout_Layout_android_layout_gravity = 0;
+    public static int CoordinatorLayout_Layout_layout_anchor = 1;
+    public static int CoordinatorLayout_Layout_layout_anchorGravity = 2;
+    public static int CoordinatorLayout_Layout_layout_behavior = 3;
+    public static int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 4;
+    public static int CoordinatorLayout_Layout_layout_insetEdge = 5;
+    public static int CoordinatorLayout_Layout_layout_keyline = 6;
+    public static int CoordinatorLayout_keylines = 0;
+    public static int CoordinatorLayout_statusBarBackground = 1;
+    public static int FontFamilyFont_android_font = 0;
+    public static int FontFamilyFont_android_fontStyle = 2;
+    public static int FontFamilyFont_android_fontVariationSettings = 4;
+    public static int FontFamilyFont_android_fontWeight = 1;
+    public static int FontFamilyFont_android_ttcIndex = 3;
+    public static int FontFamilyFont_font = 5;
+    public static int FontFamilyFont_fontStyle = 6;
+    public static int FontFamilyFont_fontVariationSettings = 7;
+    public static int FontFamilyFont_fontWeight = 8;
+    public static int FontFamilyFont_ttcIndex = 9;
+    public static int FontFamily_fontProviderAuthority = 0;
+    public static int FontFamily_fontProviderCerts = 1;
+    public static int FontFamily_fontProviderFallbackQuery = 2;
+    public static int FontFamily_fontProviderFetchStrategy = 3;
+    public static int FontFamily_fontProviderFetchTimeout = 4;
+    public static int FontFamily_fontProviderPackage = 5;
+    public static int FontFamily_fontProviderQuery = 6;
+    public static int FontFamily_fontProviderSystemFontFamily = 7;
+    public static int GradientColorItem_android_color = 0;
+    public static int GradientColorItem_android_offset = 1;
+    public static int GradientColor_android_centerColor = 7;
+    public static int GradientColor_android_centerX = 3;
+    public static int GradientColor_android_centerY = 4;
+    public static int GradientColor_android_endColor = 1;
+    public static int GradientColor_android_endX = 10;
+    public static int GradientColor_android_endY = 11;
+    public static int GradientColor_android_gradientRadius = 5;
+    public static int GradientColor_android_startColor = 0;
+    public static int GradientColor_android_startX = 8;
+    public static int GradientColor_android_startY = 9;
+    public static int GradientColor_android_tileMode = 6;
+    public static int GradientColor_android_type = 2;
+    public static int RecyclerView_android_clipToPadding = 1;
+    public static int RecyclerView_android_descendantFocusability = 2;
+    public static int RecyclerView_android_orientation = 0;
+    public static int RecyclerView_fastScrollEnabled = 3;
+    public static int RecyclerView_fastScrollHorizontalThumbDrawable = 4;
+    public static int RecyclerView_fastScrollHorizontalTrackDrawable = 5;
+    public static int RecyclerView_fastScrollVerticalThumbDrawable = 6;
+    public static int RecyclerView_fastScrollVerticalTrackDrawable = 7;
+    public static int RecyclerView_layoutManager = 8;
+    public static int RecyclerView_reverseLayout = 9;
+    public static int RecyclerView_spanCount = 10;
+    public static int RecyclerView_stackFromEnd = 11;
+    public static int[] ColorStateListItem = {R.attr.color, R.attr.alpha, R.attr.lStar, com.zykj.student.dialogue.R.attr.alpha, com.zykj.student.dialogue.R.attr.lStar};
+    public static int[] CoordinatorLayout = {com.zykj.student.dialogue.R.attr.keylines, com.zykj.student.dialogue.R.attr.statusBarBackground};
+    public static int[] CoordinatorLayout_Layout = {R.attr.layout_gravity, com.zykj.student.dialogue.R.attr.layout_anchor, com.zykj.student.dialogue.R.attr.layout_anchorGravity, com.zykj.student.dialogue.R.attr.layout_behavior, com.zykj.student.dialogue.R.attr.layout_dodgeInsetEdges, com.zykj.student.dialogue.R.attr.layout_insetEdge, com.zykj.student.dialogue.R.attr.layout_keyline};
+    public static int[] FontFamily = {com.zykj.student.dialogue.R.attr.fontProviderAuthority, com.zykj.student.dialogue.R.attr.fontProviderCerts, com.zykj.student.dialogue.R.attr.fontProviderFallbackQuery, com.zykj.student.dialogue.R.attr.fontProviderFetchStrategy, com.zykj.student.dialogue.R.attr.fontProviderFetchTimeout, com.zykj.student.dialogue.R.attr.fontProviderPackage, com.zykj.student.dialogue.R.attr.fontProviderQuery, com.zykj.student.dialogue.R.attr.fontProviderSystemFontFamily};
+    public static int[] FontFamilyFont = {R.attr.font, R.attr.fontWeight, R.attr.fontStyle, R.attr.ttcIndex, R.attr.fontVariationSettings, com.zykj.student.dialogue.R.attr.font, com.zykj.student.dialogue.R.attr.fontStyle, com.zykj.student.dialogue.R.attr.fontVariationSettings, com.zykj.student.dialogue.R.attr.fontWeight, com.zykj.student.dialogue.R.attr.ttcIndex};
+    public static int[] GradientColor = {R.attr.startColor, R.attr.endColor, R.attr.type, R.attr.centerX, R.attr.centerY, R.attr.gradientRadius, R.attr.tileMode, R.attr.centerColor, R.attr.startX, R.attr.startY, R.attr.endX, R.attr.endY};
+    public static int[] GradientColorItem = {R.attr.color, R.attr.offset};
+    public static int[] RecyclerView = {R.attr.orientation, R.attr.clipToPadding, R.attr.descendantFocusability, com.zykj.student.dialogue.R.attr.fastScrollEnabled, com.zykj.student.dialogue.R.attr.fastScrollHorizontalThumbDrawable, com.zykj.student.dialogue.R.attr.fastScrollHorizontalTrackDrawable, com.zykj.student.dialogue.R.attr.fastScrollVerticalThumbDrawable, com.zykj.student.dialogue.R.attr.fastScrollVerticalTrackDrawable, com.zykj.student.dialogue.R.attr.layoutManager, com.zykj.student.dialogue.R.attr.reverseLayout, com.zykj.student.dialogue.R.attr.spanCount, com.zykj.student.dialogue.R.attr.stackFromEnd};
+
+    private R$styleable() {
+    }
+}
