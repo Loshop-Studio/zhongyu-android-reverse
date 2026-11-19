@@ -1,0 +1,48 @@
+.class public La/k/b/m0;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic b:La/k/b/s0$a;
+
+.field public final synthetic c:La/k/b/m;
+
+.field public final synthetic d:La/h/f/a;
+
+
+# direct methods
+.method public constructor <init>(La/k/b/s0$a;La/k/b/m;La/h/f/a;)V
+    .locals 0
+
+    iput-object p1, p0, La/k/b/m0;->b:La/k/b/s0$a;
+
+    iput-object p2, p0, La/k/b/m0;->c:La/k/b/m;
+
+    iput-object p3, p0, La/k/b/m0;->d:La/h/f/a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 3
+
+    iget-object v0, p0, La/k/b/m0;->b:La/k/b/s0$a;
+
+    iget-object v1, p0, La/k/b/m0;->c:La/k/b/m;
+
+    iget-object v2, p0, La/k/b/m0;->d:La/h/f/a;
+
+    check-cast v0, La/k/b/c0$d;
+
+    invoke-virtual {v0, v1, v2}, La/k/b/c0$d;->a(La/k/b/m;La/h/f/a;)V
+
+    return-void
+.end method

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_horizontal" android:background="@drawable/shape_update_process" android:layout_width="@dimen/view_135" android:layout_height="@dimen/view_108">
+        <TextView android:textSize="@dimen/text_7" android:textColor="#4a4a4a" android:id="@id/tv_wait_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_11" android:text="@string/update_ing" />
+        <com.zykj.satisfaction.update.PercentCircleView android:id="@id/pcv_update_process" android:layout_width="@dimen/view_54" android:layout_height="@dimen/view_54" android:layout_marginTop="@dimen/view_11" android:layout_below="@id/tv_wait_update" app:circleBackground="@color/white" app:processColor="@color/colorPrimary" app:ringColor="#f3f3f3" />
+    </RelativeLayout>
+</RelativeLayout>

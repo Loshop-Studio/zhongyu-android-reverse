@@ -1,0 +1,7 @@
+version: 3.0.2
+apkFileName: 问卷调查.apk
+sdkInfo:
+  minSdkVersion: 23
+doNotCompress:
+- arsc
+- png
