@@ -1,0 +1,243 @@
+.class public final Lcom/efs/sdk/base/a/g/a/b;
+.super Lcom/efs/sdk/base/a/g/a/a;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/efs/sdk/base/a/g/a/a;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lcom/efs/sdk/base/a/f/b;)V
+    .locals 4
+
+    .line 1
+    iget-object v0, p1, Lcom/efs/sdk/base/a/f/b;->b:Lcom/efs/sdk/base/a/f/c;
+
+    .line 2
+    .line 3
+    iget-boolean v0, v0, Lcom/efs/sdk/base/a/f/c;->a:Z
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-virtual {p0, p1}, Lcom/efs/sdk/base/a/g/a/a;->b(Lcom/efs/sdk/base/a/f/b;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+
+    .line 11
+    :cond_0
+    invoke-static {}, Lcom/efs/sdk/base/a/b/a$b;->a()Lcom/efs/sdk/base/a/b/a;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iget-object v1, p1, Lcom/efs/sdk/base/a/f/b;->a:Lcom/efs/sdk/base/a/f/a;
+
+    .line 16
+    .line 17
+    iget-object v1, v1, Lcom/efs/sdk/base/a/f/a;->a:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    const-string v2, "wa"
+
+    .line 20
+    .line 21
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v1
+
+    .line 25
+    if-nez v1, :cond_3
+
+    .line 26
+    .line 27
+    invoke-static {}, Lcom/efs/sdk/base/a/b/c;->a()Lcom/efs/sdk/base/a/b/c;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v1
+
+    .line 31
+    iget-boolean v1, v1, Lcom/efs/sdk/base/a/b/c;->a:Z
+
+    .line 32
+    .line 33
+    if-nez v1, :cond_3
+
+    .line 34
+    .line 35
+    iget-boolean p1, v0, Lcom/efs/sdk/base/a/b/a;->a:Z
+
+    .line 36
+    .line 37
+    if-nez p1, :cond_2
+
+    .line 38
+    .line 39
+    invoke-static {}, Lcom/efs/sdk/base/a/i/f$a;->a()Lcom/efs/sdk/base/a/i/f;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p1
+
+    .line 43
+    invoke-static {}, Lcom/efs/sdk/base/a/c/a/c;->a()Lcom/efs/sdk/base/a/c/a/c;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v1
+
+    .line 47
+    iget-object v1, v1, Lcom/efs/sdk/base/a/c/a/c;->d:Lcom/efs/sdk/base/a/c/a/b;
+
+    .line 48
+    .line 49
+    iget v1, v1, Lcom/efs/sdk/base/a/c/a/b;->a:I
+
+    .line 50
+    .line 51
+    iget-object v2, p1, Lcom/efs/sdk/base/a/i/f;->b:Lcom/efs/sdk/base/a/d/a;
+
+    .line 52
+    .line 53
+    if-nez v2, :cond_1
+
+    .line 54
+    .line 55
+    invoke-static {}, Lcom/efs/sdk/base/a/d/a;->a()Lcom/efs/sdk/base/a/c/a;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object v2
+
+    .line 59
+    iget-boolean v2, v2, Lcom/efs/sdk/base/a/c/a;->d:Z
+
+    .line 60
+    .line 61
+    if-eqz v2, :cond_2
+
+    .line 62
+    .line 63
+    :cond_1
+    iget-object v2, p1, Lcom/efs/sdk/base/a/i/f;->b:Lcom/efs/sdk/base/a/d/a;
+
+    .line 64
+    .line 65
+    const-string v3, "disk_limit"
+
+    .line 66
+    .line 67
+    invoke-virtual {p1, v3, v1}, Lcom/efs/sdk/base/a/i/f;->a(Ljava/lang/String;I)Lcom/efs/sdk/base/a/i/b;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object p1
+
+    .line 71
+    invoke-virtual {v2, p1}, Lcom/efs/sdk/base/a/d/a;->a(Lcom/efs/sdk/base/protocol/ILogProtocol;)V
+
+    .line 72
+    .line 73
+    .line 74
+    :cond_2
+    const/4 p1, 0x1
+
+    .line 75
+    iput-boolean p1, v0, Lcom/efs/sdk/base/a/b/a;->a:Z
+
+    .line 76
+    .line 77
+    return-void
+
+    .line 78
+    :cond_3
+    iget-object v1, p1, Lcom/efs/sdk/base/a/f/b;->a:Lcom/efs/sdk/base/a/f/a;
+
+    .line 79
+    .line 80
+    iget v2, v1, Lcom/efs/sdk/base/a/f/a;->c:I
+
+    .line 81
+    .line 82
+    if-nez v2, :cond_5
+
+    .line 83
+    .line 84
+    iget-object v2, p1, Lcom/efs/sdk/base/a/f/b;->c:[B
+
+    .line 85
+    .line 86
+    if-eqz v2, :cond_4
+
+    .line 87
+    .line 88
+    array-length v2, v2
+
+    .line 89
+    if-nez v2, :cond_5
+
+    .line 90
+    .line 91
+    :cond_4
+    return-void
+
+    .line 92
+    :cond_5
+    iget-object v0, v0, Lcom/efs/sdk/base/a/b/a;->c:Lcom/efs/sdk/base/a/b/b;
+
+    .line 93
+    .line 94
+    iget-byte v1, v1, Lcom/efs/sdk/base/a/f/a;->b:B
+
+    .line 95
+    .line 96
+    invoke-virtual {v0, v1}, Lcom/efs/sdk/base/a/b/b;->a(B)Lcom/efs/sdk/base/a/b/e;
+
+    .line 97
+    .line 98
+    .line 99
+    move-result-object v0
+
+    .line 100
+    if-eqz v0, :cond_6
+
+    .line 101
+    .line 102
+    invoke-interface {v0, p1}, Lcom/efs/sdk/base/a/b/e;->a(Lcom/efs/sdk/base/a/f/b;)V
+
+    .line 103
+    .line 104
+    .line 105
+    :cond_6
+    return-void
+.end method

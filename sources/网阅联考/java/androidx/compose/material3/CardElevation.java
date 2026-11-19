@@ -1,0 +1,259 @@
+package androidx.compose.material3;
+
+import androidx.compose.animation.core.Animatable;
+import androidx.compose.animation.core.AnimationVector1D;
+import androidx.compose.animation.core.VectorConvertersKt;
+import androidx.compose.foundation.interaction.DragInteraction;
+import androidx.compose.foundation.interaction.FocusInteraction;
+import androidx.compose.foundation.interaction.HoverInteraction;
+import androidx.compose.foundation.interaction.Interaction;
+import androidx.compose.foundation.interaction.InteractionSource;
+import androidx.compose.foundation.interaction.PressInteraction;
+import androidx.compose.p006ui.geometry.Offset;
+import androidx.compose.p006ui.unit.C1700Dp;
+import androidx.compose.runtime.Composable;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.EffectsKt;
+import androidx.compose.runtime.Immutable;
+import androidx.compose.runtime.MutableState;
+import androidx.compose.runtime.SnapshotStateKt;
+import androidx.compose.runtime.SnapshotStateKt__SnapshotStateKt;
+import androidx.compose.runtime.State;
+import androidx.compose.runtime.snapshots.SnapshotStateList;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import com.umeng.commonsdk.statistics.UMErrorCode;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.collections.CollectionsKt___CollectionsKt;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlinx.coroutines.CoroutineScope;
+
+@Immutable
+@Metadata(m5174d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0005\b\u0007\u0018\u00002\u00020\u0001B:\b\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003ø\u0001\u0000¢\u0006\u0002\u0010\tJ&\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00030\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0003ø\u0001\u0000¢\u0006\u0002\u0010\u0011J\u0013\u0010\u0012\u001a\u00020\u000e2\b\u0010\u0013\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\b\u0010\u0014\u001a\u00020\u0015H\u0016J*\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00030\f2\u0006\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010H\u0001ø\u0001\u0000¢\u0006\u0004\b\u0017\u0010\u0011J*\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00030\f2\u0006\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010H\u0001ø\u0001\u0000¢\u0006\u0004\b\u0019\u0010\u0011R\u0019\u0010\u0002\u001a\u00020\u0003X\u0082\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0004\n\u0002\u0010\nR\u0019\u0010\b\u001a\u00020\u0003X\u0082\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0004\n\u0002\u0010\nR\u0019\u0010\u0007\u001a\u00020\u0003X\u0082\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0004\n\u0002\u0010\nR\u0019\u0010\u0005\u001a\u00020\u0003X\u0082\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0004\n\u0002\u0010\nR\u0019\u0010\u0006\u001a\u00020\u0003X\u0082\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0004\n\u0002\u0010\nR\u0019\u0010\u0004\u001a\u00020\u0003X\u0082\u0004ø\u0001\u0000ø\u0001\u0001ø\u0001\u0002¢\u0006\u0004\n\u0002\u0010\n\u0082\u0002\u000f\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001a"}, m5175d2 = {"Landroidx/compose/material3/CardElevation;", "", "defaultElevation", "Landroidx/compose/ui/unit/Dp;", "pressedElevation", "focusedElevation", "hoveredElevation", "draggedElevation", "disabledElevation", "(FFFFFFLkotlin/jvm/internal/DefaultConstructorMarker;)V", "F", "animateElevation", "Landroidx/compose/runtime/State;", "enabled", "", "interactionSource", "Landroidx/compose/foundation/interaction/InteractionSource;", "(ZLandroidx/compose/foundation/interaction/InteractionSource;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;", "equals", "other", "hashCode", "", "shadowElevation", "shadowElevation$material3_release", "tonalElevation", "tonalElevation$material3_release", "material3_release"}, m5176k = 1, m5177mv = {1, 7, 1}, m5179xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes.dex */
+public final class CardElevation {
+    private final float defaultElevation;
+    private final float disabledElevation;
+    private final float draggedElevation;
+    private final float focusedElevation;
+    private final float hoveredElevation;
+    private final float pressedElevation;
+
+    @Metadata(m5176k = 3, m5177mv = {1, 7, 1}, m5179xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+    @DebugMetadata(m5191c = "androidx.compose.material3.CardElevation$animateElevation$2", m5192f = "Card.kt", m5193i = {}, m5194l = {681, 688}, m5195m = "invokeSuspend", m5196n = {}, m5197s = {})
+    /* renamed from: androidx.compose.material3.CardElevation$animateElevation$2 */
+    public static final class C09502 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+        final /* synthetic */ Animatable<C1700Dp, AnimationVector1D> $animatable;
+        final /* synthetic */ boolean $enabled;
+        final /* synthetic */ Interaction $interaction;
+        final /* synthetic */ float $target;
+        int label;
+        final /* synthetic */ CardElevation this$0;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public C09502(boolean z3, Animatable<C1700Dp, AnimationVector1D> animatable, CardElevation cardElevation, float f4, Interaction interaction, Continuation<? super C09502> continuation) {
+            super(2, continuation);
+            this.$enabled = z3;
+            this.$animatable = animatable;
+            this.this$0 = cardElevation;
+            this.$target = f4;
+            this.$interaction = interaction;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+            return new C09502(this.$enabled, this.$animatable, this.this$0, this.$target, this.$interaction, continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Object invokeSuspend(Object obj) {
+            Object coroutine_suspended = IntrinsicsKt__IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i4 = this.label;
+            if (i4 == 0) {
+                ResultKt.throwOnFailure(obj);
+                if (this.$enabled) {
+                    float fM11539unboximpl = this.$animatable.getTargetValue().m11539unboximpl();
+                    Interaction start = null;
+                    if (C1700Dp.m11530equalsimpl0(fM11539unboximpl, this.this$0.pressedElevation)) {
+                        start = new PressInteraction.Press(Offset.INSTANCE.m8961getZeroF1C5BW0(), null);
+                    } else if (C1700Dp.m11530equalsimpl0(fM11539unboximpl, this.this$0.hoveredElevation)) {
+                        start = new HoverInteraction.Enter();
+                    } else if (C1700Dp.m11530equalsimpl0(fM11539unboximpl, this.this$0.focusedElevation)) {
+                        start = new FocusInteraction.Focus();
+                    } else if (C1700Dp.m11530equalsimpl0(fM11539unboximpl, this.this$0.draggedElevation)) {
+                        start = new DragInteraction.Start();
+                    }
+                    Animatable<C1700Dp, AnimationVector1D> animatable = this.$animatable;
+                    float f4 = this.$target;
+                    Interaction interaction = this.$interaction;
+                    this.label = 1;
+                    if (ElevationKt.m7964animateElevationrAjV9yQ(animatable, f4, start, interaction, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } else {
+                    Animatable<C1700Dp, AnimationVector1D> animatable2 = this.$animatable;
+                    C1700Dp c1700DpM11523boximpl = C1700Dp.m11523boximpl(this.$target);
+                    this.label = 2;
+                    if (animatable2.snapTo(c1700DpM11523boximpl, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+            } else {
+                if (i4 != 1 && i4 != 2) {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                ResultKt.throwOnFailure(obj);
+            }
+            return Unit.INSTANCE;
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+            return ((C09502) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        }
+    }
+
+    public /* synthetic */ CardElevation(float f4, float f5, float f6, float f7, float f8, float f9, DefaultConstructorMarker defaultConstructorMarker) {
+        this(f4, f5, f6, f7, f8, f9);
+    }
+
+    @Composable
+    private final State<C1700Dp> animateElevation(boolean z3, InteractionSource interactionSource, Composer composer, int i4) {
+        composer.startReplaceableGroup(-1421890746);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(-1421890746, i4, -1, "androidx.compose.material3.CardElevation.animateElevation (Card.kt:612)");
+        }
+        composer.startReplaceableGroup(-492369756);
+        Object objRememberedValue = composer.rememberedValue();
+        Composer.Companion companion = Composer.INSTANCE;
+        if (objRememberedValue == companion.getEmpty()) {
+            objRememberedValue = SnapshotStateKt.mutableStateListOf();
+            composer.updateRememberedValue(objRememberedValue);
+        }
+        composer.endReplaceableGroup();
+        SnapshotStateList snapshotStateList = (SnapshotStateList) objRememberedValue;
+        int i5 = (i4 >> 3) & 14;
+        composer.startReplaceableGroup(511388516);
+        boolean zChanged = composer.changed(interactionSource) | composer.changed(snapshotStateList);
+        Object objRememberedValue2 = composer.rememberedValue();
+        if (zChanged || objRememberedValue2 == companion.getEmpty()) {
+            objRememberedValue2 = new CardElevation$animateElevation$1$1(interactionSource, snapshotStateList, null);
+            composer.updateRememberedValue(objRememberedValue2);
+        }
+        composer.endReplaceableGroup();
+        EffectsKt.LaunchedEffect(interactionSource, (Function2<? super CoroutineScope, ? super Continuation<? super Unit>, ? extends Object>) objRememberedValue2, composer, i5 | 64);
+        Interaction interaction = (Interaction) CollectionsKt___CollectionsKt.lastOrNull((List) snapshotStateList);
+        float f4 = !z3 ? this.disabledElevation : interaction instanceof PressInteraction.Press ? this.pressedElevation : interaction instanceof HoverInteraction.Enter ? this.hoveredElevation : interaction instanceof FocusInteraction.Focus ? this.focusedElevation : interaction instanceof DragInteraction.Start ? this.draggedElevation : this.defaultElevation;
+        composer.startReplaceableGroup(-492369756);
+        Object objRememberedValue3 = composer.rememberedValue();
+        if (objRememberedValue3 == companion.getEmpty()) {
+            objRememberedValue3 = new Animatable(C1700Dp.m11523boximpl(f4), VectorConvertersKt.getVectorConverter(C1700Dp.INSTANCE), null, 4, null);
+            composer.updateRememberedValue(objRememberedValue3);
+        }
+        composer.endReplaceableGroup();
+        Animatable animatable = (Animatable) objRememberedValue3;
+        EffectsKt.LaunchedEffect(C1700Dp.m11523boximpl(f4), new C09502(z3, animatable, this, f4, interaction, null), composer, 64);
+        State<C1700Dp> stateAsState = animatable.asState();
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        composer.endReplaceableGroup();
+        return stateAsState;
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (other == null || !(other instanceof CardElevation)) {
+            return false;
+        }
+        CardElevation cardElevation = (CardElevation) other;
+        return C1700Dp.m11530equalsimpl0(this.defaultElevation, cardElevation.defaultElevation) && C1700Dp.m11530equalsimpl0(this.pressedElevation, cardElevation.pressedElevation) && C1700Dp.m11530equalsimpl0(this.focusedElevation, cardElevation.focusedElevation) && C1700Dp.m11530equalsimpl0(this.hoveredElevation, cardElevation.hoveredElevation) && C1700Dp.m11530equalsimpl0(this.disabledElevation, cardElevation.disabledElevation);
+    }
+
+    public int hashCode() {
+        return (((((((C1700Dp.m11531hashCodeimpl(this.defaultElevation) * 31) + C1700Dp.m11531hashCodeimpl(this.pressedElevation)) * 31) + C1700Dp.m11531hashCodeimpl(this.focusedElevation)) * 31) + C1700Dp.m11531hashCodeimpl(this.hoveredElevation)) * 31) + C1700Dp.m11531hashCodeimpl(this.disabledElevation);
+    }
+
+    @Composable
+    public final State<C1700Dp> shadowElevation$material3_release(boolean z3, InteractionSource interactionSource, Composer composer, int i4) {
+        composer.startReplaceableGroup(-1763481333);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(-1763481333, i4, -1, "androidx.compose.material3.CardElevation.shadowElevation (Card.kt:601)");
+        }
+        composer.startReplaceableGroup(-1409180589);
+        if (interactionSource != null) {
+            composer.endReplaceableGroup();
+            State<C1700Dp> stateAnimateElevation = animateElevation(z3, interactionSource, composer, (i4 & 896) | (i4 & 14) | (i4 & UMErrorCode.E_UM_BE_DEFLATE_FAILED));
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventEnd();
+            }
+            composer.endReplaceableGroup();
+            return stateAnimateElevation;
+        }
+        composer.startReplaceableGroup(-492369756);
+        Object objRememberedValue = composer.rememberedValue();
+        if (objRememberedValue == Composer.INSTANCE.getEmpty()) {
+            objRememberedValue = SnapshotStateKt__SnapshotStateKt.mutableStateOf$default(C1700Dp.m11523boximpl(this.defaultElevation), null, 2, null);
+            composer.updateRememberedValue(objRememberedValue);
+        }
+        composer.endReplaceableGroup();
+        MutableState mutableState = (MutableState) objRememberedValue;
+        composer.endReplaceableGroup();
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        composer.endReplaceableGroup();
+        return mutableState;
+    }
+
+    @Composable
+    public final State<C1700Dp> tonalElevation$material3_release(boolean z3, InteractionSource interactionSource, Composer composer, int i4) {
+        composer.startReplaceableGroup(1757792649);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(1757792649, i4, -1, "androidx.compose.material3.CardElevation.tonalElevation (Card.kt:579)");
+        }
+        composer.startReplaceableGroup(603878391);
+        if (interactionSource != null) {
+            composer.endReplaceableGroup();
+            State<C1700Dp> stateAnimateElevation = animateElevation(z3, interactionSource, composer, (i4 & 896) | (i4 & 14) | (i4 & UMErrorCode.E_UM_BE_DEFLATE_FAILED));
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventEnd();
+            }
+            composer.endReplaceableGroup();
+            return stateAnimateElevation;
+        }
+        composer.startReplaceableGroup(-492369756);
+        Object objRememberedValue = composer.rememberedValue();
+        if (objRememberedValue == Composer.INSTANCE.getEmpty()) {
+            objRememberedValue = SnapshotStateKt__SnapshotStateKt.mutableStateOf$default(C1700Dp.m11523boximpl(this.defaultElevation), null, 2, null);
+            composer.updateRememberedValue(objRememberedValue);
+        }
+        composer.endReplaceableGroup();
+        MutableState mutableState = (MutableState) objRememberedValue;
+        composer.endReplaceableGroup();
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        composer.endReplaceableGroup();
+        return mutableState;
+    }
+
+    private CardElevation(float f4, float f5, float f6, float f7, float f8, float f9) {
+        this.defaultElevation = f4;
+        this.pressedElevation = f5;
+        this.focusedElevation = f6;
+        this.hoveredElevation = f7;
+        this.draggedElevation = f8;
+        this.disabledElevation = f9;
+    }
+}

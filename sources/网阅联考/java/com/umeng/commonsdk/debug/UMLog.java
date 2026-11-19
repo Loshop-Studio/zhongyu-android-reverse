@@ -1,0 +1,267 @@
+package com.umeng.commonsdk.debug;
+
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import com.umeng.commonsdk.UMConfigure;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+/* loaded from: classes2.dex */
+public class UMLog {
+
+    /* renamed from: AQ */
+    private static final String f2546AQ = "├───────────────────解决方案─────────────────────────────────────────────────────────────────────────────";
+    private static final String BOTTOM_BORDER = "└────────────────────────────────────────────────────────────────────────────────────────────────────────────────";
+    private static final char BOTTOM_LEFT_CORNER = 9492;
+    private static final String DOUBLE_DIVIDER = "────────────────────────────────────────────────────────";
+    private static final String DOUBLE_DIVIDER_AQ = "───────────────────问题─────────────────────";
+    private static final char HORIZONTAL_LINE = 9474;
+    private static final String INDENT = "     ";
+    private static final int JSON_INDENT = 2;
+    private static final int KEYLENGTH = 10;
+    private static final String MIDDLE_BORDER = "├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄";
+    private static final char MIDDLE_CORNER = 9500;
+    private static final String SINGLE_DIVIDER = "┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄";
+    private static final String SINGLE_DIVIDER_AQ = "───────────────────解决方案─────────────────────";
+    private static final String TAG = "UMLog";
+    private static final String TOP_BORDER = "┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────";
+    private static final String TOP_BORDER_AQ = "┌───────────────────问题─────────────────────────────────────────────────────────────────────────────";
+    private static final char TOP_LEFT_CORNER = 9484;
+
+    /* renamed from: aq */
+    public static void m3425aq(int i4, String str, String str2) {
+        try {
+            if (UMConfigure.isDebugLog()) {
+                UInterface logger = getLogger(i4);
+                logger.log(TAG, TOP_BORDER_AQ);
+                logger.log(TAG, "│     " + str);
+                logger.log(TAG, f2546AQ);
+                logger.log(TAG, "│     " + str2);
+                logger.log(TAG, BOTTOM_BORDER);
+            }
+        } catch (Exception unused) {
+        }
+    }
+
+    public static void bundle(int i4, Bundle bundle) {
+        bundle(null, i4, bundle);
+    }
+
+    public static UInterface getLogger(int i4) {
+        return i4 != 0 ? i4 != 1 ? i4 != 2 ? i4 != 3 ? new C3441D() : new C3441D() : new C3443I() : new C3444W() : new C3442E();
+    }
+
+    public static void jsonArry(JSONArray jSONArray) {
+        try {
+            if (UMConfigure.isDebugLog()) {
+                Log.e(TAG, jSONArray.toString(2));
+            }
+        } catch (Exception unused) {
+        }
+    }
+
+    public static void jsonObject(JSONObject jSONObject) {
+        try {
+            if (UMConfigure.isDebugLog()) {
+                Log.e(TAG, jSONObject.toString(2));
+            }
+        } catch (Exception unused) {
+        }
+    }
+
+    public static void mutlInfo(int i4, String... strArr) {
+        try {
+            if (UMConfigure.isDebugLog()) {
+                int length = strArr.length;
+                UInterface logger = getLogger(i4);
+                if (length == 1) {
+                    logger.log(TAG, strArr[0]);
+                    return;
+                }
+                if (length >= 2) {
+                    logger.log(TAG, TOP_BORDER);
+                    for (int i5 = 0; i5 < length; i5++) {
+                        logger.log(TAG, "│     " + strArr[i5]);
+                        if (i5 != length - 1) {
+                            logger.log(TAG, MIDDLE_BORDER);
+                        }
+                    }
+                    logger.log(TAG, BOTTOM_BORDER);
+                }
+            }
+        } catch (Exception unused) {
+        }
+    }
+
+    public static void bundle(String str, int i4, Bundle bundle) {
+        try {
+            if (UMConfigure.isDebugLog()) {
+                String str2 = TextUtils.isEmpty(str) ? TAG : "UMLog_" + str;
+                if (bundle != null) {
+                    UInterface logger = getLogger(i4);
+                    logger.log(str2, TOP_BORDER);
+                    logger.log(str2, "│key│value");
+                    logger.log(str2, MIDDLE_BORDER);
+                    for (String str3 : bundle.keySet()) {
+                        if (!TextUtils.isEmpty(str3) && bundle.get(str3) != null) {
+                            logger.log(str2, HORIZONTAL_LINE + str3 + HORIZONTAL_LINE + bundle.get(str3).toString());
+                            logger.log(str2, MIDDLE_BORDER);
+                        }
+                    }
+                    logger.log(str2, BOTTOM_BORDER);
+                }
+            }
+        } catch (Exception unused) {
+        }
+    }
+
+    public static void jsonArry(String str, JSONArray jSONArray) {
+        try {
+            if (UMConfigure.isDebugLog()) {
+                Log.e("UMLog_" + str, jSONArray.toString(2));
+            }
+        } catch (Exception unused) {
+        }
+    }
+
+    public static void jsonObject(String str, JSONObject jSONObject) {
+        try {
+            if (UMConfigure.isDebugLog()) {
+                Log.e("UMLog_" + str, jSONObject.toString(2));
+            }
+        } catch (Exception unused) {
+        }
+    }
+
+    /* renamed from: aq */
+    public static void m3427aq(String str, int i4, String str2, String str3) {
+        try {
+            if (UMConfigure.isDebugLog()) {
+                UInterface logger = getLogger(i4);
+                String str4 = "UMLog_" + str;
+                logger.log(str4, TOP_BORDER_AQ);
+                logger.log(str4, "│     " + str2);
+                logger.log(str4, f2546AQ);
+                logger.log(str4, "│     " + str3);
+                logger.log(str4, BOTTOM_BORDER);
+            }
+        } catch (Exception unused) {
+        }
+    }
+
+    public static void mutlInfo(String str, int i4, String... strArr) {
+        try {
+            if (UMConfigure.isDebugLog()) {
+                int length = strArr.length;
+                UInterface logger = getLogger(i4);
+                String str2 = "UMLog_" + str;
+                if (length == 1) {
+                    logger.log(str2, strArr[0]);
+                    return;
+                }
+                if (length >= 2) {
+                    logger.log(str2, TOP_BORDER);
+                    for (int i5 = 0; i5 < length; i5++) {
+                        logger.log(str2, "│     " + strArr[i5]);
+                        if (i5 != length - 1) {
+                            logger.log(str2, MIDDLE_BORDER);
+                        }
+                    }
+                    logger.log(str2, BOTTOM_BORDER);
+                }
+            }
+        } catch (Exception unused) {
+        }
+    }
+
+    /* renamed from: aq */
+    public static void m3426aq(String str, int i4, String str2) {
+        m3429aq((String) null, str, i4, str2);
+    }
+
+    /* renamed from: aq */
+    public static void m3428aq(String str, int i4, String str2, String[] strArr, String[] strArr2, String[] strArr3, String[] strArr4) {
+        m3430aq(null, str, i4, str2, strArr, strArr2, strArr3, strArr4);
+    }
+
+    /* renamed from: aq */
+    public static void m3429aq(String str, String str2, int i4, String str3) {
+        m3430aq(str, str2, i4, str3, null, null, null, null);
+    }
+
+    public static void mutlInfo(String str, int i4, String str2) {
+        mutlInfo(null, str, i4, str2);
+    }
+
+    /* renamed from: aq */
+    public static void m3430aq(String str, String str2, int i4, String str3, String[] strArr, String[] strArr2, String[] strArr3, String[] strArr4) {
+        String[] strArrSplit;
+        try {
+            if (UMConfigure.isDebugLog()) {
+                String str4 = TextUtils.isEmpty(str) ? TAG : "UMLog_" + str;
+                if (TextUtils.isEmpty(str2) || TextUtils.isEmpty(str3) || (strArrSplit = str2.split(str3)) == null || strArrSplit.length < 2) {
+                    return;
+                }
+                if (strArr != null && strArr.length > 0 && strArr2 != null && strArr2.length > 0) {
+                    for (int i5 = 0; i5 < strArr.length && i5 < strArr2.length; i5++) {
+                        strArrSplit[0] = strArrSplit[0].replace(strArr[i5], strArr2[i5]);
+                    }
+                }
+                if (strArr3 != null && strArr3.length > 0 && strArr4 != null && strArr4.length > 0) {
+                    for (int i6 = 0; i6 < strArr3.length && i6 < strArr4.length; i6++) {
+                        strArrSplit[1] = strArrSplit[1].replace(strArr3[i6], strArr4[i6]);
+                    }
+                }
+                UInterface logger = getLogger(i4);
+                logger.log(str4, TOP_BORDER_AQ);
+                logger.log(str4, "│     " + strArrSplit[0]);
+                logger.log(str4, f2546AQ);
+                logger.log(str4, "│     " + strArrSplit[1]);
+                logger.log(str4, BOTTOM_BORDER);
+            }
+        } catch (Exception unused) {
+        }
+    }
+
+    public static void mutlInfo(String str, int i4, String str2, String[] strArr, String[] strArr2) {
+        mutlInfo(null, str, i4, str2, strArr, strArr2);
+    }
+
+    public static void mutlInfo(String str, String str2, int i4, String str3) {
+        mutlInfo(str, str2, i4, str3, null, null);
+    }
+
+    public static void mutlInfo(String str, String str2, int i4, String str3, String[] strArr, String[] strArr2) {
+        try {
+            if (UMConfigure.isDebugLog()) {
+                String str4 = TextUtils.isEmpty(str) ? TAG : "UMLog_" + str;
+                if (TextUtils.isEmpty(str2)) {
+                    return;
+                }
+                if (strArr != null && strArr.length > 0 && strArr2 != null && strArr2.length > 0) {
+                    for (int i5 = 0; i5 < strArr.length && i5 < strArr2.length; i5++) {
+                        str2 = str2.replace(strArr[i5], strArr2[i5]);
+                    }
+                }
+                UInterface logger = getLogger(i4);
+                if (TextUtils.isEmpty(str3)) {
+                    logger.log(str4, str2);
+                    return;
+                }
+                String[] strArrSplit = str2.split(str3);
+                if (strArrSplit != null) {
+                    logger.log(str4, TOP_BORDER);
+                    for (int i6 = 0; i6 < strArrSplit.length; i6++) {
+                        logger.log(str4, "│     " + strArrSplit[i6]);
+                        if (i6 != strArrSplit.length - 1) {
+                            logger.log(str4, MIDDLE_BORDER);
+                        }
+                    }
+                    logger.log(str4, BOTTOM_BORDER);
+                }
+            }
+        } catch (Exception unused) {
+        }
+    }
+}

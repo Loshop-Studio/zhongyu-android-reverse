@@ -1,0 +1,54 @@
+package kotlinx.coroutines.internal;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+import com.umeng.analytics.pro.C3335ai;
+import com.umeng.analytics.pro.C3380c;
+import kotlin.Metadata;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.JvmField;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.ThreadContextElement;
+
+@Metadata(m5174d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0004\b\u0002\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u001c\u0010\u000e\u001a\u00020\u000f2\n\u0010\u0010\u001a\u0006\u0012\u0002\b\u00030\t2\b\u0010\u0011\u001a\u0004\u0018\u00010\u0001J\u000e\u0010\u0012\u001a\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003R\u0010\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\u0002\n\u0000R \u0010\u0007\u001a\u0012\u0012\u000e\u0012\f\u0012\u0006\u0012\u0004\u0018\u00010\u0001\u0018\u00010\t0\bX\u0082\u0004¢\u0006\u0004\n\u0002\u0010\nR\u000e\u0010\u000b\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R\u0018\u0010\f\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\bX\u0082\u0004¢\u0006\u0004\n\u0002\u0010\r¨\u0006\u0013"}, m5175d2 = {"Lkotlinx/coroutines/internal/ThreadState;", "", C3380c.f1965R, "Lkotlin/coroutines/CoroutineContext;", "n", "", "(Lkotlin/coroutines/CoroutineContext;I)V", "elements", "", "Lkotlinx/coroutines/ThreadContextElement;", "[Lkotlinx/coroutines/ThreadContextElement;", C3335ai.f1660aA, "values", "[Ljava/lang/Object;", "append", "", "element", "value", "restore", "kotlinx-coroutines-core"}, m5176k = 1, m5177mv = {1, 6, 0}, m5179xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes2.dex */
+final class ThreadState {
+
+    @JvmField
+    public final CoroutineContext context;
+    private final ThreadContextElement<Object>[] elements;
+    private int i;
+    private final Object[] values;
+
+    public ThreadState(CoroutineContext coroutineContext, int i4) {
+        this.context = coroutineContext;
+        this.values = new Object[i4];
+        this.elements = new ThreadContextElement[i4];
+    }
+
+    public final void append(ThreadContextElement<?> element, Object value) {
+        Object[] objArr = this.values;
+        int i4 = this.i;
+        objArr[i4] = value;
+        ThreadContextElement<Object>[] threadContextElementArr = this.elements;
+        this.i = i4 + 1;
+        threadContextElementArr[i4] = element;
+    }
+
+    public final void restore(CoroutineContext context) {
+        int length = this.elements.length - 1;
+        if (length < 0) {
+            return;
+        }
+        while (true) {
+            int i4 = length - 1;
+            ThreadContextElement<Object> threadContextElement = this.elements[length];
+            Intrinsics.checkNotNull(threadContextElement);
+            threadContextElement.restoreThreadContext(context, this.values[length]);
+            if (i4 < 0) {
+                return;
+            } else {
+                length = i4;
+            }
+        }
+    }
+}

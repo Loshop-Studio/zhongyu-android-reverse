@@ -1,0 +1,14 @@
+package androidx.compose.runtime;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+
+@Metadata(m5174d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u0005"}, m5175d2 = {"Landroidx/compose/runtime/ComposeVersion;", "", "()V", "version", "", "runtime_release"}, m5176k = 1, m5177mv = {1, 8, 0}, m5179xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes.dex */
+public final class ComposeVersion {
+    public static final ComposeVersion INSTANCE = new ComposeVersion();
+    public static final int version = 9702;
+
+    private ComposeVersion() {
+    }
+}

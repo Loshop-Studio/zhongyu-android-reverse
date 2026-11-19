@@ -1,0 +1,81 @@
+.class public Lcom/xuexiang/xui/widget/edittext/verify/PwdTextView;
+.super Landroidx/appcompat/widget/AppCompatTextView;
+.source "SourceFile"
+
+
+# instance fields
+.field public b:F
+
+.field public c:Z
+
+.field public d:Landroid/graphics/Paint;
+
+
+# virtual methods
+.method public onDraw(Landroid/graphics/Canvas;)V
+    .locals 4
+
+    .line 1
+    iget-boolean v0, p0, Lcom/xuexiang/xui/widget/edittext/verify/PwdTextView;->c:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    shr-int/lit8 v0, v0, 0x1
+
+    .line 10
+    .line 11
+    int-to-float v0, v0
+
+    .line 12
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v1
+
+    .line 16
+    shr-int/lit8 v1, v1, 0x1
+
+    .line 17
+    .line 18
+    int-to-float v1, v1
+
+    .line 19
+    iget v2, p0, Lcom/xuexiang/xui/widget/edittext/verify/PwdTextView;->b:F
+
+    .line 20
+    .line 21
+    iget-object v3, p0, Lcom/xuexiang/xui/widget/edittext/verify/PwdTextView;->d:Landroid/graphics/Paint;
+
+    .line 22
+    .line 23
+    invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
+
+    .line 24
+    .line 25
+    .line 26
+    goto :goto_0
+
+    .line 27
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/TextView;->onDraw(Landroid/graphics/Canvas;)V
+
+    .line 28
+    .line 29
+    .line 30
+    :goto_0
+    return-void
+.end method
