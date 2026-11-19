@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:theme="@style/AppTheme" android:tag="layout/fragment_student_share_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_left" android:background="@color/app_white" android:paddingTop="@dimen/view_11" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/preview_container" app:layout_constraintHorizontal_weight="0.9" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/view_20" android:layout_marginStart="@dimen/view_12">
+            <com.google.android.material.tabs.TabLayout android:textSize="@dimen/text_8" android:id="@id/tab_layout" android:layout_width="wrap_content" android:layout_height="match_parent" app:tabGravity="start" app:tabIndicatorColor="@color/app_main_color" app:tabIndicatorFullWidth="false" app:tabMode="fixed" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="@color/app_main_color" app:tabTextColor="@color/black" />
+            <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_search" android:padding="@dimen/view_2" android:layout_width="@dimen/view_15" android:layout_height="match_parent" android:src="@mipmap/icon_search" android:layout_marginEnd="@dimen/view_3" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/preview_container" android:layout_width="0.0dp" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_weight="2.1" app:layout_constraintStart_toEndOf="@id/ll_left" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_recycle_bin_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/ll_left" android:background="@color/app_white" android:paddingTop="@dimen/view_14" android:layout_width="0.0dp" android:layout_height="match_parent" app:layout_constraintEnd_toStartOf="@id/preview_container" app:layout_constraintHorizontal_weight="0.9" app:layout_constraintStart_toStartOf="parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/view_32" android:layout_marginLeft="@dimen/view_12" android:layout_marginRight="@dimen/view_12" android:layout_marginHorizontal="@dimen/view_12">
+            <ImageView android:id="@id/iv_back" android:padding="@dimen/view_4" android:visibility="gone" android:layout_width="@dimen/view_20" android:layout_height="@dimen/view_20" android:src="@mipmap/iv_back" />
+            <TextView android:textSize="@dimen/text_9" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tv_folder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recycle_bin" />
+            <TextView android:textSize="@dimen/text_8" android:textColor="#ffb0b0b0" android:ellipsize="end" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/view_4" android:layout_marginRight="@dimen/view_4" android:text="@string/recycle_bin_title_hint" android:singleLine="true" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/view_4" />
+            <ImageView android:id="@id/iv_clean" android:padding="@dimen/view_2" android:layout_width="@dimen/view_15" android:layout_height="@dimen/view_15" android:src="@drawable/icon_recycle_clean" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+                <TextView android:textSize="@dimen/text_8" android:textColor="@color/gay_progress" android:gravity="center" android:id="@id/empty_view" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_120" android:text="@string/no_content" />
+            </FrameLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <FrameLayout android:id="@id/preview_container" android:layout_width="0.0dp" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_weight="2.1" app:layout_constraintStart_toEndOf="@id/ll_left" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="layout/search_activity_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/app_white" android:paddingTop="@dimen/view_14" android:layout_width="match_parent" android:layout_height="@dimen/view_46" app:contentInsetStart="0.0dp" app:contentInsetStartWithNavigation="0.0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/tv_back" android:layout_width="@dimen/view_14" android:layout_height="@dimen/view_14" android:layout_marginLeft="@dimen/view_8" android:src="@mipmap/icon_back" android:scaleType="center" android:transitionName="search" />
+        <androidx.appcompat.widget.SearchView android:layout_gravity="right|center" android:id="@id/searchView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/view_10" android:layout_marginEnd="@dimen/view_10" />
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_search" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/view_42" />
+        <TextView android:textSize="@dimen/text_8" android:textColor="@color/gay_progress" android:gravity="center_horizontal" android:id="@id/tv_empty" android:paddingTop="@dimen/view_20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_search_result" />
+    </FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

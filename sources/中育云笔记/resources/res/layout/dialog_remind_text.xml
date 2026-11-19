@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="16.0sp" android:textColor="#4f5561" android:gravity="top" android:id="@id/content" android:background="@drawable/white_frame_border_bg" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="400.0dp" android:layout_marginRight="10.0dp" android:hint="请输入文本内容" android:layout_toLeftOf="@id/text_color_dialog" />
+    <RadioGroup android:orientation="vertical" android:id="@id/text_color_dialog" android:background="@drawable/white_frame_border_bg" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <RadioButton android:id="@id/palette_black" android:tag="#000000" android:background="@drawable/color_palette_black" android:layout_width="40.0dp" android:layout_height="40.0dp" android:button="@null" />
+        <RadioButton android:tag="#FF3720" android:background="@drawable/color_palette_red" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="5.0dp" android:button="@null" />
+        <RadioButton android:tag="#FF9933" android:background="@drawable/color_palette_orange" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="5.0dp" android:button="@null" />
+        <RadioButton android:tag="#339966" android:background="@drawable/color_palette_green" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="5.0dp" android:button="@null" />
+        <RadioButton android:id="@id/palette_blue" android:tag="#3399FF" android:background="@drawable/color_palette_blue" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="5.0dp" android:button="@null" />
+        <RadioButton android:tag="#CC3399" android:background="@drawable/color_palette_pink" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="5.0dp" android:button="@null" />
+        <RadioButton android:tag="#663399" android:background="@drawable/color_palette_purple" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="5.0dp" android:button="@null" />
+    </RadioGroup>
+    <Button android:id="@id/confirmBtn" android:background="@drawable/icon_confirm" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginTop="10.0dp" android:layout_below="@id/text_color_dialog" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_8" android:textColor="@color/gay_progress" android:gravity="center" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_120" android:text="@string/no_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,44 @@
+.class public interface abstract Landroidx/room/Transactor;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/room/PooledConnection;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/room/Transactor$SQLiteTransactionType;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract inTransaction(Lvc/c;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lvc/c<",
+            "-",
+            "Ljava/lang/Boolean;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
+
+.method public abstract withTransaction(Landroidx/room/Transactor$SQLiteTransactionType;Lhd/p;Lvc/c;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<R:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Landroidx/room/Transactor$SQLiteTransactionType;",
+            "Lhd/p;",
+            "Lvc/c<",
+            "-TR;>;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/note_helper_create_folder_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="@dimen/view_185" android:layout_height="@dimen/view_74" app:cardBackgroundColor="#ffffff" app:cardCornerRadius="@dimen/view_3" app:cardElevation="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/view_23">
+            <TextView android:textSize="@dimen/text_9" android:textColor="#ff4898f3" android:layout_gravity="center_vertical" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:layout_marginStart="@dimen/view_18" />
+            <TextView android:textSize="@dimen/text_10" android:textColor="#ff343434" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新建文件夹" />
+            <TextView android:textSize="@dimen/text_9" android:textColor="#ff4797f3" android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/view_53" />
+            <TextView android:textSize="@dimen/text_9" android:textColor="#ff4898f3" android:layout_gravity="end|center" android:id="@id/tv_complete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成" android:layout_marginEnd="@dimen/view_18" />
+            <View android:layout_gravity="bottom" android:background="@drawable/shape_item_divider" android:layout_width="match_parent" android:layout_height="@dimen/view_1" />
+        </FrameLayout>
+        <com.zykj.view.widget.LimitEditText android:textSize="@dimen/text_8" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center|bottom" android:id="@id/et_file_name" android:background="@drawable/shape_create_folder" android:layout_width="@dimen/view_135" android:layout_height="@dimen/view_18" android:layout_marginBottom="@dimen/view_21" android:singleLine="true" android:maxLength="20" android:drawablePadding="@dimen/view_5" android:drawableStart="@drawable/note_helper_file_type_folder" android:paddingStart="@dimen/view_5" android:paddingEnd="@dimen/view_5" />
+        <LinearLayout android:gravity="start" android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/ll_file_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/view_6" android:layout_below="@id/mEtInput">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/view_8" android:layout_height="match_parent" android:src="@drawable/ic_tip" android:layout_marginStart="@dimen/view_25" />
+            <TextView android:textSize="@dimen/text_7" android:textColor="@color/app_gray_30" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_rule_tip" android:layout_marginStart="@dimen/view_2" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

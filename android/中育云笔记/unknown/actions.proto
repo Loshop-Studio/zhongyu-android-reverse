@@ -1,0 +1,95 @@
+﻿syntax = "proto3";
+import "google/protobuf/any.proto";
+option csharp_namespace="EzyCoursePlayer.Actions";
+option java_package = "com.zykj.paint";
+// 动作指令
+message EzyAction {
+	//动作开始时间
+	int32 StartAt = 1;
+
+	//动作持续时长
+	int32 Duration = 2;
+
+	//动作类型
+	int32 ActionType = 3;
+
+	int32 GraphId = 4;
+
+	//动作数据对象
+	google.protobuf.Any Data=5;
+}
+
+//动作数据对象（通用）
+message EzyActionData {
+	//占位符
+	int32 PlaceHolder=1;
+}
+
+//变换矩阵
+message EzyMatrixData {
+    repeated float values = 1;
+}
+
+
+//动作数据对象--移动图元
+message MoveGraphData {
+
+	//移动向量
+	EzyVector Vector = 1;
+}
+
+//动作数据对象--缩放图元
+message ZoomGraphData {
+	//缩放比例, 将此值加到当前使用的缩放比例尺上, 有可能是正值（调大比例尺，效果为缩小）或负值（减小比例尺，效果为放大）
+	double Scale = 1;
+}
+
+//动作数据对象--新建图层
+message NewLayerData {
+	EzyColor Color = 1;
+}
+
+//动作数据对象--新建图片
+message NewImageData {
+	EzyPoint Point = 1;
+	EzySize Size = 2;
+	string Src = 3;
+}
+
+//动作数据对象--新建折线
+message NewPolylineData {
+	repeated .EzyPoint Points = 1;
+	EzyColor Color = 2;
+	double Width = 3;
+	int32 StickyGraphId = 4;
+}
+
+//ARGB颜色
+message EzyColor {
+	int32 Red = 1;
+	int32 Green = 2;
+	int32 Blue = 3;
+	int32 Alpha = 4;
+}
+
+//坐标点
+message EzyPoint {
+	double X = 1;
+	double Y = 2;
+}
+
+//尺寸对象
+message EzySize {
+	int32 Width = 1;
+	int32 Height = 2;
+}
+
+//向量对象
+message EzyVector {
+	double X = 1;
+	double Y = 2;
+}
+
+message EzyActionList {
+	repeated EzyAction action = 1;
+}

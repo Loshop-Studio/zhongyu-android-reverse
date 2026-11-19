@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:gravity="center" android:tag="layout/dialog_with_edit_text_0" android:layout_width="@dimen/view_189" android:layout_height="@dimen/view_115" app:cardBackgroundColor="@color/app_white" app:cardCornerRadius="@dimen/view_6" app:cardElevation="@dimen/view_3" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true" style="@style/CustomDialogStyle"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/view_189" android:layout_height="@dimen/view_115">
+        <TextView android:textSize="@dimen/text_9" android:textColor="@color/app_dark" android:gravity="center" android:id="@id/mTvHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_19" android:layout_alignParentTop="true" />
+        <com.zykj.view.widget.LimitEditText android:textSize="@dimen/text_8" android:id="@id/mEtInput" android:layout_width="@dimen/view_135" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/view_27" android:layout_marginTop="@dimen/view_14" android:layout_marginRight="@dimen/view_9" android:layout_below="@id/mTvHint" />
+        <TextView android:textSize="@dimen/text_9" android:textColor="@color/app_dark" android:gravity="center" android:id="@id/tv_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_2" android:layout_below="@id/mTvHint" android:layout_marginStart="@dimen/view_5" />
+        <LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/ll_file_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/mEtInput">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/view_8" android:layout_height="match_parent" android:src="@drawable/ic_tip" android:layout_marginStart="@dimen/view_30" />
+            <TextView android:textSize="@dimen/text_7" android:textColor="@color/app_gray_30" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_rule_tip" android:layout_marginStart="@dimen/view_2" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_14" android:layout_below="@id/mEtInput">
+            <TextView android:textSize="@dimen/text_8" android:textColor="@color/text_gray" android:gravity="center" android:id="@id/mBtnNegative" android:background="@drawable/shape_rim_gray" android:layout_width="@dimen/view_54" android:layout_height="@dimen/view_20" android:layout_marginLeft="@dimen/view_35" android:text="@string/cancel" />
+            <TextView android:textSize="@dimen/text_8" android:textColor="@color/app_white" android:gravity="center" android:id="@id/mBtnPositive" android:background="@drawable/shape_blue" android:layout_width="@dimen/view_54" android:layout_height="@dimen/view_20" android:layout_marginLeft="@dimen/view_11" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,112 @@
+package androidx.compose.animation.core;
+
+import androidx.compose.runtime.internal.StabilityInferred;
+
+@StabilityInferred(parameters = 0)
+/* loaded from: classes.dex */
+public final class AnimationVector3D extends AnimationVector {
+    public static final int $stable = 8;
+    private final int size;
+
+    /* renamed from: v1 */
+    private float f1063v1;
+
+    /* renamed from: v2 */
+    private float f1064v2;
+
+    /* renamed from: v3 */
+    private float f1065v3;
+
+    public AnimationVector3D(float f10, float f11, float f12) {
+        super(null);
+        this.f1063v1 = f10;
+        this.f1064v2 = f11;
+        this.f1065v3 = f12;
+        this.size = 3;
+    }
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof AnimationVector3D)) {
+            return false;
+        }
+        AnimationVector3D animationVector3D = (AnimationVector3D) obj;
+        return animationVector3D.f1063v1 == this.f1063v1 && animationVector3D.f1064v2 == this.f1064v2 && animationVector3D.f1065v3 == this.f1065v3;
+    }
+
+    @Override // androidx.compose.animation.core.AnimationVector
+    public float get$animation_core_release(int i10) {
+        if (i10 == 0) {
+            return this.f1063v1;
+        }
+        if (i10 == 1) {
+            return this.f1064v2;
+        }
+        if (i10 != 2) {
+            return 0.0f;
+        }
+        return this.f1065v3;
+    }
+
+    @Override // androidx.compose.animation.core.AnimationVector
+    public int getSize$animation_core_release() {
+        return this.size;
+    }
+
+    public final float getV1() {
+        return this.f1063v1;
+    }
+
+    public final float getV2() {
+        return this.f1064v2;
+    }
+
+    public final float getV3() {
+        return this.f1065v3;
+    }
+
+    public int hashCode() {
+        return (((Float.hashCode(this.f1063v1) * 31) + Float.hashCode(this.f1064v2)) * 31) + Float.hashCode(this.f1065v3);
+    }
+
+    @Override // androidx.compose.animation.core.AnimationVector
+    public void reset$animation_core_release() {
+        this.f1063v1 = 0.0f;
+        this.f1064v2 = 0.0f;
+        this.f1065v3 = 0.0f;
+    }
+
+    @Override // androidx.compose.animation.core.AnimationVector
+    public void set$animation_core_release(int i10, float f10) {
+        if (i10 == 0) {
+            this.f1063v1 = f10;
+        } else if (i10 == 1) {
+            this.f1064v2 = f10;
+        } else {
+            if (i10 != 2) {
+                return;
+            }
+            this.f1065v3 = f10;
+        }
+    }
+
+    public final void setV1$animation_core_release(float f10) {
+        this.f1063v1 = f10;
+    }
+
+    public final void setV2$animation_core_release(float f10) {
+        this.f1064v2 = f10;
+    }
+
+    public final void setV3$animation_core_release(float f10) {
+        this.f1065v3 = f10;
+    }
+
+    public String toString() {
+        return "AnimationVector3D: v1 = " + this.f1063v1 + ", v2 = " + this.f1064v2 + ", v3 = " + this.f1065v3;
+    }
+
+    @Override // androidx.compose.animation.core.AnimationVector
+    public AnimationVector3D newVector$animation_core_release() {
+        return new AnimationVector3D(0.0f, 0.0f, 0.0f);
+    }
+}

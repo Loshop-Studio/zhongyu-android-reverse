@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyModeEnum";
+
+enum ModeEnum {
+    ACTION_SELECT = 0; //选择
+    ACTION_WRITING = 1; //手绘
+    ACTION_WRITING_MOVE = 2; //手绘加双指移动
+    ACTION_WRITING_BEELINE = 3; //手绘直线
+    ACTION_ERASER_WRITING = 4; //橡皮擦 （只能线擦）
+    ACTION_DELETE = 5; //删除
+    ACTION_SEE = 6; //预览
+    ACTION_TEXT = 7; //文字
+    ACTION_CURSOR = 8; //指针
+    ACTION_NEW_SELECT = 9; //新版选择
+    ACTION_GEOMETRY = 10; //图形添加的逻辑
+}

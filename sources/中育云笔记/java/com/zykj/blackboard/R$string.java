@@ -1,0 +1,52 @@
+package com.zykj.blackboard;
+
+/* loaded from: classes5.dex */
+public final class R$string {
+    public static int abc_action_bar_home_description = 2131886082;
+    public static int abc_action_bar_up_description = 2131886083;
+    public static int abc_action_menu_overflow_description = 2131886084;
+    public static int abc_action_mode_done = 2131886085;
+    public static int abc_activity_chooser_view_see_all = 2131886086;
+    public static int abc_activitychooserview_choose_application = 2131886087;
+    public static int abc_capital_off = 2131886088;
+    public static int abc_capital_on = 2131886089;
+    public static int abc_menu_alt_shortcut_label = 2131886090;
+    public static int abc_menu_ctrl_shortcut_label = 2131886091;
+    public static int abc_menu_delete_shortcut_label = 2131886092;
+    public static int abc_menu_enter_shortcut_label = 2131886093;
+    public static int abc_menu_function_shortcut_label = 2131886094;
+    public static int abc_menu_meta_shortcut_label = 2131886095;
+    public static int abc_menu_shift_shortcut_label = 2131886096;
+    public static int abc_menu_space_shortcut_label = 2131886097;
+    public static int abc_menu_sym_shortcut_label = 2131886098;
+    public static int abc_prepend_shortcut_label = 2131886099;
+    public static int abc_search_hint = 2131886100;
+    public static int abc_searchview_description_clear = 2131886101;
+    public static int abc_searchview_description_query = 2131886102;
+    public static int abc_searchview_description_search = 2131886103;
+    public static int abc_searchview_description_submit = 2131886104;
+    public static int abc_searchview_description_voice = 2131886105;
+    public static int abc_shareactionprovider_share_with = 2131886106;
+    public static int abc_shareactionprovider_share_with_application = 2131886107;
+    public static int abc_toolbar_collapse_description = 2131886108;
+    public static int app_name = 2131886121;
+    public static int appbar_scrolling_view_behavior = 2131886123;
+    public static int bottom_sheet_behavior = 2131886127;
+    public static int character_counter_content_description = 2131886148;
+    public static int character_counter_pattern = 2131886150;
+    public static int fab_transformation_scrim_behavior = 2131886227;
+    public static int fab_transformation_sheet_behavior = 2131886228;
+    public static int hide_bottom_view_on_scroll_behavior = 2131886256;
+    public static int lib_lame = 2131886343;
+    public static int mtrl_chip_close_icon_content_description = 2131886473;
+    public static int password_toggle_content_description = 2131886578;
+    public static int path_password_eye = 2131886579;
+    public static int path_password_eye_mask_strike_through = 2131886580;
+    public static int path_password_eye_mask_visible = 2131886581;
+    public static int path_password_strike_through = 2131886582;
+    public static int search_menu_title = 2131886692;
+    public static int status_bar_notification_info_overflow = 2131886723;
+
+    private R$string() {
+    }
+}

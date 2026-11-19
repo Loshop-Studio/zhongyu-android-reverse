@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_22" android:textStyle="bold" android:textColor="@color/app_main_color" android:gravity="center" android:id="@id/tv_code" android:background="@drawable/shape_normal" android:layout_width="@dimen/view_26" android:layout_height="@dimen/view_41"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

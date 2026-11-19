@@ -1,0 +1,75 @@
+package androidx.compose.material.icons.rounded;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.p014ui.graphics.Color;
+import androidx.compose.p014ui.graphics.SolidColor;
+import androidx.compose.p014ui.graphics.StrokeCap;
+import androidx.compose.p014ui.graphics.StrokeJoin;
+import androidx.compose.p014ui.graphics.vector.ImageVector;
+import androidx.compose.p014ui.graphics.vector.PathBuilder;
+import androidx.compose.p014ui.graphics.vector.VectorKt;
+import androidx.compose.p014ui.unit.C3186Dp;
+import kotlin.jvm.internal.AbstractC9979u;
+
+/* loaded from: classes.dex */
+public final class AccessAlarmsKt {
+    private static ImageVector _accessAlarms;
+
+    public static final ImageVector getAccessAlarms(Icons.Rounded rounded) {
+        ImageVector imageVector = _accessAlarms;
+        if (imageVector != null) {
+            AbstractC9979u.m20291d(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Rounded.AccessAlarms", C3186Dp.m33501constructorimpl(24.0f), C3186Dp.m33501constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.Companion.m30904getBlack0d7_KjU(), null);
+        int iM31231getButtKaPHkGw = StrokeCap.Companion.m31231getButtKaPHkGw();
+        int iM31241getBevelLxFBmk8 = StrokeJoin.Companion.m31241getBevelLxFBmk8();
+        PathBuilder pathBuilder = new PathBuilder();
+        pathBuilder.moveTo(15.87f, 15.25f);
+        pathBuilder.lineToRelative(-3.37f, -2.0f);
+        pathBuilder.lineTo(12.5f, 8.72f);
+        pathBuilder.curveToRelative(0.0f, -0.4f, -0.32f, -0.72f, -0.72f, -0.72f);
+        pathBuilder.horizontalLineToRelative(-0.06f);
+        pathBuilder.curveToRelative(-0.4f, 0.0f, -0.72f, 0.32f, -0.72f, 0.72f);
+        pathBuilder.verticalLineToRelative(4.72f);
+        pathBuilder.curveToRelative(0.0f, 0.35f, 0.18f, 0.68f, 0.49f, 0.86f);
+        pathBuilder.lineToRelative(3.65f, 2.19f);
+        pathBuilder.curveToRelative(0.34f, 0.2f, 0.78f, 0.1f, 0.98f, -0.24f);
+        pathBuilder.curveToRelative(0.21f, -0.35f, 0.1f, -0.8f, -0.25f, -1.0f);
+        pathBuilder.close();
+        pathBuilder.moveTo(21.18f, 5.01f);
+        pathBuilder.lineTo(18.1f, 2.45f);
+        pathBuilder.curveToRelative(-0.42f, -0.35f, -1.05f, -0.3f, -1.41f, 0.13f);
+        pathBuilder.curveToRelative(-0.35f, 0.42f, -0.29f, 1.05f, 0.13f, 1.41f);
+        pathBuilder.lineToRelative(3.07f, 2.56f);
+        pathBuilder.curveToRelative(0.42f, 0.35f, 1.05f, 0.3f, 1.41f, -0.13f);
+        pathBuilder.curveToRelative(0.36f, -0.42f, 0.3f, -1.05f, -0.12f, -1.41f);
+        pathBuilder.close();
+        pathBuilder.moveTo(4.1f, 6.55f);
+        pathBuilder.lineToRelative(3.07f, -2.56f);
+        pathBuilder.curveToRelative(0.43f, -0.36f, 0.49f, -0.99f, 0.13f, -1.41f);
+        pathBuilder.curveToRelative(-0.35f, -0.43f, -0.98f, -0.48f, -1.4f, -0.13f);
+        pathBuilder.lineTo(2.82f, 5.01f);
+        pathBuilder.curveToRelative(-0.42f, 0.36f, -0.48f, 0.99f, -0.12f, 1.41f);
+        pathBuilder.curveToRelative(0.35f, 0.43f, 0.98f, 0.48f, 1.4f, 0.13f);
+        pathBuilder.close();
+        pathBuilder.moveTo(12.0f, 4.0f);
+        pathBuilder.curveToRelative(-4.97f, 0.0f, -9.0f, 4.03f, -9.0f, 9.0f);
+        pathBuilder.reflectiveCurveToRelative(4.03f, 9.0f, 9.0f, 9.0f);
+        pathBuilder.reflectiveCurveToRelative(9.0f, -4.03f, 9.0f, -9.0f);
+        pathBuilder.reflectiveCurveToRelative(-4.03f, -9.0f, -9.0f, -9.0f);
+        pathBuilder.close();
+        pathBuilder.moveTo(12.0f, 20.0f);
+        pathBuilder.curveToRelative(-3.86f, 0.0f, -7.0f, -3.14f, -7.0f, -7.0f);
+        pathBuilder.reflectiveCurveToRelative(3.14f, -7.0f, 7.0f, -7.0f);
+        pathBuilder.reflectiveCurveToRelative(7.0f, 3.14f, 7.0f, 7.0f);
+        pathBuilder.reflectiveCurveToRelative(-3.14f, 7.0f, -7.0f, 7.0f);
+        pathBuilder.close();
+        ImageVector imageVectorBuild = ImageVector.Builder.m31563addPathoIyEayM$default(builder, pathBuilder.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, iM31231getButtKaPHkGw, iM31241getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _accessAlarms = imageVectorBuild;
+        AbstractC9979u.m20291d(imageVectorBuild);
+        return imageVectorBuild;
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/layout_random_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/cl_anim" android:background="@drawable/shape_bg_homework_test" android:visibility="gone" android:layout_width="@dimen/view_498" android:layout_height="@dimen/view_300">
+        <ImageView android:id="@id/iv_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_24" android:src="@drawable/random_star" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout android:id="@id/fl_flip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_85" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/iv_flip_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/random_flip2" />
+            <TextView android:textSize="@dimen/text_11" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tv_random_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="end|center" android:orientation="vertical" android:id="@id/ll_random" android:background="@drawable/half_round_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/view_13" android:layout_height="@dimen/view_13" android:src="@drawable/icon_random" android:layout_marginStart="@dimen/view_4" />
+        <TextView android:textSize="@dimen/text_9" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点名" android:layout_marginStart="@dimen/view_4" />
+    </LinearLayout>
+</FrameLayout>

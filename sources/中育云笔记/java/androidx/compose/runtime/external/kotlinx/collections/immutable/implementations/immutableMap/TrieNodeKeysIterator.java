@@ -1,0 +1,17 @@
+package androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.immutableMap;
+
+import androidx.compose.runtime.external.kotlinx.collections.immutable.internal.CommonFunctionsKt;
+import androidx.compose.runtime.internal.StabilityInferred;
+
+@StabilityInferred(parameters = 4)
+/* loaded from: classes2.dex */
+public final class TrieNodeKeysIterator<K, V> extends TrieNodeBaseIterator<K, V, K> {
+    public static final int $stable = 0;
+
+    @Override // java.util.Iterator
+    public K next() {
+        CommonFunctionsKt.m30418assert(hasNextKey());
+        setIndex(getIndex() + 2);
+        return (K) getBuffer()[getIndex() - 2];
+    }
+}

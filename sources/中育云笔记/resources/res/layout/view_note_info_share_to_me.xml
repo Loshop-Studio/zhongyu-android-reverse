@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/view_note_info_share_to_me_0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/app_white" app:cardCornerRadius="@dimen/view_5" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/view_9" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/text_8" android:textColor="@color/app_l_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_5" android:text="@string/in_detail_info" />
+        <TextView android:textSize="@dimen/text_8" android:textColor="@color/app_l_dark" android:id="@id/tv_modify_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_9" />
+        <TextView android:textSize="@dimen/text_8" android:textColor="@color/app_l_dark" android:id="@id/tv_create_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_9" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

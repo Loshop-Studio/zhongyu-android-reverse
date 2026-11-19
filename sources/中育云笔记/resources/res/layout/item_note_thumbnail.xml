@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/mContainer" android:tag="layout/item_note_thumbnail_0" android:paddingTop="@dimen/view_10" android:paddingBottom="@dimen/view_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/view_10" android:paddingEnd="@dimen/view_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.friday.common.widget.ScaleImageView android:id="@id/sdv_thumbnail" android:layout_width="match_parent" android:layout_height="@dimen/view_188" android:scaleType="fitXY" />
+</FrameLayout>

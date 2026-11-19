@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/activity_micro_class_player_0" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.zykj.view.board.play.SketchPlayFragment" android:id="@id/sketch_play_fragment" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/view_10" />
+</androidx.constraintlayout.widget.ConstraintLayout>

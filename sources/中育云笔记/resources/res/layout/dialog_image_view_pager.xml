@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/dialog_image_view_pager_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="@dimen/text_10" android:textColor="#494949" android:id="@id/tv_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/view_5" android:drawablePadding="@dimen/view_5" app:drawableStartCompat="@drawable/ic_back_black_24dp" />
+</FrameLayout>

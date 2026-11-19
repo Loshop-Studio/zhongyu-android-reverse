@@ -1,0 +1,26 @@
+syntax = "proto3";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyTouchEvent";
+
+message TouchEvent {
+    int64 eventTime = 1;
+    int32 action = 2;
+
+    float x = 3;
+    float y = 4;
+
+    int32 pointerCount = 5;
+
+    repeated PointerProperties pointerProperties = 6;
+    repeated PointerCoords pointerCoords = 7;
+
+    message PointerProperties {
+        int32 id = 1;
+        int32 toolType = 2;
+    }
+
+    message PointerCoords {
+        float x = 1;
+        float y = 2;
+    }
+}

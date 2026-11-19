@@ -1,0 +1,76 @@
+package androidx.compose.material.icons.outlined;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.p014ui.graphics.Color;
+import androidx.compose.p014ui.graphics.SolidColor;
+import androidx.compose.p014ui.graphics.StrokeCap;
+import androidx.compose.p014ui.graphics.StrokeJoin;
+import androidx.compose.p014ui.graphics.vector.ImageVector;
+import androidx.compose.p014ui.graphics.vector.PathBuilder;
+import androidx.compose.p014ui.graphics.vector.VectorKt;
+import androidx.compose.p014ui.unit.C3186Dp;
+import kotlin.jvm.internal.AbstractC9979u;
+
+/* loaded from: classes.dex */
+public final class SnowmobileKt {
+    private static ImageVector _snowmobile;
+
+    public static final ImageVector getSnowmobile(Icons.Outlined outlined) {
+        ImageVector imageVector = _snowmobile;
+        if (imageVector != null) {
+            AbstractC9979u.m20291d(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Outlined.Snowmobile", C3186Dp.m33501constructorimpl(24.0f), C3186Dp.m33501constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.Companion.m30904getBlack0d7_KjU(), null);
+        int iM31231getButtKaPHkGw = StrokeCap.Companion.m31231getButtKaPHkGw();
+        int iM31241getBevelLxFBmk8 = StrokeJoin.Companion.m31241getBevelLxFBmk8();
+        PathBuilder pathBuilder = new PathBuilder();
+        pathBuilder.moveTo(22.0f, 17.0f);
+        pathBuilder.curveToRelative(0.0f, 0.55f, -0.45f, 1.0f, -1.0f, 1.0f);
+        pathBuilder.horizontalLineToRelative(-0.17f);
+        pathBuilder.lineToRelative(-2.2f, -2.2f);
+        pathBuilder.curveTo(20.58f, 15.37f, 22.0f, 14.4f, 22.0f, 13.0f);
+        pathBuilder.curveToRelative(0.0f, -1.0f, -8.0f, -8.0f, -8.0f, -8.0f);
+        pathBuilder.horizontalLineToRelative(-3.0f);
+        pathBuilder.verticalLineToRelative(2.0f);
+        pathBuilder.horizontalLineToRelative(2.25f);
+        pathBuilder.lineToRelative(0.8f, 0.72f);
+        pathBuilder.lineTo(11.0f, 10.0f);
+        pathBuilder.lineTo(2.0f, 9.0f);
+        pathBuilder.lineToRelative(-2.0f, 4.0f);
+        pathBuilder.lineToRelative(4.54f, 1.36f);
+        pathBuilder.lineToRelative(-3.49f, 1.88f);
+        pathBuilder.curveTo(-0.77f, 17.22f, -0.07f, 20.0f, 2.0f, 20.0f);
+        pathBuilder.horizontalLineToRelative(6.0f);
+        pathBuilder.curveToRelative(2.21f, 0.0f, 4.0f, -1.79f, 4.0f, -4.0f);
+        pathBuilder.horizontalLineToRelative(4.0f);
+        pathBuilder.lineToRelative(2.0f, 2.0f);
+        pathBuilder.horizontalLineToRelative(-3.0f);
+        pathBuilder.verticalLineToRelative(2.0f);
+        pathBuilder.horizontalLineToRelative(6.0f);
+        pathBuilder.curveToRelative(1.66f, 0.0f, 3.0f, -1.34f, 3.0f, -3.0f);
+        pathBuilder.horizontalLineTo(22.0f);
+        pathBuilder.close();
+        pathBuilder.moveTo(8.0f, 18.0f);
+        pathBuilder.horizontalLineTo(2.0f);
+        pathBuilder.lineToRelative(5.25f, -2.83f);
+        pathBuilder.lineTo(10.0f, 16.0f);
+        pathBuilder.curveTo(10.0f, 17.1f, 9.11f, 18.0f, 8.0f, 18.0f);
+        pathBuilder.close();
+        pathBuilder.moveTo(17.0f, 14.0f);
+        pathBuilder.horizontalLineToRelative(-6.7f);
+        pathBuilder.lineToRelative(-7.45f, -2.23f);
+        pathBuilder.lineToRelative(0.31f, -0.62f);
+        pathBuilder.lineTo(11.6f, 12.0f);
+        pathBuilder.lineToRelative(3.93f, -2.94f);
+        pathBuilder.curveToRelative(0.0f, 0.0f, 3.77f, 3.44f, 4.27f, 4.14f);
+        pathBuilder.curveTo(19.8f, 13.2f, 18.7f, 14.0f, 17.0f, 14.0f);
+        pathBuilder.close();
+        ImageVector imageVectorBuild = ImageVector.Builder.m31563addPathoIyEayM$default(builder, pathBuilder.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, iM31231getButtKaPHkGw, iM31241getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _snowmobile = imageVectorBuild;
+        AbstractC9979u.m20291d(imageVectorBuild);
+        return imageVectorBuild;
+    }
+}

@@ -1,0 +1,70 @@
+﻿syntax = "proto3";
+import "utils/TouchEvent.proto";
+import "utils/Matrix.proto";
+import "utils/Paint.proto";
+import "utils/PointF.proto";
+import "enums/GeometryEnum.proto";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzySource";
+
+message TouchSource {
+    repeated TouchInfo touchInfo = 1;
+
+    message TouchInfo {
+        repeated TouchEvent touchEvent = 1;
+        Paint paint = 2; //画笔属性
+    }
+}
+
+message MatrixSource {
+    repeated MatrixInfo matrixInfo = 1;
+
+    message MatrixInfo {
+        repeated Matrix matrix = 1;
+    }
+}
+
+message FileSource {
+    repeated FileInfo fileInfo = 1;
+
+    message FileInfo {
+        string name = 1; //文件名
+
+        int32 width = 2; //绘图区域宽度
+
+        int32 height = 3; //绘图区域高度
+
+        string validate = 4; //文件校验
+    }
+}
+
+message AudioSource {
+    repeated AudioInfo audioInfo = 1;
+
+    message AudioInfo {
+        string name = 1; //文件名
+
+        int64 duration = 2; //语音长度
+
+        string validate = 3; //文件校验
+    }
+}
+
+message TextSource {
+    repeated TextInfo textInfo = 1;
+
+    message TextInfo{
+        string content = 1; //文字内容
+        Paint paint = 2; //画笔属性
+    }
+}
+
+message GeometrySource {
+    repeated GeometryInfo geometryInfo = 1;
+
+    message GeometryInfo{
+        GeometryEnum geometryType = 1; // 类型
+        repeated PointF points = 2; // 点
+        Paint paint = 3; //画笔属性
+    }
+}

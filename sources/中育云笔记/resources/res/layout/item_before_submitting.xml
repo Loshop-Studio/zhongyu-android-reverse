@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_container" android:background="@drawable/selector_student_item_before_submitting" android:layout_width="@dimen/view_63" android:layout_height="@dimen/view_24"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_9" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableStart="@drawable/icon_student_before_submitting" />
+</FrameLayout>

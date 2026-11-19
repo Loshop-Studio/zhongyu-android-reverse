@@ -1,0 +1,55 @@
+package androidx.compose.material.icons.rounded;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.p014ui.graphics.Color;
+import androidx.compose.p014ui.graphics.SolidColor;
+import androidx.compose.p014ui.graphics.StrokeCap;
+import androidx.compose.p014ui.graphics.StrokeJoin;
+import androidx.compose.p014ui.graphics.vector.ImageVector;
+import androidx.compose.p014ui.graphics.vector.PathBuilder;
+import androidx.compose.p014ui.graphics.vector.VectorKt;
+import androidx.compose.p014ui.unit.C3186Dp;
+import kotlin.jvm.internal.AbstractC9979u;
+
+/* loaded from: classes.dex */
+public final class SportsRugbyKt {
+    private static ImageVector _sportsRugby;
+
+    public static final ImageVector getSportsRugby(Icons.Rounded rounded) {
+        ImageVector imageVector = _sportsRugby;
+        if (imageVector != null) {
+            AbstractC9979u.m20291d(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Rounded.SportsRugby", C3186Dp.m33501constructorimpl(24.0f), C3186Dp.m33501constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.Companion.m30904getBlack0d7_KjU(), null);
+        int iM31231getButtKaPHkGw = StrokeCap.Companion.m31231getButtKaPHkGw();
+        int iM31241getBevelLxFBmk8 = StrokeJoin.Companion.m31241getBevelLxFBmk8();
+        PathBuilder pathBuilder = new PathBuilder();
+        pathBuilder.moveTo(20.49f, 3.51f);
+        pathBuilder.curveToRelative(-0.56f, -0.56f, -2.15f, -0.97f, -4.16f, -0.97f);
+        pathBuilder.curveToRelative(-3.08f, 0.0f, -7.15f, 0.96f, -9.98f, 3.79f);
+        pathBuilder.curveTo(1.66f, 11.03f, 2.1f, 19.07f, 3.51f, 20.49f);
+        pathBuilder.curveToRelative(0.56f, 0.56f, 2.15f, 0.97f, 4.16f, 0.97f);
+        pathBuilder.curveToRelative(3.08f, 0.0f, 7.15f, -0.96f, 9.98f, -3.79f);
+        pathBuilder.curveTo(22.34f, 12.97f, 21.9f, 4.93f, 20.49f, 3.51f);
+        pathBuilder.close();
+        pathBuilder.moveTo(7.76f, 7.76f);
+        pathBuilder.curveToRelative(2.64f, -2.64f, 6.35f, -3.12f, 8.03f, -3.19f);
+        pathBuilder.curveToRelative(-2.05f, 0.94f, -4.46f, 2.45f, -6.61f, 4.61f);
+        pathBuilder.curveToRelative(-2.16f, 2.16f, -3.67f, 4.58f, -4.61f, 6.63f);
+        pathBuilder.curveTo(4.66f, 13.33f, 5.44f, 10.07f, 7.76f, 7.76f);
+        pathBuilder.close();
+        pathBuilder.moveTo(16.24f, 16.24f);
+        pathBuilder.curveToRelative(-2.64f, 2.64f, -6.35f, 3.12f, -8.03f, 3.19f);
+        pathBuilder.curveToRelative(2.05f, -0.94f, 4.46f, -2.45f, 6.61f, -4.61f);
+        pathBuilder.curveToRelative(2.16f, -2.16f, 3.67f, -4.58f, 4.62f, -6.63f);
+        pathBuilder.curveTo(19.34f, 10.67f, 18.56f, 13.93f, 16.24f, 16.24f);
+        pathBuilder.close();
+        ImageVector imageVectorBuild = ImageVector.Builder.m31563addPathoIyEayM$default(builder, pathBuilder.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, iM31231getButtKaPHkGw, iM31241getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _sportsRugby = imageVectorBuild;
+        AbstractC9979u.m20291d(imageVectorBuild);
+        return imageVectorBuild;
+    }
+}

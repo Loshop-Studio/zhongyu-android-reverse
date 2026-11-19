@@ -1,0 +1,69 @@
+package androidx.work.impl.constraints.trackers;
+
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkCapabilities;
+import android.net.NetworkInfo;
+import androidx.annotation.RequiresApi;
+import androidx.annotation.RestrictTo;
+import androidx.core.net.ConnectivityManagerCompat;
+import androidx.work.Logger;
+import androidx.work.impl.constraints.NetworkState;
+import androidx.work.impl.utils.NetworkApi21;
+import androidx.work.impl.utils.NetworkApi23;
+import androidx.work.impl.utils.taskexecutor.TaskExecutor;
+import kotlin.jvm.internal.AbstractC9979u;
+
+/* loaded from: classes3.dex */
+public final class NetworkStateTrackerKt {
+    private static final String TAG;
+
+    static {
+        String strTagWithPrefix = Logger.tagWithPrefix("NetworkStateTracker");
+        AbstractC9979u.m20293f(strTagWithPrefix, "tagWithPrefix(\"NetworkStateTracker\")");
+        TAG = strTagWithPrefix;
+    }
+
+    @RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+    public static final ConstraintTracker<NetworkState> NetworkStateTracker(Context context, TaskExecutor taskExecutor) {
+        AbstractC9979u.m20294g(context, "context");
+        AbstractC9979u.m20294g(taskExecutor, "taskExecutor");
+        return new NetworkStateTracker24(context, taskExecutor);
+    }
+
+    public static final NetworkState getActiveNetworkState(ConnectivityManager connectivityManager) {
+        AbstractC9979u.m20294g(connectivityManager, "<this>");
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        boolean z10 = false;
+        boolean z11 = activeNetworkInfo != null && activeNetworkInfo.isConnected();
+        boolean zIsActiveNetworkValidated = isActiveNetworkValidated(connectivityManager);
+        boolean zIsActiveNetworkMetered = ConnectivityManagerCompat.isActiveNetworkMetered(connectivityManager);
+        if (activeNetworkInfo != null && !activeNetworkInfo.isRoaming()) {
+            z10 = true;
+        }
+        return new NetworkState(z11, zIsActiveNetworkValidated, zIsActiveNetworkMetered, z10);
+    }
+
+    public static /* synthetic */ void getActiveNetworkState$annotations(ConnectivityManager connectivityManager) {
+    }
+
+    public static final boolean isActiveNetworkValidated(ConnectivityManager connectivityManager) {
+        AbstractC9979u.m20294g(connectivityManager, "<this>");
+        try {
+            NetworkCapabilities networkCapabilitiesCompat = NetworkApi21.getNetworkCapabilitiesCompat(connectivityManager, NetworkApi23.getActiveNetworkCompat(connectivityManager));
+            if (networkCapabilitiesCompat != null) {
+                return NetworkApi21.hasCapabilityCompat(networkCapabilitiesCompat, 16);
+            }
+            return false;
+        } catch (SecurityException e10) {
+            Logger.get().error(TAG, "Unable to validate active network", e10);
+            return false;
+        }
+    }
+
+    @RequiresApi(28)
+    public static final NetworkState getActiveNetworkState(NetworkCapabilities networkCapabilities) {
+        AbstractC9979u.m20294g(networkCapabilities, "<this>");
+        return new NetworkState(networkCapabilities.hasCapability(12), networkCapabilities.hasCapability(16), !networkCapabilities.hasCapability(11), networkCapabilities.hasCapability(18));
+    }
+}

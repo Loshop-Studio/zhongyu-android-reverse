@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="layout/fragment_preview_video_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shuyu.gsyvideoplayer.video.NormalGSYVideoPlayer android:id="@id/video_player" android:layout_width="match_parent" android:layout_height="@dimen/view_188" android:layout_marginLeft="@dimen/view_15" android:layout_marginTop="@dimen/view_36" android:layout_marginRight="@dimen/view_15" android:layout_marginHorizontal="@dimen/view_15" />
+</androidx.appcompat.widget.LinearLayoutCompat>

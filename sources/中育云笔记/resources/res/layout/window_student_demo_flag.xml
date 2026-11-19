@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="@dimen/view_32" android:layout_height="@dimen/view_24" app:cardBackgroundColor="@color/text_gray" app:cardCornerRadius="@dimen/view_3" app:cardElevation="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/student_in_demoing" />
+</androidx.cardview.widget.CardView>

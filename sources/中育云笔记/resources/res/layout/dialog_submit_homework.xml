@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_bg_receive_homework" android:layout_width="@dimen/view_189" android:layout_height="@dimen/view_103"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_8" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认提交当前页作为答案吗？" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@id/cv_cancel" android:layout_width="@dimen/view_54" android:layout_height="@dimen/view_19" android:layout_marginTop="@dimen/view_31" app:cardBackgroundColor="@color/cancel_gray" app:cardCornerRadius="@dimen/view_9" app:cardElevation="0.0dp">
+            <TextView android:textSize="@dimen/text_8" android:textColor="@color/text_gray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:id="@id/cv_ok" android:layout_width="@dimen/view_54" android:layout_height="@dimen/view_19" android:layout_marginTop="@dimen/view_31" android:layout_marginStart="@dimen/view_11" app:cardBackgroundColor="@color/colorPrimary" app:cardCornerRadius="@dimen/view_9" app:cardElevation="0.0dp">
+            <TextView android:textSize="@dimen/text_8" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认提交" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

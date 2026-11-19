@@ -1,0 +1,523 @@
+.class final Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lhd/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/friday/document/view/share/ShareBaseFileFragment;->G(Lcom/friday/document/model/ShareFile;Lcom/friday/document/view/share/SuspendCall;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lhd/p;"
+    }
+.end annotation
+
+.annotation runtime Lxc/d;
+    c = "com.friday.document.view.share.ShareBaseFileFragment$handleFileClick$1"
+    f = "ShareBaseFileFragment.kt"
+    l = {
+        0x12b
+    }
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field public c:I
+
+.field public final synthetic d:Lcom/friday/document/view/share/SuspendCall;
+
+.field public final synthetic e:Lcom/friday/document/view/share/ShareBaseFileFragment;
+
+.field public final synthetic f:I
+
+.field public final synthetic g:Lcom/friday/document/model/ShareFile;
+
+
+# direct methods
+.method public constructor <init>(Lcom/friday/document/view/share/SuspendCall;Lcom/friday/document/view/share/ShareBaseFileFragment;ILcom/friday/document/model/ShareFile;Lvc/c;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->d:Lcom/friday/document/view/share/SuspendCall;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->e:Lcom/friday/document/view/share/ShareBaseFileFragment;
+
+    .line 4
+    .line 5
+    iput p3, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->f:I
+
+    .line 6
+    .line 7
+    iput-object p4, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->g:Lcom/friday/document/model/ShareFile;
+
+    .line 8
+    .line 9
+    const/4 p1, 0x2
+
+    .line 10
+    invoke-direct {p0, p1, p5}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILvc/c;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public static synthetic g(Lcom/friday/document/view/share/ShareBaseFileFragment;)Lqc/q;
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->t(Lcom/friday/document/view/share/ShareBaseFileFragment;)Lqc/q;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic m(ILjava/lang/Throwable;)Lqc/q;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->v(ILjava/lang/Throwable;)Lqc/q;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic n(Lcom/friday/document/view/share/ShareBaseFileFragment;)Lqc/q;
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->z(Lcom/friday/document/view/share/ShareBaseFileFragment;)Lqc/q;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic p(Lcom/friday/document/view/share/ShareBaseFileFragment;Lcom/friday/document/model/ShareFile;Lqc/q;)Lqc/q;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->y(Lcom/friday/document/view/share/ShareBaseFileFragment;Lcom/friday/document/model/ShareFile;Lqc/q;)Lqc/q;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final t(Lcom/friday/document/view/share/ShareBaseFileFragment;)Lqc/q;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/friday/common/base/BaseFragment;->isShowLoading(Z)V
+
+    .line 3
+    .line 4
+    .line 5
+    sget-object p0, Lqc/q;->a:Lqc/q;
+
+    .line 6
+    .line 7
+    return-object p0
+.end method
+
+.method public static final v(ILjava/lang/Throwable;)Lqc/q;
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lz1/b;->h(I)V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object p0, Lqc/q;->a:Lqc/q;
+
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public static final y(Lcom/friday/document/view/share/ShareBaseFileFragment;Lcom/friday/document/model/ShareFile;Lqc/q;)Lqc/q;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/friday/document/view/share/ShareBaseFileFragment;->B()Lcom/friday/document/viewmodel/ShareBaseViewModel;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p2
+
+    .line 5
+    invoke-virtual {p1}, Lcom/friday/document/model/ShareFile;->getFileId()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {p2, v0}, Lcom/friday/document/viewmodel/ShareBaseViewModel;->I(Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Lcom/friday/document/model/ShareFile;->getType()Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p2
+
+    .line 16
+    const-string v0, "7"
+
+    .line 17
+    .line 18
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/u;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result p2
+
+    .line 22
+    if-eqz p2, :cond_0
+
+    .line 23
+    .line 24
+    invoke-virtual {p0}, Lcom/friday/document/view/share/ShareBaseFileFragment;->E()Lcom/friday/document/viewmodel/ShareFileViewModel;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p2
+
+    .line 28
+    invoke-virtual {p2}, Lcom/friday/document/viewmodel/ShareFileViewModel;->A()Ljava/util/List;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p2
+
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_0
+    invoke-static {}, Lrc/w;->n()Ljava/util/List;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p2
+
+    .line 37
+    :goto_0
+    invoke-virtual {p0}, Lcom/friday/document/view/share/ShareBaseFileFragment;->B()Lcom/friday/document/viewmodel/ShareBaseViewModel;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p0
+
+    .line 41
+    invoke-virtual {p0, p1, p2}, Lcom/friday/document/viewmodel/ShareBaseViewModel;->G(Lcom/friday/document/model/ShareFile;Ljava/util/List;)V
+
+    .line 42
+    .line 43
+    .line 44
+    sget-object p0, Lqc/q;->a:Lqc/q;
+
+    .line 45
+    .line 46
+    return-object p0
+.end method
+
+.method public static final z(Lcom/friday/document/view/share/ShareBaseFileFragment;)Lqc/q;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/friday/common/base/BaseFragment;->isShowLoading(Z)V
+
+    .line 3
+    .line 4
+    .line 5
+    sget-object p0, Lqc/q;->a:Lqc/q;
+
+    .line 6
+    .line 7
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lvc/c;)Lvc/c;
+    .locals 6
+
+    .line 1
+    new-instance v0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->d:Lcom/friday/document/view/share/SuspendCall;
+
+    .line 4
+    .line 5
+    iget-object v2, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->e:Lcom/friday/document/view/share/ShareBaseFileFragment;
+
+    .line 6
+    .line 7
+    iget v3, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->f:I
+
+    .line 8
+    .line 9
+    iget-object v4, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->g:Lcom/friday/document/model/ShareFile;
+
+    .line 10
+    .line 11
+    move-object v5, p2
+
+    .line 12
+    invoke-direct/range {v0 .. v5}, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;-><init>(Lcom/friday/document/view/share/SuspendCall;Lcom/friday/document/view/share/ShareBaseFileFragment;ILcom/friday/document/model/ShareFile;Lvc/c;)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lsd/i0;
+
+    check-cast p2, Lvc/c;
+
+    invoke-virtual {p0, p1, p2}, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->invoke(Lsd/i0;Lvc/c;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lsd/i0;Lvc/c;)Ljava/lang/Object;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->create(Ljava/lang/Object;Lvc/c;)Lvc/c;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;
+
+    sget-object p2, Lqc/q;->a:Lqc/q;
+
+    invoke-virtual {p1, p2}, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    invoke-static {}, Lwc/a;->f()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget v1, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->c:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x1
+
+    .line 8
+    if-eqz v1, :cond_1
+
+    .line 9
+    .line 10
+    if-ne v1, v2, :cond_0
+
+    .line 11
+    .line 12
+    invoke-static {p1}, Lkotlin/b;->b(Ljava/lang/Object;)V
+
+    .line 13
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 17
+    .line 18
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 19
+    .line 20
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    throw p1
+
+    .line 24
+    :cond_1
+    invoke-static {p1}, Lkotlin/b;->b(Ljava/lang/Object;)V
+
+    .line 25
+    .line 26
+    .line 27
+    iget-object p1, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->d:Lcom/friday/document/view/share/SuspendCall;
+
+    .line 28
+    .line 29
+    iget-object v1, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->e:Lcom/friday/document/view/share/ShareBaseFileFragment;
+
+    .line 30
+    .line 31
+    new-instance v3, Lcom/friday/document/view/share/a;
+
+    .line 32
+    .line 33
+    invoke-direct {v3, v1}, Lcom/friday/document/view/share/a;-><init>(Lcom/friday/document/view/share/ShareBaseFileFragment;)V
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {p1, v3}, Lcom/friday/document/view/share/SuspendCall;->d(Lhd/a;)Lcom/friday/document/view/share/SuspendCall;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p1
+
+    .line 40
+    iget v1, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->f:I
+
+    .line 41
+    .line 42
+    new-instance v3, Lcom/friday/document/view/share/b;
+
+    .line 43
+    .line 44
+    invoke-direct {v3, v1}, Lcom/friday/document/view/share/b;-><init>(I)V
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {p1, v3}, Lcom/friday/document/view/share/SuspendCall;->c(Lhd/l;)Lcom/friday/document/view/share/SuspendCall;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object p1
+
+    .line 51
+    iget-object v1, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->e:Lcom/friday/document/view/share/ShareBaseFileFragment;
+
+    .line 52
+    .line 53
+    iget-object v3, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->g:Lcom/friday/document/model/ShareFile;
+
+    .line 54
+    .line 55
+    new-instance v4, Lcom/friday/document/view/share/c;
+
+    .line 56
+    .line 57
+    invoke-direct {v4, v1, v3}, Lcom/friday/document/view/share/c;-><init>(Lcom/friday/document/view/share/ShareBaseFileFragment;Lcom/friday/document/model/ShareFile;)V
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {p1, v4}, Lcom/friday/document/view/share/SuspendCall;->e(Lhd/l;)Lcom/friday/document/view/share/SuspendCall;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object p1
+
+    .line 64
+    iget-object v1, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->e:Lcom/friday/document/view/share/ShareBaseFileFragment;
+
+    .line 65
+    .line 66
+    new-instance v3, Lcom/friday/document/view/share/d;
+
+    .line 67
+    .line 68
+    invoke-direct {v3, v1}, Lcom/friday/document/view/share/d;-><init>(Lcom/friday/document/view/share/ShareBaseFileFragment;)V
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-virtual {p1, v3}, Lcom/friday/document/view/share/SuspendCall;->b(Lhd/a;)Lcom/friday/document/view/share/SuspendCall;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object p1
+
+    .line 75
+    iput v2, p0, Lcom/friday/document/view/share/ShareBaseFileFragment$handleFileClick$1;->c:I
+
+    .line 76
+    .line 77
+    invoke-virtual {p1, p0}, Lcom/friday/document/view/share/SuspendCall;->a(Lvc/c;)Ljava/lang/Object;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object p1
+
+    .line 81
+    if-ne p1, v0, :cond_2
+
+    .line 82
+    .line 83
+    return-object v0
+
+    .line 84
+    :cond_2
+    :goto_0
+    sget-object p1, Lqc/q;->a:Lqc/q;
+
+    .line 85
+    .line 86
+    return-object p1
+.end method

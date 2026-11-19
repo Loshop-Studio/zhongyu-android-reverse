@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/cv_item" android:tag="layout/item_online_list_0" android:layout_width="@dimen/view_47" android:layout_height="@dimen/view_47" android:layout_marginBottom="@dimen/view_14" android:layout_marginEnd="@dimen/view_14" app:cardBackgroundColor="@color/selector_color_online_item" app:cardCornerRadius="@dimen/view_3" app:cardElevation="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_role" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" app:layout_constraintBottom_toTopOf="@id/tv_name" app:layout_constraintEnd_toEndOf="@id/iv_icon" app:layout_constraintStart_toStartOf="@id/iv_icon" app:layout_constraintTop_toTopOf="@id/iv_icon" app:layout_constraintVertical_chainStyle="packed" />
+        <TextView android:textSize="@dimen/text_8" android:textColor="@color/selector_color_teacher" android:ellipsize="end" android:id="@id/tv_name" android:paddingLeft="@dimen/view_5" android:paddingRight="@dimen/view_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_1" android:lines="1" android:paddingHorizontal="@dimen/view_5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/iv_icon" app:layout_constraintStart_toStartOf="@id/iv_icon" app:layout_constraintTop_toBottomOf="@id/iv_role" />
+    </LinearLayout>
+    <View android:id="@id/random_selected" android:background="@drawable/shape_random_selected" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:layout_gravity="end" android:id="@id/iv_flag_in_demo" android:layout_width="@dimen/view_10" android:layout_height="@dimen/view_9" android:src="@drawable/icon_in_demo" android:layout_marginEnd="@dimen/view_2" />
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,117 @@
+package com.github.chrisbanes.photoview;
+
+/* loaded from: classes5.dex */
+public final class R$id {
+    public static int action_bar = 2131296342;
+    public static int action_bar_activity_content = 2131296343;
+    public static int action_bar_container = 2131296344;
+    public static int action_bar_root = 2131296345;
+    public static int action_bar_spinner = 2131296346;
+    public static int action_bar_subtitle = 2131296347;
+    public static int action_bar_title = 2131296348;
+    public static int action_container = 2131296350;
+    public static int action_context_bar = 2131296351;
+    public static int action_divider = 2131296352;
+    public static int action_image = 2131296353;
+    public static int action_menu_divider = 2131296354;
+    public static int action_menu_presenter = 2131296355;
+    public static int action_mode_bar = 2131296356;
+    public static int action_mode_bar_stub = 2131296357;
+    public static int action_mode_close_button = 2131296358;
+    public static int action_text = 2131296359;
+    public static int actions = 2131296362;
+    public static int activity_chooser_view_content = 2131296363;
+    public static int add = 2131296367;
+    public static int alertTitle = 2131296368;
+    public static int async = 2131296388;
+    public static int blocking = 2131296406;
+    public static int bottom = 2131296408;
+    public static int buttonPanel = 2131296443;
+    public static int checkbox = 2131296473;
+    public static int chronometer = 2131296476;
+    public static int content = 2131296516;
+    public static int contentPanel = 2131296517;
+    public static int custom = 2131296541;
+    public static int customPanel = 2131296542;
+    public static int decor_content_parent = 2131296575;
+    public static int default_activity_button = 2131296576;
+    public static int edit_query = 2131296614;
+    public static int end = 2131296623;
+    public static int expand_activities_button = 2131296640;
+    public static int expanded_menu = 2131296643;
+    public static int forever = 2131296675;
+    public static int group_divider = 2131296701;
+    public static int home = 2131296729;
+    public static int icon = 2131296743;
+    public static int icon_group = 2131296745;
+    public static int image = 2131296749;
+    public static int info = 2131296770;
+    public static int italic = 2131296775;
+    public static int left = 2131296942;
+    public static int line1 = 2131296947;
+    public static int line3 = 2131296948;
+    public static int listMode = 2131296953;
+    public static int list_item = 2131296954;
+    public static int message = 2131297048;
+    public static int multiply = 2131297088;
+    public static int none = 2131297107;
+    public static int normal = 2131297108;
+    public static int notification_background = 2131297110;
+    public static int notification_main_column = 2131297111;
+    public static int notification_main_column_container = 2131297112;
+    public static int parentPanel = 2131297150;
+    public static int progress_circular = 2131297177;
+    public static int progress_horizontal = 2131297178;
+    public static int radio = 2131297199;
+    public static int right = 2131297243;
+    public static int right_icon = 2131297246;
+    public static int right_side = 2131297247;
+    public static int screen = 2131297297;
+    public static int scrollIndicatorDown = 2131297299;
+    public static int scrollIndicatorUp = 2131297300;
+    public static int scrollView = 2131297301;
+    public static int search_badge = 2131297307;
+    public static int search_bar = 2131297308;
+    public static int search_button = 2131297309;
+    public static int search_close_btn = 2131297310;
+    public static int search_edit_frame = 2131297311;
+    public static int search_go_btn = 2131297312;
+    public static int search_mag_icon = 2131297314;
+    public static int search_plate = 2131297315;
+    public static int search_src_text = 2131297316;
+    public static int search_voice_btn = 2131297318;
+    public static int select_dialog_listview = 2131297325;
+    public static int shortcut = 2131297333;
+    public static int spacer = 2131297363;
+    public static int split_action_bar = 2131297368;
+    public static int src_atop = 2131297373;
+    public static int src_in = 2131297374;
+    public static int src_over = 2131297375;
+    public static int start = 2131297383;
+    public static int submenuarrow = 2131297395;
+    public static int submit_area = 2131297396;
+    public static int tabMode = 2131297407;
+    public static int tag_transition_group = 2131297420;
+    public static int tag_unhandled_key_event_manager = 2131297421;
+    public static int tag_unhandled_key_listeners = 2131297422;
+    public static int text = 2131297425;
+    public static int text2 = 2131297426;
+    public static int textSpacerNoButtons = 2131297434;
+    public static int textSpacerNoTitle = 2131297435;
+    public static int time = 2131297450;
+    public static int title = 2131297453;
+    public static int titleDividerNoCustom = 2131297454;
+    public static int title_template = 2131297458;
+
+    /* renamed from: top, reason: collision with root package name */
+    public static int f28555top = 2131297467;
+    public static int topPanel = 2131297468;
+    public static int uniform = 2131297643;
+
+    /* renamed from: up */
+    public static int f10870up = 2131297645;
+    public static int wrap_content = 2131297692;
+
+    private R$id() {
+    }
+}

@@ -1,0 +1,18 @@
+package androidx.compose.p014ui.text.platform;
+
+import android.graphics.Typeface;
+import android.text.style.TypefaceSpan;
+import androidx.annotation.RequiresApi;
+
+@RequiresApi(28)
+/* loaded from: classes2.dex */
+final class Api28Impl {
+    public static final Api28Impl INSTANCE = new Api28Impl();
+
+    private Api28Impl() {
+    }
+
+    public final TypefaceSpan createTypefaceSpan(Typeface typeface) {
+        return new TypefaceSpan(typeface);
+    }
+}

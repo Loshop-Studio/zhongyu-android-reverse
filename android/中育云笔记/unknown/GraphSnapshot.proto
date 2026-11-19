@@ -1,0 +1,39 @@
+﻿syntax = "proto3";
+import "utils/RectF.proto";
+import "utils/Paint.proto";
+import "utils/PointF.proto";
+import "utils/Matrix.proto";
+import "enums/GraphEnum.proto";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyPageSnapshot";
+
+message PageSnapshot {
+    Matrix cameraMatrix = 1;
+    GraphSnapshot graphSnapshot = 2;
+
+    message GraphSnapshot {
+        string id = 1;
+
+        GraphEnum graphEnum = 2;
+
+        RectF outRect = 3;
+
+        Matrix matrix = 4;
+
+        repeated GraphSnapshot childGraph = 5;
+
+        string sourceFileName = 6;
+
+        int32 sourceId = 7;
+
+        int32 backgroundColor = 8; // 背景色
+
+        Paint paint = 9; // 画笔
+
+        string content = 10; // 文本内容
+
+        repeated PointF pointList = 11; // 点集
+
+        string filePath = 12; // 文件内容
+    }
+}

@@ -1,0 +1,54 @@
+.class public final synthetic Landroidx/work/multiprocess/i;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic c:Landroidx/core/util/Consumer;
+
+.field public final synthetic d:Ljava/lang/String;
+
+.field public final synthetic e:Landroidx/work/WorkerParameters;
+
+.field public final synthetic f:Ljava/lang/Throwable;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/core/util/Consumer;Ljava/lang/String;Landroidx/work/WorkerParameters;Ljava/lang/Throwable;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/work/multiprocess/i;->c:Landroidx/core/util/Consumer;
+
+    iput-object p2, p0, Landroidx/work/multiprocess/i;->d:Ljava/lang/String;
+
+    iput-object p3, p0, Landroidx/work/multiprocess/i;->e:Landroidx/work/WorkerParameters;
+
+    iput-object p4, p0, Landroidx/work/multiprocess/i;->f:Ljava/lang/Throwable;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Landroidx/work/multiprocess/i;->c:Landroidx/core/util/Consumer;
+
+    iget-object v1, p0, Landroidx/work/multiprocess/i;->d:Ljava/lang/String;
+
+    iget-object v2, p0, Landroidx/work/multiprocess/i;->e:Landroidx/work/WorkerParameters;
+
+    iget-object v3, p0, Landroidx/work/multiprocess/i;->f:Ljava/lang/Throwable;
+
+    invoke-static {v0, v1, v2, v3}, Landroidx/work/multiprocess/RemoteWorkerWrapperKt$executeRemoteWorker$future$1;->g(Landroidx/core/util/Consumer;Ljava/lang/String;Landroidx/work/WorkerParameters;Ljava/lang/Throwable;)V
+
+    return-void
+.end method

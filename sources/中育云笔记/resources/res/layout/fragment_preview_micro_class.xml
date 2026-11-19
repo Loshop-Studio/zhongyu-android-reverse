@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_preview_micro_class_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_cover" android:layout_width="match_parent" android:layout_height="@dimen/view_188" android:layout_marginLeft="@dimen/view_15" android:layout_marginTop="@dimen/view_36" android:layout_marginRight="@dimen/view_15" android:scaleType="fitXY" android:layout_marginHorizontal="@dimen/view_15" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_cover_icon" android:layout_width="@dimen/view_28" android:layout_height="@dimen/view_28" app:layout_constraintBottom_toBottomOf="@id/iv_cover" app:layout_constraintEnd_toEndOf="@id/iv_cover" app:layout_constraintStart_toStartOf="@id/iv_cover" app:layout_constraintTop_toTopOf="@id/iv_cover" app:srcCompat="@drawable/ic_micro_class_cover_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+.class public final Landroidx/navigation/compose/NavHostControllerKt;
+.super Ljava/lang/Object;
+
+
+# direct methods
+.method public static final currentBackStackEntryAsState(Landroidx/navigation/NavController;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
+    .locals 0
+    .annotation build Landroidx/compose/runtime/Composable;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/navigation/NavController;",
+            "Landroidx/compose/runtime/Composer;",
+            "I)",
+            "Landroidx/compose/runtime/State<",
+            "Landroidx/navigation/NavBackStackEntry;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1, p2}, Landroidx/navigation/compose/NavHostControllerKt__NavHostControllerKt;->currentBackStackEntryAsState(Landroidx/navigation/NavController;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static final rememberNavController([Landroidx/navigation/Navigator;Landroidx/compose/runtime/Composer;I)Landroidx/navigation/NavHostController;
+    .locals 0
+    .annotation build Landroidx/compose/runtime/Composable;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "([",
+            "Landroidx/navigation/Navigator<",
+            "+",
+            "Landroidx/navigation/NavDestination;",
+            ">;",
+            "Landroidx/compose/runtime/Composer;",
+            "I)",
+            "Landroidx/navigation/NavHostController;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1, p2}, Landroidx/navigation/compose/NavHostControllerKt__NavHostController_androidKt;->rememberNavController([Landroidx/navigation/Navigator;Landroidx/compose/runtime/Composer;I)Landroidx/navigation/NavHostController;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method

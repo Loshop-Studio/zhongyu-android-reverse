@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="layout/folder_move_activity_0" android:layout_width="match_parent" android:layout_height="match_parent" app:divider="@color/app_divider" app:dividerPadding="@dimen/view_3" app:showDividers="beginning|middle|end"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/app_white" android:paddingTop="@dimen/view_14" android:layout_width="match_parent" android:layout_height="@dimen/view_47">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_back" android:layout_width="@dimen/view_11" android:layout_height="@dimen/view_11" android:src="@mipmap/icon_back" android:layout_marginStart="@dimen/view_11" />
+        <TextView android:textSize="@dimen/text_9" android:textStyle="bold" android:textColor="@color/app_l_black" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/move" android:layout_marginStart="@dimen/view_25" />
+        <TextView android:textSize="@dimen/text_9" android:textColor="@color/colorAccent" android:layout_gravity="end" android:id="@id/tv_confirm" android:paddingTop="@dimen/view_3" android:paddingBottom="@dimen/view_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/move_to_here" android:layout_marginEnd="@dimen/view_9" android:paddingVertical="@dimen/view_3" />
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_path_name" android:background="@color/color_bg_path_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="@dimen/view_27" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_folder" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

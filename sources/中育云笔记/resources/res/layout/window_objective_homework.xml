@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/window_objective_homework_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_before" layout="@layout/layout_student_objective" />
+    <include android:id="@id/layout_confirm" android:visibility="gone" layout="@layout/layout_objective_confirm" />
+    <ImageView android:layout_gravity="end|top" android:id="@id/iv_minimize" android:layout_width="@dimen/view_14" android:layout_height="@dimen/view_14" android:layout_marginTop="@dimen/view_3" android:src="@drawable/paint_minimize_answer_board" android:layout_marginEnd="@dimen/view_3" />
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="layout/layout_share_note_preview_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:divider="@color/app_divider" app:dividerPadding="@dimen/view_3" app:showDividers="beginning|middle|end">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="start|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/view_33">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_read_only" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_9" android:src="@mipmap/icon_read_only" android:layout_marginStart="@dimen/view_11" />
+            <TextView android:textSize="@dimen/text_9" android:textStyle="bold" android:textColor="@color/app_black" android:layout_gravity="center_vertical" android:id="@id/tv_note_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/view_3" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="end|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/iv_full_screen" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@mipmap/icon_full_screen_share" android:layout_marginEnd="@dimen/view_14" />
+                <ImageView android:id="@id/iv_note_info" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@mipmap/icon_note_info" android:layout_marginEnd="@dimen/view_14" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refreshImage" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_note" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <TextView android:textSize="@dimen/text_10" android:id="@id/tv_content" android:background="@color/white" android:padding="@dimen/view_8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="1.0px" />
+        </androidx.core.widget.NestedScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fab_edit" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/view_8" android:src="@mipmap/icon_edit_note" android:foregroundGravity="center" android:backgroundTint="@color/colorAccent" app:elevation="@dimen/view_3" app:fabSize="normal" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:rippleColor="@color/color_ripple" />
+</androidx.constraintlayout.widget.ConstraintLayout>

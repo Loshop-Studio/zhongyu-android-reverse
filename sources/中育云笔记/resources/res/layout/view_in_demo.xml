@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/view_in_demo_0" android:layout_width="wrap_content" android:layout_height="@dimen/view_47"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:id="@id/cv_bg" android:layout_width="@dimen/view_47" android:layout_height="@dimen/view_47" app:cardBackgroundColor="@color/selector_color_in_demo" app:cardCornerRadius="@dimen/view_3">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/iv_role" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/icon_demo_teacher" />
+            <TextView android:textSize="@dimen/text_8" android:textColor="@color/selector_color_teacher" android:ellipsize="end" android:id="@id/tv_name" android:paddingLeft="@dimen/view_5" android:paddingRight="@dimen/view_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_1" android:lines="1" android:paddingHorizontal="@dimen/view_5" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/iv_offline" android:visibility="gone" android:layout_width="@dimen/view_24" android:layout_height="@dimen/view_20" android:src="@drawable/icon_in_mode_offline" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/view_22" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_remove" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:src="@drawable/icon_remove_demo" />
+        <ImageView android:id="@id/iv_fullscreen" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_marginTop="@dimen/view_13" android:src="@drawable/selector_fullscreen" />
+    </LinearLayout>
+</LinearLayout>

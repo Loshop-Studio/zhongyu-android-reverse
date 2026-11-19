@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_container" android:tag="layout/activity_office_web_0" android:paddingTop="@dimen/view_15" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/iv_finish" android:paddingTop="@dimen/dp_4" android:paddingBottom="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_5" android:src="@drawable/ic_back_black_24dp" android:layout_marginStart="@dimen/view_12" />
+</FrameLayout>

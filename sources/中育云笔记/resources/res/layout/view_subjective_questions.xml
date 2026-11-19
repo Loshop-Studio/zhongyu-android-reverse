@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/view_8" android:textColor="#a4a4a4" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="让学生在笔记中答题，并提交答案" android:drawableTop="@drawable/lecture_do_homework" android:drawablePadding="@dimen/view_11"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

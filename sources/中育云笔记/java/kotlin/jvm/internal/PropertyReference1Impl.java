@@ -1,0 +1,8 @@
+package kotlin.jvm.internal;
+
+/* loaded from: classes6.dex */
+public abstract class PropertyReference1Impl extends PropertyReference1 {
+    public PropertyReference1Impl(Class cls, String str, String str2, int i10) {
+        super(CallableReference.NO_RECEIVER, cls, str, str2, i10);
+    }
+}

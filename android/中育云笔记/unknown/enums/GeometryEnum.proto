@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyGeometryEnum";
+
+enum GeometryEnum {
+  OVAL = 0; // 椭圆
+  POLYGON = 1; // 多边形
+}

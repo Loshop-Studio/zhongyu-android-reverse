@@ -1,0 +1,26 @@
+package androidx.compose.foundation.gestures;
+
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import p409xc.InterfaceC11829d;
+import vc.InterfaceC11588c;
+
+@InterfaceC11829d(m26210c = "androidx.compose.foundation.gestures.DragGestureDetectorKt", m26211f = "DragGestureDetector.kt", m26212l = {968}, m26213m = "awaitLongPressOrCancellation-rnUCldI")
+/* loaded from: classes.dex */
+public final class DragGestureDetectorKt$awaitLongPressOrCancellation$1 extends ContinuationImpl {
+    Object L$0;
+    Object L$1;
+    Object L$2;
+    int label;
+    /* synthetic */ Object result;
+
+    public DragGestureDetectorKt$awaitLongPressOrCancellation$1(InterfaceC11588c<? super DragGestureDetectorKt$awaitLongPressOrCancellation$1> interfaceC11588c) {
+        super(interfaceC11588c);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        return DragGestureDetectorKt.m27146awaitLongPressOrCancellationrnUCldI(null, 0L, this);
+    }
+}

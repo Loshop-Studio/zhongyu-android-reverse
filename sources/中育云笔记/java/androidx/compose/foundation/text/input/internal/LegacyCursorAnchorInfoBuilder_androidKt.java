@@ -1,0 +1,161 @@
+package androidx.compose.foundation.text.input.internal;
+
+import android.graphics.Matrix;
+import android.os.Build;
+import android.view.inputmethod.CursorAnchorInfo;
+import androidx.compose.p014ui.geometry.Rect;
+import androidx.compose.p014ui.text.TextLayoutResult;
+import androidx.compose.p014ui.text.TextRange;
+import androidx.compose.p014ui.text.input.OffsetMapping;
+import androidx.compose.p014ui.text.input.TextFieldValue;
+import androidx.compose.p014ui.text.style.ResolvedTextDirection;
+import p265nd.AbstractC10410o;
+
+/* loaded from: classes.dex */
+public final class LegacyCursorAnchorInfoBuilder_androidKt {
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:10:0x0064  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private static final android.view.inputmethod.CursorAnchorInfo.Builder addCharacterBounds(android.view.inputmethod.CursorAnchorInfo.Builder r17, int r18, int r19, androidx.compose.p014ui.text.input.OffsetMapping r20, androidx.compose.p014ui.text.TextLayoutResult r21, androidx.compose.p014ui.geometry.Rect r22) {
+        /*
+            r0 = r19
+            r1 = r20
+            r2 = r18
+            r3 = r22
+            int r4 = r1.originalToTransformed(r2)
+            int r5 = r1.originalToTransformed(r0)
+            int r6 = r5 - r4
+            int r6 = r6 * 4
+            float[] r6 = new float[r6]
+            androidx.compose.ui.text.MultiParagraph r7 = r21.getMultiParagraph()
+            long r8 = androidx.compose.p014ui.text.TextRangeKt.TextRange(r4, r5)
+            r5 = 0
+            r7.m32816fillBoundingBoxes8ffj60Q(r8, r6, r5)
+            r11 = r2
+        L23:
+            if (r11 >= r0) goto L8b
+            int r2 = r1.originalToTransformed(r11)
+            int r5 = r2 - r4
+            int r5 = r5 * 4
+            androidx.compose.ui.geometry.Rect r7 = new androidx.compose.ui.geometry.Rect
+            r8 = r6[r5]
+            int r9 = r5 + 1
+            r9 = r6[r9]
+            int r10 = r5 + 2
+            r10 = r6[r10]
+            int r5 = r5 + 3
+            r5 = r6[r5]
+            r7.<init>(r8, r9, r10, r5)
+            boolean r5 = r3.overlaps(r7)
+            float r8 = r7.getLeft()
+            float r9 = r7.getTop()
+            boolean r8 = containsInclusive(r3, r8, r9)
+            if (r8 == 0) goto L64
+            float r8 = r7.getRight()
+            float r9 = r7.getBottom()
+            boolean r8 = containsInclusive(r3, r8, r9)
+            if (r8 != 0) goto L61
+            goto L64
+        L61:
+            r8 = r21
+            goto L67
+        L64:
+            r5 = r5 | 2
+            goto L61
+        L67:
+            androidx.compose.ui.text.style.ResolvedTextDirection r2 = r8.getBidiRunDirection(r2)
+            androidx.compose.ui.text.style.ResolvedTextDirection r9 = androidx.compose.p014ui.text.style.ResolvedTextDirection.Rtl
+            if (r2 != r9) goto L71
+            r5 = r5 | 4
+        L71:
+            r16 = r5
+            float r12 = r7.getLeft()
+            float r13 = r7.getTop()
+            float r14 = r7.getRight()
+            float r15 = r7.getBottom()
+            r10 = r17
+            r10.addCharacterBounds(r11, r12, r13, r14, r15, r16)
+            int r11 = r11 + 1
+            goto L23
+        L8b:
+            return r17
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.compose.foundation.text.input.internal.LegacyCursorAnchorInfoBuilder_androidKt.addCharacterBounds(android.view.inputmethod.CursorAnchorInfo$Builder, int, int, androidx.compose.ui.text.input.OffsetMapping, androidx.compose.ui.text.TextLayoutResult, androidx.compose.ui.geometry.Rect):android.view.inputmethod.CursorAnchorInfo$Builder");
+    }
+
+    public static final CursorAnchorInfo build(CursorAnchorInfo.Builder builder, TextFieldValue textFieldValue, OffsetMapping offsetMapping, TextLayoutResult textLayoutResult, Matrix matrix, Rect rect, Rect rect2, boolean z10, boolean z11, boolean z12, boolean z13) {
+        builder.reset();
+        builder.setMatrix(matrix);
+        int iM32964getMinimpl = TextRange.m32964getMinimpl(textFieldValue.m33214getSelectiond9O1mEE());
+        builder.setSelectionRange(iM32964getMinimpl, TextRange.m32963getMaximpl(textFieldValue.m33214getSelectiond9O1mEE()));
+        if (z10) {
+            setInsertionMarker(builder, iM32964getMinimpl, offsetMapping, textLayoutResult, rect);
+        }
+        if (z11) {
+            TextRange textRangeM33213getCompositionMzsxiRA = textFieldValue.m33213getCompositionMzsxiRA();
+            int iM32964getMinimpl2 = textRangeM33213getCompositionMzsxiRA != null ? TextRange.m32964getMinimpl(textRangeM33213getCompositionMzsxiRA.m32970unboximpl()) : -1;
+            TextRange textRangeM33213getCompositionMzsxiRA2 = textFieldValue.m33213getCompositionMzsxiRA();
+            int iM32963getMaximpl = textRangeM33213getCompositionMzsxiRA2 != null ? TextRange.m32963getMaximpl(textRangeM33213getCompositionMzsxiRA2.m32970unboximpl()) : -1;
+            if (iM32964getMinimpl2 >= 0 && iM32964getMinimpl2 < iM32963getMaximpl) {
+                builder.setComposingText(iM32964getMinimpl2, textFieldValue.getText().subSequence(iM32964getMinimpl2, iM32963getMaximpl));
+                addCharacterBounds(builder, iM32964getMinimpl2, iM32963getMaximpl, offsetMapping, textLayoutResult, rect);
+            }
+        }
+        int i10 = Build.VERSION.SDK_INT;
+        if (i10 >= 33 && z12) {
+            CursorAnchorInfoApi33Helper.setEditorBoundsInfo(builder, rect2);
+        }
+        if (i10 >= 34 && z13) {
+            CursorAnchorInfoApi34Helper.addVisibleLineBounds(builder, textLayoutResult, rect);
+        }
+        return builder.build();
+    }
+
+    public static /* synthetic */ CursorAnchorInfo build$default(CursorAnchorInfo.Builder builder, TextFieldValue textFieldValue, OffsetMapping offsetMapping, TextLayoutResult textLayoutResult, Matrix matrix, Rect rect, Rect rect2, boolean z10, boolean z11, boolean z12, boolean z13, int i10, Object obj) {
+        if ((i10 & 64) != 0) {
+            z10 = true;
+        }
+        if ((i10 & 128) != 0) {
+            z11 = true;
+        }
+        if ((i10 & 256) != 0) {
+            z12 = true;
+        }
+        if ((i10 & 512) != 0) {
+            z13 = true;
+        }
+        return build(builder, textFieldValue, offsetMapping, textLayoutResult, matrix, rect, rect2, z10, z11, z12, z13);
+    }
+
+    public static final boolean containsInclusive(Rect rect, float f10, float f11) {
+        float left = rect.getLeft();
+        if (f10 > rect.getRight() || left > f10) {
+            return false;
+        }
+        return f11 <= rect.getBottom() && rect.getTop() <= f11;
+    }
+
+    private static final CursorAnchorInfo.Builder setInsertionMarker(CursorAnchorInfo.Builder builder, int i10, OffsetMapping offsetMapping, TextLayoutResult textLayoutResult, Rect rect) {
+        if (i10 < 0) {
+            return builder;
+        }
+        int iOriginalToTransformed = offsetMapping.originalToTransformed(i10);
+        Rect cursorRect = textLayoutResult.getCursorRect(iOriginalToTransformed);
+        float fM21760m = AbstractC10410o.m21760m(cursorRect.getLeft(), 0.0f, (int) (textLayoutResult.m32937getSizeYbymL2g() >> 32));
+        boolean zContainsInclusive = containsInclusive(rect, fM21760m, cursorRect.getTop());
+        boolean zContainsInclusive2 = containsInclusive(rect, fM21760m, cursorRect.getBottom());
+        boolean z10 = textLayoutResult.getBidiRunDirection(iOriginalToTransformed) == ResolvedTextDirection.Rtl;
+        int i11 = (zContainsInclusive || zContainsInclusive2) ? 1 : 0;
+        if (!zContainsInclusive || !zContainsInclusive2) {
+            i11 |= 2;
+        }
+        if (z10) {
+            i11 |= 4;
+        }
+        builder.setInsertionMarkerLocation(fM21760m, cursorRect.getTop(), cursorRect.getBottom(), cursorRect.getBottom(), i11);
+        return builder;
+    }
+}

@@ -1,0 +1,79 @@
+package androidx.compose.material.icons.outlined;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.p014ui.graphics.Color;
+import androidx.compose.p014ui.graphics.SolidColor;
+import androidx.compose.p014ui.graphics.StrokeCap;
+import androidx.compose.p014ui.graphics.StrokeJoin;
+import androidx.compose.p014ui.graphics.vector.ImageVector;
+import androidx.compose.p014ui.graphics.vector.PathBuilder;
+import androidx.compose.p014ui.graphics.vector.VectorKt;
+import androidx.compose.p014ui.unit.C3186Dp;
+import kotlin.jvm.internal.AbstractC9979u;
+
+/* loaded from: classes.dex */
+public final class SettingsPhoneKt {
+    private static ImageVector _settingsPhone;
+
+    public static final ImageVector getSettingsPhone(Icons.Outlined outlined) {
+        ImageVector imageVector = _settingsPhone;
+        if (imageVector != null) {
+            AbstractC9979u.m20291d(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Outlined.SettingsPhone", C3186Dp.m33501constructorimpl(24.0f), C3186Dp.m33501constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.Companion.m30904getBlack0d7_KjU(), null);
+        int iM31231getButtKaPHkGw = StrokeCap.Companion.m31231getButtKaPHkGw();
+        int iM31241getBevelLxFBmk8 = StrokeJoin.Companion.m31241getBevelLxFBmk8();
+        PathBuilder pathBuilder = new PathBuilder();
+        pathBuilder.moveTo(11.0f, 9.0f);
+        pathBuilder.horizontalLineToRelative(2.0f);
+        pathBuilder.verticalLineToRelative(2.0f);
+        pathBuilder.horizontalLineToRelative(-2.0f);
+        pathBuilder.close();
+        pathBuilder.moveTo(15.0f, 9.0f);
+        pathBuilder.horizontalLineToRelative(2.0f);
+        pathBuilder.verticalLineToRelative(2.0f);
+        pathBuilder.horizontalLineToRelative(-2.0f);
+        pathBuilder.close();
+        pathBuilder.moveTo(20.0f, 15.5f);
+        pathBuilder.curveToRelative(-1.25f, 0.0f, -2.45f, -0.2f, -3.57f, -0.57f);
+        pathBuilder.curveToRelative(-0.1f, -0.03f, -0.21f, -0.05f, -0.31f, -0.05f);
+        pathBuilder.curveToRelative(-0.26f, 0.0f, -0.51f, 0.1f, -0.71f, 0.29f);
+        pathBuilder.lineToRelative(-2.2f, 2.2f);
+        pathBuilder.curveToRelative(-2.83f, -1.44f, -5.15f, -3.75f, -6.59f, -6.58f);
+        pathBuilder.lineToRelative(2.2f, -2.21f);
+        pathBuilder.curveToRelative(0.28f, -0.27f, 0.36f, -0.66f, 0.25f, -1.01f);
+        pathBuilder.curveTo(8.7f, 6.45f, 8.5f, 5.25f, 8.5f, 4.0f);
+        pathBuilder.curveToRelative(0.0f, -0.55f, -0.45f, -1.0f, -1.0f, -1.0f);
+        pathBuilder.lineTo(4.0f, 3.0f);
+        pathBuilder.curveToRelative(-0.55f, 0.0f, -1.0f, 0.45f, -1.0f, 1.0f);
+        pathBuilder.curveToRelative(0.0f, 9.39f, 7.61f, 17.0f, 17.0f, 17.0f);
+        pathBuilder.curveToRelative(0.55f, 0.0f, 1.0f, -0.45f, 1.0f, -1.0f);
+        pathBuilder.verticalLineToRelative(-3.5f);
+        pathBuilder.curveToRelative(0.0f, -0.55f, -0.45f, -1.0f, -1.0f, -1.0f);
+        pathBuilder.close();
+        pathBuilder.moveTo(5.03f, 5.0f);
+        pathBuilder.horizontalLineToRelative(1.5f);
+        pathBuilder.curveToRelative(0.07f, 0.88f, 0.22f, 1.75f, 0.46f, 2.59f);
+        pathBuilder.lineTo(5.79f, 8.8f);
+        pathBuilder.curveToRelative(-0.41f, -1.21f, -0.67f, -2.48f, -0.76f, -3.8f);
+        pathBuilder.close();
+        pathBuilder.moveTo(19.0f, 18.97f);
+        pathBuilder.curveToRelative(-1.32f, -0.09f, -2.6f, -0.35f, -3.8f, -0.76f);
+        pathBuilder.lineToRelative(1.2f, -1.2f);
+        pathBuilder.curveToRelative(0.85f, 0.24f, 1.72f, 0.39f, 2.6f, 0.45f);
+        pathBuilder.verticalLineToRelative(1.51f);
+        pathBuilder.close();
+        pathBuilder.moveTo(19.0f, 9.0f);
+        pathBuilder.horizontalLineToRelative(2.0f);
+        pathBuilder.verticalLineToRelative(2.0f);
+        pathBuilder.horizontalLineToRelative(-2.0f);
+        pathBuilder.close();
+        ImageVector imageVectorBuild = ImageVector.Builder.m31563addPathoIyEayM$default(builder, pathBuilder.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, iM31231getButtKaPHkGw, iM31241getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _settingsPhone = imageVectorBuild;
+        AbstractC9979u.m20291d(imageVectorBuild);
+        return imageVectorBuild;
+    }
+}

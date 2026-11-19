@@ -1,0 +1,441 @@
+# RE note 本类字节码直接引用的读写或显示接口包括ObjectBox。
+.class public final Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Lio/objectbox/annotation/Entity;
+.end annotation
+
+
+# instance fields
+.field private horizontalTranslate:Z
+
+.field private id:J
+
+.field private isEnable:Z
+
+.field private maxHeightTimes:I
+
+.field private maxWidthTimes:I
+
+.field private rotate:Z
+
+.field private scale:Z
+
+.field private verticalTranslate:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 12
+
+    .line 1
+    const/16 v10, 0xff
+
+    const/4 v11, 0x0
+
+    const-wide/16 v1, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v11}, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;-><init>(JZZZZZIIILkotlin/jvm/internal/n;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(JZZZZZII)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-wide p1, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->id:J
+
+    .line 4
+    iput-boolean p3, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->isEnable:Z
+
+    .line 5
+    iput-boolean p4, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->verticalTranslate:Z
+
+    .line 6
+    iput-boolean p5, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->horizontalTranslate:Z
+
+    .line 7
+    iput-boolean p6, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->scale:Z
+
+    .line 8
+    iput-boolean p7, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->rotate:Z
+
+    .line 9
+    iput p8, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->maxHeightTimes:I
+
+    .line 10
+    iput p9, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->maxWidthTimes:I
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(JZZZZZIIILkotlin/jvm/internal/n;)V
+    .locals 10
+
+    move/from16 v0, p10
+
+    and-int/lit8 v1, v0, 0x1
+
+    if-eqz v1, :cond_0
+
+    const-wide/16 p1, 0x0
+
+    :cond_0
+    move-wide v1, p1
+
+    and-int/lit8 p1, v0, 0x2
+
+    const/4 p2, 0x0
+
+    if-eqz p1, :cond_1
+
+    move v3, p2
+
+    goto :goto_0
+
+    :cond_1
+    move v3, p3
+
+    :goto_0
+    and-int/lit8 p1, v0, 0x4
+
+    if-eqz p1, :cond_2
+
+    move v4, p2
+
+    goto :goto_1
+
+    :cond_2
+    move v4, p4
+
+    :goto_1
+    and-int/lit8 p1, v0, 0x8
+
+    if-eqz p1, :cond_3
+
+    move v5, p2
+
+    goto :goto_2
+
+    :cond_3
+    move v5, p5
+
+    :goto_2
+    and-int/lit8 p1, v0, 0x10
+
+    if-eqz p1, :cond_4
+
+    move v6, p2
+
+    goto :goto_3
+
+    :cond_4
+    move/from16 v6, p6
+
+    :goto_3
+    and-int/lit8 p1, v0, 0x20
+
+    if-eqz p1, :cond_5
+
+    move v7, p2
+
+    goto :goto_4
+
+    :cond_5
+    move/from16 v7, p7
+
+    :goto_4
+    and-int/lit8 p1, v0, 0x40
+
+    if-eqz p1, :cond_6
+
+    move v8, p2
+
+    goto :goto_5
+
+    :cond_6
+    move/from16 v8, p8
+
+    :goto_5
+    and-int/lit16 p1, v0, 0x80
+
+    if-eqz p1, :cond_7
+
+    move v9, p2
+
+    :goto_6
+    move-object v0, p0
+
+    goto :goto_7
+
+    :cond_7
+    move/from16 v9, p9
+
+    goto :goto_6
+
+    .line 11
+    :goto_7
+    invoke-direct/range {v0 .. v9}, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;-><init>(JZZZZZII)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->horizontalTranslate:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final b()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->id:J
+
+    .line 2
+    .line 3
+    return-wide v0
+.end method
+
+.method public final c()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->maxHeightTimes:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final d()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->maxWidthTimes:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final e()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->rotate:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final f()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->scale:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final g()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->verticalTranslate:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final h()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->isEnable:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final i()V
+    .locals 2
+
+    .line 1
+    sget-object v0, Lna/d;->a:Lna/d;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lna/d;->f()Lio/objectbox/BoxStore;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const-class v1, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, v1}, Lio/objectbox/BoxStore;->g(Ljava/lang/Class;)Ljc/a;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    invoke-virtual {v0, p0}, Ljc/a;->m(Ljava/lang/Object;)J
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method public final j(Lq9/d;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "moveActionConfig"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/u;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p1}, Lq9/d;->g()Z
+
+    .line 7
+    .line 8
+    .line 9
+    move-result v0
+
+    .line 10
+    iput-boolean v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->isEnable:Z
+
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Lq9/d;->f()Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    iput-boolean v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->verticalTranslate:Z
+
+    .line 17
+    .line 18
+    invoke-virtual {p1}, Lq9/d;->a()Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
+    .line 22
+    iput-boolean v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->horizontalTranslate:Z
+
+    .line 23
+    .line 24
+    invoke-virtual {p1}, Lq9/d;->e()Z
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v0
+
+    .line 28
+    iput-boolean v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->scale:Z
+
+    .line 29
+    .line 30
+    invoke-virtual {p1}, Lq9/d;->d()Z
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v0
+
+    .line 34
+    iput-boolean v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->rotate:Z
+
+    .line 35
+    .line 36
+    invoke-virtual {p1}, Lq9/d;->c()I
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v0
+
+    .line 40
+    iput v0, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->maxWidthTimes:I
+
+    .line 41
+    .line 42
+    invoke-virtual {p1}, Lq9/d;->b()I
+
+    .line 43
+    .line 44
+    .line 45
+    move-result p1
+
+    .line 46
+    iput p1, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->maxHeightTimes:I
+
+    .line 47
+    .line 48
+    return-void
+.end method
+
+.method public final k(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;->id:J
+
+    .line 2
+    .line 3
+    return-void
+.end method

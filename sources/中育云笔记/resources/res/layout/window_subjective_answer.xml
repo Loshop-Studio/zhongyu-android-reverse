@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/window_subjective_answer_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_random" layout="@layout/layout_random" />
+    <include android:layout_gravity="center" android:id="@id/layout_list" android:layout_width="@dimen/view_498" android:layout_height="@dimen/view_300" layout="@layout/layout_subjective_list" />
+    <include android:id="@id/layout_detail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_subjective_detail" />
+    <include android:layout_gravity="center" android:id="@id/layout_time_up" android:visibility="gone" android:layout_width="@dimen/view_498" android:layout_height="@dimen/view_300" layout="@layout/layout_confirm_time_up" />
+    <include android:layout_gravity="center" android:id="@id/layout_end_class" android:visibility="gone" android:layout_width="@dimen/view_498" android:layout_height="@dimen/view_300" layout="@layout/layout_confirm_end_class" />
+</FrameLayout>

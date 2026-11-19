@@ -1,0 +1,19 @@
+﻿syntax = "proto3";
+import "google/protobuf/any.proto";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyMatrix";
+
+message Matrix {
+
+    int64 eventTime = 1;
+
+    float scaleX = 2;
+    float skewX = 3;
+    float transX = 4;
+    float skewY = 5;
+    float scaleY = 6;
+    float transY = 7;
+    float perSp0 = 8;
+    float perSp1 = 9;
+    float perSp2 = 10;
+}

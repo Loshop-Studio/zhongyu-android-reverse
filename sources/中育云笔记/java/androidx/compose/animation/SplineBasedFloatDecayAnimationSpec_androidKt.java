@@ -1,0 +1,38 @@
+package androidx.compose.animation;
+
+import android.view.ViewConfiguration;
+import androidx.compose.animation.core.DecayAnimationSpec;
+import androidx.compose.animation.core.DecayAnimationSpecKt;
+import androidx.compose.p014ui.platform.CompositionLocalsKt;
+import androidx.compose.p014ui.unit.Density;
+import androidx.compose.runtime.Composable;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+
+/* loaded from: classes.dex */
+public final class SplineBasedFloatDecayAnimationSpec_androidKt {
+    private static final float platformFlingScrollFriction = ViewConfiguration.getScrollFriction();
+
+    public static final float getPlatformFlingScrollFriction() {
+        return platformFlingScrollFriction;
+    }
+
+    @Composable
+    public static final <T> DecayAnimationSpec<T> rememberSplineBasedDecay(Composer composer, int i10) {
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(904445851, i10, -1, "androidx.compose.animation.rememberSplineBasedDecay (SplineBasedFloatDecayAnimationSpec.android.kt:40)");
+        }
+        Density density = (Density) composer.consume(CompositionLocalsKt.getLocalDensity());
+        boolean zChanged = composer.changed(density.getDensity());
+        Object objRememberedValue = composer.rememberedValue();
+        if (zChanged || objRememberedValue == Composer.Companion.getEmpty()) {
+            objRememberedValue = DecayAnimationSpecKt.generateDecayAnimationSpec(new SplineBasedFloatDecayAnimationSpec(density));
+            composer.updateRememberedValue(objRememberedValue);
+        }
+        DecayAnimationSpec<T> decayAnimationSpec = (DecayAnimationSpec) objRememberedValue;
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        return decayAnimationSpec;
+    }
+}

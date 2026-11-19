@@ -1,0 +1,54 @@
+package androidx.paging;
+
+import androidx.annotation.IntRange;
+import java.util.List;
+import kotlin.jvm.internal.AbstractC9979u;
+import p325rc.AbstractC10940d;
+
+/* loaded from: classes3.dex */
+public final class ItemSnapshotList<T> extends AbstractC10940d {
+    private final List<T> items;
+    private final int placeholdersAfter;
+    private final int placeholdersBefore;
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public ItemSnapshotList(@IntRange(from = 0) int i10, @IntRange(from = 0) int i11, List<? extends T> items) {
+        AbstractC9979u.m20294g(items, "items");
+        this.placeholdersBefore = i10;
+        this.placeholdersAfter = i11;
+        this.items = items;
+    }
+
+    @Override // p325rc.AbstractC10940d, java.util.List
+    public T get(int i10) {
+        if (i10 >= 0 && i10 < this.placeholdersBefore) {
+            return null;
+        }
+        int i11 = this.placeholdersBefore;
+        if (i10 < this.items.size() + i11 && i11 <= i10) {
+            return this.items.get(i10 - this.placeholdersBefore);
+        }
+        int size = this.placeholdersBefore + this.items.size();
+        if (i10 < size() && size <= i10) {
+            return null;
+        }
+        throw new IndexOutOfBoundsException("Illegal attempt to access index " + i10 + " in ItemSnapshotList of size " + size());
+    }
+
+    public final List<T> getItems() {
+        return this.items;
+    }
+
+    public final int getPlaceholdersAfter() {
+        return this.placeholdersAfter;
+    }
+
+    public final int getPlaceholdersBefore() {
+        return this.placeholdersBefore;
+    }
+
+    @Override // p325rc.AbstractC10940d, p325rc.AbstractC10936b
+    public int getSize() {
+        return this.placeholdersBefore + this.items.size() + this.placeholdersAfter;
+    }
+}

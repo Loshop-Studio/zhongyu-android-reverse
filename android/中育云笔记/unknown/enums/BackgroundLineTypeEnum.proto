@@ -1,0 +1,8 @@
+﻿syntax = "proto3";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyBackgroundLineTypeEnum";
+
+enum BackgroundLineTypeEnum {
+    HORIZONTAL = 0;
+    STAGGERED = 1;
+}

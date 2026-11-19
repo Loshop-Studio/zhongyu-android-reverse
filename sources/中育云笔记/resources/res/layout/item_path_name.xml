@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/folder" android:layout_width="@dimen/view_11" android:layout_height="@dimen/view_11" android:src="@mipmap/icon_folder_notopen" android:layout_marginStart="@dimen/view_11" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.friday.common.widget.FridayDrawableTextView android:textSize="@dimen/text_8" android:textColor="@color/app_l_dark" android:ellipsize="end" android:id="@id/mTvPathName" android:layout_width="@dimen/view_52" android:layout_height="@dimen/view_27" android:maxEms="5" android:singleLine="true" android:textAlignment="viewStart" android:layout_marginStart="@dimen/view_3" app:drawableHeight="@dimen/view_27" app:drawableRight="@mipmap/icon_path_sign" app:drawableWidth="@dimen/view_5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/folder" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

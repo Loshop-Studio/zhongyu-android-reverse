@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/cl_note_preview" android:tag="layout/full_screen_activity_0" android:background="@color/app_bg_gray" android:paddingTop="@dimen/view_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:divider="@color/app_divider" app:dividerPadding="@dimen/view_3" app:showDividers="beginning|middle|end">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="start|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/view_33">
+            <ImageView android:id="@id/iv_finish" android:paddingTop="@dimen/view_7" android:paddingBottom="@dimen/view_7" android:visibility="gone" android:layout_width="@dimen/view_24" android:layout_height="match_parent" android:src="@drawable/ic_back_black_24dp" android:paddingStart="@dimen/view_3" android:paddingEnd="@dimen/view_3" android:layout_marginStart="@dimen/view_9" />
+            <TextView android:textSize="@dimen/text_9" android:textStyle="bold" android:textColor="@color/app_black" android:id="@id/tv_note_name" android:padding="@dimen/view_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/view_13" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="end|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/iv_cancel_full_screen" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@mipmap/icon_full_screen" android:layout_marginEnd="@dimen/view_14" />
+                <ImageView android:id="@id/iv_note_rename" android:visibility="gone" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@mipmap/icon_note_rename" android:layout_marginEnd="@dimen/view_14" />
+                <ImageView android:id="@id/iv_note_label" android:visibility="gone" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@mipmap/icon_note_label" android:layout_marginEnd="@dimen/view_14" />
+                <ImageView android:id="@id/iv_note_info" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@mipmap/icon_note_info" android:layout_marginEnd="@dimen/view_14" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_label" android:padding="@dimen/view_5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refreshImage" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_note" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/iv_ppt" android:visibility="gone" android:layout_width="@dimen/view_120" android:layout_height="@dimen/view_78" android:src="@mipmap/icon_ppt_preview" />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fab_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/view_9" android:src="@mipmap/icon_edit_note" android:foregroundGravity="center" android:backgroundTint="@color/colorAccent" app:elevation="@dimen/view_3" app:fabSize="normal" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:rippleColor="@color/color_ripple" />
+</androidx.constraintlayout.widget.ConstraintLayout>

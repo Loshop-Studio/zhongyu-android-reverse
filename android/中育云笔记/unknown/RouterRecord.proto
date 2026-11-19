@@ -1,0 +1,25 @@
+﻿syntax = "proto3";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyRouterRecord";
+
+///记录文件，用于校验文件完整性
+/// commandRecord 记录命令文件
+/// SourceAudioRecord 记录音频文件
+/// touchSourceRecord，matrixSourceRecord，audioSourceRecord 记录的是每条命令可能使用到的数据，
+/// 但记录的仅仅是这类数据存放的文件名，用于最后的完整性校验。
+/// 如果命令中使用到了数据，该命令中会说明去哪个文件中找
+message RouterRecord {
+    repeated SourceCommandRecord commandRecord = 1; //记录命令
+    repeated SourceCommandRecord audioRecord = 2; //记录audio文件
+
+    repeated SourceCommandRecord touchSourceRecord = 3; //记录触摸点集形成的文件名
+    repeated SourceCommandRecord matrixSourceRecord = 4; //记录变换对象
+    repeated SourceCommandRecord fileSourceRecord = 5; //记录Res文件
+    repeated SourceCommandRecord textSourceRecord = 6; //记录Text文件
+    repeated SourceCommandRecord geometrySourceRecord = 7; //记录图形文件
+
+    message SourceCommandRecord {
+        string fileName = 1;
+        string validate = 2;
+    }
+}

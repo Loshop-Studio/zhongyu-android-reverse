@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/activity_image_preview_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.luck.picture.lib.photoview.PhotoView android:id="@id/iv_photo" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/iv_finish" android:padding="@dimen/view_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_15" android:src="@drawable/ic_back_black_24dp" android:layout_marginStart="@dimen/view_10" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="@dimen/view_200" android:layout_height="@dimen/view_200" android:src="@drawable/icon_error_place_holder" />
+        <TextView android:textSize="@dimen/text_10" android:textColor="@color/text_gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/load_image_failed" />
+    </LinearLayout>
+</FrameLayout>

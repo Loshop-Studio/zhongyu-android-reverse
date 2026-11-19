@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/home_activity_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/included" android:layout_width="@dimen/view_36" android:layout_height="match_parent" app:layout_constraintStart_toStartOf="parent" layout="@layout/layout_tab" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager2" android:layout_width="0.0dp" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/included" />
+    <androidx.cardview.widget.CardView android:id="@id/cv_air_play" android:layout_width="@dimen/view_22" android:layout_height="@dimen/view_22" android:layout_marginBottom="@dimen/view_10" android:layout_marginStart="@dimen/text_7" app:cardBackgroundColor="@color/text_gray" app:cardCornerRadius="@dimen/view_11" app:cardElevation="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_air_play" android:layout_width="@dimen/view_11" android:layout_height="@dimen/view_11" android:src="@drawable/main_selector_air_play_status" android:scaleType="fitCenter" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+package com.jeremyliao.liveeventbus.logger;
+
+import android.util.Log;
+import java.util.logging.Level;
+
+/* loaded from: classes5.dex */
+public class DefaultLogger implements Logger {
+    private static final String TAG = "[LiveEventBus]";
+
+    @Override // com.jeremyliao.liveeventbus.logger.Logger
+    public void log(Level level, String str) {
+        if (level == Level.SEVERE) {
+            Log.e(TAG, str);
+            return;
+        }
+        if (level == Level.WARNING) {
+            Log.w(TAG, str);
+        } else if (level == Level.INFO) {
+            Log.i(TAG, str);
+        } else {
+            if (level == Level.CONFIG) {
+                return;
+            }
+            Level level2 = Level.OFF;
+        }
+    }
+
+    @Override // com.jeremyliao.liveeventbus.logger.Logger
+    public void log(Level level, String str, Throwable th) {
+        if (level == Level.SEVERE) {
+            Log.e(TAG, str, th);
+            return;
+        }
+        if (level == Level.WARNING) {
+            Log.w(TAG, str, th);
+        } else if (level == Level.INFO) {
+            Log.i(TAG, str, th);
+        } else {
+            if (level == Level.CONFIG) {
+                return;
+            }
+            Level level2 = Level.OFF;
+        }
+    }
+}

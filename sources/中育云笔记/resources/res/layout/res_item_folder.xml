@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/res_item_folder_0" android:background="@drawable/res_selector_item_folder_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/view_31" android:paddingStart="@dimen/view_38" android:paddingEnd="@dimen/view_38"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivFolder" android:layout_width="@dimen/view_14" android:layout_height="@dimen/view_14" android:src="@drawable/res_icon_item_folder" android:layout_marginStart="@dimen/view_9" />
+    <TextView android:textSize="@dimen/text_8" android:textColor="#323233" android:gravity="center_vertical" android:id="@id/tvFolderName" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/view_1" />
+    <TextView android:textSize="@dimen/text_7" android:textColor="#c8c9cc" android:gravity="center_vertical" android:id="@id/tvUpdateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/view_9" />
+</LinearLayout>

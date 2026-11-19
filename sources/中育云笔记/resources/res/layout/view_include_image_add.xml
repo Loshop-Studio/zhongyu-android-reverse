@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="layout/view_include_image_add_0" android:background="@drawable/white_frame_border" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_image_gallery" android:padding="@dimen/view_2" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_selector_draw_photo" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_image_camera" android:padding="@dimen/view_2" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_selector_draw_camera" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_text" android:padding="@dimen/view_2" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_selector_draw_text" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_rectangle" android:padding="@dimen/view_2" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_selector_draw_rectangle" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_oval" android:padding="@dimen/view_2" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_selector_draw_oval" />
+    <ImageView android:id="@id/iv_triangle" android:padding="@dimen/view_2" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_selector_draw_triangle" />
+</androidx.appcompat.widget.LinearLayoutCompat>

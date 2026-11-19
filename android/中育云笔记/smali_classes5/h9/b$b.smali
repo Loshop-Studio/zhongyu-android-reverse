@@ -1,0 +1,52 @@
+.class public Lh9/b$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lh9/b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "b"
+.end annotation
+
+
+# instance fields
+.field public a:Landroid/widget/TextView;
+
+
+# direct methods
+.method public constructor <init>(Landroid/widget/TextView;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-object p1, p0, Lh9/b$b;->a:Landroid/widget/TextView;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Landroid/widget/TextView;Lh9/b$a;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lh9/b$b;-><init>(Landroid/widget/TextView;)V
+
+    return-void
+.end method
+
+.method public static synthetic a(Lh9/b$b;)Landroid/widget/TextView;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lh9/b$b;->a:Landroid/widget/TextView;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method

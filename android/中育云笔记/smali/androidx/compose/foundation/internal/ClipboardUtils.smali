@@ -1,0 +1,248 @@
+.class public final Landroidx/compose/foundation/internal/ClipboardUtils;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroidx/compose/runtime/internal/StabilityInferred;
+    parameters = 0x1
+.end annotation
+
+
+# static fields
+.field public static final $stable:I
+
+.field public static final INSTANCE:Landroidx/compose/foundation/internal/ClipboardUtils;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Landroidx/compose/foundation/internal/ClipboardUtils;
+
+    invoke-direct {v0}, Landroidx/compose/foundation/internal/ClipboardUtils;-><init>()V
+
+    sput-object v0, Landroidx/compose/foundation/internal/ClipboardUtils;->INSTANCE:Landroidx/compose/foundation/internal/ClipboardUtils;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static final hasText(Landroidx/compose/ui/platform/ClipEntry;)Z
+    .locals 1
+
+    .line 1
+    if-nez p0, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p0, 0x0
+
+    .line 4
+    return p0
+
+    .line 5
+    :cond_0
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/ClipEntry;->getClipData()Landroid/content/ClipData;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    invoke-virtual {p0}, Landroid/content/ClipData;->getDescription()Landroid/content/ClipDescription;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    const-string v0, "text/*"
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, v0}, Landroid/content/ClipDescription;->hasMimeType(Ljava/lang/String;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p0
+
+    .line 19
+    return p0
+.end method
+
+.method public static final readAnnotatedString(Landroidx/compose/ui/platform/ClipEntry;)Landroidx/compose/ui/text/AnnotatedString;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/ClipEntry;->getClipData()Landroid/content/ClipData;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    const/4 v0, 0x0
+
+    .line 6
+    invoke-virtual {p0, v0}, Landroid/content/ClipData;->getItemAt(I)Landroid/content/ClipData$Item;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    if-eqz p0, :cond_0
+
+    .line 11
+    .line 12
+    invoke-virtual {p0}, Landroid/content/ClipData$Item;->getText()Ljava/lang/CharSequence;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    if-eqz p0, :cond_0
+
+    .line 17
+    .line 18
+    invoke-static {p0}, Landroidx/compose/foundation/internal/ClipboardUtils_androidKt;->convertToAnnotatedString(Ljava/lang/CharSequence;)Landroidx/compose/ui/text/AnnotatedString;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
+
+    .line 23
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 24
+    return-object p0
+.end method
+
+.method public static final readText(Landroidx/compose/ui/platform/ClipEntry;)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/ClipEntry;->getClipData()Landroid/content/ClipData;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    const/4 v0, 0x0
+
+    .line 6
+    invoke-virtual {p0, v0}, Landroid/content/ClipData;->getItemAt(I)Landroid/content/ClipData$Item;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    if-eqz p0, :cond_0
+
+    .line 11
+    .line 12
+    invoke-virtual {p0}, Landroid/content/ClipData$Item;->getText()Ljava/lang/CharSequence;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    if-eqz p0, :cond_0
+
+    .line 17
+    .line 18
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
+
+    .line 23
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 24
+    return-object p0
+.end method
+
+.method public static final toClipEntry(Landroidx/compose/ui/text/AnnotatedString;)Landroidx/compose/ui/platform/ClipEntry;
+    .locals 2
+
+    .line 1
+    if-nez p0, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p0, 0x0
+
+    .line 4
+    return-object p0
+
+    .line 5
+    :cond_0
+    new-instance v0, Landroidx/compose/ui/platform/ClipEntry;
+
+    .line 6
+    .line 7
+    const-string v1, "plain text"
+
+    .line 8
+    .line 9
+    invoke-static {p0}, Landroidx/compose/foundation/internal/ClipboardUtils_androidKt;->convertToCharSequence(Landroidx/compose/ui/text/AnnotatedString;)Ljava/lang/CharSequence;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    invoke-static {v1, p0}, Landroid/content/ClipData;->newPlainText(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/content/ClipData;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    invoke-direct {v0, p0}, Landroidx/compose/ui/platform/ClipEntry;-><init>(Landroid/content/ClipData;)V
+
+    .line 18
+    .line 19
+    .line 20
+    return-object v0
+.end method

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_txt_edit_0" android:background="@color/app_bg_gray" android:paddingTop="@dimen/view_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/view_33" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_finish" android:paddingTop="@dimen/view_7" android:paddingBottom="@dimen/view_7" android:layout_width="@dimen/view_24" android:layout_height="match_parent" android:src="@drawable/ic_back_black_24dp" android:paddingStart="@dimen/view_3" android:paddingEnd="@dimen/view_3" android:layout_marginStart="@dimen/view_9" />
+        <TextView android:textSize="@dimen/text_9" android:textStyle="bold" android:textColor="@color/app_black" android:id="@id/tv_txt_name" android:padding="@dimen/view_3" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/view_13" />
+        <ImageView android:id="@id/iv_note_info" android:visibility="gone" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@mipmap/icon_note_info" android:layout_marginEnd="@dimen/view_14" />
+    </LinearLayout>
+    <FrameLayout android:paddingBottom="@dimen/view_8" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/view_8" android:paddingEnd="@dimen/view_8">
+        <com.zykj.view.widget.LimitEditText android:gravity="start|top" android:id="@id/et_txt" android:background="@color/app_bg_gray" android:longClickable="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.core.widget.NestedScrollView android:id="@id/nsv_txt" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:gravity="start|top" android:id="@id/tv_txt" android:background="@color/app_bg_gray" android:longClickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+</LinearLayout>

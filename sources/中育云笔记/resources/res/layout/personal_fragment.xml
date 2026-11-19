@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:tag="layout/personal_fragment_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:gravity="center" android:layout_width="@dimen/view_324" android:layout_height="@dimen/view_56" android:layout_marginTop="@dimen/view_19" app:cardBackgroundColor="@color/app_white" app:cardCornerRadius="@dimen/view_5" app:cardElevation="@dimen/view_5" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:divider="@color/app_divider" app:dividerPadding="@dimen/view_3" app:showDividers="beginning|middle|end">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_head" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_9" android:textColor="@color/app_l_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/head_portrait" android:layout_marginStart="@dimen/view_14" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <ImageView android:id="@id/sdv_head" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@mipmap/icon_person_s" android:layout_marginEnd="@dimen/view_14" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_nickname" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_9" android:textColor="@color/app_l_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nickname" android:layout_marginStart="@dimen/view_14" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textSize="@dimen/text_9" android:textColor="@color/app_l_dark" android:id="@id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/view_14" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

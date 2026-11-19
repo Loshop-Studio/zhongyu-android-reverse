@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/layout_subjective_detail_0" android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.friday.lecture.floatwindow.canvas.NonSlidableViewPager android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:background="@drawable/shape_bg_homework_test" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_10" android:layout_marginStart="@dimen/view_10">
+        <ImageView android:id="@id/iv_prev" android:layout_width="@dimen/view_21" android:layout_height="@dimen/view_21" android:src="@drawable/simple_canvas_pre" android:scaleType="center" android:layout_marginStart="@dimen/view_2" />
+        <TextView android:textSize="@dimen/text_8" android:textColor="#fffaf9f9" android:gravity="center" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="@dimen/view_21" android:layout_marginStart="@dimen/view_5" android:layout_marginEnd="@dimen/view_5" />
+        <ImageView android:id="@id/iv_next" android:layout_width="@dimen/view_21" android:layout_height="@dimen/view_21" android:src="@drawable/simple_canvas_next" android:scaleType="center" android:layout_marginStart="@dimen/view_2" android:layout_marginEnd="@dimen/view_2" />
+    </LinearLayout>
+</FrameLayout>

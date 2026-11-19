@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="@dimen/view_200" android:layout_height="@dimen/view_30" android:layout_marginTop="@dimen/view_60" android:layout_marginStart="@dimen/view_15" android:layout_marginEnd="@dimen/view_15" app:cardBackgroundColor="#8f8f8f" app:cardCornerRadius="@dimen/view_4" app:cardElevation="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/view_8" android:textColor="#fff" android:gravity="center" android:id="@id/tv_toast" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/view_3" android:paddingEnd="@dimen/view_3" />
+</androidx.cardview.widget.CardView>

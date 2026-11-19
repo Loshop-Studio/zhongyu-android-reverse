@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/pop_sort_0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/app_white" app:cardCornerRadius="@dimen/view_1" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:padding="@dimen/view_10" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <RadioGroup android:id="@id/rg_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/rb_modify_time">
+            <RadioButton android:textSize="@dimen/text_8" android:textColor="@color/text_gray" android:id="@id/rb_modify_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/sort_by_modify_time" android:drawableRight="@drawable/shape_radio" android:drawablePadding="@dimen/view_5" />
+            <RadioButton android:textSize="@dimen/text_8" android:textColor="@color/text_gray" android:id="@id/rb_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_10" android:button="@null" android:text="@string/sort_by_name" android:drawableRight="@drawable/shape_radio" android:drawablePadding="@dimen/view_5" />
+        </RadioGroup>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

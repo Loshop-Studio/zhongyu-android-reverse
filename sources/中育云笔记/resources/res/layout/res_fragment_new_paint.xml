@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/res_fragment_new_paint_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawerLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@id/flSketch" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <ImageView android:id="@id/ivBack" android:background="@drawable/res_shape_note_gide_bg" android:paddingTop="@dimen/view_3" android:paddingBottom="@dimen/view_3" android:layout_width="@dimen/view_19" android:layout_height="@dimen/view_17" android:layout_marginTop="@dimen/view_5" android:src="@drawable/res_icon_back" android:scaleType="center" android:paddingStart="@dimen/view_4" android:paddingEnd="@dimen/view_4" android:layout_marginStart="@dimen/view_5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <ImageView android:id="@id/iv_drawer_hint" android:layout_width="@dimen/view_20" android:layout_height="@dimen/view_20" android:src="@mipmap/drawer_hint" android:layout_marginEnd="@dimen/view_9" app:layout_constraintBottom_toBottomOf="@id/ivBack" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/ivBack" />
+                <LinearLayout android:gravity="end|top" android:orientation="horizontal" android:id="@id/ll_student_feature" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/ivBack" app:layout_constraintEnd_toStartOf="@id/iv_drawer_hint" app:layout_constraintTop_toTopOf="@id/ivBack">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/view_14">
+                        <ImageView android:id="@id/iv_answer_board" android:visibility="gone" android:layout_width="@dimen/view_20" android:layout_height="@dimen/view_20" android:src="@mipmap/paint_answer_board_switch" />
+                        <ImageView android:id="@id/iv_subjective_submit" android:visibility="gone" android:layout_width="@dimen/view_20" android:layout_height="@dimen/view_20" android:src="@drawable/selector_paint_student_submit_subjective_homework" />
+                    </FrameLayout>
+                    <ImageView android:id="@id/iv_screen_shoot" android:layout_width="@dimen/view_20" android:layout_height="@dimen/view_20" android:src="@mipmap/icon_screen_shoot" android:layout_marginEnd="@dimen/view_14" />
+                    <ImageView android:id="@id/iv_ask" android:layout_width="@dimen/view_20" android:layout_height="@dimen/view_20" android:src="@drawable/icon_ask" android:layout_marginEnd="@dimen/view_14" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_gravity="center|top" android:background="@drawable/res_shape_note_gide_bg" android:padding="@dimen/view_3" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_5">
+                <ImageView android:id="@id/iv_prev_page" android:layout_width="@dimen/view_16" android:layout_height="@dimen/view_16" android:src="@mipmap/icon_preview" />
+                <TextView android:textSize="@dimen/text_7" android:textColor="@color/app_dark" android:gravity="center" android:id="@id/tv_current_paging" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/view_17" android:paddingStart="@dimen/view_2" android:paddingEnd="@dimen/view_2" />
+                <ImageView android:id="@id/iv_next_page" android:layout_width="@dimen/view_16" android:layout_height="@dimen/view_16" android:src="@mipmap/icon_next" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/ll_drawer_right" android:background="#f7f8fa" android:layout_width="@dimen/view_136" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/rv_note_menu" android:layout_width="wrap_content" android:layout_height="@dimen/view_28" android:layout_marginTop="@dimen/view_6" android:layout_marginEnd="@dimen/view_15">
+                <ImageView android:id="@id/iv_copy_to_others" android:padding="@dimen/view_2" android:layout_width="@dimen/view_15" android:layout_height="@dimen/view_15" android:src="@drawable/icon_note_copy_to_other" />
+                <ImageView android:id="@id/iv_remove_page" android:padding="@dimen/view_2" android:layout_width="@dimen/view_15" android:layout_height="@dimen/view_15" android:src="@drawable/icon_note_delete" android:layout_marginStart="@dimen/view_4" />
+                <ImageView android:id="@id/iv_copy_page" android:padding="@dimen/view_2" android:layout_width="@dimen/view_15" android:layout_height="@dimen/view_15" android:src="@drawable/icon_note_copy" android:layout_marginStart="@dimen/view_4" />
+                <ImageView android:id="@id/iv_add_page" android:padding="@dimen/view_2" android:layout_width="@dimen/view_15" android:layout_height="@dimen/view_15" android:src="@drawable/icon_note_add" android:layout_marginStart="@dimen/view_4" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_note_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/view_4" android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

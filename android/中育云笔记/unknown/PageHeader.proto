@@ -1,0 +1,8 @@
+﻿syntax = "proto3";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyPageHeader";
+
+//Page的信息
+message PageHeader {
+    int64 duration = 1; //时长
+}

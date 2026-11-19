@@ -1,0 +1,46 @@
+package com.jaredrummler.android.colorpicker;
+
+/* loaded from: classes5.dex */
+public final class R$string {
+    public static int abc_action_bar_home_description = 2131886082;
+    public static int abc_action_bar_up_description = 2131886083;
+    public static int abc_action_menu_overflow_description = 2131886084;
+    public static int abc_action_mode_done = 2131886085;
+    public static int abc_activity_chooser_view_see_all = 2131886086;
+    public static int abc_activitychooserview_choose_application = 2131886087;
+    public static int abc_capital_off = 2131886088;
+    public static int abc_capital_on = 2131886089;
+    public static int abc_menu_alt_shortcut_label = 2131886090;
+    public static int abc_menu_ctrl_shortcut_label = 2131886091;
+    public static int abc_menu_delete_shortcut_label = 2131886092;
+    public static int abc_menu_enter_shortcut_label = 2131886093;
+    public static int abc_menu_function_shortcut_label = 2131886094;
+    public static int abc_menu_meta_shortcut_label = 2131886095;
+    public static int abc_menu_shift_shortcut_label = 2131886096;
+    public static int abc_menu_space_shortcut_label = 2131886097;
+    public static int abc_menu_sym_shortcut_label = 2131886098;
+    public static int abc_prepend_shortcut_label = 2131886099;
+    public static int abc_search_hint = 2131886100;
+    public static int abc_searchview_description_clear = 2131886101;
+    public static int abc_searchview_description_query = 2131886102;
+    public static int abc_searchview_description_search = 2131886103;
+    public static int abc_searchview_description_submit = 2131886104;
+    public static int abc_searchview_description_voice = 2131886105;
+    public static int abc_shareactionprovider_share_with = 2131886106;
+    public static int abc_shareactionprovider_share_with_application = 2131886107;
+    public static int abc_toolbar_collapse_description = 2131886108;
+    public static int cpv_custom = 2131886176;
+    public static int cpv_default_title = 2131886177;
+    public static int cpv_presets = 2131886178;
+    public static int cpv_select = 2131886179;
+    public static int cpv_transparency = 2131886180;
+    public static int expand_button_title = 2131886224;
+    public static int search_menu_title = 2131886692;
+    public static int status_bar_notification_info_overflow = 2131886723;
+    public static int summary_collapsed_preference_list = 2131886733;
+    public static int v7_preference_off = 2131886758;
+    public static int v7_preference_on = 2131886759;
+
+    private R$string() {
+    }
+}

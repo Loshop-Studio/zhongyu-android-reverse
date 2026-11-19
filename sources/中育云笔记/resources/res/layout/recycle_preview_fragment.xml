@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/recycle_preview_fragment_0" android:background="@color/app_bg_gray" android:paddingTop="@dimen/view_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_share_note_preview" layout="@layout/layout_share_note_preview" />
+    <include android:id="@id/layout_preview_others" android:visibility="gone" layout="@layout/layout_note_preview_others" />
+    <include android:id="@id/layout_empty_preview" layout="@layout/layout_empty_preview" />
+</FrameLayout>
