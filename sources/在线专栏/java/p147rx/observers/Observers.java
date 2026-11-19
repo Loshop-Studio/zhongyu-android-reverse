@@ -1,0 +1,105 @@
+package p147rx.observers;
+
+import p147rx.Observer;
+import p147rx.exceptions.OnErrorNotImplementedException;
+import p147rx.functions.Action0;
+import p147rx.functions.Action1;
+
+/* loaded from: classes2.dex */
+public final class Observers {
+    private static final Observer<Object> EMPTY = new Observer<Object>() { // from class: rx.observers.Observers.1
+        @Override // p147rx.Observer
+        public final void onCompleted() {
+        }
+
+        @Override // p147rx.Observer
+        public final void onError(Throwable th) {
+            throw new OnErrorNotImplementedException(th);
+        }
+
+        @Override // p147rx.Observer
+        public final void onNext(Object obj) {
+        }
+    };
+
+    private Observers() {
+        throw new IllegalStateException("No instances!");
+    }
+
+    public static <T> Observer<T> create(final Action1<? super T> action1) {
+        if (action1 != null) {
+            return new Observer<T>() { // from class: rx.observers.Observers.2
+                @Override // p147rx.Observer
+                public final void onCompleted() {
+                }
+
+                @Override // p147rx.Observer
+                public final void onError(Throwable th) {
+                    throw new OnErrorNotImplementedException(th);
+                }
+
+                @Override // p147rx.Observer
+                public final void onNext(T t3) {
+                    action1.call(t3);
+                }
+            };
+        }
+        throw new IllegalArgumentException("onNext can not be null");
+    }
+
+    public static <T> Observer<T> empty() {
+        return (Observer<T>) EMPTY;
+    }
+
+    public static <T> Observer<T> create(final Action1<? super T> action1, final Action1<Throwable> action12) {
+        if (action1 == null) {
+            throw new IllegalArgumentException("onNext can not be null");
+        }
+        if (action12 != null) {
+            return new Observer<T>() { // from class: rx.observers.Observers.3
+                @Override // p147rx.Observer
+                public final void onCompleted() {
+                }
+
+                @Override // p147rx.Observer
+                public final void onError(Throwable th) {
+                    action12.call(th);
+                }
+
+                @Override // p147rx.Observer
+                public final void onNext(T t3) {
+                    action1.call(t3);
+                }
+            };
+        }
+        throw new IllegalArgumentException("onError can not be null");
+    }
+
+    public static <T> Observer<T> create(final Action1<? super T> action1, final Action1<Throwable> action12, final Action0 action0) {
+        if (action1 == null) {
+            throw new IllegalArgumentException("onNext can not be null");
+        }
+        if (action12 == null) {
+            throw new IllegalArgumentException("onError can not be null");
+        }
+        if (action0 != null) {
+            return new Observer<T>() { // from class: rx.observers.Observers.4
+                @Override // p147rx.Observer
+                public final void onCompleted() {
+                    action0.call();
+                }
+
+                @Override // p147rx.Observer
+                public final void onError(Throwable th) {
+                    action12.call(th);
+                }
+
+                @Override // p147rx.Observer
+                public final void onNext(T t3) {
+                    action1.call(t3);
+                }
+            };
+        }
+        throw new IllegalArgumentException("onComplete can not be null");
+    }
+}

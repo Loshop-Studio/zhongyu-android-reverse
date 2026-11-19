@@ -1,0 +1,80 @@
+package anet.channel.fulltrace;
+
+import anet.channel.statist.RequestStatistic;
+import anet.channel.util.ALog;
+
+/* renamed from: anet.channel.fulltrace.a */
+/* loaded from: classes.dex */
+public class C0893a {
+
+    /* renamed from: a */
+    private static volatile IFullTraceAnalysis f5156a = new a(null);
+
+    /* renamed from: b */
+    private static boolean f5157b = false;
+
+    /* renamed from: anet.channel.fulltrace.a$a */
+    private static class a implements IFullTraceAnalysis {
+
+        /* renamed from: a */
+        private IFullTraceAnalysis f5158a;
+
+        a(IFullTraceAnalysis iFullTraceAnalysis) {
+            this.f5158a = iFullTraceAnalysis;
+            boolean unused = C0893a.f5157b = true;
+        }
+
+        @Override // anet.channel.fulltrace.IFullTraceAnalysis
+        public void commitRequest(String str, RequestStatistic requestStatistic) {
+            IFullTraceAnalysis iFullTraceAnalysis;
+            if (C0893a.f5157b && (iFullTraceAnalysis = this.f5158a) != null) {
+                try {
+                    iFullTraceAnalysis.commitRequest(str, requestStatistic);
+                } catch (Throwable th) {
+                    boolean unused = C0893a.f5157b = false;
+                    ALog.m4637e("anet.AnalysisFactory", "fulltrace commit fail.", null, th, new Object[0]);
+                }
+            }
+        }
+
+        @Override // anet.channel.fulltrace.IFullTraceAnalysis
+        public String createRequest() {
+            IFullTraceAnalysis iFullTraceAnalysis;
+            if (!C0893a.f5157b || (iFullTraceAnalysis = this.f5158a) == null) {
+                return null;
+            }
+            try {
+                return iFullTraceAnalysis.createRequest();
+            } catch (Throwable th) {
+                boolean unused = C0893a.f5157b = false;
+                ALog.m4637e("anet.AnalysisFactory", "createRequest fail.", null, th, new Object[0]);
+                return null;
+            }
+        }
+
+        @Override // anet.channel.fulltrace.IFullTraceAnalysis
+        public C0894b getSceneInfo() {
+            IFullTraceAnalysis iFullTraceAnalysis;
+            if (!C0893a.f5157b || (iFullTraceAnalysis = this.f5158a) == null) {
+                return null;
+            }
+            try {
+                return iFullTraceAnalysis.getSceneInfo();
+            } catch (Throwable th) {
+                boolean unused = C0893a.f5157b = false;
+                ALog.m4637e("anet.AnalysisFactory", "getSceneInfo fail", null, th, new Object[0]);
+                return null;
+            }
+        }
+    }
+
+    /* renamed from: a */
+    public static IFullTraceAnalysis m4454a() {
+        return f5156a;
+    }
+
+    /* renamed from: a */
+    public static void m4455a(IFullTraceAnalysis iFullTraceAnalysis) {
+        f5156a = new a(iFullTraceAnalysis);
+    }
+}

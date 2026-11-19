@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zykj.subscriber.view.CommonTitleBar android:id="@id/titleBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/view_22" app:ctb_dividerColor="#e5e5e5" app:ctb_leftImageResource="@drawable/icon_back" app:ctb_leftText="" app:ctb_titleText="" app:ctb_useThemeColor="true" app:layout_constraintTop_toTopOf="parent" />
+    <include android:id="@id/pdfPage" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/titleBar" app:layout_constraintEnd_toEndOf="@id/titleBar" app:layout_constraintStart_toStartOf="@id/titleBar" app:layout_constraintTop_toTopOf="@id/titleBar" layout="@layout/include_pdf_page" />
+    <View android:id="@id/focus" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="1.0px" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/fragmentContainer" android:layout_width="match_parent" android:layout_height="0.0px" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/titleBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

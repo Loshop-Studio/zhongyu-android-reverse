@@ -1,0 +1,45 @@
+package com.efs.sdk.p051pa;
+
+/* renamed from: com.efs.sdk.pa.a */
+/* loaded from: classes.dex */
+public final class C1350a implements PAANRListener {
+
+    /* renamed from: a */
+    private PAFactory f7160a;
+
+    /* renamed from: b */
+    private PATraceListener f7161b;
+
+    public C1350a(PAFactory pAFactory) {
+        this.f7160a = pAFactory;
+        this.f7161b = pAFactory.getTraceListener();
+        boolean zEnableTracer = pAFactory.getConfigManager().enableTracer();
+        if (zEnableTracer) {
+            C1359c.m5603a(this.f7160a, "patracepv", null);
+        }
+        PATraceListener pATraceListener = this.f7161b;
+        if (pATraceListener != null) {
+            pATraceListener.onCheck(zEnableTracer);
+        }
+    }
+
+    @Override // com.efs.sdk.p051pa.PAANRListener
+    public final void anrStack(String str) {
+        if (str == null || str.length() <= 200) {
+            return;
+        }
+        C1359c.m5603a(this.f7160a, "patrace", str);
+        PATraceListener pATraceListener = this.f7161b;
+        if (pATraceListener != null) {
+            pATraceListener.onAnrTrace();
+        }
+    }
+
+    @Override // com.efs.sdk.p051pa.PAANRListener
+    public final void unexcept(Object obj) {
+        PATraceListener pATraceListener = this.f7161b;
+        if (pATraceListener != null) {
+            pATraceListener.onUnexcept(obj);
+        }
+    }
+}

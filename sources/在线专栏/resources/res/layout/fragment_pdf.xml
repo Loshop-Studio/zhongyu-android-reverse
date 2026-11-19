@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.barteksc.pdfviewer.PDFView android:id="@id/fm_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="@dimen/text_8" android:textColor="@color/white" android:id="@id/tv_page_index" android:background="@drawable/shape_dark_blue_frame_12" android:paddingLeft="@dimen/view_6" android:paddingTop="@dimen/view_2" android:paddingRight="@dimen/view_6" android:paddingBottom="@dimen/view_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_10" android:layout_marginBottom="@dimen/view_10" android:layout_marginStart="@dimen/view_10" android:layout_marginEnd="@dimen/view_10" android:layout_alignParentEnd="true" android:paddingHorizontal="@dimen/view_6" android:paddingVertical="@dimen/view_2" />
+</RelativeLayout>

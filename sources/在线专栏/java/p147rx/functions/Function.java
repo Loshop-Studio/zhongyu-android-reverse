@@ -1,0 +1,5 @@
+package p147rx.functions;
+
+/* loaded from: classes.dex */
+public interface Function {
+}

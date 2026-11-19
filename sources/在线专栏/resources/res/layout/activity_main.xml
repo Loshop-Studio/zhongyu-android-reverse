@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_main_activity" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/browser_toolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/view_27">
+        <ImageView android:id="@id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_go_back" android:layout_centerVertical="true" android:layout_marginStart="@dimen/view_9" />
+        <ImageView android:id="@id/iv_forward" android:background="@drawable/selector_go_forward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/view_9" android:layout_toEndOf="@id/iv_back" />
+        <ImageView android:id="@id/iv_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_home" android:layout_centerVertical="true" android:layout_marginStart="@dimen/view_9" android:layout_toEndOf="@id/iv_forward" />
+        <TextView android:gravity="center_vertical" android:id="@id/et_search" android:background="@drawable/et_search_border" android:paddingLeft="@dimen/view_2" android:paddingRight="@dimen/view_2" android:layout_width="match_parent" android:layout_height="@dimen/view_19" android:layout_marginLeft="@dimen/view_9" android:layout_marginRight="@dimen/view_9" android:lines="1" android:drawablePadding="@dimen/view_2" android:layout_centerVertical="true" android:drawableStart="@mipmap/icon_web" android:layout_toStartOf="@id/iv_refresh" android:layout_toEndOf="@id/iv_home" />
+        <ImageView android:id="@id/iv_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_refresh" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/view_9" android:layout_alignParentEnd="true" />
+        <View android:background="@color/divide_line_color" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/video_fullView" android:background="@color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <WebView android:id="@id/webview_browser" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <RelativeLayout android:id="@id/rl_warning" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_warning" />
+            <TextView android:textSize="@dimen/text_15" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_10" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
