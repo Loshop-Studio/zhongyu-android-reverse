@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:tag="layout/fragment_date_picker_0" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/dialog_bg" android:background="@drawable/shape_bg_date_picker" android:focusable="true" android:clickable="true" android:layout_width="@dimen/view_350" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <androidx.appcompat.widget.LinearLayoutCompat android:background="@drawable/shape_bg_date_picker_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/view_10" android:layout_marginTop="@dimen/view_6" android:layout_marginRight="@dimen/view_10" android:layout_marginHorizontal="@dimen/view_10">
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.prolificinteractive.materialcalendarview.MaterialCalendarView android:id="@id/mcv_start_date" android:layout_width="match_parent" android:layout_height="wrap_content" app:mcv_calendarMode="month" app:mcv_firstDayOfWeek="monday" app:mcv_showOtherDates="all" />
+                <androidx.appcompat.widget.AppCompatTextView android:enabled="false" android:textSize="@dimen/text_9" android:textColor="@color/app_dark" android:gravity="center" android:id="@id/tv_start_time" android:background="@drawable/selector_bg_choose_time" android:layout_width="@dimen/view_87" android:layout_height="@dimen/view_18" android:layout_marginTop="@dimen/view_10" android:layout_marginBottom="@dimen/view_10" android:text="—— : ——" android:layout_marginVertical="@dimen/view_10" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <View android:layout_gravity="center_vertical" android:id="@id/divider" android:background="@color/gray" android:layout_width="1.0dp" android:layout_height="match_parent" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.prolificinteractive.materialcalendarview.MaterialCalendarView android:id="@id/mcv_end_date" android:layout_width="match_parent" android:layout_height="wrap_content" app:mcv_calendarMode="month" app:mcv_firstDayOfWeek="monday" app:mcv_showOtherDates="all" />
+                <androidx.appcompat.widget.AppCompatTextView android:enabled="false" android:textSize="@dimen/text_9" android:textColor="@color/app_dark" android:gravity="center" android:id="@id/tv_end_time" android:background="@drawable/selector_bg_choose_time" android:layout_width="@dimen/view_87" android:layout_height="@dimen/view_18" android:layout_marginTop="@dimen/view_10" android:layout_marginBottom="@dimen/view_10" android:text="—— : ——" android:layout_marginVertical="@dimen/view_10" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/view_30">
+            <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_reset" android:layout_centerInParent="true" style="@style/TextViewResetStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_confirm" android:layout_centerInParent="true" style="@style/TextViewConfirmStyle" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

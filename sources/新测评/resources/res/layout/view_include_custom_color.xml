@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="layout/view_include_custom_color_0" android:padding="@dimen/view_6" android:focusable="true" android:clickable="true" android:layout_width="@dimen/view_174" android:layout_height="@dimen/view_138"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zykj.view.widget.customColor.CustomColorLayout android:id="@id/customColor" android:layout_width="match_parent" android:layout_height="@dimen/view_99" />
+    <TextView android:textSize="@dimen/view_6" android:gravity="center_vertical" android:id="@id/tvLatest" android:layout_width="wrap_content" android:layout_height="@dimen/view_12" android:layout_marginTop="@dimen/view_3" android:text="@string/latest_use" />
+    <com.zykj.view.widget.customColor.LatestColorLayout android:id="@id/latestColor" android:layout_width="match_parent" android:layout_height="@dimen/view_11" />
+</androidx.appcompat.widget.LinearLayoutCompat>

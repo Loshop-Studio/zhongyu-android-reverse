@@ -1,0 +1,377 @@
+package com.blankj.utilcode.util;
+
+import android.content.ContentUris;
+import android.database.Cursor;
+import android.net.Uri;
+import android.os.Environment;
+import android.os.storage.StorageManager;
+import android.provider.DocumentsContract;
+import android.provider.MediaStore;
+import android.text.TextUtils;
+import androidx.core.content.FileProvider;
+import androidx.exifinterface.media.ExifInterface;
+import java.io.File;
+import java.lang.reflect.Array;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+/* loaded from: classes3.dex */
+public final class UriUtils {
+    private UriUtils() {
+        throw new UnsupportedOperationException("u can't instantiate me...");
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:37:0x005c A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* JADX WARN: Type inference failed for: r7v0, types: [android.net.Uri] */
+    /* JADX WARN: Type inference failed for: r7v2 */
+    /* JADX WARN: Type inference failed for: r7v4, types: [java.io.InputStream] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private static java.io.File copyUri2Cache(android.net.Uri r7) throws java.lang.Throwable {
+        /*
+            r0 = 0
+            android.app.Application r1 = com.blankj.utilcode.util.Utils.getApp()     // Catch: java.lang.Throwable -> L45 java.io.FileNotFoundException -> L4a
+            android.content.ContentResolver r1 = r1.getContentResolver()     // Catch: java.lang.Throwable -> L45 java.io.FileNotFoundException -> L4a
+            java.io.InputStream r7 = r1.openInputStream(r7)     // Catch: java.lang.Throwable -> L45 java.io.FileNotFoundException -> L4a
+            java.io.File r1 = new java.io.File     // Catch: java.lang.Throwable -> L41 java.io.FileNotFoundException -> L43
+            android.app.Application r2 = com.blankj.utilcode.util.Utils.getApp()     // Catch: java.lang.Throwable -> L41 java.io.FileNotFoundException -> L43
+            java.io.File r2 = r2.getCacheDir()     // Catch: java.lang.Throwable -> L41 java.io.FileNotFoundException -> L43
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L41 java.io.FileNotFoundException -> L43
+            r3.<init>()     // Catch: java.lang.Throwable -> L41 java.io.FileNotFoundException -> L43
+            java.lang.String r4 = ""
+            r3.append(r4)     // Catch: java.lang.Throwable -> L41 java.io.FileNotFoundException -> L43
+            long r4 = java.lang.System.currentTimeMillis()     // Catch: java.lang.Throwable -> L41 java.io.FileNotFoundException -> L43
+            r3.append(r4)     // Catch: java.lang.Throwable -> L41 java.io.FileNotFoundException -> L43
+            java.lang.String r3 = r3.toString()     // Catch: java.lang.Throwable -> L41 java.io.FileNotFoundException -> L43
+            r1.<init>(r2, r3)     // Catch: java.lang.Throwable -> L41 java.io.FileNotFoundException -> L43
+            java.lang.String r2 = r1.getAbsolutePath()     // Catch: java.lang.Throwable -> L41 java.io.FileNotFoundException -> L43
+            com.blankj.utilcode.util.UtilsBridge.writeFileFromIS(r2, r7)     // Catch: java.lang.Throwable -> L41 java.io.FileNotFoundException -> L43
+            if (r7 == 0) goto L40
+            r7.close()     // Catch: java.io.IOException -> L3c
+            return r1
+        L3c:
+            r7 = move-exception
+            r7.printStackTrace()
+        L40:
+            return r1
+        L41:
+            r0 = move-exception
+            goto L5a
+        L43:
+            r1 = move-exception
+            goto L4c
+        L45:
+            r7 = move-exception
+            r6 = r0
+            r0 = r7
+            r7 = r6
+            goto L5a
+        L4a:
+            r1 = move-exception
+            r7 = r0
+        L4c:
+            r1.printStackTrace()     // Catch: java.lang.Throwable -> L41
+            if (r7 == 0) goto L59
+            r7.close()     // Catch: java.io.IOException -> L55
+            goto L59
+        L55:
+            r7 = move-exception
+            r7.printStackTrace()
+        L59:
+            return r0
+        L5a:
+            if (r7 == 0) goto L64
+            r7.close()     // Catch: java.io.IOException -> L60
+            goto L64
+        L60:
+            r7 = move-exception
+            r7.printStackTrace()
+        L64:
+            throw r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.blankj.utilcode.util.UriUtils.copyUri2Cache(android.net.Uri):java.io.File");
+    }
+
+    public static Uri file2Uri(File file) {
+        if (!UtilsBridge.isFileExists(file)) {
+            return null;
+        }
+        return FileProvider.getUriForFile(Utils.getApp(), Utils.getApp().getPackageName() + ".utilcode.fileprovider", file);
+    }
+
+    private static File getFileFromUri(Uri uri, String str) {
+        return getFileFromUri(uri, null, null, str);
+    }
+
+    public static Uri res2Uri(String str) {
+        return Uri.parse("android.resource://" + Utils.getApp().getPackageName() + "/" + str);
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:40:0x003a A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static byte[] uri2Bytes(android.net.Uri r3) throws java.lang.Throwable {
+        /*
+            r0 = 0
+            if (r3 != 0) goto L4
+            return r0
+        L4:
+            android.app.Application r1 = com.blankj.utilcode.util.Utils.getApp()     // Catch: java.lang.Throwable -> L23 java.io.FileNotFoundException -> L28
+            android.content.ContentResolver r1 = r1.getContentResolver()     // Catch: java.lang.Throwable -> L23 java.io.FileNotFoundException -> L28
+            java.io.InputStream r3 = r1.openInputStream(r3)     // Catch: java.lang.Throwable -> L23 java.io.FileNotFoundException -> L28
+            byte[] r0 = com.blankj.utilcode.util.UtilsBridge.inputStream2Bytes(r3)     // Catch: java.lang.Throwable -> L1f java.io.FileNotFoundException -> L21
+            if (r3 == 0) goto L1e
+            r3.close()     // Catch: java.io.IOException -> L1a
+            return r0
+        L1a:
+            r3 = move-exception
+            r3.printStackTrace()
+        L1e:
+            return r0
+        L1f:
+            r0 = move-exception
+            goto L38
+        L21:
+            r1 = move-exception
+            goto L2a
+        L23:
+            r3 = move-exception
+            r2 = r0
+            r0 = r3
+            r3 = r2
+            goto L38
+        L28:
+            r1 = move-exception
+            r3 = r0
+        L2a:
+            r1.printStackTrace()     // Catch: java.lang.Throwable -> L1f
+            if (r3 == 0) goto L37
+            r3.close()     // Catch: java.io.IOException -> L33
+            goto L37
+        L33:
+            r3 = move-exception
+            r3.printStackTrace()
+        L37:
+            return r0
+        L38:
+            if (r3 == 0) goto L42
+            r3.close()     // Catch: java.io.IOException -> L3e
+            goto L42
+        L3e:
+            r3 = move-exception
+            r3.printStackTrace()
+        L42:
+            throw r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.blankj.utilcode.util.UriUtils.uri2Bytes(android.net.Uri):byte[]");
+    }
+
+    public static File uri2File(Uri uri) throws IllegalAccessException, NoSuchMethodException, ClassNotFoundException, SecurityException, ArrayIndexOutOfBoundsException, IllegalArgumentException, InvocationTargetException {
+        if (uri == null) {
+            return null;
+        }
+        File fileUri2FileReal = uri2FileReal(uri);
+        return fileUri2FileReal != null ? fileUri2FileReal : copyUri2Cache(uri);
+    }
+
+    public static File uri2FileNoCacheCopy(Uri uri) {
+        if (uri == null) {
+            return null;
+        }
+        return uri2FileReal(uri);
+    }
+
+    private static File uri2FileReal(Uri uri) throws IllegalAccessException, NoSuchMethodException, ClassNotFoundException, SecurityException, ArrayIndexOutOfBoundsException, IllegalArgumentException, InvocationTargetException {
+        Uri uri2;
+        File fileFromUri;
+        String str;
+        File file;
+        uri.toString();
+        String authority = uri.getAuthority();
+        String scheme = uri.getScheme();
+        String path = uri.getPath();
+        int i10 = 0;
+        if (path != null) {
+            String[] strArr = {"/external/", "/external_path/"};
+            for (int i11 = 0; i11 < 2; i11++) {
+                String str2 = strArr[i11];
+                if (path.startsWith(str2)) {
+                    File file2 = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + path.replace(str2, "/"));
+                    if (file2.exists()) {
+                        uri.toString();
+                        return file2;
+                    }
+                }
+            }
+            if (path.startsWith("/files_path/")) {
+                file = new File(Utils.getApp().getFilesDir().getAbsolutePath() + path.replace("/files_path/", "/"));
+            } else if (path.startsWith("/cache_path/")) {
+                file = new File(Utils.getApp().getCacheDir().getAbsolutePath() + path.replace("/cache_path/", "/"));
+            } else if (path.startsWith("/external_files_path/")) {
+                file = new File(Utils.getApp().getExternalFilesDir(null).getAbsolutePath() + path.replace("/external_files_path/", "/"));
+            } else if (path.startsWith("/external_cache_path/")) {
+                file = new File(Utils.getApp().getExternalCacheDir().getAbsolutePath() + path.replace("/external_cache_path/", "/"));
+            } else {
+                file = null;
+            }
+            if (file != null && file.exists()) {
+                uri.toString();
+                return file;
+            }
+        }
+        if ("file".equals(scheme)) {
+            if (path != null) {
+                return new File(path);
+            }
+            uri.toString();
+            return null;
+        }
+        if (!DocumentsContract.isDocumentUri(Utils.getApp(), uri)) {
+            if ("content".equals(scheme)) {
+                return getFileFromUri(uri, ExifInterface.GPS_MEASUREMENT_2D);
+            }
+            uri.toString();
+            return null;
+        }
+        boolean z9 = true;
+        if (!"com.android.externalstorage.documents".equals(authority)) {
+            if (!"com.android.providers.downloads.documents".equals(authority)) {
+                if (!"com.android.providers.media.documents".equals(authority)) {
+                    if ("content".equals(scheme)) {
+                        return getFileFromUri(uri, "1_3");
+                    }
+                    uri.toString();
+                    return null;
+                }
+                String[] strArrSplit = DocumentsContract.getDocumentId(uri).split(":");
+                String str3 = strArrSplit[0];
+                if ("image".equals(str3)) {
+                    uri2 = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
+                } else if ("video".equals(str3)) {
+                    uri2 = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
+                } else {
+                    if (!"audio".equals(str3)) {
+                        uri.toString();
+                        return null;
+                    }
+                    uri2 = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+                }
+                return getFileFromUri(uri2, "_id=?", new String[]{strArrSplit[1]}, "1_2");
+            }
+            String documentId = DocumentsContract.getDocumentId(uri);
+            if (TextUtils.isEmpty(documentId)) {
+                uri.toString();
+                return null;
+            }
+            if (documentId.startsWith("raw:")) {
+                return new File(documentId.substring(4));
+            }
+            if (documentId.startsWith("msf:")) {
+                documentId = documentId.split(":")[1];
+            }
+            try {
+                long j10 = Long.parseLong(documentId);
+                String[] strArr2 = {"content://downloads/public_downloads", "content://downloads/all_downloads", "content://downloads/my_downloads"};
+                while (i10 < 3) {
+                    try {
+                        fileFromUri = getFileFromUri(ContentUris.withAppendedId(Uri.parse(strArr2[i10]), j10), "1_1");
+                    } catch (Exception unused) {
+                    }
+                    if (fileFromUri != null) {
+                        return fileFromUri;
+                    }
+                    i10++;
+                }
+                uri.toString();
+            } catch (Exception unused2) {
+            }
+            return null;
+        }
+        String[] strArrSplit2 = DocumentsContract.getDocumentId(uri).split(":");
+        String str4 = strArrSplit2[0];
+        if ("primary".equalsIgnoreCase(str4)) {
+            return new File(Environment.getExternalStorageDirectory() + "/" + strArrSplit2[1]);
+        }
+        StorageManager storageManager = (StorageManager) Utils.getApp().getSystemService("storage");
+        try {
+            Class<?> cls = Class.forName("android.os.storage.StorageVolume");
+            Method method = storageManager.getClass().getMethod("getVolumeList", null);
+            Method method2 = cls.getMethod("getUuid", null);
+            Method method3 = cls.getMethod("getState", null);
+            Method method4 = cls.getMethod("getPath", null);
+            Method method5 = cls.getMethod("isPrimary", null);
+            Method method6 = cls.getMethod("isEmulated", null);
+            Object objInvoke = method.invoke(storageManager, null);
+            int length = Array.getLength(objInvoke);
+            while (i10 < length) {
+                Object obj = Array.get(objInvoke, i10);
+                boolean z10 = z9;
+                if ("mounted".equals(method3.invoke(obj, null)) || "mounted_ro".equals(method3.invoke(obj, null))) {
+                    if ((!((Boolean) method5.invoke(obj, null)).booleanValue() || !((Boolean) method6.invoke(obj, null)).booleanValue()) && (str = (String) method2.invoke(obj, null)) != null && str.equals(str4)) {
+                        return new File(method4.invoke(obj, null) + "/" + strArrSplit2[z10 ? 1 : 0]);
+                    }
+                }
+                i10++;
+                z9 = z10 ? 1 : 0;
+            }
+        } catch (Exception e10) {
+            uri.toString();
+            e10.toString();
+        }
+        uri.toString();
+        return null;
+    }
+
+    private static File getFileFromUri(Uri uri, String str, String[] strArr, String str2) {
+        if ("com.google.android.apps.photos.content".equals(uri.getAuthority())) {
+            if (!TextUtils.isEmpty(uri.getLastPathSegment())) {
+                return new File(uri.getLastPathSegment());
+            }
+        } else if ("com.tencent.mtt.fileprovider".equals(uri.getAuthority())) {
+            String path = uri.getPath();
+            if (!TextUtils.isEmpty(path)) {
+                return new File(Environment.getExternalStorageDirectory(), path.substring(10, path.length()));
+            }
+        } else if ("com.huawei.hidisk.fileprovider".equals(uri.getAuthority())) {
+            String path2 = uri.getPath();
+            if (!TextUtils.isEmpty(path2)) {
+                return new File(path2.replace("/root", ""));
+            }
+        }
+        Cursor cursorQuery = Utils.getApp().getContentResolver().query(uri, new String[]{"_data"}, str, strArr, null);
+        try {
+            if (cursorQuery == null) {
+                uri.toString();
+                return null;
+            }
+            try {
+                if (!cursorQuery.moveToFirst()) {
+                    uri.toString();
+                    cursorQuery.close();
+                    return null;
+                }
+                int columnIndex = cursorQuery.getColumnIndex("_data");
+                if (columnIndex > -1) {
+                    File file = new File(cursorQuery.getString(columnIndex));
+                    cursorQuery.close();
+                    return file;
+                }
+                uri.toString();
+                cursorQuery.close();
+                return null;
+            } catch (Exception unused) {
+                uri.toString();
+                cursorQuery.close();
+                return null;
+            }
+        } catch (Throwable th) {
+            cursorQuery.close();
+            throw th;
+        }
+    }
+}

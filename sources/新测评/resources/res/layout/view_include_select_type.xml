@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="layout/view_include_select_type_0" android:background="@drawable/white_frame_border" android:paddingTop="@dimen/view_3" android:paddingBottom="@dimen/view_3" android:focusable="true" android:clickable="true" android:layout_width="@dimen/view_18" android:layout_height="wrap_content" android:paddingVertical="@dimen/view_3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_select_pen" android:padding="@dimen/view_2" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_selector_draw_select_pen" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_select_highlighter" android:padding="@dimen/view_2" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_selector_draw_select_highlighter" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_select_image" android:padding="@dimen/view_2" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_selector_draw_select_image" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_select_text" android:padding="@dimen/view_2" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_selector_draw_select_text" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_select_geometry" android:padding="@dimen/view_2" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_selector_draw_select_geometry" />
+</androidx.appcompat.widget.LinearLayoutCompat>

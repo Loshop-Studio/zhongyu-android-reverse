@@ -1,0 +1,53 @@
+package androidx.compose.p013ui.text.intl;
+
+import android.os.LocaleList;
+import android.util.Log;
+import androidx.annotation.RequiresApi;
+import androidx.compose.p013ui.text.platform.SynchronizedObject;
+import androidx.compose.runtime.internal.StabilityInferred;
+import java.util.ArrayList;
+import java.util.Locale;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@StabilityInferred(parameters = 0)
+@Metadata(m13557d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0001\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0014\u0010\f\u001a\u00060\rj\u0002`\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0016R\u0014\u0010\u0003\u001a\u00020\u00048VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006R\u0010\u0010\u0007\u001a\u0004\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\b\u001a\u0004\u0018\u00010\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0011"}, m13558d2 = {"Landroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24;", "Landroidx/compose/ui/text/intl/PlatformLocaleDelegate;", "()V", "current", "Landroidx/compose/ui/text/intl/LocaleList;", "getCurrent", "()Landroidx/compose/ui/text/intl/LocaleList;", "lastLocaleList", "lastPlatformLocaleList", "Landroid/os/LocaleList;", "lock", "Landroidx/compose/ui/text/platform/SynchronizedObject;", "parseLanguageTag", "Ljava/util/Locale;", "Landroidx/compose/ui/text/intl/PlatformLocale;", "languageTag", "", "ui-text_release"}, m13559k = 1, m13560mv = {1, 9, 0}, m13562xi = 48)
+@RequiresApi(api = 24)
+@SourceDebugExtension({"SMAP\nAndroidLocaleDelegate.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidLocaleDelegate.android.kt\nandroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24\n+ 2 Synchronization.android.kt\nandroidx/compose/ui/text/platform/Synchronization_jvmKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,87:1\n28#2:88\n1#3:89\n*S KotlinDebug\n*F\n+ 1 AndroidLocaleDelegate.android.kt\nandroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24\n*L\n52#1:88\n*E\n"})
+/* loaded from: classes2.dex */
+public final class AndroidLocaleDelegateAPI24 implements PlatformLocaleDelegate {
+    public static final int $stable = 8;
+    private LocaleList lastLocaleList;
+    private LocaleList lastPlatformLocaleList;
+    private final SynchronizedObject lock = new SynchronizedObject();
+
+    @Override // androidx.compose.p013ui.text.intl.PlatformLocaleDelegate
+    public LocaleList getCurrent() {
+        LocaleList localeList = LocaleList.getDefault();
+        synchronized (this.lock) {
+            LocaleList localeList2 = this.lastLocaleList;
+            if (localeList2 != null && localeList == this.lastPlatformLocaleList) {
+                return localeList2;
+            }
+            int size = localeList.size();
+            ArrayList arrayList = new ArrayList(size);
+            for (int i10 = 0; i10 < size; i10++) {
+                arrayList.add(new Locale(localeList.get(i10)));
+            }
+            LocaleList localeList3 = new LocaleList(arrayList);
+            this.lastPlatformLocaleList = localeList;
+            this.lastLocaleList = localeList3;
+            return localeList3;
+        }
+    }
+
+    @Override // androidx.compose.p013ui.text.intl.PlatformLocaleDelegate
+    public Locale parseLanguageTag(String languageTag) {
+        Locale localeForLanguageTag = Locale.forLanguageTag(languageTag);
+        if (Intrinsics.areEqual(localeForLanguageTag.toLanguageTag(), "und")) {
+            Log.e(AndroidLocaleDelegate_androidKt.TAG, "The language tag " + languageTag + " is not well-formed. Locale is resolved to Undetermined. Note that underscore '_' is not a valid subtag delimiter and must be replaced with '-'.");
+        }
+        return localeForLanguageTag;
+    }
+}

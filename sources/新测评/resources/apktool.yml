@@ -1,0 +1,22 @@
+version: 3.0.2
+apkFileName: 新测评.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 24
+  targetSdkVersion: 28
+versionInfo:
+  versionCode: 20408
+  versionName: 2.4.8
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- jpg
+- png
+- so
+- webp
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- assets/sel_judge_06.tflite

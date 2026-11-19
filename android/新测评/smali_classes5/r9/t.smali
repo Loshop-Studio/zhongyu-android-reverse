@@ -1,0 +1,888 @@
+.class public final Lr9/t;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lr9/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lr9/t$b;,
+        Lr9/t$c;
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lr9/b0;
+
+.field public final b:Ljava/lang/Object;
+
+.field public final c:[Ljava/lang/Object;
+
+.field public final d:La9/e$a;
+
+.field public final e:Lr9/h;
+
+.field public volatile f:Z
+
+.field public g:La9/e;
+
+.field public h:Ljava/lang/Throwable;
+
+.field public i:Z
+
+
+# direct methods
+.method public constructor <init>(Lr9/b0;Ljava/lang/Object;[Ljava/lang/Object;La9/e$a;Lr9/h;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lr9/t;->a:Lr9/b0;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lr9/t;->b:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Lr9/t;->c:[Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lr9/t;->d:La9/e$a;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, Lr9/t;->e:Lr9/h;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+
+# virtual methods
+.method public declared-synchronized a()La9/w;
+    .locals 3
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    invoke-virtual {p0}, Lr9/t;->d()La9/e;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object v0
+
+    .line 6
+    invoke-interface {v0}, La9/e;->a()La9/w;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 10
+    monitor-exit p0
+
+    .line 11
+    return-object v0
+
+    .line 12
+    :catchall_0
+    move-exception v0
+
+    .line 13
+    goto :goto_0
+
+    .line 14
+    :catch_0
+    move-exception v0
+
+    .line 15
+    :try_start_1
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    .line 16
+    .line 17
+    const-string v2, "Unable to create request."
+
+    .line 18
+    .line 19
+    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 20
+    .line 21
+    .line 22
+    throw v1
+
+    .line 23
+    :goto_0
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 24
+    throw v0
+.end method
+
+.method public b()Lr9/t;
+    .locals 6
+
+    .line 1
+    new-instance v0, Lr9/t;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lr9/t;->a:Lr9/b0;
+
+    .line 4
+    .line 5
+    iget-object v2, p0, Lr9/t;->b:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    iget-object v3, p0, Lr9/t;->c:[Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    iget-object v4, p0, Lr9/t;->d:La9/e$a;
+
+    .line 10
+    .line 11
+    iget-object v5, p0, Lr9/t;->e:Lr9/h;
+
+    .line 12
+    .line 13
+    invoke-direct/range {v0 .. v5}, Lr9/t;-><init>(Lr9/b0;Ljava/lang/Object;[Ljava/lang/Object;La9/e$a;Lr9/h;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-object v0
+.end method
+
+.method public final c()La9/e;
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lr9/t;->d:La9/e$a;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lr9/t;->a:Lr9/b0;
+
+    .line 4
+    .line 5
+    iget-object v2, p0, Lr9/t;->b:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    iget-object v3, p0, Lr9/t;->c:[Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    invoke-virtual {v1, v2, v3}, Lr9/b0;->a(Ljava/lang/Object;[Ljava/lang/Object;)La9/w;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-interface {v0, v1}, La9/e$a;->b(La9/w;)La9/e;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    if-eqz v0, :cond_0
+
+    .line 18
+    .line 19
+    return-object v0
+
+    .line 20
+    :cond_0
+    new-instance v0, Ljava/lang/NullPointerException;
+
+    .line 21
+    .line 22
+    const-string v1, "Call.Factory returned null."
+
+    .line 23
+    .line 24
+    invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    throw v0
+.end method
+
+.method public cancel()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Lr9/t;->f:Z
+
+    .line 3
+    .line 4
+    monitor-enter p0
+
+    .line 5
+    :try_start_0
+    iget-object v0, p0, Lr9/t;->g:La9/e;
+
+    .line 6
+    .line 7
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
+    .line 10
+    invoke-interface {v0}, La9/e;->cancel()V
+
+    .line 11
+    .line 12
+    .line 13
+    :cond_0
+    return-void
+
+    .line 14
+    :catchall_0
+    move-exception v0
+
+    .line 15
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 16
+    throw v0
+.end method
+
+.method public bridge synthetic clone()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lr9/t;->b()Lr9/t;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic clone()Lr9/d;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lr9/t;->b()Lr9/t;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final d()La9/e;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lr9/t;->g:La9/e;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    iget-object v0, p0, Lr9/t;->h:Ljava/lang/Throwable;
+
+    .line 7
+    .line 8
+    if-eqz v0, :cond_3
+
+    .line 9
+    .line 10
+    instance-of v1, v0, Ljava/io/IOException;
+
+    .line 11
+    .line 12
+    if-nez v1, :cond_2
+
+    .line 13
+    .line 14
+    instance-of v1, v0, Ljava/lang/RuntimeException;
+
+    .line 15
+    .line 16
+    if-eqz v1, :cond_1
+
+    .line 17
+    .line 18
+    check-cast v0, Ljava/lang/RuntimeException;
+
+    .line 19
+    .line 20
+    throw v0
+
+    .line 21
+    :cond_1
+    check-cast v0, Ljava/lang/Error;
+
+    .line 22
+    .line 23
+    throw v0
+
+    .line 24
+    :cond_2
+    check-cast v0, Ljava/io/IOException;
+
+    .line 25
+    .line 26
+    throw v0
+
+    .line 27
+    :cond_3
+    :try_start_0
+    invoke-virtual {p0}, Lr9/t;->c()La9/e;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    iput-object v0, p0, Lr9/t;->g:La9/e;
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 32
+    .line 33
+    return-object v0
+
+    .line 34
+    :catch_0
+    move-exception v0
+
+    .line 35
+    goto :goto_0
+
+    .line 36
+    :catch_1
+    move-exception v0
+
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :catch_2
+    move-exception v0
+
+    .line 39
+    :goto_0
+    invoke-static {v0}, Lr9/h0;->t(Ljava/lang/Throwable;)V
+
+    .line 40
+    .line 41
+    .line 42
+    iput-object v0, p0, Lr9/t;->h:Ljava/lang/Throwable;
+
+    .line 43
+    .line 44
+    throw v0
+.end method
+
+.method public e(La9/y;)Lr9/c0;
+    .locals 5
+
+    .line 1
+    invoke-virtual {p1}, La9/y;->a()La9/z;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {p1}, La9/y;->s()La9/y$a;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    new-instance v1, Lr9/t$c;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, La9/z;->contentType()La9/t;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v2
+
+    .line 15
+    invoke-virtual {v0}, La9/z;->contentLength()J
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-wide v3
+
+    .line 19
+    invoke-direct {v1, v2, v3, v4}, Lr9/t$c;-><init>(La9/t;J)V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {p1, v1}, La9/y$a;->b(La9/z;)La9/y$a;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    invoke-virtual {p1}, La9/y$a;->c()La9/y;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    invoke-virtual {p1}, La9/y;->i()I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v1
+
+    .line 34
+    const/16 v2, 0xc8
+
+    .line 35
+    .line 36
+    if-lt v1, v2, :cond_3
+
+    .line 37
+    .line 38
+    const/16 v2, 0x12c
+
+    .line 39
+    .line 40
+    if-lt v1, v2, :cond_0
+
+    .line 41
+    .line 42
+    goto :goto_1
+
+    .line 43
+    :cond_0
+    const/16 v2, 0xcc
+
+    .line 44
+    .line 45
+    if-eq v1, v2, :cond_2
+
+    .line 46
+    .line 47
+    const/16 v2, 0xcd
+
+    .line 48
+    .line 49
+    if-ne v1, v2, :cond_1
+
+    .line 50
+    .line 51
+    goto :goto_0
+
+    .line 52
+    :cond_1
+    new-instance v1, Lr9/t$b;
+
+    .line 53
+    .line 54
+    invoke-direct {v1, v0}, Lr9/t$b;-><init>(La9/z;)V
+
+    .line 55
+    .line 56
+    .line 57
+    :try_start_0
+    iget-object v0, p0, Lr9/t;->e:Lr9/h;
+
+    .line 58
+    .line 59
+    invoke-interface {v0, v1}, Lr9/h;->convert(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object v0
+
+    .line 63
+    invoke-static {v0, p1}, Lr9/c0;->f(Ljava/lang/Object;La9/y;)Lr9/c0;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object p1
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 67
+    return-object p1
+
+    .line 68
+    :catch_0
+    move-exception p1
+
+    .line 69
+    invoke-virtual {v1}, Lr9/t$b;->f()V
+
+    .line 70
+    .line 71
+    .line 72
+    throw p1
+
+    .line 73
+    :cond_2
+    :goto_0
+    invoke-virtual {v0}, La9/z;->close()V
+
+    .line 74
+    .line 75
+    .line 76
+    const/4 v0, 0x0
+
+    .line 77
+    invoke-static {v0, p1}, Lr9/c0;->f(Ljava/lang/Object;La9/y;)Lr9/c0;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object p1
+
+    .line 81
+    return-object p1
+
+    .line 82
+    :cond_3
+    :goto_1
+    :try_start_1
+    invoke-static {v0}, Lr9/h0;->a(La9/z;)La9/z;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object v1
+
+    .line 86
+    invoke-static {v1, p1}, Lr9/c0;->c(La9/z;La9/y;)Lr9/c0;
+
+    .line 87
+    .line 88
+    .line 89
+    move-result-object p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 90
+    invoke-virtual {v0}, La9/z;->close()V
+
+    .line 91
+    .line 92
+    .line 93
+    return-object p1
+
+    .line 94
+    :catchall_0
+    move-exception p1
+
+    .line 95
+    invoke-virtual {v0}, La9/z;->close()V
+
+    .line 96
+    .line 97
+    .line 98
+    throw p1
+.end method
+
+.method public isCanceled()Z
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Lr9/t;->f:Z
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    .line 6
+    return v1
+
+    .line 7
+    :cond_0
+    monitor-enter p0
+
+    .line 8
+    :try_start_0
+    iget-object v0, p0, Lr9/t;->g:La9/e;
+
+    .line 9
+    .line 10
+    if-eqz v0, :cond_1
+
+    .line 11
+    .line 12
+    invoke-interface {v0}, La9/e;->isCanceled()Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    if-eqz v0, :cond_1
+
+    .line 17
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :catchall_0
+    move-exception v0
+
+    .line 20
+    goto :goto_1
+
+    .line 21
+    :cond_1
+    const/4 v1, 0x0
+
+    .line 22
+    :goto_0
+    monitor-exit p0
+
+    .line 23
+    return v1
+
+    .line 24
+    :goto_1
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 25
+    throw v0
+.end method
+
+.method public j(Lr9/f;)V
+    .locals 3
+
+    .line 1
+    const-string v0, "callback == null"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    monitor-enter p0
+
+    .line 7
+    :try_start_0
+    iget-boolean v0, p0, Lr9/t;->i:Z
+
+    .line 8
+    .line 9
+    if-nez v0, :cond_3
+
+    .line 10
+    .line 11
+    const/4 v0, 0x1
+
+    .line 12
+    iput-boolean v0, p0, Lr9/t;->i:Z
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lr9/t;->g:La9/e;
+
+    .line 15
+    .line 16
+    iget-object v1, p0, Lr9/t;->h:Ljava/lang/Throwable;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 17
+    .line 18
+    if-nez v0, :cond_0
+
+    .line 19
+    .line 20
+    if-nez v1, :cond_0
+
+    .line 21
+    .line 22
+    :try_start_1
+    invoke-virtual {p0}, Lr9/t;->c()La9/e;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v2
+
+    .line 26
+    iput-object v2, p0, Lr9/t;->g:La9/e;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 27
+    .line 28
+    move-object v0, v2
+
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :catchall_0
+    move-exception v1
+
+    .line 31
+    :try_start_2
+    invoke-static {v1}, Lr9/h0;->t(Ljava/lang/Throwable;)V
+
+    .line 32
+    .line 33
+    .line 34
+    iput-object v1, p0, Lr9/t;->h:Ljava/lang/Throwable;
+
+    .line 35
+    .line 36
+    goto :goto_0
+
+    .line 37
+    :catchall_1
+    move-exception p1
+
+    .line 38
+    goto :goto_1
+
+    .line 39
+    :cond_0
+    :goto_0
+    monitor-exit p0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 40
+    if-eqz v1, :cond_1
+
+    .line 41
+    .line 42
+    invoke-interface {p1, p0, v1}, Lr9/f;->b(Lr9/d;Ljava/lang/Throwable;)V
+
+    .line 43
+    .line 44
+    .line 45
+    return-void
+
+    .line 46
+    :cond_1
+    iget-boolean v1, p0, Lr9/t;->f:Z
+
+    .line 47
+    .line 48
+    if-eqz v1, :cond_2
+
+    .line 49
+    .line 50
+    invoke-interface {v0}, La9/e;->cancel()V
+
+    .line 51
+    .line 52
+    .line 53
+    :cond_2
+    new-instance v1, Lr9/t$a;
+
+    .line 54
+    .line 55
+    invoke-direct {v1, p0, p1}, Lr9/t$a;-><init>(Lr9/t;Lr9/f;)V
+
+    .line 56
+    .line 57
+    .line 58
+    invoke-interface {v0, v1}, La9/e;->o(La9/f;)V
+
+    .line 59
+    .line 60
+    .line 61
+    return-void
+
+    .line 62
+    :cond_3
+    :try_start_3
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 63
+    .line 64
+    const-string v0, "Already executed."
+
+    .line 65
+    .line 66
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 67
+    .line 68
+    .line 69
+    throw p1
+
+    .line 70
+    :goto_1
+    monitor-exit p0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    .line 71
+    throw p1
+.end method

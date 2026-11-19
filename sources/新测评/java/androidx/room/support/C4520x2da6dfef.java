@@ -1,0 +1,24 @@
+package androidx.room.support;
+
+import androidx.sqlite.p017db.SupportSQLiteDatabase;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.Intrinsics;
+
+@Metadata(m13559k = 3, m13560mv = {2, 0, 0}, m13562xi = 48)
+/* renamed from: androidx.room.support.AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$yieldIfContendedSafely$2 */
+/* loaded from: classes3.dex */
+public /* synthetic */ class C4520x2da6dfef extends FunctionReferenceImpl implements Function1<SupportSQLiteDatabase, Boolean> {
+    public static final C4520x2da6dfef INSTANCE = new C4520x2da6dfef();
+
+    public C4520x2da6dfef() {
+        super(1, SupportSQLiteDatabase.class, "yieldIfContendedSafely", "yieldIfContendedSafely()Z", 0);
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    public final Boolean invoke(SupportSQLiteDatabase p02) {
+        Intrinsics.checkNotNullParameter(p02, "p0");
+        return Boolean.valueOf(p02.yieldIfContendedSafely());
+    }
+}

@@ -1,0 +1,116 @@
+.class public Ll8/b$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/lifecycle/ViewModelProvider$Factory;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ll8/b;->d(Landroidx/lifecycle/ViewModelStoreOwner;Landroid/content/Context;)Landroidx/lifecycle/ViewModelProvider;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Landroid/content/Context;
+
+.field public final synthetic b:Ll8/b;
+
+
+# direct methods
+.method public constructor <init>(Ll8/b;Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Ll8/b$a;->b:Ll8/b;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Ll8/b$a;->a:Landroid/content/Context;
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public create(Ljava/lang/Class;Landroidx/lifecycle/viewmodel/CreationExtras;)Landroidx/lifecycle/ViewModel;
+    .locals 1
+
+    .line 1
+    new-instance p1, Ll8/g;
+
+    .line 2
+    .line 3
+    invoke-direct {p1, p2}, Ll8/g;-><init>(Landroidx/lifecycle/viewmodel/CreationExtras;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p2, p0, Ll8/b$a;->a:Landroid/content/Context;
+
+    .line 7
+    .line 8
+    const-class v0, Ll8/b$b;
+
+    .line 9
+    .line 10
+    invoke-static {p2, v0}, Lf8/b;->a(Landroid/content/Context;Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object p2
+
+    .line 14
+    check-cast p2, Ll8/b$b;
+
+    .line 15
+    .line 16
+    invoke-interface {p2}, Ll8/b$b;->c()Lj8/b;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p2
+
+    .line 20
+    invoke-interface {p2, p1}, Lj8/b;->a(Ll8/g;)Lj8/b;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p2
+
+    .line 24
+    invoke-interface {p2}, Lj8/b;->build()Lg8/b;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p2
+
+    .line 28
+    new-instance v0, Ll8/b$c;
+
+    .line 29
+    .line 30
+    invoke-direct {v0, p2, p1}, Ll8/b$c;-><init>(Lg8/b;Ll8/g;)V
+
+    .line 31
+    .line 32
+    .line 33
+    return-object v0
+.end method

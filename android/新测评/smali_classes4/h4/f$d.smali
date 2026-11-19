@@ -1,0 +1,45 @@
+.class public final Lh4/f$d;
+.super Lh4/f;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lh4/f;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "d"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Z)V
+    .locals 2
+
+    const v0, -0xb6cf
+
+    const/4 v1, 0x0
+
+    .line 2
+    invoke-direct {p0, v0, p1, v1}, Lh4/f;-><init>(IZLkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 1
+    :cond_0
+    invoke-direct {p0, p1}, Lh4/f$d;-><init>(Z)V
+
+    return-void
+.end method

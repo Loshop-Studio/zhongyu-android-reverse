@@ -1,0 +1,362 @@
+package androidx.camera.core;
+
+import android.graphics.Matrix;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import android.media.ImageWriter;
+import androidx.annotation.GuardedBy;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
+import androidx.camera.core.ImageAnalysis;
+import androidx.camera.core.impl.ImageReaderProxy;
+import androidx.camera.core.impl.utils.TransformUtils;
+import androidx.camera.core.impl.utils.futures.Futures;
+import androidx.camera.core.internal.compat.ImageWriterCompat;
+import androidx.concurrent.futures.CallbackToFutureAdapter;
+import androidx.core.os.OperationCanceledException;
+import com.google.common.util.concurrent.ListenableFuture;
+import java.nio.ByteBuffer;
+import java.util.concurrent.Executor;
+
+/* loaded from: classes.dex */
+abstract class ImageAnalysisAbstractAnalyzer implements ImageReaderProxy.OnImageAvailableListener {
+    private static final String TAG = "ImageAnalysisAnalyzer";
+    private volatile boolean mOnePixelShiftEnabled;
+    private volatile boolean mOutputImageRotationEnabled;
+
+    @IntRange(from = 0, m488to = 359)
+    private volatile int mPrevBufferRotationDegrees;
+
+    @Nullable
+    @GuardedBy("mAnalyzerLock")
+    private SafeCloseImageReaderProxy mProcessedImageReaderProxy;
+
+    @Nullable
+    @GuardedBy("mAnalyzerLock")
+    private ImageWriter mProcessedImageWriter;
+
+    @Nullable
+    @GuardedBy("mAnalyzerLock")
+    @VisibleForTesting
+    ByteBuffer mRGBConvertedBuffer;
+
+    @IntRange(from = 0, m488to = 359)
+    private volatile int mRelativeRotation;
+
+    @GuardedBy("mAnalyzerLock")
+    private ImageAnalysis.Analyzer mSubscribedAnalyzer;
+
+    @Nullable
+    @GuardedBy("mAnalyzerLock")
+    @VisibleForTesting
+    ByteBuffer mURotatedBuffer;
+
+    @GuardedBy("mAnalyzerLock")
+    private Executor mUserExecutor;
+
+    @Nullable
+    @GuardedBy("mAnalyzerLock")
+    @VisibleForTesting
+    ByteBuffer mVRotatedBuffer;
+
+    @Nullable
+    @GuardedBy("mAnalyzerLock")
+    @VisibleForTesting
+    ByteBuffer mYRotatedBuffer;
+    private volatile int mOutputImageFormat = 1;
+
+    @GuardedBy("mAnalyzerLock")
+    private Rect mOriginalViewPortCropRect = new Rect();
+
+    @GuardedBy("mAnalyzerLock")
+    private Rect mUpdatedViewPortCropRect = new Rect();
+
+    @GuardedBy("mAnalyzerLock")
+    private Matrix mOriginalSensorToBufferTransformMatrix = new Matrix();
+
+    @GuardedBy("mAnalyzerLock")
+    private Matrix mUpdatedSensorToBufferTransformMatrix = new Matrix();
+    private final Object mAnalyzerLock = new Object();
+    protected boolean mIsAttached = true;
+
+    /* renamed from: a */
+    public static /* synthetic */ void m712a(ImageAnalysisAbstractAnalyzer imageAnalysisAbstractAnalyzer, ImageProxy imageProxy, Matrix matrix, ImageProxy imageProxy2, Rect rect, ImageAnalysis.Analyzer analyzer, CallbackToFutureAdapter.Completer completer) {
+        if (!imageAnalysisAbstractAnalyzer.mIsAttached) {
+            completer.setException(new OperationCanceledException("ImageAnalysis is detached"));
+            return;
+        }
+        SettableImageProxy settableImageProxy = new SettableImageProxy(imageProxy2, ImmutableImageInfo.create(imageProxy.getImageInfo().getTagBundle(), imageProxy.getImageInfo().getTimestamp(), imageAnalysisAbstractAnalyzer.mOutputImageRotationEnabled ? 0 : imageAnalysisAbstractAnalyzer.mRelativeRotation, matrix));
+        if (!rect.isEmpty()) {
+            settableImageProxy.setCropRect(rect);
+        }
+        analyzer.analyze(settableImageProxy);
+        completer.set(null);
+    }
+
+    /* renamed from: b */
+    public static /* synthetic */ Object m713b(final ImageAnalysisAbstractAnalyzer imageAnalysisAbstractAnalyzer, Executor executor, final ImageProxy imageProxy, final Matrix matrix, final ImageProxy imageProxy2, final Rect rect, final ImageAnalysis.Analyzer analyzer, final CallbackToFutureAdapter.Completer completer) {
+        imageAnalysisAbstractAnalyzer.getClass();
+        executor.execute(new Runnable() { // from class: androidx.camera.core.o
+            @Override // java.lang.Runnable
+            public final void run() {
+                ImageAnalysisAbstractAnalyzer.m712a(this.f836a, imageProxy, matrix, imageProxy2, rect, analyzer, completer);
+            }
+        });
+        return "analyzeImage";
+    }
+
+    @GuardedBy("mAnalyzerLock")
+    private void createHelperBuffer(@NonNull ImageProxy imageProxy) {
+        if (this.mOutputImageFormat != 1) {
+            if (this.mOutputImageFormat == 2 && this.mRGBConvertedBuffer == null) {
+                this.mRGBConvertedBuffer = ByteBuffer.allocateDirect(imageProxy.getWidth() * imageProxy.getHeight() * 4);
+                return;
+            }
+            return;
+        }
+        if (this.mYRotatedBuffer == null) {
+            this.mYRotatedBuffer = ByteBuffer.allocateDirect(imageProxy.getWidth() * imageProxy.getHeight());
+        }
+        this.mYRotatedBuffer.position(0);
+        if (this.mURotatedBuffer == null) {
+            this.mURotatedBuffer = ByteBuffer.allocateDirect((imageProxy.getWidth() * imageProxy.getHeight()) / 4);
+        }
+        this.mURotatedBuffer.position(0);
+        if (this.mVRotatedBuffer == null) {
+            this.mVRotatedBuffer = ByteBuffer.allocateDirect((imageProxy.getWidth() * imageProxy.getHeight()) / 4);
+        }
+        this.mVRotatedBuffer.position(0);
+    }
+
+    @NonNull
+    private static SafeCloseImageReaderProxy createImageReaderProxy(int i10, int i11, int i12, int i13, int i14) {
+        boolean z9 = i12 == 90 || i12 == 270;
+        int i15 = z9 ? i11 : i10;
+        if (!z9) {
+            i10 = i11;
+        }
+        return new SafeCloseImageReaderProxy(ImageReaderProxys.createIsolatedReader(i15, i10, i13, i14));
+    }
+
+    @NonNull
+    @VisibleForTesting
+    public static Matrix getAdditionalTransformMatrixAppliedByProcessor(int i10, int i11, int i12, int i13, @IntRange(from = 0, m488to = 359) int i14) {
+        Matrix matrix = new Matrix();
+        if (i14 > 0) {
+            matrix.setRectToRect(new RectF(0.0f, 0.0f, i10, i11), TransformUtils.NORMALIZED_RECT, Matrix.ScaleToFit.FILL);
+            matrix.postRotate(i14);
+            matrix.postConcat(TransformUtils.getNormalizedToBuffer(new RectF(0.0f, 0.0f, i12, i13)));
+        }
+        return matrix;
+    }
+
+    @NonNull
+    public static Rect getUpdatedCropRect(@NonNull Rect rect, @NonNull Matrix matrix) {
+        RectF rectF = new RectF(rect);
+        matrix.mapRect(rectF);
+        Rect rect2 = new Rect();
+        rectF.round(rect2);
+        return rect2;
+    }
+
+    @GuardedBy("mAnalyzerLock")
+    private void recalculateTransformMatrixAndCropRect(int i10, int i11, int i12, int i13) {
+        Matrix additionalTransformMatrixAppliedByProcessor = getAdditionalTransformMatrixAppliedByProcessor(i10, i11, i12, i13, this.mRelativeRotation);
+        this.mUpdatedViewPortCropRect = getUpdatedCropRect(this.mOriginalViewPortCropRect, additionalTransformMatrixAppliedByProcessor);
+        this.mUpdatedSensorToBufferTransformMatrix.setConcat(this.mOriginalSensorToBufferTransformMatrix, additionalTransformMatrixAppliedByProcessor);
+    }
+
+    @GuardedBy("mAnalyzerLock")
+    private void recreateImageReaderProxy(@NonNull ImageProxy imageProxy, @IntRange(from = 0, m488to = 359) int i10) {
+        SafeCloseImageReaderProxy safeCloseImageReaderProxy = this.mProcessedImageReaderProxy;
+        if (safeCloseImageReaderProxy == null) {
+            return;
+        }
+        safeCloseImageReaderProxy.safeClose();
+        this.mProcessedImageReaderProxy = createImageReaderProxy(imageProxy.getWidth(), imageProxy.getHeight(), i10, this.mProcessedImageReaderProxy.getImageFormat(), this.mProcessedImageReaderProxy.getMaxImages());
+        if (this.mOutputImageFormat == 1) {
+            ImageWriter imageWriter = this.mProcessedImageWriter;
+            if (imageWriter != null) {
+                ImageWriterCompat.close(imageWriter);
+            }
+            this.mProcessedImageWriter = ImageWriterCompat.newInstance(this.mProcessedImageReaderProxy.getSurface(), this.mProcessedImageReaderProxy.getMaxImages());
+        }
+    }
+
+    @Nullable
+    public abstract ImageProxy acquireImage(@NonNull ImageReaderProxy imageReaderProxy);
+
+    public ListenableFuture<Void> analyzeImage(@NonNull final ImageProxy imageProxy) throws Throwable {
+        Object obj;
+        final Executor executor;
+        final ImageAnalysis.Analyzer analyzer;
+        boolean z9;
+        SafeCloseImageReaderProxy safeCloseImageReaderProxy;
+        ImageWriter imageWriter;
+        ByteBuffer byteBuffer;
+        ByteBuffer byteBuffer2;
+        ByteBuffer byteBuffer3;
+        ByteBuffer byteBuffer4;
+        ImageProxy imageProxy2;
+        ImageProxy imageProxyRotateYUV;
+        int i10 = this.mOutputImageRotationEnabled ? this.mRelativeRotation : 0;
+        Object obj2 = this.mAnalyzerLock;
+        synchronized (obj2) {
+            try {
+                try {
+                    executor = this.mUserExecutor;
+                    analyzer = this.mSubscribedAnalyzer;
+                    z9 = this.mOutputImageRotationEnabled && i10 != this.mPrevBufferRotationDegrees;
+                    if (z9) {
+                        recreateImageReaderProxy(imageProxy, i10);
+                    }
+                    if (this.mOutputImageRotationEnabled) {
+                        createHelperBuffer(imageProxy);
+                    }
+                    try {
+                        safeCloseImageReaderProxy = this.mProcessedImageReaderProxy;
+                        try {
+                            imageWriter = this.mProcessedImageWriter;
+                            byteBuffer = this.mRGBConvertedBuffer;
+                        } catch (Throwable th) {
+                            th = th;
+                            obj = obj2;
+                        }
+                    } catch (Throwable th2) {
+                        th = th2;
+                        obj = obj2;
+                    }
+                } catch (Throwable th3) {
+                    th = th3;
+                    obj = obj2;
+                }
+            } catch (Throwable th4) {
+                th = th4;
+            }
+            try {
+                byteBuffer2 = this.mYRotatedBuffer;
+                byteBuffer3 = this.mURotatedBuffer;
+                byteBuffer4 = this.mVRotatedBuffer;
+            } catch (Throwable th5) {
+                th = th5;
+                obj = obj2;
+                throw th;
+            }
+        }
+        if (analyzer == null || executor == null || !this.mIsAttached) {
+            return Futures.immediateFailedFuture(new OperationCanceledException("No analyzer or executor currently set."));
+        }
+        if (safeCloseImageReaderProxy == null) {
+            imageProxy2 = null;
+        } else {
+            if (this.mOutputImageFormat == 2) {
+                imageProxyRotateYUV = ImageProcessingUtil.convertYUVToRGB(imageProxy, safeCloseImageReaderProxy, byteBuffer, i10, this.mOnePixelShiftEnabled);
+            } else {
+                if (this.mOutputImageFormat == 1) {
+                    if (this.mOnePixelShiftEnabled) {
+                        ImageProcessingUtil.applyPixelShiftForYUV(imageProxy);
+                    }
+                    if (imageWriter != null && byteBuffer2 != null && byteBuffer3 != null && byteBuffer4 != null) {
+                        imageProxyRotateYUV = ImageProcessingUtil.rotateYUV(imageProxy, safeCloseImageReaderProxy, imageWriter, byteBuffer2, byteBuffer3, byteBuffer4, i10);
+                    }
+                }
+                imageProxy2 = null;
+            }
+            imageProxy2 = imageProxyRotateYUV;
+        }
+        boolean z10 = imageProxy2 == null;
+        final ImageProxy imageProxy3 = z10 ? imageProxy : imageProxy2;
+        final Rect rect = new Rect();
+        final Matrix matrix = new Matrix();
+        synchronized (this.mAnalyzerLock) {
+            if (z9 && !z10) {
+                try {
+                    recalculateTransformMatrixAndCropRect(imageProxy.getWidth(), imageProxy.getHeight(), imageProxy3.getWidth(), imageProxy3.getHeight());
+                } finally {
+                }
+            }
+            this.mPrevBufferRotationDegrees = i10;
+            rect.set(this.mUpdatedViewPortCropRect);
+            matrix.set(this.mUpdatedSensorToBufferTransformMatrix);
+        }
+        return CallbackToFutureAdapter.getFuture(new CallbackToFutureAdapter.Resolver() { // from class: androidx.camera.core.p
+            @Override // androidx.concurrent.futures.CallbackToFutureAdapter.Resolver
+            public final Object attachCompleter(CallbackToFutureAdapter.Completer completer) {
+                return ImageAnalysisAbstractAnalyzer.m713b(this.f845a, executor, imageProxy, matrix, imageProxy3, rect, analyzer, completer);
+            }
+        });
+    }
+
+    public void attach() {
+        this.mIsAttached = true;
+    }
+
+    public abstract void clearCache();
+
+    public void detach() {
+        this.mIsAttached = false;
+        clearCache();
+    }
+
+    @Override // androidx.camera.core.impl.ImageReaderProxy.OnImageAvailableListener
+    public void onImageAvailable(@NonNull ImageReaderProxy imageReaderProxy) {
+        try {
+            ImageProxy imageProxyAcquireImage = acquireImage(imageReaderProxy);
+            if (imageProxyAcquireImage != null) {
+                onValidImageAvailable(imageProxyAcquireImage);
+            }
+        } catch (IllegalStateException e10) {
+            Logger.m726e(TAG, "Failed to acquire image.", e10);
+        }
+    }
+
+    public abstract void onValidImageAvailable(@NonNull ImageProxy imageProxy);
+
+    public void setAnalyzer(@Nullable Executor executor, @Nullable ImageAnalysis.Analyzer analyzer) {
+        if (analyzer == null) {
+            clearCache();
+        }
+        synchronized (this.mAnalyzerLock) {
+            this.mSubscribedAnalyzer = analyzer;
+            this.mUserExecutor = executor;
+        }
+    }
+
+    public void setOnePixelShiftEnabled(boolean z9) {
+        this.mOnePixelShiftEnabled = z9;
+    }
+
+    public void setOutputImageFormat(int i10) {
+        this.mOutputImageFormat = i10;
+    }
+
+    public void setOutputImageRotationEnabled(boolean z9) {
+        this.mOutputImageRotationEnabled = z9;
+    }
+
+    public void setProcessedImageReaderProxy(@NonNull SafeCloseImageReaderProxy safeCloseImageReaderProxy) {
+        synchronized (this.mAnalyzerLock) {
+            this.mProcessedImageReaderProxy = safeCloseImageReaderProxy;
+        }
+    }
+
+    public void setRelativeRotation(int i10) {
+        this.mRelativeRotation = i10;
+    }
+
+    public void setSensorToBufferTransformMatrix(@NonNull Matrix matrix) {
+        synchronized (this.mAnalyzerLock) {
+            this.mOriginalSensorToBufferTransformMatrix = matrix;
+            this.mUpdatedSensorToBufferTransformMatrix = new Matrix(this.mOriginalSensorToBufferTransformMatrix);
+        }
+    }
+
+    public void setViewPortCropRect(@NonNull Rect rect) {
+        synchronized (this.mAnalyzerLock) {
+            this.mOriginalViewPortCropRect = rect;
+            this.mUpdatedViewPortCropRect = new Rect(this.mOriginalViewPortCropRect);
+        }
+    }
+}

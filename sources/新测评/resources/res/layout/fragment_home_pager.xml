@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingLeft="@dimen/view_5" android:paddingRight="@dimen/view_5" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/view_5" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_empty" android:background="@color/list_background_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_empty_place_holder" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无数据" />
+    </LinearLayout>
+</FrameLayout>

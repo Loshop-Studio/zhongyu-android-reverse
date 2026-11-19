@@ -1,0 +1,70 @@
+.class public Lz1/c$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements La2/c$b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lz1/c;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "b"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lz1/c$a;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Lz1/c$b;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(I)La2/b$b;
+    .locals 1
+
+    .line 1
+    new-instance v0, La2/b$b;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p1}, La2/b$b;-><init>(I)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public bridge synthetic b(I)La2/c$a;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lz1/c$b;->a(I)La2/b$b;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method

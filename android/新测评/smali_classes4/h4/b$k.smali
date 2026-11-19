@@ -1,0 +1,52 @@
+.class public final Lh4/b$k;
+.super Lh4/b;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lh4/b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "k"
+.end annotation
+
+
+# instance fields
+.field public final a:I
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, v0}, Lh4/b;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 3
+    .line 4
+    .line 5
+    iput p1, p0, Lh4/b$k;->a:I
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lh4/b$k;->a:I
+
+    .line 2
+    .line 3
+    return v0
+.end method

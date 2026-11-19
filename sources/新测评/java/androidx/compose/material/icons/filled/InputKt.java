@@ -1,0 +1,72 @@
+package androidx.compose.material.icons.filled;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.p013ui.graphics.Color;
+import androidx.compose.p013ui.graphics.SolidColor;
+import androidx.compose.p013ui.graphics.StrokeCap;
+import androidx.compose.p013ui.graphics.StrokeJoin;
+import androidx.compose.p013ui.graphics.vector.ImageVector;
+import androidx.compose.p013ui.graphics.vector.PathBuilder;
+import androidx.compose.p013ui.graphics.vector.VectorKt;
+import androidx.compose.p013ui.unit.C3127Dp;
+import kotlin.Deprecated;
+import kotlin.Metadata;
+import kotlin.ReplaceWith;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@Metadata(m13557d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\"\u0010\u0010\u0000\u001a\u0004\u0018\u00010\u0001X\u0082\u000e¢\u0006\u0002\n\u0000\"\u001e\u0010\u0002\u001a\u00020\u0001*\u00020\u00038FX\u0087\u0004¢\u0006\f\u0012\u0004\b\u0004\u0010\u0005\u001a\u0004\b\u0006\u0010\u0007¨\u0006\b"}, m13558d2 = {"_input", "Landroidx/compose/ui/graphics/vector/ImageVector;", "Input", "Landroidx/compose/material/icons/Icons$Filled;", "getInput$annotations", "(Landroidx/compose/material/icons/Icons$Filled;)V", "getInput", "(Landroidx/compose/material/icons/Icons$Filled;)Landroidx/compose/ui/graphics/vector/ImageVector;", "material-icons-extended_release"}, m13559k = 2, m13560mv = {1, 8, 0}, m13562xi = 48)
+@SourceDebugExtension({"SMAP\nInput.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Input.kt\nandroidx/compose/material/icons/filled/InputKt\n+ 2 Icons.kt\nandroidx/compose/material/icons/IconsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 4 ImageVector.kt\nandroidx/compose/ui/graphics/vector/ImageVectorKt\n+ 5 Vector.kt\nandroidx/compose/ui/graphics/vector/VectorKt\n*L\n1#1,70:1\n212#2,12:71\n233#2,18:84\n253#2:121\n174#3:83\n705#4,2:102\n717#4,2:104\n719#4,11:110\n72#5,4:106\n*S KotlinDebug\n*F\n+ 1 Input.kt\nandroidx/compose/material/icons/filled/InputKt\n*L\n35#1:71,12\n36#1:84,18\n36#1:121\n35#1:83\n36#1:102,2\n36#1:104,2\n36#1:110,11\n36#1:106,4\n*E\n"})
+/* loaded from: classes.dex */
+public final class InputKt {
+    private static ImageVector _input;
+
+    public static final ImageVector getInput(Icons.Filled filled) {
+        ImageVector imageVector = _input;
+        if (imageVector != null) {
+            Intrinsics.checkNotNull(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Filled.Input", C3127Dp.m23561constructorimpl(24.0f), C3127Dp.m23561constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.INSTANCE.m21002getBlack0d7_KjU(), null);
+        int iM21329getButtKaPHkGw = StrokeCap.INSTANCE.m21329getButtKaPHkGw();
+        int iM21339getBevelLxFBmk8 = StrokeJoin.INSTANCE.m21339getBevelLxFBmk8();
+        PathBuilder pathBuilder = new PathBuilder();
+        pathBuilder.moveTo(21.0f, 3.01f);
+        pathBuilder.horizontalLineTo(3.0f);
+        pathBuilder.curveToRelative(-1.1f, 0.0f, -2.0f, 0.9f, -2.0f, 2.0f);
+        pathBuilder.verticalLineTo(9.0f);
+        pathBuilder.horizontalLineToRelative(2.0f);
+        pathBuilder.verticalLineTo(4.99f);
+        pathBuilder.horizontalLineToRelative(18.0f);
+        pathBuilder.verticalLineToRelative(14.03f);
+        pathBuilder.horizontalLineTo(3.0f);
+        pathBuilder.verticalLineTo(15.0f);
+        pathBuilder.horizontalLineTo(1.0f);
+        pathBuilder.verticalLineToRelative(4.01f);
+        pathBuilder.curveToRelative(0.0f, 1.1f, 0.9f, 1.98f, 2.0f, 1.98f);
+        pathBuilder.horizontalLineToRelative(18.0f);
+        pathBuilder.curveToRelative(1.1f, 0.0f, 2.0f, -0.88f, 2.0f, -1.98f);
+        pathBuilder.verticalLineToRelative(-14.0f);
+        pathBuilder.curveToRelative(0.0f, -1.11f, -0.9f, -2.0f, -2.0f, -2.0f);
+        pathBuilder.close();
+        pathBuilder.moveTo(11.0f, 16.0f);
+        pathBuilder.lineToRelative(4.0f, -4.0f);
+        pathBuilder.lineToRelative(-4.0f, -4.0f);
+        pathBuilder.verticalLineToRelative(3.0f);
+        pathBuilder.horizontalLineTo(1.0f);
+        pathBuilder.verticalLineToRelative(2.0f);
+        pathBuilder.horizontalLineToRelative(10.0f);
+        pathBuilder.verticalLineToRelative(3.0f);
+        pathBuilder.close();
+        ImageVector imageVectorBuild = ImageVector.Builder.m21661addPathoIyEayM$default(builder, pathBuilder.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, iM21329getButtKaPHkGw, iM21339getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _input = imageVectorBuild;
+        Intrinsics.checkNotNull(imageVectorBuild);
+        return imageVectorBuild;
+    }
+
+    @Deprecated(message = "Use the AutoMirrored version at Icons.AutoMirrored.Filled.Input", replaceWith = @ReplaceWith(expression = "Icons.AutoMirrored.Filled.Input", imports = {"androidx.compose.material.icons.automirrored.filled.Input"}))
+    public static /* synthetic */ void getInput$annotations(Icons.Filled filled) {
+    }
+}

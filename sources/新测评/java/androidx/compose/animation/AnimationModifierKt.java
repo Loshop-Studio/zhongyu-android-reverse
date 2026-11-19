@@ -1,0 +1,66 @@
+package androidx.compose.animation;
+
+import androidx.autofill.HintConstants;
+import androidx.compose.animation.core.AnimationSpecKt;
+import androidx.compose.animation.core.FiniteAnimationSpec;
+import androidx.compose.animation.core.VisibilityThresholdsKt;
+import androidx.compose.p013ui.Alignment;
+import androidx.compose.p013ui.Modifier;
+import androidx.compose.p013ui.draw.ClipKt;
+import androidx.compose.p013ui.unit.IntSize;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@Metadata(m13557d1 = {"\u00006\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001aV\u0010\t\u001a\u00020\n*\u00020\n2\u000e\b\u0002\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00010\f2:\b\u0002\u0010\r\u001a4\u0012\u0013\u0012\u00110\u0001¢\u0006\f\b\u000f\u0012\b\b\u0010\u0012\u0004\b\b(\u0011\u0012\u0013\u0012\u00110\u0001¢\u0006\f\b\u000f\u0012\b\b\u0010\u0012\u0004\b\b(\u0012\u0012\u0004\u0012\u00020\u0013\u0018\u00010\u000e\u001a`\u0010\t\u001a\u00020\n*\u00020\n2\u000e\b\u0002\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00010\f2\b\b\u0002\u0010\u0014\u001a\u00020\u00152:\b\u0002\u0010\r\u001a4\u0012\u0013\u0012\u00110\u0001¢\u0006\f\b\u000f\u0012\b\b\u0010\u0012\u0004\b\b(\u0011\u0012\u0013\u0012\u00110\u0001¢\u0006\f\b\u000f\u0012\b\b\u0010\u0012\u0004\b\b(\u0012\u0012\u0004\u0012\u00020\u0013\u0018\u00010\u000e\"\u0016\u0010\u0000\u001a\u00020\u0001X\u0080\u0004¢\u0006\n\n\u0002\u0010\u0004\u001a\u0004\b\u0002\u0010\u0003\"\u0018\u0010\u0005\u001a\u00020\u0006*\u00020\u00018@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\b¨\u0006\u0016"}, m13558d2 = {"InvalidSize", "Landroidx/compose/ui/unit/IntSize;", "getInvalidSize", "()J", "J", "isValid", "", "isValid-ozmzZPI", "(J)Z", "animateContentSize", "Landroidx/compose/ui/Modifier;", "animationSpec", "Landroidx/compose/animation/core/FiniteAnimationSpec;", "finishedListener", "Lkotlin/Function2;", "Lkotlin/ParameterName;", HintConstants.AUTOFILL_HINT_NAME, "initialValue", "targetValue", "", "alignment", "Landroidx/compose/ui/Alignment;", "animation_release"}, m13559k = 2, m13560mv = {1, 9, 0}, m13562xi = 48)
+@SourceDebugExtension({"SMAP\nAnimationModifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimationModifier.kt\nandroidx/compose/animation/AnimationModifierKt\n+ 2 IntSize.kt\nandroidx/compose/ui/unit/IntSizeKt\n+ 3 InlineClassHelper.kt\nandroidx/compose/ui/util/InlineClassHelperKt\n*L\n1#1,269:1\n30#2:270\n80#3:271\n*S KotlinDebug\n*F\n+ 1 AnimationModifier.kt\nandroidx/compose/animation/AnimationModifierKt\n*L\n137#1:270\n137#1:271\n*E\n"})
+/* loaded from: classes.dex */
+public final class AnimationModifierKt {
+    private static final long InvalidSize;
+
+    static {
+        long j10 = Integer.MIN_VALUE;
+        InvalidSize = IntSize.m23727constructorimpl((j10 & 4294967295L) | (j10 << 32));
+    }
+
+    public static final Modifier animateContentSize(Modifier modifier, FiniteAnimationSpec<IntSize> finiteAnimationSpec, Function2<? super IntSize, ? super IntSize, Unit> function2) {
+        return ClipKt.clipToBounds(modifier).then(new SizeAnimationModifierElement(finiteAnimationSpec, Alignment.INSTANCE.getTopStart(), function2));
+    }
+
+    public static /* synthetic */ Modifier animateContentSize$default(Modifier modifier, FiniteAnimationSpec finiteAnimationSpec, Function2 function2, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            finiteAnimationSpec = AnimationSpecKt.spring$default(0.0f, 400.0f, IntSize.m23724boximpl(VisibilityThresholdsKt.getVisibilityThreshold(IntSize.INSTANCE)), 1, null);
+        }
+        if ((i10 & 2) != 0) {
+            function2 = null;
+        }
+        return animateContentSize(modifier, finiteAnimationSpec, function2);
+    }
+
+    public static final long getInvalidSize() {
+        return InvalidSize;
+    }
+
+    /* renamed from: isValid-ozmzZPI, reason: not valid java name */
+    public static final boolean m17020isValidozmzZPI(long j10) {
+        return !IntSize.m23730equalsimpl0(j10, InvalidSize);
+    }
+
+    public static final Modifier animateContentSize(Modifier modifier, FiniteAnimationSpec<IntSize> finiteAnimationSpec, Alignment alignment, Function2<? super IntSize, ? super IntSize, Unit> function2) {
+        return ClipKt.clipToBounds(modifier).then(new SizeAnimationModifierElement(finiteAnimationSpec, alignment, function2));
+    }
+
+    public static /* synthetic */ Modifier animateContentSize$default(Modifier modifier, FiniteAnimationSpec finiteAnimationSpec, Alignment alignment, Function2 function2, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            finiteAnimationSpec = AnimationSpecKt.spring$default(0.0f, 400.0f, IntSize.m23724boximpl(VisibilityThresholdsKt.getVisibilityThreshold(IntSize.INSTANCE)), 1, null);
+        }
+        if ((i10 & 2) != 0) {
+            alignment = Alignment.INSTANCE.getTopStart();
+        }
+        if ((i10 & 4) != 0) {
+            function2 = null;
+        }
+        return animateContentSize(modifier, finiteAnimationSpec, alignment, function2);
+    }
+}

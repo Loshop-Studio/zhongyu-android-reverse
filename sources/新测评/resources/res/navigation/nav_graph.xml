@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph" app:startDestination="@id/mainFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="MainFragment" android:name="com.zykj.evaluation.ui.MainFragment" android:id="@id/mainFragment" />
+    <dialog android:name="com.zykj.evaluation.ui.datepicker.DatePickerFragment" android:id="@id/date_picker_fragment">
+        <argument android:name="start" android:defaultValue="" app:argType="string" />
+        <argument android:name="end" android:defaultValue="" app:argType="string" />
+    </dialog>
+    <dialog android:label="WhiteBoardDialogFragment" android:name="com.zykj.evaluation.ui.board.WhiteBoardDialogFragment" android:id="@id/whiteBoardDialogFragment">
+        <argument android:name="uuid" app:argType="string" />
+        <argument android:name="filePath" app:argType="string" />
+        <argument android:name="isHand" app:argType="boolean" />
+        <argument android:name="isCorrect" app:argType="boolean" />
+    </dialog>
+</navigation>

@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyGraphEnum";
+
+enum GraphEnum {
+    BOUNDED_CONTAINER_GRAPH = 0;
+    GROUP_GRAPH = 1;
+    IMAGE_GRAPH = 2;
+    STROKE_GRAPH = 3;
+    BEELINE_STROKE_GRAPH = 4;
+    TEXT_GRAPH = 5;
+    GEOMETRY_GRAPH = 6;
+}

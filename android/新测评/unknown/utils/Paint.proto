@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+import "google/protobuf/any.proto";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyPaint";
+
+message Paint {
+    float width = 1; //画笔宽度
+    int32 color = 2; //画笔颜色
+    float spacing = 3; //实线间距 不是虚线的时候为0
+    float itemLength = 4; //单个实线的长度
+    int32 style =  5; //画笔的风格
+    float textSize = 6; //文字的大小
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/white_frame_border_top_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_toLeftOf="@id/toolPanel">
+        <EditText android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/previewEditText" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/toolPanel" android:layout_width="200.0dp" android:layout_height="60.0dp" android:weightSum="3.0" android:layout_alignParentRight="true">
+        <TextView android:textSize="30.0dp" android:textColor="@color/color_selector_iconfont" android:gravity="center" android:id="@id/textKeyBoard" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/icon_keyboard" android:layout_weight="1.0" />
+        <TextView android:textSize="30.0dp" android:textColor="@color/color_selector_iconfont" android:gravity="center" android:id="@id/textEqualizer" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/icon_align" android:layout_weight="1.0" />
+        <TextView android:textSize="30.0dp" android:textColor="@color/color_selector_iconfont" android:gravity="center" android:id="@id/textDone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/icon_done" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

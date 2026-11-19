@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:tag="layout/fragment_white_board_0" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView android:id="@id/sketch_fragment" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="@dimen/text_9" android:textColor="@color/app_gray" android:id="@id/tv_sketch_move_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/view_9" android:text="@string/page_could_be_slide" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

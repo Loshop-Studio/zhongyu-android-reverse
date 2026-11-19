@@ -1,0 +1,13 @@
+package androidx.compose.foundation.lazy.grid;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import kotlin.DslMarker;
+import kotlin.Metadata;
+
+@Retention(RetentionPolicy.RUNTIME)
+@DslMarker
+@Metadata(m13557d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u001b\n\u0000\b\u0087\u0002\u0018\u00002\u00020\u0001B\u0000¨\u0006\u0002"}, m13558d2 = {"Landroidx/compose/foundation/lazy/grid/LazyGridScopeMarker;", "", "foundation_release"}, m13559k = 1, m13560mv = {1, 9, 0}, m13562xi = 48)
+/* loaded from: classes.dex */
+public @interface LazyGridScopeMarker {
+}

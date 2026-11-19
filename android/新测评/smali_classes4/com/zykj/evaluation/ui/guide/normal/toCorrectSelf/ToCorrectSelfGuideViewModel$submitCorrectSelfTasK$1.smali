@@ -1,0 +1,385 @@
+.class final Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;->c0()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lkotlin/jvm/functions/Function2<",
+        "Lkotlinx/coroutines/CoroutineScope;",
+        "Lkotlin/coroutines/Continuation<",
+        "-",
+        "Lkotlin/Unit;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "Lkotlinx/coroutines/CoroutineScope;"
+    }
+    k = 0x3
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "com.zykj.evaluation.ui.guide.normal.toCorrectSelf.ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1"
+    f = "ToCorrectSelfGuideViewModel.kt"
+    i = {
+        0x0,
+        0x0,
+        0x0
+    }
+    l = {
+        0x74
+    }
+    m = "invokeSuspend"
+    n = {
+        "userId",
+        "taskId",
+        "taskState"
+    }
+    s = {
+        "L$0",
+        "J$0",
+        "I$0"
+    }
+.end annotation
+
+
+# instance fields
+.field public a:Ljava/lang/Object;
+
+.field public b:J
+
+.field public c:I
+
+.field public d:I
+
+.field public final synthetic e:Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;
+
+
+# direct methods
+.method public constructor <init>(Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;Lkotlin/coroutines/Continuation;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->e:Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p2}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .locals 1
+
+    new-instance p1, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;
+
+    iget-object v0, p0, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->e:Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;
+
+    invoke-direct {p1, v0, p2}, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;-><init>(Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;Lkotlin/coroutines/Continuation;)V
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lkotlinx/coroutines/CoroutineScope;
+
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    invoke-virtual {p0, p1, p2}, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->invoke(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;
+
+    sget-object p2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    invoke-virtual {p1, p2}, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 14
+
+    .line 1
+    invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget v1, p0, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->d:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x1
+
+    .line 8
+    if-eqz v1, :cond_1
+
+    .line 9
+    .line 10
+    if-ne v1, v2, :cond_0
+
+    .line 11
+    .line 12
+    iget-object v0, p0, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->a:Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    check-cast v0, Ljava/lang/Long;
+
+    .line 15
+    .line 16
+    invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    .line 17
+    .line 18
+    .line 19
+    goto :goto_2
+
+    .line 20
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 21
+    .line 22
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 23
+    .line 24
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    throw p1
+
+    .line 28
+    :cond_1
+    invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    .line 29
+    .line 30
+    .line 31
+    iget-object p1, p0, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->e:Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;
+
+    .line 32
+    .line 33
+    invoke-static {p1}, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;->b0(Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;)Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p1
+
+    .line 37
+    invoke-interface {p1}, Lkotlinx/coroutines/flow/MutableStateFlow;->getValue()Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p1
+
+    .line 41
+    check-cast p1, Lcom/zykj/message/server/bean/UserInfo;
+
+    .line 42
+    .line 43
+    invoke-virtual {p1}, Lcom/zykj/message/server/bean/UserInfo;->a()Ljava/lang/Long;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
+    iget-object v1, p0, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->e:Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;
+
+    .line 48
+    .line 49
+    invoke-virtual {v1}, Lcom/zykj/evaluation/ui/guide/BaseGuideViewModel;->q()J
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-wide v6
+
+    .line 53
+    iget-object v1, p0, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->e:Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;
+
+    .line 54
+    .line 55
+    invoke-static {v1}, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;->Z(Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;)Lcom/zykj/evaluation/bean/GuideTaskInfo;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object v1
+
+    .line 59
+    if-eqz v1, :cond_2
+
+    .line 60
+    .line 61
+    invoke-virtual {v1}, Lcom/zykj/evaluation/bean/GuideTaskInfo;->getState()I
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v1
+
+    .line 65
+    :goto_0
+    move v8, v1
+
+    .line 66
+    goto :goto_1
+
+    .line 67
+    :cond_2
+    const/4 v1, -0x1
+
+    .line 68
+    goto :goto_0
+
+    .line 69
+    :goto_1
+    iget-object v1, p0, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->e:Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;
+
+    .line 70
+    .line 71
+    invoke-static {v1}, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;->a0(Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel;)Lcom/zykj/evaluation/submit/SubmitTaskManger;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v3
+
+    .line 75
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 76
+    .line 77
+    .line 78
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-wide v4
+
+    .line 82
+    invoke-static {p1}, Lkotlin/coroutines/jvm/internal/SpillingKt;->nullOutSpilledVariable(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object p1
+
+    .line 86
+    iput-object p1, p0, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->a:Ljava/lang/Object;
+
+    .line 87
+    .line 88
+    iput-wide v6, p0, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->b:J
+
+    .line 89
+    .line 90
+    iput v8, p0, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->c:I
+
+    .line 91
+    .line 92
+    iput v2, p0, Lcom/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel$submitCorrectSelfTasK$1;->d:I
+
+    .line 93
+    .line 94
+    const/4 v9, 0x0
+
+    .line 95
+    const/4 v10, 0x0
+
+    .line 96
+    const/16 v12, 0x18
+
+    .line 97
+    .line 98
+    const/4 v13, 0x0
+
+    .line 99
+    move-object v11, p0
+
+    .line 100
+    invoke-static/range {v3 .. v13}, Lcom/zykj/evaluation/submit/SubmitTaskManger;->h(Lcom/zykj/evaluation/submit/SubmitTaskManger;JJILjava/lang/String;[Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object p1
+
+    .line 104
+    if-ne p1, v0, :cond_3
+
+    .line 105
+    .line 106
+    return-object v0
+
+    .line 107
+    :cond_3
+    :goto_2
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    .line 108
+    .line 109
+    return-object p1
+.end method

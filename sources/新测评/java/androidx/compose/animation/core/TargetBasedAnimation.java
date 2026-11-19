@@ -1,0 +1,144 @@
+package androidx.compose.animation.core;
+
+import androidx.compose.animation.core.AnimationVector;
+import androidx.compose.runtime.internal.StabilityInferred;
+import androidx.exifinterface.media.ExifInterface;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@StabilityInferred(parameters = 0)
+@Metadata(m13557d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u000e\n\u0002\u0010\u000b\n\u0002\b\u0014\n\u0002\u0010\u000e\n\u0000\b\u0007\u0018\u0000*\u0004\b\u0000\u0010\u0001*\b\b\u0001\u0010\u0002*\u00020\u00032\u000e\u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u00020\u0004BE\b\u0016\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00000\u0006\u0012\u0012\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\b\u0012\u0006\u0010\t\u001a\u00028\u0000\u0012\u0006\u0010\n\u001a\u00028\u0000\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00018\u0001¢\u0006\u0002\u0010\fBE\b\u0000\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00010\r\u0012\u0012\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\b\u0012\u0006\u0010\t\u001a\u00028\u0000\u0012\u0006\u0010\n\u001a\u00028\u0000\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00018\u0001¢\u0006\u0002\u0010\u000eJ\u0015\u0010.\u001a\u00028\u00002\u0006\u0010/\u001a\u00020\u0010H\u0016¢\u0006\u0002\u00100J\u0015\u00101\u001a\u00028\u00012\u0006\u0010/\u001a\u00020\u0010H\u0016¢\u0006\u0002\u00102J\b\u00103\u001a\u000204H\u0016R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u0011\u001a\u0004\u0018\u00018\u0001X\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0012R\u001a\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00010\rX\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0014\u0010\u0015\u001a\u00020\u00108VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0016\u0010\u0017R\u0014\u0010\u0018\u001a\u00028\u00018BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0019\u0010\u001aR\u0011\u0010\t\u001a\u00028\u00008F¢\u0006\u0006\u001a\u0004\b\u001b\u0010\u001cR\u0010\u0010\u001d\u001a\u00028\u0001X\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0012R\u0010\u0010\u000b\u001a\u00028\u0001X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0012R\u0014\u0010\u001e\u001a\u00020\u001f8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u001e\u0010 R&\u0010\"\u001a\u00028\u00002\u0006\u0010!\u001a\u00028\u0000@@X\u0080\u000e¢\u0006\u0010\n\u0002\u0010&\u001a\u0004\b#\u0010\u001c\"\u0004\b$\u0010%R&\u0010'\u001a\u00028\u00002\u0006\u0010!\u001a\u00028\u0000@@X\u0080\u000e¢\u0006\u0010\n\u0002\u0010&\u001a\u0004\b(\u0010\u001c\"\u0004\b)\u0010%R\u0014\u0010\n\u001a\u00028\u00008VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b*\u0010\u001cR\u0010\u0010+\u001a\u00028\u0001X\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0012R \u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b,\u0010-¨\u00065"}, m13558d2 = {"Landroidx/compose/animation/core/TargetBasedAnimation;", ExifInterface.GPS_DIRECTION_TRUE, ExifInterface.GPS_MEASUREMENT_INTERRUPTED, "Landroidx/compose/animation/core/AnimationVector;", "Landroidx/compose/animation/core/Animation;", "animationSpec", "Landroidx/compose/animation/core/AnimationSpec;", "typeConverter", "Landroidx/compose/animation/core/TwoWayConverter;", "initialValue", "targetValue", "initialVelocityVector", "(Landroidx/compose/animation/core/AnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/AnimationVector;)V", "Landroidx/compose/animation/core/VectorizedAnimationSpec;", "(Landroidx/compose/animation/core/VectorizedAnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/AnimationVector;)V", "_durationNanos", "", "_endVelocity", "Landroidx/compose/animation/core/AnimationVector;", "getAnimationSpec$animation_core_release", "()Landroidx/compose/animation/core/VectorizedAnimationSpec;", "durationNanos", "getDurationNanos", "()J", "endVelocity", "getEndVelocity", "()Landroidx/compose/animation/core/AnimationVector;", "getInitialValue", "()Ljava/lang/Object;", "initialValueVector", "isInfinite", "", "()Z", "value", "mutableInitialValue", "getMutableInitialValue$animation_core_release", "setMutableInitialValue$animation_core_release", "(Ljava/lang/Object;)V", "Ljava/lang/Object;", "mutableTargetValue", "getMutableTargetValue$animation_core_release", "setMutableTargetValue$animation_core_release", "getTargetValue", "targetValueVector", "getTypeConverter", "()Landroidx/compose/animation/core/TwoWayConverter;", "getValueFromNanos", "playTimeNanos", "(J)Ljava/lang/Object;", "getVelocityVectorFromNanos", "(J)Landroidx/compose/animation/core/AnimationVector;", "toString", "", "animation-core_release"}, m13559k = 1, m13560mv = {1, 9, 0}, m13562xi = 48)
+@SourceDebugExtension({"SMAP\nAnimation.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Animation.kt\nandroidx/compose/animation/core/TargetBasedAnimation\n+ 2 Preconditions.kt\nandroidx/compose/animation/core/PreconditionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,497:1\n52#2,5:498\n1#3:503\n*S KotlinDebug\n*F\n+ 1 Animation.kt\nandroidx/compose/animation/core/TargetBasedAnimation\n*L\n274#1:498,5\n*E\n"})
+/* loaded from: classes.dex */
+public final class TargetBasedAnimation<T, V extends AnimationVector> implements Animation<T, V> {
+    public static final int $stable = 8;
+    private long _durationNanos;
+    private V _endVelocity;
+    private final VectorizedAnimationSpec<V> animationSpec;
+    private V initialValueVector;
+    private final V initialVelocityVector;
+    private T mutableInitialValue;
+    private T mutableTargetValue;
+    private V targetValueVector;
+    private final TwoWayConverter<T, V> typeConverter;
+
+    public TargetBasedAnimation(VectorizedAnimationSpec<V> vectorizedAnimationSpec, TwoWayConverter<T, V> twoWayConverter, T t10, T t11, V v9) {
+        V v10;
+        this.animationSpec = vectorizedAnimationSpec;
+        this.typeConverter = twoWayConverter;
+        this.mutableTargetValue = t11;
+        this.mutableInitialValue = t10;
+        this.initialValueVector = getTypeConverter().getConvertToVector().invoke(t10);
+        this.targetValueVector = getTypeConverter().getConvertToVector().invoke(t11);
+        this.initialVelocityVector = (v9 == null || (v10 = (V) AnimationVectorsKt.copy(v9)) == null) ? (V) AnimationVectorsKt.newInstance(getTypeConverter().getConvertToVector().invoke(t10)) : v10;
+        this._durationNanos = -1L;
+    }
+
+    private final V getEndVelocity() {
+        V v9 = this._endVelocity;
+        if (v9 != null) {
+            return v9;
+        }
+        V v10 = (V) this.animationSpec.getEndVelocity(this.initialValueVector, this.targetValueVector, this.initialVelocityVector);
+        this._endVelocity = v10;
+        return v10;
+    }
+
+    public final VectorizedAnimationSpec<V> getAnimationSpec$animation_core_release() {
+        return this.animationSpec;
+    }
+
+    @Override // androidx.compose.animation.core.Animation
+    public long getDurationNanos() {
+        if (this._durationNanos < 0) {
+            this._durationNanos = this.animationSpec.getDurationNanos(this.initialValueVector, this.targetValueVector, this.initialVelocityVector);
+        }
+        return this._durationNanos;
+    }
+
+    public final T getInitialValue() {
+        return this.mutableInitialValue;
+    }
+
+    public final T getMutableInitialValue$animation_core_release() {
+        return this.mutableInitialValue;
+    }
+
+    public final T getMutableTargetValue$animation_core_release() {
+        return this.mutableTargetValue;
+    }
+
+    @Override // androidx.compose.animation.core.Animation
+    public T getTargetValue() {
+        return this.mutableTargetValue;
+    }
+
+    @Override // androidx.compose.animation.core.Animation
+    public TwoWayConverter<T, V> getTypeConverter() {
+        return this.typeConverter;
+    }
+
+    @Override // androidx.compose.animation.core.Animation
+    public T getValueFromNanos(long playTimeNanos) {
+        if (isFinishedFromNanos(playTimeNanos)) {
+            return getTargetValue();
+        }
+        AnimationVector valueFromNanos = this.animationSpec.getValueFromNanos(playTimeNanos, this.initialValueVector, this.targetValueVector, this.initialVelocityVector);
+        int size = valueFromNanos.getSize();
+        for (int i10 = 0; i10 < size; i10++) {
+            if (Float.isNaN(valueFromNanos.get$animation_core_release(i10))) {
+                PreconditionsKt.throwIllegalStateException("AnimationVector cannot contain a NaN. " + valueFromNanos + ". Animation: " + this + ", playTimeNanos: " + playTimeNanos);
+            }
+        }
+        return (T) getTypeConverter().getConvertFromVector().invoke(valueFromNanos);
+    }
+
+    @Override // androidx.compose.animation.core.Animation
+    public V getVelocityVectorFromNanos(long playTimeNanos) {
+        return !isFinishedFromNanos(playTimeNanos) ? (V) this.animationSpec.getVelocityFromNanos(playTimeNanos, this.initialValueVector, this.targetValueVector, this.initialVelocityVector) : (V) getEndVelocity();
+    }
+
+    @Override // androidx.compose.animation.core.Animation
+    /* renamed from: isInfinite */
+    public boolean getIsInfinite() {
+        return this.animationSpec.isInfinite();
+    }
+
+    public final void setMutableInitialValue$animation_core_release(T t10) {
+        if (Intrinsics.areEqual(t10, this.mutableInitialValue)) {
+            return;
+        }
+        this.mutableInitialValue = t10;
+        this.initialValueVector = getTypeConverter().getConvertToVector().invoke(t10);
+        this._endVelocity = null;
+        this._durationNanos = -1L;
+    }
+
+    public final void setMutableTargetValue$animation_core_release(T t10) {
+        if (Intrinsics.areEqual(this.mutableTargetValue, t10)) {
+            return;
+        }
+        this.mutableTargetValue = t10;
+        this.targetValueVector = getTypeConverter().getConvertToVector().invoke(t10);
+        this._endVelocity = null;
+        this._durationNanos = -1L;
+    }
+
+    public String toString() {
+        return "TargetBasedAnimation: " + getInitialValue() + " -> " + getTargetValue() + ",initial velocity: " + this.initialVelocityVector + ", duration: " + AnimationKt.getDurationMillis(this) + " ms,animationSpec: " + this.animationSpec;
+    }
+
+    public /* synthetic */ TargetBasedAnimation(VectorizedAnimationSpec vectorizedAnimationSpec, TwoWayConverter twoWayConverter, Object obj, Object obj2, AnimationVector animationVector, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this((VectorizedAnimationSpec<AnimationVector>) vectorizedAnimationSpec, (TwoWayConverter<Object, AnimationVector>) twoWayConverter, obj, obj2, (i10 & 16) != 0 ? null : animationVector);
+    }
+
+    public /* synthetic */ TargetBasedAnimation(AnimationSpec animationSpec, TwoWayConverter twoWayConverter, Object obj, Object obj2, AnimationVector animationVector, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this((AnimationSpec<Object>) animationSpec, (TwoWayConverter<Object, AnimationVector>) twoWayConverter, obj, obj2, (i10 & 16) != 0 ? null : animationVector);
+    }
+
+    public TargetBasedAnimation(AnimationSpec<T> animationSpec, TwoWayConverter<T, V> twoWayConverter, T t10, T t11, V v9) {
+        this(animationSpec.vectorize(twoWayConverter), twoWayConverter, t10, t11, v9);
+    }
+}

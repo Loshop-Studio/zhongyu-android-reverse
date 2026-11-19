@@ -1,0 +1,40 @@
+.class public interface abstract Lcom/zykj/sketch/EzyDrawBoard$ActionFitterConfigOrBuilder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/zykj/sketch/EzyDrawBoard;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "ActionFitterConfigOrBuilder"
+.end annotation
+
+
+# virtual methods
+.method public abstract getCenterX()I
+.end method
+
+.method public abstract getCenterY()I
+.end method
+
+.method public abstract getPx()I
+.end method
+
+.method public abstract getPy()I
+.end method
+
+.method public abstract getScale()F
+.end method
+
+.method public abstract getStartTime()J
+.end method
+
+.method public abstract getType()I
+.end method
