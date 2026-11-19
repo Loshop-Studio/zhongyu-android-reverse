@@ -1,0 +1,70 @@
+.class public final synthetic Landroidx/camera/camera2/internal/a1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/concurrent/futures/CallbackToFutureAdapter$Resolver;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Landroidx/camera/camera2/internal/ZoomControl;
+
+.field public final synthetic c:Landroidx/camera/core/ZoomState;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/camera/camera2/internal/ZoomControl;Landroidx/camera/core/ZoomState;I)V
+    .locals 0
+
+    .line 1
+    iput p3, p0, Landroidx/camera/camera2/internal/a1;->a:I
+
+    iput-object p1, p0, Landroidx/camera/camera2/internal/a1;->b:Landroidx/camera/camera2/internal/ZoomControl;
+
+    iput-object p2, p0, Landroidx/camera/camera2/internal/a1;->c:Landroidx/camera/core/ZoomState;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final attachCompleter(Landroidx/concurrent/futures/CallbackToFutureAdapter$Completer;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget v0, p0, Landroidx/camera/camera2/internal/a1;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    iget-object v0, p0, Landroidx/camera/camera2/internal/a1;->b:Landroidx/camera/camera2/internal/ZoomControl;
+
+    iget-object v1, p0, Landroidx/camera/camera2/internal/a1;->c:Landroidx/camera/core/ZoomState;
+
+    invoke-static {v0, v1, p1}, Landroidx/camera/camera2/internal/ZoomControl;->c(Landroidx/camera/camera2/internal/ZoomControl;Landroidx/camera/core/ZoomState;Landroidx/concurrent/futures/CallbackToFutureAdapter$Completer;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+
+    :pswitch_0
+    iget-object v0, p0, Landroidx/camera/camera2/internal/a1;->b:Landroidx/camera/camera2/internal/ZoomControl;
+
+    iget-object v1, p0, Landroidx/camera/camera2/internal/a1;->c:Landroidx/camera/core/ZoomState;
+
+    invoke-static {v0, v1, p1}, Landroidx/camera/camera2/internal/ZoomControl;->d(Landroidx/camera/camera2/internal/ZoomControl;Landroidx/camera/core/ZoomState;Landroidx/concurrent/futures/CallbackToFutureAdapter$Completer;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

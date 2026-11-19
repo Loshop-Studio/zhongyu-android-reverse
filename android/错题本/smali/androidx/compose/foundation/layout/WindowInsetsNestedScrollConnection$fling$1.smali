@@ -1,0 +1,147 @@
+.class final Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$1;
+.super Lkotlin/coroutines/jvm/internal/ContinuationImpl;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;->fling-huYlsQE(JFZLh6/c;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "androidx.compose.foundation.layout.WindowInsetsNestedScrollConnection"
+    f = "WindowInsetsConnection.android.kt"
+    i = {
+        0x0,
+        0x0,
+        0x0,
+        0x1,
+        0x1,
+        0x1,
+        0x2,
+        0x2
+    }
+    l = {
+        0x12d,
+        0x147,
+        0x160
+    }
+    m = "fling-huYlsQE"
+    n = {
+        "this",
+        "available",
+        "flingAmount",
+        "this",
+        "endVelocity",
+        "available",
+        "this",
+        "available"
+    }
+    s = {
+        "L$0",
+        "J$0",
+        "F$0",
+        "L$0",
+        "L$1",
+        "J$0",
+        "L$0",
+        "J$0"
+    }
+.end annotation
+
+
+# instance fields
+.field F$0:F
+
+.field J$0:J
+
+.field L$0:Ljava/lang/Object;
+
+.field L$1:Ljava/lang/Object;
+
+.field label:I
+
+.field synthetic result:Ljava/lang/Object;
+
+.field final synthetic this$0:Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;Lh6/c;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;",
+            "Lh6/c<",
+            "-",
+            "Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$1;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$1;->this$0:Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lh6/c;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    iput-object p1, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$1;->result:Ljava/lang/Object;
+
+    iget p1, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$1;->label:I
+
+    const/high16 v0, -0x80000000
+
+    or-int/2addr p1, v0
+
+    iput p1, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$1;->label:I
+
+    iget-object v0, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$1;->this$0:Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const-wide/16 v1, 0x0
+
+    move-object v5, p0
+
+    invoke-static/range {v0 .. v5}, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;->access$fling-huYlsQE(Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;JFZLh6/c;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method

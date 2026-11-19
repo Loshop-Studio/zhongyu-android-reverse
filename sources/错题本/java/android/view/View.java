@@ -1,0 +1,38 @@
+package android.view;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.viewtree.ViewTree;
+import kotlin.Metadata;
+import kotlin.jvm.JvmName;
+import kotlin.jvm.internal.AbstractC5830k;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(m5109d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\u001a\u001b\u0010\u0006\u001a\u00020\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001H\u0007¢\u0006\u0004\b\u0004\u0010\u0005\u001a\u0015\u0010\t\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\u0007¢\u0006\u0004\b\u0007\u0010\b¨\u0006\n"}, m5110d2 = {"Landroid/view/View;", "Landroidx/activity/FullyDrawnReporterOwner;", "fullyDrawnReporterOwner", "Ld6/s;", "set", "(Landroid/view/View;Landroidx/activity/FullyDrawnReporterOwner;)V", "setViewTreeFullyDrawnReporterOwner", "get", "(Landroid/view/View;)Landroidx/activity/FullyDrawnReporterOwner;", "findViewTreeFullyDrawnReporterOwner", "activity_release"}, m5111k = 2, m5112mv = {1, 8, 0}, m5114xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@JvmName(name = "ViewTreeFullyDrawnReporterOwner")
+/* renamed from: androidx.activity.ViewTreeFullyDrawnReporterOwner, reason: from Kotlin metadata */
+/* loaded from: classes.dex */
+public final class View {
+    @JvmName(name = "get")
+    @Nullable
+    public static final FullyDrawnReporterOwner get(@NotNull android.view.View view) {
+        AbstractC5830k.m5330g(view, "<this>");
+        while (view != null) {
+            Object tag = view.getTag(C0067R.id.report_drawn);
+            FullyDrawnReporterOwner fullyDrawnReporterOwner = tag instanceof FullyDrawnReporterOwner ? (FullyDrawnReporterOwner) tag : null;
+            if (fullyDrawnReporterOwner != null) {
+                return fullyDrawnReporterOwner;
+            }
+            Object parentOrViewTreeDisjointParent = ViewTree.getParentOrViewTreeDisjointParent(view);
+            view = parentOrViewTreeDisjointParent instanceof android.view.View ? (android.view.View) parentOrViewTreeDisjointParent : null;
+        }
+        return null;
+    }
+
+    @JvmName(name = "set")
+    public static final void set(@NotNull android.view.View view, @NotNull FullyDrawnReporterOwner fullyDrawnReporterOwner) {
+        AbstractC5830k.m5330g(view, "<this>");
+        AbstractC5830k.m5330g(fullyDrawnReporterOwner, "fullyDrawnReporterOwner");
+        view.setTag(C0067R.id.report_drawn, fullyDrawnReporterOwner);
+    }
+}

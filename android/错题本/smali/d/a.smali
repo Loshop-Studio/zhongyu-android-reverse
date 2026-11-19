@@ -1,0 +1,27 @@
+.class public final synthetic Ld/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/camera/core/impl/CameraFactory$Provider;
+
+
+# virtual methods
+.method public final newInstance(Landroid/content/Context;Landroidx/camera/core/impl/CameraThreadConfig;Landroidx/camera/core/CameraSelector;J)Landroidx/camera/core/impl/CameraFactory;
+    .locals 6
+
+    .line 1
+    new-instance v0, Landroidx/camera/camera2/internal/Camera2CameraFactory;
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v3, p3
+
+    move-wide v4, p4
+
+    invoke-direct/range {v0 .. v5}, Landroidx/camera/camera2/internal/Camera2CameraFactory;-><init>(Landroid/content/Context;Landroidx/camera/core/impl/CameraThreadConfig;Landroidx/camera/core/CameraSelector;J)V
+
+    return-object v0
+.end method

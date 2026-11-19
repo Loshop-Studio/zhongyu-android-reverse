@@ -1,0 +1,57 @@
+.class public abstract Ls0/g;
+.super Ls0/a;
+.source "SourceFile"
+
+
+# virtual methods
+.method public final b(Lcom/bumptech/glide/request/a;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final d(Lcom/bumptech/glide/request/a;)V
+    .locals 2
+
+    .line 1
+    const/high16 v0, -0x80000000
+
+    .line 2
+    .line 3
+    invoke-static {v0, v0}, Lv0/k;->g(II)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    if-eqz v1, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, v0, v0}, Lcom/bumptech/glide/request/a;->m(II)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+
+    .line 13
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 14
+    .line 15
+    const-string v0, "Width and height must both be > 0 or Target#SIZE_ORIGINAL, but given width: -2147483648 and height: -2147483648, either provide dimensions in the constructor or call override()"
+
+    .line 16
+    .line 17
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    throw p1
+.end method

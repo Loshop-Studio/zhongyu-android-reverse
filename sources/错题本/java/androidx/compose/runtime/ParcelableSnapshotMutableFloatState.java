@@ -1,0 +1,63 @@
+package androidx.compose.runtime;
+
+import android.annotation.SuppressLint;
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.jvm.JvmField;
+import kotlin.jvm.internal.AbstractC5824e;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(m5109d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0003\u0018\u0000 \u00102\u00020\u00012\u00020\u0002:\u0001\u0010B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\u001f\u0010\f\u001a\u00020\u000b2\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\tH\u0016¢\u0006\u0004\b\f\u0010\rJ\u000f\u0010\u000e\u001a\u00020\tH\u0016¢\u0006\u0004\b\u000e\u0010\u000f¨\u0006\u0011"}, m5110d2 = {"Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;", "Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;", "Landroid/os/Parcelable;", "", "value", "<init>", "(F)V", "Landroid/os/Parcel;", "parcel", "", "flags", "Ld6/s;", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "Companion", "runtime_release"}, m5111k = 1, m5112mv = {1, 9, 0}, m5114xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@SuppressLint({"BanParcelableUsage"})
+/* loaded from: classes.dex */
+final class ParcelableSnapshotMutableFloatState extends SnapshotMutableFloatStateImpl implements Parcelable {
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    @NotNull
+    public static final Companion INSTANCE = new Companion(null);
+
+    @JvmField
+    @NotNull
+    public static final Parcelable.Creator<ParcelableSnapshotMutableFloatState> CREATOR = new Parcelable.Creator<ParcelableSnapshotMutableFloatState>() { // from class: androidx.compose.runtime.ParcelableSnapshotMutableFloatState$Companion$CREATOR$1
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public ParcelableSnapshotMutableFloatState createFromParcel(Parcel parcel) {
+            return new ParcelableSnapshotMutableFloatState(parcel.readFloat());
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public ParcelableSnapshotMutableFloatState[] newArray(int size) {
+            return new ParcelableSnapshotMutableFloatState[size];
+        }
+    };
+
+    @Metadata(m5109d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u001c\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048\u0006X\u0087\u0004¢\u0006\b\n\u0000\u0012\u0004\b\u0006\u0010\u0002¨\u0006\u0007"}, m5110d2 = {"Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState$Companion;", "", "()V", "CREATOR", "Landroid/os/Parcelable$Creator;", "Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;", "getCREATOR$annotations", "runtime_release"}, m5111k = 1, m5112mv = {1, 9, 0}, m5114xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+    public static final class Companion {
+        public /* synthetic */ Companion(AbstractC5824e abstractC5824e) {
+            this();
+        }
+
+        public static /* synthetic */ void getCREATOR$annotations() {
+        }
+
+        private Companion() {
+        }
+    }
+
+    public ParcelableSnapshotMutableFloatState(float f) {
+        super(f);
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(@NotNull Parcel parcel, int flags) {
+        parcel.writeFloat(getFloatValue());
+    }
+}

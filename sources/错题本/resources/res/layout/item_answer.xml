@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_9" android:textColor="@color/selector_color_answer_is_right" android:gravity="center" android:id="@id/text" android:background="@drawable/selector_single_item" android:padding="@dimen/view_4" android:layout_width="@dimen/view_41" android:layout_height="wrap_content" android:layout_margin="@dimen/view_5" />
+    </RelativeLayout>
+</RelativeLayout>

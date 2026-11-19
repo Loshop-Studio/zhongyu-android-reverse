@@ -1,0 +1,97 @@
+﻿syntax = "proto3";
+import "google/protobuf/any.proto";
+import "enums/CommandEnum.proto";
+import "enums/GraphEnum.proto";
+import "utils/RectF.proto";
+import "utils/Matrix.proto";
+import "utils/Paint.proto";
+import "utils/PointF.proto";
+import "GraphSnapshot.proto";
+import "Header.proto";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyCommand";
+
+/// 命令集合
+message CommandSource {
+    repeated CommandInfo commandInfo = 1;
+
+    message CommandInfo {
+        int64 delayTime = 1; //延迟执行多少毫秒 这里延迟指的是执行完上条命令后，延迟多少毫秒执行该条命令
+        int64 duration = 2; //持续时长
+        bool isPlay = 3;
+        CommandEnum commandEnum = 4;
+        bytes data = 5; //执行命令需要的数据
+
+        message GraphData {
+            GraphEnum graphEnum = 1;
+            string graphId = 2;
+            RectF outRect = 3;
+            string parentGraphId = 4;
+            string sourceFileName = 5; //sourceId所在的文件
+            int32 sourceId = 6; //如果GraphEnum是文件类的图元，则加载文件fileSourceId 不然则是 touchSourceRecord
+            string extras = 7; //这个是一个额外的值，我想放json进去的
+        }
+
+        message GraphRemove {
+            repeated GraphData graphData = 1;
+        }
+
+        message GraphMatrix {
+            repeated GraphData graphData = 1;
+            Matrix originMatrix = 2;
+            Matrix lastMatrix = 3;
+            string sourceFileName = 4; //sourceId所在的文件
+            int32 sourceId = 5;
+        }
+
+        message GraphChange {
+            string graphId = 1; // 图元ID
+            GraphEnum graphEnum = 2; // 图元类型
+            RectF outRect = 3; // 图元边框
+            string content = 4; // 文字内容
+            Paint paint = 5; // 文字颜色，大小
+            repeated PointF points = 6; // 多边形的点集(顺序)
+            Matrix renderMatrix = 7; // 图元的矩阵变换
+            string filePath = 8; // 文件图元的地址
+        }
+
+        message AudioStart {
+            string fileName = 1; //录音文件的名称
+            int64 duration = 2; //音频的持续时间
+            string validate = 3;
+        }
+
+        message CameraMatrix {
+            Matrix originMatrix = 1;
+            Matrix lastMatrix = 2;
+            string sourceFileName = 3; //sourceId所在的文件
+            int32 sourceId = 4;
+        }
+
+        message Camera {
+            Matrix originMatrix = 1;
+            Matrix lastMatrix = 2;
+        }
+
+        message Config {
+            int32 originBackground = 1;
+            int32 lastBackground = 2;
+            BackgroundLineConfig originBackgroundLineConfig = 3;
+            BackgroundLineConfig lastBackgroundLineConfig = 4;
+        }
+
+        message CursorMove {
+            string sourceFileName = 1; //sourceId所在的文件
+            int32 sourceId = 2;
+        }
+
+        message REBUILD {
+            // 新的快照
+            PageSnapshot.GraphSnapshot snapshot = 1;
+            // 背景色
+            int32 backgroundColor = 2;
+            // 背景线条配置
+            BackgroundLineConfig backgroundLineConfig= 3;
+        }
+    }
+}

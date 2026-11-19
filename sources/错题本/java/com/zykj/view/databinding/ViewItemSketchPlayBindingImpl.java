@@ -1,0 +1,90 @@
+package com.zykj.view.databinding;
+
+import android.util.SparseIntArray;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.SeekBar;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.Group;
+import androidx.databinding.DataBindingComponent;
+import androidx.databinding.ViewDataBinding;
+import com.zykj.view.C5280R;
+
+/* loaded from: classes3.dex */
+public class ViewItemSketchPlayBindingImpl extends ViewItemSketchPlayBinding {
+
+    @Nullable
+    private static final ViewDataBinding.IncludedLayouts sIncludes = null;
+
+    @Nullable
+    private static final SparseIntArray sViewsWithIds;
+    private long mDirtyFlags;
+
+    @NonNull
+    private final ConstraintLayout mboundView0;
+
+    static {
+        SparseIntArray sparseIntArray = new SparseIntArray();
+        sViewsWithIds = sparseIntArray;
+        sparseIntArray.put(C5280R.id.view_bg, 1);
+        sparseIntArray.put(C5280R.id.iv_record, 2);
+        sparseIntArray.put(C5280R.id.tv_time, 3);
+        sparseIntArray.put(C5280R.id.seek_bar, 4);
+        sparseIntArray.put(C5280R.id.tv_speed_rate, 5);
+        sparseIntArray.put(C5280R.id.iv_fullscreen, 6);
+        sparseIntArray.put(C5280R.id.group_seek_bar, 7);
+    }
+
+    public ViewItemSketchPlayBindingImpl(@Nullable DataBindingComponent dataBindingComponent, @NonNull View view) {
+        this(dataBindingComponent, view, ViewDataBinding.mapBindings(dataBindingComponent, view, 8, sIncludes, sViewsWithIds));
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public void executeBindings() {
+        synchronized (this) {
+            this.mDirtyFlags = 0L;
+        }
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public boolean hasPendingBindings() {
+        synchronized (this) {
+            try {
+                return this.mDirtyFlags != 0;
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public void invalidateAll() {
+        synchronized (this) {
+            this.mDirtyFlags = 1L;
+        }
+        requestRebind();
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public boolean onFieldChange(int i, Object obj, int i8) {
+        return false;
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public boolean setVariable(int i, @Nullable Object obj) {
+        return true;
+    }
+
+    private ViewItemSketchPlayBindingImpl(DataBindingComponent dataBindingComponent, View view, Object[] objArr) {
+        super(dataBindingComponent, view, 0, (Group) objArr[7], (ImageView) objArr[6], (ImageView) objArr[2], (SeekBar) objArr[4], (TextView) objArr[5], (TextView) objArr[3], (View) objArr[1]);
+        this.mDirtyFlags = -1L;
+        ConstraintLayout constraintLayout = (ConstraintLayout) objArr[0];
+        this.mboundView0 = constraintLayout;
+        constraintLayout.setTag(null);
+        setRootTag(view);
+        invalidateAll();
+    }
+}

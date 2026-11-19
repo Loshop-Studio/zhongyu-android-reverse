@@ -1,0 +1,133 @@
+package androidx.compose.foundation.text;
+
+import androidx.compose.runtime.Stable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.jvm.internal.AbstractC5824e;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p152r6.InterfaceC6471c;
+
+@Stable
+@Metadata(m5109d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\f\b\u0007\u0018\u0000 \u001d2\u00020\u0001:\u0001\u001dBµ\u0001\u0012\u001b\b\u0002\u0010\u0006\u001a\u0015\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0002\b\u0005\u0012\u001b\b\u0002\u0010\u0007\u001a\u0015\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0002\b\u0005\u0012\u001b\b\u0002\u0010\b\u001a\u0015\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0002\b\u0005\u0012\u001b\b\u0002\u0010\t\u001a\u0015\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0002\b\u0005\u0012\u001b\b\u0002\u0010\n\u001a\u0015\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0002\b\u0005\u0012\u001b\b\u0002\u0010\u000b\u001a\u0015\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0002\b\u0005¢\u0006\u0004\b\f\u0010\rJ\u001a\u0010\u0010\u001a\u00020\u000f2\b\u0010\u000e\u001a\u0004\u0018\u00010\u0001H\u0096\u0002¢\u0006\u0004\b\u0010\u0010\u0011J\u000f\u0010\u0013\u001a\u00020\u0012H\u0016¢\u0006\u0004\b\u0013\u0010\u0014R*\u0010\u0006\u001a\u0015\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0002\b\u00058\u0006¢\u0006\f\n\u0004\b\u0006\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017R*\u0010\u0007\u001a\u0015\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0002\b\u00058\u0006¢\u0006\f\n\u0004\b\u0007\u0010\u0015\u001a\u0004\b\u0018\u0010\u0017R*\u0010\b\u001a\u0015\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0002\b\u00058\u0006¢\u0006\f\n\u0004\b\b\u0010\u0015\u001a\u0004\b\u0019\u0010\u0017R*\u0010\t\u001a\u0015\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0002\b\u00058\u0006¢\u0006\f\n\u0004\b\t\u0010\u0015\u001a\u0004\b\u001a\u0010\u0017R*\u0010\n\u001a\u0015\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0002\b\u00058\u0006¢\u0006\f\n\u0004\b\n\u0010\u0015\u001a\u0004\b\u001b\u0010\u0017R*\u0010\u000b\u001a\u0015\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0002\b\u00058\u0006¢\u0006\f\n\u0004\b\u000b\u0010\u0015\u001a\u0004\b\u001c\u0010\u0017¨\u0006\u001e"}, m5110d2 = {"Landroidx/compose/foundation/text/KeyboardActions;", "", "Lkotlin/Function1;", "Landroidx/compose/foundation/text/KeyboardActionScope;", "Ld6/s;", "Lkotlin/ExtensionFunctionType;", "onDone", "onGo", "onNext", "onPrevious", "onSearch", "onSend", "<init>", "(Lr6/c;Lr6/c;Lr6/c;Lr6/c;Lr6/c;Lr6/c;)V", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "hashCode", "()I", "Lr6/c;", "getOnDone", "()Lr6/c;", "getOnGo", "getOnNext", "getOnPrevious", "getOnSearch", "getOnSend", "Companion", "foundation_release"}, m5111k = 1, m5112mv = {1, 9, 0}, m5114xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes.dex */
+public final class KeyboardActions {
+    public static final int $stable = 0;
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    @NotNull
+    public static final Companion INSTANCE = new Companion(null);
+
+    @NotNull
+    private static final KeyboardActions Default = new KeyboardActions(null, null, null, null, null, null, 63, null);
+
+    @Nullable
+    private final InterfaceC6471c onDone;
+
+    @Nullable
+    private final InterfaceC6471c onGo;
+
+    @Nullable
+    private final InterfaceC6471c onNext;
+
+    @Nullable
+    private final InterfaceC6471c onPrevious;
+
+    @Nullable
+    private final InterfaceC6471c onSearch;
+
+    @Nullable
+    private final InterfaceC6471c onSend;
+
+    @Metadata(m5109d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u001c\u0010\u0003\u001a\u00020\u00048\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0005\u0010\u0002\u001a\u0004\b\u0006\u0010\u0007¨\u0006\b"}, m5110d2 = {"Landroidx/compose/foundation/text/KeyboardActions$Companion;", "", "()V", "Default", "Landroidx/compose/foundation/text/KeyboardActions;", "getDefault$annotations", "getDefault", "()Landroidx/compose/foundation/text/KeyboardActions;", "foundation_release"}, m5111k = 1, m5112mv = {1, 9, 0}, m5114xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+    public static final class Companion {
+        public /* synthetic */ Companion(AbstractC5824e abstractC5824e) {
+            this();
+        }
+
+        @Stable
+        public static /* synthetic */ void getDefault$annotations() {
+        }
+
+        @NotNull
+        public final KeyboardActions getDefault() {
+            return KeyboardActions.Default;
+        }
+
+        private Companion() {
+        }
+    }
+
+    public KeyboardActions() {
+        this(null, null, null, null, null, null, 63, null);
+    }
+
+    public boolean equals(@Nullable Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof KeyboardActions)) {
+            return false;
+        }
+        KeyboardActions keyboardActions = (KeyboardActions) other;
+        return this.onDone == keyboardActions.onDone && this.onGo == keyboardActions.onGo && this.onNext == keyboardActions.onNext && this.onPrevious == keyboardActions.onPrevious && this.onSearch == keyboardActions.onSearch && this.onSend == keyboardActions.onSend;
+    }
+
+    @Nullable
+    public final InterfaceC6471c getOnDone() {
+        return this.onDone;
+    }
+
+    @Nullable
+    public final InterfaceC6471c getOnGo() {
+        return this.onGo;
+    }
+
+    @Nullable
+    public final InterfaceC6471c getOnNext() {
+        return this.onNext;
+    }
+
+    @Nullable
+    public final InterfaceC6471c getOnPrevious() {
+        return this.onPrevious;
+    }
+
+    @Nullable
+    public final InterfaceC6471c getOnSearch() {
+        return this.onSearch;
+    }
+
+    @Nullable
+    public final InterfaceC6471c getOnSend() {
+        return this.onSend;
+    }
+
+    public int hashCode() {
+        InterfaceC6471c interfaceC6471c = this.onDone;
+        int iHashCode = (interfaceC6471c != null ? interfaceC6471c.hashCode() : 0) * 31;
+        InterfaceC6471c interfaceC6471c2 = this.onGo;
+        int iHashCode2 = (iHashCode + (interfaceC6471c2 != null ? interfaceC6471c2.hashCode() : 0)) * 31;
+        InterfaceC6471c interfaceC6471c3 = this.onNext;
+        int iHashCode3 = (iHashCode2 + (interfaceC6471c3 != null ? interfaceC6471c3.hashCode() : 0)) * 31;
+        InterfaceC6471c interfaceC6471c4 = this.onPrevious;
+        int iHashCode4 = (iHashCode3 + (interfaceC6471c4 != null ? interfaceC6471c4.hashCode() : 0)) * 31;
+        InterfaceC6471c interfaceC6471c5 = this.onSearch;
+        int iHashCode5 = (iHashCode4 + (interfaceC6471c5 != null ? interfaceC6471c5.hashCode() : 0)) * 31;
+        InterfaceC6471c interfaceC6471c6 = this.onSend;
+        return iHashCode5 + (interfaceC6471c6 != null ? interfaceC6471c6.hashCode() : 0);
+    }
+
+    public KeyboardActions(@Nullable InterfaceC6471c interfaceC6471c, @Nullable InterfaceC6471c interfaceC6471c2, @Nullable InterfaceC6471c interfaceC6471c3, @Nullable InterfaceC6471c interfaceC6471c4, @Nullable InterfaceC6471c interfaceC6471c5, @Nullable InterfaceC6471c interfaceC6471c6) {
+        this.onDone = interfaceC6471c;
+        this.onGo = interfaceC6471c2;
+        this.onNext = interfaceC6471c3;
+        this.onPrevious = interfaceC6471c4;
+        this.onSearch = interfaceC6471c5;
+        this.onSend = interfaceC6471c6;
+    }
+
+    public /* synthetic */ KeyboardActions(InterfaceC6471c interfaceC6471c, InterfaceC6471c interfaceC6471c2, InterfaceC6471c interfaceC6471c3, InterfaceC6471c interfaceC6471c4, InterfaceC6471c interfaceC6471c5, InterfaceC6471c interfaceC6471c6, int i, AbstractC5824e abstractC5824e) {
+        this((i & 1) != 0 ? null : interfaceC6471c, (i & 2) != 0 ? null : interfaceC6471c2, (i & 4) != 0 ? null : interfaceC6471c3, (i & 8) != 0 ? null : interfaceC6471c4, (i & 16) != 0 ? null : interfaceC6471c5, (i & 32) != 0 ? null : interfaceC6471c6);
+    }
+}

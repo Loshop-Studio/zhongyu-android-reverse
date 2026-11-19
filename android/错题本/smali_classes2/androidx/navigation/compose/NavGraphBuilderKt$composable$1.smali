@@ -1,0 +1,139 @@
+.class final Landroidx/navigation/compose/NavGraphBuilderKt$composable$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lr6/g;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/navigation/compose/NavGraphBuilderKt;->composable(Landroidx/navigation/NavGraphBuilder;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Lr6/f;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lr6/g;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic $content:Lr6/f;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lr6/f;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lr6/f;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lr6/f;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Landroidx/navigation/compose/NavGraphBuilderKt$composable$1;->$content:Lr6/f;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Landroidx/compose/animation/AnimatedContentScope;
+
+    check-cast p2, Landroidx/navigation/NavBackStackEntry;
+
+    check-cast p3, Landroidx/compose/runtime/Composer;
+
+    check-cast p4, Ljava/lang/Number;
+
+    invoke-virtual {p4}, Ljava/lang/Number;->intValue()I
+
+    move-result p4
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Landroidx/navigation/compose/NavGraphBuilderKt$composable$1;->invoke(Landroidx/compose/animation/AnimatedContentScope;Landroidx/navigation/NavBackStackEntry;Landroidx/compose/runtime/Composer;I)V
+
+    sget-object p1, Ld6/s;->a:Ld6/s;
+
+    return-object p1
+.end method
+
+.method public final invoke(Landroidx/compose/animation/AnimatedContentScope;Landroidx/navigation/NavBackStackEntry;Landroidx/compose/runtime/Composer;I)V
+    .locals 2
+    .annotation build Landroidx/compose/runtime/Composable;
+    .end annotation
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, -0x1
+
+    const-string v0, "androidx.navigation.compose.composable.<anonymous> (NavGraphBuilder.kt:55)"
+
+    const v1, -0x5a6902e9
+
+    invoke-static {v1, p4, p1, v0}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    .line 2
+    :cond_0
+    iget-object p1, p0, Landroidx/navigation/compose/NavGraphBuilderKt$composable$1;->$content:Lr6/f;
+
+    shr-int/lit8 p4, p4, 0x3
+
+    and-int/lit8 p4, p4, 0xe
+
+    invoke-static {p4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p4
+
+    invoke-interface {p1, p2, p3, p4}, Lr6/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
+
+    :cond_1
+    return-void
+.end method

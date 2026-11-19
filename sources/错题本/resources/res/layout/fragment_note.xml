@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/fragment_note_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:paddingLeft="@dimen/view_4" android:paddingTop="@dimen/view_10" android:paddingRight="@dimen/view_4" android:paddingBottom="@dimen/view_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/view_4">
+        <TextView android:textSize="@dimen/text_7" android:textColor="#4f5561" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/board_note" android:drawablePadding="@dimen/view_4" app:drawableStartCompat="@drawable/indicator_blue" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_note_thumbnail" android:background="@drawable/bg_gray_stroke" android:padding="1.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/view_174" android:layout_marginTop="@dimen/view_5" />
+        <TextView android:textSize="@dimen/text_7" android:textColor="#4f5561" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_10" android:text="@string/image_note" android:drawablePadding="@dimen/view_4" app:drawableStartCompat="@drawable/indicator_blue" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="@dimen/view_54" android:layout_marginTop="@dimen/view_5" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</ScrollView>

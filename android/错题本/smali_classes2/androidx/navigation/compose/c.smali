@@ -1,0 +1,48 @@
+.class public final synthetic Landroidx/navigation/compose/c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/lifecycle/LifecycleEventObserver;
+
+
+# instance fields
+.field public final synthetic a:Z
+
+.field public final synthetic b:Ljava/util/List;
+
+.field public final synthetic c:Landroidx/navigation/NavBackStackEntry;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/navigation/NavBackStackEntry;Ljava/util/List;Z)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-boolean p3, p0, Landroidx/navigation/compose/c;->a:Z
+
+    iput-object p2, p0, Landroidx/navigation/compose/c;->b:Ljava/util/List;
+
+    iput-object p1, p0, Landroidx/navigation/compose/c;->c:Landroidx/navigation/NavBackStackEntry;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onStateChanged(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Landroidx/navigation/compose/c;->b:Ljava/util/List;
+
+    iget-object v1, p0, Landroidx/navigation/compose/c;->c:Landroidx/navigation/NavBackStackEntry;
+
+    iget-boolean v2, p0, Landroidx/navigation/compose/c;->a:Z
+
+    invoke-static {v2, v0, v1, p1, p2}, Landroidx/navigation/compose/DialogHostKt;->c(ZLjava/util/List;Landroidx/navigation/NavBackStackEntry;Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
+
+    return-void
+.end method

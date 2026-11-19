@@ -1,0 +1,40 @@
+.class interface abstract Landroidx/camera/core/streamsharing/StreamSharing$Control;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/camera/core/streamsharing/StreamSharing;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Control"
+.end annotation
+
+
+# virtual methods
+.method public abstract jpegSnapshot(II)Le1/a;
+    .param p1    # I
+        .annotation build Landroidx/annotation/IntRange;
+            from = 0x0L
+            to = 0x64L
+        .end annotation
+    .end param
+    .param p2    # I
+        .annotation build Landroidx/annotation/IntRange;
+            from = 0x0L
+            to = 0x167L
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II)",
+            "Le1/a;"
+        }
+    .end annotation
+.end method

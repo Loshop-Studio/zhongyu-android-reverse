@@ -1,0 +1,75 @@
+.class Lcom/xuexiang/xui/widget/progress/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public a:F
+
+.field public b:F
+
+
+# direct methods
+.method public constructor <init>(F)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput p1, p0, Lcom/xuexiang/xui/widget/progress/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;->a:F
+
+    const p1, 0x3dcccccd    # 0.1f
+
+    .line 3
+    iput p1, p0, Lcom/xuexiang/xui/widget/progress/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;->b:F
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/xuexiang/xui/widget/progress/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;)V
+    .locals 1
+
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    iget v0, p1, Lcom/xuexiang/xui/widget/progress/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;->a:F
+
+    iput v0, p0, Lcom/xuexiang/xui/widget/progress/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;->a:F
+
+    .line 6
+    iget p1, p1, Lcom/xuexiang/xui/widget/progress/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;->b:F
+
+    iput p1, p0, Lcom/xuexiang/xui/widget/progress/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;->b:F
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public setScaleX(F)V
+    .locals 0
+    .annotation build Landroidx/annotation/Keep;
+    .end annotation
+
+    .line 1
+    iput p1, p0, Lcom/xuexiang/xui/widget/progress/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;->b:F
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setTranslateX(F)V
+    .locals 0
+    .annotation build Landroidx/annotation/Keep;
+    .end annotation
+
+    .line 1
+    iput p1, p0, Lcom/xuexiang/xui/widget/progress/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;->a:F
+
+    .line 2
+    .line 3
+    return-void
+.end method

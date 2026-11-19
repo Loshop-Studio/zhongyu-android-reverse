@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:tag="layout/view_item_sketch_record_audio_0" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/white_frame_border_top_right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_record" android:padding="@dimen/view_2" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_icon_record_resume" android:scaleType="center" />
+        <View android:background="#ececec" android:layout_width="1.0dp" android:layout_height="@dimen/view_10" />
+        <ImageView android:id="@id/iv_audio" android:padding="@dimen/view_4" android:layout_width="@dimen/view_18" android:layout_height="@dimen/view_18" android:src="@drawable/view_selector_icon_audio" android:scaleType="center" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_record" android:background="@drawable/white_frame_border_top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/view_5">
+        <TextView android:textSize="@dimen/text_8" android:textColor="#555555" android:gravity="center" android:id="@id/tv_progress" android:layout_width="@dimen/view_36" android:layout_height="match_parent" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:id="@id/ll_crop" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <View android:layout_gravity="center_vertical" android:background="#ececec" android:layout_width="1.0dp" android:layout_height="@dimen/view_10" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/view_14" android:layout_height="@dimen/view_14" android:src="@drawable/view_icon_record_crop" android:layout_marginStart="@dimen/view_5" />
+            <TextView android:textSize="@dimen/text_8" android:textColor="#555555" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/crop" android:layout_marginStart="@dimen/view_2" android:layout_marginEnd="@dimen/view_5" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_option" android:background="@drawable/white_frame_border_top" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/view_5">
+        <androidx.appcompat.widget.LinearLayoutCompat android:id="@id/ll_preview" android:paddingLeft="@dimen/view_5" android:paddingRight="@dimen/view_5" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingHorizontal="@dimen/view_5">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/view_14" android:layout_height="@dimen/view_14" android:src="@drawable/view_icon_record_preview" />
+            <TextView android:textSize="@dimen/text_8" android:textColor="#555555" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/preview" android:layout_marginStart="@dimen/view_2" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View android:background="#ececec" android:layout_width="1.0dp" android:layout_height="@dimen/view_10" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:id="@id/ll_upload" android:paddingLeft="@dimen/view_5" android:paddingRight="@dimen/view_5" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingHorizontal="@dimen/view_5">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/view_14" android:layout_height="@dimen/view_14" android:src="@drawable/view_icon_record_commit" />
+            <TextView android:textSize="@dimen/text_8" android:textColor="#4797f3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/submit" android:layout_marginStart="@dimen/view_2" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:id="@id/ll_delete_draft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <View android:layout_gravity="center_vertical" android:background="#ececec" android:layout_width="1.0dp" android:layout_height="@dimen/view_10" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/view_14" android:layout_height="@dimen/view_14" android:src="@drawable/view_icon_record_draft" android:layout_marginStart="@dimen/view_5" />
+            <TextView android:textSize="@dimen/text_8" android:textColor="#555555" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/delete_draft" android:layout_marginStart="@dimen/view_2" android:layout_marginEnd="@dimen/view_5" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

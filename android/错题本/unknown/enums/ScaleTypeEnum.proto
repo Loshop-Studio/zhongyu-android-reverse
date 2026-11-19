@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyScaleTypeEnum";
+
+enum ScaleTypeEnum {
+    MODE_MAX_WIDTH = 0; //最大宽度为准
+    MODE_MAX_HEIGHT = 1; //高度为准
+    MODE_MAX_VALUE = 2; //取最大值
+    MODE_MIN_VALUE = 3; //取最小值
+    MODE_ADAPTER = 4; //自适应,屏幕一半
+    MODE_ADAPTER_8 = 5; //自适应 0.8
+    MODE_MATRIX_HEIGHT = 6; //平铺 高度不超过屏幕高度
+}

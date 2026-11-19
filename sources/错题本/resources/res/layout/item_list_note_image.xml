@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_list_note_image_0" android:layout_width="@dimen/view_64" android:layout_height="@dimen/view_54" android:paddingEnd="@dimen/view_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_image" android:background="@mipmap/ic_add_pic" android:padding="1.0dp" android:layout_width="@dimen/view_54" android:layout_height="@dimen/view_54" />
+</FrameLayout>

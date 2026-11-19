@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_revised_answer_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/view_6">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:padding="@dimen/view_5" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_7" android:textColor="#4f5561" android:id="@id/labelText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/revised_mistake" android:drawablePadding="@dimen/view_5" android:drawableStart="@drawable/indicator_blue" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

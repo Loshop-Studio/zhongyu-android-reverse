@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:tag="layout/activity_mistake_list_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/rl_title" android:background="#4797f3" android:layout_width="match_parent" android:layout_height="@dimen/view_23">
+            <ImageView android:id="@id/iv_back" android:layout_width="@dimen/view_23" android:layout_height="@dimen/view_23" android:src="@mipmap/ic_back" android:scaleType="centerInside" />
+            <TextView android:textSize="@dimen/text_8" android:textColor="#ffffff" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="科目" android:layout_centerVertical="true" android:layout_toEndOf="@id/iv_back" />
+            <TextView android:textSize="@dimen/text_7" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@id/tv_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter" android:layout_centerVertical="true" android:drawableStart="@mipmap/ic_filter" android:layout_marginEnd="@dimen/view_13" android:layout_alignParentEnd="true" />
+            <TextView android:textSize="@dimen/text_7" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@id/tv_manage" android:padding="@dimen/view_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manage" android:layout_centerVertical="true" android:drawableStart="@mipmap/ic_manage" android:layout_marginEnd="@dimen/view_9" android:layout_toStartOf="@id/tv_filter" />
+            <TextView android:textSize="@dimen/text_7" android:textColor="@color/selector_color_half_white" android:gravity="center_vertical" android:id="@id/tv_practice" android:padding="@dimen/view_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/practice" android:layout_centerVertical="true" android:drawableStart="@drawable/selector_icon_practice" android:layout_marginEnd="@dimen/view_9" android:layout_toStartOf="@id/tv_manage" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_buttons" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/view_5" android:layout_alignParentEnd="true">
+                <LinearLayout android:gravity="center" android:id="@id/ll_batch_delete" android:background="@drawable/selector_corner_white_stroke" android:layout_width="@dimen/view_30" android:layout_height="@dimen/view_14">
+                    <ImageView android:id="@id/iv_batch_delete" android:layout_width="@dimen/view_7" android:layout_height="@dimen/view_7" android:src="@drawable/selector_bg_delete" android:scaleType="fitXY" />
+                    <TextView android:textSize="@dimen/text_6" android:textColor="@color/selector_color_half" android:id="@id/tv_batch_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" android:layout_marginStart="@dimen/view_2" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/ll_batch_tag" android:background="@drawable/selector_corner_white_stroke" android:layout_width="@dimen/view_30" android:layout_height="@dimen/view_14" android:layout_marginStart="@dimen/view_5">
+                    <ImageView android:id="@id/iv_batch_tag" android:layout_width="@dimen/view_7" android:layout_height="@dimen/view_7" android:src="@drawable/selector_bg_tag" android:scaleType="fitXY" />
+                    <TextView android:textSize="@dimen/text_6" android:textColor="@color/selector_color_half" android:id="@id/tv_batch_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tag" android:layout_marginStart="@dimen/view_2" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/ll_cancel" android:background="@drawable/selector_corner_white_stroke" android:layout_width="@dimen/view_30" android:layout_height="@dimen/view_14" android:layout_marginStart="@dimen/view_5">
+                    <ImageView android:layout_width="@dimen/view_7" android:layout_height="@dimen/view_7" android:src="@mipmap/ic_cancel" android:scaleType="fitXY" />
+                    <TextView android:textSize="@dimen/text_6" android:textColor="@color/selector_color_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_marginStart="@dimen/view_3" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rl_title">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/view_10" android:paddingEnd="@dimen/view_10" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="3" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pic_empty2" />
+            <TextView android:textSize="@dimen/text_8" android:textColor="@color/colorPrimary" android:layout_gravity="center_horizontal" android:id="@id/tv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_18" android:text="@string/list_empty" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:layout_gravity="end" android:id="@id/include_edit" android:layout_width="@dimen/view_288" android:layout_height="match_parent" layout="@layout/include_mistake_detail_end" />
+</androidx.drawerlayout.widget.DrawerLayout>

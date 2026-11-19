@@ -1,0 +1,56 @@
+package android.view.compose;
+
+import android.view.result.ActivityResultLauncher;
+import androidx.compose.runtime.internal.StabilityInferred;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.app.ActivityOptionsCompat;
+import kotlin.Metadata;
+import org.jetbrains.annotations.Nullable;
+import p045d6.C5443s;
+
+@StabilityInferred(parameters = 0)
+@Metadata(m5109d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0000\u0018\u0000*\u0004\b\u0000\u0010\u00012\u00020\u0002B\u0007¢\u0006\u0004\b\u0003\u0010\u0004J\u001f\u0010\t\u001a\u00020\b2\u0006\u0010\u0005\u001a\u00028\u00002\b\u0010\u0007\u001a\u0004\u0018\u00010\u0006¢\u0006\u0004\b\t\u0010\nJ\r\u0010\u000b\u001a\u00020\b¢\u0006\u0004\b\u000b\u0010\u0004R*\u0010\r\u001a\n\u0012\u0004\u0012\u00028\u0000\u0018\u00010\f8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\r\u0010\u000e\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012¨\u0006\u0013"}, m5110d2 = {"Landroidx/activity/compose/ActivityResultLauncherHolder;", "I", "", "<init>", "()V", "input", "Landroidx/core/app/ActivityOptionsCompat;", "options", "Ld6/s;", "launch", "(Ljava/lang/Object;Landroidx/core/app/ActivityOptionsCompat;)V", "unregister", "Landroidx/activity/result/ActivityResultLauncher;", "launcher", "Landroidx/activity/result/ActivityResultLauncher;", "getLauncher", "()Landroidx/activity/result/ActivityResultLauncher;", "setLauncher", "(Landroidx/activity/result/ActivityResultLauncher;)V", "activity-compose_release"}, m5111k = 1, m5112mv = {1, 8, 0}, m5114xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes.dex */
+public final class ActivityResultLauncherHolder<I> {
+    public static final int $stable = 8;
+
+    @Nullable
+    private ActivityResultLauncher<I> launcher;
+
+    @Nullable
+    public final ActivityResultLauncher<I> getLauncher() {
+        return this.launcher;
+    }
+
+    public final void launch(I input, @Nullable ActivityOptionsCompat options) {
+        C5443s c5443s;
+        ActivityResultLauncher<I> activityResultLauncher = this.launcher;
+        if (activityResultLauncher != null) {
+            activityResultLauncher.launch(input, options);
+            c5443s = C5443s.f8405a;
+        } else {
+            c5443s = null;
+        }
+        if (c5443s == null) {
+            throw new IllegalStateException("Launcher has not been initialized");
+        }
+    }
+
+    public final void setLauncher(@Nullable ActivityResultLauncher<I> activityResultLauncher) {
+        this.launcher = activityResultLauncher;
+    }
+
+    public final void unregister() {
+        C5443s c5443s;
+        ActivityResultLauncher<I> activityResultLauncher = this.launcher;
+        if (activityResultLauncher != null) {
+            activityResultLauncher.unregister();
+            c5443s = C5443s.f8405a;
+        } else {
+            c5443s = null;
+        }
+        if (c5443s == null) {
+            throw new IllegalStateException("Launcher has not been initialized");
+        }
+    }
+}

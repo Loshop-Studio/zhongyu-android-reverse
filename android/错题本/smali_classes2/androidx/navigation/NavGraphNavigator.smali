@@ -1,0 +1,725 @@
+.class public Landroidx/navigation/NavGraphNavigator;
+.super Landroidx/navigation/Navigator;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Landroidx/navigation/Navigator$Name;
+    value = "navigation"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/navigation/NavGraphNavigator$Companion;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroidx/navigation/Navigator<",
+        "Landroidx/navigation/NavGraph;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010 \n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0017\u0018\u0000 \u001a2\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001aB\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0005\u0010\u0006J+\u0010\u000e\u001a\u00020\r2\u0006\u0010\u0008\u001a\u00020\u00072\u0008\u0010\n\u001a\u0004\u0018\u00010\t2\u0008\u0010\u000c\u001a\u0004\u0018\u00010\u000bH\u0002\u00a2\u0006\u0004\u0008\u000e\u0010\u000fJ\u000f\u0010\u0010\u001a\u00020\u0002H\u0016\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J1\u0010\u000e\u001a\u00020\r2\u000c\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u00070\u00122\u0008\u0010\n\u001a\u0004\u0018\u00010\t2\u0008\u0010\u000c\u001a\u0004\u0018\u00010\u000bH\u0016\u00a2\u0006\u0004\u0008\u000e\u0010\u0014R\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0004\u0010\u0015R\u001d\u0010\u0019\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00070\u00120\u00168F\u00a2\u0006\u0006\u001a\u0004\u0008\u0017\u0010\u0018\u00a8\u0006\u001b"
+    }
+    d2 = {
+        "Landroidx/navigation/NavGraphNavigator;",
+        "Landroidx/navigation/Navigator;",
+        "Landroidx/navigation/NavGraph;",
+        "Landroidx/navigation/NavigatorProvider;",
+        "navigatorProvider",
+        "<init>",
+        "(Landroidx/navigation/NavigatorProvider;)V",
+        "Landroidx/navigation/NavBackStackEntry;",
+        "entry",
+        "Landroidx/navigation/NavOptions;",
+        "navOptions",
+        "Landroidx/navigation/Navigator$Extras;",
+        "navigatorExtras",
+        "Ld6/s;",
+        "navigate",
+        "(Landroidx/navigation/NavBackStackEntry;Landroidx/navigation/NavOptions;Landroidx/navigation/Navigator$Extras;)V",
+        "createDestination",
+        "()Landroidx/navigation/NavGraph;",
+        "",
+        "entries",
+        "(Ljava/util/List;Landroidx/navigation/NavOptions;Landroidx/navigation/Navigator$Extras;)V",
+        "Landroidx/navigation/NavigatorProvider;",
+        "Lkotlinx/coroutines/flow/m0;",
+        "getBackStack",
+        "()Lkotlinx/coroutines/flow/m0;",
+        "backStack",
+        "Companion",
+        "navigation-common_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nNavGraphNavigator.kt\nKotlin\n*S Kotlin\n*F\n+ 1 NavGraphNavigator.kt\nandroidx/navigation/NavGraphNavigator\n+ 2 SavedState.kt\nandroidx/savedstate/SavedStateKt__SavedStateKt\n+ 3 SavedState.android.kt\nandroidx/savedstate/SavedStateKt__SavedState_androidKt\n+ 4 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 5 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n+ 6 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,134:1\n90#2:135\n106#2:156\n90#2:158\n27#3:136\n46#3:137\n32#3,4:138\n31#3,7:148\n126#4:142\n153#4,3:143\n37#5,2:146\n1#6:155\n1#6:157\n*S KotlinDebug\n*F\n+ 1 NavGraphNavigator.kt\nandroidx/navigation/NavGraphNavigator\n*L\n93#1:135\n94#1:156\n107#1:158\n94#1:136\n94#1:137\n94#1:138,4\n94#1:148,7\n94#1:142\n94#1:143,3\n94#1:146,2\n94#1:155\n*E\n"
+    }
+.end annotation
+
+
+# static fields
+.field public static final Companion:Landroidx/navigation/NavGraphNavigator$Companion;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public static final NAME:Ljava/lang/String; = "navigation"
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# instance fields
+.field private final navigatorProvider:Landroidx/navigation/NavigatorProvider;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Landroidx/navigation/NavGraphNavigator$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Landroidx/navigation/NavGraphNavigator$Companion;-><init>(Lkotlin/jvm/internal/e;)V
+
+    sput-object v0, Landroidx/navigation/NavGraphNavigator;->Companion:Landroidx/navigation/NavGraphNavigator$Companion;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/navigation/NavigatorProvider;)V
+    .locals 1
+    .param p1    # Landroidx/navigation/NavigatorProvider;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    const-string v0, "navigatorProvider"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "navigation"
+
+    .line 7
+    .line 8
+    invoke-direct {p0, v0}, Landroidx/navigation/Navigator;-><init>(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object p1, p0, Landroidx/navigation/NavGraphNavigator;->navigatorProvider:Landroidx/navigation/NavigatorProvider;
+
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public static synthetic c(Lkotlin/jvm/internal/Ref$ObjectRef;Ljava/lang/String;)Z
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/navigation/NavGraphNavigator;->navigate$lambda$6(Lkotlin/jvm/internal/Ref$ObjectRef;Ljava/lang/String;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private final navigate(Landroidx/navigation/NavBackStackEntry;Landroidx/navigation/NavOptions;Landroidx/navigation/Navigator$Extras;)V
+    .locals 8
+
+    .line 3
+    invoke-virtual {p1}, Landroidx/navigation/NavBackStackEntry;->getDestination()Landroidx/navigation/NavDestination;
+
+    move-result-object v0
+
+    const-string v1, "null cannot be cast to non-null type androidx.navigation.NavGraph"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/k;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroidx/navigation/NavGraph;
+
+    .line 4
+    new-instance v1, Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    invoke-direct {v1}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
+
+    invoke-virtual {p1}, Landroidx/navigation/NavBackStackEntry;->getArguments()Landroid/os/Bundle;
+
+    move-result-object p1
+
+    iput-object p1, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    .line 5
+    invoke-virtual {v0}, Landroidx/navigation/NavGraph;->getStartDestinationId()I
+
+    move-result p1
+
+    .line 6
+    invoke-virtual {v0}, Landroidx/navigation/NavGraph;->getStartDestinationRoute()Ljava/lang/String;
+
+    move-result-object v2
+
+    if-nez p1, :cond_1
+
+    if-eqz v2, :cond_0
+
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    const-string p2, "no start destination defined via app:startDestination for "
+
+    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Landroidx/navigation/NavGraph;->getDisplayName()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 8
+    new-instance p2, Ljava/lang/IllegalStateException;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+
+    :cond_1
+    :goto_0
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_2
+
+    .line 9
+    invoke-virtual {v0, v2, v3}, Landroidx/navigation/NavGraph;->findNode(Ljava/lang/String;Z)Landroidx/navigation/NavDestination;
+
+    move-result-object p1
+
+    goto :goto_1
+
+    .line 10
+    :cond_2
+    invoke-virtual {v0}, Landroidx/navigation/NavGraph;->getNodes()Landroidx/collection/SparseArrayCompat;
+
+    move-result-object v4
+
+    invoke-virtual {v4, p1}, Landroidx/collection/SparseArrayCompat;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/navigation/NavDestination;
+
+    :goto_1
+    if-eqz p1, :cond_a
+
+    if-eqz v2, :cond_9
+
+    .line 11
+    invoke-virtual {p1}, Landroidx/navigation/NavDestination;->getRoute()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 12
+    invoke-virtual {v2, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_7
+
+    .line 13
+    invoke-virtual {p1, v2}, Landroidx/navigation/NavDestination;->matchRoute(Ljava/lang/String;)Landroidx/navigation/NavDestination$DeepLinkMatch;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {v0}, Landroidx/navigation/NavDestination$DeepLinkMatch;->getMatchingArgs()Landroid/os/Bundle;
+
+    move-result-object v0
+
+    goto :goto_2
+
+    :cond_3
+    const/4 v0, 0x0
+
+    :goto_2
+    if-eqz v0, :cond_7
+
+    .line 14
+    invoke-static {v0}, Landroidx/savedstate/SavedStateReader;->constructor-impl(Landroid/os/Bundle;)Landroid/os/Bundle;
+
+    move-result-object v2
+
+    .line 15
+    invoke-static {v2}, Landroidx/savedstate/SavedStateReader;->isEmpty-impl(Landroid/os/Bundle;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_7
+
+    .line 16
+    invoke-static {}, Lkotlin/collections/e0;->A()Ljava/util/Map;
+
+    move-result-object v2
+
+    .line 17
+    invoke-interface {v2}, Ljava/util/Map;->isEmpty()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    .line 18
+    new-array v2, v3, [Lkotlin/Pair;
+
+    goto :goto_4
+
+    .line 19
+    :cond_4
+    new-instance v4, Ljava/util/ArrayList;
+
+    invoke-interface {v2}, Ljava/util/Map;->size()I
+
+    move-result v5
+
+    invoke-direct {v4, v5}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 20
+    invoke-interface {v2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_3
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_5
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/util/Map$Entry;
+
+    .line 21
+    invoke-interface {v5}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/lang/String;
+
+    invoke-interface {v5}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 22
+    new-instance v7, Lkotlin/Pair;
+
+    invoke-direct {v7, v6, v5}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 23
+    invoke-virtual {v4, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_3
+
+    .line 24
+    :cond_5
+    new-array v2, v3, [Lkotlin/Pair;
+
+    invoke-virtual {v4, v2}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, [Lkotlin/Pair;
+
+    .line 25
+    :goto_4
+    array-length v3, v2
+
+    invoke-static {v2, v3}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, [Lkotlin/Pair;
+
+    invoke-static {v2}, Landroidx/core/os/BundleKt;->bundleOf([Lkotlin/Pair;)Landroid/os/Bundle;
+
+    move-result-object v2
+
+    .line 26
+    invoke-static {v2}, Landroidx/savedstate/SavedStateWriter;->constructor-impl(Landroid/os/Bundle;)Landroid/os/Bundle;
+
+    move-result-object v3
+
+    .line 27
+    invoke-static {v3, v0}, Landroidx/savedstate/SavedStateWriter;->putAll-impl(Landroid/os/Bundle;Landroid/os/Bundle;)V
+
+    .line 28
+    iget-object v0, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    check-cast v0, Landroid/os/Bundle;
+
+    if-eqz v0, :cond_6
+
+    invoke-static {v3, v0}, Landroidx/savedstate/SavedStateWriter;->putAll-impl(Landroid/os/Bundle;Landroid/os/Bundle;)V
+
+    .line 29
+    :cond_6
+    iput-object v2, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    .line 30
+    :cond_7
+    invoke-virtual {p1}, Landroidx/navigation/NavDestination;->getArguments()Ljava/util/Map;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
+
+    move-result v0
+
+    if-nez v0, :cond_9
+
+    .line 31
+    invoke-virtual {p1}, Landroidx/navigation/NavDestination;->getArguments()Ljava/util/Map;
+
+    move-result-object v0
+
+    new-instance v2, Landroidx/navigation/i;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v2, v1, v3}, Landroidx/navigation/i;-><init>(Ljava/lang/Object;I)V
+
+    invoke-static {v0, v2}, Landroidx/navigation/NavArgumentKt;->missingRequiredArguments(Ljava/util/Map;Lr6/c;)Ljava/util/List;
+
+    move-result-object v0
+
+    .line 32
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_8
+
+    goto :goto_5
+
+    .line 33
+    :cond_8
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    const-string p3, "Cannot navigate to startDestination "
+
+    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, ". Missing required arguments ["
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const/16 p1, 0x5d
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 34
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+
+    .line 35
+    :cond_9
+    :goto_5
+    iget-object v0, p0, Landroidx/navigation/NavGraphNavigator;->navigatorProvider:Landroidx/navigation/NavigatorProvider;
+
+    .line 36
+    invoke-virtual {p1}, Landroidx/navigation/NavDestination;->getNavigatorName()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 37
+    invoke-virtual {v0, v2}, Landroidx/navigation/NavigatorProvider;->getNavigator(Ljava/lang/String;)Landroidx/navigation/Navigator;
+
+    move-result-object v0
+
+    .line 38
+    invoke-virtual {p0}, Landroidx/navigation/Navigator;->getState()Landroidx/navigation/NavigatorState;
+
+    move-result-object v2
+
+    .line 39
+    iget-object v1, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    check-cast v1, Landroid/os/Bundle;
+
+    invoke-virtual {p1, v1}, Landroidx/navigation/NavDestination;->addInDefaultArgs(Landroid/os/Bundle;)Landroid/os/Bundle;
+
+    move-result-object v1
+
+    .line 40
+    invoke-virtual {v2, p1, v1}, Landroidx/navigation/NavigatorState;->createBackStackEntry(Landroidx/navigation/NavDestination;Landroid/os/Bundle;)Landroidx/navigation/NavBackStackEntry;
+
+    move-result-object p1
+
+    .line 41
+    invoke-static {p1}, Lkotlin/collections/u;->y(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1, p2, p3}, Landroidx/navigation/Navigator;->navigate(Ljava/util/List;Landroidx/navigation/NavOptions;Landroidx/navigation/Navigator$Extras;)V
+
+    return-void
+
+    .line 42
+    :cond_a
+    invoke-virtual {v0}, Landroidx/navigation/NavGraph;->getStartDestDisplayName()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 43
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
+    .line 44
+    const-string p3, "navigation destination "
+
+    const-string v0, " is not a direct child of this NavGraph"
+
+    .line 45
+    invoke-static {p3, p1, v0}, Landroid/support/v4/media/f;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 46
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+.end method
+
+.method private static final navigate$lambda$6(Lkotlin/jvm/internal/Ref$ObjectRef;Ljava/lang/String;)Z
+    .locals 1
+
+    .line 1
+    const-string v0, "key"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    const/4 v0, 0x1
+
+    .line 9
+    if-nez p0, :cond_0
+
+    .line 10
+    .line 11
+    return v0
+
+    .line 12
+    :cond_0
+    check-cast p0, Landroid/os/Bundle;
+
+    .line 13
+    .line 14
+    invoke-static {p0}, Landroidx/savedstate/SavedStateReader;->constructor-impl(Landroid/os/Bundle;)Landroid/os/Bundle;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p0
+
+    .line 18
+    invoke-static {p0, p1}, Landroidx/savedstate/SavedStateReader;->contains-impl(Landroid/os/Bundle;Ljava/lang/String;)Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result p0
+
+    .line 22
+    if-nez p0, :cond_1
+
+    .line 23
+    .line 24
+    return v0
+
+    .line 25
+    :cond_1
+    const/4 p0, 0x0
+
+    .line 26
+    return p0
+.end method
+
+
+# virtual methods
+.method public bridge synthetic createDestination()Landroidx/navigation/NavDestination;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/navigation/NavGraphNavigator;->createDestination()Landroidx/navigation/NavGraph;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public createDestination()Landroidx/navigation/NavGraph;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 2
+    new-instance v0, Landroidx/navigation/NavGraph;
+
+    invoke-direct {v0, p0}, Landroidx/navigation/NavGraph;-><init>(Landroidx/navigation/Navigator;)V
+
+    return-object v0
+.end method
+
+.method public final getBackStack()Lkotlinx/coroutines/flow/m0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkotlinx/coroutines/flow/m0;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/navigation/Navigator;->getState()Landroidx/navigation/NavigatorState;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Landroidx/navigation/NavigatorState;->getBackStack()Lkotlinx/coroutines/flow/m0;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public navigate(Ljava/util/List;Landroidx/navigation/NavOptions;Landroidx/navigation/Navigator$Extras;)V
+    .locals 1
+    .param p1    # Ljava/util/List;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/navigation/NavOptions;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Landroidx/navigation/Navigator$Extras;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroidx/navigation/NavBackStackEntry;",
+            ">;",
+            "Landroidx/navigation/NavOptions;",
+            "Landroidx/navigation/Navigator$Extras;",
+            ")V"
+        }
+    .end annotation
+
+    const-string v0, "entries"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/navigation/NavBackStackEntry;
+
+    .line 2
+    invoke-direct {p0, v0, p2, p3}, Landroidx/navigation/NavGraphNavigator;->navigate(Landroidx/navigation/NavBackStackEntry;Landroidx/navigation/NavOptions;Landroidx/navigation/Navigator$Extras;)V
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method

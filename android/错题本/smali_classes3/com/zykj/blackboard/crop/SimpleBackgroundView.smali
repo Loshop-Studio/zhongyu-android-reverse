@@ -1,0 +1,395 @@
+.class public final Lcom/zykj/blackboard/crop/SimpleBackgroundView;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/zykj/blackboard/core/canvas/view/BackgroundLayer;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0003\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0002\u00a2\u0006\u0004\u0008\u0005\u0010\u0006J\u000f\u0010\u0008\u001a\u00020\u0007H\u0016\u00a2\u0006\u0004\u0008\u0008\u0010\tJ\u0017\u0010\u000c\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\nH\u0016\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u0017\u0010\u000f\u001a\u00020\u00072\u0006\u0010\u000e\u001a\u00020\u0002H\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010J\u000f\u0010\u0011\u001a\u00020\u0002H\u0016\u00a2\u0006\u0004\u0008\u0011\u0010\u0012J\u0017\u0010\u0015\u001a\u00020\u00072\u0006\u0010\u0014\u001a\u00020\u0013H\u0016\u00a2\u0006\u0004\u0008\u0015\u0010\u0016J\u000f\u0010\u0017\u001a\u00020\u0013H\u0016\u00a2\u0006\u0004\u0008\u0017\u0010\u0018J\u001f\u0010\u001c\u001a\u00020\u00072\u0006\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u001b\u001a\u00020\nH\u0016\u00a2\u0006\u0004\u0008\u001c\u0010\u001dR\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0003\u0010\u001eR\u0014\u0010\u0004\u001a\u00020\u00028\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0004\u0010\u001eR\u0016\u0010\u001f\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u001f\u0010\u001eR\u0014\u0010!\u001a\u00020 8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008!\u0010\"R\u0016\u0010$\u001a\u00020#8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008$\u0010%R\u0016\u0010\'\u001a\u00020&8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\'\u0010(\u00a8\u0006)"
+    }
+    d2 = {
+        "Lcom/zykj/blackboard/crop/SimpleBackgroundView;",
+        "Lcom/zykj/blackboard/core/canvas/view/BackgroundLayer;",
+        "",
+        "width",
+        "height",
+        "<init>",
+        "(II)V",
+        "Ld6/s;",
+        "refresh",
+        "()V",
+        "Landroid/graphics/Matrix;",
+        "adapterMatrix",
+        "setMatrix",
+        "(Landroid/graphics/Matrix;)V",
+        "color",
+        "setMyBackgroundColor",
+        "(I)V",
+        "getMyBackgroundColor",
+        "()I",
+        "Lcom/zykj/blackboard/bean/BackgroundLineConfig;",
+        "backgroundLineConfig",
+        "setBackgroundLineConfig",
+        "(Lcom/zykj/blackboard/bean/BackgroundLineConfig;)V",
+        "getBackgroundLineConfig",
+        "()Lcom/zykj/blackboard/bean/BackgroundLineConfig;",
+        "Landroid/graphics/Canvas;",
+        "canvas",
+        "matrix",
+        "drawBackground",
+        "(Landroid/graphics/Canvas;Landroid/graphics/Matrix;)V",
+        "I",
+        "mBackgroundColor",
+        "Landroid/graphics/Paint;",
+        "mLinePaint",
+        "Landroid/graphics/Paint;",
+        "Lcom/zykj/blackboard/bean/BackgroundLineConfig$BackgroundLineType;",
+        "lineType",
+        "Lcom/zykj/blackboard/bean/BackgroundLineConfig$BackgroundLineType;",
+        "",
+        "lineSpacing",
+        "F",
+        "blackboard_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final height:I
+
+.field private lineSpacing:F
+
+.field private lineType:Lcom/zykj/blackboard/bean/BackgroundLineConfig$BackgroundLineType;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private mBackgroundColor:I
+
+.field private final mLinePaint:Landroid/graphics/Paint;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private final width:I
+
+
+# direct methods
+.method public constructor <init>(II)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->width:I
+
+    .line 5
+    .line 6
+    iput p2, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->height:I
+
+    .line 7
+    .line 8
+    const/4 p1, -0x1
+
+    .line 9
+    iput p1, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->mBackgroundColor:I
+
+    .line 10
+    .line 11
+    new-instance p1, Landroid/graphics/Paint;
+
+    .line 12
+    .line 13
+    invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    sget-object p2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
+
+    .line 17
+    .line 18
+    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+
+    .line 19
+    .line 20
+    .line 21
+    sget-object p2, Landroid/graphics/Paint$Cap;->ROUND:Landroid/graphics/Paint$Cap;
+
+    .line 22
+    .line 23
+    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setStrokeCap(Landroid/graphics/Paint$Cap;)V
+
+    .line 24
+    .line 25
+    .line 26
+    sget-object p2, Landroid/graphics/Paint$Join;->ROUND:Landroid/graphics/Paint$Join;
+
+    .line 27
+    .line 28
+    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setStrokeJoin(Landroid/graphics/Paint$Join;)V
+
+    .line 29
+    .line 30
+    .line 31
+    const/4 p2, 0x1
+
+    .line 32
+    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setDither(Z)V
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+
+    .line 36
+    .line 37
+    .line 38
+    const/high16 p2, -0x1000000
+
+    .line 39
+    .line 40
+    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setColor(I)V
+
+    .line 41
+    .line 42
+    .line 43
+    const/high16 p2, 0x40400000    # 3.0f
+
+    .line 44
+    .line 45
+    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
+
+    .line 46
+    .line 47
+    .line 48
+    iput-object p1, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->mLinePaint:Landroid/graphics/Paint;
+
+    .line 49
+    .line 50
+    sget-object p1, Lcom/zykj/blackboard/bean/BackgroundLineConfig$BackgroundLineType;->Horizontal:Lcom/zykj/blackboard/bean/BackgroundLineConfig$BackgroundLineType;
+
+    .line 51
+    .line 52
+    iput-object p1, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->lineType:Lcom/zykj/blackboard/bean/BackgroundLineConfig$BackgroundLineType;
+
+    .line 53
+    .line 54
+    const/high16 p1, 0x42c00000    # 96.0f
+
+    .line 55
+    .line 56
+    iput p1, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->lineSpacing:F
+
+    .line 57
+    .line 58
+    return-void
+.end method
+
+
+# virtual methods
+.method public drawBackground(Landroid/graphics/Canvas;Landroid/graphics/Matrix;)V
+    .locals 1
+    .param p1    # Landroid/graphics/Canvas;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/graphics/Matrix;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const-string v0, "canvas"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p1, "matrix"
+
+    invoke-static {p2, p1}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public getBackgroundLineConfig()Lcom/zykj/blackboard/bean/BackgroundLineConfig;
+    .locals 5
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget v0, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->lineSpacing:F
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->mLinePaint:Landroid/graphics/Paint;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1}, Landroid/graphics/Paint;->getColor()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v1
+
+    .line 9
+    iget-object v2, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->lineType:Lcom/zykj/blackboard/bean/BackgroundLineConfig$BackgroundLineType;
+
+    .line 10
+    .line 11
+    iget-object v3, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->mLinePaint:Landroid/graphics/Paint;
+
+    .line 12
+    .line 13
+    invoke-virtual {v3}, Landroid/graphics/Paint;->getStrokeWidth()F
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v3
+
+    .line 17
+    new-instance v4, Lcom/zykj/blackboard/bean/BackgroundLineConfig;
+
+    .line 18
+    .line 19
+    invoke-direct {v4, v1, v0, v2, v3}, Lcom/zykj/blackboard/bean/BackgroundLineConfig;-><init>(IFLcom/zykj/blackboard/bean/BackgroundLineConfig$BackgroundLineType;F)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-object v4
+.end method
+
+.method public getMyBackgroundColor()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->mBackgroundColor:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public refresh()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public setBackgroundLineConfig(Lcom/zykj/blackboard/bean/BackgroundLineConfig;)V
+    .locals 2
+    .param p1    # Lcom/zykj/blackboard/bean/BackgroundLineConfig;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    const-string v0, "backgroundLineConfig"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p1}, Lcom/zykj/blackboard/bean/BackgroundLineConfig;->getLineSpace()F
+
+    .line 7
+    .line 8
+    .line 9
+    move-result v0
+
+    .line 10
+    iput v0, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->lineSpacing:F
+
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Lcom/zykj/blackboard/bean/BackgroundLineConfig;->getLineType()Lcom/zykj/blackboard/bean/BackgroundLineConfig$BackgroundLineType;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    iput-object v0, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->lineType:Lcom/zykj/blackboard/bean/BackgroundLineConfig$BackgroundLineType;
+
+    .line 17
+    .line 18
+    iget-object v0, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->mLinePaint:Landroid/graphics/Paint;
+
+    .line 19
+    .line 20
+    invoke-virtual {p1}, Lcom/zykj/blackboard/bean/BackgroundLineConfig;->getLineColor()I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v1
+
+    .line 24
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
+
+    .line 25
+    .line 26
+    .line 27
+    iget-object v0, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->mLinePaint:Landroid/graphics/Paint;
+
+    .line 28
+    .line 29
+    invoke-virtual {p1}, Lcom/zykj/blackboard/bean/BackgroundLineConfig;->getLineWidth()F
+
+    .line 30
+    .line 31
+    .line 32
+    move-result p1
+
+    .line 33
+    invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
+
+    .line 34
+    .line 35
+    .line 36
+    return-void
+.end method
+
+.method public setMatrix(Landroid/graphics/Matrix;)V
+    .locals 1
+    .param p1    # Landroid/graphics/Matrix;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const-string v0, "adapterMatrix"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public setMyBackgroundColor(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/zykj/blackboard/crop/SimpleBackgroundView;->mBackgroundColor:I
+
+    .line 2
+    .line 3
+    return-void
+.end method

@@ -1,0 +1,138 @@
+package androidx.collection;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.jvm.internal.AbstractC5830k;
+import kotlin.jvm.internal.SourceDebugExtension;
+import org.jetbrains.annotations.NotNull;
+import p152r6.InterfaceC6471c;
+
+@Metadata(m5109d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\b\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\b\u001a\r\u0010\u0001\u001a\u00020\u0000¢\u0006\u0004\b\u0001\u0010\u0002\u001a\r\u0010\u0003\u001a\u00020\u0000¢\u0006\u0004\b\u0003\u0010\u0002\u001a\u001d\u0010\u0003\u001a\u00020\u00002\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\u0003\u0010\b\u001a-\u0010\u0003\u001a\u00020\u00002\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\u0006¢\u0006\u0004\b\u0003\u0010\u000b\u001a=\u0010\u0003\u001a\u00020\u00002\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\u00062\u0006\u0010\f\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u0006¢\u0006\u0004\b\u0003\u0010\u000e\u001aM\u0010\u0003\u001a\u00020\u00002\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\u00062\u0006\u0010\f\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u00062\u0006\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u0006¢\u0006\u0004\b\u0003\u0010\u0011\u001a]\u0010\u0003\u001a\u00020\u00002\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\u00062\u0006\u0010\f\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u00062\u0006\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u00062\u0006\u0010\u0012\u001a\u00020\u00042\u0006\u0010\u0013\u001a\u00020\u0006¢\u0006\u0004\b\u0003\u0010\u0014\u001a\r\u0010\u0016\u001a\u00020\u0015¢\u0006\u0004\b\u0016\u0010\u0017\u001a\u001d\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\u0016\u0010\u0018\u001a-\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\u0006¢\u0006\u0004\b\u0016\u0010\u0019\u001a=\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\u00062\u0006\u0010\f\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u0006¢\u0006\u0004\b\u0016\u0010\u001a\u001aM\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\u00062\u0006\u0010\f\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u00062\u0006\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u0006¢\u0006\u0004\b\u0016\u0010\u001b\u001a]\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\u00062\u0006\u0010\f\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u00062\u0006\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u00062\u0006\u0010\u0012\u001a\u00020\u00042\u0006\u0010\u0013\u001a\u00020\u0006¢\u0006\u0004\b\u0016\u0010\u001c\u001a9\u0010!\u001a\u00020\u00002\u0017\u0010 \u001a\u0013\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020\u001e0\u001d¢\u0006\u0002\b\u001fH\u0086\bø\u0001\u0000\u0082\u0002\n\n\b\b\u0001\u0012\u0002\u0010\u0001 \u0001¢\u0006\u0004\b!\u0010\"\u001aA\u0010!\u001a\u00020\u00002\u0006\u0010#\u001a\u00020\u00062\u0017\u0010 \u001a\u0013\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020\u001e0\u001d¢\u0006\u0002\b\u001fH\u0086\bø\u0001\u0000\u0082\u0002\n\n\b\b\u0001\u0012\u0002\u0010\u0002 \u0001¢\u0006\u0004\b!\u0010$\"\u0014\u0010%\u001a\u00020\u00158\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b%\u0010&\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006'"}, m5110d2 = {"Landroidx/collection/FloatIntMap;", "emptyFloatIntMap", "()Landroidx/collection/FloatIntMap;", "floatIntMapOf", "", "key1", "", "value1", "(FI)Landroidx/collection/FloatIntMap;", "key2", "value2", "(FIFI)Landroidx/collection/FloatIntMap;", "key3", "value3", "(FIFIFI)Landroidx/collection/FloatIntMap;", "key4", "value4", "(FIFIFIFI)Landroidx/collection/FloatIntMap;", "key5", "value5", "(FIFIFIFIFI)Landroidx/collection/FloatIntMap;", "Landroidx/collection/MutableFloatIntMap;", "mutableFloatIntMapOf", "()Landroidx/collection/MutableFloatIntMap;", "(FI)Landroidx/collection/MutableFloatIntMap;", "(FIFI)Landroidx/collection/MutableFloatIntMap;", "(FIFIFI)Landroidx/collection/MutableFloatIntMap;", "(FIFIFIFI)Landroidx/collection/MutableFloatIntMap;", "(FIFIFIFIFI)Landroidx/collection/MutableFloatIntMap;", "Lkotlin/Function1;", "Ld6/s;", "Lkotlin/ExtensionFunctionType;", "builderAction", "buildFloatIntMap", "(Lr6/c;)Landroidx/collection/FloatIntMap;", "initialCapacity", "(ILr6/c;)Landroidx/collection/FloatIntMap;", "EmptyFloatIntMap", "Landroidx/collection/MutableFloatIntMap;", "collection"}, m5111k = 2, m5112mv = {1, 9, 0}, m5114xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@SourceDebugExtension({"SMAP\nFloatIntMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FloatIntMap.kt\nandroidx/collection/FloatIntMapKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1034:1\n1#2:1035\n*E\n"})
+/* loaded from: classes.dex */
+public final class FloatIntMapKt {
+
+    @NotNull
+    private static final MutableFloatIntMap EmptyFloatIntMap = new MutableFloatIntMap(0);
+
+    @NotNull
+    public static final FloatIntMap buildFloatIntMap(@NotNull InterfaceC6471c builderAction) {
+        AbstractC5830k.m5330g(builderAction, "builderAction");
+        MutableFloatIntMap mutableFloatIntMap = new MutableFloatIntMap(0, 1, null);
+        builderAction.invoke(mutableFloatIntMap);
+        return mutableFloatIntMap;
+    }
+
+    @NotNull
+    public static final FloatIntMap emptyFloatIntMap() {
+        return EmptyFloatIntMap;
+    }
+
+    @NotNull
+    public static final FloatIntMap floatIntMapOf() {
+        return EmptyFloatIntMap;
+    }
+
+    @NotNull
+    public static final MutableFloatIntMap mutableFloatIntMapOf() {
+        return new MutableFloatIntMap(0, 1, null);
+    }
+
+    @NotNull
+    public static final FloatIntMap buildFloatIntMap(int i, @NotNull InterfaceC6471c builderAction) {
+        AbstractC5830k.m5330g(builderAction, "builderAction");
+        MutableFloatIntMap mutableFloatIntMap = new MutableFloatIntMap(i);
+        builderAction.invoke(mutableFloatIntMap);
+        return mutableFloatIntMap;
+    }
+
+    @NotNull
+    public static final FloatIntMap floatIntMapOf(float f, int i) {
+        MutableFloatIntMap mutableFloatIntMap = new MutableFloatIntMap(0, 1, null);
+        mutableFloatIntMap.set(f, i);
+        return mutableFloatIntMap;
+    }
+
+    @NotNull
+    public static final MutableFloatIntMap mutableFloatIntMapOf(float f, int i) {
+        MutableFloatIntMap mutableFloatIntMap = new MutableFloatIntMap(0, 1, null);
+        mutableFloatIntMap.set(f, i);
+        return mutableFloatIntMap;
+    }
+
+    @NotNull
+    public static final FloatIntMap floatIntMapOf(float f, int i, float f7, int i8) {
+        MutableFloatIntMap mutableFloatIntMap = new MutableFloatIntMap(0, 1, null);
+        mutableFloatIntMap.set(f, i);
+        mutableFloatIntMap.set(f7, i8);
+        return mutableFloatIntMap;
+    }
+
+    @NotNull
+    public static final MutableFloatIntMap mutableFloatIntMapOf(float f, int i, float f7, int i8) {
+        MutableFloatIntMap mutableFloatIntMap = new MutableFloatIntMap(0, 1, null);
+        mutableFloatIntMap.set(f, i);
+        mutableFloatIntMap.set(f7, i8);
+        return mutableFloatIntMap;
+    }
+
+    @NotNull
+    public static final FloatIntMap floatIntMapOf(float f, int i, float f7, int i8, float f8, int i9) {
+        MutableFloatIntMap mutableFloatIntMap = new MutableFloatIntMap(0, 1, null);
+        mutableFloatIntMap.set(f, i);
+        mutableFloatIntMap.set(f7, i8);
+        mutableFloatIntMap.set(f8, i9);
+        return mutableFloatIntMap;
+    }
+
+    @NotNull
+    public static final MutableFloatIntMap mutableFloatIntMapOf(float f, int i, float f7, int i8, float f8, int i9) {
+        MutableFloatIntMap mutableFloatIntMap = new MutableFloatIntMap(0, 1, null);
+        mutableFloatIntMap.set(f, i);
+        mutableFloatIntMap.set(f7, i8);
+        mutableFloatIntMap.set(f8, i9);
+        return mutableFloatIntMap;
+    }
+
+    @NotNull
+    public static final FloatIntMap floatIntMapOf(float f, int i, float f7, int i8, float f8, int i9, float f9, int i10) {
+        MutableFloatIntMap mutableFloatIntMap = new MutableFloatIntMap(0, 1, null);
+        mutableFloatIntMap.set(f, i);
+        mutableFloatIntMap.set(f7, i8);
+        mutableFloatIntMap.set(f8, i9);
+        mutableFloatIntMap.set(f9, i10);
+        return mutableFloatIntMap;
+    }
+
+    @NotNull
+    public static final MutableFloatIntMap mutableFloatIntMapOf(float f, int i, float f7, int i8, float f8, int i9, float f9, int i10) {
+        MutableFloatIntMap mutableFloatIntMap = new MutableFloatIntMap(0, 1, null);
+        mutableFloatIntMap.set(f, i);
+        mutableFloatIntMap.set(f7, i8);
+        mutableFloatIntMap.set(f8, i9);
+        mutableFloatIntMap.set(f9, i10);
+        return mutableFloatIntMap;
+    }
+
+    @NotNull
+    public static final FloatIntMap floatIntMapOf(float f, int i, float f7, int i8, float f8, int i9, float f9, int i10, float f10, int i11) {
+        MutableFloatIntMap mutableFloatIntMap = new MutableFloatIntMap(0, 1, null);
+        mutableFloatIntMap.set(f, i);
+        mutableFloatIntMap.set(f7, i8);
+        mutableFloatIntMap.set(f8, i9);
+        mutableFloatIntMap.set(f9, i10);
+        mutableFloatIntMap.set(f10, i11);
+        return mutableFloatIntMap;
+    }
+
+    @NotNull
+    public static final MutableFloatIntMap mutableFloatIntMapOf(float f, int i, float f7, int i8, float f8, int i9, float f9, int i10, float f10, int i11) {
+        MutableFloatIntMap mutableFloatIntMap = new MutableFloatIntMap(0, 1, null);
+        mutableFloatIntMap.set(f, i);
+        mutableFloatIntMap.set(f7, i8);
+        mutableFloatIntMap.set(f8, i9);
+        mutableFloatIntMap.set(f9, i10);
+        mutableFloatIntMap.set(f10, i11);
+        return mutableFloatIntMap;
+    }
+}

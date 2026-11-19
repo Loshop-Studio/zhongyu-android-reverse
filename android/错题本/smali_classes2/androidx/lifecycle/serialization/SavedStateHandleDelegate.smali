@@ -1,0 +1,686 @@
+.class final Landroidx/lifecycle/serialization/SavedStateHandleDelegate;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lu6/c;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lu6/c;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u000f\u0008\u0002\u0018\u0000*\u0008\u0008\u0000\u0010\u0002*\u00020\u00012\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u0001\u0012\u0004\u0012\u00028\u00000\u0003B=\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u000c\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0006\u0012\u0008\u0010\t\u001a\u0004\u0018\u00010\u0008\u0012\u0006\u0010\u000b\u001a\u00020\n\u0012\u000c\u0010\r\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u000c\u00a2\u0006\u0004\u0008\u000e\u0010\u000fJ\u0019\u0010\u0010\u001a\u0004\u0018\u00018\u00002\u0006\u0010\t\u001a\u00020\u0008H\u0002\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J\u0017\u0010\u0013\u001a\u00020\u00122\u0006\u0010\t\u001a\u00020\u0008H\u0002\u00a2\u0006\u0004\u0008\u0013\u0010\u0014J%\u0010\u0018\u001a\u00020\u00082\u0008\u0010\u0015\u001a\u0004\u0018\u00010\u00012\n\u0010\u0017\u001a\u0006\u0012\u0002\u0008\u00030\u0016H\u0002\u00a2\u0006\u0004\u0008\u0018\u0010\u0019J&\u0010\u001a\u001a\u00028\u00002\u0008\u0010\u0015\u001a\u0004\u0018\u00010\u00012\n\u0010\u0017\u001a\u0006\u0012\u0002\u0008\u00030\u0016H\u0096\u0002\u00a2\u0006\u0004\u0008\u001a\u0010\u001bJ.\u0010\u001d\u001a\u00020\u00122\u0008\u0010\u0015\u001a\u0004\u0018\u00010\u00012\n\u0010\u0017\u001a\u0006\u0012\u0002\u0008\u00030\u00162\u0006\u0010\u001c\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0004\u0008\u001d\u0010\u001eR\u0014\u0010\u0005\u001a\u00020\u00048\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0005\u0010\u001fR\u001a\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u00068\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0007\u0010 R\u0016\u0010\t\u001a\u0004\u0018\u00010\u00088\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\t\u0010!R\u0014\u0010\u000b\u001a\u00020\n8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u000b\u0010\"R\u001a\u0010\r\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u000c8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\r\u0010#R\u0016\u0010\u001c\u001a\u00028\u00008\u0002@\u0002X\u0082.\u00a2\u0006\u0006\n\u0004\u0008\u001c\u0010$\u00a8\u0006%"
+    }
+    d2 = {
+        "Landroidx/lifecycle/serialization/SavedStateHandleDelegate;",
+        "",
+        "T",
+        "Lu6/c;",
+        "Landroidx/lifecycle/SavedStateHandle;",
+        "savedStateHandle",
+        "Li7/b;",
+        "serializer",
+        "",
+        "key",
+        "Landroidx/savedstate/serialization/SavedStateConfiguration;",
+        "configuration",
+        "Lkotlin/Function0;",
+        "init",
+        "<init>",
+        "(Landroidx/lifecycle/SavedStateHandle;Li7/b;Ljava/lang/String;Landroidx/savedstate/serialization/SavedStateConfiguration;Lr6/a;)V",
+        "loadValue",
+        "(Ljava/lang/String;)Ljava/lang/Object;",
+        "Ld6/s;",
+        "registerSave",
+        "(Ljava/lang/String;)V",
+        "thisRef",
+        "Ly6/p;",
+        "property",
+        "createDefaultKey",
+        "(Ljava/lang/Object;Ly6/p;)Ljava/lang/String;",
+        "getValue",
+        "(Ljava/lang/Object;Ly6/p;)Ljava/lang/Object;",
+        "value",
+        "setValue",
+        "(Ljava/lang/Object;Ly6/p;Ljava/lang/Object;)V",
+        "Landroidx/lifecycle/SavedStateHandle;",
+        "Li7/b;",
+        "Ljava/lang/String;",
+        "Landroidx/savedstate/serialization/SavedStateConfiguration;",
+        "Lr6/a;",
+        "Ljava/lang/Object;",
+        "lifecycle-viewmodel-savedstate_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final configuration:Landroidx/savedstate/serialization/SavedStateConfiguration;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private final init:Lr6/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lr6/a;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private final key:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field private final savedStateHandle:Landroidx/lifecycle/SavedStateHandle;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private final serializer:Li7/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Li7/b;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private value:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Landroidx/lifecycle/SavedStateHandle;Li7/b;Ljava/lang/String;Landroidx/savedstate/serialization/SavedStateConfiguration;Lr6/a;)V
+    .locals 1
+    .param p1    # Landroidx/lifecycle/SavedStateHandle;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Li7/b;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Landroidx/savedstate/serialization/SavedStateConfiguration;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p5    # Lr6/a;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/lifecycle/SavedStateHandle;",
+            "Li7/b;",
+            "Ljava/lang/String;",
+            "Landroidx/savedstate/serialization/SavedStateConfiguration;",
+            "Lr6/a;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    const-string/jumbo v0, "savedStateHandle"
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 5
+    .line 6
+    .line 7
+    const-string/jumbo v0, "serializer"
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v0, "configuration"
+
+    .line 14
+    .line 15
+    invoke-static {p4, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    const-string v0, "init"
+
+    .line 19
+    .line 20
+    invoke-static {p5, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 24
+    .line 25
+    .line 26
+    iput-object p1, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->savedStateHandle:Landroidx/lifecycle/SavedStateHandle;
+
+    .line 27
+    .line 28
+    iput-object p2, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->serializer:Li7/b;
+
+    .line 29
+    .line 30
+    iput-object p3, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->key:Ljava/lang/String;
+
+    .line 31
+    .line 32
+    iput-object p4, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->configuration:Landroidx/savedstate/serialization/SavedStateConfiguration;
+
+    .line 33
+    .line 34
+    iput-object p5, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->init:Lr6/a;
+
+    .line 35
+    .line 36
+    return-void
+.end method
+
+.method public static synthetic a(Landroidx/lifecycle/serialization/SavedStateHandleDelegate;)Landroid/os/Bundle;
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->registerSave$lambda$1(Landroidx/lifecycle/serialization/SavedStateHandleDelegate;)Landroid/os/Bundle;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private final createDefaultKey(Ljava/lang/Object;Ly6/p;)Ljava/lang/String;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Ly6/p;",
+            ")",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p1, :cond_0
+
+    .line 2
+    .line 3
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 4
+    .line 5
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    invoke-static {p1}, Lkotlin/jvm/internal/m;->a(Ljava/lang/Class;)Lkotlin/jvm/internal/d;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    invoke-static {p1}, Landroidx/lifecycle/internal/CanonicalName_jvmKt;->getCanonicalName(Ly6/c;)Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const/16 p1, 0x2e
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p1
+
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_0
+    const-string p1, ""
+
+    .line 34
+    .line 35
+    :goto_0
+    invoke-static {p1}, Landroid/support/v4/media/f;->v(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p1
+
+    .line 39
+    invoke-interface {p2}, Ly6/b;->getName()Ljava/lang/String;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p2
+
+    .line 43
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object p1
+
+    .line 50
+    return-object p1
+.end method
+
+.method private final loadValue(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")TT;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->savedStateHandle:Landroidx/lifecycle/SavedStateHandle;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Landroidx/lifecycle/SavedStateHandle;->get(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Landroid/os/Bundle;
+
+    .line 8
+    .line 9
+    if-eqz p1, :cond_0
+
+    .line 10
+    .line 11
+    iget-object v0, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->serializer:Li7/b;
+
+    .line 12
+    .line 13
+    check-cast v0, Li7/a;
+
+    .line 14
+    .line 15
+    iget-object v1, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->configuration:Landroidx/savedstate/serialization/SavedStateConfiguration;
+
+    .line 16
+    .line 17
+    invoke-static {v0, p1, v1}, Landroidx/savedstate/serialization/SavedStateDecoderKt;->decodeFromSavedState(Li7/a;Landroid/os/Bundle;Landroidx/savedstate/serialization/SavedStateConfiguration;)Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p1
+
+    .line 21
+    return-object p1
+
+    .line 22
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 23
+    return-object p1
+.end method
+
+.method private final registerSave(Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->savedStateHandle:Landroidx/lifecycle/SavedStateHandle;
+
+    .line 2
+    .line 3
+    new-instance v1, Landroidx/lifecycle/serialization/a;
+
+    .line 4
+    .line 5
+    invoke-direct {v1, p0}, Landroidx/lifecycle/serialization/a;-><init>(Landroidx/lifecycle/serialization/SavedStateHandleDelegate;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {v0, p1, v1}, Landroidx/lifecycle/SavedStateHandle;->setSavedStateProvider(Ljava/lang/String;Landroidx/savedstate/SavedStateRegistry$SavedStateProvider;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method private static final registerSave$lambda$1(Landroidx/lifecycle/serialization/SavedStateHandleDelegate;)Landroid/os/Bundle;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->serializer:Li7/b;
+
+    .line 2
+    .line 3
+    check-cast v0, Li7/e;
+
+    .line 4
+    .line 5
+    iget-object v1, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->value:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    if-eqz v1, :cond_0
+
+    .line 8
+    .line 9
+    iget-object p0, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->configuration:Landroidx/savedstate/serialization/SavedStateConfiguration;
+
+    .line 10
+    .line 11
+    invoke-static {v0, v1, p0}, Landroidx/savedstate/serialization/SavedStateEncoderKt;->encodeToSavedState(Li7/e;Ljava/lang/Object;Landroidx/savedstate/serialization/SavedStateConfiguration;)Landroid/os/Bundle;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    return-object p0
+
+    .line 16
+    :cond_0
+    const-string/jumbo p0, "value"
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-static {p0}, Lkotlin/jvm/internal/k;->p(Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    const/4 p0, 0x0
+
+    .line 23
+    throw p0
+.end method
+
+
+# virtual methods
+.method public getValue(Ljava/lang/Object;Ly6/p;)Ljava/lang/Object;
+    .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ly6/p;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Ly6/p;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    const-string v0, "property"
+
+    .line 2
+    .line 3
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->value:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    if-nez v0, :cond_2
+
+    .line 9
+    .line 10
+    iget-object v0, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->key:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    if-nez v0, :cond_0
+
+    .line 13
+    .line 14
+    invoke-direct {p0, p1, p2}, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->createDefaultKey(Ljava/lang/Object;Ly6/p;)Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    :cond_0
+    invoke-direct {p0, v0}, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->registerSave(Ljava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-direct {p0, v0}, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->loadValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p1
+
+    .line 25
+    if-nez p1, :cond_1
+
+    .line 26
+    .line 27
+    iget-object p1, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->init:Lr6/a;
+
+    .line 28
+    .line 29
+    invoke-interface {p1}, Lr6/a;->invoke()Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    :cond_1
+    iput-object p1, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->value:Ljava/lang/Object;
+
+    .line 34
+    .line 35
+    :cond_2
+    iget-object p1, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->value:Ljava/lang/Object;
+
+    .line 36
+    .line 37
+    if-eqz p1, :cond_3
+
+    .line 38
+    .line 39
+    return-object p1
+
+    .line 40
+    :cond_3
+    const-string/jumbo p1, "value"
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-static {p1}, Lkotlin/jvm/internal/k;->p(Ljava/lang/String;)V
+
+    .line 44
+    .line 45
+    .line 46
+    const/4 p1, 0x0
+
+    .line 47
+    throw p1
+.end method
+
+.method public setValue(Ljava/lang/Object;Ly6/p;Ljava/lang/Object;)V
+    .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ly6/p;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Ly6/p;",
+            "TT;)V"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "property"
+
+    .line 2
+    .line 3
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string/jumbo v0, "value"
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    iget-object v0, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->value:Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    if-nez v0, :cond_1
+
+    .line 15
+    .line 16
+    iget-object v0, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->key:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    if-nez v0, :cond_0
+
+    .line 19
+    .line 20
+    invoke-direct {p0, p1, p2}, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->createDefaultKey(Ljava/lang/Object;Ly6/p;)Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
+    :cond_0
+    invoke-direct {p0, v0}, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->registerSave(Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    :cond_1
+    iput-object p3, p0, Landroidx/lifecycle/serialization/SavedStateHandleDelegate;->value:Ljava/lang/Object;
+
+    .line 28
+    .line 29
+    return-void
+.end method

@@ -1,0 +1,14 @@
+package kotlinx.coroutines.channels;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+import java.util.NoSuchElementException;
+import kotlin.Metadata;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(m5109d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\u0018\u00002\u00060\u0001j\u0002`\u0002B\u0011\u0012\b\u0010\u0003\u001a\u0004\u0018\u00010\u0004¢\u0006\u0004\b\u0005\u0010\u0006¨\u0006\u0007"}, m5110d2 = {"Lkotlinx/coroutines/channels/ClosedReceiveChannelException;", "Ljava/util/NoSuchElementException;", "Lkotlin/NoSuchElementException;", "message", "", "<init>", "(Ljava/lang/String;)V", "kotlinx-coroutines-core"}, m5111k = 1, m5112mv = {2, 1, 0}, m5114xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes4.dex */
+public final class ClosedReceiveChannelException extends NoSuchElementException {
+    public ClosedReceiveChannelException(@Nullable String str) {
+        super(str);
+    }
+}

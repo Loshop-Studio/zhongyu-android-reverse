@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/view_10" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_8" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/tvDesc" android:padding="@dimen/view_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_comments" android:drawableLeft="@mipmap/icon_micro_read" android:drawablePadding="@dimen/view_5" />
+</RelativeLayout>

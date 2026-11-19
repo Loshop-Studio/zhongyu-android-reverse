@@ -1,0 +1,12 @@
+package androidx.customview.poolingcontainer;
+
+import androidx.annotation.UiThread;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+
+@Metadata(m5109d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bæ\u0080\u0001\u0018\u00002\u00020\u0001J\u000f\u0010\u0003\u001a\u00020\u0002H'¢\u0006\u0004\b\u0003\u0010\u0004¨\u0006\u0005"}, m5110d2 = {"Landroidx/customview/poolingcontainer/PoolingContainerListener;", "", "Ld6/s;", "onRelease", "()V", "customview-poolingcontainer_release"}, m5111k = 1, m5112mv = {1, 6, 0}, m5114xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes2.dex */
+public interface PoolingContainerListener {
+    @UiThread
+    void onRelease();
+}

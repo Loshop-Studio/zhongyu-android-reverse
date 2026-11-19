@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="layout/view_include_background_color_0" android:background="@drawable/white_frame_border" android:paddingTop="@dimen/view_3" android:paddingBottom="@dimen/view_3" android:focusable="true" android:clickable="true" android:layout_width="@dimen/view_18" android:layout_height="wrap_content" android:paddingVertical="@dimen/view_3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:id="@id/rg_background_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.zykj.view.widget.radio.NormalColorRadioButton android:id="@id/rb_background_white" android:tag="binding_1" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <com.zykj.view.widget.radio.NormalColorRadioButton android:id="@id/rb_background_black" android:tag="binding_2" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <com.zykj.view.widget.radio.NormalColorRadioButton android:id="@id/rb_background_blue" android:tag="binding_3" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <com.zykj.view.widget.radio.NormalColorRadioButton android:id="@id/rb_background_green" android:tag="binding_4" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <com.zykj.view.widget.radio.WithSelectedRadioButton android:id="@id/rb_background_interweave" android:tag="#F6F0E9" android:background="@drawable/view_icon_background_interweave_layer" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <com.zykj.view.widget.radio.WithSelectedRadioButton android:id="@id/rb_background_line" android:tag="#F6F0E8" android:background="@drawable/view_icon_background_line_layer" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+    </RadioGroup>
+</androidx.appcompat.widget.LinearLayoutCompat>

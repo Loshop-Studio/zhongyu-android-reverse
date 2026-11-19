@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:tag="layout/view_include_evaluation_pen_proxy_0" android:background="@drawable/view_bg_evaluation_pen_panel" android:padding="@dimen/view_3" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:orientation="horizontal" android:id="@id/rg_pen_color_proxy" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.zykj.view.widget.radio.NormalColorRadioButton android:id="@id/rb_eval_proxy_black" android:tag="binding_1" android:background="@drawable/view_selector_evaluation_pen_swatch" android:focusable="true" android:clickable="true" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <com.zykj.view.widget.radio.NormalColorRadioButton android:id="@id/rb_eval_proxy_blue" android:tag="binding_2" android:background="@drawable/view_selector_evaluation_pen_swatch" android:focusable="true" android:clickable="true" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <com.zykj.view.widget.radio.NormalColorRadioButton android:id="@id/rb_eval_proxy_red" android:tag="binding_3" android:background="@drawable/view_selector_evaluation_pen_swatch" android:focusable="true" android:clickable="true" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+    </RadioGroup>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/activity_legacy_mistake_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/titleBar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/view_23" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fragment_container" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/titleBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+package com.zykj.view.databinding;
+
+import android.util.SparseIntArray;
+import android.view.View;
+import android.widget.RadioGroup;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.LinearLayoutCompat;
+import androidx.databinding.DataBindingComponent;
+import androidx.databinding.ViewDataBinding;
+import com.zykj.view.C5280R;
+import com.zykj.view.utils.ExtKt;
+import com.zykj.view.widget.radio.NormalColorRadioButton;
+import com.zykj.view.widget.radio.WithSelectedRadioButton;
+
+/* loaded from: classes3.dex */
+public class ViewIncludeBackgroundColorBindingImpl extends ViewIncludeBackgroundColorBinding {
+
+    @Nullable
+    private static final ViewDataBinding.IncludedLayouts sIncludes = null;
+
+    @Nullable
+    private static final SparseIntArray sViewsWithIds;
+    private long mDirtyFlags;
+
+    @NonNull
+    private final LinearLayoutCompat mboundView0;
+
+    static {
+        SparseIntArray sparseIntArray = new SparseIntArray();
+        sViewsWithIds = sparseIntArray;
+        sparseIntArray.put(C5280R.id.rg_background_color, 5);
+        sparseIntArray.put(C5280R.id.rb_background_interweave, 6);
+        sparseIntArray.put(C5280R.id.rb_background_line, 7);
+    }
+
+    public ViewIncludeBackgroundColorBindingImpl(@Nullable DataBindingComponent dataBindingComponent, @NonNull View view) {
+        this(dataBindingComponent, view, ViewDataBinding.mapBindings(dataBindingComponent, view, 8, sIncludes, sViewsWithIds));
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public void executeBindings() {
+        long j7;
+        synchronized (this) {
+            j7 = this.mDirtyFlags;
+            this.mDirtyFlags = 0L;
+        }
+        if ((j7 & 1) != 0) {
+            ExtKt.setCustomColor(this.rbBackgroundBlack, "#1A1A1A");
+            ExtKt.setCustomColor(this.rbBackgroundBlue, "#435772");
+            ExtKt.setCustomColor(this.rbBackgroundGreen, "#4C7068");
+            ExtKt.setCustomColor(this.rbBackgroundWhite, "#EEEEEE");
+        }
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public boolean hasPendingBindings() {
+        synchronized (this) {
+            try {
+                return this.mDirtyFlags != 0;
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public void invalidateAll() {
+        synchronized (this) {
+            this.mDirtyFlags = 1L;
+        }
+        requestRebind();
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public boolean onFieldChange(int i, Object obj, int i8) {
+        return false;
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public boolean setVariable(int i, @Nullable Object obj) {
+        return true;
+    }
+
+    private ViewIncludeBackgroundColorBindingImpl(DataBindingComponent dataBindingComponent, View view, Object[] objArr) {
+        super(dataBindingComponent, view, 0, (NormalColorRadioButton) objArr[2], (NormalColorRadioButton) objArr[3], (NormalColorRadioButton) objArr[4], (WithSelectedRadioButton) objArr[6], (WithSelectedRadioButton) objArr[7], (NormalColorRadioButton) objArr[1], (RadioGroup) objArr[5]);
+        this.mDirtyFlags = -1L;
+        LinearLayoutCompat linearLayoutCompat = (LinearLayoutCompat) objArr[0];
+        this.mboundView0 = linearLayoutCompat;
+        linearLayoutCompat.setTag(null);
+        this.rbBackgroundBlack.setTag("#1A1A1A");
+        this.rbBackgroundBlue.setTag("#435772");
+        this.rbBackgroundGreen.setTag("#4C7068");
+        this.rbBackgroundWhite.setTag("#FFFFFF");
+        setRootTag(view);
+        invalidateAll();
+    }
+}

@@ -1,0 +1,23 @@
+package androidx.compose.foundation.lazy;
+
+import androidx.compose.foundation.ExperimentalFoundationApi;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(m5109d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\u001a\u0012\u0010\u0000\u001a\u00020\u00012\b\b\u0002\u0010\u0002\u001a\u00020\u0003H\u0007¨\u0006\u0004"}, m5110d2 = {"LazyListPrefetchStrategy", "Landroidx/compose/foundation/lazy/LazyListPrefetchStrategy;", "nestedPrefetchItemCount", "", "foundation_release"}, m5111k = 2, m5112mv = {1, 9, 0}, m5114xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes.dex */
+public final class LazyListPrefetchStrategyKt {
+    @ExperimentalFoundationApi
+    @NotNull
+    public static final LazyListPrefetchStrategy LazyListPrefetchStrategy(int i) {
+        return new DefaultLazyListPrefetchStrategy(i);
+    }
+
+    public static /* synthetic */ LazyListPrefetchStrategy LazyListPrefetchStrategy$default(int i, int i8, Object obj) {
+        if ((i8 & 1) != 0) {
+            i = 2;
+        }
+        return LazyListPrefetchStrategy(i);
+    }
+}

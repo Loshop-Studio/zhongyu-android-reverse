@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/dialog_fragment_answer_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:background="@drawable/bg_top_year" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.zykj.mistake.widget.IntrinsicWidthImageView android:id="@id/summaryImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            <com.zykj.mistake.widget.IntrinsicWidthImageView android:id="@id/summaryCoverImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ScrollView>
+    <ImageView android:id="@id/close" android:padding="@dimen/view_5" android:layout_width="@dimen/view_40" android:layout_height="@dimen/view_40" android:layout_marginTop="@dimen/view_4" android:src="@drawable/icon_image_close" android:layout_marginEnd="@dimen/view_4" android:layout_alignParentEnd="true" />
+</RelativeLayout>

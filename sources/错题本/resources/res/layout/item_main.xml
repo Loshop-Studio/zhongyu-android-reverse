@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="@dimen/view_126" android:layout_height="@dimen/view_54" android:layout_margin="@dimen/view_13">
+        <androidx.cardview.widget.CardView android:layout_width="@dimen/view_117" android:layout_height="@dimen/view_45" android:layout_centerInParent="true" app:cardCornerRadius="@dimen/view_3" app:cardElevation="0.0dp">
+            <RelativeLayout android:id="@id/rl_card" android:background="@mipmap/ic_language_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/lesson_image" android:layout_width="@dimen/view_27" android:layout_height="@dimen/view_27" android:src="@mipmap/ic_language" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginStart="@dimen/view_16" />
+                <TextView android:textSize="@dimen/text_12" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/lesson_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_9" android:text="科目" android:maxLines="1" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/view_13" android:layout_alignParentEnd="true" />
+                <TextView android:textSize="@dimen/text_6" android:textColor="#66ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/view_9" android:text="@string/tip_item_main" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/view_13" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <View android:id="@id/red_dot" android:background="@drawable/shape_red_dot" android:visibility="gone" android:layout_width="@dimen/view_9" android:layout_height="@dimen/view_9" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

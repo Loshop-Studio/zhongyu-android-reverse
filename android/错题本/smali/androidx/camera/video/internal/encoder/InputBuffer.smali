@@ -1,0 +1,34 @@
+.class public interface abstract Landroidx/camera/video/internal/encoder/InputBuffer;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract cancel()Z
+.end method
+
+.method public abstract getByteBuffer()Ljava/nio/ByteBuffer;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end method
+
+.method public abstract getTerminationFuture()Le1/a;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Le1/a;"
+        }
+    .end annotation
+.end method
+
+.method public abstract setEndOfStream(Z)V
+.end method
+
+.method public abstract setPresentationTimeUs(J)V
+.end method
+
+.method public abstract submit()Z
+.end method

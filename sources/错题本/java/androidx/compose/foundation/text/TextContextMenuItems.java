@@ -1,0 +1,74 @@
+package androidx.compose.foundation.text;
+
+import android.R;
+import android.content.res.Resources;
+import android.os.Build;
+import androidx.compose.foundation.C0785R;
+import androidx.compose.p011ui.res.StringResources_androidKt;
+import androidx.compose.runtime.Composable;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.ReadOnlyComposable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.enums.AbstractC5817a;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import p092j6.InterfaceC5748a;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+@Metadata(m5109d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0007\b\u0080\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\r\u0010\u0005\u001a\u00020\u0006H\u0007¢\u0006\u0002\u0010\u0007R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\f¨\u0006\r"}, m5110d2 = {"Landroidx/compose/foundation/text/TextContextMenuItems;", "", "stringId", "", "(Ljava/lang/String;II)V", "resolvedString", "", "(Landroidx/compose/runtime/Composer;I)Ljava/lang/String;", "Cut", "Copy", "Paste", "SelectAll", "Autofill", "foundation_release"}, m5111k = 1, m5112mv = {1, 9, 0}, m5114xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes.dex */
+public final class TextContextMenuItems {
+    private static final /* synthetic */ InterfaceC5748a $ENTRIES;
+    private static final /* synthetic */ TextContextMenuItems[] $VALUES;
+    public static final TextContextMenuItems Autofill;
+    private final int stringId;
+    public static final TextContextMenuItems Cut = new TextContextMenuItems("Cut", 0, R.string.cut);
+    public static final TextContextMenuItems Copy = new TextContextMenuItems("Copy", 1, R.string.copy);
+    public static final TextContextMenuItems Paste = new TextContextMenuItems("Paste", 2, R.string.paste);
+    public static final TextContextMenuItems SelectAll = new TextContextMenuItems("SelectAll", 3, R.string.selectAll);
+
+    private static final /* synthetic */ TextContextMenuItems[] $values() {
+        return new TextContextMenuItems[]{Cut, Copy, Paste, SelectAll, Autofill};
+    }
+
+    static {
+        Autofill = new TextContextMenuItems("Autofill", 4, Build.VERSION.SDK_INT <= 26 ? C0785R.string.autofill : R.string.autofill);
+        TextContextMenuItems[] textContextMenuItemsArr$values = $values();
+        $VALUES = textContextMenuItemsArr$values;
+        $ENTRIES = AbstractC5817a.m5310a(textContextMenuItemsArr$values);
+    }
+
+    private TextContextMenuItems(String str, int i, int i8) {
+        this.stringId = i8;
+    }
+
+    @NotNull
+    public static InterfaceC5748a getEntries() {
+        return $ENTRIES;
+    }
+
+    public static TextContextMenuItems valueOf(String str) {
+        return (TextContextMenuItems) Enum.valueOf(TextContextMenuItems.class, str);
+    }
+
+    public static TextContextMenuItems[] values() {
+        return (TextContextMenuItems[]) $VALUES.clone();
+    }
+
+    @Composable
+    @ReadOnlyComposable
+    @NotNull
+    public final String resolvedString(@Nullable Composer composer, int i) throws Resources.NotFoundException {
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(-309609081, i, -1, "androidx.compose.foundation.text.TextContextMenuItems.resolvedString (ContextMenu.android.kt:131)");
+        }
+        String strStringResource = StringResources_androidKt.stringResource(this.stringId, composer, 0);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        return strStringResource;
+    }
+}

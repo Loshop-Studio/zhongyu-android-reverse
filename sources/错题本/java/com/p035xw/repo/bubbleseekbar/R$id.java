@@ -1,0 +1,120 @@
+package com.p035xw.repo.bubbleseekbar;
+
+/* loaded from: classes3.dex */
+public final class R$id {
+    public static int action_bar = 2131296349;
+    public static int action_bar_activity_content = 2131296350;
+    public static int action_bar_container = 2131296351;
+    public static int action_bar_root = 2131296352;
+    public static int action_bar_spinner = 2131296353;
+    public static int action_bar_subtitle = 2131296354;
+    public static int action_bar_title = 2131296355;
+    public static int action_container = 2131296357;
+    public static int action_context_bar = 2131296358;
+    public static int action_divider = 2131296359;
+    public static int action_image = 2131296360;
+    public static int action_menu_divider = 2131296361;
+    public static int action_menu_presenter = 2131296362;
+    public static int action_mode_bar = 2131296363;
+    public static int action_mode_bar_stub = 2131296364;
+    public static int action_mode_close_button = 2131296365;
+    public static int action_text = 2131296366;
+    public static int actions = 2131296369;
+    public static int activity_chooser_view_content = 2131296370;
+    public static int add = 2131296371;
+    public static int alertTitle = 2131296372;
+    public static int async = 2131296387;
+    public static int below_section_mark = 2131296398;
+    public static int blocking = 2131296401;
+    public static int bottom = 2131296403;
+    public static int bottom_sides = 2131296414;
+    public static int buttonPanel = 2131296432;
+    public static int checkbox = 2131296472;
+    public static int chronometer = 2131296475;
+    public static int content = 2131296501;
+    public static int contentPanel = 2131296502;
+    public static int custom = 2131296525;
+    public static int customPanel = 2131296527;
+    public static int decor_content_parent = 2131296535;
+    public static int default_activity_button = 2131296536;
+    public static int edit_query = 2131296571;
+    public static int end = 2131296579;
+    public static int expand_activities_button = 2131296592;
+    public static int expanded_menu = 2131296595;
+    public static int forever = 2131296628;
+    public static int group_divider = 2131296648;
+    public static int home = 2131296674;
+    public static int icon = 2131296687;
+    public static int icon_group = 2131296689;
+    public static int image = 2131296693;
+    public static int info = 2131296713;
+    public static int italic = 2131296718;
+    public static int left = 2131296803;
+    public static int line1 = 2131296810;
+    public static int line3 = 2131296811;
+    public static int listMode = 2131296813;
+    public static int list_item = 2131296814;
+    public static int message = 2131296909;
+    public static int multiply = 2131296948;
+    public static int none = 2131296967;
+    public static int normal = 2131296968;
+    public static int notification_background = 2131296970;
+    public static int notification_main_column = 2131296971;
+    public static int notification_main_column_container = 2131296972;
+    public static int parentPanel = 2131297007;
+    public static int progress_circular = 2131297028;
+    public static int progress_horizontal = 2131297029;
+    public static int radio = 2131297032;
+    public static int right = 2131297087;
+    public static int right_icon = 2131297090;
+    public static int right_side = 2131297091;
+    public static int screen = 2131297122;
+    public static int scrollIndicatorDown = 2131297124;
+    public static int scrollIndicatorUp = 2131297125;
+    public static int scrollView = 2131297126;
+    public static int search_badge = 2131297130;
+    public static int search_bar = 2131297131;
+    public static int search_button = 2131297132;
+    public static int search_close_btn = 2131297133;
+    public static int search_edit_frame = 2131297134;
+    public static int search_go_btn = 2131297135;
+    public static int search_mag_icon = 2131297137;
+    public static int search_plate = 2131297138;
+    public static int search_src_text = 2131297139;
+    public static int search_voice_btn = 2131297141;
+    public static int select_dialog_listview = 2131297147;
+    public static int shortcut = 2131297156;
+    public static int sides = 2131297160;
+    public static int spacer = 2131297180;
+    public static int split_action_bar = 2131297185;
+    public static int src_atop = 2131297190;
+    public static int src_in = 2131297191;
+    public static int src_over = 2131297192;
+    public static int start = 2131297199;
+    public static int submenuarrow = 2131297209;
+    public static int submit_area = 2131297210;
+    public static int tabMode = 2131297223;
+    public static int tag_transition_group = 2131297236;
+    public static int tag_unhandled_key_event_manager = 2131297237;
+    public static int tag_unhandled_key_listeners = 2131297238;
+    public static int text = 2131297241;
+    public static int text2 = 2131297242;
+    public static int textSpacerNoButtons = 2131297250;
+    public static int textSpacerNoTitle = 2131297251;
+    public static int time = 2131297266;
+    public static int title = 2131297269;
+    public static int titleDividerNoCustom = 2131297271;
+    public static int title_template = 2131297272;
+
+    /* renamed from: top, reason: collision with root package name */
+    public static int f11695top = 2131297279;
+    public static int topPanel = 2131297280;
+    public static int uniform = 2131297368;
+
+    /* renamed from: up */
+    public static int f5166up = 2131297370;
+    public static int wrap_content = 2131297412;
+
+    private R$id() {
+    }
+}

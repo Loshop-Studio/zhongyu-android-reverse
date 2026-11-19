@@ -1,0 +1,420 @@
+package com.alibaba.sdk.android.oss.internal;
+
+import android.net.Uri;
+import android.support.v4.media.AbstractC0037f;
+import com.alibaba.sdk.android.oss.common.HttpMethod;
+import com.alibaba.sdk.android.oss.common.OSSLog;
+import com.alibaba.sdk.android.oss.common.auth.OSSCredentialProvider;
+import com.alibaba.sdk.android.oss.common.utils.HttpHeaders;
+import com.alibaba.sdk.android.oss.common.utils.HttpdnsMini;
+import com.alibaba.sdk.android.oss.common.utils.OSSUtils;
+import com.alibaba.sdk.android.oss.model.BucketLifecycleRule;
+import com.alibaba.sdk.android.oss.signer.RequestSigner;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+/* loaded from: classes2.dex */
+public class RequestMessage extends HttpMessage {
+    private String bucketName;
+    private boolean checkCRC64;
+    private OSSCredentialProvider credentialProvider;
+    private URI endpoint;
+    private String ipWithHeader;
+    private HttpMethod method;
+    private String objectKey;
+    private URI service;
+    private RequestSigner signer;
+    private byte[] uploadData;
+    private String uploadFilePath;
+    private Uri uploadUri;
+    private boolean isAuthorizationRequired = true;
+    private Map<String, String> parameters = new LinkedHashMap();
+    private boolean httpDnsEnable = false;
+    private boolean pathStyleAccessEnable = false;
+    private boolean customPathPrefixEnable = false;
+    private boolean isInCustomCnameExcludeList = false;
+    private boolean useUrlSignature = false;
+    private Set<String> additionalHeaderNames = new HashSet();
+
+    @Override // com.alibaba.sdk.android.oss.internal.HttpMessage
+    public /* bridge */ /* synthetic */ void addHeader(String str, String str2) {
+        super.addHeader(str, str2);
+    }
+
+    public void addParameter(String str, String str2) {
+        this.parameters.put(str, str2);
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:33:0x00ed  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public java.lang.String buildCanonicalURL() throws java.lang.Exception {
+        /*
+            Method dump skipped, instructions count: 482
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.alibaba.sdk.android.oss.internal.RequestMessage.buildCanonicalURL():java.lang.String");
+    }
+
+    public String buildOSSServiceURL() {
+        String ipByHostAsync;
+        OSSUtils.assertTrue(this.service != null, "Service haven't been set!");
+        String host = this.service.getHost();
+        String scheme = this.service.getScheme();
+        if (isHttpDnsEnable() && scheme.equalsIgnoreCase("http")) {
+            ipByHostAsync = HttpdnsMini.getInstance().getIpByHostAsync(host);
+        } else {
+            OSSLog.logDebug("[buildOSSServiceURL], disable httpdns or http is not need httpdns");
+            ipByHostAsync = null;
+        }
+        if (ipByHostAsync == null) {
+            ipByHostAsync = host;
+        }
+        getHeaders().put(HttpHeaders.HOST, host);
+        String str = scheme + "://" + ipByHostAsync;
+        String strParamToQueryString = OSSUtils.paramToQueryString(this.parameters, "utf-8");
+        return OSSUtils.isEmptyString(strParamToQueryString) ? str : AbstractC0037f.m75D(str, "?", strParamToQueryString);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.internal.HttpMessage
+    public /* bridge */ /* synthetic */ void close() throws IOException {
+        super.close();
+    }
+
+    public void createBucketRequestBodyMarshall(Map<String, String> map) throws UnsupportedEncodingException {
+        StringBuffer stringBuffer = new StringBuffer();
+        if (map != null) {
+            stringBuffer.append("<CreateBucketConfiguration>");
+            for (Map.Entry<String, String> entry : map.entrySet()) {
+                stringBuffer.append("<" + entry.getKey() + ">" + entry.getValue() + "</" + entry.getKey() + ">");
+            }
+            stringBuffer.append("</CreateBucketConfiguration>");
+            setStringBody(stringBuffer.toString());
+        }
+    }
+
+    public byte[] deleteMultipleObjectRequestBodyMarshall(List<String> list, boolean z8) throws UnsupportedEncodingException {
+        StringBuffer stringBuffer = new StringBuffer("<Delete>");
+        if (z8) {
+            stringBuffer.append("<Quiet>true</Quiet>");
+        } else {
+            stringBuffer.append("<Quiet>false</Quiet>");
+        }
+        for (String str : list) {
+            stringBuffer.append("<Object><Key>");
+            stringBuffer.append(OSSUtils.escapeKey(str));
+            stringBuffer.append("</Key></Object>");
+        }
+        stringBuffer.append("</Delete>");
+        String string = stringBuffer.toString();
+        byte[] bytes = string.getBytes("utf-8");
+        setStringBody(string);
+        return bytes;
+    }
+
+    public Set<String> getAdditionalHeaderNames() {
+        return this.additionalHeaderNames;
+    }
+
+    public String getBucketName() {
+        return this.bucketName;
+    }
+
+    @Override // com.alibaba.sdk.android.oss.internal.HttpMessage
+    public /* bridge */ /* synthetic */ InputStream getContent() {
+        return super.getContent();
+    }
+
+    @Override // com.alibaba.sdk.android.oss.internal.HttpMessage
+    public /* bridge */ /* synthetic */ long getContentLength() {
+        return super.getContentLength();
+    }
+
+    public OSSCredentialProvider getCredentialProvider() {
+        return this.credentialProvider;
+    }
+
+    public URI getEndpoint() {
+        return this.endpoint;
+    }
+
+    @Override // com.alibaba.sdk.android.oss.internal.HttpMessage
+    public /* bridge */ /* synthetic */ Map getHeaders() {
+        return super.getHeaders();
+    }
+
+    public String getIpWithHeader() {
+        return this.ipWithHeader;
+    }
+
+    public HttpMethod getMethod() {
+        return this.method;
+    }
+
+    public String getObjectKey() {
+        return this.objectKey;
+    }
+
+    public Map<String, String> getParameters() {
+        return this.parameters;
+    }
+
+    public URI getService() {
+        return this.service;
+    }
+
+    public RequestSigner getSigner() {
+        return this.signer;
+    }
+
+    @Override // com.alibaba.sdk.android.oss.internal.HttpMessage
+    public /* bridge */ /* synthetic */ String getStringBody() {
+        return super.getStringBody();
+    }
+
+    public byte[] getUploadData() {
+        return this.uploadData;
+    }
+
+    public String getUploadFilePath() {
+        return this.uploadFilePath;
+    }
+
+    public Uri getUploadUri() {
+        return this.uploadUri;
+    }
+
+    public boolean isAuthorizationRequired() {
+        return this.isAuthorizationRequired;
+    }
+
+    public boolean isCheckCRC64() {
+        return this.checkCRC64;
+    }
+
+    public boolean isCustomPathPrefixEnable() {
+        return this.customPathPrefixEnable;
+    }
+
+    public boolean isHttpDnsEnable() {
+        return this.httpDnsEnable;
+    }
+
+    public boolean isInCustomCnameExcludeList() {
+        return this.isInCustomCnameExcludeList;
+    }
+
+    public boolean isPathStyleAccessEnable() {
+        return this.pathStyleAccessEnable;
+    }
+
+    public boolean isUseUrlSignature() {
+        return this.useUrlSignature;
+    }
+
+    public void putBucketLifecycleRequestBodyMarshall(ArrayList<BucketLifecycleRule> arrayList) throws UnsupportedEncodingException {
+        StringBuffer stringBuffer = new StringBuffer("<LifecycleConfiguration>");
+        int size = arrayList.size();
+        int i = 0;
+        while (i < size) {
+            BucketLifecycleRule bucketLifecycleRule = arrayList.get(i);
+            i++;
+            BucketLifecycleRule bucketLifecycleRule2 = bucketLifecycleRule;
+            stringBuffer.append("<Rule>");
+            if (bucketLifecycleRule2.getIdentifier() != null) {
+                stringBuffer.append("<ID>" + bucketLifecycleRule2.getIdentifier() + "</ID>");
+            }
+            if (bucketLifecycleRule2.getPrefix() != null) {
+                stringBuffer.append("<Prefix>" + bucketLifecycleRule2.getPrefix() + "</Prefix>");
+            }
+            StringBuilder sb = new StringBuilder("<Status>");
+            sb.append(bucketLifecycleRule2.getStatus() ? "Enabled" : "Disabled");
+            sb.append("</Status>");
+            stringBuffer.append(sb.toString());
+            if (bucketLifecycleRule2.getDays() != null) {
+                stringBuffer.append("<Days>" + bucketLifecycleRule2.getDays() + "</Days>");
+            } else if (bucketLifecycleRule2.getExpireDate() != null) {
+                stringBuffer.append("<Date>" + bucketLifecycleRule2.getExpireDate() + "</Date>");
+            }
+            if (bucketLifecycleRule2.getMultipartDays() != null) {
+                stringBuffer.append("<AbortMultipartUpload><Days>" + bucketLifecycleRule2.getMultipartDays() + "</Days></AbortMultipartUpload>");
+            } else if (bucketLifecycleRule2.getMultipartExpireDate() != null) {
+                stringBuffer.append("<AbortMultipartUpload><Date>" + bucketLifecycleRule2.getMultipartDays() + "</Date></AbortMultipartUpload>");
+            }
+            if (bucketLifecycleRule2.getIADays() != null) {
+                stringBuffer.append("<Transition><Days>" + bucketLifecycleRule2.getIADays() + "</Days><StorageClass>IA</StorageClass></Transition>");
+            } else if (bucketLifecycleRule2.getIAExpireDate() != null) {
+                stringBuffer.append("<Transition><Date>" + bucketLifecycleRule2.getIAExpireDate() + "</Date><StorageClass>IA</StorageClass></Transition>");
+            } else if (bucketLifecycleRule2.getArchiveDays() != null) {
+                stringBuffer.append("<Transition><Days>" + bucketLifecycleRule2.getArchiveDays() + "</Days><StorageClass>Archive</StorageClass></Transition>");
+            } else if (bucketLifecycleRule2.getArchiveExpireDate() != null) {
+                stringBuffer.append("<Transition><Date>" + bucketLifecycleRule2.getArchiveExpireDate() + "</Date><StorageClass>Archive</StorageClass></Transition>");
+            }
+            stringBuffer.append("</Rule>");
+        }
+        stringBuffer.append("</LifecycleConfiguration>");
+        setStringBody(stringBuffer.toString());
+    }
+
+    public void putBucketLoggingRequestBodyMarshall(String str, String str2) throws UnsupportedEncodingException {
+        StringBuffer stringBuffer = new StringBuffer("<BucketLoggingStatus>");
+        if (str != null) {
+            stringBuffer.append("<LoggingEnabled><TargetBucket>" + str + "</TargetBucket>");
+            if (str2 != null) {
+                stringBuffer.append("<TargetPrefix>" + str2 + "</TargetPrefix>");
+            }
+            stringBuffer.append("</LoggingEnabled>");
+        }
+        stringBuffer.append("</BucketLoggingStatus>");
+        setStringBody(stringBuffer.toString());
+    }
+
+    public void putBucketRefererRequestBodyMarshall(ArrayList<String> arrayList, boolean z8) throws UnsupportedEncodingException {
+        StringBuffer stringBuffer = new StringBuffer("<RefererConfiguration>");
+        StringBuilder sb = new StringBuilder("<AllowEmptyReferer>");
+        sb.append(z8 ? "true" : "false");
+        sb.append("</AllowEmptyReferer>");
+        stringBuffer.append(sb.toString());
+        if (arrayList != null && arrayList.size() > 0) {
+            stringBuffer.append("<RefererList>");
+            int size = arrayList.size();
+            int i = 0;
+            while (i < size) {
+                String str = arrayList.get(i);
+                i++;
+                stringBuffer.append("<Referer>" + str + "</Referer>");
+            }
+            stringBuffer.append("</RefererList>");
+        }
+        stringBuffer.append("</RefererConfiguration>");
+        setStringBody(stringBuffer.toString());
+    }
+
+    public byte[] putObjectTaggingRequestBodyMarshall(Map<String, String> map) throws UnsupportedEncodingException {
+        StringBuffer stringBuffer = new StringBuffer("<Tagging><TagSet>");
+        if (map != null) {
+            for (Map.Entry<String, String> entry : map.entrySet()) {
+                stringBuffer.append("<Tag><Key>");
+                stringBuffer.append(entry.getKey());
+                stringBuffer.append("</Key><Value>");
+                stringBuffer.append(entry.getValue());
+                stringBuffer.append("</Value></Tag>");
+            }
+        }
+        stringBuffer.append("</TagSet></Tagging>");
+        String string = stringBuffer.toString();
+        byte[] bytes = string.getBytes("utf-8");
+        setStringBody(string);
+        return bytes;
+    }
+
+    public void setAdditionalHeaderNames(Set<String> set) {
+        this.additionalHeaderNames = set;
+    }
+
+    public void setBucketName(String str) {
+        this.bucketName = str;
+    }
+
+    public void setCheckCRC64(boolean z8) {
+        this.checkCRC64 = z8;
+    }
+
+    @Override // com.alibaba.sdk.android.oss.internal.HttpMessage
+    public /* bridge */ /* synthetic */ void setContent(InputStream inputStream) {
+        super.setContent(inputStream);
+    }
+
+    @Override // com.alibaba.sdk.android.oss.internal.HttpMessage
+    public /* bridge */ /* synthetic */ void setContentLength(long j7) {
+        super.setContentLength(j7);
+    }
+
+    public void setCredentialProvider(OSSCredentialProvider oSSCredentialProvider) {
+        this.credentialProvider = oSSCredentialProvider;
+    }
+
+    public void setCustomPathPrefixEnable(boolean z8) {
+        this.customPathPrefixEnable = z8;
+    }
+
+    public void setEndpoint(URI uri) {
+        this.endpoint = uri;
+    }
+
+    @Override // com.alibaba.sdk.android.oss.internal.HttpMessage
+    public /* bridge */ /* synthetic */ void setHeaders(Map map) {
+        super.setHeaders(map);
+    }
+
+    public void setHttpDnsEnable(boolean z8) {
+        this.httpDnsEnable = z8;
+    }
+
+    public void setIpWithHeader(String str) {
+        this.ipWithHeader = str;
+    }
+
+    public void setIsAuthorizationRequired(boolean z8) {
+        this.isAuthorizationRequired = z8;
+    }
+
+    public void setIsInCustomCnameExcludeList(boolean z8) {
+        this.isInCustomCnameExcludeList = z8;
+    }
+
+    public void setMethod(HttpMethod httpMethod) {
+        this.method = httpMethod;
+    }
+
+    public void setObjectKey(String str) {
+        this.objectKey = str;
+    }
+
+    public void setParameters(Map<String, String> map) {
+        this.parameters = map;
+    }
+
+    public void setPathStyleAccessEnable(boolean z8) {
+        this.pathStyleAccessEnable = z8;
+    }
+
+    public void setService(URI uri) {
+        this.service = uri;
+    }
+
+    public void setSigner(RequestSigner requestSigner) {
+        this.signer = requestSigner;
+    }
+
+    @Override // com.alibaba.sdk.android.oss.internal.HttpMessage
+    public /* bridge */ /* synthetic */ void setStringBody(String str) {
+        super.setStringBody(str);
+    }
+
+    public void setUploadData(byte[] bArr) {
+        this.uploadData = bArr;
+    }
+
+    public void setUploadFilePath(String str) {
+        this.uploadFilePath = str;
+    }
+
+    public void setUploadUri(Uri uri) {
+        this.uploadUri = uri;
+    }
+
+    public void setUseUrlSignature(boolean z8) {
+        this.useUrlSignature = z8;
+    }
+}

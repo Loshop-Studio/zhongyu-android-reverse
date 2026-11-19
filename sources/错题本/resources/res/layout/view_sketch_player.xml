@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zykj.merge.sketch.view.MergeSketchPlayView android:id="@id/mapViewer" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/control_bar" android:padding="@dimen/view_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/img_music_control" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_btn_music_play" />
+        <TextView android:id="@id/tv_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_marginStart="@dimen/view_9" android:layout_toEndOf="@id/img_music_control" />
+        <TextView android:id="@id/tv_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_marginStart="@dimen/view_9" android:layout_alignParentEnd="true" />
+        <SeekBar android:id="@id/seek_bar_music" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/tv_end_time" android:layout_toEndOf="@id/tv_start_time" />
+    </RelativeLayout>
+</RelativeLayout>

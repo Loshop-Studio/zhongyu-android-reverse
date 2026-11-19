@@ -1,0 +1,1991 @@
+.class public abstract Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;
+.super Lcom/zykj/blackboard/core/graph/root/BoundedContainerGraph;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0084\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u00083\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0008&\u0018\u00002\u00020\u0001B5\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0006\u0012\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0002\u0012\u0008\u0010\n\u001a\u0004\u0018\u00010\t\u00a2\u0006\u0004\u0008\u000b\u0010\u000cJ\u000f\u0010\u000e\u001a\u00020\rH\u0016\u00a2\u0006\u0004\u0008\u000e\u0010\u000fJ\u000f\u0010\u0011\u001a\u00020\u0010H\u0016\u00a2\u0006\u0004\u0008\u0011\u0010\u0012J\'\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u0014\u001a\u00020\u00132\u0006\u0010\u0015\u001a\u00020\u00132\u0006\u0010\u0016\u001a\u00020\u0013H\u0016\u00a2\u0006\u0004\u0008\u0018\u0010\u0019J\u000f\u0010\u001a\u001a\u00020\rH\u0016\u00a2\u0006\u0004\u0008\u001a\u0010\u000fJ\u0015\u0010\u001d\u001a\u00020\r2\u0006\u0010\u001c\u001a\u00020\u001b\u00a2\u0006\u0004\u0008\u001d\u0010\u001eJ%\u0010\"\u001a\u00020\r2\u0006\u0010\u001c\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u00132\u0006\u0010!\u001a\u00020\u0013\u00a2\u0006\u0004\u0008\"\u0010#J\u0015\u0010&\u001a\u00020\r2\u0006\u0010%\u001a\u00020$\u00a2\u0006\u0004\u0008&\u0010\'J\u001b\u0010+\u001a\u00020\r2\u000c\u0010*\u001a\u0008\u0012\u0004\u0012\u00020)0(\u00a2\u0006\u0004\u0008+\u0010,J\u0019\u0010/\u001a\u00020\u00042\u0008\u0010.\u001a\u0004\u0018\u00010-H\u0016\u00a2\u0006\u0004\u0008/\u00100J\u000f\u00101\u001a\u00020\rH\u0016\u00a2\u0006\u0004\u00081\u0010\u000fJ\u0011\u00103\u001a\u0004\u0018\u000102H\u0002\u00a2\u0006\u0004\u00083\u00104J?\u0010;\u001a\u00020\u00132\u0006\u00105\u001a\u00020\u00132\u0006\u00106\u001a\u00020\u00132\u0006\u00107\u001a\u00020\u00132\u0006\u00108\u001a\u00020\u00132\u0006\u00109\u001a\u00020\u00132\u0006\u0010:\u001a\u00020\u0013H\u0002\u00a2\u0006\u0004\u0008;\u0010<J/\u0010=\u001a\u00020\u00132\u0006\u00105\u001a\u00020\u00132\u0006\u00106\u001a\u00020\u00132\u0006\u00107\u001a\u00020\u00132\u0006\u00108\u001a\u00020\u0013H\u0002\u00a2\u0006\u0004\u0008=\u0010>R$\u0010\u0007\u001a\u0004\u0018\u00010\u00068\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0007\u0010?\u001a\u0004\u0008@\u0010A\"\u0004\u0008B\u0010CR$\u0010\u0008\u001a\u0004\u0018\u00010\u00028\u0016@\u0016X\u0096\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0008\u0010D\u001a\u0004\u0008E\u0010F\"\u0004\u0008G\u0010HR$\u0010\n\u001a\u0004\u0018\u00010\t8\u0016@\u0016X\u0096\u000e\u00a2\u0006\u0012\n\u0004\u0008\n\u0010I\u001a\u0004\u0008J\u0010K\"\u0004\u0008L\u0010MR\"\u0010N\u001a\u00020\u00138\u0004@\u0004X\u0084\u000e\u00a2\u0006\u0012\n\u0004\u0008N\u0010O\u001a\u0004\u0008P\u0010Q\"\u0004\u0008R\u0010SR\"\u0010!\u001a\u00020\u00138\u0004@\u0004X\u0084\u000e\u00a2\u0006\u0012\n\u0004\u0008!\u0010O\u001a\u0004\u0008T\u0010Q\"\u0004\u0008U\u0010SR(\u0010W\u001a\u0004\u0018\u00010\u001f2\u0008\u0010V\u001a\u0004\u0018\u00010\u001f8\u0006@BX\u0086\u000e\u00a2\u0006\u000c\n\u0004\u0008W\u0010X\u001a\u0004\u0008Y\u0010ZR$\u0010%\u001a\u0004\u0018\u00010$8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008%\u0010[\u001a\u0004\u0008\\\u0010]\"\u0004\u0008^\u0010\'R$\u0010_\u001a\u0004\u0018\u00010$8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008_\u0010[\u001a\u0004\u0008`\u0010]\"\u0004\u0008a\u0010\'R\u0017\u0010b\u001a\u00020-8\u0006\u00a2\u0006\u000c\n\u0004\u0008b\u0010c\u001a\u0004\u0008d\u0010eR\'\u0010h\u001a\u0012\u0012\u0004\u0012\u00020)0fj\u0008\u0012\u0004\u0012\u00020)`g8\u0006\u00a2\u0006\u000c\n\u0004\u0008h\u0010i\u001a\u0004\u0008j\u0010kR\u0011\u0010l\u001a\u00020\u00178F\u00a2\u0006\u0006\u001a\u0004\u0008l\u0010m\u00a8\u0006n"
+    }
+    d2 = {
+        "Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;",
+        "Lcom/zykj/blackboard/core/graph/root/BoundedContainerGraph;",
+        "",
+        "id",
+        "Landroid/graphics/RectF;",
+        "outRectF",
+        "Lcom/zykj/blackboard/core/loader/SourceLoader;",
+        "sourceLoader",
+        "sourceFileName",
+        "",
+        "sourceId",
+        "<init>",
+        "(Ljava/lang/String;Landroid/graphics/RectF;Lcom/zykj/blackboard/core/loader/SourceLoader;Ljava/lang/String;Ljava/lang/Integer;)V",
+        "Ld6/s;",
+        "initPath",
+        "()V",
+        "Lcom/zykj/board/d0;",
+        "getSnapshot",
+        "()Lcom/zykj/board/d0;",
+        "",
+        "x",
+        "y",
+        "offset",
+        "",
+        "isCollide",
+        "(FFF)Z",
+        "updateRenderRectF",
+        "Lcom/zykj/board/EzyPaint$Paint;",
+        "paint",
+        "updatePaint",
+        "(Lcom/zykj/board/EzyPaint$Paint;)V",
+        "Landroid/graphics/Paint;",
+        "pathItemLength",
+        "paintSpacing",
+        "setPaint",
+        "(Landroid/graphics/Paint;FF)V",
+        "Landroid/graphics/Path;",
+        "path",
+        "updatePath",
+        "(Landroid/graphics/Path;)V",
+        "",
+        "Lcom/zykj/board/EzyTouchEvent$TouchEvent;",
+        "list",
+        "updateEventList",
+        "(Ljava/util/List;)V",
+        "Landroid/graphics/Matrix;",
+        "adapterMatrix",
+        "getMinOutRectF",
+        "(Landroid/graphics/Matrix;)Landroid/graphics/RectF;",
+        "onDestroy",
+        "Lcom/zykj/board/EzySource$TouchSource$TouchInfo;",
+        "getTouchInfo",
+        "()Lcom/zykj/board/EzySource$TouchSource$TouchInfo;",
+        "x1",
+        "y1",
+        "x2",
+        "y2",
+        "x0",
+        "y0",
+        "pointToLine",
+        "(FFFFFF)F",
+        "lineSpace",
+        "(FFFF)F",
+        "Lcom/zykj/blackboard/core/loader/SourceLoader;",
+        "getSourceLoader",
+        "()Lcom/zykj/blackboard/core/loader/SourceLoader;",
+        "setSourceLoader",
+        "(Lcom/zykj/blackboard/core/loader/SourceLoader;)V",
+        "Ljava/lang/String;",
+        "getSourceFileName",
+        "()Ljava/lang/String;",
+        "setSourceFileName",
+        "(Ljava/lang/String;)V",
+        "Ljava/lang/Integer;",
+        "getSourceId",
+        "()Ljava/lang/Integer;",
+        "setSourceId",
+        "(Ljava/lang/Integer;)V",
+        "paintItemLength",
+        "F",
+        "getPaintItemLength",
+        "()F",
+        "setPaintItemLength",
+        "(F)V",
+        "getPaintSpacing",
+        "setPaintSpacing",
+        "<set-?>",
+        "mPaint",
+        "Landroid/graphics/Paint;",
+        "getMPaint",
+        "()Landroid/graphics/Paint;",
+        "Landroid/graphics/Path;",
+        "getPath",
+        "()Landroid/graphics/Path;",
+        "setPath",
+        "renderPath",
+        "getRenderPath",
+        "setRenderPath",
+        "tempMatrix",
+        "Landroid/graphics/Matrix;",
+        "getTempMatrix",
+        "()Landroid/graphics/Matrix;",
+        "Ljava/util/ArrayList;",
+        "Lkotlin/collections/ArrayList;",
+        "mEventList",
+        "Ljava/util/ArrayList;",
+        "getMEventList",
+        "()Ljava/util/ArrayList;",
+        "isHighlighter",
+        "()Z",
+        "blackboard_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final mEventList:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Lcom/zykj/board/EzyTouchEvent$TouchEvent;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private mPaint:Landroid/graphics/Paint;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field private paintItemLength:F
+
+.field private paintSpacing:F
+
+.field private path:Landroid/graphics/Path;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field private renderPath:Landroid/graphics/Path;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field private sourceFileName:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field private sourceId:Ljava/lang/Integer;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field private sourceLoader:Lcom/zykj/blackboard/core/loader/SourceLoader;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field private final tempMatrix:Landroid/graphics/Matrix;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Landroid/graphics/RectF;Lcom/zykj/blackboard/core/loader/SourceLoader;Ljava/lang/String;Ljava/lang/Integer;)V
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/graphics/RectF;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p3    # Lcom/zykj/blackboard/core/loader/SourceLoader;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p5    # Ljava/lang/Integer;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    const-string v0, "id"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "outRectF"
+
+    .line 7
+    .line 8
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-direct {p0, p1, p2, p4, p5}, Lcom/zykj/blackboard/core/graph/root/BoundedContainerGraph;-><init>(Ljava/lang/String;Landroid/graphics/RectF;Ljava/lang/String;Ljava/lang/Integer;)V
+
+    .line 12
+    .line 13
+    .line 14
+    iput-object p3, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->sourceLoader:Lcom/zykj/blackboard/core/loader/SourceLoader;
+
+    .line 15
+    .line 16
+    iput-object p4, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->sourceFileName:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    iput-object p5, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->sourceId:Ljava/lang/Integer;
+
+    .line 19
+    .line 20
+    const/high16 p1, 0x3f800000    # 1.0f
+
+    .line 21
+    .line 22
+    iput p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->paintItemLength:F
+
+    .line 23
+    .line 24
+    new-instance p1, Landroid/graphics/Path;
+
+    .line 25
+    .line 26
+    invoke-direct {p1}, Landroid/graphics/Path;-><init>()V
+
+    .line 27
+    .line 28
+    .line 29
+    iput-object p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->renderPath:Landroid/graphics/Path;
+
+    .line 30
+    .line 31
+    new-instance p1, Landroid/graphics/Matrix;
+
+    .line 32
+    .line 33
+    invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
+
+    .line 34
+    .line 35
+    .line 36
+    iput-object p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->tempMatrix:Landroid/graphics/Matrix;
+
+    .line 37
+    .line 38
+    new-instance p1, Ljava/util/ArrayList;
+
+    .line 39
+    .line 40
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 41
+    .line 42
+    .line 43
+    iput-object p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mEventList:Ljava/util/ArrayList;
+
+    .line 44
+    .line 45
+    return-void
+.end method
+
+.method private final getTouchInfo()Lcom/zykj/board/EzySource$TouchSource$TouchInfo;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->sourceLoader:Lcom/zykj/blackboard/core/loader/SourceLoader;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->getSourceFileName()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    invoke-virtual {p0}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->getSourceId()Ljava/lang/Integer;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    if-eqz v0, :cond_0
+
+    .line 16
+    .line 17
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->sourceLoader:Lcom/zykj/blackboard/core/loader/SourceLoader;
+
+    .line 18
+    .line 19
+    invoke-static {v0}, Lkotlin/jvm/internal/k;->d(Ljava/lang/Object;)V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {p0}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->getSourceFileName()Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v1
+
+    .line 26
+    invoke-static {v1}, Lkotlin/jvm/internal/k;->d(Ljava/lang/Object;)V
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {p0}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->getSourceId()Ljava/lang/Integer;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v2
+
+    .line 33
+    invoke-static {v2}, Lkotlin/jvm/internal/k;->d(Ljava/lang/Object;)V
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v2
+
+    .line 40
+    invoke-interface {v0, v1, v2}, Lcom/zykj/blackboard/core/loader/SourceLoader;->getTouchCache(Ljava/lang/String;I)Lcom/zykj/board/EzySource$TouchSource$TouchInfo;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v0
+
+    .line 44
+    return-object v0
+
+    .line 45
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 46
+    return-object v0
+.end method
+
+.method private final lineSpace(FFFF)F
+    .locals 0
+
+    .line 1
+    sub-float/2addr p1, p3
+
+    .line 2
+    mul-float/2addr p1, p1
+
+    .line 3
+    sub-float/2addr p2, p4
+
+    .line 4
+    mul-float/2addr p2, p2
+
+    .line 5
+    add-float/2addr p2, p1
+
+    .line 6
+    float-to-double p1, p2
+
+    .line 7
+    invoke-static {p1, p2}, Ljava/lang/Math;->sqrt(D)D
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-wide p1
+
+    .line 11
+    double-to-float p1, p1
+
+    .line 12
+    return p1
+.end method
+
+.method private final pointToLine(FFFFFF)F
+    .locals 1
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->lineSpace(FFFF)F
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    invoke-direct {p0, p1, p2, p5, p6}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->lineSpace(FFFF)F
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p1
+
+    .line 9
+    invoke-direct {p0, p3, p4, p5, p6}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->lineSpace(FFFF)F
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p2
+
+    .line 13
+    mul-float p3, p2, p2
+
+    .line 14
+    .line 15
+    mul-float p4, v0, v0
+
+    .line 16
+    .line 17
+    mul-float p5, p1, p1
+
+    .line 18
+    .line 19
+    add-float p6, p4, p5
+
+    .line 20
+    .line 21
+    cmpl-float p6, p3, p6
+
+    .line 22
+    .line 23
+    if-ltz p6, :cond_0
+
+    .line 24
+    .line 25
+    return p1
+
+    .line 26
+    :cond_0
+    add-float/2addr p4, p3
+
+    .line 27
+    cmpl-float p3, p5, p4
+
+    .line 28
+    .line 29
+    if-ltz p3, :cond_1
+
+    .line 30
+    .line 31
+    return p2
+
+    .line 32
+    :cond_1
+    add-float p3, v0, p1
+
+    .line 33
+    .line 34
+    add-float/2addr p3, p2
+
+    .line 35
+    const/4 p4, 0x2
+
+    .line 36
+    int-to-float p4, p4
+
+    .line 37
+    div-float/2addr p3, p4
+
+    .line 38
+    sub-float p5, p3, v0
+
+    .line 39
+    .line 40
+    mul-float/2addr p5, p3
+
+    .line 41
+    sub-float p1, p3, p1
+
+    .line 42
+    .line 43
+    mul-float/2addr p1, p5
+
+    .line 44
+    sub-float/2addr p3, p2
+
+    .line 45
+    mul-float/2addr p3, p1
+
+    .line 46
+    float-to-double p1, p3
+
+    .line 47
+    invoke-static {p1, p2}, Ljava/lang/Math;->sqrt(D)D
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-wide p1
+
+    .line 51
+    double-to-float p1, p1
+
+    .line 52
+    mul-float/2addr p4, p1
+
+    .line 53
+    div-float/2addr p4, v0
+
+    .line 54
+    return p4
+.end method
+
+
+# virtual methods
+.method public final getMEventList()Ljava/util/ArrayList;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/ArrayList<",
+            "Lcom/zykj/board/EzyTouchEvent$TouchEvent;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mEventList:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getMPaint()Landroid/graphics/Paint;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mPaint:Landroid/graphics/Paint;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getMinOutRectF(Landroid/graphics/Matrix;)Landroid/graphics/RectF;
+    .locals 3
+    .param p1    # Landroid/graphics/Matrix;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->path:Landroid/graphics/Path;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->initPath()V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->path:Landroid/graphics/Path;
+
+    .line 9
+    .line 10
+    if-eqz v0, :cond_1
+
+    .line 11
+    .line 12
+    invoke-virtual {p0}, Lcom/zykj/blackboard/core/graph/Graph;->getRenderMatrix()Landroid/graphics/Matrix;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v1
+
+    .line 16
+    iget-object v2, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->renderPath:Landroid/graphics/Path;
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;Landroid/graphics/Path;)V
+
+    .line 19
+    .line 20
+    .line 21
+    :cond_1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->renderPath:Landroid/graphics/Path;
+
+    .line 22
+    .line 23
+    if-eqz v0, :cond_3
+
+    .line 24
+    .line 25
+    if-nez p1, :cond_2
+
+    .line 26
+    .line 27
+    new-instance p1, Landroid/graphics/Matrix;
+
+    .line 28
+    .line 29
+    invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
+
+    .line 30
+    .line 31
+    .line 32
+    :cond_2
+    iget-object v1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->renderPath:Landroid/graphics/Path;
+
+    .line 33
+    .line 34
+    invoke-virtual {v0, p1, v1}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;Landroid/graphics/Path;)V
+
+    .line 35
+    .line 36
+    .line 37
+    :cond_3
+    new-instance p1, Landroid/graphics/RectF;
+
+    .line 38
+    .line 39
+    invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
+
+    .line 40
+    .line 41
+    .line 42
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->renderPath:Landroid/graphics/Path;
+
+    .line 43
+    .line 44
+    if-eqz v0, :cond_4
+
+    .line 45
+    .line 46
+    const/4 v1, 0x0
+
+    .line 47
+    invoke-virtual {v0, p1, v1}, Landroid/graphics/Path;->computeBounds(Landroid/graphics/RectF;Z)V
+
+    .line 48
+    .line 49
+    .line 50
+    :cond_4
+    iget v0, p1, Landroid/graphics/RectF;->left:F
+
+    .line 51
+    .line 52
+    iget-object v1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mPaint:Landroid/graphics/Paint;
+
+    .line 53
+    .line 54
+    const/4 v2, 0x0
+
+    .line 55
+    if-eqz v1, :cond_5
+
+    .line 56
+    .line 57
+    invoke-virtual {v1}, Landroid/graphics/Paint;->getStrokeWidth()F
+
+    .line 58
+    .line 59
+    .line 60
+    move-result v1
+
+    .line 61
+    goto :goto_0
+
+    .line 62
+    :cond_5
+    move v1, v2
+
+    .line 63
+    :goto_0
+    sub-float/2addr v0, v1
+
+    .line 64
+    iput v0, p1, Landroid/graphics/RectF;->left:F
+
+    .line 65
+    .line 66
+    iget v0, p1, Landroid/graphics/RectF;->top:F
+
+    .line 67
+    .line 68
+    iget-object v1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mPaint:Landroid/graphics/Paint;
+
+    .line 69
+    .line 70
+    if-eqz v1, :cond_6
+
+    .line 71
+    .line 72
+    invoke-virtual {v1}, Landroid/graphics/Paint;->getStrokeWidth()F
+
+    .line 73
+    .line 74
+    .line 75
+    move-result v1
+
+    .line 76
+    goto :goto_1
+
+    .line 77
+    :cond_6
+    move v1, v2
+
+    .line 78
+    :goto_1
+    sub-float/2addr v0, v1
+
+    .line 79
+    iput v0, p1, Landroid/graphics/RectF;->top:F
+
+    .line 80
+    .line 81
+    iget v0, p1, Landroid/graphics/RectF;->right:F
+
+    .line 82
+    .line 83
+    iget-object v1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mPaint:Landroid/graphics/Paint;
+
+    .line 84
+    .line 85
+    if-eqz v1, :cond_7
+
+    .line 86
+    .line 87
+    invoke-virtual {v1}, Landroid/graphics/Paint;->getStrokeWidth()F
+
+    .line 88
+    .line 89
+    .line 90
+    move-result v1
+
+    .line 91
+    goto :goto_2
+
+    .line 92
+    :cond_7
+    move v1, v2
+
+    .line 93
+    :goto_2
+    add-float/2addr v0, v1
+
+    .line 94
+    iput v0, p1, Landroid/graphics/RectF;->right:F
+
+    .line 95
+    .line 96
+    iget v0, p1, Landroid/graphics/RectF;->bottom:F
+
+    .line 97
+    .line 98
+    iget-object v1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mPaint:Landroid/graphics/Paint;
+
+    .line 99
+    .line 100
+    if-eqz v1, :cond_8
+
+    .line 101
+    .line 102
+    invoke-virtual {v1}, Landroid/graphics/Paint;->getStrokeWidth()F
+
+    .line 103
+    .line 104
+    .line 105
+    move-result v2
+
+    .line 106
+    :cond_8
+    add-float/2addr v0, v2
+
+    .line 107
+    iput v0, p1, Landroid/graphics/RectF;->bottom:F
+
+    .line 108
+    .line 109
+    return-object p1
+.end method
+
+.method public final getPaintItemLength()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->paintItemLength:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getPaintSpacing()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->paintSpacing:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getPath()Landroid/graphics/Path;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->path:Landroid/graphics/Path;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getRenderPath()Landroid/graphics/Path;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->renderPath:Landroid/graphics/Path;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getSnapshot()Lcom/zykj/board/d0;
+    .locals 4
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    invoke-super {p0}, Lcom/zykj/blackboard/core/graph/root/BoundedContainerGraph;->getSnapshot()Lcom/zykj/board/d0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget-object v1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mPaint:Landroid/graphics/Paint;
+
+    .line 6
+    .line 7
+    if-eqz v1, :cond_0
+
+    .line 8
+    .line 9
+    iget v2, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->paintItemLength:F
+
+    .line 10
+    .line 11
+    iget v3, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->paintSpacing:F
+
+    .line 12
+    .line 13
+    invoke-static {v1, v2, v3}, Lcom/zykj/blackboard/utils/GraphUtilsKt;->covertEzyPaint(Landroid/graphics/Paint;FF)Lcom/zykj/board/EzyPaint$Paint;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    invoke-virtual {v0, v1}, Lcom/zykj/board/d0;->n(Lcom/zykj/board/EzyPaint$Paint;)V
+
+    .line 18
+    .line 19
+    .line 20
+    :cond_0
+    return-object v0
+.end method
+
+.method public getSourceFileName()Ljava/lang/String;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->sourceFileName:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getSourceId()Ljava/lang/Integer;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->sourceId:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getSourceLoader()Lcom/zykj/blackboard/core/loader/SourceLoader;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->sourceLoader:Lcom/zykj/blackboard/core/loader/SourceLoader;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getTempMatrix()Landroid/graphics/Matrix;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->tempMatrix:Landroid/graphics/Matrix;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public initPath()V
+    .locals 3
+
+    .line 1
+    invoke-direct {p0}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->getTouchInfo()Lcom/zykj/board/EzySource$TouchSource$TouchInfo;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-virtual {v0}, Lcom/zykj/board/EzySource$TouchSource$TouchInfo;->getTouchEventList()Ljava/util/List;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    const-string v2, "it.touchEventList"
+
+    .line 12
+    .line 13
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {p0, v1}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->updateEventList(Ljava/util/List;)V
+
+    .line 17
+    .line 18
+    .line 19
+    sget-object v1, Lcom/zykj/blackboard/utils/GraphUtils;->INSTANCE:Lcom/zykj/blackboard/utils/GraphUtils;
+
+    .line 20
+    .line 21
+    iget-object v2, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mEventList:Ljava/util/ArrayList;
+
+    .line 22
+    .line 23
+    invoke-virtual {v1, v2}, Lcom/zykj/blackboard/utils/GraphUtils;->eventConvertPath(Ljava/util/List;)Landroid/graphics/Path;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v1
+
+    .line 27
+    invoke-virtual {p0, v1}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->updatePath(Landroid/graphics/Path;)V
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {v0}, Lcom/zykj/board/EzySource$TouchSource$TouchInfo;->getPaint()Lcom/zykj/board/EzyPaint$Paint;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    const-string v1, "it.paint"
+
+    .line 35
+    .line 36
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/k;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {p0, v0}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->updatePaint(Lcom/zykj/board/EzyPaint$Paint;)V
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {p0}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->updateRenderRectF()V
+
+    .line 43
+    .line 44
+    .line 45
+    :cond_0
+    return-void
+.end method
+
+.method public isCollide(FFF)Z
+    .locals 14
+
+    .line 1
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    const/4 v2, 0x2
+
+    .line 6
+    new-array v2, v2, [F
+
+    .line 7
+    .line 8
+    const/4 v3, 0x0
+
+    .line 9
+    aput p1, v2, v3
+
+    .line 10
+    .line 11
+    const/4 p1, 0x1
+
+    .line 12
+    aput p2, v2, p1
+
+    .line 13
+    .line 14
+    iget-object v4, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->tempMatrix:Landroid/graphics/Matrix;
+
+    .line 15
+    .line 16
+    invoke-virtual {v4}, Landroid/graphics/Matrix;->reset()V
+
+    .line 17
+    .line 18
+    .line 19
+    iget-object v4, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->tempMatrix:Landroid/graphics/Matrix;
+
+    .line 20
+    .line 21
+    invoke-virtual {p0}, Lcom/zykj/blackboard/core/graph/Graph;->getRenderMatrix()Landroid/graphics/Matrix;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v5
+
+    .line 25
+    invoke-static {v5}, Lcom/zykj/blackboard/utils/MatrixExtKt;->invert(Landroid/graphics/Matrix;)Landroid/graphics/Matrix;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v5
+
+    .line 29
+    invoke-virtual {v4, v5}, Landroid/graphics/Matrix;->postConcat(Landroid/graphics/Matrix;)Z
+
+    .line 30
+    .line 31
+    .line 32
+    iget-object v4, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->tempMatrix:Landroid/graphics/Matrix;
+
+    .line 33
+    .line 34
+    invoke-virtual {v4, v2}, Landroid/graphics/Matrix;->mapPoints([F)V
+
+    .line 35
+    .line 36
+    .line 37
+    iget-object v4, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mEventList:Ljava/util/ArrayList;
+
+    .line 38
+    .line 39
+    invoke-virtual {v4}, Ljava/util/ArrayList;->isEmpty()Z
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v4
+
+    .line 43
+    if-eqz v4, :cond_0
+
+    .line 44
+    .line 45
+    invoke-direct {p0}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->getTouchInfo()Lcom/zykj/board/EzySource$TouchSource$TouchInfo;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v4
+
+    .line 49
+    if-eqz v4, :cond_0
+
+    .line 50
+    .line 51
+    iget-object v5, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mEventList:Ljava/util/ArrayList;
+
+    .line 52
+    .line 53
+    invoke-virtual {v4}, Lcom/zykj/board/EzySource$TouchSource$TouchInfo;->getTouchEventList()Ljava/util/List;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v4
+
+    .line 57
+    invoke-virtual {v5, v4}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
+
+    .line 58
+    .line 59
+    .line 60
+    :cond_0
+    iget-object v4, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mEventList:Ljava/util/ArrayList;
+
+    .line 61
+    .line 62
+    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
+
+    .line 63
+    .line 64
+    .line 65
+    move-result v4
+
+    .line 66
+    sub-int/2addr v4, p1
+
+    .line 67
+    move v5, v3
+
+    .line 68
+    :cond_1
+    if-ge v5, v4, :cond_2
+
+    .line 69
+    .line 70
+    iget-object v6, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mEventList:Ljava/util/ArrayList;
+
+    .line 71
+    .line 72
+    invoke-virtual {v6, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object v6
+
+    .line 76
+    check-cast v6, Lcom/zykj/board/EzyTouchEvent$TouchEvent;
+
+    .line 77
+    .line 78
+    invoke-virtual {v6}, Lcom/zykj/board/EzyTouchEvent$TouchEvent;->getX()F
+
+    .line 79
+    .line 80
+    .line 81
+    move-result v8
+
+    .line 82
+    iget-object v6, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mEventList:Ljava/util/ArrayList;
+
+    .line 83
+    .line 84
+    invoke-virtual {v6, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 85
+    .line 86
+    .line 87
+    move-result-object v6
+
+    .line 88
+    check-cast v6, Lcom/zykj/board/EzyTouchEvent$TouchEvent;
+
+    .line 89
+    .line 90
+    invoke-virtual {v6}, Lcom/zykj/board/EzyTouchEvent$TouchEvent;->getY()F
+
+    .line 91
+    .line 92
+    .line 93
+    move-result v9
+
+    .line 94
+    iget-object v6, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mEventList:Ljava/util/ArrayList;
+
+    .line 95
+    .line 96
+    add-int/lit8 v5, v5, 0x1
+
+    .line 97
+    .line 98
+    invoke-virtual {v6, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 99
+    .line 100
+    .line 101
+    move-result-object v6
+
+    .line 102
+    check-cast v6, Lcom/zykj/board/EzyTouchEvent$TouchEvent;
+
+    .line 103
+    .line 104
+    invoke-virtual {v6}, Lcom/zykj/board/EzyTouchEvent$TouchEvent;->getX()F
+
+    .line 105
+    .line 106
+    .line 107
+    move-result v10
+
+    .line 108
+    iget-object v6, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mEventList:Ljava/util/ArrayList;
+
+    .line 109
+    .line 110
+    invoke-virtual {v6, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 111
+    .line 112
+    .line 113
+    move-result-object v6
+
+    .line 114
+    check-cast v6, Lcom/zykj/board/EzyTouchEvent$TouchEvent;
+
+    .line 115
+    .line 116
+    invoke-virtual {v6}, Lcom/zykj/board/EzyTouchEvent$TouchEvent;->getY()F
+
+    .line 117
+    .line 118
+    .line 119
+    move-result v11
+
+    .line 120
+    aget v12, v2, v3
+
+    .line 121
+    .line 122
+    aget v13, v2, p1
+
+    .line 123
+    .line 124
+    move-object v7, p0
+
+    .line 125
+    invoke-direct/range {v7 .. v13}, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->pointToLine(FFFFFF)F
+
+    .line 126
+    .line 127
+    .line 128
+    move-result v6
+
+    .line 129
+    cmpg-float v6, v6, p3
+
+    .line 130
+    .line 131
+    if-gtz v6, :cond_1
+
+    .line 132
+    .line 133
+    return p1
+
+    .line 134
+    :cond_2
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    .line 135
+    .line 136
+    const-string v2, "\u6d88\u8017\u65f6\u95f4D >> "
+
+    .line 137
+    .line 138
+    invoke-direct {p1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 139
+    .line 140
+    .line 141
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 142
+    .line 143
+    .line 144
+    move-result-wide v4
+
+    .line 145
+    sub-long/2addr v4, v0
+
+    .line 146
+    invoke-virtual {p1, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 147
+    .line 148
+    .line 149
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 150
+    .line 151
+    .line 152
+    move-result-object p1
+
+    .line 153
+    const-string v0, "deleteGraph"
+
+    .line 154
+    .line 155
+    invoke-static {v0, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 156
+    .line 157
+    .line 158
+    return v3
+.end method
+
+.method public final isHighlighter()Z
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mPaint:Landroid/graphics/Paint;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Landroid/graphics/Paint;->getColor()I
+
+    .line 7
+    .line 8
+    .line 9
+    move-result v0
+
+    .line 10
+    invoke-static {v0}, Landroid/graphics/Color;->alpha(I)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    const/16 v2, 0xff
+
+    .line 15
+    .line 16
+    if-ge v0, v2, :cond_0
+
+    .line 17
+    .line 18
+    const/4 v0, 0x1
+
+    .line 19
+    return v0
+
+    .line 20
+    :cond_0
+    return v1
+.end method
+
+.method public onDestroy()V
+    .locals 1
+
+    .line 1
+    invoke-super {p0}, Lcom/zykj/blackboard/core/graph/Graph;->onDestroy()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->path:Landroid/graphics/Path;
+
+    .line 6
+    .line 7
+    iput-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mPaint:Landroid/graphics/Paint;
+
+    .line 8
+    .line 9
+    iput-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->renderPath:Landroid/graphics/Path;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public final setPaint(Landroid/graphics/Paint;FF)V
+    .locals 1
+    .param p1    # Landroid/graphics/Paint;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    const-string v0, "paint"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iput-object p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mPaint:Landroid/graphics/Paint;
+
+    .line 7
+    .line 8
+    const/4 p1, 0x0
+
+    .line 9
+    cmpg-float v0, p3, p1
+
+    .line 10
+    .line 11
+    if-nez v0, :cond_0
+
+    .line 12
+    .line 13
+    goto :goto_0
+
+    .line 14
+    :cond_0
+    cmpg-float p1, p2, p1
+
+    .line 15
+    .line 16
+    if-nez p1, :cond_1
+
+    .line 17
+    .line 18
+    :goto_0
+    const/high16 p2, 0x3f800000    # 1.0f
+
+    .line 19
+    .line 20
+    :cond_1
+    iput p2, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->paintItemLength:F
+
+    .line 21
+    .line 22
+    iput p3, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->paintSpacing:F
+
+    .line 23
+    .line 24
+    return-void
+.end method
+
+.method public final setPaintItemLength(F)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->paintItemLength:F
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setPaintSpacing(F)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->paintSpacing:F
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setPath(Landroid/graphics/Path;)V
+    .locals 0
+    .param p1    # Landroid/graphics/Path;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->path:Landroid/graphics/Path;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setRenderPath(Landroid/graphics/Path;)V
+    .locals 0
+    .param p1    # Landroid/graphics/Path;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->renderPath:Landroid/graphics/Path;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setSourceFileName(Ljava/lang/String;)V
+    .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->sourceFileName:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setSourceId(Ljava/lang/Integer;)V
+    .locals 0
+    .param p1    # Ljava/lang/Integer;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->sourceId:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setSourceLoader(Lcom/zykj/blackboard/core/loader/SourceLoader;)V
+    .locals 0
+    .param p1    # Lcom/zykj/blackboard/core/loader/SourceLoader;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->sourceLoader:Lcom/zykj/blackboard/core/loader/SourceLoader;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final updateEventList(Ljava/util/List;)V
+    .locals 1
+    .param p1    # Ljava/util/List;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/zykj/board/EzyTouchEvent$TouchEvent;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "list"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mEventList:Ljava/util/ArrayList;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+
+    .line 9
+    .line 10
+    .line 11
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mEventList:Ljava/util/ArrayList;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method public final updatePaint(Lcom/zykj/board/EzyPaint$Paint;)V
+    .locals 2
+    .param p1    # Lcom/zykj/board/EzyPaint$Paint;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    const-string v0, "paint"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mPaint:Landroid/graphics/Paint;
+
+    .line 7
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
+    .line 10
+    return-void
+
+    .line 11
+    :cond_0
+    invoke-static {p1}, Lcom/zykj/blackboard/utils/GraphUtilsKt;->covertPaint(Lcom/zykj/board/EzyPaint$Paint;)Landroid/graphics/Paint;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iput-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->mPaint:Landroid/graphics/Paint;
+
+    .line 16
+    .line 17
+    invoke-virtual {p1}, Lcom/zykj/board/EzyPaint$Paint;->getSpacing()F
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    const/4 v1, 0x0
+
+    .line 22
+    cmpg-float v0, v0, v1
+
+    .line 23
+    .line 24
+    if-nez v0, :cond_1
+
+    .line 25
+    .line 26
+    goto :goto_0
+
+    .line 27
+    :cond_1
+    invoke-virtual {p1}, Lcom/zykj/board/EzyPaint$Paint;->getItemLength()F
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v0
+
+    .line 31
+    cmpg-float v0, v0, v1
+
+    .line 32
+    .line 33
+    if-nez v0, :cond_2
+
+    .line 34
+    .line 35
+    :goto_0
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    .line 36
+    .line 37
+    goto :goto_1
+
+    .line 38
+    :cond_2
+    invoke-virtual {p1}, Lcom/zykj/board/EzyPaint$Paint;->getItemLength()F
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v0
+
+    .line 42
+    :goto_1
+    iput v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->paintItemLength:F
+
+    .line 43
+    .line 44
+    invoke-virtual {p1}, Lcom/zykj/board/EzyPaint$Paint;->getSpacing()F
+
+    .line 45
+    .line 46
+    .line 47
+    move-result p1
+
+    .line 48
+    iput p1, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->paintSpacing:F
+
+    .line 49
+    .line 50
+    return-void
+.end method
+
+.method public final updatePath(Landroid/graphics/Path;)V
+    .locals 1
+    .param p1    # Landroid/graphics/Path;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    const-string v0, "path"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/k;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, Landroid/graphics/Path;
+
+    .line 7
+    .line 8
+    invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->path:Landroid/graphics/Path;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, p1}, Landroid/graphics/Path;->set(Landroid/graphics/Path;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method public updateRenderRectF()V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->path:Landroid/graphics/Path;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcom/zykj/blackboard/core/graph/Graph;->getRenderMatrix()Landroid/graphics/Matrix;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    iget-object v2, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->renderPath:Landroid/graphics/Path;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;Landroid/graphics/Path;)V
+
+    .line 12
+    .line 13
+    .line 14
+    :cond_0
+    iget-object v0, p0, Lcom/zykj/blackboard/core/graph/stroke/WritingGraph;->renderPath:Landroid/graphics/Path;
+
+    .line 15
+    .line 16
+    if-eqz v0, :cond_1
+
+    .line 17
+    .line 18
+    invoke-virtual {p0}, Lcom/zykj/blackboard/core/graph/Graph;->getRenderRectF()Landroid/graphics/RectF;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v1
+
+    .line 22
+    const/4 v2, 0x0
+
+    .line 23
+    invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->computeBounds(Landroid/graphics/RectF;Z)V
+
+    .line 24
+    .line 25
+    .line 26
+    :cond_1
+    invoke-virtual {p0}, Lcom/zykj/blackboard/core/graph/Graph;->getRenderRectF()Landroid/graphics/RectF;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    iget v1, v0, Landroid/graphics/RectF;->left:F
+
+    .line 31
+    .line 32
+    iget v2, v0, Landroid/graphics/RectF;->right:F
+
+    .line 33
+    .line 34
+    cmpg-float v2, v1, v2
+
+    .line 35
+    .line 36
+    const/4 v3, 0x1
+
+    .line 37
+    const/4 v4, 0x0
+
+    .line 38
+    if-nez v2, :cond_3
+
+    .line 39
+    .line 40
+    cmpg-float v2, v1, v4
+
+    .line 41
+    .line 42
+    if-nez v2, :cond_2
+
+    .line 43
+    .line 44
+    goto :goto_0
+
+    .line 45
+    :cond_2
+    int-to-float v2, v3
+
+    .line 46
+    sub-float/2addr v1, v2
+
+    .line 47
+    iput v1, v0, Landroid/graphics/RectF;->left:F
+
+    .line 48
+    .line 49
+    :cond_3
+    :goto_0
+    iget v1, v0, Landroid/graphics/RectF;->top:F
+
+    .line 50
+    .line 51
+    iget v2, v0, Landroid/graphics/RectF;->bottom:F
+
+    .line 52
+    .line 53
+    cmpg-float v2, v1, v2
+
+    .line 54
+    .line 55
+    if-nez v2, :cond_5
+
+    .line 56
+    .line 57
+    cmpg-float v2, v1, v4
+
+    .line 58
+    .line 59
+    if-nez v2, :cond_4
+
+    .line 60
+    .line 61
+    return-void
+
+    .line 62
+    :cond_4
+    int-to-float v2, v3
+
+    .line 63
+    sub-float/2addr v1, v2
+
+    .line 64
+    iput v1, v0, Landroid/graphics/RectF;->top:F
+
+    .line 65
+    .line 66
+    :cond_5
+    return-void
+.end method

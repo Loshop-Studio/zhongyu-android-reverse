@@ -1,0 +1,751 @@
+.class public final Lcom/zykj/blackboard/core/data/dao/RecordEntity_;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/objectbox/EntityInfo;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/zykj/blackboard/core/data/dao/RecordEntity_$RecordEntityIdGetter;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lio/objectbox/EntityInfo<",
+        "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final __ALL_PROPERTIES:[Lio/objectbox/Property;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "[",
+            "Lio/objectbox/Property<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final __CURSOR_FACTORY:Lm5/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lm5/a;"
+        }
+    .end annotation
+.end field
+
+.field public static final __DB_NAME:Ljava/lang/String; = "RecordEntity"
+
+.field public static final __ENTITY_CLASS:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final __ENTITY_ID:I = 0x8
+
+.field public static final __ENTITY_NAME:Ljava/lang/String; = "RecordEntity"
+
+.field static final __ID_GETTER:Lcom/zykj/blackboard/core/data/dao/RecordEntity_$RecordEntityIdGetter;
+    .annotation build Lio/objectbox/annotation/apihint/Internal;
+    .end annotation
+.end field
+
+.field public static final __ID_PROPERTY:Lio/objectbox/Property;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/objectbox/Property<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final __INSTANCE:Lcom/zykj/blackboard/core/data/dao/RecordEntity_;
+
+.field public static final audioList:Lio/objectbox/relation/RelationInfo;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/objectbox/relation/RelationInfo<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            "Lcom/zykj/blackboard/core/data/dao/AudioRecordEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final commandList:Lio/objectbox/relation/RelationInfo;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/objectbox/relation/RelationInfo<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            "Lcom/zykj/blackboard/core/data/dao/CommandRecordEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final fileList:Lio/objectbox/relation/RelationInfo;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/objectbox/relation/RelationInfo<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            "Lcom/zykj/blackboard/core/data/dao/FileRecordEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final geometryList:Lio/objectbox/relation/RelationInfo;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/objectbox/relation/RelationInfo<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            "Lcom/zykj/blackboard/core/data/dao/GeometryRecordEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final id:Lio/objectbox/Property;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/objectbox/Property<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final matrixList:Lio/objectbox/relation/RelationInfo;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/objectbox/relation/RelationInfo<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            "Lcom/zykj/blackboard/core/data/dao/MatrixRecordEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final page:Lio/objectbox/relation/RelationInfo;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/objectbox/relation/RelationInfo<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            "Lcom/zykj/blackboard/core/data/dao/PageEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final pageId:Lio/objectbox/Property;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/objectbox/Property<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final textList:Lio/objectbox/relation/RelationInfo;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/objectbox/relation/RelationInfo<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            "Lcom/zykj/blackboard/core/data/dao/TextRecordEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final touchList:Lio/objectbox/relation/RelationInfo;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/objectbox/relation/RelationInfo<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            "Lcom/zykj/blackboard/core/data/dao/TouchRecordEntity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 9
+
+    .line 1
+    const-class v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity;
+
+    .line 2
+    .line 3
+    sput-object v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->__ENTITY_CLASS:Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    new-instance v0, Lcom/zykj/blackboard/core/data/dao/RecordEntityCursor$Factory;
+
+    .line 6
+    .line 7
+    invoke-direct {v0}, Lcom/zykj/blackboard/core/data/dao/RecordEntityCursor$Factory;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    sput-object v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->__CURSOR_FACTORY:Lm5/a;
+
+    .line 11
+    .line 12
+    new-instance v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$RecordEntityIdGetter;
+
+    .line 13
+    .line 14
+    invoke-direct {v0}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$RecordEntityIdGetter;-><init>()V
+
+    .line 15
+    .line 16
+    .line 17
+    sput-object v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->__ID_GETTER:Lcom/zykj/blackboard/core/data/dao/RecordEntity_$RecordEntityIdGetter;
+
+    .line 18
+    .line 19
+    new-instance v2, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;
+
+    .line 20
+    .line 21
+    invoke-direct {v2}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;-><init>()V
+
+    .line 22
+    .line 23
+    .line 24
+    sput-object v2, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->__INSTANCE:Lcom/zykj/blackboard/core/data/dao/RecordEntity_;
+
+    .line 25
+    .line 26
+    new-instance v1, Lio/objectbox/Property;
+
+    .line 27
+    .line 28
+    const/4 v7, 0x1
+
+    .line 29
+    const-string v8, "id"
+
+    .line 30
+    .line 31
+    const/4 v3, 0x0
+
+    .line 32
+    const/4 v4, 0x1
+
+    .line 33
+    sget-object v5, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
+
+    .line 34
+    .line 35
+    const-string v6, "id"
+
+    .line 36
+    .line 37
+    invoke-direct/range {v1 .. v8}, Lio/objectbox/Property;-><init>(Lio/objectbox/EntityInfo;IILjava/lang/Class;Ljava/lang/String;ZLjava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
+    move-object v0, v1
+
+    .line 41
+    sput-object v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->id:Lio/objectbox/Property;
+
+    .line 42
+    .line 43
+    new-instance v1, Lio/objectbox/Property;
+
+    .line 44
+    .line 45
+    const-string v6, "pageId"
+
+    .line 46
+    .line 47
+    const/4 v3, 0x1
+
+    .line 48
+    const/4 v4, 0x2
+
+    .line 49
+    invoke-direct/range {v1 .. v7}, Lio/objectbox/Property;-><init>(Lio/objectbox/EntityInfo;IILjava/lang/Class;Ljava/lang/String;Z)V
+
+    .line 50
+    .line 51
+    .line 52
+    sput-object v1, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->pageId:Lio/objectbox/Property;
+
+    .line 53
+    .line 54
+    filled-new-array {v0, v1}, [Lio/objectbox/Property;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v3
+
+    .line 58
+    sput-object v3, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->__ALL_PROPERTIES:[Lio/objectbox/Property;
+
+    .line 59
+    .line 60
+    sput-object v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->__ID_PROPERTY:Lio/objectbox/Property;
+
+    .line 61
+    .line 62
+    new-instance v0, Lio/objectbox/relation/RelationInfo;
+
+    .line 63
+    .line 64
+    sget-object v3, Lcom/zykj/blackboard/core/data/dao/PageEntity_;->__INSTANCE:Lcom/zykj/blackboard/core/data/dao/PageEntity_;
+
+    .line 65
+    .line 66
+    new-instance v4, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$1;
+
+    .line 67
+    .line 68
+    invoke-direct {v4}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$1;-><init>()V
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-direct {v0, v2, v3, v1, v4}, Lio/objectbox/relation/RelationInfo;-><init>(Lio/objectbox/EntityInfo;Lio/objectbox/EntityInfo;Lio/objectbox/Property;Lio/objectbox/internal/ToOneGetter;)V
+
+    .line 72
+    .line 73
+    .line 74
+    sput-object v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->page:Lio/objectbox/relation/RelationInfo;
+
+    .line 75
+    .line 76
+    new-instance v1, Lio/objectbox/relation/RelationInfo;
+
+    .line 77
+    .line 78
+    sget-object v3, Lcom/zykj/blackboard/core/data/dao/CommandRecordEntity_;->__INSTANCE:Lcom/zykj/blackboard/core/data/dao/CommandRecordEntity_;
+
+    .line 79
+    .line 80
+    new-instance v4, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$2;
+
+    .line 81
+    .line 82
+    invoke-direct {v4}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$2;-><init>()V
+
+    .line 83
+    .line 84
+    .line 85
+    sget-object v5, Lcom/zykj/blackboard/core/data/dao/CommandRecordEntity_;->recordId:Lio/objectbox/Property;
+
+    .line 86
+    .line 87
+    new-instance v6, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$3;
+
+    .line 88
+    .line 89
+    invoke-direct {v6}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$3;-><init>()V
+
+    .line 90
+    .line 91
+    .line 92
+    invoke-direct/range {v1 .. v6}, Lio/objectbox/relation/RelationInfo;-><init>(Lio/objectbox/EntityInfo;Lio/objectbox/EntityInfo;Lio/objectbox/internal/ToManyGetter;Lio/objectbox/Property;Lio/objectbox/internal/ToOneGetter;)V
+
+    .line 93
+    .line 94
+    .line 95
+    sput-object v1, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->commandList:Lio/objectbox/relation/RelationInfo;
+
+    .line 96
+    .line 97
+    new-instance v1, Lio/objectbox/relation/RelationInfo;
+
+    .line 98
+    .line 99
+    sget-object v3, Lcom/zykj/blackboard/core/data/dao/FileRecordEntity_;->__INSTANCE:Lcom/zykj/blackboard/core/data/dao/FileRecordEntity_;
+
+    .line 100
+    .line 101
+    new-instance v4, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$4;
+
+    .line 102
+    .line 103
+    invoke-direct {v4}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$4;-><init>()V
+
+    .line 104
+    .line 105
+    .line 106
+    sget-object v5, Lcom/zykj/blackboard/core/data/dao/FileRecordEntity_;->recordId:Lio/objectbox/Property;
+
+    .line 107
+    .line 108
+    new-instance v6, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$5;
+
+    .line 109
+    .line 110
+    invoke-direct {v6}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$5;-><init>()V
+
+    .line 111
+    .line 112
+    .line 113
+    invoke-direct/range {v1 .. v6}, Lio/objectbox/relation/RelationInfo;-><init>(Lio/objectbox/EntityInfo;Lio/objectbox/EntityInfo;Lio/objectbox/internal/ToManyGetter;Lio/objectbox/Property;Lio/objectbox/internal/ToOneGetter;)V
+
+    .line 114
+    .line 115
+    .line 116
+    sput-object v1, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->fileList:Lio/objectbox/relation/RelationInfo;
+
+    .line 117
+    .line 118
+    new-instance v1, Lio/objectbox/relation/RelationInfo;
+
+    .line 119
+    .line 120
+    sget-object v3, Lcom/zykj/blackboard/core/data/dao/TouchRecordEntity_;->__INSTANCE:Lcom/zykj/blackboard/core/data/dao/TouchRecordEntity_;
+
+    .line 121
+    .line 122
+    new-instance v4, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$6;
+
+    .line 123
+    .line 124
+    invoke-direct {v4}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$6;-><init>()V
+
+    .line 125
+    .line 126
+    .line 127
+    sget-object v5, Lcom/zykj/blackboard/core/data/dao/TouchRecordEntity_;->recordId:Lio/objectbox/Property;
+
+    .line 128
+    .line 129
+    new-instance v6, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$7;
+
+    .line 130
+    .line 131
+    invoke-direct {v6}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$7;-><init>()V
+
+    .line 132
+    .line 133
+    .line 134
+    invoke-direct/range {v1 .. v6}, Lio/objectbox/relation/RelationInfo;-><init>(Lio/objectbox/EntityInfo;Lio/objectbox/EntityInfo;Lio/objectbox/internal/ToManyGetter;Lio/objectbox/Property;Lio/objectbox/internal/ToOneGetter;)V
+
+    .line 135
+    .line 136
+    .line 137
+    sput-object v1, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->touchList:Lio/objectbox/relation/RelationInfo;
+
+    .line 138
+    .line 139
+    new-instance v1, Lio/objectbox/relation/RelationInfo;
+
+    .line 140
+    .line 141
+    sget-object v3, Lcom/zykj/blackboard/core/data/dao/MatrixRecordEntity_;->__INSTANCE:Lcom/zykj/blackboard/core/data/dao/MatrixRecordEntity_;
+
+    .line 142
+    .line 143
+    new-instance v4, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$8;
+
+    .line 144
+    .line 145
+    invoke-direct {v4}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$8;-><init>()V
+
+    .line 146
+    .line 147
+    .line 148
+    sget-object v5, Lcom/zykj/blackboard/core/data/dao/MatrixRecordEntity_;->recordId:Lio/objectbox/Property;
+
+    .line 149
+    .line 150
+    new-instance v6, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$9;
+
+    .line 151
+    .line 152
+    invoke-direct {v6}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$9;-><init>()V
+
+    .line 153
+    .line 154
+    .line 155
+    invoke-direct/range {v1 .. v6}, Lio/objectbox/relation/RelationInfo;-><init>(Lio/objectbox/EntityInfo;Lio/objectbox/EntityInfo;Lio/objectbox/internal/ToManyGetter;Lio/objectbox/Property;Lio/objectbox/internal/ToOneGetter;)V
+
+    .line 156
+    .line 157
+    .line 158
+    sput-object v1, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->matrixList:Lio/objectbox/relation/RelationInfo;
+
+    .line 159
+    .line 160
+    new-instance v1, Lio/objectbox/relation/RelationInfo;
+
+    .line 161
+    .line 162
+    sget-object v3, Lcom/zykj/blackboard/core/data/dao/AudioRecordEntity_;->__INSTANCE:Lcom/zykj/blackboard/core/data/dao/AudioRecordEntity_;
+
+    .line 163
+    .line 164
+    new-instance v4, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$10;
+
+    .line 165
+    .line 166
+    invoke-direct {v4}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$10;-><init>()V
+
+    .line 167
+    .line 168
+    .line 169
+    sget-object v5, Lcom/zykj/blackboard/core/data/dao/AudioRecordEntity_;->recordId:Lio/objectbox/Property;
+
+    .line 170
+    .line 171
+    new-instance v6, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$11;
+
+    .line 172
+    .line 173
+    invoke-direct {v6}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$11;-><init>()V
+
+    .line 174
+    .line 175
+    .line 176
+    invoke-direct/range {v1 .. v6}, Lio/objectbox/relation/RelationInfo;-><init>(Lio/objectbox/EntityInfo;Lio/objectbox/EntityInfo;Lio/objectbox/internal/ToManyGetter;Lio/objectbox/Property;Lio/objectbox/internal/ToOneGetter;)V
+
+    .line 177
+    .line 178
+    .line 179
+    sput-object v1, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->audioList:Lio/objectbox/relation/RelationInfo;
+
+    .line 180
+    .line 181
+    new-instance v1, Lio/objectbox/relation/RelationInfo;
+
+    .line 182
+    .line 183
+    sget-object v3, Lcom/zykj/blackboard/core/data/dao/TextRecordEntity_;->__INSTANCE:Lcom/zykj/blackboard/core/data/dao/TextRecordEntity_;
+
+    .line 184
+    .line 185
+    new-instance v4, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$12;
+
+    .line 186
+    .line 187
+    invoke-direct {v4}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$12;-><init>()V
+
+    .line 188
+    .line 189
+    .line 190
+    sget-object v5, Lcom/zykj/blackboard/core/data/dao/TextRecordEntity_;->recordId:Lio/objectbox/Property;
+
+    .line 191
+    .line 192
+    new-instance v6, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$13;
+
+    .line 193
+    .line 194
+    invoke-direct {v6}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$13;-><init>()V
+
+    .line 195
+    .line 196
+    .line 197
+    invoke-direct/range {v1 .. v6}, Lio/objectbox/relation/RelationInfo;-><init>(Lio/objectbox/EntityInfo;Lio/objectbox/EntityInfo;Lio/objectbox/internal/ToManyGetter;Lio/objectbox/Property;Lio/objectbox/internal/ToOneGetter;)V
+
+    .line 198
+    .line 199
+    .line 200
+    sput-object v1, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->textList:Lio/objectbox/relation/RelationInfo;
+
+    .line 201
+    .line 202
+    new-instance v1, Lio/objectbox/relation/RelationInfo;
+
+    .line 203
+    .line 204
+    sget-object v3, Lcom/zykj/blackboard/core/data/dao/GeometryRecordEntity_;->__INSTANCE:Lcom/zykj/blackboard/core/data/dao/GeometryRecordEntity_;
+
+    .line 205
+    .line 206
+    new-instance v4, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$14;
+
+    .line 207
+    .line 208
+    invoke-direct {v4}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$14;-><init>()V
+
+    .line 209
+    .line 210
+    .line 211
+    sget-object v5, Lcom/zykj/blackboard/core/data/dao/GeometryRecordEntity_;->recordId:Lio/objectbox/Property;
+
+    .line 212
+    .line 213
+    new-instance v6, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$15;
+
+    .line 214
+    .line 215
+    invoke-direct {v6}, Lcom/zykj/blackboard/core/data/dao/RecordEntity_$15;-><init>()V
+
+    .line 216
+    .line 217
+    .line 218
+    invoke-direct/range {v1 .. v6}, Lio/objectbox/relation/RelationInfo;-><init>(Lio/objectbox/EntityInfo;Lio/objectbox/EntityInfo;Lio/objectbox/internal/ToManyGetter;Lio/objectbox/Property;Lio/objectbox/internal/ToOneGetter;)V
+
+    .line 219
+    .line 220
+    .line 221
+    sput-object v1, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->geometryList:Lio/objectbox/relation/RelationInfo;
+
+    .line 222
+    .line 223
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public getAllProperties()[Lio/objectbox/Property;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()[",
+            "Lio/objectbox/Property<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->__ALL_PROPERTIES:[Lio/objectbox/Property;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getCursorFactory()Lm5/a;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lm5/a;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->__CURSOR_FACTORY:Lm5/a;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getDbName()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "RecordEntity"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getEntityClass()Ljava/lang/Class;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Class<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->__ENTITY_CLASS:Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getEntityId()I
+    .locals 1
+
+    const/16 v0, 0x8
+
+    return v0
+.end method
+
+.method public getEntityName()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "RecordEntity"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getIdGetter()Lm5/b;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lm5/b;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->__ID_GETTER:Lcom/zykj/blackboard/core/data/dao/RecordEntity_$RecordEntityIdGetter;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getIdProperty()Lio/objectbox/Property;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/objectbox/Property<",
+            "Lcom/zykj/blackboard/core/data/dao/RecordEntity;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/zykj/blackboard/core/data/dao/RecordEntity_;->__ID_PROPERTY:Lio/objectbox/Property;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

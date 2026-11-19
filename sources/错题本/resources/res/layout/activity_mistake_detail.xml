@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:tag="layout/activity_mistake_detail_0" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="#4797f3" android:layout_width="match_parent" android:layout_height="@dimen/view_23">
+            <ImageView android:id="@id/iv_back" android:layout_width="@dimen/view_23" android:layout_height="@dimen/view_23" android:src="@mipmap/ic_back" android:scaleType="centerInside" />
+            <TextView android:textSize="@dimen/text_8" android:textColor="@color/white" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/iv_more" android:layout_width="@dimen/view_23" android:layout_height="@dimen/view_23" android:src="@mipmap/ic_more" android:scaleType="centerInside" android:layout_marginEnd="@dimen/view_13" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_left" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/rl_left_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.zykj.mistake.widget.FlowLayout android:id="@id/flow_layout_tag" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/view_8" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_edit_tag" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_5" android:src="@mipmap/ic_edit_tag" />
+                </LinearLayout>
+                <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                <ScrollView android:id="@id/sv_image" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_image_content" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </ScrollView>
+                <com.zykj.mistake.widget.StemWebView android:id="@id/wv_web" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </LinearLayout>
+            <View android:background="#dddddd" android:layout_width="1.0dp" android:layout_height="match_parent" />
+            <RelativeLayout android:id="@id/ll_right" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/v_line">
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <com.flyco.tablayout.SlidingTabLayout android:id="@id/tab_layout" android:layout_width="match_parent" android:layout_height="@dimen/view_27" app:tl_indicator_color="@color/colorPrimary" app:tl_indicator_corner_radius="@dimen/view_1" app:tl_indicator_height="@dimen/view_2" app:tl_indicator_width="@dimen/view_13" app:tl_tab_space_equal="true" app:tl_textSelectColor="#5a5a5a" app:tl_textUnselectColor="#cccccc" app:tl_textsize="@dimen/text_7" />
+                        <com.zykj.mistake.widget.CustomViewPager android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/rl_cover" android:background="#ffffff" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:id="@id/iv_practice" android:layout_width="@dimen/view_135" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_58" android:src="@mipmap/pic_practice" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="@dimen/text_8" android:textColor="@color/colorPrimary" android:id="@id/tv_show_answer" android:padding="@dimen/view_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_18" android:text="@string/click_to_show_answer" android:layout_below="@id/iv_practice" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="@dimen/text_7" android:textColor="#5a5a5a" android:id="@id/tv_practice_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_4" android:text="@string/practice_tip" android:layout_below="@id/tv_show_answer" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View android:id="@id/v_line" android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_above="@id/ll_switch" />
+                <LinearLayout android:id="@id/ll_switch" android:background="#ffffff" android:padding="@dimen/view_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="@dimen/text_7" android:textColor="#ffffff" android:gravity="center" android:id="@id/tv_last" android:background="@drawable/bg_blue_corner" android:layout_width="@dimen/view_54" android:layout_height="@dimen/view_24" android:text="@string/last_question" />
+                    <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/text_7" android:textColor="#ffffff" android:gravity="center" android:id="@id/tv_next" android:background="@drawable/bg_blue_corner" android:layout_width="@dimen/view_54" android:layout_height="@dimen/view_24" android:text="@string/next_question" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_gravity="end" android:id="@id/include_edit" android:layout_width="@dimen/view_288" android:layout_height="match_parent" layout="@layout/include_mistake_detail_end" />
+</androidx.drawerlayout.widget.DrawerLayout>

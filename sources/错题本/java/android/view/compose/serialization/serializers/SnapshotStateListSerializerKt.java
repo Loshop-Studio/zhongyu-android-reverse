@@ -1,0 +1,15 @@
+package android.view.compose.serialization.serializers;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.exifinterface.media.ExifInterface;
+import kotlin.Metadata;
+import kotlin.jvm.internal.AbstractC5830k;
+
+@Metadata(m5109d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u0017\u0010\u0000\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0006\b\u0000\u0010\u0002\u0018\u0001H\u0086\b¨\u0006\u0003"}, m5110d2 = {"SnapshotStateListSerializer", "Landroidx/savedstate/compose/serialization/serializers/SnapshotStateListSerializer;", ExifInterface.GPS_DIRECTION_TRUE, "savedstate-compose_release"}, m5111k = 2, m5112mv = {2, 0, 0}, m5114xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes2.dex */
+public final class SnapshotStateListSerializerKt {
+    public static final <T> SnapshotStateListSerializer<T> SnapshotStateListSerializer() {
+        AbstractC5830k.m5338o();
+        throw null;
+    }
+}

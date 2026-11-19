@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/dialog_fragment_picture_note_delete_0" android:background="@drawable/bg_top_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/view_13" android:paddingEnd="@dimen/view_13"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_8" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_27" android:text="@string/remove_picture_note" android:drawablePadding="@dimen/view_5" app:drawableStartCompat="@mipmap/ic_warning" />
+    <TextView android:textSize="@dimen/text_7" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_8" android:text="@string/remove_picture_note_tip" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_19" android:layout_marginBottom="@dimen/view_8">
+        <TextView android:textSize="@dimen/text_7" android:textColor="#ffffff" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/bg_blue_radius_12" android:layout_width="@dimen/view_81" android:layout_height="@dimen/view_24" android:text="@string/confirm" />
+        <TextView android:textSize="@dimen/text_7" android:textColor="#5a5a5a" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/bg_gray_radius_12" android:layout_width="@dimen/view_81" android:layout_height="@dimen/view_24" android:text="@string/cancel" android:layout_marginStart="@dimen/view_13" />
+    </LinearLayout>
+</LinearLayout>
