@@ -1,0 +1,20 @@
+syntax = "proto3";
+// Field numbers and getter types recovered from the APK's AndroidX PreferencesProto.
+message PreferenceMap {
+  map<string, PreferenceValue> preferences = 1;
+}
+message PreferenceValue {
+  oneof value {
+    bool boolean = 1;
+    float float_value = 2;
+    int32 integer = 3;
+    int64 long_value = 4;
+    string string_value = 5;
+    StringSet string_set = 6;
+    double double_value = 7;
+    bytes bytes_value = 8;
+  }
+}
+message StringSet {
+  repeated string strings = 1;
+}

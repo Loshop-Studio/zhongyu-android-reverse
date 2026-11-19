@@ -1,0 +1,460 @@
+{
+  "android_api": 30,
+  "apps": [
+    {
+      "app": "中育云笔记",
+      "package": "com.friday.cloudsnote",
+      "sdk_rules": 39909,
+      "sorted_rules_sha256": "1050f611090e2d6f1a87a7d45bed7083b1c64fab8a9650b4b0e1a1cce18ad889",
+      "rebuilt_apk_sha256": "d14ee5068baae0ad8dd683b066b84cebee9a0733e9f7e8f1a4e33d7c38362cdc",
+      "dm_sha256": "3189f0b71e3f5b0bcc33f7cb4477637bef61485f1ec374a33b34a5885decf3dd",
+      "android": "[status=speed-profile] [reason=install-dm]",
+      "dex": [
+        {
+          "dex": "classes.dex",
+          "original_crc32": 2513589431,
+          "rebuilt_crc32": 3543760548,
+          "class_ids": 3598,
+          "method_ids": 65502,
+          "hot": 13740,
+          "startup": 13740,
+          "post_startup": 13798,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes2.dex",
+          "original_crc32": 452519011,
+          "rebuilt_crc32": 1136410360,
+          "class_ids": 3090,
+          "method_ids": 65524,
+          "hot": 18669,
+          "startup": 18672,
+          "post_startup": 18747,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes3.dex",
+          "original_crc32": 4027270410,
+          "rebuilt_crc32": 606140867,
+          "class_ids": 304,
+          "method_ids": 46608,
+          "hot": 756,
+          "startup": 1374,
+          "post_startup": 1405,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes4.dex",
+          "original_crc32": 847754073,
+          "rebuilt_crc32": 2655556726,
+          "class_ids": 0,
+          "method_ids": 6471,
+          "hot": 113,
+          "startup": 117,
+          "post_startup": 123,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes5.dex",
+          "original_crc32": 611073282,
+          "rebuilt_crc32": 2076883582,
+          "class_ids": 0,
+          "method_ids": 62855,
+          "hot": 256,
+          "startup": 257,
+          "post_startup": 268,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes6.dex",
+          "original_crc32": 1363416189,
+          "rebuilt_crc32": 2628092149,
+          "class_ids": 282,
+          "method_ids": 29858,
+          "hot": 653,
+          "startup": 655,
+          "post_startup": 663,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        }
+      ]
+    },
+    {
+      "app": "中育管控桌面",
+      "package": "com.zykj.manage",
+      "sdk_rules": 40723,
+      "sorted_rules_sha256": "4458b3f52063a2c61bcca7408284cc5e5ce523e746e8bb0093347e03f430daf1",
+      "rebuilt_apk_sha256": "373eabe14730a01227ef054f2b915dd149040c1f81533cd6865165f2fe2e1c4f",
+      "dm_sha256": "397d3eabc8957d167b80b95a95673bba7543c4b40af57c2763b7b3ee8e5702a7",
+      "android": "[status=speed-profile] [reason=install-dm]",
+      "dex": [
+        {
+          "dex": "classes.dex",
+          "original_crc32": 3844512476,
+          "rebuilt_crc32": 3956873452,
+          "class_ids": 3651,
+          "method_ids": 65495,
+          "hot": 14084,
+          "startup": 14084,
+          "post_startup": 14144,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes2.dex",
+          "original_crc32": 2465508043,
+          "rebuilt_crc32": 4129713455,
+          "class_ids": 3009,
+          "method_ids": 65387,
+          "hot": 17990,
+          "startup": 17993,
+          "post_startup": 18069,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes3.dex",
+          "original_crc32": 3409108773,
+          "rebuilt_crc32": 1774412869,
+          "class_ids": 342,
+          "method_ids": 64771,
+          "hot": 639,
+          "startup": 1409,
+          "post_startup": 1428,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes4.dex",
+          "original_crc32": 2045113527,
+          "rebuilt_crc32": 3981044555,
+          "class_ids": 622,
+          "method_ids": 41499,
+          "hot": 1565,
+          "startup": 1570,
+          "post_startup": 1578,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        }
+      ]
+    },
+    {
+      "app": "优课畅学",
+      "package": "com.zhongyukejiao.learningexpert",
+      "sdk_rules": 39678,
+      "sorted_rules_sha256": "b368fd0f4dd25f2e5afac79b1d05221c9bfd275a203ae2e53231f72899aa6d96",
+      "rebuilt_apk_sha256": "eee482f82b34de932ebbf6156aeb5af54c00f0447bb98aab7e15ab1b335df9c7",
+      "dm_sha256": "69f19c49476b77046a945cb3f5a4ea1412d05b72fcb691e9ce307da943b7a7d1",
+      "android": "[status=speed-profile] [reason=install-dm]",
+      "dex": [
+        {
+          "dex": "classes.dex",
+          "original_crc32": 1971424993,
+          "rebuilt_crc32": 2732781547,
+          "class_ids": 3549,
+          "method_ids": 64344,
+          "hot": 13535,
+          "startup": 13535,
+          "post_startup": 13595,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes2.dex",
+          "original_crc32": 815425165,
+          "rebuilt_crc32": 3931113620,
+          "class_ids": 2972,
+          "method_ids": 65515,
+          "hot": 18221,
+          "startup": 18220,
+          "post_startup": 18221,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes3.dex",
+          "original_crc32": 3367478545,
+          "rebuilt_crc32": 3854849607,
+          "class_ids": 216,
+          "method_ids": 63571,
+          "hot": 990,
+          "startup": 988,
+          "post_startup": 1076,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes4.dex",
+          "original_crc32": 1587022399,
+          "rebuilt_crc32": 3542535854,
+          "class_ids": 0,
+          "method_ids": 50610,
+          "hot": 186,
+          "startup": 186,
+          "post_startup": 192,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes5.dex",
+          "original_crc32": 3207871445,
+          "rebuilt_crc32": 2194826301,
+          "class_ids": 614,
+          "method_ids": 27070,
+          "hot": 1525,
+          "startup": 1525,
+          "post_startup": 1532,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        }
+      ]
+    },
+    {
+      "app": "新测评",
+      "package": "com.zykj.evaluation",
+      "sdk_rules": 39536,
+      "sorted_rules_sha256": "cc0d86b9826f6d5055cb3dcf04012dad8d83d4e4576f36bc219d15499dda8d45",
+      "rebuilt_apk_sha256": "cb590fa6a24668d9e0d922a1ba404e43ae08fdf17285c8e32d3ee537f2e484c3",
+      "dm_sha256": "2d08b22ca3a838318dee10aeb655ca6b8474a93eea00968a861ff56de2ffdb32",
+      "android": "[status=speed-profile] [reason=install-dm]",
+      "dex": [
+        {
+          "dex": "classes.dex",
+          "original_crc32": 3643805859,
+          "rebuilt_crc32": 3063779183,
+          "class_ids": 3580,
+          "method_ids": 65159,
+          "hot": 13593,
+          "startup": 13592,
+          "post_startup": 13663,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes2.dex",
+          "original_crc32": 1417194441,
+          "rebuilt_crc32": 2764262228,
+          "class_ids": 3043,
+          "method_ids": 65512,
+          "hot": 18503,
+          "startup": 18507,
+          "post_startup": 18567,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes3.dex",
+          "original_crc32": 546760222,
+          "rebuilt_crc32": 255668521,
+          "class_ids": 328,
+          "method_ids": 65357,
+          "hot": 589,
+          "startup": 1380,
+          "post_startup": 1392,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes4.dex",
+          "original_crc32": 4144842002,
+          "rebuilt_crc32": 1720291113,
+          "class_ids": 0,
+          "method_ids": 26721,
+          "hot": 235,
+          "startup": 248,
+          "post_startup": 254,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes5.dex",
+          "original_crc32": 3676673835,
+          "rebuilt_crc32": 2990687862,
+          "class_ids": 294,
+          "method_ids": 47055,
+          "hot": 662,
+          "startup": 664,
+          "post_startup": 668,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        }
+      ]
+    },
+    {
+      "app": "网阅联考",
+      "package": "com.zykj.insight",
+      "sdk_rules": 25913,
+      "sorted_rules_sha256": "d848a86ed013a8c1c73ec9340ffefa3244472da5f295839c74941a3a1811c1ed",
+      "rebuilt_apk_sha256": "8e918d4a384ef8e39cc21deeb8557d17459c2729fe696c079b3c6cb72ab87f1c",
+      "dm_sha256": "063316aac74f66182dfd7648773e9bbf674a0f471a718178683703f282ff473b",
+      "android": "[status=speed-profile] [reason=install-dm]",
+      "dex": [
+        {
+          "dex": "classes.dex",
+          "original_crc32": 3382888151,
+          "rebuilt_crc32": 1707286074,
+          "class_ids": 3733,
+          "method_ids": 64582,
+          "hot": 21394,
+          "startup": 21393,
+          "post_startup": 21481,
+          "inline_caches": 0,
+          "class_definition_order_preserved": false
+        },
+        {
+          "dex": "classes2.dex",
+          "original_crc32": 466814496,
+          "rebuilt_crc32": 832287104,
+          "class_ids": 1,
+          "method_ids": 48265,
+          "hot": 833,
+          "startup": 833,
+          "post_startup": 842,
+          "inline_caches": 0,
+          "class_definition_order_preserved": false
+        }
+      ]
+    },
+    {
+      "app": "错题本",
+      "package": "com.zykj.mistake",
+      "sdk_rules": 38438,
+      "sorted_rules_sha256": "e44fc9022cd155fded71eaf0269451055c36ea4f79ad7cd28e888720b20d3324",
+      "rebuilt_apk_sha256": "48b2cb0c2a64a3bd69e5ac8f286badc8ba077be426e9359f2b440b449189d4ed",
+      "dm_sha256": "52cb3e567c78dea9848f67148fa4c1d465c55b3396270f18758d0f6b46abe022",
+      "android": "[status=speed-profile] [reason=install-dm]",
+      "dex": [
+        {
+          "dex": "classes.dex",
+          "original_crc32": 2064593385,
+          "rebuilt_crc32": 3766431689,
+          "class_ids": 4857,
+          "method_ids": 65464,
+          "hot": 21991,
+          "startup": 22012,
+          "post_startup": 22066,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes2.dex",
+          "original_crc32": 3157085659,
+          "rebuilt_crc32": 1472076146,
+          "class_ids": 1897,
+          "method_ids": 65423,
+          "hot": 10724,
+          "startup": 11012,
+          "post_startup": 11111,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes3.dex",
+          "original_crc32": 3419138894,
+          "rebuilt_crc32": 3477608229,
+          "class_ids": 19,
+          "method_ids": 53678,
+          "hot": 444,
+          "startup": 486,
+          "post_startup": 496,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes4.dex",
+          "original_crc32": 1165740251,
+          "rebuilt_crc32": 234102022,
+          "class_ids": 109,
+          "method_ids": 6236,
+          "hot": 330,
+          "startup": 344,
+          "post_startup": 344,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        }
+      ]
+    },
+    {
+      "app": "随身答",
+      "package": "com.zykj.student.dialogue",
+      "sdk_rules": 39528,
+      "sorted_rules_sha256": "b39c69f0c12db672e437545209422205e7cd162ea3dfe4dd784dc5f5d87cca9d",
+      "rebuilt_apk_sha256": "98d512ee0ac870e7e54cea4b72a172c22ce2126fe27af4cda67e9297ce00ca7c",
+      "dm_sha256": "082ef7c247debaf21c6b17e42914c80377aafc0e4f017aa07bd2b5223ea73208",
+      "android": "[status=speed-profile] [reason=install-dm]",
+      "dex": [
+        {
+          "dex": "classes.dex",
+          "original_crc32": 2164420887,
+          "rebuilt_crc32": 919169672,
+          "class_ids": 3538,
+          "method_ids": 65348,
+          "hot": 13452,
+          "startup": 13452,
+          "post_startup": 13506,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes2.dex",
+          "original_crc32": 1202416871,
+          "rebuilt_crc32": 1655273631,
+          "class_ids": 2969,
+          "method_ids": 62562,
+          "hot": 18145,
+          "startup": 18146,
+          "post_startup": 18147,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes3.dex",
+          "original_crc32": 1083832491,
+          "rebuilt_crc32": 3349582393,
+          "class_ids": 440,
+          "method_ids": 63276,
+          "hot": 1017,
+          "startup": 1803,
+          "post_startup": 1883,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes4.dex",
+          "original_crc32": 2722319107,
+          "rebuilt_crc32": 4112176433,
+          "class_ids": 0,
+          "method_ids": 39205,
+          "hot": 63,
+          "startup": 64,
+          "post_startup": 71,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        },
+        {
+          "dex": "classes5.dex",
+          "original_crc32": 2875548366,
+          "rebuilt_crc32": 2241561675,
+          "class_ids": 294,
+          "method_ids": 50937,
+          "hot": 833,
+          "startup": 840,
+          "post_startup": 847,
+          "inline_caches": 0,
+          "class_definition_order_preserved": true
+        }
+      ]
+    }
+  ],
+  "apps_without_bundled_profile": [
+    "在线专栏",
+    "选课",
+    "问卷调查",
+    "领创平板管理-2025.9.1"
+  ]
+}

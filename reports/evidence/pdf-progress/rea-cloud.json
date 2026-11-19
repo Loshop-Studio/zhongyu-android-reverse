@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "中育云笔记.apk",
+    "digest": {
+      "sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/中育云笔记.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.friday.document.view.preview.PdfPreviewFragment",
+    "method": {
+      "name": "k",
+      "reported_signature": "k(int, int): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(II)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // l4.f\n    public void k(int i10, int i11) {\n        v().c(new com.friday.document.viewmodel.a.b(new PdfEntity(u(), i10, i11)));\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_ee5493ec25817c4bc4a851d03c4ea38c528ae070cb3bb272675b4b2067a10672"
+}

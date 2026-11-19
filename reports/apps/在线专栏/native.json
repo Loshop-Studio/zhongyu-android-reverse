@@ -1,0 +1,872 @@
+[
+ {
+  "member": "lib/arm64-v8a/libc++_shared.so",
+  "size": 936368,
+  "format": "ELF",
+  "sha256": "acdd8740f38b1d9561f5afad99e5791ed0f1a1ceb2d45f534092d545860f1244",
+  "role": "Android NDK C++ 运行时",
+  "machine": "AArch64",
+  "build_id": "6de1c39a010a6596b5bb6546e6fe55445b037c1b",
+  "needed": [
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 1508,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/arm64-v8a/libcrashsdk.so",
+  "size": 547944,
+  "format": "ELF",
+  "sha256": "8c848839e2f3de374b25d28bc871959a44e0d282a7656b8b5fb7f5a94be4f009",
+  "role": null,
+  "machine": "AArch64",
+  "build_id": "9ca3e3d40ebf28789a05bfeed7513668287a564e",
+  "needed": [
+   "liblog.so",
+   "libz.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 10,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/arm64-v8a/libjniPdfium.so",
+  "size": 493432,
+  "format": "ELF",
+  "sha256": "a5d8ef0c371a6bae6fcbf6c854e1b06f62851549ce054512f5fa52fba84d601a",
+  "role": "PDFium 的 JNI 桥",
+  "machine": "AArch64",
+  "build_id": null,
+  "needed": [
+   "libmodpdfium.so",
+   "liblog.so",
+   "libandroid.so",
+   "libjnigraphics.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 197,
+  "static_jni_exports": 19,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/arm64-v8a/libmarsxlog.so",
+  "size": 649560,
+  "format": "ELF",
+  "sha256": "6caf8e3543c6b61bb4a6254e104d9f95c66e32b2ec176b26c9fa5bb32e307155",
+  "role": "Mars Xlog 日志",
+  "machine": "AArch64",
+  "build_id": "47a408a7e7e3f2da28e1c8ca2f6057a74922f3b9",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libc++_shared.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 47,
+  "static_jni_exports": 14,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/arm64-v8a/libmodft2.so",
+  "size": 554880,
+  "format": "ELF",
+  "sha256": "ee6738c76d276b17d4756036096c94eb523f5d302a790162b0acd6ae6a919c77",
+  "role": null,
+  "machine": "AArch64",
+  "build_id": "b120e8fc704e7fa8a1dd2ad9cf5df637",
+  "needed": [
+   "libmodpng.so",
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 244,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/arm64-v8a/libmodpdfium.so",
+  "size": 5367744,
+  "format": "ELF",
+  "sha256": "c7d0c84a5a2e0470be9385b4e57f5ce089e3c862bc84c43cb4d64967fe761447",
+  "role": "PDF 解析与渲染",
+  "machine": "AArch64",
+  "build_id": "a54469acac5d25476c4d1e2cd8ae0612",
+  "needed": [
+   "libdl.so",
+   "libmodft2.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 6148,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/arm64-v8a/libmodpng.so",
+  "size": 214840,
+  "format": "ELF",
+  "sha256": "ca64c45707a5419af63ef29aff35445fdd65b8d7dd7c689ece5f6317d8185aa6",
+  "role": null,
+  "machine": "AArch64",
+  "build_id": "8584342aa680bcefe7585fc07e2243e1",
+  "needed": [
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 389,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/arm64-v8a/libtnet-3.1.14.so",
+  "size": 371296,
+  "format": "ELF",
+  "sha256": "e372d306863eaf5e85077c3c531beb3de9faa1d8c55093cb78f055058ac7642a",
+  "role": null,
+  "machine": "AArch64",
+  "build_id": "df5847fd42b43552aa3bc882090ace7f6f5ad6a4",
+  "needed": [
+   "libz.so",
+   "liblog.so",
+   "libc.so",
+   "libm.so",
+   "libdl.so"
+  ],
+  "symbols": 22,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/arm64-v8a/libumeng-spy.so",
+  "size": 235752,
+  "format": "ELF",
+  "sha256": "3d786a77db4e4c3e01195006c2620952b0b6e515e22be1b4458fd708ff15b468",
+  "role": null,
+  "machine": "AArch64",
+  "build_id": "f997baddb2d7513a9134b95ec80dbb5f51dc2a54",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 103,
+  "static_jni_exports": 1,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libc++_shared.so",
+  "size": 558988,
+  "format": "ELF",
+  "sha256": "c4aa37926ced9547dc5bfbdf9528cb658127fb460b854c0dadd8c4277794cdac",
+  "role": "Android NDK C++ 运行时",
+  "machine": "ARM",
+  "build_id": "565e2e2bc27c5fecbf535e9957d227efec13476d",
+  "needed": [
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 1597,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libcrashsdk.so",
+  "size": 407740,
+  "format": "ELF",
+  "sha256": "d1fb047ab489ee75ad845354116172d87250058c4f4ba42240c11245fe16f038",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "3e36b6fe967b43ab077e9ce24ce71d24a5e70745",
+  "needed": [
+   "liblog.so",
+   "libz.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 10,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libjniPdfium.so",
+  "size": 107796,
+  "format": "ELF",
+  "sha256": "4c66b9315834a9a0727fb322b944c26769a9251919c005b783f8a645d898ad6b",
+  "role": "PDFium 的 JNI 桥",
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libmodpdfium.so",
+   "liblog.so",
+   "libandroid.so",
+   "libjnigraphics.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 194,
+  "static_jni_exports": 19,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmarsxlog.so",
+  "size": 333844,
+  "format": "ELF",
+  "sha256": "f22036f078ac12deb7e43a51ea8bca8c1475492d5612aa8be33464c125068717",
+  "role": "Mars Xlog 日志",
+  "machine": "ARM",
+  "build_id": "e3957157fe96953fff3f342afcf2d96b443b7946",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libc++_shared.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 47,
+  "static_jni_exports": 14,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmodft2.so",
+  "size": 521640,
+  "format": "ELF",
+  "sha256": "9f1639103faf03f7b4e024414b26a56b9159b9ced197a4565c29d1bdf6344cc9",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "f521547e9e60e7b2c8db59e3a51a555b",
+  "needed": [
+   "libmodpng.so",
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 294,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmodpdfium.so",
+  "size": 4802700,
+  "format": "ELF",
+  "sha256": "1223aaf5096204ee8ade9e21d5e384846e2fa5ebe30d138196935acb892306c5",
+  "role": "PDF 解析与渲染",
+  "machine": "ARM",
+  "build_id": "e5b848086b5a1beeb2586ff80ec67458",
+  "needed": [
+   "libdl.so",
+   "libmodft2.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 6193,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmodpng.so",
+  "size": 148852,
+  "format": "ELF",
+  "sha256": "3991ef38392d9e1eaac78293ba7be4e7731c6e193737079ac8e064a8a0fa4880",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "4cc053d066de7c74404c92a7a87c4cd9",
+  "needed": [
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 428,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtnet-3.1.14.so",
+  "size": 270120,
+  "format": "ELF",
+  "sha256": "43178c09c0b8026013de6997c92c91580f8e5826d5c8467f7ffd87c59b860877",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "a07b38aa31f046eb208d7f77dccdc0bbbefcc607",
+  "needed": [
+   "libz.so",
+   "liblog.so",
+   "libc.so",
+   "libm.so",
+   "libdl.so"
+  ],
+  "symbols": 22,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libumeng-spy.so",
+  "size": 141024,
+  "format": "ELF",
+  "sha256": "84a981c140ba8d81ff74c53cf7a71bbe62c5e65660186e10dfc178f0abea9d95",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "6745a23e4406f8602bf608b87e502cd37b94c349",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 106,
+  "static_jni_exports": 1,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi/libcrashsdk.so",
+  "size": 415892,
+  "format": "ELF",
+  "sha256": "1ce285f494477ed0b7ea3e21e2fdb31f875208e1f0608e8e4516dfb303cb47f8",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "5297e5563b3fcad48acd629ef0553b052b7c2186",
+  "needed": [
+   "liblog.so",
+   "libz.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 10,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi/libjniPdfium.so",
+  "size": 111892,
+  "format": "ELF",
+  "sha256": "74dfe3c3fbf55eca516ab214b78d30d29e214621dcf57aeb34b920e4e7f79a69",
+  "role": "PDFium 的 JNI 桥",
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libmodpdfium.so",
+   "liblog.so",
+   "libandroid.so",
+   "libjnigraphics.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 197,
+  "static_jni_exports": 19,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi/libmodft2.so",
+  "size": 521640,
+  "format": "ELF",
+  "sha256": "44ce4ea58531fe07328b0121ebddbc139dbdc577e5bcede9df7eb689d5687c28",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "f521547e9e60e7b2c8db59e3a51a555b",
+  "needed": [
+   "libmodpng.so",
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 294,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi/libmodpdfium.so",
+  "size": 4802700,
+  "format": "ELF",
+  "sha256": "be44e26142d2cd8f8e607c0dac00ea1df1528813a49a4af1f4cad05452428b0e",
+  "role": "PDF 解析与渲染",
+  "machine": "ARM",
+  "build_id": "e5b848086b5a1beeb2586ff80ec67458",
+  "needed": [
+   "libdl.so",
+   "libmodft2.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 6193,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi/libmodpng.so",
+  "size": 148852,
+  "format": "ELF",
+  "sha256": "5599b9e871f38e90d9d9a636978e085c7f38ed70cd9eeef36eb7eb4d1672f3ed",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "4cc053d066de7c74404c92a7a87c4cd9",
+  "needed": [
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 428,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi/libumeng-spy.so",
+  "size": 145120,
+  "format": "ELF",
+  "sha256": "c175683b50aeb528784ed557e8cdeeb98382fccddf47e322b352346c94611627",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "5cf686194687f9e182cdb5002cffae528471385a",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 83,
+  "static_jni_exports": 1,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/mips/libjniPdfium.so",
+  "size": 230160,
+  "format": "ELF",
+  "sha256": "831f92f7708296c7cac510feba2cde3d6dd2a6a32dde1275864877cdbfdbdc9e",
+  "role": "PDFium 的 JNI 桥",
+  "machine": "MIPS R3000",
+  "build_id": null,
+  "needed": [
+   "libmodpdfium.so",
+   "liblog.so",
+   "libandroid.so",
+   "libjnigraphics.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 166,
+  "static_jni_exports": 19,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/mips/libmodft2.so",
+  "size": 670572,
+  "format": "ELF",
+  "sha256": "5325b03408edbe85760026c6cb78aace6c8d726e2d49a1e87f71465df22a5c74",
+  "role": null,
+  "machine": "MIPS R3000",
+  "build_id": "282767ee04cda921f927fed9b3229c18",
+  "needed": [
+   "libmodpng.so",
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 244,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/mips/libmodpdfium.so",
+  "size": 5779004,
+  "format": "ELF",
+  "sha256": "ae9f53bdcc8811d08f088774b2336558d25b50cc03aff17cddb4a6ff01b84358",
+  "role": "PDF 解析与渲染",
+  "machine": "MIPS R3000",
+  "build_id": "d75091bf68b6783cb41c8358a85740ee",
+  "needed": [
+   "libdl.so",
+   "libmodft2.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 6148,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/mips/libmodpng.so",
+  "size": 268560,
+  "format": "ELF",
+  "sha256": "06403732a27561396a7bbd909483ae2b64fb194364b064c5e2af8539785c703d",
+  "role": null,
+  "machine": "MIPS R3000",
+  "build_id": "b50d5c86111528ce375e85372ef617d9",
+  "needed": [
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 381,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86/libc++_shared.so",
+  "size": 939924,
+  "format": "ELF",
+  "sha256": "d7f8fbddad19e824f2e55324bb84ee1311abc5c28a423f6562d6cb7fff229818",
+  "role": "Android NDK C++ 运行时",
+  "machine": "Intel 80386",
+  "build_id": "e17c5af931f83c79fe858d7c19c030d4492104f4",
+  "needed": [
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 1508,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86/libcrashsdk.so",
+  "size": 497776,
+  "format": "ELF",
+  "sha256": "92fe7cfe7c96271cd058eb0b51295bd3176408c4f84ceecb0575c2a84e20031b",
+  "role": null,
+  "machine": "Intel 80386",
+  "build_id": "179677f5a1b776be3e4b5217832db8e3420fde79",
+  "needed": [
+   "liblog.so",
+   "libz.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 10,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86/libjniPdfium.so",
+  "size": 181500,
+  "format": "ELF",
+  "sha256": "26586364fd9d060b6cd473dbc2f3ce745c81f9c04a942628072653ed25cc263e",
+  "role": "PDFium 的 JNI 桥",
+  "machine": "Intel 80386",
+  "build_id": null,
+  "needed": [
+   "libmodpdfium.so",
+   "liblog.so",
+   "libandroid.so",
+   "libjnigraphics.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 166,
+  "static_jni_exports": 19,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86/libmarsxlog.so",
+  "size": 706524,
+  "format": "ELF",
+  "sha256": "42e70872f1ed80b06e7a2201a23431389ca58c8a3f7385af8eba9adfa6f4f1d0",
+  "role": "Mars Xlog 日志",
+  "machine": "Intel 80386",
+  "build_id": "6145de1aea74f1eb6d845f94645fb34d207181f6",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libc++_shared.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 47,
+  "static_jni_exports": 14,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86/libmodft2.so",
+  "size": 578876,
+  "format": "ELF",
+  "sha256": "dd31c7160d757ca07aa5728e77abdb09743df943aa5768d5908a4a0dc6b2c157",
+  "role": null,
+  "machine": "Intel 80386",
+  "build_id": "83485e02100ef79c46b775cbc7cac94d",
+  "needed": [
+   "libmodpng.so",
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 244,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86/libmodpdfium.so",
+  "size": 5544036,
+  "format": "ELF",
+  "sha256": "f91a2c9070269bdc4007e1ae7438c3650ac1ba5137b2553ab3a072e52716dc18",
+  "role": "PDF 解析与渲染",
+  "machine": "Intel 80386",
+  "build_id": "fc036a99106d323acca2e704149723e9",
+  "needed": [
+   "libdl.so",
+   "libmodft2.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 6613,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86/libmodpng.so",
+  "size": 226564,
+  "format": "ELF",
+  "sha256": "c78352f9517d18860739ebe6dd974bd3355557c6192a74b528d225bc4007c09c",
+  "role": null,
+  "machine": "Intel 80386",
+  "build_id": "9c230b80857b0430a35b2c0627743a75",
+  "needed": [
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 388,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86/libtnet-3.1.14.so",
+  "size": 366752,
+  "format": "ELF",
+  "sha256": "cf7410cf900d7d9bc967d699ecf5e41369d859f2d12778601ec0118fd5ce956e",
+  "role": null,
+  "machine": "Intel 80386",
+  "build_id": "8d7faa66c4f5a1f3e30d5bd31f30aceda58af04f",
+  "needed": [
+   "libz.so",
+   "liblog.so",
+   "libc.so",
+   "libm.so",
+   "libdl.so"
+  ],
+  "symbols": 22,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86/libumeng-spy.so",
+  "size": 231172,
+  "format": "ELF",
+  "sha256": "5cc980a7944a670072a4c66916a2d1afde4ce85e5372814c1d86bd6ae8b1d5ba",
+  "role": null,
+  "machine": "Intel 80386",
+  "build_id": "dbdb82f2371250714876971323adf0e4b4fa3529",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 103,
+  "static_jni_exports": 1,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86_64/libc++_shared.so",
+  "size": 1002168,
+  "format": "ELF",
+  "sha256": "e2986606c05aa426bec488d06874867084e0eb0978c9d1b591c2eb1e9cb5f561",
+  "role": "Android NDK C++ 运行时",
+  "machine": "Advanced Micro Devices X86-64",
+  "build_id": "013d16f5e2afb684dc5c7ebda3499fd97205ac47",
+  "needed": [
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 1508,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86_64/libjniPdfium.so",
+  "size": 497832,
+  "format": "ELF",
+  "sha256": "94610cc041b08471cf0958eee2aa21b96fa7bdd0a9d5a0991d08c8bcedb83d9e",
+  "role": "PDFium 的 JNI 桥",
+  "machine": "Advanced Micro Devices X86-64",
+  "build_id": null,
+  "needed": [
+   "libmodpdfium.so",
+   "liblog.so",
+   "libandroid.so",
+   "libjnigraphics.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 197,
+  "static_jni_exports": 19,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86_64/libmarsxlog.so",
+  "size": 813664,
+  "format": "ELF",
+  "sha256": "514d575fb5350550bc23e8a36f63bb3df858ec925ad9b10daec01fb52aed72db",
+  "role": "Mars Xlog 日志",
+  "machine": "Advanced Micro Devices X86-64",
+  "build_id": "44e1059824007179cb296f1d375f84ebb202d19f",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libc++_shared.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 47,
+  "static_jni_exports": 14,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86_64/libmodft2.so",
+  "size": 599936,
+  "format": "ELF",
+  "sha256": "388681e86c95ca598ce64786dd89a85ae6bf7325597ad27f625bfc54dba489cd",
+  "role": null,
+  "machine": "Advanced Micro Devices X86-64",
+  "build_id": "b69a3c6d1b0b2d109ee679f40ae08522",
+  "needed": [
+   "libmodpng.so",
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 244,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86_64/libmodpdfium.so",
+  "size": 5720000,
+  "format": "ELF",
+  "sha256": "fa7bd29df6035c336fd7d5e8ac470d6b49591a7deb372969d0970dd42537ab15",
+  "role": "PDF 解析与渲染",
+  "machine": "Advanced Micro Devices X86-64",
+  "build_id": "90b908d5e16e5568ed5c47d6da9a4fe0",
+  "needed": [
+   "libdl.so",
+   "libmodft2.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 6614,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86_64/libmodpng.so",
+  "size": 227128,
+  "format": "ELF",
+  "sha256": "251366b0c25f27507109bf8ea2cad72d69f5020e6c432c96f2cd84e5a3ab32b2",
+  "role": null,
+  "machine": "Advanced Micro Devices X86-64",
+  "build_id": "b0e3059d07b11f60983e660e0e93574d",
+  "needed": [
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 388,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/x86_64/libtnet-3.1.14.so",
+  "size": 376480,
+  "format": "ELF",
+  "sha256": "bb3aa171d60b2d994af8fa3684d2fb30c2d9b079d20dc6d146d795a26d934e26",
+  "role": null,
+  "machine": "Advanced Micro Devices X86-64",
+  "build_id": "3606ef318637f107815fffa945e2f6a41c73a00b",
+  "needed": [
+   "libz.so",
+   "liblog.so",
+   "libc.so",
+   "libm.so",
+   "libdl.so"
+  ],
+  "symbols": 22,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ }
+]

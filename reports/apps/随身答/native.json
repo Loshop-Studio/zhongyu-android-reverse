@@ -1,0 +1,296 @@
+[
+ {
+  "member": "lib/armeabi-v7a/libBugly_Native.so",
+  "size": 182320,
+  "format": "ELF",
+  "sha256": "4371a120224530de6b0522f82e4fab656f43fa0377c168d6ca81b9aacdcb4bd3",
+  "role": "Bugly 原生崩溃采集",
+  "machine": "ARM",
+  "build_id": "6d6208d619e458a40d44ffd6b1014f776acf50be",
+  "needed": [
+   "libdl.so",
+   "liblog.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 240,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+  "size": 7252,
+  "format": "ELF",
+  "sha256": "41399eba6fc2a60f6f14642375c1824f3cf25eb8fec7397d753730a3ceda3e2b",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "fa98a997cdd9b43f190a4bd20f3dad441b4062f0",
+  "needed": [
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 1,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libc++_shared.so",
+  "size": 558988,
+  "format": "ELF",
+  "sha256": "0897bb8b4f392f77648560dd7b6c6619730e764c6b77ff88c6bd1e65702e80d1",
+  "role": "Android NDK C++ 运行时",
+  "machine": "ARM",
+  "build_id": "565e2e2bc27c5fecbf535e9957d227efec13476d",
+  "needed": [
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 1597,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libcrashsdk.so",
+  "size": 407740,
+  "format": "ELF",
+  "sha256": "1efb4ccb45a99640b75cd0cb9bd552a803e4fdc76986ef0efee563e4b6c8d2f7",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "3e36b6fe967b43ab077e9ce24ce71d24a5e70745",
+  "needed": [
+   "liblog.so",
+   "libz.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 10,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+  "size": 4416,
+  "format": "ELF",
+  "sha256": "716c5d8d2cac8ca0edf65da8f139c7886b726ac79d542a14edeb94994ba6d3dc",
+  "role": "DataStore 进程间计数",
+  "machine": "ARM",
+  "build_id": "c2c541cc4337a0fc28271329ef238d6bddf6d70d",
+  "needed": [
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 9,
+  "static_jni_exports": 4,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libimage_processing_util_jni.so",
+  "size": 20380,
+  "format": "ELF",
+  "sha256": "e48e356bbe1902ae9a66178a4a0141c993b82ee9f70dde52ad83e4af3eca984f",
+  "role": "图像处理 JNI",
+  "machine": "ARM",
+  "build_id": "12e91d3874791a1d92920ec94bc2690acebe48aa",
+  "needed": [
+   "liblog.so",
+   "libandroid.so",
+   "libjnigraphics.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 6,
+  "static_jni_exports": 6,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmarsxlog.so",
+  "size": 333844,
+  "format": "ELF",
+  "sha256": "76188ca00cbb97482a5e20a8cdc87c0660c3d968845186a766fe8ed635a5d1c1",
+  "role": "Mars Xlog 日志",
+  "machine": "ARM",
+  "build_id": "e3957157fe96953fff3f342afcf2d96b443b7946",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libc++_shared.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 47,
+  "static_jni_exports": 14,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmp3lame.so",
+  "size": 157356,
+  "format": "ELF",
+  "sha256": "543d1181de6e4780a7b7b1571abb8c3349939c2541bc21c29beede6527ea76e7",
+  "role": "MP3 编码",
+  "machine": "ARM",
+  "build_id": "b7fb3f87c0bcb405e4e50f37b1a29e0d4c37f246",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 330,
+  "static_jni_exports": 7,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libobjectbox-jni.so",
+  "size": 985320,
+  "format": "ELF",
+  "sha256": "866b1ac82e8281cae9d199bc0335612bc0c35b1772692abc8d5a43f87dd82fd5",
+  "role": "ObjectBox 的 JNI 桥",
+  "machine": "ARM",
+  "build_id": "e0237b22c9d9908bf4ed267269266684885dfd74",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 890,
+  "static_jni_exports": 151,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/librxffmpeg-core.so",
+  "size": 9675800,
+  "format": "ELF",
+  "sha256": "e07009fb8b1c8c84cdb6ea6dcbb77334a0381428aca3a74f344249f54fae5ba0",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libc.so",
+   "libm.so",
+   "libz.so",
+   "libdl.so",
+   "liblog.so"
+  ],
+  "symbols": 10129,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/librxffmpeg-invoke.so",
+  "size": 292652,
+  "format": "ELF",
+  "sha256": "ac5780430d8f6da367ace31ccc0ac585f7d9aba8c5bed784f51425259df89ccc",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "ad60f3fe41b30bc1459c7241a2a84e5086bfbd1d",
+  "needed": [
+   "librxffmpeg-core.so",
+   "libandroid.so",
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 192,
+  "static_jni_exports": 5,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/librxffmpeg-player.so",
+  "size": 128752,
+  "format": "ELF",
+  "sha256": "f384f39a0ad0ca81514ff545fbe0810c10099f124731e91c8873ddce1d14f885",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "94107d3c70dbd9f514c0b82774555398358eac91",
+  "needed": [
+   "librxffmpeg-core.so",
+   "libOpenSLES.so",
+   "libandroid.so",
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 201,
+  "static_jni_exports": 13,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libsophix.so",
+  "size": 73992,
+  "format": "ELF",
+  "sha256": "bd2a7209de70794fe2e8a6dfe0f5f698d3157371a0a4aaa085669a3f3b7eb4ff",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "2841f2c6cde98cc5b6b67a68cb8a0f57258b209d",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 19,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libsurface_util_jni.so",
+  "size": 3440,
+  "format": "ELF",
+  "sha256": "f110d6a305fef5be5664d58cfb054366b002bc516066b4ec880c38a68428756f",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "9c4bf428125edd1dc6796d75abaa3aede32de4b5",
+  "needed": [
+   "libandroid.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 1,
+  "static_jni_exports": 1,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libumeng-spy.so",
+  "size": 141024,
+  "format": "ELF",
+  "sha256": "372ac4aa95aee26c54919de8b20ab88c75b0e9e7a8dd42a9717993625ec2fa43",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "6745a23e4406f8602bf608b87e502cd37b94c349",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 106,
+  "static_jni_exports": 1,
+  "jni_onload": true,
+  "has_debug_info": false
+ }
+]

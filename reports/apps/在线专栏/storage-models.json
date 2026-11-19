@@ -1,0 +1,224 @@
+{
+  "com.zykj.http.bean.ApiResp": {
+    "smali": "android/在线专栏/smali/com/zykj/http/bean/ApiResp.smali",
+    "fields": [
+      {
+        "field": "error",
+        "type": "com.zykj.http.bean.ErrorInfo"
+      },
+      {
+        "field": "result",
+        "type": "java.lang.Object",
+        "generic_descriptor": "TT;"
+      },
+      {
+        "field": "success",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.zykj.http.bean.CommonApiResp": {
+    "smali": "android/在线专栏/smali/com/zykj/http/bean/CommonApiResp.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "int"
+      },
+      {
+        "field": "message",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "result",
+        "type": "java.lang.Object",
+        "generic_descriptor": "TT;"
+      }
+    ]
+  },
+  "com.zykj.http.bean.ErrorInfo": {
+    "smali": "android/在线专栏/smali/com/zykj/http/bean/ErrorInfo.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "int"
+      },
+      {
+        "field": "details",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "message",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.http.bean.HeaderBean": {
+    "smali": "android/在线专栏/smali/com/zykj/http/bean/HeaderBean.smali",
+    "fields": [
+      {
+        "field": "accessToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "appName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "refreshToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "serverUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "versionCode",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.http.bean.HeaderLiveData": {
+    "smali": "android/在线专栏/smali/com/zykj/http/bean/HeaderLiveData.smali",
+    "fields": [
+      {
+        "field": "lessonDeauthorized",
+        "type": "i3.e",
+        "generic_descriptor": "Li3/e<Ljava/lang/Boolean;>;"
+      },
+      {
+        "field": "offlineMode",
+        "type": "androidx.lifecycle.s",
+        "generic_descriptor": "Landroidx/lifecycle/s<Ljava/lang/Boolean;>;"
+      },
+      {
+        "field": "unauthorized",
+        "type": "androidx.lifecycle.s",
+        "generic_descriptor": "Landroidx/lifecycle/s<Lcom/zykj/lib/error/code/ErrorCode;>;"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.ServerInfo": {
+    "smali": "android/在线专栏/smali/com/zykj/message/server/bean/ServerInfo.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.message.server.bean.Status"
+      },
+      {
+        "field": "b",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "c",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "d",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "e",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.Status": {
+    "smali": "android/在线专栏/smali/com/zykj/message/server/bean/Status.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.UserInfo": {
+    "smali": "android/在线专栏/smali/com/zykj/message/server/bean/UserInfo.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "b",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "c",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "d",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "e",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "f",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "g",
+        "type": "java.lang.Integer"
+      }
+    ]
+  },
+  "com.zykj.subscriber.dao.PDFPreviewDatabase_Impl": {
+    "smali": "android/在线专栏/smali/com/zykj/subscriber/dao/PDFPreviewDatabase_Impl.smali",
+    "fields": [
+      {
+        "field": "p",
+        "type": "e2.b"
+      }
+    ]
+  },
+  "com.zykj.subscriber.entity.LocalUserInfo": {
+    "smali": "android/在线专栏/smali/com/zykj/subscriber/entity/LocalUserInfo.smali",
+    "fields": [
+      {
+        "field": "realName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "snCode",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "username",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.subscriber.entity.resp.ApiResp": {
+    "smali": "android/在线专栏/smali/com/zykj/subscriber/entity/resp/ApiResp.smali",
+    "fields": [
+      {
+        "field": "error",
+        "type": "com.zykj.subscriber.entity.resp.ApiResp$ErrorInfo"
+      },
+      {
+        "field": "success",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.zykj.subscriber.entity.resp.GetWhiteListResp": {
+    "smali": "android/在线专栏/smali/com/zykj/subscriber/entity/resp/GetWhiteListResp.smali",
+    "fields": [
+      {
+        "field": "result",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.subscriber.entity.resp.IsAllowResp": {
+    "smali": "android/在线专栏/smali/com/zykj/subscriber/entity/resp/IsAllowResp.smali",
+    "fields": [
+      {
+        "field": "result",
+        "type": "boolean"
+      }
+    ]
+  }
+}

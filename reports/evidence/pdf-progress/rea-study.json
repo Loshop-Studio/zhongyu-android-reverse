@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "优课畅学.apk",
+    "digest": {
+      "sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/优课畅学.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.study.data.PdfDao_Impl",
+    "method": {
+      "name": "queryPdf",
+      "reported_signature": "queryPdf(java.lang.String, m7.c<? super com.zykj.study.data.PdfEntity>): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;Lm7/c;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // com.zykj.study.data.PdfDao\n    public Object queryPdf(final String str, m7.c<? super PdfEntity> cVar) {\n        final String str2 = \"SELECT * FROM PdfEntity WHERE id = ?\";\n        return DBUtil.performSuspending(this.__db, true, false, new x7.l() { // from class: com.zykj.study.data.a1\n            @Override // x7.l\n            public final Object invoke(Object obj) {\n                return PdfDao_Impl.queryPdf$lambda$1(str2, str, (SQLiteConnection) obj);\n            }\n        }, cVar);\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_13bb28a90ae5890b50e973950cec0a01b64ab32361d14a4eac6e610029e6a10e"
+}

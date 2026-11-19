@@ -1,0 +1,6509 @@
+{
+  "a": {
+    "classes": 2,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "a0": {
+    "classes": 15,
+    "methods": 79,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a1": {
+    "classes": 3,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "a2": {
+    "classes": 3,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "a3": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "android.support.v4.app": {
+    "classes": 5,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "INotificationSideChannel",
+      "RemoteActionCompatParcelizer"
+    ]
+  },
+  "android.support.v4.graphics.drawable": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "IconCompatParcelizer"
+    ]
+  },
+  "android.support.v4.media": {
+    "classes": 75,
+    "methods": 370,
+    "storage": {},
+    "sample": [
+      "MediaBrowserCompat",
+      "MediaBrowserCompatApi21",
+      "MediaBrowserCompatApi23",
+      "MediaBrowserCompatApi26"
+    ]
+  },
+  "android.support.v4.media.session": {
+    "classes": 92,
+    "methods": 1008,
+    "storage": {},
+    "sample": [
+      "IMediaControllerCallback",
+      "IMediaSession",
+      "MediaControllerCompat",
+      "MediaControllerCompatApi21"
+    ]
+  },
+  "android.support.v4.os": {
+    "classes": 8,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "IResultReceiver",
+      "ResultReceiver"
+    ]
+  },
+  "androidx.activity": {
+    "classes": 18,
+    "methods": 75,
+    "storage": {},
+    "sample": [
+      "ComponentActivity",
+      "ImmLeaksCleaner",
+      "OnBackPressedDispatcher",
+      "a"
+    ]
+  },
+  "androidx.activity.result": {
+    "classes": 14,
+    "methods": 63,
+    "storage": {},
+    "sample": [
+      "ActivityResult",
+      "ActivityResultRegistry",
+      "IntentSenderRequest",
+      "a"
+    ]
+  },
+  "androidx.annotation": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "Keep"
+    ]
+  },
+  "androidx.appcompat.app": {
+    "classes": 74,
+    "methods": 575,
+    "storage": {},
+    "sample": [
+      "ActionBar",
+      "AlertController",
+      "AppCompatActivity",
+      "AppCompatDelegateImpl"
+    ]
+  },
+  "androidx.appcompat.graphics.drawable": {
+    "classes": 16,
+    "methods": 215,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "androidx.appcompat.view.menu": {
+    "classes": 43,
+    "methods": 637,
+    "storage": {},
+    "sample": [
+      "ActionMenuItemView",
+      "ExpandedMenuView",
+      "ListMenuItemView",
+      "a"
+    ]
+  },
+  "androidx.appcompat.widget": {
+    "classes": 180,
+    "methods": 1792,
+    "storage": {},
+    "sample": [
+      "ActionBarContainer",
+      "ActionBarContextView",
+      "ActionBarOverlayLayout",
+      "ActionMenuPresenter"
+    ]
+  },
+  "androidx.cardview.widget": {
+    "classes": 7,
+    "methods": 98,
+    "storage": {},
+    "sample": [
+      "CardView",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "androidx.collection": {
+    "classes": 15,
+    "methods": 222,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "androidx.constraintlayout.helper.widget": {
+    "classes": 2,
+    "methods": 45,
+    "storage": {},
+    "sample": [
+      "Flow",
+      "Layer"
+    ]
+  },
+  "androidx.constraintlayout.motion.widget": {
+    "classes": 88,
+    "methods": 649,
+    "storage": {},
+    "sample": [
+      "MotionHelper",
+      "MotionLayout",
+      "a",
+      "b"
+    ]
+  },
+  "androidx.constraintlayout.utils.widget": {
+    "classes": 9,
+    "methods": 65,
+    "storage": {},
+    "sample": [
+      "ImageFilterButton",
+      "ImageFilterView",
+      "MockView",
+      "MotionTelltales"
+    ]
+  },
+  "androidx.constraintlayout.widget": {
+    "classes": 31,
+    "methods": 240,
+    "storage": {},
+    "sample": [
+      "Barrier",
+      "ConstraintHelper",
+      "ConstraintLayout",
+      "Constraints"
+    ]
+  },
+  "androidx.coordinatorlayout.widget": {
+    "classes": 13,
+    "methods": 190,
+    "storage": {},
+    "sample": [
+      "CoordinatorLayout",
+      "a",
+      "b"
+    ]
+  },
+  "androidx.core.app": {
+    "classes": 37,
+    "methods": 132,
+    "storage": {},
+    "sample": [
+      "ComponentActivity",
+      "CoreComponentFactory",
+      "JobIntentService",
+      "NotificationCompatSideChannelService"
+    ]
+  },
+  "androidx.core.content": {
+    "classes": 12,
+    "methods": 56,
+    "storage": {},
+    "sample": [
+      "FileProvider",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "androidx.core.graphics.drawable": {
+    "classes": 2,
+    "methods": 24,
+    "storage": {
+      "文件流": 1,
+      "位图": 1
+    },
+    "sample": [
+      "IconCompat",
+      "IconCompatParcelizer"
+    ]
+  },
+  "androidx.core.view": {
+    "classes": 63,
+    "methods": 456,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "b",
+      "b0"
+    ]
+  },
+  "androidx.core.widget": {
+    "classes": 23,
+    "methods": 233,
+    "storage": {},
+    "sample": [
+      "ContentLoadingProgressBar",
+      "NestedScrollView",
+      "a",
+      "b"
+    ]
+  },
+  "androidx.customview.view": {
+    "classes": 3,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "AbsSavedState"
+    ]
+  },
+  "androidx.customview.widget": {
+    "classes": 12,
+    "methods": 139,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "androidx.databinding": {
+    "classes": 33,
+    "methods": 115,
+    "storage": {},
+    "sample": [
+      "MergedDataBinderMapper",
+      "ObservableBoolean",
+      "ObservableByte",
+      "ObservableChar"
+    ]
+  },
+  "androidx.databinding.library.baseAdapters": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "DataBinderMapperImpl"
+    ]
+  },
+  "androidx.drawerlayout.widget": {
+    "classes": 10,
+    "methods": 127,
+    "storage": {},
+    "sample": [
+      "DrawerLayout"
+    ]
+  },
+  "androidx.fragment.app": {
+    "classes": 132,
+    "methods": 1082,
+    "storage": {},
+    "sample": [
+      "BackStackState",
+      "Fragment",
+      "FragmentActivity",
+      "FragmentContainerView"
+    ]
+  },
+  "androidx.legacy.content": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "WakefulBroadcastReceiver"
+    ]
+  },
+  "androidx.legacy.widget": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "Space"
+    ]
+  },
+  "androidx.lifecycle": {
+    "classes": 73,
+    "methods": 283,
+    "storage": {},
+    "sample": [
+      "CompositeGeneratedAdaptersObserver",
+      "FullLifecycleObserverAdapter",
+      "LifecycleController",
+      "LifecycleCoroutineScopeImpl"
+    ]
+  },
+  "androidx.loader.app": {
+    "classes": 5,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "androidx.media": {
+    "classes": 56,
+    "methods": 174,
+    "storage": {},
+    "sample": [
+      "AudioAttributesCompat",
+      "AudioAttributesCompatParcelizer",
+      "AudioAttributesImpl",
+      "AudioAttributesImplApi21"
+    ]
+  },
+  "androidx.media.session": {
+    "classes": 2,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "MediaButtonReceiver"
+    ]
+  },
+  "androidx.multidex": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "MultiDexApplication"
+    ]
+  },
+  "androidx.recyclerview.widget": {
+    "classes": 111,
+    "methods": 1504,
+    "storage": {},
+    "sample": [
+      "GridLayoutManager",
+      "LinearLayoutManager",
+      "RecyclerView",
+      "StaggeredGridLayoutManager"
+    ]
+  },
+  "androidx.room": {
+    "classes": 74,
+    "methods": 403,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "MultiInstanceInvalidationService",
+      "a",
+      "a0",
+      "b"
+    ]
+  },
+  "androidx.savedstate": {
+    "classes": 10,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "Recreator",
+      "SavedStateRegistry",
+      "a",
+      "b"
+    ]
+  },
+  "androidx.slidingpanelayout.widget": {
+    "classes": 8,
+    "methods": 88,
+    "storage": {},
+    "sample": [
+      "SlidingPaneLayout"
+    ]
+  },
+  "androidx.swiperefreshlayout.widget": {
+    "classes": 17,
+    "methods": 156,
+    "storage": {},
+    "sample": [
+      "SwipeRefreshLayout",
+      "a",
+      "b"
+    ]
+  },
+  "androidx.transition": {
+    "classes": 112,
+    "methods": 669,
+    "storage": {},
+    "sample": [
+      "ArcMotion",
+      "AutoTransition",
+      "ChangeBounds",
+      "ChangeClipBounds"
+    ]
+  },
+  "androidx.vectordrawable.graphics.drawable": {
+    "classes": 21,
+    "methods": 261,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "androidx.versionedparcelable": {
+    "classes": 5,
+    "methods": 69,
+    "storage": {},
+    "sample": [
+      "CustomVersionedParcelable",
+      "ParcelImpl",
+      "a",
+      "b"
+    ]
+  },
+  "androidx.viewpager.widget": {
+    "classes": 23,
+    "methods": 204,
+    "storage": {},
+    "sample": [
+      "PagerTabStrip",
+      "PagerTitleStrip",
+      "ViewPager",
+      "a"
+    ]
+  },
+  "androidx.viewpager2.adapter": {
+    "classes": 4,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "androidx.viewpager2.widget": {
+    "classes": 27,
+    "methods": 189,
+    "storage": {},
+    "sample": [
+      "ViewPager2",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "androidx.work": {
+    "classes": 16,
+    "methods": 113,
+    "storage": {
+      "Java 对象流": 1
+    },
+    "sample": [
+      "ArrayCreatingInputMerger",
+      "CoroutineWorker",
+      "ListenableWorker",
+      "OverwritingInputMerger"
+    ]
+  },
+  "androidx.work.impl": {
+    "classes": 15,
+    "methods": 72,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "WorkDatabase",
+      "WorkDatabase_Impl",
+      "WorkManagerInitializer",
+      "a"
+    ]
+  },
+  "androidx.work.impl.background.systemalarm": {
+    "classes": 19,
+    "methods": 92,
+    "storage": {},
+    "sample": [
+      "ConstraintProxy",
+      "ConstraintProxyUpdateReceiver",
+      "RescheduleReceiver",
+      "SystemAlarmService"
+    ]
+  },
+  "androidx.work.impl.background.systemjob": {
+    "classes": 1,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "SystemJobService"
+    ]
+  },
+  "androidx.work.impl.diagnostics": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "DiagnosticsReceiver"
+    ]
+  },
+  "androidx.work.impl.foreground": {
+    "classes": 7,
+    "methods": 37,
+    "storage": {},
+    "sample": [
+      "SystemForegroundService",
+      "a"
+    ]
+  },
+  "androidx.work.impl.utils": {
+    "classes": 2,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "ForceStopRunnable"
+    ]
+  },
+  "androidx.work.impl.utils.futures": {
+    "classes": 14,
+    "methods": 73,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "androidx.work.impl.workers": {
+    "classes": 5,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "CombineContinuationsWorker",
+      "ConstraintTrackingWorker",
+      "DiagnosticsWorker"
+    ]
+  },
+  "androidx.work.multiprocess": {
+    "classes": 18,
+    "methods": 65,
+    "storage": {},
+    "sample": [
+      "RemoteWorkManagerClient",
+      "RemoteWorkManagerService",
+      "a",
+      "b"
+    ]
+  },
+  "androidx.work.multiprocess.parcelable": {
+    "classes": 15,
+    "methods": 82,
+    "storage": {},
+    "sample": [
+      "ParcelableConstraints",
+      "ParcelableWorkContinuationImpl",
+      "ParcelableWorkInfo",
+      "ParcelableWorkInfos"
+    ]
+  },
+  "anet.channel": {
+    "classes": 34,
+    "methods": 276,
+    "storage": {
+      "JSON": 1,
+      "偏好设置": 2
+    },
+    "sample": [
+      "AccsSessionManager",
+      "AwcnConfig",
+      "Config",
+      "DataFrameCb"
+    ]
+  },
+  "anet.channel.a": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "anet.channel.appmonitor": {
+    "classes": 4,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "AppMonitor",
+      "IAppMonitor",
+      "a"
+    ]
+  },
+  "anet.channel.b": {
+    "classes": 4,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "anet.channel.bytes": {
+    "classes": 3,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "ByteArray",
+      "a"
+    ]
+  },
+  "anet.channel.c": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "anet.channel.d": {
+    "classes": 1,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "anet.channel.detect": {
+    "classes": 17,
+    "methods": 65,
+    "storage": {
+      "JSON": 1,
+      "偏好设置": 1
+    },
+    "sample": [
+      "ExceptionDetector",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "anet.channel.e": {
+    "classes": 9,
+    "methods": 43,
+    "storage": {
+      "偏好设置": 3,
+      "JSON": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "anet.channel.entity": {
+    "classes": 8,
+    "methods": 44,
+    "storage": {},
+    "sample": [
+      "ConnType",
+      "ENV",
+      "EventCb",
+      "EventType"
+    ]
+  },
+  "anet.channel.flow": {
+    "classes": 4,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "FlowStat",
+      "INetworkAnalysis",
+      "NetworkAnalysis"
+    ]
+  },
+  "anet.channel.fulltrace": {
+    "classes": 4,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "IFullTraceAnalysis",
+      "a",
+      "b"
+    ]
+  },
+  "anet.channel.heartbeat": {
+    "classes": 5,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "HeartbeatManager",
+      "IHeartbeat",
+      "a",
+      "b"
+    ]
+  },
+  "anet.channel.monitor": {
+    "classes": 9,
+    "methods": 40,
+    "storage": {},
+    "sample": [
+      "INetworkQualityChangeListener",
+      "NetworkSpeed",
+      "a",
+      "b"
+    ]
+  },
+  "anet.channel.request": {
+    "classes": 10,
+    "methods": 113,
+    "storage": {},
+    "sample": [
+      "BodyEntry",
+      "ByteArrayEntry",
+      "Cancelable",
+      "Request"
+    ]
+  },
+  "anet.channel.security": {
+    "classes": 6,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "ISecurity",
+      "ISecurityFactory",
+      "a",
+      "b"
+    ]
+  },
+  "anet.channel.session": {
+    "classes": 13,
+    "methods": 89,
+    "storage": {},
+    "sample": [
+      "TnetSpdySession",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "anet.channel.statist": {
+    "classes": 21,
+    "methods": 46,
+    "storage": {
+      "JSON": 2
+    },
+    "sample": [
+      "AlarmObject",
+      "AmdcStatistic",
+      "CookieMonitorStat",
+      "CountObject"
+    ]
+  },
+  "anet.channel.status": {
+    "classes": 8,
+    "methods": 57,
+    "storage": {},
+    "sample": [
+      "NetworkStatusHelper",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "anet.channel.strategy": {
+    "classes": 42,
+    "methods": 212,
+    "storage": {
+      "JSON": 6
+    },
+    "sample": [
+      "ConnEvent",
+      "ConnHistoryItem",
+      "ConnProtocol",
+      "HttpDnsAdapter"
+    ]
+  },
+  "anet.channel.strategy.dispatch": {
+    "classes": 9,
+    "methods": 43,
+    "storage": {},
+    "sample": [
+      "AmdcRuntimeInfo",
+      "DispatchConstants",
+      "DispatchEvent",
+      "HttpDispatcher"
+    ]
+  },
+  "anet.channel.strategy.utils": {
+    "classes": 4,
+    "methods": 20,
+    "storage": {},
+    "sample": [
+      "SerialLruCache",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "anet.channel.thread": {
+    "classes": 6,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "ThreadPoolExecutorFactory",
+      "a"
+    ]
+  },
+  "anet.channel.util": {
+    "classes": 27,
+    "methods": 176,
+    "storage": {
+      "Java 对象流": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "ALog",
+      "AppLifecycle",
+      "ErrorConstant",
+      "HMacUtil"
+    ]
+  },
+  "anetwork.channel": {
+    "classes": 15,
+    "methods": 67,
+    "storage": {},
+    "sample": [
+      "Header",
+      "IBodyHandler",
+      "Network",
+      "NetworkCallBack"
+    ]
+  },
+  "anetwork.channel.aidl": {
+    "classes": 33,
+    "methods": 194,
+    "storage": {},
+    "sample": [
+      "Connection",
+      "DefaultFinishEvent",
+      "DefaultProgressEvent",
+      "IRemoteNetworkGetter"
+    ]
+  },
+  "anetwork.channel.aidl.adapter": {
+    "classes": 11,
+    "methods": 76,
+    "storage": {},
+    "sample": [
+      "ConnectionDelegate",
+      "ParcelableBodyHandlerWrapper",
+      "ParcelableFutureResponse",
+      "ParcelableInputStreamImpl"
+    ]
+  },
+  "anetwork.channel.cache": {
+    "classes": 6,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "Cache",
+      "CacheManager",
+      "CachePrediction",
+      "a"
+    ]
+  },
+  "anetwork.channel.config": {
+    "classes": 2,
+    "methods": 54,
+    "storage": {
+      "偏好设置": 1,
+      "JSON": 1
+    },
+    "sample": [
+      "IRemoteConfig",
+      "NetworkConfigCenter"
+    ]
+  },
+  "anetwork.channel.cookie": {
+    "classes": 5,
+    "methods": 24,
+    "storage": {
+      "偏好设置": 2,
+      "JSON": 1
+    },
+    "sample": [
+      "CookieManager",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "anetwork.channel.degrade": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "DegradableNetwork",
+      "DegradableNetworkDelegate"
+    ]
+  },
+  "anetwork.channel.download": {
+    "classes": 5,
+    "methods": 27,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "DownloadManager",
+      "a"
+    ]
+  },
+  "anetwork.channel.entity": {
+    "classes": 12,
+    "methods": 103,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "BasicHeader",
+      "BodyHandlerEntry",
+      "RequestImpl",
+      "StringParam"
+    ]
+  },
+  "anetwork.channel.http": {
+    "classes": 3,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "HttpNetwork",
+      "HttpNetworkDelegate",
+      "NetworkSdkSetting"
+    ]
+  },
+  "anetwork.channel.interceptor": {
+    "classes": 4,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "Callback",
+      "Interceptor",
+      "InterceptorManager"
+    ]
+  },
+  "anetwork.channel.monitor": {
+    "classes": 1,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "Monitor"
+    ]
+  },
+  "anetwork.channel.monitor.speed": {
+    "classes": 1,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "NetworkSpeed"
+    ]
+  },
+  "anetwork.channel.stat": {
+    "classes": 5,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "INetworkStat",
+      "NetworkStat",
+      "NetworkStatCache"
+    ]
+  },
+  "anetwork.channel.statist": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "StatisticData"
+    ]
+  },
+  "anetwork.channel.unified": {
+    "classes": 18,
+    "methods": 74,
+    "storage": {},
+    "sample": [
+      "IUnifiedTask",
+      "UnifiedNetworkDelegate",
+      "a",
+      "b"
+    ]
+  },
+  "anetwork.channel.util": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "RequestConstant",
+      "a"
+    ]
+  },
+  "b": {
+    "classes": 4,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "b0": {
+    "classes": 8,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b1": {
+    "classes": 4,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b2": {
+    "classes": 5,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b3": {
+    "classes": 8,
+    "methods": 46,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "c": {
+    "classes": 10,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "c0": {
+    "classes": 21,
+    "methods": 142,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "c1": {
+    "classes": 9,
+    "methods": 41,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "c2": {
+    "classes": 29,
+    "methods": 102,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "c3": {
+    "classes": 16,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.alibaba.sdk.android.ams.common.a": {
+    "classes": 2,
+    "methods": 17,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "com.alibaba.sdk.android.ams.common.b": {
+    "classes": 3,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.alibaba.sdk.android.ams.common.c": {
+    "classes": 4,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.alibaba.sdk.android.ams.common.logger": {
+    "classes": 4,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "AmsLogger",
+      "LoggerListener"
+    ]
+  },
+  "com.alibaba.sdk.android.ams.common.util": {
+    "classes": 5,
+    "methods": 32,
+    "storage": {},
+    "sample": [
+      "StringUtil",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.alibaba.sdk.android.crashdefend": {
+    "classes": 4,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "CrashDefendApi",
+      "CrashDefendCallback",
+      "a"
+    ]
+  },
+  "com.alibaba.sdk.android.crashdefend.a": {
+    "classes": 2,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "com.alibaba.sdk.android.crashdefend.b": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "com.alibaba.sdk.android.crashdefend.c": {
+    "classes": 2,
+    "methods": 10,
+    "storage": {
+      "JSON": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "com.alibaba.sdk.android.error": {
+    "classes": 22,
+    "methods": 57,
+    "storage": {},
+    "sample": [
+      "Code",
+      "CodeGenerator",
+      "ErrorBuilder",
+      "ErrorCode"
+    ]
+  },
+  "com.alibaba.sdk.android.logger": {
+    "classes": 20,
+    "methods": 45,
+    "storage": {},
+    "sample": [
+      "BaseSdkLogApi",
+      "ILog",
+      "ILogger",
+      "ILoggerWithControl"
+    ]
+  },
+  "com.alibaba.sdk.android.logger.a": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "com.alibaba.sdk.android.logger.b": {
+    "classes": 9,
+    "methods": 39,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.alibaba.sdk.android.logger.interceptor": {
+    "classes": 7,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "ILogInterceptor",
+      "InterceptorManager",
+      "a",
+      "b"
+    ]
+  },
+  "com.alibaba.sdk.android.oss": {
+    "classes": 7,
+    "methods": 286,
+    "storage": {},
+    "sample": [
+      "ClientConfiguration",
+      "ClientException",
+      "OSS",
+      "OSSClient"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.callback": {
+    "classes": 3,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "OSSCompletedCallback",
+      "OSSProgressCallback",
+      "OSSRetryCallback"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.common": {
+    "classes": 13,
+    "methods": 77,
+    "storage": {
+      "SQLite": 1
+    },
+    "sample": [
+      "HttpMethod",
+      "LogThreadPoolManager",
+      "OSSConstants",
+      "OSSHeaders"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.common.auth": {
+    "classes": 9,
+    "methods": 46,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "HmacSHA1Signature",
+      "OSSAuthCredentialsProvider",
+      "OSSCredentialProvider",
+      "OSSCustomSignerCredentialProvider"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.common.utils": {
+    "classes": 15,
+    "methods": 125,
+    "storage": {
+      "文件流": 1,
+      "JSON": 2,
+      "偏好设置": 1
+    },
+    "sample": [
+      "BinaryUtil",
+      "CRC64",
+      "CaseInsensitiveHashMap",
+      "DateUtil"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.exception": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "InconsistentException"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.internal": {
+    "classes": 63,
+    "methods": 382,
+    "storage": {
+      "Java 对象流": 2,
+      "文件流": 2
+    },
+    "sample": [
+      "AbstractResponseParser",
+      "BaseMultipartUploadTask",
+      "CheckCRC64DownloadInputStream",
+      "ExtensionRequestOperation"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.model": {
+    "classes": 85,
+    "methods": 696,
+    "storage": {},
+    "sample": [
+      "AbortMultipartUploadRequest",
+      "AbortMultipartUploadResult",
+      "AppendObjectRequest",
+      "AppendObjectResult"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.network": {
+    "classes": 9,
+    "methods": 42,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "CancellationHandler",
+      "ExecutionContext",
+      "NetworkProgressHelper",
+      "OSSRequestTask"
+    ]
+  },
+  "com.alibaba.sdk.android.oss_android_sdk": {
+    "classes": 3,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "BuildConfig",
+      "R"
+    ]
+  },
+  "com.alibaba.sdk.android.push": {
+    "classes": 22,
+    "methods": 100,
+    "storage": {},
+    "sample": [
+      "AliyunMessageIntentService",
+      "CloudPushService",
+      "CommonCallback",
+      "IPushPermissionCallback"
+    ]
+  },
+  "com.alibaba.sdk.android.push.a": {
+    "classes": 46,
+    "methods": 182,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.alibaba.sdk.android.push.b": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "com.alibaba.sdk.android.push.c": {
+    "classes": 1,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "com.alibaba.sdk.android.push.channel": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "KeepChannelService"
+    ]
+  },
+  "com.alibaba.sdk.android.push.common.global": {
+    "classes": 6,
+    "methods": 27,
+    "storage": {},
+    "sample": [
+      "MpsGlobalSetter",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.alibaba.sdk.android.push.common.util": {
+    "classes": 7,
+    "methods": 16,
+    "storage": {
+      "JSON": 1,
+      "偏好设置": 1
+    },
+    "sample": [
+      "AppInfoUtil",
+      "JSONUtils",
+      "ThreadPoolFactory",
+      "a"
+    ]
+  },
+  "com.alibaba.sdk.android.push.common.util.a": {
+    "classes": 4,
+    "methods": 20,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.alibaba.sdk.android.push.d.a": {
+    "classes": 3,
+    "methods": 22,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.alibaba.sdk.android.push.e": {
+    "classes": 32,
+    "methods": 150,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.alibaba.sdk.android.push.noonesdk": {
+    "classes": 3,
+    "methods": 47,
+    "storage": {},
+    "sample": [
+      "PushInitConfig",
+      "PushServiceFactory"
+    ]
+  },
+  "com.alibaba.sdk.android.push.notification": {
+    "classes": 12,
+    "methods": 190,
+    "storage": {
+      "偏好设置": 1,
+      "Java 对象流": 1,
+      "JSON": 2
+    },
+    "sample": [
+      "AdvancedCustomPushNotification",
+      "BasicCustomPushNotification",
+      "CPushMessage",
+      "CustomNotificationBuilder"
+    ]
+  },
+  "com.alibaba.sdk.android.push.util": {
+    "classes": 5,
+    "methods": 23,
+    "storage": {
+      "文件流": 1,
+      "位图": 1
+    },
+    "sample": [
+      "DownloadUtil",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.aliyun.ams.emas.push": {
+    "classes": 17,
+    "methods": 62,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "AgooInnerService",
+      "AgooMessageIntentService",
+      "AgooMessageReceiver",
+      "MsgService"
+    ]
+  },
+  "com.aliyun.ams.emas.push.notification": {
+    "classes": 2,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "CPushMessage",
+      "a"
+    ]
+  },
+  "com.bumptech.glide": {
+    "classes": 40,
+    "methods": 300,
+    "storage": {},
+    "sample": [
+      "GeneratedAppGlideModule",
+      "GenericTransitionOptions",
+      "Glide",
+      "GlideBuilder"
+    ]
+  },
+  "com.bumptech.glide.annotation": {
+    "classes": 5,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "Excludes",
+      "GlideExtension",
+      "GlideModule",
+      "GlideOption"
+    ]
+  },
+  "com.bumptech.glide.annotation.compiler": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "Index"
+    ]
+  },
+  "com.bumptech.glide.disklrucache": {
+    "classes": 9,
+    "methods": 90,
+    "storage": {
+      "文件流": 3
+    },
+    "sample": [
+      "DiskLruCache",
+      "StrictLineReader",
+      "Util"
+    ]
+  },
+  "com.bumptech.glide.gifdecoder": {
+    "classes": 8,
+    "methods": 91,
+    "storage": {},
+    "sample": [
+      "GifDecoder",
+      "GifFrame",
+      "GifHeader",
+      "GifHeaderParser"
+    ]
+  },
+  "com.bumptech.glide.load": {
+    "classes": 25,
+    "methods": 90,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "DataSource",
+      "DecodeFormat",
+      "EncodeStrategy",
+      "Encoder"
+    ]
+  },
+  "com.bumptech.glide.load.data": {
+    "classes": 24,
+    "methods": 121,
+    "storage": {},
+    "sample": [
+      "AssetFileDescriptorLocalUriFetcher",
+      "AssetPathFetcher",
+      "BufferedOutputStream",
+      "DataFetcher"
+    ]
+  },
+  "com.bumptech.glide.load.data.mediastore": {
+    "classes": 7,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "FileService",
+      "MediaStoreUtil",
+      "ThumbFetcher",
+      "ThumbnailQuery"
+    ]
+  },
+  "com.bumptech.glide.load.engine": {
+    "classes": 62,
+    "methods": 344,
+    "storage": {},
+    "sample": [
+      "ActiveResources",
+      "CallbackException",
+      "DataCacheGenerator",
+      "DataCacheKey"
+    ]
+  },
+  "com.bumptech.glide.load.engine.bitmap_recycle": {
+    "classes": 29,
+    "methods": 197,
+    "storage": {},
+    "sample": [
+      "ArrayAdapterInterface",
+      "ArrayPool",
+      "AttributeStrategy",
+      "BaseKeyPool"
+    ]
+  },
+  "com.bumptech.glide.load.engine.cache": {
+    "classes": 30,
+    "methods": 111,
+    "storage": {},
+    "sample": [
+      "DiskCache",
+      "DiskCacheAdapter",
+      "DiskCacheWriteLocker",
+      "DiskLruCacheFactory"
+    ]
+  },
+  "com.bumptech.glide.load.engine.executor": {
+    "classes": 10,
+    "methods": 52,
+    "storage": {},
+    "sample": [
+      "GlideExecutor",
+      "RuntimeCompat"
+    ]
+  },
+  "com.bumptech.glide.load.engine.prefill": {
+    "classes": 7,
+    "methods": 36,
+    "storage": {},
+    "sample": [
+      "BitmapPreFillRunner",
+      "BitmapPreFiller",
+      "PreFillQueue",
+      "PreFillType"
+    ]
+  },
+  "com.bumptech.glide.load.model": {
+    "classes": 74,
+    "methods": 324,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "AssetUriLoader",
+      "ByteArrayLoader",
+      "ByteBufferEncoder",
+      "ByteBufferFileLoader"
+    ]
+  },
+  "com.bumptech.glide.load.model.stream": {
+    "classes": 16,
+    "methods": 72,
+    "storage": {},
+    "sample": [
+      "BaseGlideUrlLoader",
+      "HttpGlideUrlLoader",
+      "HttpUriLoader",
+      "MediaStoreImageThumbLoader"
+    ]
+  },
+  "com.bumptech.glide.load.resource": {
+    "classes": 5,
+    "methods": 20,
+    "storage": {},
+    "sample": [
+      "ImageDecoderResourceDecoder",
+      "SimpleResource",
+      "UnitTransformation"
+    ]
+  },
+  "com.bumptech.glide.load.resource.bitmap": {
+    "classes": 68,
+    "methods": 367,
+    "storage": {
+      "文件流": 1,
+      "位图": 2
+    },
+    "sample": [
+      "BitmapDrawableDecoder",
+      "BitmapDrawableEncoder",
+      "BitmapDrawableResource",
+      "BitmapDrawableTransformation"
+    ]
+  },
+  "com.bumptech.glide.load.resource.bytes": {
+    "classes": 3,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "ByteBufferRewinder",
+      "BytesResource"
+    ]
+  },
+  "com.bumptech.glide.load.resource.drawable": {
+    "classes": 6,
+    "methods": 40,
+    "storage": {},
+    "sample": [
+      "DrawableDecoderCompat",
+      "DrawableResource",
+      "DrawableTransitionOptions",
+      "NonOwnedDrawableResource"
+    ]
+  },
+  "com.bumptech.glide.load.resource.file": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "FileDecoder",
+      "FileResource"
+    ]
+  },
+  "com.bumptech.glide.load.resource.gif": {
+    "classes": 17,
+    "methods": 127,
+    "storage": {},
+    "sample": [
+      "ByteBufferGifDecoder",
+      "GifBitmapProvider",
+      "GifDrawable",
+      "GifDrawableEncoder"
+    ]
+  },
+  "com.bumptech.glide.load.resource.transcode": {
+    "classes": 8,
+    "methods": 23,
+    "storage": {
+      "位图": 1
+    },
+    "sample": [
+      "BitmapBytesTranscoder",
+      "BitmapDrawableTranscoder",
+      "DrawableBytesTranscoder",
+      "GifDrawableBytesTranscoder"
+    ]
+  },
+  "com.bumptech.glide.manager": {
+    "classes": 22,
+    "methods": 127,
+    "storage": {},
+    "sample": [
+      "ActivityFragmentLifecycle",
+      "ApplicationLifecycle",
+      "ConnectivityMonitor",
+      "ConnectivityMonitorFactory"
+    ]
+  },
+  "com.bumptech.glide.module": {
+    "classes": 6,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "AppGlideModule",
+      "AppliesOptions",
+      "GlideModule",
+      "LibraryGlideModule"
+    ]
+  },
+  "com.bumptech.glide.provider": {
+    "classes": 9,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "EncoderRegistry",
+      "ImageHeaderParserRegistry",
+      "LoadPathCache",
+      "ModelToResourceClassCache"
+    ]
+  },
+  "com.bumptech.glide.request": {
+    "classes": 14,
+    "methods": 243,
+    "storage": {},
+    "sample": [
+      "BaseRequestOptions",
+      "ErrorRequestCoordinator",
+      "FutureTarget",
+      "Request"
+    ]
+  },
+  "com.bumptech.glide.request.target": {
+    "classes": 26,
+    "methods": 205,
+    "storage": {},
+    "sample": [
+      "AppWidgetTarget",
+      "BaseTarget",
+      "BitmapImageViewTarget",
+      "BitmapThumbnailImageViewTarget"
+    ]
+  },
+  "com.bumptech.glide.request.transition": {
+    "classes": 19,
+    "methods": 46,
+    "storage": {},
+    "sample": [
+      "BitmapContainerTransitionFactory",
+      "BitmapTransitionFactory",
+      "DrawableCrossFadeFactory",
+      "DrawableCrossFadeTransition"
+    ]
+  },
+  "com.bumptech.glide.signature": {
+    "classes": 5,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "AndroidResourceSignature",
+      "ApplicationVersionSignature",
+      "EmptySignature",
+      "MediaStoreSignature"
+    ]
+  },
+  "com.bumptech.glide.util": {
+    "classes": 20,
+    "methods": 137,
+    "storage": {},
+    "sample": [
+      "ByteBufferUtil",
+      "CachedHashCodeArrayMap",
+      "ContentLengthInputStream",
+      "ExceptionCatchingInputStream"
+    ]
+  },
+  "com.bumptech.glide.util.pool": {
+    "classes": 13,
+    "methods": 41,
+    "storage": {},
+    "sample": [
+      "FactoryPools",
+      "GlideTrace",
+      "StateVerifier"
+    ]
+  },
+  "com.efs.sdk.base": {
+    "classes": 8,
+    "methods": 41,
+    "storage": {},
+    "sample": [
+      "BuildConfig",
+      "Constants",
+      "EfsConstant",
+      "EfsReporter"
+    ]
+  },
+  "com.efs.sdk.base.a.a": {
+    "classes": 7,
+    "methods": 33,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.efs.sdk.base.a.b": {
+    "classes": 12,
+    "methods": 43,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.efs.sdk.base.a.c.a": {
+    "classes": 8,
+    "methods": 44,
+    "storage": {
+      "偏好设置": 2,
+      "JSON": 2
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.efs.sdk.base.a.c": {
+    "classes": 4,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.efs.sdk.base.a.d.a": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "com.efs.sdk.base.a.d": {
+    "classes": 2,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "com.efs.sdk.base.a.e": {
+    "classes": 12,
+    "methods": 36,
+    "storage": {
+      "偏好设置": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.efs.sdk.base.a.f": {
+    "classes": 4,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.efs.sdk.base.a.g.a": {
+    "classes": 6,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.efs.sdk.base.a.g": {
+    "classes": 6,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.efs.sdk.base.a.h.a": {
+    "classes": 5,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.efs.sdk.base.a.h": {
+    "classes": 8,
+    "methods": 44,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.efs.sdk.base.a.h.b": {
+    "classes": 5,
+    "methods": 22,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.efs.sdk.base.a.h.c": {
+    "classes": 2,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "com.efs.sdk.base.a.i": {
+    "classes": 9,
+    "methods": 31,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.efs.sdk.base.http": {
+    "classes": 6,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "AbsHttpListener",
+      "HttpEnv",
+      "HttpResponse",
+      "IHttpUtil"
+    ]
+  },
+  "com.efs.sdk.base.newsharedpreferences": {
+    "classes": 17,
+    "methods": 115,
+    "storage": {
+      "偏好设置": 3,
+      "文件流": 1
+    },
+    "sample": [
+      "SharedPreferencesNewImpl",
+      "SharedPreferencesUtils"
+    ]
+  },
+  "com.efs.sdk.base.observer": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "IConfigCallback",
+      "IEfsReporterObserver"
+    ]
+  },
+  "com.efs.sdk.base.processor.action": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "ILogEncryptAction"
+    ]
+  },
+  "com.efs.sdk.base.protocol": {
+    "classes": 2,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "AbsLog",
+      "ILogProtocol"
+    ]
+  },
+  "com.efs.sdk.base.protocol.file": {
+    "classes": 2,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "AbsFileLog",
+      "EfsTextFile"
+    ]
+  },
+  "com.efs.sdk.base.protocol.file.section": {
+    "classes": 4,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "AbsSection",
+      "JSONSection",
+      "KVSection",
+      "TextSection"
+    ]
+  },
+  "com.efs.sdk.base.protocol.record": {
+    "classes": 2,
+    "methods": 15,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "AbsRecordLog",
+      "EfsJSONLog"
+    ]
+  },
+  "com.efs.sdk.pa": {
+    "classes": 10,
+    "methods": 45,
+    "storage": {},
+    "sample": [
+      "PA",
+      "PAANRListener",
+      "PAFactory",
+      "PAMsgListener"
+    ]
+  },
+  "com.efs.sdk.pa.a": {
+    "classes": 12,
+    "methods": 37,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.efs.sdk.pa.config": {
+    "classes": 4,
+    "methods": 23,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "ConfigManager",
+      "IEfsReporter",
+      "PackageLevel"
+    ]
+  },
+  "com.github.barteksc.pdfviewer": {
+    "classes": 21,
+    "methods": 223,
+    "storage": {},
+    "sample": [
+      "PDFView",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.google.android.material": {
+    "classes": 17,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "com.google.android.material.animation": {
+    "classes": 11,
+    "methods": 64,
+    "storage": {},
+    "sample": [
+      "AnimationUtils",
+      "AnimatorSetCompat",
+      "ArgbEvaluatorCompat",
+      "ChildrenAlphaProperty"
+    ]
+  },
+  "com.google.android.material.appbar": {
+    "classes": 29,
+    "methods": 354,
+    "storage": {},
+    "sample": [
+      "AppBarLayout",
+      "CollapsingToolbarLayout",
+      "HeaderBehavior",
+      "HeaderScrollingViewBehavior"
+    ]
+  },
+  "com.google.android.material.badge": {
+    "classes": 5,
+    "methods": 89,
+    "storage": {},
+    "sample": [
+      "BadgeDrawable",
+      "BadgeUtils"
+    ]
+  },
+  "com.google.android.material.behavior": {
+    "classes": 7,
+    "methods": 46,
+    "storage": {},
+    "sample": [
+      "HideBottomViewOnScrollBehavior",
+      "SwipeDismissBehavior"
+    ]
+  },
+  "com.google.android.material.bottomappbar": {
+    "classes": 18,
+    "methods": 146,
+    "storage": {},
+    "sample": [
+      "BottomAppBar",
+      "BottomAppBarTopEdgeTreatment"
+    ]
+  },
+  "com.google.android.material.bottomnavigation": {
+    "classes": 16,
+    "methods": 183,
+    "storage": {},
+    "sample": [
+      "BottomNavigationItemView",
+      "BottomNavigationMenu",
+      "BottomNavigationMenuView",
+      "BottomNavigationPresenter"
+    ]
+  },
+  "com.google.android.material.bottomsheet": {
+    "classes": 20,
+    "methods": 150,
+    "storage": {},
+    "sample": [
+      "BottomSheetBehavior",
+      "BottomSheetDialog",
+      "BottomSheetDialogFragment"
+    ]
+  },
+  "com.google.android.material.button": {
+    "classes": 14,
+    "methods": 190,
+    "storage": {},
+    "sample": [
+      "MaterialButton",
+      "MaterialButtonHelper",
+      "MaterialButtonToggleGroup"
+    ]
+  },
+  "com.google.android.material.canvas": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "CanvasCompat"
+    ]
+  },
+  "com.google.android.material.card": {
+    "classes": 4,
+    "methods": 119,
+    "storage": {},
+    "sample": [
+      "MaterialCardView",
+      "MaterialCardViewHelper"
+    ]
+  },
+  "com.google.android.material.checkbox": {
+    "classes": 1,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "MaterialCheckBox"
+    ]
+  },
+  "com.google.android.material.chip": {
+    "classes": 12,
+    "methods": 434,
+    "storage": {},
+    "sample": [
+      "Chip",
+      "ChipDrawable",
+      "ChipGroup"
+    ]
+  },
+  "com.google.android.material.circularreveal": {
+    "classes": 15,
+    "methods": 118,
+    "storage": {},
+    "sample": [
+      "CircularRevealCompat",
+      "CircularRevealFrameLayout",
+      "CircularRevealGridLayout",
+      "CircularRevealHelper"
+    ]
+  },
+  "com.google.android.material.circularreveal.cardview": {
+    "classes": 1,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "CircularRevealCardView"
+    ]
+  },
+  "com.google.android.material.circularreveal.coordinatorlayout": {
+    "classes": 1,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "CircularRevealCoordinatorLayout"
+    ]
+  },
+  "com.google.android.material.color": {
+    "classes": 1,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "MaterialColors"
+    ]
+  },
+  "com.google.android.material.datepicker": {
+    "classes": 64,
+    "methods": 450,
+    "storage": {},
+    "sample": [
+      "CalendarConstraints",
+      "CalendarItemStyle",
+      "CalendarStyle",
+      "CompositeDateValidator"
+    ]
+  },
+  "com.google.android.material.dialog": {
+    "classes": 3,
+    "methods": 88,
+    "storage": {},
+    "sample": [
+      "InsetDialogOnTouchListener",
+      "MaterialAlertDialogBuilder",
+      "MaterialDialogs"
+    ]
+  },
+  "com.google.android.material.drawable": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "DrawableUtils"
+    ]
+  },
+  "com.google.android.material.elevation": {
+    "classes": 1,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "ElevationOverlayProvider"
+    ]
+  },
+  "com.google.android.material.expandable": {
+    "classes": 3,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "ExpandableTransformationWidget",
+      "ExpandableWidget",
+      "ExpandableWidgetHelper"
+    ]
+  },
+  "com.google.android.material.floatingactionbutton": {
+    "classes": 41,
+    "methods": 432,
+    "storage": {},
+    "sample": [
+      "AnimatorTracker",
+      "BaseMotionStrategy",
+      "BorderDrawable",
+      "ExtendedFloatingActionButton"
+    ]
+  },
+  "com.google.android.material.imageview": {
+    "classes": 2,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "ShapeableImageView"
+    ]
+  },
+  "com.google.android.material.internal": {
+    "classes": 67,
+    "methods": 440,
+    "storage": {},
+    "sample": [
+      "BaselineLayout",
+      "CheckableImageButton",
+      "CollapsingTextHelper",
+      "ContextUtils"
+    ]
+  },
+  "com.google.android.material.math": {
+    "classes": 1,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "MathUtils"
+    ]
+  },
+  "com.google.android.material.navigation": {
+    "classes": 6,
+    "methods": 64,
+    "storage": {},
+    "sample": [
+      "NavigationView"
+    ]
+  },
+  "com.google.android.material.radiobutton": {
+    "classes": 1,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "MaterialRadioButton"
+    ]
+  },
+  "com.google.android.material.resources": {
+    "classes": 9,
+    "methods": 45,
+    "storage": {},
+    "sample": [
+      "CancelableFontCallback",
+      "MaterialAttributes",
+      "MaterialResources",
+      "TextAppearance"
+    ]
+  },
+  "com.google.android.material.ripple": {
+    "classes": 4,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "RippleDrawableCompat",
+      "RippleUtils"
+    ]
+  },
+  "com.google.android.material.shadow": {
+    "classes": 3,
+    "methods": 35,
+    "storage": {},
+    "sample": [
+      "ShadowDrawableWrapper",
+      "ShadowRenderer",
+      "ShadowViewDelegate"
+    ]
+  },
+  "com.google.android.material.shape": {
+    "classes": 39,
+    "methods": 380,
+    "storage": {},
+    "sample": [
+      "AbsoluteCornerSize",
+      "AdjustedCornerSize",
+      "CornerFamily",
+      "CornerSize"
+    ]
+  },
+  "com.google.android.material.slider": {
+    "classes": 17,
+    "methods": 280,
+    "storage": {},
+    "sample": [
+      "BaseOnChangeListener",
+      "BaseOnSliderTouchListener",
+      "BaseSlider",
+      "BasicLabelFormatter"
+    ]
+  },
+  "com.google.android.material.snackbar": {
+    "classes": 40,
+    "methods": 214,
+    "storage": {},
+    "sample": [
+      "BaseTransientBottomBar",
+      "ContentViewCallback",
+      "Snackbar",
+      "SnackbarContentLayout"
+    ]
+  },
+  "com.google.android.material.stateful": {
+    "classes": 2,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "ExtendableSavedState"
+    ]
+  },
+  "com.google.android.material.switchmaterial": {
+    "classes": 1,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "SwitchMaterial"
+    ]
+  },
+  "com.google.android.material.tabs": {
+    "classes": 24,
+    "methods": 238,
+    "storage": {},
+    "sample": [
+      "TabItem",
+      "TabLayout",
+      "TabLayoutMediator"
+    ]
+  },
+  "com.google.android.material.textfield": {
+    "classes": 48,
+    "methods": 470,
+    "storage": {},
+    "sample": [
+      "ClearTextEndIconDelegate",
+      "CustomEndIconDelegate",
+      "CutoutDrawable",
+      "DropdownMenuEndIconDelegate"
+    ]
+  },
+  "com.google.android.material.textview": {
+    "classes": 1,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "MaterialTextView"
+    ]
+  },
+  "com.google.android.material.theme": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "MaterialComponentsViewInflater"
+    ]
+  },
+  "com.google.android.material.theme.overlay": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "MaterialThemeOverlay"
+    ]
+  },
+  "com.google.android.material.tooltip": {
+    "classes": 2,
+    "methods": 38,
+    "storage": {},
+    "sample": [
+      "TooltipDrawable"
+    ]
+  },
+  "com.google.android.material.transformation": {
+    "classes": 15,
+    "methods": 75,
+    "storage": {},
+    "sample": [
+      "ExpandableBehavior",
+      "ExpandableTransformationBehavior",
+      "FabTransformationBehavior",
+      "FabTransformationScrimBehavior"
+    ]
+  },
+  "com.google.android.material.transition": {
+    "classes": 46,
+    "methods": 265,
+    "storage": {},
+    "sample": [
+      "FadeModeEvaluator",
+      "FadeModeEvaluators",
+      "FadeModeResult",
+      "FadeProvider"
+    ]
+  },
+  "com.google.android.material.transition.platform": {
+    "classes": 52,
+    "methods": 296,
+    "storage": {},
+    "sample": [
+      "FadeModeEvaluator",
+      "FadeModeEvaluators",
+      "FadeModeResult",
+      "FadeProvider"
+    ]
+  },
+  "com.google.common.util.concurrent": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "ListenableFuture"
+    ]
+  },
+  "com.google.gson": {
+    "classes": 40,
+    "methods": 293,
+    "storage": {
+      "JSON": 7
+    },
+    "sample": [
+      "DefaultDateTypeAdapter",
+      "ExclusionStrategy",
+      "FieldAttributes",
+      "FieldNamingPolicy"
+    ]
+  },
+  "com.google.gson.annotations": {
+    "classes": 5,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "Expose",
+      "JsonAdapter",
+      "SerializedName",
+      "Since"
+    ]
+  },
+  "com.google.gson.internal": {
+    "classes": 55,
+    "methods": 281,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "ConstructorConstructor",
+      "Excluder",
+      "GsonBuildConfig",
+      "JavaVersion"
+    ]
+  },
+  "com.google.gson.internal.bind": {
+    "classes": 69,
+    "methods": 323,
+    "storage": {
+      "JSON": 9
+    },
+    "sample": [
+      "ArrayTypeAdapter",
+      "CollectionTypeAdapterFactory",
+      "DateTypeAdapter",
+      "JsonAdapterAnnotationTypeAdapterFactory"
+    ]
+  },
+  "com.google.gson.internal.bind.util": {
+    "classes": 1,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "ISO8601Utils"
+    ]
+  },
+  "com.google.gson.internal.reflect": {
+    "classes": 3,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "PreJava9ReflectionAccessor",
+      "ReflectionAccessor",
+      "UnsafeReflectionAccessor"
+    ]
+  },
+  "com.google.gson.reflect": {
+    "classes": 1,
+    "methods": 20,
+    "storage": {},
+    "sample": [
+      "TypeToken"
+    ]
+  },
+  "com.google.gson.stream": {
+    "classes": 6,
+    "methods": 83,
+    "storage": {},
+    "sample": [
+      "JsonReader",
+      "JsonScope",
+      "JsonToken",
+      "JsonWriter"
+    ]
+  },
+  "com.shockwave.pdfium": {
+    "classes": 4,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "PdfiumCore",
+      "a"
+    ]
+  },
+  "com.ta.a.a": {
+    "classes": 2,
+    "methods": 3,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "com.ta.a": {
+    "classes": 1,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "com.ta.a.b": {
+    "classes": 8,
+    "methods": 46,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.ta.a.c": {
+    "classes": 8,
+    "methods": 31,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.ta.utdid2.a.a": {
+    "classes": 8,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.ta.utdid2.b.a": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "a"
+    ]
+  },
+  "com.ta.utdid2.device": {
+    "classes": 7,
+    "methods": 35,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "UTDevice",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.taobao.accs": {
+    "classes": 44,
+    "methods": 343,
+    "storage": {
+      "偏好设置": 2,
+      "JSON": 1
+    },
+    "sample": [
+      "ACCSClient",
+      "ACCSManager",
+      "AccsClientConfig",
+      "AccsErrorCode"
+    ]
+  },
+  "com.taobao.accs.a": {
+    "classes": 3,
+    "methods": 13,
+    "storage": {
+      "SQLite": 1
+    },
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "com.taobao.accs.b": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "com.taobao.accs.base": {
+    "classes": 18,
+    "methods": 86,
+    "storage": {},
+    "sample": [
+      "AccsAbstractDataListener",
+      "AccsDataListener",
+      "AccsDataListenerV2",
+      "BaseReceiver"
+    ]
+  },
+  "com.taobao.accs.client": {
+    "classes": 8,
+    "methods": 54,
+    "storage": {},
+    "sample": [
+      "AdapterGlobalClientInfo",
+      "GlobalClientInfo",
+      "GlobalConfig",
+      "a"
+    ]
+  },
+  "com.taobao.accs.common": {
+    "classes": 3,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "Constants",
+      "ThreadPoolExecutorFactory"
+    ]
+  },
+  "com.taobao.accs.data": {
+    "classes": 17,
+    "methods": 135,
+    "storage": {
+      "JSON": 2
+    },
+    "sample": [
+      "Message",
+      "MsgDistributeService",
+      "a",
+      "b"
+    ]
+  },
+  "com.taobao.accs.dispatch": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "IntentDispatch"
+    ]
+  },
+  "com.taobao.accs.flowcontrol": {
+    "classes": 3,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "FlowControl"
+    ]
+  },
+  "com.taobao.accs.internal": {
+    "classes": 8,
+    "methods": 91,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "ACCSManagerImpl",
+      "AccsJobService",
+      "ReceiverImpl",
+      "ServiceImpl"
+    ]
+  },
+  "com.taobao.accs.messenger": {
+    "classes": 7,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "MessengerService",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.taobao.accs.net": {
+    "classes": 30,
+    "methods": 195,
+    "storage": {
+      "JSON": 2
+    },
+    "sample": [
+      "a",
+      "aa",
+      "b",
+      "c"
+    ]
+  },
+  "com.taobao.accs.ut.a": {
+    "classes": 5,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.taobao.accs.ut.monitor": {
+    "classes": 7,
+    "methods": 48,
+    "storage": {},
+    "sample": [
+      "AssembleMonitor",
+      "NetPerformanceMonitor",
+      "SessionMonitor",
+      "TrafficsMonitor"
+    ]
+  },
+  "com.taobao.accs.utl": {
+    "classes": 30,
+    "methods": 239,
+    "storage": {
+      "JSON": 2,
+      "偏好设置": 4
+    },
+    "sample": [
+      "ALog",
+      "AccsLogger",
+      "AdapterUtilityImpl",
+      "AppMonitorAdapter"
+    ]
+  },
+  "com.taobao.agoo": {
+    "classes": 41,
+    "methods": 136,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "ICallback",
+      "IListAliasCallback",
+      "IListAliasCallbackInner",
+      "IRegister"
+    ]
+  },
+  "com.taobao.agoo.a.a": {
+    "classes": 4,
+    "methods": 16,
+    "storage": {
+      "JSON": 3
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.taobao.agoo.a": {
+    "classes": 2,
+    "methods": 13,
+    "storage": {
+      "偏好设置": 1,
+      "JSON": 2
+    },
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "com.tencent.mars.xlog": {
+    "classes": 8,
+    "methods": 108,
+    "storage": {},
+    "sample": [
+      "Log",
+      "Xlog"
+    ]
+  },
+  "com.trello.rxlifecycle.components": {
+    "classes": 2,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "RxActivity",
+      "RxDialogFragment"
+    ]
+  },
+  "com.trello.rxlifecycle.components.support": {
+    "classes": 2,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "RxAppCompatActivity",
+      "RxFragmentActivity"
+    ]
+  },
+  "com.uc.crashsdk": {
+    "classes": 12,
+    "methods": 411,
+    "storage": {
+      "文件流": 1,
+      "ZIP": 1
+    },
+    "sample": [
+      "JNIBridge",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.uc.crashsdk.a": {
+    "classes": 9,
+    "methods": 144,
+    "storage": {
+      "文件流": 3
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.uc.crashsdk.export": {
+    "classes": 9,
+    "methods": 74,
+    "storage": {},
+    "sample": [
+      "CrashApi",
+      "CrashStatKey",
+      "CustomInfo",
+      "CustomLogInfo"
+    ]
+  },
+  "com.umeng.analytics": {
+    "classes": 17,
+    "methods": 153,
+    "storage": {
+      "偏好设置": 1,
+      "JSON": 1
+    },
+    "sample": [
+      "AnalyticsConfig",
+      "CoreProtocol",
+      "Gender",
+      "MobclickAgent"
+    ]
+  },
+  "com.umeng.analytics.filter": {
+    "classes": 5,
+    "methods": 32,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "EventList",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.umeng.analytics.pro": {
+    "classes": 141,
+    "methods": 949,
+    "storage": {
+      "SQLite": 6,
+      "偏好设置": 6,
+      "JSON": 8
+    },
+    "sample": [
+      "a",
+      "aa",
+      "ab",
+      "ac"
+    ]
+  },
+  "com.umeng.analytics.process": {
+    "classes": 17,
+    "methods": 80,
+    "storage": {
+      "JSON": 3,
+      "偏好设置": 1,
+      "SQLite": 3
+    },
+    "sample": [
+      "DBFileTraversalUtil",
+      "UMProcessDBDatasSender",
+      "UMProcessDBHelper",
+      "a"
+    ]
+  },
+  "com.umeng.analytics.vshelper": {
+    "classes": 4,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "PageNameMonitor",
+      "a"
+    ]
+  },
+  "com.umeng.common": {
+    "classes": 5,
+    "methods": 24,
+    "storage": {
+      "偏好设置": 2
+    },
+    "sample": [
+      "AnalyticsSdkVersion",
+      "ISysListener",
+      "a",
+      "b"
+    ]
+  },
+  "com.umeng.commonsdk": {
+    "classes": 14,
+    "methods": 75,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "BuildConfig",
+      "UMConfigure",
+      "UMConfigureImpl",
+      "UMConfigureInternation"
+    ]
+  },
+  "com.umeng.commonsdk.config": {
+    "classes": 16,
+    "methods": 55,
+    "storage": {},
+    "sample": [
+      "FieldManager",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.umeng.commonsdk.debug": {
+    "classes": 10,
+    "methods": 49,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "D",
+      "E",
+      "I",
+      "SelfChecker"
+    ]
+  },
+  "com.umeng.commonsdk.framework": {
+    "classes": 14,
+    "methods": 118,
+    "storage": {
+      "JSON": 2,
+      "偏好设置": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "UMEnvelopeBuild",
+      "UMFrUtils",
+      "UMLogDataProtocol",
+      "UMModuleRegister"
+    ]
+  },
+  "com.umeng.commonsdk.internal": {
+    "classes": 11,
+    "methods": 56,
+    "storage": {
+      "偏好设置": 4,
+      "JSON": 2
+    },
+    "sample": [
+      "UMInternalManagerAgent",
+      "UMOplus",
+      "a",
+      "b"
+    ]
+  },
+  "com.umeng.commonsdk.internal.crash": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "UMCrashManager",
+      "a"
+    ]
+  },
+  "com.umeng.commonsdk.internal.utils": {
+    "classes": 23,
+    "methods": 111,
+    "storage": {
+      "JSON": 4,
+      "偏好设置": 3
+    },
+    "sample": [
+      "ApplicationLayerUtilAgent",
+      "InfoPreferenceAgent",
+      "UMInternalUtilsAgent",
+      "a"
+    ]
+  },
+  "com.umeng.commonsdk.listener": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "OnGetOaidListener"
+    ]
+  },
+  "com.umeng.commonsdk.service": {
+    "classes": 3,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "UMGlobalContext"
+    ]
+  },
+  "com.umeng.commonsdk.stateless": {
+    "classes": 15,
+    "methods": 81,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "UMSLEnvelopeBuild",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.umeng.commonsdk.statistics": {
+    "classes": 8,
+    "methods": 31,
+    "storage": {
+      "偏好设置": 2,
+      "JSON": 1
+    },
+    "sample": [
+      "AnalyticsConstants",
+      "SdkVersion",
+      "UMErrorCode",
+      "UMServerURL"
+    ]
+  },
+  "com.umeng.commonsdk.statistics.common": {
+    "classes": 29,
+    "methods": 251,
+    "storage": {
+      "偏好设置": 2,
+      "文件流": 2
+    },
+    "sample": [
+      "DataHelper",
+      "DeviceConfig",
+      "DeviceTypeEnum",
+      "HelperUtils"
+    ]
+  },
+  "com.umeng.commonsdk.statistics.idtracking": {
+    "classes": 16,
+    "methods": 109,
+    "storage": {
+      "偏好设置": 3,
+      "JSON": 1,
+      "文件流": 2
+    },
+    "sample": [
+      "Envelope",
+      "ImprintHandler",
+      "a",
+      "b"
+    ]
+  },
+  "com.umeng.commonsdk.statistics.internal": {
+    "classes": 15,
+    "methods": 62,
+    "storage": {
+      "偏好设置": 2
+    },
+    "sample": [
+      "PreferenceWrapper",
+      "StatTracer",
+      "UMImprintChangeCallback",
+      "UMImprintPreProcessCallback"
+    ]
+  },
+  "com.umeng.commonsdk.statistics.noise": {
+    "classes": 3,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "ABTest",
+      "Defcon",
+      "ImLatent"
+    ]
+  },
+  "com.umeng.commonsdk.statistics.proto": {
+    "classes": 43,
+    "methods": 397,
+    "storage": {},
+    "sample": [
+      "Gender",
+      "Response",
+      "a",
+      "b"
+    ]
+  },
+  "com.umeng.commonsdk.utils": {
+    "classes": 8,
+    "methods": 94,
+    "storage": {
+      "JSON": 1,
+      "偏好设置": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "FileLockCallback",
+      "FileLockUtil",
+      "JSONArraySortUtil",
+      "UMUtils"
+    ]
+  },
+  "com.umeng.commonsdk.vchannel": {
+    "classes": 3,
+    "methods": 16,
+    "storage": {
+      "JSON": 2
+    },
+    "sample": [
+      "Sender",
+      "a",
+      "b"
+    ]
+  },
+  "com.umeng.tunnel": {
+    "classes": 1,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "UMChannelAgent"
+    ]
+  },
+  "com.umeng.umcrash": {
+    "classes": 22,
+    "methods": 71,
+    "storage": {
+      "JSON": 2
+    },
+    "sample": [
+      "BuildConfig",
+      "R",
+      "UMCrash",
+      "UMCrashCallback"
+    ]
+  },
+  "com.umeng.umzid": {
+    "classes": 14,
+    "methods": 49,
+    "storage": {
+      "偏好设置": 3,
+      "JSON": 1
+    },
+    "sample": [
+      "IZIDCompletionCallback",
+      "R",
+      "Spy",
+      "ZIDManager"
+    ]
+  },
+  "com.umeng.vt.diff": {
+    "classes": 4,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "Channel",
+      "Event",
+      "V"
+    ]
+  },
+  "com.umeng.vt.diff.util": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "ClassLoadUtil"
+    ]
+  },
+  "com.ut.device": {
+    "classes": 3,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "AidCallback",
+      "AidConstants",
+      "UTDevice"
+    ]
+  },
+  "com.xuexiang.xui": {
+    "classes": 24,
+    "methods": 52,
+    "storage": {},
+    "sample": [
+      "BuildConfig",
+      "R",
+      "UIConfig",
+      "UIConsts"
+    ]
+  },
+  "com.xuexiang.xui.adapter": {
+    "classes": 2,
+    "methods": 32,
+    "storage": {},
+    "sample": [
+      "FragmentAdapter",
+      "FragmentStateAdapter"
+    ]
+  },
+  "com.xuexiang.xui.adapter.listview": {
+    "classes": 2,
+    "methods": 40,
+    "storage": {},
+    "sample": [
+      "BaseListAdapter",
+      "XListAdapter"
+    ]
+  },
+  "com.xuexiang.xui.adapter.recyclerview": {
+    "classes": 13,
+    "methods": 108,
+    "storage": {},
+    "sample": [
+      "BaseRecyclerAdapter",
+      "DividerItemDecoration",
+      "GridDividerItemDecoration",
+      "RecyclerViewHolder"
+    ]
+  },
+  "com.xuexiang.xui.adapter.recyclerview.sticky": {
+    "classes": 7,
+    "methods": 49,
+    "storage": {},
+    "sample": [
+      "FullSpanUtils",
+      "OnStickyChangedListener",
+      "StickyHeadContainer",
+      "StickyItemDecoration"
+    ]
+  },
+  "com.xuexiang.xui.adapter.simple": {
+    "classes": 8,
+    "methods": 63,
+    "storage": {},
+    "sample": [
+      "AdapterItem",
+      "ExpandableItem",
+      "ViewHolder",
+      "XUISimpleAdapter"
+    ]
+  },
+  "com.xuexiang.xui.logs": {
+    "classes": 3,
+    "methods": 32,
+    "storage": {},
+    "sample": [
+      "ILogger",
+      "LogcatLogger",
+      "UILog"
+    ]
+  },
+  "com.xuexiang.xui.utils": {
+    "classes": 50,
+    "methods": 586,
+    "storage": {
+      "文件流": 1,
+      "位图": 1
+    },
+    "sample": [
+      "CollectionUtils",
+      "ColorUtils",
+      "CountDownButtonHelper",
+      "DensityUtils"
+    ]
+  },
+  "com.xuexiang.xui.widget": {
+    "classes": 11,
+    "methods": 86,
+    "storage": {},
+    "sample": [
+      "StickyNestedScrollView",
+      "XUIKeyboardScrollView",
+      "XUIObservableScrollView",
+      "XUIWrapContentExpandableListView"
+    ]
+  },
+  "com.xuexiang.xui.widget.actionbar": {
+    "classes": 9,
+    "methods": 97,
+    "storage": {},
+    "sample": [
+      "TitleBar",
+      "TitleUtils"
+    ]
+  },
+  "com.xuexiang.xui.widget.activity": {
+    "classes": 4,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "BaseGuideActivity",
+      "BaseSplashActivity"
+    ]
+  },
+  "com.xuexiang.xui.widget.alpha": {
+    "classes": 9,
+    "methods": 66,
+    "storage": {},
+    "sample": [
+      "IAlphaViewHelper",
+      "XUIAlphaButton",
+      "XUIAlphaFrameLayout",
+      "XUIAlphaImageButton"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.anim": {
+    "classes": 3,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "BaseAnimator"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.anim.select": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "RotateEnter",
+      "ZoomInEnter"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.anim.unselect": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "NoAnimExist"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.recycler": {
+    "classes": 14,
+    "methods": 81,
+    "storage": {},
+    "sample": [
+      "BannerLayout",
+      "RecyclerViewBannerBase"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.recycler.layout": {
+    "classes": 11,
+    "methods": 193,
+    "storage": {},
+    "sample": [
+      "BannerLayoutManager",
+      "CenterScrollListener",
+      "CenterSnapHelper",
+      "OverFlyingLayoutManager"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.transform": {
+    "classes": 6,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "DepthTransformer",
+      "FadeSlideTransformer",
+      "FlowTransformer",
+      "RotateDownTransformer"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.widget.banner": {
+    "classes": 7,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "BannerItem",
+      "SimpleGuideBanner",
+      "SimpleImageBanner",
+      "SimpleTextBanner"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.widget.banner.base": {
+    "classes": 11,
+    "methods": 105,
+    "storage": {},
+    "sample": [
+      "BaseBanner",
+      "BaseImageBanner",
+      "BaseIndicatorBanner"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.widget.loopviewpager": {
+    "classes": 5,
+    "methods": 44,
+    "storage": {},
+    "sample": [
+      "FixedSpeedScroller",
+      "LoopPagerAdapterWrapper",
+      "LoopViewPager"
+    ]
+  },
+  "com.xuexiang.xui.widget.behavior": {
+    "classes": 13,
+    "methods": 54,
+    "storage": {},
+    "sample": [
+      "AnimateHelper",
+      "BaseBehavior",
+      "BottomNavigationViewBehavior",
+      "FloatingActionButtonBehavior"
+    ]
+  },
+  "com.xuexiang.xui.widget.button": {
+    "classes": 21,
+    "methods": 171,
+    "storage": {},
+    "sample": [
+      "ButtonView",
+      "CountDownButton",
+      "RippleView",
+      "SmoothCheckBox"
+    ]
+  },
+  "com.xuexiang.xui.widget.button.roundbutton": {
+    "classes": 2,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "RoundButton",
+      "RoundDrawable"
+    ]
+  },
+  "com.xuexiang.xui.widget.button.shadowbutton": {
+    "classes": 5,
+    "methods": 51,
+    "storage": {},
+    "sample": [
+      "BaseShadowButton",
+      "RippleShadowShadowButton",
+      "ShadowButton",
+      "ShadowImageView"
+    ]
+  },
+  "com.xuexiang.xui.widget.button.shinebutton": {
+    "classes": 14,
+    "methods": 107,
+    "storage": {},
+    "sample": [
+      "PorterImageView",
+      "PorterShapeImageView",
+      "ShineAnimator",
+      "ShineButton"
+    ]
+  },
+  "com.xuexiang.xui.widget.button.shinebutton.interpolator": {
+    "classes": 4,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "Ease",
+      "EasingInterpolator",
+      "EasingProvider"
+    ]
+  },
+  "com.xuexiang.xui.widget.button.switchbutton": {
+    "classes": 5,
+    "methods": 84,
+    "storage": {},
+    "sample": [
+      "ColorUtils",
+      "SwitchButton"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog": {
+    "classes": 9,
+    "methods": 85,
+    "storage": {},
+    "sample": [
+      "BaseDialog",
+      "DialogLoader",
+      "GuideViewDialog",
+      "LoadingDialog"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.bottomsheet": {
+    "classes": 17,
+    "methods": 101,
+    "storage": {},
+    "sample": [
+      "BottomSheet",
+      "BottomSheetItemView"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.materialdialog": {
+    "classes": 30,
+    "methods": 294,
+    "storage": {},
+    "sample": [
+      "CustomMaterialDialog",
+      "DefaultRvAdapter",
+      "DialogAction",
+      "DialogBase"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.materialdialog.internal": {
+    "classes": 10,
+    "methods": 67,
+    "storage": {},
+    "sample": [
+      "AllCapsTransformationMethod",
+      "MDAdapter",
+      "MDButton",
+      "MDRootLayout"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.materialdialog.simplelist": {
+    "classes": 6,
+    "methods": 42,
+    "storage": {},
+    "sample": [
+      "MaterialSimpleListAdapter",
+      "MaterialSimpleListItem"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.materialdialog.util": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "RippleHelper"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.strategy": {
+    "classes": 3,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "IDialogStrategy",
+      "InputCallback",
+      "InputInfo"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.strategy.impl": {
+    "classes": 19,
+    "methods": 58,
+    "storage": {},
+    "sample": [
+      "AlertDialogStrategy",
+      "MaterialDialogStrategy"
+    ]
+  },
+  "com.xuexiang.xui.widget.edittext": {
+    "classes": 13,
+    "methods": 134,
+    "storage": {},
+    "sample": [
+      "AsteriskPasswordTransformationMethod",
+      "ClearEditText",
+      "MultiLineEditText",
+      "PasswordEditText"
+    ]
+  },
+  "com.xuexiang.xui.widget.edittext.materialedittext": {
+    "classes": 5,
+    "methods": 156,
+    "storage": {},
+    "sample": [
+      "MaterialEditText"
+    ]
+  },
+  "com.xuexiang.xui.widget.edittext.materialedittext.validation": {
+    "classes": 4,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "METLengthChecker",
+      "METValidator",
+      "NotAllowEmptyValidator",
+      "RegexpValidator"
+    ]
+  },
+  "com.xuexiang.xui.widget.edittext.verify": {
+    "classes": 10,
+    "methods": 61,
+    "storage": {},
+    "sample": [
+      "PwdEditText",
+      "PwdTextView",
+      "TInputConnection",
+      "VerifyCodeEditText"
+    ]
+  },
+  "com.xuexiang.xui.widget.flowlayout": {
+    "classes": 9,
+    "methods": 82,
+    "storage": {},
+    "sample": [
+      "BaseTagAdapter",
+      "DefaultFlowTagAdapter",
+      "FlowLayout",
+      "FlowTagLayout"
+    ]
+  },
+  "com.xuexiang.xui.widget.grouplist": {
+    "classes": 11,
+    "methods": 72,
+    "storage": {},
+    "sample": [
+      "XUICommonListItemView",
+      "XUIGroupListSectionHeaderFooterView",
+      "XUIGroupListView"
+    ]
+  },
+  "com.xuexiang.xui.widget.guidview": {
+    "classes": 16,
+    "methods": 197,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "Calculator",
+      "DismissListener",
+      "FocusShape",
+      "GuideCaseQueue"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview": {
+    "classes": 4,
+    "methods": 99,
+    "storage": {},
+    "sample": [
+      "IconImageView",
+      "ImageLoader",
+      "RadiusImageView",
+      "SignatureView"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.crop": {
+    "classes": 18,
+    "methods": 146,
+    "storage": {
+      "位图": 1
+    },
+    "sample": [
+      "AspectRatioUtil",
+      "CenterHandleHelper",
+      "CornerHandleHelper",
+      "CropImageType"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.edit": {
+    "classes": 51,
+    "methods": 329,
+    "storage": {
+      "文件流": 1,
+      "位图": 1
+    },
+    "sample": [
+      "BitmapUtil",
+      "BrushDrawingView",
+      "BrushViewChangeListener",
+      "CustomEffect"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.nine": {
+    "classes": 7,
+    "methods": 44,
+    "storage": {},
+    "sample": [
+      "GridImageView",
+      "ItemImageClickListener",
+      "ItemImageLongClickListener",
+      "NineGridImageView"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.photoview": {
+    "classes": 14,
+    "methods": 173,
+    "storage": {},
+    "sample": [
+      "Compat",
+      "DefaultOnDoubleTapListener",
+      "IPhotoView",
+      "PhotoView"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.photoview.gestures": {
+    "classes": 7,
+    "methods": 27,
+    "storage": {},
+    "sample": [
+      "CupcakeGestureDetector",
+      "EclairGestureDetector",
+      "FroyoGestureDetector",
+      "IGestureDetector"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.photoview.scrollerproxy": {
+    "classes": 4,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "GingerScroller",
+      "IcsScroller",
+      "PreGingerScroller",
+      "ScrollerProxy"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.preview": {
+    "classes": 3,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "MediaLoader",
+      "PreviewBuilder"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.preview.enitity": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "IPreviewInfo"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.preview.loader": {
+    "classes": 6,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "GlideMediaLoader",
+      "IMediaLoader",
+      "ISimpleTarget",
+      "OnVideoClickListener"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.preview.ui": {
+    "classes": 16,
+    "methods": 82,
+    "storage": {},
+    "sample": [
+      "BasePhotoFragment",
+      "PreviewActivity",
+      "VideoPlayerActivity"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.preview.view": {
+    "classes": 14,
+    "methods": 74,
+    "storage": {},
+    "sample": [
+      "BezierBannerView",
+      "PhotoViewPager",
+      "SmoothImageView"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.strategy": {
+    "classes": 5,
+    "methods": 49,
+    "storage": {},
+    "sample": [
+      "AlignEnum",
+      "DiskCacheStrategyEnum",
+      "IImageLoadStrategy",
+      "ILoadListener"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.strategy.impl": {
+    "classes": 6,
+    "methods": 39,
+    "storage": {},
+    "sample": [
+      "GlideImageLoadStrategy"
+    ]
+  },
+  "com.xuexiang.xui.widget.layout": {
+    "classes": 13,
+    "methods": 293,
+    "storage": {},
+    "sample": [
+      "ExpandableLayout",
+      "IXUILayout",
+      "XUIButton",
+      "XUIFrameLayout"
+    ]
+  },
+  "com.xuexiang.xui.widget.layout.interpolator": {
+    "classes": 2,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "FastOutSlowInInterpolator",
+      "LookupTableInterpolator"
+    ]
+  },
+  "com.xuexiang.xui.widget.layout.linkage": {
+    "classes": 8,
+    "methods": 129,
+    "storage": {},
+    "sample": [
+      "ChildLinkageEvent",
+      "ILinkageScroll",
+      "LinkageScrollHandler",
+      "LinkageScrollHandlerAdapter"
+    ]
+  },
+  "com.xuexiang.xui.widget.layout.linkage.view": {
+    "classes": 12,
+    "methods": 119,
+    "storage": {},
+    "sample": [
+      "LinkageLinearLayout",
+      "LinkageRecyclerView",
+      "LinkageScrollView",
+      "LinkageTextView"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker": {
+    "classes": 12,
+    "methods": 140,
+    "storage": {},
+    "sample": [
+      "RulerView",
+      "XRangeSlider",
+      "XSeekBar"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.wheelview": {
+    "classes": 4,
+    "methods": 56,
+    "storage": {},
+    "sample": [
+      "WheelView"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.wheelview.adapter": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "WheelAdapter"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.wheelview.interfaces": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "IPickerViewItem"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.wheelview.listener": {
+    "classes": 2,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "LoopViewGestureListener",
+      "OnItemSelectedListener"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.wheelview.timer": {
+    "classes": 3,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "InertiaTimerTask",
+      "MessageHandler",
+      "SmoothScrollTimerTask"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.widget": {
+    "classes": 23,
+    "methods": 189,
+    "storage": {},
+    "sample": [
+      "BasePickerView",
+      "OptionsPickerView",
+      "TimePickerView",
+      "WheelOptions"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.widget.adapter": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "ArrayWheelAdapter",
+      "NumericWheelAdapter"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.widget.builder": {
+    "classes": 2,
+    "methods": 67,
+    "storage": {},
+    "sample": [
+      "OptionsPickerBuilder",
+      "TimePickerBuilder"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.widget.configure": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "PickerOptions",
+      "TimePickerType"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.widget.listener": {
+    "classes": 7,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "CustomListener",
+      "ISelectTimeCallback",
+      "OnDismissListener",
+      "OnOptionsSelectChangeListener"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.widget.utils": {
+    "classes": 3,
+    "methods": 31,
+    "storage": {},
+    "sample": [
+      "ChinaDateUtils",
+      "LunarCalendarUtils",
+      "PickerViewAnimateUtils"
+    ]
+  },
+  "com.xuexiang.xui.widget.popupwindow": {
+    "classes": 18,
+    "methods": 113,
+    "storage": {},
+    "sample": [
+      "PopWindow",
+      "ViewTooltip"
+    ]
+  },
+  "com.xuexiang.xui.widget.popupwindow.bar": {
+    "classes": 12,
+    "methods": 59,
+    "storage": {},
+    "sample": [
+      "Cookie",
+      "CookieBar"
+    ]
+  },
+  "com.xuexiang.xui.widget.popupwindow.easypopup": {
+    "classes": 9,
+    "methods": 86,
+    "storage": {},
+    "sample": [
+      "BaseCustomPopup",
+      "EasyPopup",
+      "HorizontalGravity",
+      "ListPopup"
+    ]
+  },
+  "com.xuexiang.xui.widget.popupwindow.good": {
+    "classes": 3,
+    "methods": 32,
+    "storage": {},
+    "sample": [
+      "GoodView",
+      "IGoodView"
+    ]
+  },
+  "com.xuexiang.xui.widget.popupwindow.popup": {
+    "classes": 15,
+    "methods": 125,
+    "storage": {},
+    "sample": [
+      "XUIBasePopup",
+      "XUIExpandableListPopup",
+      "XUIListPopup",
+      "XUIPopup"
+    ]
+  },
+  "com.xuexiang.xui.widget.popupwindow.status": {
+    "classes": 6,
+    "methods": 46,
+    "storage": {},
+    "sample": [
+      "SimpleAnimListener",
+      "Status",
+      "StatusView"
+    ]
+  },
+  "com.xuexiang.xui.widget.progress": {
+    "classes": 9,
+    "methods": 98,
+    "storage": {},
+    "sample": [
+      "CircleProgressView",
+      "HorizontalProgressView"
+    ]
+  },
+  "com.xuexiang.xui.widget.progress.loading": {
+    "classes": 7,
+    "methods": 90,
+    "storage": {},
+    "sample": [
+      "ARCLoadingView",
+      "IMessageLoader",
+      "LoadingCancelListener",
+      "LoadingViewLayout"
+    ]
+  },
+  "com.xuexiang.xui.widget.progress.materialprogressbar": {
+    "classes": 37,
+    "methods": 238,
+    "storage": {},
+    "sample": [
+      "Animators",
+      "BaseDrawable",
+      "BaseIndeterminateProgressDrawable",
+      "BasePaintDrawable"
+    ]
+  },
+  "com.xuexiang.xui.widget.progress.materialprogressbar.internal": {
+    "classes": 4,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "DrawableCompat",
+      "ObjectAnimatorCompat",
+      "ObjectAnimatorCompatBase",
+      "ObjectAnimatorCompatLollipop"
+    ]
+  },
+  "com.xuexiang.xui.widget.progress.ratingbar": {
+    "classes": 14,
+    "methods": 120,
+    "storage": {},
+    "sample": [
+      "AnimationRatingBar",
+      "IRatingBar",
+      "PartialView",
+      "RatingBar"
+    ]
+  },
+  "com.xuexiang.xui.widget.searchview": {
+    "classes": 22,
+    "methods": 141,
+    "storage": {},
+    "sample": [
+      "AbstractSearchFilter",
+      "AnimationUtils",
+      "DefaultSearchFilter",
+      "MaterialSearchView"
+    ]
+  },
+  "com.xuexiang.xui.widget.shadow": {
+    "classes": 5,
+    "methods": 32,
+    "storage": {},
+    "sample": [
+      "ShadowButton",
+      "ShadowDrawable",
+      "ShadowTextView"
+    ]
+  },
+  "com.xuexiang.xui.widget.slideback": {
+    "classes": 4,
+    "methods": 51,
+    "storage": {},
+    "sample": [
+      "SlideBack",
+      "SlideBackManager",
+      "SlideInfo"
+    ]
+  },
+  "com.xuexiang.xui.widget.slideback.callback": {
+    "classes": 2,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "SlideBackCallBack",
+      "SlideCallBack"
+    ]
+  },
+  "com.xuexiang.xui.widget.slideback.dispatcher": {
+    "classes": 2,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "ISlideTouchEventDispatcher",
+      "OnSlideUpdateListener"
+    ]
+  },
+  "com.xuexiang.xui.widget.slideback.dispatcher.impl": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "DefaultSlideTouchDispatcher"
+    ]
+  },
+  "com.xuexiang.xui.widget.slideback.widget": {
+    "classes": 2,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "SlideBackIconView",
+      "SlideBackInterceptLayout"
+    ]
+  },
+  "com.xuexiang.xui.widget.spinner": {
+    "classes": 3,
+    "methods": 20,
+    "storage": {},
+    "sample": [
+      "DropDownMenu"
+    ]
+  },
+  "com.xuexiang.xui.widget.spinner.editspinner": {
+    "classes": 8,
+    "methods": 77,
+    "storage": {},
+    "sample": [
+      "BaseEditSpinnerAdapter",
+      "EditSpinner",
+      "EditSpinnerAdapter",
+      "EditSpinnerFilter"
+    ]
+  },
+  "com.xuexiang.xui.widget.spinner.materialspinner": {
+    "classes": 12,
+    "methods": 84,
+    "storage": {},
+    "sample": [
+      "MaterialSpinner",
+      "MaterialSpinnerAdapter",
+      "MaterialSpinnerAdapterWrapper",
+      "MaterialSpinnerBaseAdapter"
+    ]
+  },
+  "com.xuexiang.xui.widget.statelayout": {
+    "classes": 12,
+    "methods": 145,
+    "storage": {},
+    "sample": [
+      "CustomStateOptions",
+      "MultipleStatusView",
+      "SimpleAnimationListener",
+      "StateLayoutConfig"
+    ]
+  },
+  "com.xuexiang.xui.widget.tabbar": {
+    "classes": 46,
+    "methods": 377,
+    "storage": {},
+    "sample": [
+      "EasyIndicator",
+      "MultiTabControlView",
+      "TabControlView",
+      "TabSegment"
+    ]
+  },
+  "com.xuexiang.xui.widget.tabbar.vertical": {
+    "classes": 15,
+    "methods": 143,
+    "storage": {},
+    "sample": [
+      "ITabView",
+      "TabAdapter",
+      "TabBadgeView",
+      "TabFragmentManager"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview": {
+    "classes": 19,
+    "methods": 154,
+    "storage": {},
+    "sample": [
+      "AutoMoveTextView",
+      "BadgeView",
+      "ExpandableTextView",
+      "LoggerTextView"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview.autofit": {
+    "classes": 7,
+    "methods": 67,
+    "storage": {},
+    "sample": [
+      "AutoFitHelper",
+      "AutoFitLayout",
+      "AutoFitTextView"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview.badge": {
+    "classes": 9,
+    "methods": 111,
+    "storage": {},
+    "sample": [
+      "Badge",
+      "BadgeAnimator",
+      "BadgeView",
+      "MathUtils"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview.label": {
+    "classes": 8,
+    "methods": 131,
+    "storage": {},
+    "sample": [
+      "LabelButtonView",
+      "LabelImageView",
+      "LabelTextView",
+      "LabelView"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview.marqueen": {
+    "classes": 9,
+    "methods": 56,
+    "storage": {},
+    "sample": [
+      "ComplexItemEntity",
+      "ComplexViewMF",
+      "DisplayEntity",
+      "MarqueeFactory"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview.span": {
+    "classes": 2,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "AlignMiddleImageSpan",
+      "MarginImageSpan"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview.supertextview": {
+    "classes": 36,
+    "methods": 352,
+    "storage": {},
+    "sample": [
+      "BaseTextView",
+      "CommonTextView",
+      "SuperButton",
+      "SuperTextView"
+    ]
+  },
+  "com.xuexiang.xui.widget.toast": {
+    "classes": 3,
+    "methods": 71,
+    "storage": {},
+    "sample": [
+      "Utils",
+      "XToast"
+    ]
+  },
+  "com.zykj.download": {
+    "classes": 9,
+    "methods": 79,
+    "storage": {},
+    "sample": [
+      "DataBinderMapperImpl",
+      "DownloadFlag",
+      "FileCheckDownloadResult",
+      "FileCheckResultType"
+    ]
+  },
+  "com.zykj.download.api": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "DownLoadApi",
+      "UploadApi"
+    ]
+  },
+  "com.zykj.download.data": {
+    "classes": 4,
+    "methods": 33,
+    "storage": {},
+    "sample": [
+      "AppDatabase",
+      "AppDatabase_Impl"
+    ]
+  },
+  "com.zykj.download.work": {
+    "classes": 29,
+    "methods": 132,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "DownloadFileCommonWork",
+      "DownloadFileWork",
+      "DownloadFileWorkProxy",
+      "DownloadOssFileWork"
+    ]
+  },
+  "com.zykj.http": {
+    "classes": 1,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "BaseUrlEnum"
+    ]
+  },
+  "com.zykj.http.annotation": {
+    "classes": 4,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "CommonOkHttpClient",
+      "CommonResponseOkHttpClient",
+      "FileOkHttpClient",
+      "ResponseOkHttpClient"
+    ]
+  },
+  "com.zykj.http.bean": {
+    "classes": 5,
+    "methods": 61,
+    "storage": {},
+    "sample": [
+      "ApiResp",
+      "CommonApiResp",
+      "ErrorInfo",
+      "HeaderBean"
+    ]
+  },
+  "com.zykj.http.exception": {
+    "classes": 1,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "RemoteCodeException"
+    ]
+  },
+  "com.zykj.http.interceptor": {
+    "classes": 21,
+    "methods": 89,
+    "storage": {
+      "JSON": 4
+    },
+    "sample": [
+      "CommonResponseInterceptor",
+      "GzipInterceptor",
+      "HeadInterceptor",
+      "NetWorkResponseWithRefreshTokenInterceptor"
+    ]
+  },
+  "com.zykj.http.listener": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "UploadProgressListener"
+    ]
+  },
+  "com.zykj.http.progress": {
+    "classes": 2,
+    "methods": 5,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "ProgressRequestBody",
+      "ProgressRequestBodyKt"
+    ]
+  },
+  "com.zykj.lib.error.code": {
+    "classes": 3,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "ErrorCode",
+      "ErrorCodeHandler",
+      "ErrorCodeInfo"
+    ]
+  },
+  "com.zykj.message": {
+    "classes": 10,
+    "methods": 39,
+    "storage": {},
+    "sample": [
+      "KillSelfService",
+      "UnInstallActivity",
+      "UnLoginActivity"
+    ]
+  },
+  "com.zykj.message.server.bean": {
+    "classes": 6,
+    "methods": 41,
+    "storage": {},
+    "sample": [
+      "ServerInfo",
+      "Status",
+      "UserInfo"
+    ]
+  },
+  "com.zykj.subscriber": {
+    "classes": 32,
+    "methods": 206,
+    "storage": {
+      "WebView": 3,
+      "偏好设置": 3,
+      "JSON": 2
+    },
+    "sample": [
+      "BaseActivity",
+      "FileActivity",
+      "MainActivity",
+      "a"
+    ]
+  },
+  "com.zykj.subscriber.application": {
+    "classes": 2,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "MyApplication"
+    ]
+  },
+  "com.zykj.subscriber.dao": {
+    "classes": 4,
+    "methods": 33,
+    "storage": {},
+    "sample": [
+      "PDFPreviewDatabase",
+      "PDFPreviewDatabase_Impl"
+    ]
+  },
+  "com.zykj.subscriber.entity": {
+    "classes": 1,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "LocalUserInfo"
+    ]
+  },
+  "com.zykj.subscriber.entity.resp": {
+    "classes": 4,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "ApiResp",
+      "GetWhiteListResp",
+      "IsAllowResp"
+    ]
+  },
+  "com.zykj.subscriber.receiver": {
+    "classes": 1,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "AliMessageReceiver"
+    ]
+  },
+  "com.zykj.subscriber.update": {
+    "classes": 13,
+    "methods": 60,
+    "storage": {
+      "JSON": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "PercentCircleView",
+      "UpdateResp",
+      "a",
+      "b"
+    ]
+  },
+  "com.zykj.subscriber.view": {
+    "classes": 2,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "CommonTitleBar"
+    ]
+  },
+  "d": {
+    "classes": 2,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "d0": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "d1": {
+    "classes": 11,
+    "methods": 57,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "d2": {
+    "classes": 3,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "d3": {
+    "classes": 15,
+    "methods": 43,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "dagger.hilt.android.internal.managers": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": []
+  },
+  "e": {
+    "classes": 2,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "e0": {
+    "classes": 10,
+    "methods": 43,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "e1": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "e2": {
+    "classes": 4,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "e3": {
+    "classes": 33,
+    "methods": 199,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "f": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "f0": {
+    "classes": 6,
+    "methods": 33,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "f1": {
+    "classes": 47,
+    "methods": 189,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "f2": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "f3": {
+    "classes": 106,
+    "methods": 530,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "a1",
+      "a2"
+    ]
+  },
+  "g": {
+    "classes": 14,
+    "methods": 148,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "g0": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "g1": {
+    "classes": 29,
+    "methods": 94,
+    "storage": {
+      "偏好设置": 2
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "g2": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "g3": {
+    "classes": 5,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "h": {
+    "classes": 6,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "h0": {
+    "classes": 5,
+    "methods": 75,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "h1": {
+    "classes": 3,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "h2": {
+    "classes": 3,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "h3": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "i": {
+    "classes": 8,
+    "methods": 47,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "i0": {
+    "classes": 3,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "i1": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "i2": {
+    "classes": 4,
+    "methods": 12,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "i3": {
+    "classes": 17,
+    "methods": 72,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "io.github.inflationx.calligraphy3": {
+    "classes": 18,
+    "methods": 84,
+    "storage": {},
+    "sample": [
+      "BuildConfig",
+      "Calligraphy",
+      "CalligraphyConfig",
+      "CalligraphyInterceptor"
+    ]
+  },
+  "j": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "j0": {
+    "classes": 4,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "j1": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "j2": {
+    "classes": 5,
+    "methods": 20,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "j3": {
+    "classes": 12,
+    "methods": 51,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "k": {
+    "classes": 4,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "k0": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "k1": {
+    "classes": 1,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "k2": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "k3": {
+    "classes": 2,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "kotlin.collections": {
+    "classes": 40,
+    "methods": 304,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "b",
+      "b0"
+    ]
+  },
+  "kotlin.coroutines.jvm.internal": {
+    "classes": 12,
+    "methods": 47,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "kotlin.jvm.internal": {
+    "classes": 30,
+    "methods": 154,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "b",
+      "b0"
+    ]
+  },
+  "kotlinx.coroutines": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "CoroutineExceptionHandler"
+    ]
+  },
+  "kotlinx.coroutines.android": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "AndroidDispatcherFactory",
+      "AndroidExceptionPreHandler"
+    ]
+  },
+  "kotlinx.coroutines.internal": {
+    "classes": 34,
+    "methods": 183,
+    "storage": {},
+    "sample": [
+      "MainDispatcherFactory",
+      "a",
+      "a0",
+      "b"
+    ]
+  },
+  "kotlinx.coroutines.scheduling": {
+    "classes": 17,
+    "methods": 109,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "l": {
+    "classes": 11,
+    "methods": 91,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "l0": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "l1": {
+    "classes": 6,
+    "methods": 63,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "l2": {
+    "classes": 10,
+    "methods": 37,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "m": {
+    "classes": 16,
+    "methods": 164,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "m0": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "m1": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "m2": {
+    "classes": 8,
+    "methods": 20,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "n": {
+    "classes": 19,
+    "methods": 277,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "n0": {
+    "classes": 7,
+    "methods": 38,
+    "storage": {
+      "偏好设置": 1,
+      "ZIP": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "n1": {
+    "classes": 8,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "n2": {
+    "classes": 3,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "o": {
+    "classes": 20,
+    "methods": 110,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "o0": {
+    "classes": 3,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "o1": {
+    "classes": 1,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "o2": {
+    "classes": 20,
+    "methods": 43,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "okhttp3": {
+    "classes": 107,
+    "methods": 1220,
+    "storage": {},
+    "sample": [
+      "Address",
+      "Authenticator",
+      "Cache",
+      "CacheControl"
+    ]
+  },
+  "okhttp3.internal": {
+    "classes": 6,
+    "methods": 79,
+    "storage": {},
+    "sample": [
+      "HostnamesKt",
+      "Internal",
+      "SuppressSignatureCheck",
+      "Util"
+    ]
+  },
+  "okhttp3.internal.authenticator": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "JavaNetAuthenticator"
+    ]
+  },
+  "okhttp3.internal.cache": {
+    "classes": 18,
+    "methods": 140,
+    "storage": {},
+    "sample": [
+      "CacheInterceptor",
+      "CacheRequest",
+      "CacheStrategy",
+      "DiskLruCache"
+    ]
+  },
+  "okhttp3.internal.cache2": {
+    "classes": 4,
+    "methods": 36,
+    "storage": {},
+    "sample": [
+      "FileOperator",
+      "Relay"
+    ]
+  },
+  "okhttp3.internal.concurrent": {
+    "classes": 11,
+    "methods": 76,
+    "storage": {},
+    "sample": [
+      "Task",
+      "TaskLoggerKt",
+      "TaskQueue",
+      "TaskRunner"
+    ]
+  },
+  "okhttp3.internal.connection": {
+    "classes": 25,
+    "methods": 196,
+    "storage": {},
+    "sample": [
+      "ConnectInterceptor",
+      "ConnectionSpecSelector",
+      "Exchange",
+      "ExchangeFinder"
+    ]
+  },
+  "okhttp3.internal.http": {
+    "classes": 15,
+    "methods": 87,
+    "storage": {},
+    "sample": [
+      "BridgeInterceptor",
+      "CallServerInterceptor",
+      "DatesKt",
+      "ExchangeCodec"
+    ]
+  },
+  "okhttp3.internal.http1": {
+    "classes": 10,
+    "methods": 68,
+    "storage": {},
+    "sample": [
+      "HeadersReader",
+      "Http1ExchangeCodec"
+    ]
+  },
+  "okhttp3.internal.http2": {
+    "classes": 49,
+    "methods": 415,
+    "storage": {},
+    "sample": [
+      "ConnectionShutdownException",
+      "ErrorCode",
+      "Header",
+      "Hpack"
+    ]
+  },
+  "okhttp3.internal.io": {
+    "classes": 3,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "FileSystem"
+    ]
+  },
+  "okhttp3.internal.platform": {
+    "classes": 19,
+    "methods": 144,
+    "storage": {},
+    "sample": [
+      "Android10Platform",
+      "AndroidPlatform",
+      "BouncyCastlePlatform",
+      "ConscryptPlatform"
+    ]
+  },
+  "okhttp3.internal.platform.android": {
+    "classes": 24,
+    "methods": 114,
+    "storage": {},
+    "sample": [
+      "Android10SocketAdapter",
+      "AndroidCertificateChainCleaner",
+      "AndroidLog",
+      "AndroidLogHandler"
+    ]
+  },
+  "okhttp3.internal.proxy": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "NullProxySelector"
+    ]
+  },
+  "okhttp3.internal.publicsuffix": {
+    "classes": 3,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "PublicSuffixDatabase"
+    ]
+  },
+  "okhttp3.internal.tls": {
+    "classes": 7,
+    "methods": 29,
+    "storage": {},
+    "sample": [
+      "BasicCertificateChainCleaner",
+      "BasicTrustRootIndex",
+      "CertificateChainCleaner",
+      "OkHostnameVerifier"
+    ]
+  },
+  "okhttp3.internal.ws": {
+    "classes": 19,
+    "methods": 117,
+    "storage": {},
+    "sample": [
+      "MessageDeflater",
+      "MessageDeflaterKt",
+      "MessageInflater",
+      "MessageInflaterKt"
+    ]
+  },
+  "okhttp3.logging": {
+    "classes": 8,
+    "methods": 58,
+    "storage": {},
+    "sample": [
+      "HttpLoggingInterceptor",
+      "LoggingEventListener",
+      "Utf8Kt"
+    ]
+  },
+  "okio": {
+    "classes": 64,
+    "methods": 826,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "-Base64",
+      "-DeflaterSinkExtensions",
+      "-DeprecatedOkio",
+      "-DeprecatedUpgrade"
+    ]
+  },
+  "okio.internal": {
+    "classes": 6,
+    "methods": 172,
+    "storage": {},
+    "sample": [
+      "BufferKt",
+      "ByteStringKt",
+      "RealBufferedSinkKt",
+      "RealBufferedSourceKt"
+    ]
+  },
+  "org.android.agoo.accs": {
+    "classes": 1,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "AgooService"
+    ]
+  },
+  "org.android.agoo.common": {
+    "classes": 5,
+    "methods": 27,
+    "storage": {
+      "偏好设置": 1,
+      "JSON": 1
+    },
+    "sample": [
+      "AgooConstants",
+      "CallBack",
+      "Config",
+      "MsgDO"
+    ]
+  },
+  "org.android.agoo.control": {
+    "classes": 16,
+    "methods": 89,
+    "storage": {
+      "JSON": 5
+    },
+    "sample": [
+      "AgooFactory",
+      "BaseIntentService",
+      "NotifManager",
+      "a"
+    ]
+  },
+  "org.android.agoo.message": {
+    "classes": 2,
+    "methods": 20,
+    "storage": {
+      "SQLite": 2,
+      "JSON": 1
+    },
+    "sample": [
+      "MessageService"
+    ]
+  },
+  "org.android.netutil": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "UdpConnectType"
+    ]
+  },
+  "org.android.spdy": {
+    "classes": 42,
+    "methods": 342,
+    "storage": {
+      "ZIP": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "AccsSSLCallback",
+      "BuildConfig",
+      "Intenalcb",
+      "NetSparseArray"
+    ]
+  },
+  "org.intellij.lang.annotations": {
+    "classes": 25,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "Flow",
+      "Identifier",
+      "JdkConstants",
+      "Language"
+    ]
+  },
+  "org.jetbrains.annotations": {
+    "classes": 7,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "Contract",
+      "Nls",
+      "NonNls",
+      "NotNull"
+    ]
+  },
+  "org.repackage.a.a.a.a": {
+    "classes": 4,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "org.repackage.a.a.a": {
+    "classes": 3,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "org.repackage.com.heytap.openid.sdk": {
+    "classes": 1,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "OpenIDSDK"
+    ]
+  },
+  "org.repackage.com.miui.deviceid": {
+    "classes": 2,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "BuildConfig",
+      "IdentifierManager"
+    ]
+  },
+  "org.repackage.com.vivo.identifier": {
+    "classes": 6,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "BuildConfig",
+      "DataBaseOperation",
+      "IdentifierIdClient",
+      "IdentifierIdObserver"
+    ]
+  },
+  "p": {
+    "classes": 3,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "p0": {
+    "classes": 12,
+    "methods": 48,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "p1": {
+    "classes": 1,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "p2": {
+    "classes": 6,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "q": {
+    "classes": 3,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "q0": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "q1": {
+    "classes": 2,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "q2": {
+    "classes": 16,
+    "methods": 57,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "r": {
+    "classes": 4,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "r0": {
+    "classes": 11,
+    "methods": 45,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "r1": {
+    "classes": 6,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "r2": {
+    "classes": 6,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "retrofit2": {
+    "classes": 84,
+    "methods": 376,
+    "storage": {},
+    "sample": [
+      "BuiltInConverters",
+      "Call",
+      "CallAdapter",
+      "Callback"
+    ]
+  },
+  "retrofit2.adapter.rxjava": {
+    "classes": 13,
+    "methods": 48,
+    "storage": {},
+    "sample": [
+      "BodyOnSubscribe",
+      "CallArbiter",
+      "CallEnqueueOnSubscribe",
+      "CallExecuteOnSubscribe"
+    ]
+  },
+  "retrofit2.converter.gson": {
+    "classes": 4,
+    "methods": 12,
+    "storage": {
+      "JSON": 3
+    },
+    "sample": [
+      "GsonConverterFactory",
+      "GsonRequestBodyConverter",
+      "GsonResponseBodyConverter",
+      "package-info"
+    ]
+  },
+  "retrofit2.converter.scalars": {
+    "classes": 13,
+    "methods": 45,
+    "storage": {},
+    "sample": [
+      "ScalarRequestBodyConverter",
+      "ScalarResponseBodyConverters",
+      "ScalarsConverterFactory",
+      "package-info"
+    ]
+  },
+  "retrofit2.http": {
+    "classes": 25,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "Body",
+      "DELETE",
+      "Field",
+      "FieldMap"
+    ]
+  },
+  "retrofit2.internal": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "EverythingIsNonNull"
+    ]
+  },
+  "rx": {
+    "classes": 113,
+    "methods": 928,
+    "storage": {},
+    "sample": [
+      "BackpressureOverflow",
+      "Completable",
+      "CompletableEmitter",
+      "CompletableSubscriber"
+    ]
+  },
+  "rx.android": {
+    "classes": 4,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "BuildConfig",
+      "MainThreadSubscription",
+      "R"
+    ]
+  },
+  "rx.android.plugins": {
+    "classes": 2,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "RxAndroidPlugins",
+      "RxAndroidSchedulersHook"
+    ]
+  },
+  "rx.android.schedulers": {
+    "classes": 5,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "AndroidSchedulers",
+      "HandlerScheduler"
+    ]
+  },
+  "rx.annotations": {
+    "classes": 2,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "Beta",
+      "Experimental"
+    ]
+  },
+  "rx.exceptions": {
+    "classes": 15,
+    "methods": 60,
+    "storage": {},
+    "sample": [
+      "AssemblyStackTraceException",
+      "CompositeException",
+      "Exceptions",
+      "MissingBackpressureException"
+    ]
+  },
+  "rx.functions": {
+    "classes": 55,
+    "methods": 139,
+    "storage": {},
+    "sample": [
+      "Action",
+      "Action0",
+      "Action1",
+      "Action2"
+    ]
+  },
+  "rx.internal.observers": {
+    "classes": 1,
+    "methods": 36,
+    "storage": {},
+    "sample": [
+      "AssertableSubscriberObservable"
+    ]
+  },
+  "s": {
+    "classes": 20,
+    "methods": 97,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "s0": {
+    "classes": 10,
+    "methods": 50,
+    "storage": {
+      "SQLite": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "s1": {
+    "classes": 6,
+    "methods": 39,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "s2": {
+    "classes": 4,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "t": {
+    "classes": 20,
+    "methods": 117,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "t0": {
+    "classes": 9,
+    "methods": 53,
+    "storage": {
+      "SQLite": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "t1": {
+    "classes": 3,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "t2": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "u": {
+    "classes": 6,
+    "methods": 81,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "u0": {
+    "classes": 2,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "u1": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "u2": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "v": {
+    "classes": 3,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "v0": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "v1": {
+    "classes": 9,
+    "methods": 42,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "v2": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "w": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "w0": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "w1": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "w2": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "x": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "x0": {
+    "classes": 42,
+    "methods": 193,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "x1": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "x2": {
+    "classes": 23,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "y": {
+    "classes": 6,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "y0": {
+    "classes": 16,
+    "methods": 117,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "y1": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "y2": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "z": {
+    "classes": 22,
+    "methods": 75,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "z0": {
+    "classes": 3,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "z1": {
+    "classes": 36,
+    "methods": 128,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "z2": {
+    "classes": 5,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "rx.internal.operators": {
+    "classes": 522,
+    "methods": 2199,
+    "storage": {},
+    "sample": [
+      "BackpressureUtils",
+      "BlockingOperatorLatest",
+      "BlockingOperatorMostRecent",
+      "BlockingOperatorNext"
+    ]
+  },
+  "rx.internal.producers": {
+    "classes": 8,
+    "methods": 40,
+    "storage": {},
+    "sample": [
+      "ProducerArbiter",
+      "ProducerObserverArbiter",
+      "QueuedProducer",
+      "QueuedValueProducer"
+    ]
+  },
+  "rx.internal.schedulers": {
+    "classes": 46,
+    "methods": 171,
+    "storage": {},
+    "sample": [
+      "CachedThreadScheduler",
+      "EventLoopsScheduler",
+      "ExecutorScheduler",
+      "GenericScheduledExecutorService"
+    ]
+  },
+  "rx.internal.subscriptions": {
+    "classes": 3,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "CancellableSubscription",
+      "SequentialSubscription",
+      "Unsubscribed"
+    ]
+  },
+  "rx.internal.util": {
+    "classes": 57,
+    "methods": 261,
+    "storage": {},
+    "sample": [
+      "ActionNotificationObserver",
+      "ActionObserver",
+      "ActionSubscriber",
+      "BackpressureDrainManager"
+    ]
+  },
+  "rx.internal.util.atomic": {
+    "classes": 9,
+    "methods": 147,
+    "storage": {},
+    "sample": [
+      "AtomicReferenceArrayQueue",
+      "BaseLinkedAtomicQueue",
+      "LinkedQueueNode",
+      "MpscLinkedAtomicQueue"
+    ]
+  },
+  "rx.internal.util.unsafe": {
+    "classes": 41,
+    "methods": 149,
+    "storage": {},
+    "sample": [
+      "BaseLinkedQueue",
+      "BaseLinkedQueueConsumerNodeRef",
+      "BaseLinkedQueuePad0",
+      "BaseLinkedQueuePad1"
+    ]
+  },
+  "rx.observables": {
+    "classes": 36,
+    "methods": 199,
+    "storage": {},
+    "sample": [
+      "AsyncOnSubscribe",
+      "BlockingObservable",
+      "ConnectableObservable",
+      "GroupedObservable"
+    ]
+  },
+  "rx.observers": {
+    "classes": 23,
+    "methods": 176,
+    "storage": {},
+    "sample": [
+      "AssertableSubscriber",
+      "AsyncCompletableSubscriber",
+      "Observers",
+      "SafeCompletableSubscriber"
+    ]
+  },
+  "rx.plugins": {
+    "classes": 30,
+    "methods": 186,
+    "storage": {},
+    "sample": [
+      "RxJavaCompletableExecutionHook",
+      "RxJavaErrorHandler",
+      "RxJavaHooks",
+      "RxJavaObservableExecutionHook"
+    ]
+  },
+  "rx.schedulers": {
+    "classes": 12,
+    "methods": 58,
+    "storage": {},
+    "sample": [
+      "ImmediateScheduler",
+      "NewThreadScheduler",
+      "Schedulers",
+      "TestScheduler"
+    ]
+  },
+  "rx.singles": {
+    "classes": 2,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "BlockingSingle"
+    ]
+  },
+  "rx.subjects": {
+    "classes": 30,
+    "methods": 225,
+    "storage": {},
+    "sample": [
+      "AsyncSubject",
+      "BehaviorSubject",
+      "PublishSubject",
+      "ReplaySubject"
+    ]
+  },
+  "rx.subscriptions": {
+    "classes": 11,
+    "methods": 56,
+    "storage": {},
+    "sample": [
+      "BooleanSubscription",
+      "CompositeSubscription",
+      "MultipleAssignmentSubscription",
+      "RefCountSubscription"
+    ]
+  }
+}

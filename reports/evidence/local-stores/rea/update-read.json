@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "中育管控桌面.apk",
+    "digest": {
+      "sha256": "e0b46dee805fe516503ac7d2b8e1b7d585de43063a012f8056e3bbd1018a9949"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/中育管控桌面.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.huiwei.launcher.providers.UpdateSettingsSerializer",
+    "method": {
+      "name": "readFrom",
+      "reported_signature": "readFrom(java.io.InputStream, kotlin.coroutines.Continuation<? super com.zykj.huiwei.launcher.proto.j>): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/io/InputStream;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // androidx.datastore.core.Serializer\n    public Object readFrom(InputStream inputStream, Continuation<? super j> continuation) {\n        Object objM7304constructorimpl;\n        try {\n            Result.Companion companion = Result.INSTANCE;\n            objM7304constructorimpl = Result.m7304constructorimpl(j.parseFrom(inputStream));\n        } catch (Throwable th) {\n            Result.Companion companion2 = Result.INSTANCE;\n            objM7304constructorimpl = Result.m7304constructorimpl(ResultKt.createFailure(th));\n        }\n        if (Result.m7310isFailureimpl(objM7304constructorimpl)) {\n            objM7304constructorimpl = null;\n        }\n        j jVar = (j) objM7304constructorimpl;\n        return jVar == null ? getDefaultValue() : jVar;\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_66389adf816b5d2dd07391704906f26638fdb2312a7c31cf86d277fbcbea6d43"
+}

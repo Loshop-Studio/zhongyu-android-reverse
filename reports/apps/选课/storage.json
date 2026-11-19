@@ -1,0 +1,36 @@
+{
+  "calls": {
+    "文件流": [
+      "androidx/appcompat/widget/ActivityChooserModel$PersistHistoryAsyncTask",
+      "androidx/appcompat/widget/ActivityChooserModel",
+      "androidx/core/graphics/TypefaceCompatApi21Impl",
+      "androidx/core/graphics/TypefaceCompatUtil",
+      "androidx/core/graphics/drawable/IconCompat",
+      "androidx/core/util/AtomicFile",
+      "androidx/print/PrintHelper$1",
+      "com/zykj/utlils/FileUtils",
+      "kotlin/io/FilesKt__FileReadWriteKt",
+      "kotlin/io/FilesKt__UtilsKt"
+    ],
+    "偏好设置": [
+      "androidx/core/app/AppLaunchChecker"
+    ],
+    "位图": [
+      "androidx/core/graphics/drawable/IconCompat",
+      "androidx/core/graphics/drawable/RoundedBitmapDrawableFactory"
+    ],
+    "Java 对象流": [
+      "androidx/versionedparcelable/VersionedParcel"
+    ],
+    "WebView": [
+      "com/zykj/curricula/MainActivity$initWebViewUrl$1",
+      "com/zykj/curricula/MainActivity$initialize$1"
+    ]
+  },
+  "objectbox_entity_metadata": {},
+  "sqlite_ddl": {},
+  "bin_literals": {},
+  "protobuf_files": [],
+  "assets": [],
+  "native_libraries": []
+}

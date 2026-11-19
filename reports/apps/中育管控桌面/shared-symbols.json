@@ -1,0 +1,13 @@
+[
+ {
+  "dex_class": "b3/b",
+  "candidate": "com/zykj/download/data/DownloadEntity",
+  "reference_apps": [
+   "优课畅学"
+  ],
+  "sha256": "4d9ead814e95ede01e8ac13d4a737766b035e7c383ac02840ae0162628c6ccc6",
+  "distinct_literals": 10,
+  "framework_calls": 8,
+  "source": "android/中育管控桌面/smali_classes3/b3/b.smali"
+ }
+]

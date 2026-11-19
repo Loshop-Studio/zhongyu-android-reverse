@@ -1,0 +1,1131 @@
+[
+ {
+  "member": "lib/armeabi-v7a/libBugly_Native.so",
+  "size": 182320,
+  "format": "ELF",
+  "sha256": "4371a120224530de6b0522f82e4fab656f43fa0377c168d6ca81b9aacdcb4bd3",
+  "role": "Bugly 原生崩溃采集",
+  "machine": "ARM",
+  "build_id": "6d6208d619e458a40d44ffd6b1014f776acf50be",
+  "needed": [
+   "libdl.so",
+   "liblog.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 240,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+  "size": 7252,
+  "format": "ELF",
+  "sha256": "41399eba6fc2a60f6f14642375c1824f3cf25eb8fec7397d753730a3ceda3e2b",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "fa98a997cdd9b43f190a4bd20f3dad441b4062f0",
+  "needed": [
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 1,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libc++_shared.so",
+  "size": 677448,
+  "format": "ELF",
+  "sha256": "8ac5090bbd0be7401af5fff6044ded6f1e6ced692fcd3581fa3cb937b519a16a",
+  "role": "Android NDK C++ 运行时",
+  "machine": "ARM",
+  "build_id": "95752c27d02e4255fda2f8c70eeace994be66200",
+  "needed": [
+   "libc.so",
+   "libm.so",
+   "libdl.so"
+  ],
+  "symbols": 1563,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+  "size": 4416,
+  "format": "ELF",
+  "sha256": "716c5d8d2cac8ca0edf65da8f139c7886b726ac79d542a14edeb94994ba6d3dc",
+  "role": "DataStore 进程间计数",
+  "machine": "ARM",
+  "build_id": "c2c541cc4337a0fc28271329ef238d6bddf6d70d",
+  "needed": [
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 9,
+  "static_jni_exports": 4,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libimage_processing_util_jni.so",
+  "size": 20380,
+  "format": "ELF",
+  "sha256": "e48e356bbe1902ae9a66178a4a0141c993b82ee9f70dde52ad83e4af3eca984f",
+  "role": "图像处理 JNI",
+  "machine": "ARM",
+  "build_id": "12e91d3874791a1d92920ec94bc2690acebe48aa",
+  "needed": [
+   "liblog.so",
+   "libandroid.so",
+   "libjnigraphics.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 6,
+  "static_jni_exports": 6,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libjniPdfium.so",
+  "size": 50648,
+  "format": "ELF",
+  "sha256": "7ac42ea9dddc3a6094dfe79052e13982622bed9f5599e121d4fc4ba032e117cc",
+  "role": "PDFium 的 JNI 桥",
+  "machine": "ARM",
+  "build_id": "fca2b4665d346b50bafffac985e6e97aa90bce97",
+  "needed": [
+   "libmodpdfium.so",
+   "libc++_shared.so",
+   "liblog.so",
+   "libandroid.so",
+   "libjnigraphics.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so"
+  ],
+  "symbols": 49,
+  "static_jni_exports": 25,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libliteavsdk.so",
+  "size": 2148264,
+  "format": "ELF",
+  "sha256": "12fd0729f7dcb51fce0cd86a734aa4014ef9006c597445dcddbbf34e2939bfc7",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "94a80d4181d939b6b11136d71ef5a57c6bb4e5de",
+  "needed": [
+   "libandroid.so",
+   "liblog.so",
+   "libz.so",
+   "libGLESv2.so",
+   "libtxffmpeg.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 2339,
+  "static_jni_exports": 251,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmodft2.so",
+  "size": 521640,
+  "format": "ELF",
+  "sha256": "ffcc7bc29a253591e24d053c7ea99d9ac93d4d3a4c5f48b01b2b77fe9fe0d0b8",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "69da4eaed94c4154222df18aaf00c731",
+  "needed": [
+   "libmodpng.so",
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 294,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmodpdfium.so",
+  "size": 4683804,
+  "format": "ELF",
+  "sha256": "777afe0e36cd2ccb1f5b504d49a5cd04c3b33a87c9e66de569bc155d59dacc0d",
+  "role": "PDF 解析与渲染",
+  "machine": "ARM",
+  "build_id": "7b4e95ec9ec86243db5b3538f715d118",
+  "needed": [
+   "libdl.so",
+   "libmodft2.so",
+   "libc++_shared.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 6008,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmodpng.so",
+  "size": 148852,
+  "format": "ELF",
+  "sha256": "ae48482367a0daf48ed2b6764bf2ce8f82a87a44971f789cadb20dbfc37b75ac",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "397eaa404cbcc105a264a4611c2707b6",
+  "needed": [
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 428,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmp3lame.so",
+  "size": 157356,
+  "format": "ELF",
+  "sha256": "543d1181de6e4780a7b7b1571abb8c3349939c2541bc21c29beede6527ea76e7",
+  "role": "MP3 编码",
+  "machine": "ARM",
+  "build_id": "b7fb3f87c0bcb405e4e50f37b1a29e0d4c37f246",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 330,
+  "static_jni_exports": 7,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libndkbitmap.so",
+  "size": 13452,
+  "format": "ELF",
+  "sha256": "93d08c0df7e0268784bf305465533fab63945b25d94bcfb4e81392f403876c79",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "liblog.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 49,
+  "static_jni_exports": 4,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libobjectbox-jni.so",
+  "size": 985320,
+  "format": "ELF",
+  "sha256": "866b1ac82e8281cae9d199bc0335612bc0c35b1772692abc8d5a43f87dd82fd5",
+  "role": "ObjectBox 的 JNI 桥",
+  "machine": "ARM",
+  "build_id": "e0237b22c9d9908bf4ed267269266684885dfd74",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 890,
+  "static_jni_exports": 151,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/librxffmpeg-core.so",
+  "size": 9675800,
+  "format": "ELF",
+  "sha256": "e07009fb8b1c8c84cdb6ea6dcbb77334a0381428aca3a74f344249f54fae5ba0",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libc.so",
+   "libm.so",
+   "libz.so",
+   "libdl.so",
+   "liblog.so"
+  ],
+  "symbols": 10129,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/librxffmpeg-invoke.so",
+  "size": 292652,
+  "format": "ELF",
+  "sha256": "ac5780430d8f6da367ace31ccc0ac585f7d9aba8c5bed784f51425259df89ccc",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "ad60f3fe41b30bc1459c7241a2a84e5086bfbd1d",
+  "needed": [
+   "librxffmpeg-core.so",
+   "libandroid.so",
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 192,
+  "static_jni_exports": 5,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/librxffmpeg-player.so",
+  "size": 128752,
+  "format": "ELF",
+  "sha256": "f384f39a0ad0ca81514ff545fbe0810c10099f124731e91c8873ddce1d14f885",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "94107d3c70dbd9f514c0b82774555398358eac91",
+  "needed": [
+   "librxffmpeg-core.so",
+   "libOpenSLES.so",
+   "libandroid.so",
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 201,
+  "static_jni_exports": 13,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libsurface_util_jni.so",
+  "size": 3440,
+  "format": "ELF",
+  "sha256": "f110d6a305fef5be5664d58cfb054366b002bc516066b4ec880c38a68428756f",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "9c4bf428125edd1dc6796d75abaa3aede32de4b5",
+  "needed": [
+   "libandroid.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 1,
+  "static_jni_exports": 1,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.1.so",
+  "size": 2461,
+  "sha256": "e9a47d72670b6fd5050e77b6f73c9af737543c116c0b4b89e7a5812cca884497",
+  "format": "text"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.MANIFEST.so",
+  "size": 2237,
+  "sha256": "b733c0b01ae7f6ccd03ccc389f4f6c5f81ee237db1e09aea352e13695f109036",
+  "format": "JSON"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.TencentLocationSDK.jar.so",
+  "size": 132286,
+  "sha256": "4b38ec6cb59c70da9f62ba9b4a4c7aa3ff2267e6cc5c01195c6ea2ec7e718d0a",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.apache_dex.jar.so",
+  "size": 176950,
+  "sha256": "4c9a32d6aaeedb388fd7d7bc4953be2912d05462117b169d8baeeea09729d754",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.audio_base.jar.so",
+  "size": 94075,
+  "sha256": "e6a1a2dc4e0a4ad04dfb09b40240fbf71d7e765ee6c3be2696ae13d614d81099",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libBugly-tbscore.so.so",
+  "size": 161344,
+  "format": "ELF",
+  "sha256": "85b69bce11c21879bdb687126bc93b141657a9bb89dfd5e5ecf4a974ee1b01ed",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "276f3acbd033f7831875cf58b01becc535942ef2",
+  "needed": [
+   "liblog.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 235,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libLzmaDec.so.so",
+  "size": 54420,
+  "format": "ELF",
+  "sha256": "03aa92b6baf345fbde2edae9ccc8274995e1788c6f1e9b7839b623a2d5219dec",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "liblog.so",
+   "libz.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 170,
+  "static_jni_exports": 6,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libLzmaDecForMulti.so.so",
+  "size": 54804,
+  "format": "ELF",
+  "sha256": "6440ac8999ff3dfb606eeed96f6c68f22679564b5c9b9018ca26aa95d9f97987",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "e4eea8d97da81b40507f1d6460d019d6d2e9cac6",
+  "needed": [
+   "liblog.so",
+   "libandroid.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 115,
+  "static_jni_exports": 3,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libSharpPDecoder.so.so",
+  "size": 283984,
+  "format": "ELF",
+  "sha256": "b09c7c1dd06fb304c27eaa462b8581adeb0dea5ac8ffb8f424a99e802b9e5e18",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libjnigraphics.so",
+   "liblog.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 239,
+  "static_jni_exports": 15,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libTPGDecoder.so.so",
+  "size": 448168,
+  "format": "ELF",
+  "sha256": "e7e099b80850470c1faf31853ea3127e7d3bb2308b2da50edfb0ce6789f1d714",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libjnigraphics.so",
+   "liblog.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 108,
+  "static_jni_exports": 15,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libTbsPatch.so.so",
+  "size": 86216,
+  "format": "ELF",
+  "sha256": "71a5917caa6fe3b6fd9229a12ba9781369f0d774976823dd300ed01166dd9740",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 122,
+  "static_jni_exports": 1,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libWxHevcDecoder.so.so",
+  "size": 775836,
+  "format": "ELF",
+  "sha256": "ff05dd68ca10db34319f0520fc8f6cc97516ecafa45007dc6edeb8d7e57cf4ca",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "3c236dbc1828d76523cbc2ec9ca393c373fc6b56",
+  "needed": [
+   "libz.so",
+   "libstdc++.so",
+   "libc.so",
+   "libm.so",
+   "libdl.so"
+  ],
+  "symbols": 1160,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libcmdsh.so.so",
+  "size": 5456,
+  "format": "ELF",
+  "sha256": "533432e1466ccef43c6afda07164f4f96910e41969eb074a258e8743232debc9",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 0,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libcommon_basemodule_jni.so.so",
+  "size": 21680,
+  "format": "ELF",
+  "sha256": "cb4e93568e46deb2e120bed7d7e4430259b7a8b6da500ec59cddcf9cd3c995f5",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libandroid.so",
+   "liblog.so",
+   "libGLESv2.so",
+   "libEGL.so",
+   "libdl.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so"
+  ],
+  "symbols": 63,
+  "static_jni_exports": 12,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libgamehook.so.so",
+  "size": 25748,
+  "format": "ELF",
+  "sha256": "03ef0c631cf417e6b4f79f7fc112728be3abf78f104000a5d6327a849ab23fb5",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "liblog.so",
+   "libdl.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so"
+  ],
+  "symbols": 79,
+  "static_jni_exports": 1,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libgamejavahook.so.so",
+  "size": 9344,
+  "format": "ELF",
+  "sha256": "847dd7ce6c9cc657550c3684f9b71109dac64ed77bfe764a6c4085b50ae18ff1",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libcutils.so",
+   "libutils.so",
+   "libbinder.so",
+   "libdvm.so",
+   "libstlport.so",
+   "libdl.so",
+   "libc.so",
+   "libstdc++.so",
+   "libm.so"
+  ],
+  "symbols": 1,
+  "static_jni_exports": 1,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.liblinuxtoolsfortbssdk_jni.so.so",
+  "size": 13432,
+  "format": "ELF",
+  "sha256": "268ea307108a502d31c42bc74c3e719118922bcae86addf94eee33ce96009ac9",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "liblog.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 43,
+  "static_jni_exports": 1,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libmtticu.so.so",
+  "size": 8095368,
+  "format": "ELF",
+  "sha256": "1d6e5c81624a783971499b3d41f13600776f5453c433c85e4472418b32cb01a5",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "943654da97575f2c2f7168f2019117366fc7d67b",
+  "needed": [
+   "libtbs_c++.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 2555,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libmtttrace.so.so",
+  "size": 595860,
+  "format": "ELF",
+  "sha256": "e9c7e9c2a77f43202523065432625550d408f05834addfc9e422610227155931",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "liblog.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 2284,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libmttwebview.so.so",
+  "size": 36932724,
+  "format": "ELF",
+  "sha256": "8703ee8ccdad35686ed3138933589026a29e15f694d235b841842b9497538a31",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "dda40e88b18c5523318befd7946b81701f26670f",
+  "needed": [
+   "libwebp_base.so",
+   "libmtticu.so",
+   "libtbs_v8.so",
+   "libtbs_c++.so",
+   "libc.so",
+   "libdl.so",
+   "libm.so",
+   "libandroid.so",
+   "liblog.so",
+   "libjnigraphics.so"
+  ],
+  "symbols": 849,
+  "static_jni_exports": 848,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libqb_keystore.so.so",
+  "size": 13432,
+  "format": "ELF",
+  "sha256": "5fa7b4b96b2cab9a3df663166adcf49f5dd302b9486cd7231c88cec5b1777b5e",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 44,
+  "static_jni_exports": 2,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libresources.so.so",
+  "size": 197175,
+  "sha256": "46eafe4e8438872006074705721d54c2f0df0ca13fbef8e97d72b018ad746414",
+  "format": "Chromium DataPack v5",
+  "resource_count": 41,
+  "alias_count": 0
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libtbsDEPS.so.so",
+  "size": 358,
+  "sha256": "e8892c7fd64fffe02feea1e37e5bea4c768766b004becc8802fe109112d97a0e",
+  "format": "JSON"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libtbs_c++.so.so",
+  "size": 448036,
+  "format": "ELF",
+  "sha256": "adfa7465d025764e16a1e942b9297892ac4cb6871b24bd0d7ae72e5f8d6769f9",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "0e41c5dfe39f4a7aeaa610a9743255c746af796d",
+  "needed": [
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 1753,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libtbs_courgette.so.so",
+  "size": 816984,
+  "format": "ELF",
+  "sha256": "16b8710998f5733cb97d56bfb0c8ae9dbbf1e47074462b94789aed323ac8909c",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "0bbbdb243c2ee4cb234b896d3840c9d2cd156e15",
+  "needed": [
+   "libdl.so",
+   "liblog.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 1322,
+  "static_jni_exports": 2,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libtbs_crash_handler.so.so",
+  "size": 353848,
+  "format": "ELF",
+  "sha256": "e04291c1de9854b8a897b0a8934820c62892c086c708da32ecf23d2f98c71b42",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "liblog.so",
+   "libdl.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so"
+  ],
+  "symbols": 660,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libtbs_v8.so.so",
+  "size": 7687404,
+  "format": "ELF",
+  "sha256": "b6afe72d4b6f02e8828ca522edfcf63228fdb6a18434e4f1c70a084d7cb11538",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "dd42901764e648e746637c12bc3bf8e7f6677b78",
+  "needed": [
+   "libmtticu.so",
+   "libtbs_c++.so",
+   "libc.so",
+   "libm.so",
+   "liblog.so"
+  ],
+  "symbols": 9742,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libtbslog.so.so",
+  "size": 54976,
+  "format": "ELF",
+  "sha256": "80beb0999a1f947adac0236f4cfabed44c99dc44b60de9afb7e0e8bb6f0490ac",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "633629d581b18e4fc90f2ce2c823f535a4116321",
+  "needed": [
+   "liblog.so",
+   "libz.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 139,
+  "static_jni_exports": 5,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libtbsqmp.so.so",
+  "size": 121112,
+  "format": "ELF",
+  "sha256": "099a873f37b9d7da292dd23690650d73c800f7e45f9674f56e6f679b0f2f45d9",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "eecb4a64e1e270494caf891f12920c98bc75df17",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libz.so",
+   "libstdc++.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 89,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libtencentpos.so.so",
+  "size": 28076,
+  "format": "ELF",
+  "sha256": "11aebacc3445b607cfdfb4f912216f38cce915d647fd3b626e206e44ef47ea22",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 93,
+  "static_jni_exports": 5,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libturingtbs.so.so",
+  "size": 127540,
+  "format": "ELF",
+  "sha256": "c4a889641561db2f04314d8fd7dec5383852dad43d2f109450ec173591afbb71",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "c8f31453617b9ebf6594befa18295d02efd6f4b3",
+  "needed": [
+   "liblog.so",
+   "libandroid.so",
+   "libz.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 1,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libwebhook.so.so",
+  "size": 21624,
+  "format": "ELF",
+  "sha256": "21931f733e5b676cb29bc40133b038c9437e7e4fe855813dae41575a8d9f06d5",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "liblog.so",
+   "libdl.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so"
+  ],
+  "symbols": 65,
+  "static_jni_exports": 1,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libwebp_base.so.so",
+  "size": 292572,
+  "format": "ELF",
+  "sha256": "bfc2e1a4cde558a2d12bdd6a527e98b4d0285a95eb1dad8ab00177480ece50d4",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "11b4b3056a4446c37a6c0ed06fdb73dba87acbb8",
+  "needed": [
+   "libjnigraphics.so",
+   "liblog.so",
+   "libc.so",
+   "libdl.so",
+   "libm.so"
+  ],
+  "symbols": 121,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libwebviewchromium.so.so",
+  "size": 22936,
+  "sha256": "b9e179a993f5f7977f857d534f06f7a887dc7269a7290aa55fd0aef2bbcc01a0",
+  "format": "Chromium DataPack v5",
+  "resource_count": 12,
+  "alias_count": 0
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libx5breakpad.so.so",
+  "size": 132552,
+  "format": "ELF",
+  "sha256": "a26d8cf961b2a4ad78318c5aa532bfadc0d80a4cc9277a8851e38dc74d78615b",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "liblog.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 292,
+  "static_jni_exports": 1,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libx5log.so.so",
+  "size": 54976,
+  "format": "ELF",
+  "sha256": "54b23e95bd0c681e416d33e5e3d323c79fc4c7fe9cf88767caecb77324a4f831",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "5bb1a430ca97e40d2157a1abf83f2f7122b4215d",
+  "needed": [
+   "liblog.so",
+   "libz.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 141,
+  "static_jni_exports": 5,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libx5patch.so.so",
+  "size": 808800,
+  "format": "ELF",
+  "sha256": "58c2b9f5b7bbfe17f3a3f3528039e6afe2c9ad1843203c200059cbd0b984e3d2",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "6263a015b839504d12e39ac62e63e171b59d7f14",
+  "needed": [
+   "libdl.so",
+   "liblog.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 1327,
+  "static_jni_exports": 4,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.libzh_cn.so.so",
+  "size": 9232,
+  "sha256": "c2628613df024d0fde88ecfb0577d0afe44f4e2cff8f241769f5a69e1035c72a",
+  "format": "Chromium DataPack v5",
+  "resource_count": 294,
+  "alias_count": 26
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.native_ad.conf.so",
+  "size": 14,
+  "sha256": "0d5438cc3f58419364db7cfe7561e5734c39e35da4a4eb8cdd1ca1103aea3c4c",
+  "format": "text"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.native_ad_plugin_dex.jar.so",
+  "size": 170151,
+  "sha256": "561b2198add4ef083c639d0c3d68d8cb269628f84b3b5eafb1a9a5a8c4212857",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.res.apk.so",
+  "size": 505001,
+  "sha256": "4581d1849413adfbb23e5dba1a174aef0cc4e58b5fc0751ea048d212dcff30a0",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.tbs.conf.so",
+  "size": 323,
+  "sha256": "7e3c61c5d77f234fde905f272deb8088e2fbcfdd647f8ff86a9c27c401a3ae48",
+  "format": "text"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.tbs_bugly_dex.jar.so",
+  "size": 107720,
+  "sha256": "bd45ac17b5ecb280403b35f9684b496b1d80fb4f38eb02939887f0bd6e4667d4",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.tbs_hercules_plugin.jar.so",
+  "size": 87537,
+  "sha256": "b22448ec036c1b4c2d79432096f7a2222648a913685cec970f5ab70a3e6b89b8",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.tbs_jars_fusion_dex.jar.so",
+  "size": 2928051,
+  "sha256": "39558781031d1b259b9d4ec1f1c4228aae0bbc3818b8eaf07e5c48c4b009b13b",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.tbs_jsapi_plugin.jar.so",
+  "size": 60405,
+  "sha256": "85b38e509f88093201f221736fa51a058f45aad1a3653b3997d21dec769d5e8e",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.tbs_sdk_extension_dex.jar.so",
+  "size": 935906,
+  "sha256": "157a08214c0b78f50160d56f96d3d583f07df6a387382d7827b77e5a44ad4471",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.tbs_ug_plugin.jar.so",
+  "size": 572025,
+  "sha256": "3c5a5ae3b335c63508ed96cfb0dfde7f4bfe0b9e4e738d1e642f514e20515f0b",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.video_impl_dex.jar.so",
+  "size": 396177,
+  "sha256": "e22681a18cdf53720ad18949f93a336095a7f7801a8e0020882f12ac3239ab69",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtbs.videores.apk.so",
+  "size": 395222,
+  "sha256": "998a974887611bf27a5672cac549b4b5e399eb22d2676d56b3bb7810354a7514",
+  "format": "ZIP/JAR"
+ },
+ {
+  "member": "lib/armeabi-v7a/libtxffmpeg.so",
+  "size": 3560036,
+  "format": "ELF",
+  "sha256": "2aaae99defd1bfeb1de652b96fe598a83cfc13e601e4e82ba8dd621881504154",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libm.so",
+   "libz.so",
+   "liblog.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 5894,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtxplayer.so",
+  "size": 870516,
+  "format": "ELF",
+  "sha256": "afac23763f4fa17481ec8125830f87a28f5456e1ea7fba4d7cf18d89cc154524",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "35cf3c53c189c64fe9e90b32c748a94876db5575",
+  "needed": [
+   "libtxffmpeg.so",
+   "libtxsdl.so",
+   "liblog.so",
+   "libandroid.so",
+   "libdl.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so"
+  ],
+  "symbols": 884,
+  "static_jni_exports": 6,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtxsdl.so",
+  "size": 222932,
+  "format": "ELF",
+  "sha256": "0251bf01d02db02b135f3455e95cf23c6a963367c01f74fc9f7d026d5c9b988c",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "557a0e6813719f10b6bb372bff22d98a9b6ea537",
+  "needed": [
+   "libtxffmpeg.so",
+   "liblog.so",
+   "libandroid.so",
+   "libOpenSLES.so",
+   "libEGL.so",
+   "libGLESv2.so",
+   "libdl.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so"
+  ],
+  "symbols": 960,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ }
+]

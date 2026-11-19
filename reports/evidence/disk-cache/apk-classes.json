@@ -1,0 +1,71 @@
+[
+  {
+    "app": "中育云笔记",
+    "classes_with_magic": [
+      "smali_classes3/coil3/disk/DiskLruCache.smali",
+      "smali_classes3/f0/b.smali"
+    ]
+  },
+  {
+    "app": "中育管控桌面",
+    "classes_with_magic": [
+      "smali_classes3/coil3/disk/DiskLruCache.smali",
+      "smali_classes3/d0/b.smali"
+    ]
+  },
+  {
+    "app": "优课畅学",
+    "classes_with_magic": [
+      "smali_classes3/j/b.smali"
+    ]
+  },
+  {
+    "app": "在线专栏",
+    "classes_with_magic": [
+      "smali/com/bumptech/glide/disklrucache/DiskLruCache.smali",
+      "smali/okhttp3/internal/cache/DiskLruCache.smali"
+    ]
+  },
+  {
+    "app": "新测评",
+    "classes_with_magic": [
+      "smali_classes3/coil3/disk/DiskLruCache.smali",
+      "smali_classes3/k0/b.smali"
+    ]
+  },
+  {
+    "app": "网阅联考",
+    "classes_with_magic": [
+      "smali_classes2/h/b.smali"
+    ]
+  },
+  {
+    "app": "选课",
+    "classes_with_magic": []
+  },
+  {
+    "app": "错题本",
+    "classes_with_magic": [
+      "smali_classes2/coil3/disk/f.smali",
+      "smali_classes2/w/d.smali"
+    ]
+  },
+  {
+    "app": "问卷调查",
+    "classes_with_magic": []
+  },
+  {
+    "app": "随身答",
+    "classes_with_magic": [
+      "smali_classes3/coil3/disk/DiskLruCache.smali",
+      "smali_classes3/f0/b.smali"
+    ]
+  },
+  {
+    "app": "领创平板管理-2025.9.1",
+    "classes_with_magic": [
+      "smali/com/bumptech/glide/disklrucache/DiskLruCache.smali",
+      "smali/com/loc/aj.smali"
+    ]
+  }
+]

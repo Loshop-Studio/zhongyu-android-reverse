@@ -1,0 +1,10 @@
+libcore.io.DiskLruCache
+1
+201105
+2
+
+DIRTY classroom_image
+CLEAN classroom_image 24 37
+READ classroom_image
+DIRTY discarded
+REMOVE discarded

@@ -1,0 +1,894 @@
+{
+  "apk_member": "lib/armeabi-v7a/libtbs.audio_base.jar.so",
+  "jar_sha256": "e6a1a2dc4e0a4ad04dfb09b40240fbf71d7e765ee6c3be2696ae13d614d81099",
+  "class_files": 52,
+  "top_level_java_files": 26,
+  "jvm_method_declarations": 444,
+  "sources": [
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/db/ApnHelper.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.db.ApnHelper",
+          "sha256": "441a1c2e6698adb1f33ec1005ca1e6ae7cc8870207d0fb40a28238aa51b8b974",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "access$002(Lcom/tencent/smtt/audio/core/db/ApnHelper;Z)Z",
+            "access$100(Lcom/tencent/smtt/audio/core/db/ApnHelper;)Landroid/content/Context;",
+            "getInstance()Lcom/tencent/smtt/audio/core/db/ApnHelper;",
+            "isUserWifiConfirmed(Lcom/tencent/smtt/audio/core/db/ApnHelper$PlayListApnTypeListener;)V",
+            "registerApnReceiver(Landroid/content/Context;)V",
+            "unregisterApnReceiver()V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.db.ApnHelper$1",
+          "sha256": "936378159b1c1446b7e101f35e3ee78fd229bd780523cc6ff2645adf2cba64d0",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/db/ApnHelper;Lcom/tencent/smtt/audio/core/db/ApnHelper$PlayListApnTypeListener;)V",
+            "onClick(Landroid/content/DialogInterface;I)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.db.ApnHelper$2",
+          "sha256": "a3cefeef6a3cef234bd5e9e38e4ea0e477b6b07b9f379b4533fd05f8d33a3d7c",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/db/ApnHelper;Lcom/tencent/smtt/audio/core/db/ApnHelper$PlayListApnTypeListener;)V",
+            "onClick(Landroid/content/DialogInterface;I)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.db.ApnHelper$3",
+          "sha256": "f09ce6bf1797ce9d2b010ee47f2f69a5b9bbfa1e6f95c15fe69f1f028f394eb7",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/db/ApnHelper;)V",
+            "onReceive(Landroid/content/Context;Landroid/content/Intent;)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.db.ApnHelper$PlayListApnTypeListener",
+          "sha256": "7a21f35e2fb7edfa489e39ced388180420df4686656f0ae3f6ada04b4659ac37",
+          "methods": [
+            "onResult(Z)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/db/DBManager.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.db.DBManager",
+          "sha256": "b94d3455acca9647de555634591b992a26c830c8e251a3709a337aa7dd00b3e7",
+          "methods": [
+            "<init>(Landroid/content/Context;)V",
+            "access$000(Lcom/tencent/smtt/audio/core/db/DBManager;Landroid/database/sqlite/SQLiteDatabase;)V",
+            "addAudioToLastPlayList(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "createTable(Landroid/database/sqlite/SQLiteDatabase;)V",
+            "deleteAudioFromDB(I)V",
+            "deleteAudioFromDB(Ljava/lang/String;J)V",
+            "getLastPlayList()Ljava/util/List;",
+            "updateIsValidWithId(IZ)V",
+            "upgradeTables(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.db.DBManager$TbsAudioDBHelper",
+          "sha256": "506c72783e9576132cdc5dcf7e450d24c4c141e100ba4da264cd39fb56132ce9",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/db/DBManager;Landroid/content/Context;)V",
+            "onCreate(Landroid/database/sqlite/SQLiteDatabase;)V",
+            "onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/db/PlayListAudioBusinessWrapper.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.db.PlayListAudioBusinessWrapper",
+          "sha256": "b9e13ddaa777ce5edb8dcfcea2a32aee4c8fc0104ca719917d481effb69af16d",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "OnCompletion()V",
+            "OnPrepared()V",
+            "getInstance()Lcom/tencent/smtt/audio/core/db/PlayListAudioBusinessWrapper;",
+            "onPauseByRemote()V",
+            "onPlayByRemote()V",
+            "onSeekByRemote(I)V",
+            "release()V",
+            "setSeekAfterPrepared(I)V",
+            "start()V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/db/SysMediaPlayer.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.db.SysMediaPlayer",
+          "sha256": "d209a611cda5b7d000146beb3df77ca8e4999194a2c274cb12f9b18e4bef35b7",
+          "methods": [
+            "<init>()V",
+            "getDuration()I",
+            "getTrackInfo()Ljava/lang/Object;",
+            "pause()V",
+            "reset()V",
+            "seekTo(I)V",
+            "setDataSource(Landroid/content/Context;Landroid/net/Uri;)V",
+            "setDataSource(Landroid/content/Context;Landroid/net/Uri;Ljava/util/Map;)V",
+            "setDataSource(Ljava/lang/String;)V",
+            "setPlaySpeed(F)V",
+            "start()V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/impl/AudioPlayerControlerImpl.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.impl.AudioPlayerControlerImpl",
+          "sha256": "da9b56c6f408a6a378c9ec5c281129738bd31adbedb5640b49554d468b634c7e",
+          "methods": [
+            "<init>()V",
+            "shouldUseTbsMediaPlayer(Ljava/lang/String;)Z"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/impl/TbsAudioFactoryImpl.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.impl.TbsAudioFactoryImpl",
+          "sha256": "a94f80511b7a614206ed7de6bb9871b005d5b1a8ea3d6bf17b79975fa17b9e68",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "getAudioPresenter()Lcom/tencent/smtt/audio/export/IAudioPresenter;",
+            "getBusinessCore()Lcom/tencent/smtt/audio/export/interfaces/IMediaPlayerBusiness;",
+            "getRemoteMediaPlayer()Lcom/tencent/smtt/audio/export/interfaces/RemoteMediaPlayer;",
+            "shouldUseTbsMediaPlayer(Ljava/lang/String;)Z"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/AudioDBModle.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AudioDBModle",
+          "sha256": "18a188a1faba9439b6ae29f1b586746e31b1b6af684e4a2c7387745c18a474d4",
+          "methods": [
+            "<init>()V",
+            "access$000(Lcom/tencent/smtt/audio/core/mvp/AudioDBModle;)Lcom/tencent/smtt/audio/core/db/DBManager;",
+            "access$100(Lcom/tencent/smtt/audio/core/mvp/AudioDBModle;Ljava/util/List;)V",
+            "access$200(Lcom/tencent/smtt/audio/core/mvp/AudioDBModle;)Landroid/os/Handler;",
+            "checkAllPlayListAvaliable(Ljava/util/List;)V",
+            "checkPlayList()V",
+            "deleteAudioFromDB(I)V",
+            "deleteAudioFromDB(Ljava/lang/String;J)V",
+            "getMediaInfoAndWriteToDB(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+            "getPlayListFromDB()Ljava/util/List;",
+            "isAudioAvaliAble(Ljava/lang/String;)Z",
+            "isAudioValid()Z",
+            "saveInValidMedia(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "savePlayHistoryToDB(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AudioDBModle$1",
+          "sha256": "9c707e5ddc5d50513dd1c8aced311885bc1aeb7f48766c4a29bb597e9355a251",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/AudioDBModle;)V",
+            "handleMessage(Landroid/os/Message;)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AudioDBModle$2",
+          "sha256": "225071de68eaf7fc11396131831e5e21b86fdfe0d2205045b48f8e18d11b4332",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/AudioDBModle;I)V",
+            "doRun()V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AudioDBModle$3",
+          "sha256": "2ba308de27dab49614d5219868365ac5a107186b81fcc317a6e175664642c6c9",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/AudioDBModle;Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "doRun()V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AudioDBModle$4",
+          "sha256": "75dcc91c5de2d4641484ecfb55df4f4379f6009dec6e3e5b87dc390afb87abe2",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/AudioDBModle;)V",
+            "run()V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AudioDBModle$5",
+          "sha256": "2dbec648b4749931c391d8b51eda6cca5d25394557be520fbc672919204fcdae",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/AudioDBModle;Ljava/lang/String;J)V",
+            "doRun()V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AudioDBModle$6",
+          "sha256": "7ff27792c698f0c0405f85af278c0a5f50c14be2f76bb4f662da87b52e9fa99f",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/AudioDBModle;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V",
+            "doRun()V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/AudioFocusChangeListener.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AudioFocusChangeListener",
+          "sha256": "419e591e058aaf65f9d4d1b39daadb7b864c038e69e0da47397cc57d97e295ed",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "getInstance()Lcom/tencent/smtt/audio/core/mvp/AudioFocusChangeListener;",
+            "init(Lcom/tencent/smtt/audio/export/IAudioPresenter;)V",
+            "isFocusChange(Z)Z",
+            "onAudioFocusChange(I)V",
+            "setFouseUnChange()V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/AudioPresenterImpl.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AudioPresenterImpl",
+          "sha256": "6c0aa4c0104d7b6771d3d505dafb03d50f4791022ce7a910704cb2651d67f730",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "addToPlayHistory(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)I",
+            "addToPlayList(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "addToPlayList(Ljava/util/List;)V",
+            "checkPlayList()V",
+            "currentPlayerType()I",
+            "deleteAudioFromDB(I)V",
+            "deleteAudioFromDB(Ljava/lang/String;J)V",
+            "exit()V",
+            "exoPlayerInfo()Ljava/lang/String;",
+            "getAutoCloseTime()I",
+            "getCurrentEntity()Lcom/tencent/smtt/audio/export/TbsAudioEntity;",
+            "getCurrentPlayList()Lcom/tencent/smtt/audio/export/PlayListBase;",
+            "getCycleType()I",
+            "getDBModule()Lcom/tencent/smtt/audio/export/IAudioModel;",
+            "getInstance()Lcom/tencent/smtt/audio/core/mvp/AudioPresenterImpl;",
+            "getModeType()I",
+            "getPlayHistory()Ljava/util/List;",
+            "getPlayList()Ljava/util/List;",
+            "getPlayListMode()I",
+            "getPlaySpeed()I",
+            "getRemoteMediaPlayer()Lcom/tencent/smtt/audio/export/interfaces/RemoteMediaPlayer;",
+            "getView()Lcom/tencent/smtt/audio/export/IAudioView;",
+            "goBack(I)Z",
+            "goForward(I)Z",
+            "init(Landroid/content/Context;Lcom/tencent/smtt/audio/export/IAudioView;)V",
+            "init(Landroid/content/Context;Lcom/tencent/smtt/audio/export/IAudioView;Z)V",
+            "initWifiLock()V",
+            "isPlaying()Z",
+            "onMiscNotification(Ljava/util/Map;)V",
+            "onPlayerMessage(ILjava/lang/String;)V",
+            "pause()V",
+            "playAudioInIndex(I)V",
+            "playAudioInIndexWithoutReset(I)V",
+            "playLastAudio()Z",
+            "playNextAudio()Z",
+            "processNextOrLastAudio(Z)Z",
+            "releaseWifiLock()V",
+            "removeFormCurrentPlayList(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "removeFromPlayHistory(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "removeFromPlayList(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "resetStatus()V",
+            "saveAudioToPlayHistoryDB(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "seek(I)V",
+            "seekBeforePrepare(I)V",
+            "setAudioCloseTime(I)V",
+            "setAudioView(Lcom/tencent/smtt/audio/export/IAudioView;)V",
+            "setCycpeType(I)V",
+            "setIAudioClient(Lcom/tencent/smtt/audio/export/interfaces/IAudioClient;)V",
+            "setMode(I)V",
+            "setPlayList(Ljava/util/List;)V",
+            "setPlayListMode(I)V",
+            "setPlaySpeed(I)V",
+            "start()V",
+            "startAudio(I)V",
+            "startAudioWithoutQueryApnType(I)V",
+            "supportMultiPlaySpeed()Z"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AudioPresenterImpl$AudioPlayerType",
+          "sha256": "1c8969873cf5776fff612e4267145726175c4332069f8176d3598ce1a900a4ac",
+          "methods": []
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/AudioStateController.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AudioStateController",
+          "sha256": "437f3490029a543c4e1ac970857081659017408238776949c6ede011e3917caf",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "getAudioCloseTime()I",
+            "getCurrentMode()I",
+            "getCycleType()I",
+            "getPlaylistMode()I",
+            "getSpeedType()I",
+            "setAudioCloseTime(I)V",
+            "setCurrentMode(I)V",
+            "setCycleType(I)V",
+            "setPlaylistMode(I)V",
+            "setSpeedType(I)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/AutoCloseControler.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AutoCloseControler",
+          "sha256": "0a5ce1c726b4f87245931c087211a92db56750332bfe27b72b0f34f2cc684352",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "destroy()V",
+            "getInstance()Lcom/tencent/smtt/audio/core/mvp/AutoCloseControler;",
+            "initTimer()V",
+            "needResetAutoCloseBtn()Z",
+            "resetAutoClostStatus()V",
+            "setAudioCloseTime(I)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AutoCloseControler$1",
+          "sha256": "c4c184abfff15df5e78f42c56ac765037d427d8dc41d978261eeed6baf405869",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/AutoCloseControler;)V",
+            "handleMessage(Landroid/os/Message;)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.AutoCloseControler$AutoCloseTask",
+          "sha256": "7287b1c25284f2c1e168c1e107c1f2c8c5a56b86186f4af711cdfb56da401cb3",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/AutoCloseControler;)V",
+            "run()V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/DefaultAudioPlayerBusinessWrapper.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.DefaultAudioPlayerBusinessWrapper",
+          "sha256": "a6985dc584f0d9951684054305922a21de6fd9e226512aea457e684a76e145d6",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "OnBufferingUpdate(I)V",
+            "OnCompletion()V",
+            "OnErrorListener(II)V",
+            "OnPrepared()V",
+            "OnSeekComplete()V",
+            "getCurrentPosition()I",
+            "getDuration()I",
+            "getInstance()Lcom/tencent/smtt/audio/core/mvp/DefaultAudioPlayerBusinessWrapper;",
+            "getTrackInfo()Ljava/lang/Object;",
+            "getX5AudioAuthor()Ljava/lang/String;",
+            "getX5AudioCoverUrl()Ljava/lang/String;",
+            "getX5AudioTitle()Ljava/lang/String;",
+            "isPlaying()Z",
+            "isWebViewActive()Z",
+            "onMediaInterruptedByRemote()V",
+            "onPauseByRemote()V",
+            "onPlayByRemote()V",
+            "onSeekByRemote(I)V",
+            "pause()V",
+            "prepare()V",
+            "prepareAsync()V",
+            "realRelease()V",
+            "release()V",
+            "reset()V",
+            "resetStatus()V",
+            "resetX5AudioInfo()V",
+            "seekTo(I)V",
+            "setAudioInfo(Ljava/lang/String;Ljava/lang/String;)V",
+            "setDataSource(Landroid/content/Context;Landroid/net/Uri;)V",
+            "setDataSource(Landroid/content/Context;Landroid/net/Uri;Ljava/util/HashMap;)V",
+            "setDataSource(Ljava/io/FileDescriptor;JJ)V",
+            "setDataSource(Ljava/lang/String;)V",
+            "setMediaExtra(Ljava/lang/String;Ljava/lang/String;)V",
+            "setMediaPlayer(Lcom/tencent/smtt/audio/export/IMediaPlayer;)V",
+            "setMediaPlayerListener(Lcom/tencent/smtt/audio/export/interfaces/RemotePlayerListener;)V",
+            "setSpeedType(F)V",
+            "setUIMediaPlayerListener(Lcom/tencent/smtt/audio/export/interfaces/RemotePlayerListener;)V",
+            "setVolume(FF)V",
+            "start()V",
+            "stop()V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/HttpUtils.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.HttpUtils",
+          "sha256": "96eab78a1bae7e797f99f47c19bef948e2ea885f17fe95c33375cbe4cc48d703",
+          "methods": [
+            "<init>()V",
+            "getHttpResponseCode(Ljava/net/URL;)I",
+            "isNetworkAvailable(Landroid/content/Context;)Z"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/IAudioBusinessWrapper.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.IAudioBusinessWrapper",
+          "sha256": "fc67c8dceb8dbce13461e76408654a69eefb2a2a616904854dec65244928cf3a",
+          "methods": [
+            "getX5AudioAuthor()Ljava/lang/String;",
+            "getX5AudioCoverUrl()Ljava/lang/String;",
+            "getX5AudioTitle()Ljava/lang/String;",
+            "realRelease()V",
+            "resetStatus()V",
+            "setMediaPlayer(Lcom/tencent/smtt/audio/export/IMediaPlayer;)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/PhoneStateControler.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.PhoneStateControler",
+          "sha256": "b437531c9370513a9c5a7ae5a6c70dcb9a63f3719457ca54670d21a47a0d5f28",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "access$000(Lcom/tencent/smtt/audio/core/mvp/PhoneStateControler;)Z",
+            "access$002(Lcom/tencent/smtt/audio/core/mvp/PhoneStateControler;Z)Z",
+            "access$100(Lcom/tencent/smtt/audio/core/mvp/PhoneStateControler;)Lcom/tencent/smtt/audio/export/interfaces/RemoteMediaPlayer;",
+            "getInstance()Lcom/tencent/smtt/audio/core/mvp/PhoneStateControler;",
+            "registerPhoneState(Lcom/tencent/smtt/audio/export/interfaces/RemoteMediaPlayer;)V",
+            "unRegisterListener()V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.PhoneStateControler$1",
+          "sha256": "007a9829e70ec39b4e894b73bd0224322f2b3d177c3e38e76ebc4e58abc051b9",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/PhoneStateControler;)V",
+            "onCallStateChanged(ILjava/lang/String;)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/PlayHistoryController.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.PlayHistoryController",
+          "sha256": "fabf6dd978fb885ecf223477a4671a0e04d1327bc44ad64b2278ee9d090ae4fc",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "addToPlayList(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)I",
+            "getInstance()Lcom/tencent/smtt/audio/core/mvp/PlayHistoryController;",
+            "removeFormPlayList(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "removeFromIndex(I)V",
+            "removeFromIndexByTime(I)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/PlayListBaseImpl.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.PlayListBaseImpl",
+          "sha256": "5fbf5adb8c02d75b52eca0f47711a899c2970a6d515bf8fdd2c776d7ee897546",
+          "methods": [
+            "<init>()V",
+            "addToPlayList(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)I",
+            "getCurrentPlayingAudio()Lcom/tencent/smtt/audio/export/TbsAudioEntity;",
+            "getCycleAudio()I",
+            "getEntityWithIndex(I)Lcom/tencent/smtt/audio/export/TbsAudioEntity;",
+            "getIndex()I",
+            "getLastIndex()I",
+            "getNextIndex()I",
+            "getPlayList()Ljava/util/List;",
+            "getRandomAudio()I",
+            "hasValidMedia()Z",
+            "removeFormPlayList(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "setIndex(I)V",
+            "setPlayList(Ljava/util/List;)V",
+            "showInvalidToast()V",
+            "showNoValidToast()V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/PlayListController.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.PlayListController",
+          "sha256": "0477c9d9dae4e3a83cc5e4732500c0a8495e30f43e31549c664e246726870e18",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "getInstance()Lcom/tencent/smtt/audio/core/mvp/PlayListController;"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/RemoteAudioBusinessPlayer.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.RemoteAudioBusinessPlayer",
+          "sha256": "4b6a0a021b460d449cc9587bead63cb6b74917f78bb5871531e9166d1342c494",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "access$000(Lcom/tencent/smtt/audio/core/mvp/RemoteAudioBusinessPlayer;)J",
+            "access$100(Lcom/tencent/smtt/audio/core/mvp/RemoteAudioBusinessPlayer;)Z",
+            "access$102(Lcom/tencent/smtt/audio/core/mvp/RemoteAudioBusinessPlayer;Z)Z",
+            "access$200(Lcom/tencent/smtt/audio/core/mvp/RemoteAudioBusinessPlayer;II)Z",
+            "getAudioAuthor()Ljava/lang/String;",
+            "getAudioTitle()Ljava/lang/String;",
+            "getBusinessWrapper()Lcom/tencent/smtt/audio/core/mvp/IAudioBusinessWrapper;",
+            "getCurrent()Lcom/tencent/smtt/audio/export/TbsAudioEntity;",
+            "getCurrentPosition()I",
+            "getDuration()I",
+            "getInstance()Lcom/tencent/smtt/audio/core/mvp/RemoteAudioBusinessPlayer;",
+            "getTrackInfo()Ljava/lang/Object;",
+            "getX5AudioCoverUrl()Ljava/lang/String;",
+            "init(Landroid/content/Context;Lcom/tencent/smtt/audio/export/IMediaPlayer;Lcom/tencent/smtt/audio/export/IAudioView;)V",
+            "initListeners()V",
+            "isAudioPlaying()Z",
+            "isPlaying()Z",
+            "needProcessErrorCode(II)Z",
+            "pause()V",
+            "prepare()V",
+            "prepareAsync()V",
+            "realRelease()V",
+            "release()V",
+            "reset()V",
+            "resetForNextAudioPlayIfNeed()V",
+            "seekTo(I)V",
+            "setAudioInfo(Ljava/lang/String;Ljava/lang/String;)V",
+            "setCanPerformAction(Z)V",
+            "setCurrent(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "setDataSource(Landroid/content/Context;Landroid/net/Uri;)V",
+            "setDataSource(Landroid/content/Context;Landroid/net/Uri;Ljava/util/HashMap;)V",
+            "setDataSource(Ljava/io/FileDescriptor;JJ)V",
+            "setDataSource(Ljava/lang/String;)V",
+            "setMediaExtra(Ljava/lang/String;Ljava/lang/String;)V",
+            "setMediaPlayerListener(Lcom/tencent/smtt/audio/export/interfaces/RemotePlayerListener;)V",
+            "setSpeedType(F)V",
+            "setUIMediaPlayerListener(Lcom/tencent/smtt/audio/export/interfaces/RemotePlayerListener;)V",
+            "setVolume(FF)V",
+            "setWrapper(Lcom/tencent/smtt/audio/core/mvp/IAudioBusinessWrapper;)V",
+            "start()V",
+            "stop()V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.RemoteAudioBusinessPlayer$1",
+          "sha256": "ba31e045ff6e7af004e4bf597ed343f5904ee712094af110de06cdea842a5117",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/RemoteAudioBusinessPlayer;)V",
+            "onCompletion(Landroid/media/MediaPlayer;)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.RemoteAudioBusinessPlayer$2",
+          "sha256": "4a9d9ce6ea10a97ed7daf4ab9967698a08796f8455da2d1f899bfb49801a60dc",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/RemoteAudioBusinessPlayer;)V",
+            "onPrepared(Landroid/media/MediaPlayer;)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.RemoteAudioBusinessPlayer$3",
+          "sha256": "4eba587bc0b342d59a6f4fc87c213241aee7e0611199a5e3d0352fe9f7f429a6",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/RemoteAudioBusinessPlayer;)V",
+            "onBufferingUpdate(Landroid/media/MediaPlayer;I)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.RemoteAudioBusinessPlayer$4",
+          "sha256": "7467ae3e46b51f60afa78e20fad5a1bc1acc70c60434d7896f60e329710c4d88",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/RemoteAudioBusinessPlayer;)V",
+            "onSeekComplete(Landroid/media/MediaPlayer;)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.RemoteAudioBusinessPlayer$5",
+          "sha256": "2147f9f2975d49c065f3cb9b8863bf450a81d0412d842661757b7530aee91c5d",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/RemoteAudioBusinessPlayer;)V",
+            "onError(Landroid/media/MediaPlayer;II)Z"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.RemoteAudioBusinessPlayer$6",
+          "sha256": "f2c473de99d654c685e64e8d10806b0db0cd84e299f4c47f94c700c66e58ba9c",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/RemoteAudioBusinessPlayer;)V",
+            "OnBufferingUpdate(I)V",
+            "OnCompletion()V",
+            "OnErrorListener(II)V",
+            "OnPrepared()V",
+            "OnSeekComplete()V",
+            "isWebViewActive()Z",
+            "onMediaInterruptedByRemote()V",
+            "onPauseByRemote()V",
+            "onPlayByRemote()V",
+            "onSeekByRemote(I)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/RemotePlayerProxy.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.RemotePlayerProxy",
+          "sha256": "3a3291ac2aae6630378211661c79a582109ae98dd58cd556f5593cf939c78c4a",
+          "methods": [
+            "<init>()V",
+            "access$000(Lcom/tencent/smtt/audio/core/mvp/RemotePlayerProxy;)Lcom/tencent/smtt/audio/export/interfaces/RemotePlayerListener;",
+            "access$002(Lcom/tencent/smtt/audio/core/mvp/RemotePlayerProxy;Lcom/tencent/smtt/audio/export/interfaces/RemotePlayerListener;)Lcom/tencent/smtt/audio/export/interfaces/RemotePlayerListener;",
+            "getCurrentPosition()I",
+            "getDuration()I",
+            "getTrackInfo()Ljava/lang/Object;",
+            "isPlaying()Z",
+            "pause()V",
+            "prepare()V",
+            "prepareAsync()V",
+            "release()V",
+            "reset()V",
+            "seekTo(I)V",
+            "setAudioInfo(Ljava/lang/String;Ljava/lang/String;)V",
+            "setDataSource(Landroid/content/Context;Landroid/net/Uri;)V",
+            "setDataSource(Landroid/content/Context;Landroid/net/Uri;Ljava/util/HashMap;)V",
+            "setDataSource(Ljava/io/FileDescriptor;JJ)V",
+            "setDataSource(Ljava/lang/String;)V",
+            "setMediaExtra(Ljava/lang/String;Ljava/lang/String;)V",
+            "setMediaPlayerListener(Lcom/tencent/smtt/audio/export/interfaces/RemotePlayerListener;)V",
+            "setSpeedType(F)V",
+            "setUIMediaPlayerListener(Lcom/tencent/smtt/audio/export/interfaces/RemotePlayerListener;)V",
+            "setVolume(FF)V",
+            "start()V",
+            "stop()V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.RemotePlayerProxy$1",
+          "sha256": "dd5b3f613df99d6e0831cddf2af4ca53ba14bac541657e354a2dd3dc2d29f353",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/RemotePlayerProxy;)V",
+            "OnBufferingUpdate(I)V",
+            "OnCompletion()V",
+            "OnErrorListener(II)V",
+            "OnPrepared()V",
+            "OnSeekComplete()V",
+            "isWebViewActive()Z",
+            "onMediaInterruptedByRemote()V",
+            "onPauseByRemote()V",
+            "onPlayByRemote()V",
+            "onSeekByRemote(I)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/mvp/X5CoreAudioPlayerBusinessWrapper.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.X5CoreAudioPlayerBusinessWrapper",
+          "sha256": "8c2d043f0edaf78823581289e7298ea95532111787f43af9a3c2aaac51026e6b",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "OnCompletion()V",
+            "access$000(Lcom/tencent/smtt/audio/core/mvp/X5CoreAudioPlayerBusinessWrapper;)Landroid/os/Handler;",
+            "access$100(Lcom/tencent/smtt/audio/core/mvp/X5CoreAudioPlayerBusinessWrapper;Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "addToPlayListAndUpdateUI(Lcom/tencent/smtt/audio/export/TbsAudioEntity;)V",
+            "getInstance()Lcom/tencent/smtt/audio/core/mvp/X5CoreAudioPlayerBusinessWrapper;",
+            "getMediaInfoAndWriteToDB(Ljava/lang/String;)V",
+            "isReleasedByCore()Z",
+            "onPauseByRemote()V",
+            "onPlayByRemote()V",
+            "onSeekByRemote(I)V",
+            "release()V",
+            "resetStatus()V",
+            "setAudioInfo(Ljava/lang/String;Ljava/lang/String;)V",
+            "setDataSource(Landroid/content/Context;Landroid/net/Uri;)V",
+            "setDataSource(Landroid/content/Context;Landroid/net/Uri;Ljava/util/HashMap;)V",
+            "setDataSource(Ljava/io/FileDescriptor;JJ)V",
+            "setDataSource(Ljava/lang/String;)V",
+            "setMediaPlayerListener(Lcom/tencent/smtt/audio/export/interfaces/RemotePlayerListener;)V",
+            "setReleasedByCore(Z)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.X5CoreAudioPlayerBusinessWrapper$1",
+          "sha256": "9bb15cd41818011d96b4e829a4b6df2e9acc38d490596952d2830efe9bc6f8b7",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/X5CoreAudioPlayerBusinessWrapper;Landroid/os/Looper;)V",
+            "handleMessage(Landroid/os/Message;)V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.mvp.X5CoreAudioPlayerBusinessWrapper$2",
+          "sha256": "77c10ee0608da45260c48b98a7b6295a5217bc761bf1eaff96198544fccfc4ca",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/mvp/X5CoreAudioPlayerBusinessWrapper;)V",
+            "handleMessage(Landroid/os/Message;)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/utils/AudioPlayerInfoReporter.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.utils.AudioPlayerInfoReporter",
+          "sha256": "42adc14fdf55cf92d89bc9c1ad7ea3cd5ab85fb2729802bb94f0c8fc89e53aa1",
+          "methods": [
+            "<init>()V",
+            "reportAudioPlayerInfos()V",
+            "userBehaviorStatics(Ljava/lang/String;)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/utils/NinePatchUtils.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.utils.NinePatchUtils",
+          "sha256": "55e4d09f41ce58a328503ccfaa7d0fc84c7fdf4bff323b6223a8e5d57d043f4a",
+          "methods": [
+            "<init>()V",
+            "createNinePatchDrawable(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;",
+            "getBmpDrawable(Landroid/graphics/Bitmap;)Landroid/graphics/drawable/BitmapDrawable;",
+            "getInt([BI)I",
+            "readPaddingFromChunk([BLandroid/graphics/Rect;)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/utils/TbsDialogBase.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.utils.TbsDialogBase",
+          "sha256": "a742a5c0e9cceae1e991dc14cc7234227e67c012c76381ca0b5805b3e54062b3",
+          "methods": [
+            "<clinit>()V",
+            "<init>(Landroid/content/Context;IZ)V",
+            "addSubTitle(Ljava/lang/CharSequence;)V",
+            "addToContentArea(Landroid/view/View;)V",
+            "addToContentArea(Ljava/lang/String;IIIII)V",
+            "addToCustomArea(Landroid/view/View;)V",
+            "creatButton(Ljava/lang/String;III)Landroid/widget/TextView;",
+            "creatEditTextView()Landroid/widget/EditText;",
+            "creatLine(IZI)Landroid/view/View;",
+            "creatTextView(Ljava/lang/CharSequence;IIIII)Landroid/widget/TextView;",
+            "dismiss()V",
+            "getDefaultButtonMarginTop()I",
+            "getEditTextViewText()Ljava/lang/String;",
+            "getImageDrawable(Ljava/lang/String;ZI)Landroid/graphics/drawable/Drawable;",
+            "init()V",
+            "onClick(Landroid/view/View;)V",
+            "removeContents()V",
+            "setBottomButtonMarginTop(I)V",
+            "setButton(ILjava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)V",
+            "setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V",
+            "setEditTextViewText(Ljava/lang/CharSequence;)V",
+            "setSubTitleText(Ljava/lang/String;)V",
+            "setTitleMargin(II)V",
+            "setTitleText(Ljava/lang/CharSequence;)V",
+            "setTitleTextGravity(I)V",
+            "setViewBackground(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V",
+            "show()V"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.utils.TbsDialogBase$Builder",
+          "sha256": "43674125d2d5c59f24cd001445fe2a99dd1c6e40dc1ac603d293dd83e1abff1f",
+          "methods": [
+            "<init>(Landroid/content/Context;IZ)V",
+            "create()Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "dismiss()V",
+            "getEditText()Ljava/lang/String;",
+            "setCancelable(Z)Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "setEditText(Ljava/lang/CharSequence;)Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "setMessage(Ljava/lang/CharSequence;)Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "setNegativeButton(Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "setNeutralButton(Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "setNeutralButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "setPositiveButton(Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "setTitle(Ljava/lang/String;)Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;",
+            "show()Lcom/tencent/smtt/audio/core/utils/TbsDialogBase$Builder;"
+          ]
+        },
+        {
+          "name": "com.tencent.smtt.audio.core.utils.TbsDialogBase$DialogRootView",
+          "sha256": "6446b4d90f565f6408de0a0544955289bcf75bb7c9e1f9bb327984b77d728ecb",
+          "methods": [
+            "<init>(Lcom/tencent/smtt/audio/core/utils/TbsDialogBase;Landroid/content/Context;)V",
+            "onMeasure(II)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/smtt/audio/core/utils/TbsToastBuilder.java",
+      "class_files": [
+        {
+          "name": "com.tencent.smtt.audio.core.utils.TbsToastBuilder",
+          "sha256": "1f3e51ea8a4e091b0974ec20aafb4f34ff9ee433ac086a5b575f84a867b96e17",
+          "methods": [
+            "<clinit>()V",
+            "<init>()V",
+            "makeText(Landroid/content/Context;Ljava/lang/CharSequence;IZ)Landroid/widget/Toast;",
+            "show(Landroid/content/Context;Ljava/lang/CharSequence;IZ)V",
+            "show(Landroid/content/Context;Ljava/lang/CharSequence;Z)V"
+          ]
+        }
+      ]
+    },
+    {
+      "java": "sources/优课畅学/java/com/tencent/tbs/tbsaudio/BuildConfig.java",
+      "class_files": [
+        {
+          "name": "com.tencent.tbs.tbsaudio.BuildConfig",
+          "sha256": "8e6211d346c688d653767752068001cbfc9f9463abb4b9070f9bc10f4c2f80cd",
+          "methods": [
+            "<init>()V"
+          ]
+        }
+      ]
+    }
+  ]
+}

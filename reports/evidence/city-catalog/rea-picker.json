@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "中育管控桌面.apk",
+    "digest": {
+      "sha256": "e0b46dee805fe516503ac7d2b8e1b7d585de43063a012f8056e3bbd1018a9949"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/中育管控桌面.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.lljjcoder.citywheel.CityParseHelper",
+    "method": {
+      "name": "initData",
+      "reported_signature": "initData(android.content.Context): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroid/content/Context;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public void initData(Context context) {\n        ArrayList<DistrictBean> cityList;\n        ArrayList<ProvinceBean> arrayList = (ArrayList) new Gson().fromJson(utils.getJson(context, Constant.CITY_DATA), new TypeToken<ArrayList<ProvinceBean>>() { // from class: com.lljjcoder.citywheel.CityParseHelper.1\n        }.getType());\n        this.mProvinceBeanArrayList = arrayList;\n        if (arrayList == null || arrayList.isEmpty()) {\n            return;\n        }\n        this.mCityBeanArrayList = new ArrayList<>(this.mProvinceBeanArrayList.size());\n        this.mDistrictBeanArrayList = new ArrayList<>(this.mProvinceBeanArrayList.size());\n        ArrayList<ProvinceBean> arrayList2 = this.mProvinceBeanArrayList;\n        if (arrayList2 != null && !arrayList2.isEmpty()) {\n            ProvinceBean provinceBean = this.mProvinceBeanArrayList.get(0);\n            this.mProvinceBean = provinceBean;\n            ArrayList<CityBean> cityList2 = provinceBean.getCityList();\n            if (cityList2 != null && !cityList2.isEmpty() && cityList2.size() > 0) {\n                CityBean cityBean = cityList2.get(0);\n                this.mCityBean = cityBean;\n                ArrayList<DistrictBean> cityList3 = cityBean.getCityList();\n                if (cityList3 != null && !cityList3.isEmpty() && cityList3.size() > 0) {\n                    this.mDistrictBean = cityList3.get(0);\n                }\n            }\n        }\n        this.mProvinceBeenArray = new ArrayList();\n        for (int i6 = 0; i6 < this.mProvinceBeanArrayList.size(); i6++) {\n            ProvinceBean provinceBean2 = this.mProvinceBeanArrayList.get(i6);\n            ArrayList<CityBean> cityList4 = provinceBean2.getCityList();\n            for (int i7 = 0; i7 < cityList4.size() && (cityList = cityList4.get(i7).getCityList()) != null; i7++) {\n                for (int i8 = 0; i8 < cityList.size(); i8++) {\n                    DistrictBean districtBean = cityList.get(i8);\n                    this.mDisMap.put(provinceBean2.getName() + cityList4.get(i7).getName() + cityList.get(i8).getName(), districtBean);\n                }\n                this.mCity_DisMap.put(provinceBean2.getName() + cityList4.get(i7).getName(), cityList);\n            }\n            this.mPro_CityMap.put(provinceBean2.getName(), cityList4);\n            this.mCityBeanArrayList.add(cityList4);\n            ArrayList<ArrayList<DistrictBean>> arrayList3 = new ArrayList<>(cityList4.size());\n            for (int i9 = 0; i9 < cityList4.size(); i9++) {\n                arrayList3.add(cityList4.get(i9).getCityList());\n            }\n            this.mDistrictBeanArrayList.add(arrayList3);\n            this.mProvinceBeenArray.add(i6, provinceBean2);\n        }\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_e9dbb1f6b1b441a9b4b40fe9b1536fe3aa6e0611539cc09c138b6c4530f8f46f"
+}

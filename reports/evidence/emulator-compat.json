@@ -1,0 +1,117 @@
+{
+  "android": "11",
+  "abi": "x86_64,x86,arm64-v8a,armeabi-v7a,armeabi",
+  "native_bridge": "libndk_translation.so",
+  "apps": [
+    {
+      "app": "中育云笔记",
+      "package": "com.friday.cloudsnote",
+      "launcher": "com.friday.cloudsnote.view.MainActivity",
+      "install": "success",
+      "installed_sha256": "d14ee5068baae0ad8dd683b066b84cebee9a0733e9f7e8f1a4e33d7c38362cdc",
+      "launch": "Starting: Intent { cmp=com.friday.cloudsnote/.view.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: com.friday.cloudsnote/.view.MainActivity\nTotalTime: 841\nWaitTime: 845\nComplete",
+      "process_alive": true,
+      "foreground": "mResumedActivity: ActivityRecord{46136e3 u0 com.friday.cloudsnote/com.zykj.message.UnLoginActivity t123}"
+    },
+    {
+      "app": "中育管控桌面",
+      "package": "com.zykj.manage",
+      "launcher": "com.zykj.huiwei.launcher.ui.MainActivity",
+      "install": "success",
+      "installed_sha256": "373eabe14730a01227ef054f2b915dd149040c1f81533cd6865165f2fe2e1c4f",
+      "launch": "Starting: Intent { cmp=com.zykj.manage/com.zykj.huiwei.launcher.ui.MainActivity }\nWarning: Activity not started, intent has been delivered to currently running top-most instance.\nStatus: ok\nLaunchState: UNKNOWN (0)\nActivity: com.zykj.manage/com.zykj.huiwei.launcher.ui.MainActivity\nTotalTime: 0\nWaitTime: 3\nComplete",
+      "process_alive": true,
+      "foreground": "mResumedActivity: ActivityRecord{9304480 u0 com.zykj.manage/com.zykj.huiwei.launcher.ui.MainActivity t121}"
+    },
+    {
+      "app": "优课畅学",
+      "package": "com.zhongyukejiao.learningexpert",
+      "launcher": "com.zykj.study.ui.MainActivity",
+      "install": "success",
+      "installed_sha256": "eee482f82b34de932ebbf6156aeb5af54c00f0447bb98aab7e15ab1b335df9c7",
+      "launch": "Starting: Intent { cmp=com.zhongyukejiao.learningexpert/com.zykj.study.ui.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: com.zhongyukejiao.learningexpert/com.zykj.study.ui.MainActivity\nTotalTime: 731\nWaitTime: 740\nComplete",
+      "process_alive": true,
+      "foreground": "mResumedActivity: ActivityRecord{8f61ec4 u0 com.zhongyukejiao.learningexpert/com.zykj.message.UnLoginActivity t125}"
+    },
+    {
+      "app": "在线专栏",
+      "package": "com.zykj.subscriber",
+      "launcher": "com.zykj.subscriber.MainActivity",
+      "install": "success",
+      "installed_sha256": "bdcee948d02362d5e7eedb787c19d38281b2726b08d8a22de735e964926b8c48",
+      "launch": "Starting: Intent { cmp=com.zykj.subscriber/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: com.zykj.subscriber/.MainActivity\nTotalTime: 546\nWaitTime: 550\nComplete",
+      "process_alive": true,
+      "foreground": "mResumedActivity: ActivityRecord{1e3565e u0 com.zykj.subscriber/com.zykj.message.UnLoginActivity t127}"
+    },
+    {
+      "app": "新测评",
+      "package": "com.zykj.evaluation",
+      "launcher": "com.zykj.evaluation.ui.MainActivity",
+      "install": "success",
+      "installed_sha256": "cb590fa6a24668d9e0d922a1ba404e43ae08fdf17285c8e32d3ee537f2e484c3",
+      "launch": "Starting: Intent { cmp=com.zykj.evaluation/.ui.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: com.zykj.evaluation/.ui.MainActivity\nTotalTime: 711\nWaitTime: 714\nComplete",
+      "process_alive": true,
+      "foreground": "mResumedActivity: ActivityRecord{5183a28 u0 com.zykj.evaluation/com.zykj.message.UnLoginActivity t129}"
+    },
+    {
+      "app": "网阅联考",
+      "package": "com.zykj.insight",
+      "launcher": "com.zykj.insight.ui.MainActivity",
+      "install": "success",
+      "installed_sha256": "8e918d4a384ef8e39cc21deeb8557d17459c2729fe696c079b3c6cb72ab87f1c",
+      "launch": "Starting: Intent { cmp=com.zykj.insight/.ui.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: com.zykj.insight/.ui.MainActivity\nTotalTime: 584\nWaitTime: 587\nComplete",
+      "process_alive": true,
+      "foreground": "mResumedActivity: ActivityRecord{6d8bad1 u0 com.zykj.insight/com.zykj.message.UnLoginActivity t131}"
+    },
+    {
+      "app": "选课",
+      "package": "com.zykj.curricula",
+      "launcher": "com.zykj.curricula.MainActivity",
+      "install": "success",
+      "installed_sha256": "afa93bd2d84b948a904dfd3d321eb7268dd44cb73991e74e37a3694a43b95625",
+      "launch": "Starting: Intent { cmp=com.zykj.curricula/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity\nTotalTime: 254\nWaitTime: 258\nComplete",
+      "process_alive": true,
+      "foreground": "mResumedActivity: ActivityRecord{65efca4 u0 com.zykj.curricula/com.zykj.message.UnLoginActivity t132}"
+    },
+    {
+      "app": "错题本",
+      "package": "com.zykj.mistake",
+      "launcher": "com.zykj.mistake.activity.MainActivity",
+      "install": "success",
+      "installed_sha256": "48b2cb0c2a64a3bd69e5ac8f286badc8ba077be426e9359f2b440b449189d4ed",
+      "launch": "Starting: Intent { cmp=com.zykj.mistake/.activity.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: com.zykj.mistake/.activity.MainActivity\nTotalTime: 625\nWaitTime: 626\nComplete",
+      "process_alive": true,
+      "foreground": "mResumedActivity: ActivityRecord{ae2ec76 u0 com.zykj.mistake/com.zykj.message.UnLoginActivity t133}"
+    },
+    {
+      "app": "问卷调查",
+      "package": "com.zykj.satisfaction",
+      "launcher": "com.zykj.satisfaction.MainActivity",
+      "install": "success",
+      "installed_sha256": "1c29dea108fb0bd67b0d8384cceaab8877554c1f89e568b85fe93b3abfcd220f",
+      "launch": "Starting: Intent { cmp=com.zykj.satisfaction/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity\nTotalTime: 260\nWaitTime: 265\nComplete",
+      "process_alive": true,
+      "foreground": "mResumedActivity: ActivityRecord{1d4be7b u0 com.zykj.satisfaction/com.zykj.message.UnLoginActivity t134}"
+    },
+    {
+      "app": "随身答",
+      "package": "com.zykj.student.dialogue",
+      "launcher": "com.zykj.student.dialogue.ui.MainActivity",
+      "install": "success",
+      "installed_sha256": "98d512ee0ac870e7e54cea4b72a172c22ce2126fe27af4cda67e9297ce00ca7c",
+      "launch": "Starting: Intent { cmp=com.zykj.student.dialogue/.ui.MainActivity }\nStatus: ok\nLaunchState: WARM\nActivity: com.zykj.student.dialogue/com.zykj.message.UnLoginActivity\nTotalTime: 272\nWaitTime: 706\nComplete",
+      "process_alive": true,
+      "foreground": "mResumedActivity: ActivityRecord{127a3ec u0 com.zykj.student.dialogue/com.zykj.message.UnLoginActivity t136}"
+    },
+    {
+      "app": "领创平板管理-2025.9.1",
+      "package": "com.android.launcher3",
+      "launcher": "com.android.launcher3.LauncherNew",
+      "install": "success",
+      "installed_sha256": "526c031a245d0f1f58a22daa3fca81d2b7f3ddb4000e79fd22fa679e1c2fc7aa",
+      "launch": "Starting: Intent { cmp=com.android.launcher3/.LauncherNew }\nStatus: timeout\nLaunchState: UNKNOWN (-1)\nActivity: com.android.launcher3/.LauncherNew\nWaitTime: 10034\nComplete",
+      "process_alive": true,
+      "foreground": "mResumedActivity: ActivityRecord{bdc4d99 u0 com.android.launcher3/.LauncherNew t2}"
+    }
+  ]
+}

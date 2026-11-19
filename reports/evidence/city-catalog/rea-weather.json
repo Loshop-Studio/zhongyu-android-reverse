@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "中育管控桌面.apk",
+    "digest": {
+      "sha256": "e0b46dee805fe516503ac7d2b8e1b7d585de43063a012f8056e3bbd1018a9949"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/中育管控桌面.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "i4.o",
+    "method": {
+      "name": "b",
+      "reported_signature": "b(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "()V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void b() {\n        try {\n            InputStream inputStreamOpen = App.INSTANCE.a().getAssets().open(\"China-City-List-latest.csv\");\n            Intrinsics.checkNotNullExpressionValue(inputStreamOpen, \"open(...)\");\n            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStreamOpen));\n            while (true) {\n                String line = bufferedReader.readLine();\n                if (line == null) {\n                    bufferedReader.close();\n                    return;\n                }\n                Intrinsics.checkNotNull(line);\n                List listSplit$default = StringsKt.split$default((CharSequence) line, new String[]{\",\"}, false, 0, 6, (Object) null);\n                if (listSplit$default.size() > 9) {\n                    String str = (String) listSplit$default.get(9);\n                    if (StringsKt.contains$default((CharSequence) str, (CharSequence) listSplit$default.get(2), false, 2, (Object) null)) {\n                        f7624c.put(str, listSplit$default.get(0));\n                    }\n                }\n            }\n        } catch (Exception e6) {\n            e6.printStackTrace();\n        }\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_44ffd211361e1030f41c45e2d8e7c4f4cf901104bc65dd10b878306ce49c7996"
+}

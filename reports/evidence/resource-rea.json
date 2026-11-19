@@ -1,0 +1,22 @@
+{
+  "source": {
+    "evidence_id": "ev_7a2474013be9f5ef663ad785ea2d105e1bc8d51ac83417aa6cfde016bdcb40eb",
+    "operation": "decode_android_resources",
+    "apk_sha256": "02326056adda51ed9dcae1fc6cc81d2817e6942899fd8b5c97e0808cae991edc",
+    "locale": "en-rUS",
+    "string": {
+      "name": "app_name",
+      "value": "Satisfaction"
+    }
+  },
+  "edited": {
+    "evidence_id": "ev_65706c3d7aab24bc8422cd27ffa7ceadffa4a229b880ec72f2fe40294201d194",
+    "operation": "decode_android_resources",
+    "apk_sha256": "db57bac14cf88ac9a6950a5e257755424afc1f9c4ce3eca066690654e0582189",
+    "locale": "en-rUS",
+    "string": {
+      "name": "app_name",
+      "value": "Local build 09"
+    }
+  }
+}

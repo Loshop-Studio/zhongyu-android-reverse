@@ -1,0 +1,1473 @@
+{
+  "tables": {
+    "Dependency": [
+      {
+        "table": "Dependency",
+        "columns": [
+          {
+            "name": "work_spec_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "prerequisite_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 2,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [
+          {
+            "group": 0,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "prerequisite_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          },
+          {
+            "group": 1,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "work_spec_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          }
+        ],
+        "sql": "CREATE TABLE IF NOT EXISTS `Dependency` (`work_spec_id` TEXT NOT NULL, `prerequisite_id` TEXT NOT NULL, PRIMARY KEY(`work_spec_id`, `prerequisite_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE , FOREIGN KEY(`prerequisite_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$a"
+        ]
+      }
+    ],
+    "Preference": [
+      {
+        "table": "Preference",
+        "columns": [
+          {
+            "name": "key",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "long_value",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `Preference` (`key` TEXT NOT NULL, `long_value` INTEGER, PRIMARY KEY(`key`))",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$a",
+          "androidx/work/impl/a$h"
+        ]
+      }
+    ],
+    "SystemIdInfo": [
+      {
+        "table": "SystemIdInfo",
+        "columns": [
+          {
+            "name": "work_spec_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "system_id",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [
+          {
+            "group": 0,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "work_spec_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          }
+        ],
+        "sql": "CREATE TABLE IF NOT EXISTS `SystemIdInfo` (`work_spec_id` TEXT NOT NULL, `system_id` INTEGER NOT NULL, PRIMARY KEY(`work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$a",
+          "androidx/work/impl/a$a"
+        ]
+      }
+    ],
+    "WorkName": [
+      {
+        "table": "WorkName",
+        "columns": [
+          {
+            "name": "name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "work_spec_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 2,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [
+          {
+            "group": 0,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "work_spec_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          }
+        ],
+        "sql": "CREATE TABLE IF NOT EXISTS `WorkName` (`name` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`name`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$a"
+        ]
+      }
+    ],
+    "WorkProgress": [
+      {
+        "table": "WorkProgress",
+        "columns": [
+          {
+            "name": "work_spec_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "progress",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [
+          {
+            "group": 0,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "work_spec_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          }
+        ],
+        "sql": "CREATE TABLE IF NOT EXISTS `WorkProgress` (`work_spec_id` TEXT NOT NULL, `progress` BLOB NOT NULL, PRIMARY KEY(`work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$a",
+          "androidx/work/impl/a$d"
+        ]
+      }
+    ],
+    "WorkSpec": [
+      {
+        "table": "WorkSpec",
+        "columns": [
+          {
+            "name": "id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "state",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "worker_class_name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input_merger_class_name",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "output",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "initial_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "interval_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "flex_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_attempt_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_delay_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "period_start_time",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "minimum_retention_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "schedule_requested_at",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_in_foreground",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "required_network_type",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_charging",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_device_idle",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_battery_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_storage_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_content_update_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_max_content_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "content_uri_triggers",
+            "type": "BLOB",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `WorkSpec` (`id` TEXT NOT NULL, `state` INTEGER NOT NULL, `worker_class_name` TEXT NOT NULL, `input_merger_class_name` TEXT, `input` BLOB NOT NULL, `output` BLOB NOT NULL, `initial_delay` INTEGER NOT NULL, `interval_duration` INTEGER NOT NULL, `flex_duration` INTEGER NOT NULL, `run_attempt_count` INTEGER NOT NULL, `backoff_policy` INTEGER NOT NULL, `backoff_delay_duration` INTEGER NOT NULL, `period_start_time` INTEGER NOT NULL, `minimum_retention_duration` INTEGER NOT NULL, `schedule_requested_at` INTEGER NOT NULL, `run_in_foreground` INTEGER NOT NULL, `required_network_type` INTEGER, `requires_charging` INTEGER NOT NULL, `requires_device_idle` INTEGER NOT NULL, `requires_battery_not_low` INTEGER NOT NULL, `requires_storage_not_low` INTEGER NOT NULL, `trigger_content_update_delay` INTEGER NOT NULL, `trigger_max_content_delay` INTEGER NOT NULL, `content_uri_triggers` BLOB, PRIMARY KEY(`id`))",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$a"
+        ]
+      }
+    ],
+    "WorkTag": [
+      {
+        "table": "WorkTag",
+        "columns": [
+          {
+            "name": "tag",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "work_spec_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 2,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [
+          {
+            "group": 0,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "work_spec_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          }
+        ],
+        "sql": "CREATE TABLE IF NOT EXISTS `WorkTag` (`tag` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`tag`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$a"
+        ]
+      }
+    ],
+    "__er": [
+      {
+        "table": "__er",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "__i",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__a",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__t",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__av",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__vc",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table if not exists __er(id INTEGER primary key autoincrement, __i TEXT, __a TEXT, __t INTEGER, __av TEXT, __vc TEXT)",
+        "owners": [
+          "com/umeng/analytics/pro/e"
+        ]
+      }
+    ],
+    "__et": [
+      {
+        "table": "__et",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "__i",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__e",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__s",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__t",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__av",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__vc",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table if not exists __et(id INTEGER primary key autoincrement, __i TEXT, __e TEXT, __s TEXT, __t INTEGER, __av TEXT, __vc TEXT)",
+        "owners": [
+          "com/umeng/analytics/pro/e"
+        ]
+      }
+    ],
+    "__et_p": [
+      {
+        "table": "__et_p",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "__i",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__e",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__s",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__t",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__pn",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__av",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__vc",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table if not exists __et_p(id INTEGER primary key autoincrement, __i TEXT, __e TEXT, __s TEXT, __t INTEGER, __pn TEXT, __av TEXT, __vc TEXT)",
+        "owners": [
+          "com/umeng/analytics/process/b"
+        ]
+      }
+    ],
+    "__is": [
+      {
+        "table": "__is",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "__ii",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__e",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__sp",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__pp",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__av",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__vc",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table if not exists __is(id INTEGER primary key autoincrement, __ii TEXT unique, __e TEXT, __sp TEXT, __pp TEXT, __av TEXT, __vc TEXT)",
+        "owners": [
+          "com/umeng/analytics/pro/e"
+        ]
+      }
+    ],
+    "__sd": [
+      {
+        "table": "__sd",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "__ii",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__a",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__b",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__c",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__d",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__e",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__f",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__g",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__sp",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__pp",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__av",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__vc",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table if not exists __sd(id INTEGER primary key autoincrement, __ii TEXT unique, __a TEXT, __b TEXT, __c TEXT, __d TEXT, __e TEXT, __f TEXT, __g TEXT, __sp TEXT, __pp TEXT, __av TEXT, __vc TEXT)",
+        "owners": [
+          "com/umeng/analytics/pro/e"
+        ]
+      }
+    ],
+    "accs_message": [
+      {
+        "table": "accs_message",
+        "columns": [
+          {
+            "name": "id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "state",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "message",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "create_time",
+            "type": "date",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table accs_message(id text UNIQUE not null,state text,message text,create_time date);",
+        "owners": [
+          "org/android/agoo/message/MessageService$a"
+        ]
+      }
+    ],
+    "download": [
+      {
+        "table": "download",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "downloadUrl",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "localPath",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "totalSize",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "downloadSize",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "verifyCode",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "flag",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `download` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `downloadUrl` TEXT NOT NULL, `localPath` TEXT NOT NULL, `totalSize` INTEGER NOT NULL, `downloadSize` INTEGER NOT NULL, `verifyCode` TEXT, `flag` INTEGER NOT NULL)",
+        "owners": [
+          "com/zykj/download/data/AppDatabase_Impl$a"
+        ]
+      }
+    ],
+    "message": [
+      {
+        "table": "message",
+        "columns": [
+          {
+            "name": "id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "state",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "body_code",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "report",
+            "type": "long",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "target_time",
+            "type": "long",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "interval",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "type",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "message",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "notify",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "create_time",
+            "type": "date",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "task_id",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table message(id text UNIQUE not null,state integer,body_code integer,report long,target_time long,interval integer,type text,message text,notify integer,create_time date,task_id text);",
+        "owners": [
+          "org/android/agoo/message/MessageService$a"
+        ]
+      }
+    ],
+    "part_info": [
+      {
+        "table": "part_info",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "upload_id",
+            "type": "VARCHAR(255)",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "num",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "crc64",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "size",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "etag",
+            "type": "VARCHAR(255)",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table if not exists part_info(id INTEGER primary key,upload_id VARCHAR(255),num INTEGER,crc64 INTEGER,size INTEGER,etag VARCHAR(255))",
+        "owners": [
+          "com/alibaba/sdk/android/oss/common/OSSSQLiteHelper"
+        ]
+      }
+    ],
+    "previewInfo": [
+      {
+        "table": "previewInfo",
+        "columns": [
+          {
+            "name": "path",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "pageIndex",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "pageOffset",
+            "type": "REAL",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `previewInfo` (`path` TEXT NOT NULL, `pageIndex` INTEGER NOT NULL, `pageOffset` REAL NOT NULL, PRIMARY KEY(`path`))",
+        "owners": [
+          "com/zykj/subscriber/dao/PDFPreviewDatabase_Impl$a"
+        ]
+      }
+    ],
+    "room_master_table": [
+      {
+        "table": "room_master_table",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "identity_hash",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+        "owners": [
+          "androidx/room/i0",
+          "androidx/work/impl/WorkDatabase_Impl$a",
+          "com/zykj/download/data/AppDatabase_Impl$a",
+          "com/zykj/subscriber/dao/PDFPreviewDatabase_Impl$a"
+        ]
+      }
+    ],
+    "stf": [
+      {
+        "table": "stf",
+        "columns": [
+          {
+            "name": "_id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "_tp",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_hd",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_bd",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_ts",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_uuid",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_re1",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_re2",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS stf(_id INTEGER PRIMARY KEY AUTOINCREMENT, _tp TEXT, _hd TEXT, _bd TEXT, _ts TEXT, _uuid TEXT, _re1 TEXT, _re2 TEXT)",
+        "owners": [
+          "com/umeng/analytics/pro/ak"
+        ]
+      }
+    ],
+    "traffic": [
+      {
+        "table": "traffic",
+        "columns": [
+          {
+            "name": "_id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "date",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "host",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "serviceid",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "bid",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "isbackground",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "size",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS traffic(_id INTEGER PRIMARY KEY AUTOINCREMENT, date TEXT, host TEXT,serviceid TEXT, bid TEXT, isbackground TEXT, size TEXT)",
+        "owners": [
+          "com/taobao/accs/a/a"
+        ]
+      }
+    ],
+    "upload": [
+      {
+        "table": "upload",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `upload` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)",
+        "owners": [
+          "com/zykj/download/data/AppDatabase_Impl$a"
+        ]
+      }
+    ]
+  },
+  "indexes": [
+    {
+      "index": "index_Dependency_work_spec_id",
+      "table": "Dependency",
+      "keys": [
+        {
+          "column": "work_spec_id",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_Dependency_work_spec_id` ON `Dependency` (`work_spec_id`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_Impl$a"
+      ]
+    },
+    {
+      "index": "index_Dependency_prerequisite_id",
+      "table": "Dependency",
+      "keys": [
+        {
+          "column": "prerequisite_id",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_Dependency_prerequisite_id` ON `Dependency` (`prerequisite_id`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_Impl$a"
+      ]
+    },
+    {
+      "index": "index_WorkSpec_schedule_requested_at",
+      "table": "WorkSpec",
+      "keys": [
+        {
+          "column": "schedule_requested_at",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_WorkSpec_schedule_requested_at` ON `WorkSpec` (`schedule_requested_at`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_Impl$a"
+      ]
+    },
+    {
+      "index": "index_WorkSpec_period_start_time",
+      "table": "WorkSpec",
+      "keys": [
+        {
+          "column": "period_start_time",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_WorkSpec_period_start_time` ON `WorkSpec` (`period_start_time`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_Impl$a"
+      ]
+    },
+    {
+      "index": "index_WorkTag_work_spec_id",
+      "table": "WorkTag",
+      "keys": [
+        {
+          "column": "work_spec_id",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_WorkTag_work_spec_id` ON `WorkTag` (`work_spec_id`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_Impl$a"
+      ]
+    },
+    {
+      "index": "index_WorkName_work_spec_id",
+      "table": "WorkName",
+      "keys": [
+        {
+          "column": "work_spec_id",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_WorkName_work_spec_id` ON `WorkName` (`work_spec_id`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_Impl$a"
+      ]
+    },
+    {
+      "index": "index_WorkSpec_period_start_time",
+      "table": "WorkSpec",
+      "keys": [
+        {
+          "column": "period_start_time",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_WorkSpec_period_start_time` ON `workspec` (`period_start_time`)",
+      "owners": [
+        "androidx/work/impl/a$e"
+      ]
+    },
+    {
+      "index": "id_index",
+      "table": "message",
+      "keys": [
+        {
+          "column": "id",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX id_index ON message(id)",
+      "owners": [
+        "org/android/agoo/message/MessageService$a"
+      ]
+    },
+    {
+      "index": "body_code_index",
+      "table": "message",
+      "keys": [
+        {
+          "column": "body_code",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX body_code_index ON message(body_code)",
+      "owners": [
+        "org/android/agoo/message/MessageService$a"
+      ]
+    }
+  ],
+  "unresolved": []
+}

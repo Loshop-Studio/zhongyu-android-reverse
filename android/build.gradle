@@ -1,0 +1,10 @@
+plugins { id 'base' }
+subprojects {
+    tasks.register('assembleDebug', Exec) {
+        workingDir rootProject.projectDir.parentFile
+        commandLine 'bash', 'tools/build-android', project.name
+    }
+}
+tasks.register('assembleDebug') {
+    dependsOn subprojects.collect { it.tasks.named('assembleDebug') }
+}

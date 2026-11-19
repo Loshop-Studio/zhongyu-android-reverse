@@ -1,0 +1,635 @@
+[
+  {
+    "app": "在线专栏",
+    "family": "download-room",
+    "apk_sha256": "b571a8d19d808d3200b26689036145a1d0924c0170db035a2233725030b8ccce",
+    "database_sha256": "ae79eebe4386ce322b36c16fcad19bca05683107aa853a219e24dd6d5ea19501",
+    "phases": [
+      {
+        "phase": "write",
+        "pid": 11847,
+        "entity": "v1.b",
+        "dao": "v1.d",
+        "initial_partial_bytes": 4294967303,
+        "insert_ids": [
+          1,
+          2
+        ],
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      },
+      {
+        "phase": "reopen",
+        "pid": 11895,
+        "entity": "v1.b",
+        "dao": "v1.d",
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      },
+      {
+        "phase": "files",
+        "pid": 11941,
+        "entity": "v1.b",
+        "dao": "v1.d",
+        "local_file_checks": {
+          "payload_bytes": 24,
+          "base64_md5": "bm7k3ZmMHfi5J06SGkWzKw==",
+          "no_task_creates_id": 3,
+          "existing_partial_stored_bytes": 13,
+          "changed_same_size_file_retained_by_lookup": true,
+          "changed_file_removed_by_checkRecord": true,
+          "missing_partial_resets_sizes": true,
+          "missing_complete_resets_flag": true,
+          "reset_keeps_checksum": true
+        },
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      }
+    ],
+    "decoded": {
+      "user_version": 1,
+      "room_identity": "2eb05d347b056192efce82d4a1a31864",
+      "download": [
+        {
+          "id": 1,
+          "downloadUrl": "https://example.invalid/lesson.pdf",
+          "localPath": "/offline/第一页.pdf",
+          "totalSize": 9007199254740993,
+          "downloadSize": 9007199254740993,
+          "verifyCode": "local-check",
+          "flag": 1,
+          "flagName": "DOWNLOAD_SUCCESS"
+        },
+        {
+          "id": 2,
+          "downloadUrl": "https://example.invalid/lesson.pdf",
+          "localPath": "/offline/copy.pdf",
+          "totalSize": 123456789012,
+          "downloadSize": 4294967303,
+          "verifyCode": null,
+          "flag": 0,
+          "flagName": "DOWNLOADING"
+        }
+      ],
+      "upload_ids": []
+    }
+  },
+  {
+    "app": "中育管控桌面",
+    "family": "download-room",
+    "apk_sha256": "e0b46dee805fe516503ac7d2b8e1b7d585de43063a012f8056e3bbd1018a9949",
+    "database_sha256": "ae79eebe4386ce322b36c16fcad19bca05683107aa853a219e24dd6d5ea19501",
+    "phases": [
+      {
+        "phase": "write",
+        "pid": 12002,
+        "entity": "b3.b",
+        "dao": "b3.d",
+        "initial_partial_bytes": 4294967303,
+        "insert_ids": [
+          1,
+          2
+        ],
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      },
+      {
+        "phase": "reopen",
+        "pid": 12049,
+        "entity": "b3.b",
+        "dao": "b3.d",
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      },
+      {
+        "phase": "files",
+        "pid": 12095,
+        "entity": "b3.b",
+        "dao": "b3.d",
+        "local_file_checks": {
+          "payload_bytes": 24,
+          "base64_md5": "bm7k3ZmMHfi5J06SGkWzKw==",
+          "no_task_creates_id": 3,
+          "existing_partial_stored_bytes": 13,
+          "changed_same_size_file_retained_by_lookup": true,
+          "changed_file_removed_by_checkRecord": true,
+          "missing_partial_resets_sizes": true,
+          "missing_complete_resets_flag": true,
+          "reset_keeps_checksum": true
+        },
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      }
+    ],
+    "decoded": {
+      "user_version": 1,
+      "room_identity": "2eb05d347b056192efce82d4a1a31864",
+      "download": [
+        {
+          "id": 1,
+          "downloadUrl": "https://example.invalid/lesson.pdf",
+          "localPath": "/offline/第一页.pdf",
+          "totalSize": 9007199254740993,
+          "downloadSize": 9007199254740993,
+          "verifyCode": "local-check",
+          "flag": 1,
+          "flagName": "DOWNLOAD_SUCCESS"
+        },
+        {
+          "id": 2,
+          "downloadUrl": "https://example.invalid/lesson.pdf",
+          "localPath": "/offline/copy.pdf",
+          "totalSize": 123456789012,
+          "downloadSize": 4294967303,
+          "verifyCode": null,
+          "flag": 0,
+          "flagName": "DOWNLOADING"
+        }
+      ],
+      "upload_ids": []
+    }
+  },
+  {
+    "app": "优课畅学",
+    "family": "download-room",
+    "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+    "database_sha256": "ae79eebe4386ce322b36c16fcad19bca05683107aa853a219e24dd6d5ea19501",
+    "phases": [
+      {
+        "phase": "write",
+        "pid": 12157,
+        "entity": "com.zykj.download.data.DownloadEntity",
+        "dao": "f3.c",
+        "initial_partial_bytes": 4294967303,
+        "insert_ids": [
+          1,
+          2
+        ],
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      },
+      {
+        "phase": "reopen",
+        "pid": 12204,
+        "entity": "com.zykj.download.data.DownloadEntity",
+        "dao": "f3.c",
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      },
+      {
+        "phase": "files",
+        "pid": 12250,
+        "entity": "com.zykj.download.data.DownloadEntity",
+        "dao": "f3.c",
+        "local_file_checks": {
+          "payload_bytes": 24,
+          "base64_md5": "bm7k3ZmMHfi5J06SGkWzKw==",
+          "no_task_creates_id": 3,
+          "existing_partial_stored_bytes": 13,
+          "changed_same_size_file_retained_by_lookup": true,
+          "changed_file_removed_by_checkRecord": true,
+          "missing_partial_resets_sizes": true,
+          "missing_complete_resets_flag": true,
+          "reset_keeps_checksum": true
+        },
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      }
+    ],
+    "decoded": {
+      "user_version": 1,
+      "room_identity": "2eb05d347b056192efce82d4a1a31864",
+      "download": [
+        {
+          "id": 1,
+          "downloadUrl": "https://example.invalid/lesson.pdf",
+          "localPath": "/offline/第一页.pdf",
+          "totalSize": 9007199254740993,
+          "downloadSize": 9007199254740993,
+          "verifyCode": "local-check",
+          "flag": 1,
+          "flagName": "DOWNLOAD_SUCCESS"
+        },
+        {
+          "id": 2,
+          "downloadUrl": "https://example.invalid/lesson.pdf",
+          "localPath": "/offline/copy.pdf",
+          "totalSize": 123456789012,
+          "downloadSize": 4294967303,
+          "verifyCode": null,
+          "flag": 0,
+          "flagName": "DOWNLOADING"
+        }
+      ],
+      "upload_ids": []
+    }
+  },
+  {
+    "app": "随身答",
+    "family": "download-room",
+    "apk_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+    "database_sha256": "ae79eebe4386ce322b36c16fcad19bca05683107aa853a219e24dd6d5ea19501",
+    "phases": [
+      {
+        "phase": "write",
+        "pid": 12309,
+        "entity": "w5.b",
+        "dao": "w5.d",
+        "initial_partial_bytes": 4294967303,
+        "insert_ids": [
+          1,
+          2
+        ],
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      },
+      {
+        "phase": "reopen",
+        "pid": 12356,
+        "entity": "w5.b",
+        "dao": "w5.d",
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      },
+      {
+        "phase": "files",
+        "pid": 12402,
+        "entity": "w5.b",
+        "dao": "w5.d",
+        "local_file_checks": {
+          "payload_bytes": 24,
+          "base64_md5": "bm7k3ZmMHfi5J06SGkWzKw==",
+          "no_task_creates_id": 3,
+          "existing_partial_stored_bytes": 13,
+          "changed_same_size_file_retained_by_lookup": true,
+          "changed_file_removed_by_checkRecord": true,
+          "missing_partial_resets_sizes": true,
+          "missing_complete_resets_flag": true,
+          "reset_keeps_checksum": true
+        },
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      }
+    ],
+    "decoded": {
+      "user_version": 1,
+      "room_identity": "2eb05d347b056192efce82d4a1a31864",
+      "download": [
+        {
+          "id": 1,
+          "downloadUrl": "https://example.invalid/lesson.pdf",
+          "localPath": "/offline/第一页.pdf",
+          "totalSize": 9007199254740993,
+          "downloadSize": 9007199254740993,
+          "verifyCode": "local-check",
+          "flag": 1,
+          "flagName": "DOWNLOAD_SUCCESS"
+        },
+        {
+          "id": 2,
+          "downloadUrl": "https://example.invalid/lesson.pdf",
+          "localPath": "/offline/copy.pdf",
+          "totalSize": 123456789012,
+          "downloadSize": 4294967303,
+          "verifyCode": null,
+          "flag": 0,
+          "flagName": "DOWNLOADING"
+        }
+      ],
+      "upload_ids": []
+    }
+  },
+  {
+    "app": "中育云笔记",
+    "family": "download-room",
+    "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+    "database_sha256": "ae79eebe4386ce322b36c16fcad19bca05683107aa853a219e24dd6d5ea19501",
+    "phases": [
+      {
+        "phase": "write",
+        "pid": 12462,
+        "entity": "xa.b",
+        "dao": "xa.d",
+        "initial_partial_bytes": 4294967303,
+        "insert_ids": [
+          1,
+          2
+        ],
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      },
+      {
+        "phase": "reopen",
+        "pid": 12509,
+        "entity": "xa.b",
+        "dao": "xa.d",
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      },
+      {
+        "phase": "files",
+        "pid": 12555,
+        "entity": "xa.b",
+        "dao": "xa.d",
+        "local_file_checks": {
+          "payload_bytes": 24,
+          "base64_md5": "bm7k3ZmMHfi5J06SGkWzKw==",
+          "no_task_creates_id": 3,
+          "existing_partial_stored_bytes": 13,
+          "changed_same_size_file_retained_by_lookup": true,
+          "changed_file_removed_by_checkRecord": true,
+          "missing_partial_resets_sizes": true,
+          "missing_complete_resets_flag": true,
+          "reset_keeps_checksum": true
+        },
+        "complete_and_partial_rows_verified": true,
+        "combined_lookup_verified": true
+      }
+    ],
+    "decoded": {
+      "user_version": 1,
+      "room_identity": "2eb05d347b056192efce82d4a1a31864",
+      "download": [
+        {
+          "id": 1,
+          "downloadUrl": "https://example.invalid/lesson.pdf",
+          "localPath": "/offline/第一页.pdf",
+          "totalSize": 9007199254740993,
+          "downloadSize": 9007199254740993,
+          "verifyCode": "local-check",
+          "flag": 1,
+          "flagName": "DOWNLOAD_SUCCESS"
+        },
+        {
+          "id": 2,
+          "downloadUrl": "https://example.invalid/lesson.pdf",
+          "localPath": "/offline/copy.pdf",
+          "totalSize": 123456789012,
+          "downloadSize": 4294967303,
+          "verifyCode": null,
+          "flag": 0,
+          "flagName": "DOWNLOADING"
+        }
+      ],
+      "upload_ids": []
+    }
+  },
+  {
+    "app": "新测评",
+    "family": "okdownload",
+    "apk_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+    "database_sha256": "860476265ed8583e33a5ef6daaff4e194c82821146b85fe5bd57b6576f7304a6",
+    "phases": [
+      {
+        "phase": "write",
+        "stored_second_block_start": 4294967400,
+        "native_second_block_next_byte": 179,
+        "native_total_length": 244,
+        "downloaded_bytes": 106,
+        "chunked_bytes": 13,
+        "response_filename": "final.pdf",
+        "dirty_id": 72,
+        "response_filename_table_after_1_to_2": true,
+        "response_filename_table_after_1_to_3": false,
+        "pid": 12617
+      },
+      {
+        "phase": "reopen",
+        "stored_second_block_start": 4294967400,
+        "native_second_block_next_byte": 179,
+        "native_total_length": 244,
+        "downloaded_bytes": 106,
+        "chunked_bytes": 13,
+        "response_filename": "final.pdf",
+        "dirty_id": 72,
+        "response_filename_table_after_1_to_2": true,
+        "response_filename_table_after_1_to_3": false,
+        "pid": 12660
+      }
+    ],
+    "decoded": {
+      "user_version": 3,
+      "breakpoint": [
+        {
+          "id": 71,
+          "url": "https://example.invalid/class/diagram",
+          "etag": "local-etag",
+          "parent_path": "/local/study",
+          "filename": "diagram.pdf",
+          "task_only_parent_path": 0,
+          "chunked": 0
+        },
+        {
+          "id": 72,
+          "url": "https://example.invalid/class/diagram/stream",
+          "etag": null,
+          "parent_path": "/local/study",
+          "filename": null,
+          "task_only_parent_path": 1,
+          "chunked": 1
+        }
+      ],
+      "block": [
+        {
+          "id": 1,
+          "breakpoint_id": 71,
+          "block_index": 0,
+          "start_offset": 0,
+          "content_length": 4294967400,
+          "current_offset": 31,
+          "next_file_offset": 31
+        },
+        {
+          "id": 2,
+          "breakpoint_id": 71,
+          "block_index": 1,
+          "start_offset": 4294967400,
+          "content_length": 140,
+          "current_offset": 75,
+          "next_file_offset": 4294967475
+        },
+        {
+          "id": 3,
+          "breakpoint_id": 72,
+          "block_index": 0,
+          "start_offset": 0,
+          "content_length": -1,
+          "current_offset": 13,
+          "next_file_offset": 13
+        }
+      ],
+      "response_filenames": [
+        {
+          "url": "https://example.invalid/class/diagram/stream",
+          "filename": "final.pdf"
+        }
+      ],
+      "dirty_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "app": "随身答",
+    "family": "okdownload",
+    "apk_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+    "database_sha256": "860476265ed8583e33a5ef6daaff4e194c82821146b85fe5bd57b6576f7304a6",
+    "phases": [
+      {
+        "phase": "write",
+        "stored_second_block_start": 4294967400,
+        "native_second_block_next_byte": 179,
+        "native_total_length": 244,
+        "downloaded_bytes": 106,
+        "chunked_bytes": 13,
+        "response_filename": "final.pdf",
+        "dirty_id": 72,
+        "response_filename_table_after_1_to_2": true,
+        "response_filename_table_after_1_to_3": false,
+        "pid": 12719
+      },
+      {
+        "phase": "reopen",
+        "stored_second_block_start": 4294967400,
+        "native_second_block_next_byte": 179,
+        "native_total_length": 244,
+        "downloaded_bytes": 106,
+        "chunked_bytes": 13,
+        "response_filename": "final.pdf",
+        "dirty_id": 72,
+        "response_filename_table_after_1_to_2": true,
+        "response_filename_table_after_1_to_3": false,
+        "pid": 12762
+      }
+    ],
+    "decoded": {
+      "user_version": 3,
+      "breakpoint": [
+        {
+          "id": 71,
+          "url": "https://example.invalid/class/diagram",
+          "etag": "local-etag",
+          "parent_path": "/local/study",
+          "filename": "diagram.pdf",
+          "task_only_parent_path": 0,
+          "chunked": 0
+        },
+        {
+          "id": 72,
+          "url": "https://example.invalid/class/diagram/stream",
+          "etag": null,
+          "parent_path": "/local/study",
+          "filename": null,
+          "task_only_parent_path": 1,
+          "chunked": 1
+        }
+      ],
+      "block": [
+        {
+          "id": 1,
+          "breakpoint_id": 71,
+          "block_index": 0,
+          "start_offset": 0,
+          "content_length": 4294967400,
+          "current_offset": 31,
+          "next_file_offset": 31
+        },
+        {
+          "id": 2,
+          "breakpoint_id": 71,
+          "block_index": 1,
+          "start_offset": 4294967400,
+          "content_length": 140,
+          "current_offset": 75,
+          "next_file_offset": 4294967475
+        },
+        {
+          "id": 3,
+          "breakpoint_id": 72,
+          "block_index": 0,
+          "start_offset": 0,
+          "content_length": -1,
+          "current_offset": 13,
+          "next_file_offset": 13
+        }
+      ],
+      "response_filenames": [
+        {
+          "url": "https://example.invalid/class/diagram/stream",
+          "filename": "final.pdf"
+        }
+      ],
+      "dirty_ids": [
+        72
+      ]
+    }
+  },
+  {
+    "app": "领创平板管理-2025.9.1",
+    "family": "filedownloader",
+    "apk_sha256": "cd7482fdff9ebcb75b775cd846e25700f9d6f1c5adee49b06cd23f62d7252fef",
+    "database_sha256": "cf7a5386cfd9567b1228127441bcba51218355341d05d08ef66ab561b087beee",
+    "phases": [
+      {
+        "phase": "write",
+        "task_sofar": 99,
+        "downloaded_across_connections": 106,
+        "second_connection_current": 4294967475,
+        "upgrade_3_to_4_end_offsets": [
+          0,
+          -1,
+          100
+        ],
+        "pid": 12821
+      },
+      {
+        "phase": "reopen",
+        "task_sofar": 99,
+        "downloaded_across_connections": 106,
+        "second_connection_current": 4294967475,
+        "upgrade_3_to_4_end_offsets": [
+          0,
+          -1,
+          100
+        ],
+        "pid": 12864
+      }
+    ],
+    "decoded": {
+      "user_version": 4,
+      "filedownloader": [
+        {
+          "_id": 71,
+          "url": "https://example.invalid/class/diagram",
+          "path": "/local/study",
+          "status": 3,
+          "sofar": 99,
+          "total": 4294967540,
+          "errMsg": null,
+          "etag": null,
+          "pathAsDirectory": 1,
+          "filename": "diagram.pdf",
+          "connectionCount": 2
+        }
+      ],
+      "connections": [
+        {
+          "id": 71,
+          "connectionIndex": 0,
+          "startOffset": 0,
+          "currentOffset": 31,
+          "endOffset": 4294967399,
+          "downloaded_in_connection": 31
+        },
+        {
+          "id": 71,
+          "connectionIndex": 1,
+          "startOffset": 4294967400,
+          "currentOffset": 4294967475,
+          "endOffset": -1,
+          "downloaded_in_connection": 75
+        }
+      ]
+    }
+  }
+]

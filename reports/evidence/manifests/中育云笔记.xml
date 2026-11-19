@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="11305"
+    android:versionName="1.13.5"
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    package="com.friday.cloudsnote"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="28" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <uses-permission
+        android:name="android.permission.GET_TOP_ACTIVITY_INFO" />
+
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <queries
+        package="com.friday.cloudsnote">
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.MAIN" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.GET_CONTENT" />
+
+            <category
+                android:name="android.intent.category.OPENABLE" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <package
+            android:name="com.huawei.android.pushagent" />
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core" />
+        </intent>
+
+        <package
+            android:name="com.huawei.works" />
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.autofocus" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <permission
+        android:name="com.friday.cloudsnote.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.friday.cloudsnote.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-permission
+        android:name="com.zykj.permission.MESSAGE_SERVICE" />
+
+    <uses-permission
+        android:name="com.zykj.message.USER_INFO" />
+
+    <permission
+        android:label="@ref/0x7f120025"
+        android:name="com.friday.cloudsnote.AGOO"
+        android:protectionLevel="0x2"
+        android:description="@ref/0x7f120024" />
+
+    <uses-permission
+        android:name="com.friday.cloudsnote.AGOO" />
+
+    <permission
+        android:name="com.friday.cloudsnote.permission.PROCESS_PUSH_MSG"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.friday.cloudsnote.permission.PUSH_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.friday.cloudsnote.permission.PUSH_WRITE_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.friday.cloudsnote.permission.PROCESS_PUSH_MSG" />
+
+    <uses-permission
+        android:name="com.friday.cloudsnote.permission.PUSH_PROVIDER" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <permission
+        android:label="@ref/0x7f12001f"
+        android:name="com.friday.cloudsnote.ACCS"
+        android:protectionLevel="0x2"
+        android:description="@ref/0x7f12001e" />
+
+    <uses-permission
+        android:name="com.friday.cloudsnote.ACCS" />
+
+    <application
+        android:theme="@ref/0x7f130012"
+        android:label="@ref/0x7f12002a"
+        android:icon="@ref/0x7f0f0006"
+        android:name="com.friday.cloudsnote.SophixStubApplication"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@ref/0x7f150002"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+
+        <activity
+            android:theme="@ref/0x7f130018"
+            android:name="com.friday.cloudsnote.view.MainActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.friday.paint.view.NoteActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.friday.paint.view.six.NewNoteActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.zykj.view.ui.crop.EzyCropActivity"
+            android:exported="false"
+            android:screenOrientation="0"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.zykj.view.ui.camera.EzyCameraActivity"
+            android:exported="false"
+            android:screenOrientation="0"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.friday.login.view.LoginActivity"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.friday.main.view.DBActivity"
+            android:exported="false"
+            android:screenOrientation="0" />
+
+        <activity
+            android:name="com.friday.main.view.HomeActivity"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <data
+                    android:scheme="zykj"
+                    android:host="zykj"
+                    android:port="18888"
+                    android:path="/test" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.friday.main.view.FolderMoveActivity"
+            android:launchMode="2"
+            android:screenOrientation="0" />
+
+        <activity
+            android:name="com.friday.main.view.SearchActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:name="com.friday.main.view.FullScreenPreviewActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:name="com.friday.document.view.share.ShareSearchActivity"
+            android:exported="false"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:name="com.friday.document.view.TeacherOnlyActivity"
+            android:exported="false"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:name="com.friday.document.view.viewer.ImagePreviewActivity"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:name="com.friday.document.view.viewer.MicroClassPlayActivity"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:name="com.friday.document.view.viewer.TxtEditActivity"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:name="com.friday.document.view.viewer.VideoPlayerActivity"
+            android:screenOrientation="0"
+            android:configChanges="0xfb0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.friday.document.view.viewer.PdfViewerActivity"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x10" />
+
+        <receiver
+            android:name="com.friday.document.receiver.AliMessageReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.alibaba.app.appkey"
+            android:value="30927116" />
+
+        <meta-data
+            android:name="com.alibaba.app.appsecret"
+            android:value="668636b36fafa95e1adfaeedf6eb6154" />
+
+        <service
+            android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <service
+            android:name="com.friday.lecture.service.MyMqttService" />
+
+        <service
+            android:name="com.friday.common.activity.PusherService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.friday.lecture.floatwindow.FloatWindowService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.friday.lecture.floatwindow.StudentDemoService"
+            android:enabled="true" />
+
+        <activity
+            android:theme="@ref/0x7f1302cc"
+            android:name="com.zykj.cloudhelper.activity.NoteManagerActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:name="com.friday.common.camera.CameraActivity"
+            android:launchMode="1"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x7f130005"
+            android:name="com.friday.common.activity.RequestScreenCastActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.friday.cloudsnote.fileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150000" />
+        </provider>
+
+        <provider
+            android:name="com.luck.picture.lib.basic.PictureFileProvider"
+            android:exported="false"
+            android:authorities="com.friday.cloudsnote.luckProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150003" />
+        </provider>
+
+        <service
+            android:name="com.luck.picture.lib.service.ForegroundService"
+            android:enabled="true"
+            android:foregroundServiceType="0x8" />
+
+        <activity
+            android:theme="@ref/0x7f13008c"
+            android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f130198"
+            android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f130005"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f130005"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity"
+            android:exported="false"
+            android:multiprocess="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <provider
+            android:name="com.blankj.utilcode.util.UtilsFileProvider"
+            android:exported="false"
+            android:authorities="com.friday.cloudsnote.utilcode.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150004" />
+        </provider>
+
+        <service
+            android:name="com.blankj.utilcode.util.MessengerUtils$ServerService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.friday.cloudsnote.messenger" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x1030010"
+            android:name="com.xuexiang.xui.widget.imageview.preview.ui.PreviewActivity" />
+
+        <activity
+            android:theme="@ref/0x1030010"
+            android:name="com.xuexiang.xui.widget.imageview.preview.ui.VideoPlayerActivity" />
+
+        <provider
+            android:name="com.canhub.cropper.CropFileProvider"
+            android:exported="false"
+            android:authorities="com.friday.cloudsnote.cropper.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150001" />
+        </provider>
+
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:exported="true" />
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+
+        <service
+            android:name="androidx.work.multiprocess.RemoteWorkManagerService"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.friday.cloudsnote.androidx-startup">
+
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@ref/0x7f050003"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@ref/0x7f050005"
+            android:exported="true"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@ref/0x7f050004"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@ref/0x7f050003"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.taobao.sophix.aidl.DownloadService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.hotfix.action" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.alibaba.sdk.android.push.channel.KeepChannelService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:process="@ref/0x7f120026" />
+
+        <service
+            android:name="com.alibaba.sdk.android.push.huawei.HuaweiPushMessageService"
+            android:exported="false"
+            android:process="@ref/0x7f120027">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f130012"
+            android:name="com.zykj.message.UnInstallActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f130012"
+            android:name="com.zykj.message.UnLoginActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <service
+            android:name="com.zykj.message.KillSelfService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1302d4"
+            android:name="com.zykj.policy.ui.PolicyDetailActivity"
+            android:screenOrientation="0" />
+
+        <service
+            android:name="org.android.agoo.accs.AgooService"
+            android:exported="false"
+            android:process="@ref/0x7f120027">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.aliyun.ams.emas.push.AgooInnerService"
+            android:exported="false"
+            android:process="@ref/0x7f120027">
+
+            <intent-filter>
+
+                <action
+                    android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.aliyun.ams.emas.push.MsgService"
+            android:exported="false"
+            android:process="@ref/0x7f120027">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x1030010"
+            android:name="com.aliyun.ams.emas.push.NotificationActivity"
+            android:exported="false"
+            android:process="@ref/0x7f120027"
+            android:launchMode="3"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+            android:permission="com.friday.cloudsnote.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushReceiver"
+            android:permission="com.friday.cloudsnote.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.msg.NOTIFY_MSG" />
+
+                <action
+                    android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.huawei.hms.support.api.push.PushProvider"
+            android:readPermission="com.friday.cloudsnote.permission.PUSH_PROVIDER"
+            android:writePermission="com.friday.cloudsnote.permission.PUSH_WRITE_PROVIDER"
+            android:exported="true"
+            android:authorities="com.friday.cloudsnote.huawei.push.provider" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:push"
+            android:value="push:6.13.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:push:push"
+            android:value="1" />
+
+        <activity
+            android:name="com.huawei.hms.support.api.push.TransActivity"
+            android:exported="false" />
+
+        <service
+            android:name="com.taobao.accs.ChannelService"
+            android:enabled="false"
+            android:exported="false"
+            android:process="@ref/0x7f120026">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.accs.ChannelService$KernelService"
+            android:enabled="false"
+            android:exported="false"
+            android:process="@ref/0x7f120026" />
+
+        <service
+            android:name="com.taobao.accs.internal.AccsJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="false"
+            android:exported="false"
+            android:process="@ref/0x7f120026" />
+
+        <service
+            android:name="com.taobao.accs.data.MsgDistributeService"
+            android:exported="false"
+            android:process="@ref/0x7f120027">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.accs.EventReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:process="@ref/0x7f120026" />
+
+        <receiver
+            android:name="com.taobao.accs.ServiceReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:process="@ref/0x7f120026">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.huawei.hms.aaid.InitProvider"
+            android:exported="false"
+            android:authorities="com.friday.cloudsnote.aaidinitprovider"
+            android:initOrder="500" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:opendevice"
+            android:value="opendevice:6.13.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:opendevice:push"
+            android:value="1" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:base"
+            android:value="base:6.13.0.301" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:base:hmscore"
+            android:value="1" />
+
+        <meta-data
+            android:name="availableLoaded"
+            android:value="yes" />
+
+        <provider
+            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+            android:exported="false"
+            android:authorities="com.friday.cloudsnote.AGCInitializeProvider" />
+
+        <service
+            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f130134"
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="3"
+            android:configChanges="0x40002f84"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+        </activity>
+
+        <activity
+            android:name="com.huawei.hms.activity.EnableServiceActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+    </application>
+</manifest>

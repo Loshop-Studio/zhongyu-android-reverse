@@ -1,0 +1,108 @@
+[
+  {
+    "app": "领创平板管理-2025.9.1",
+    "cache": "glide",
+    "apk_sha256": "cd7482fdff9ebcb75b775cd846e25700f9d6f1c5adee49b06cd23f62d7252fef",
+    "native": "Original glide cache committed and reopened a synthetic entry.",
+    "decoded": {
+      "format": "libcore.io.DiskLruCache",
+      "journal_version": 1,
+      "app_version": 1,
+      "value_count": 1,
+      "events": {
+        "CLEAN": 1,
+        "DIRTY": 2,
+        "REMOVE": 1,
+        "READ": 1
+      },
+      "incomplete_tail": false,
+      "pending_keys": [],
+      "entries": [
+        {
+          "key": "classroom_image",
+          "slots": [
+            {
+              "name": "classroom_image.0",
+              "recorded_bytes": 37,
+              "file_bytes": 37
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "app": "中育云笔记",
+    "cache": "coil",
+    "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+    "native": "Original coil cache committed and reopened a synthetic entry.",
+    "decoded": {
+      "format": "libcore.io.DiskLruCache",
+      "journal_version": 1,
+      "app_version": 3,
+      "value_count": 2,
+      "events": {
+        "CLEAN": 1,
+        "DIRTY": 2,
+        "REMOVE": 1,
+        "READ": 2
+      },
+      "incomplete_tail": false,
+      "pending_keys": [],
+      "entries": [
+        {
+          "key": "a943377612eee04e8ff7fea26a509a3198b8d524bfd6bc6098c37319715eec23",
+          "slots": [
+            {
+              "name": "a943377612eee04e8ff7fea26a509a3198b8d524bfd6bc6098c37319715eec23.0",
+              "recorded_bytes": 24,
+              "file_bytes": 24
+            },
+            {
+              "name": "a943377612eee04e8ff7fea26a509a3198b8d524bfd6bc6098c37319715eec23.1",
+              "recorded_bytes": 37,
+              "file_bytes": 37
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "app": "在线专栏",
+    "cache": "okhttp",
+    "apk_sha256": "b571a8d19d808d3200b26689036145a1d0924c0170db035a2233725030b8ccce",
+    "native": "Original okhttp cache committed and reopened a synthetic entry.",
+    "decoded": {
+      "format": "libcore.io.DiskLruCache",
+      "journal_version": 1,
+      "app_version": 201105,
+      "value_count": 2,
+      "events": {
+        "CLEAN": 1,
+        "DIRTY": 2,
+        "REMOVE": 1,
+        "READ": 1
+      },
+      "incomplete_tail": false,
+      "pending_keys": [],
+      "entries": [
+        {
+          "key": "classroom_image",
+          "slots": [
+            {
+              "name": "classroom_image.0",
+              "recorded_bytes": 24,
+              "file_bytes": 24
+            },
+            {
+              "name": "classroom_image.1",
+              "recorded_bytes": 37,
+              "file_bytes": 37
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

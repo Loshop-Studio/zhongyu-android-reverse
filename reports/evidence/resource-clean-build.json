@@ -1,0 +1,128 @@
+{
+  "apps": [
+    {
+      "app": "中育云笔记",
+      "matching_payloads": 2846,
+      "layout_loads_annotated": 26,
+      "activities": 26,
+      "freshly_assembled_dex": {
+        "classes.dex": "133cfae974c484ac9ffc69701a37109f062c30d9dcefb38ef00dd832b1b8b80c",
+        "classes2.dex": "1946772942bc29e9864bdd7808a617632908134ea39b4736c31f3fe242272814",
+        "classes3.dex": "f24f277f3b1b3c3ff42a07c14cf7c2baf6802cee211768eee2dffced3b1e7a3f",
+        "classes4.dex": "1e006d815ac78840f059f65ef705176dec94a3ed988898a57109b182c95a1fd3",
+        "classes5.dex": "0c82b9e7ec0880d2d4d973c3e523d2a6aab52c46b3c55c23d92b223596a5cebc",
+        "classes6.dex": "ed4d64f28d503a04201a3027c395f311b80d391342af42776f388370839014eb"
+      }
+    },
+    {
+      "app": "中育管控桌面",
+      "matching_payloads": 1786,
+      "layout_loads_annotated": 9,
+      "activities": 9,
+      "freshly_assembled_dex": {
+        "classes.dex": "4fbfe2ed05fef7a4f13a2b2509645caedbd3623017bfcbedf27ce7e1816f8bad",
+        "classes2.dex": "8c8119c91f8a6a62e85e60d31dd74fad023d2a115d2737dd8f8f685d3db706bb",
+        "classes3.dex": "626e5380176b38fd418f303f4629cec08380e6d438b005c092a744b116e628a5",
+        "classes4.dex": "8804fa4c35d88efbb64ce43b185631ff1588c918579a8f2ffab88288ba58037e"
+      }
+    },
+    {
+      "app": "优课畅学",
+      "matching_payloads": 2224,
+      "layout_loads_annotated": 8,
+      "activities": 8,
+      "freshly_assembled_dex": {
+        "classes.dex": "9226722ec87708fb5fd849e190f9210197f149e93044686847442908413df5b2",
+        "classes2.dex": "29f0ecb18336a3d88fa7aa3363ab0706cb4cf5cc0b4e87f16a818ede1b21e479",
+        "classes3.dex": "139fc30530496c182e7ba4f75bdc7cc72e153c55de3359749cbd9deaf95f44d2",
+        "classes4.dex": "d0538cfc42c3a6ec5ec6777320e6b71fb17d203e9aaf49fc043c21d97c44c793",
+        "classes5.dex": "f1945a50d2112aee522178fdfe6614ffe894c90b3c0f51f860bcb4341f582ee5"
+      }
+    },
+    {
+      "app": "在线专栏",
+      "matching_payloads": 1045,
+      "layout_loads_annotated": 4,
+      "activities": 4,
+      "freshly_assembled_dex": {
+        "classes.dex": "9eb344952a04058cb8127c96dd28a338d9845531a5cb007aafaa5e1e67fe6452",
+        "classes2.dex": "4a4960bc708fef6d6aa7589218dbd0c912bad01cb2f6056c785244d6e52d016b"
+      }
+    },
+    {
+      "app": "新测评",
+      "matching_payloads": 1863,
+      "layout_loads_annotated": 7,
+      "activities": 7,
+      "freshly_assembled_dex": {
+        "classes.dex": "a68d1e7976dfec9ed9be6bcacb56a5580b2469faed7bb8084f93459a84e81f84",
+        "classes2.dex": "a90ecded69de315de2063b262f022b3e1fcc32da32979d40aef1141603a12702",
+        "classes3.dex": "b05f8b280079fa31d3353f86e22a2a344fd9276dcd5c1795e36f4200ac83d533",
+        "classes4.dex": "a303091957d37481dee88d087e3078e458747d3014fcf1c3d3faf0745c54d9ce",
+        "classes5.dex": "9d052eadeb07fb85083f7bd3a80a459ccefe7395efc23615d8a0dd69599728b2"
+      }
+    },
+    {
+      "app": "网阅联考",
+      "matching_payloads": 953,
+      "layout_loads_annotated": 4,
+      "activities": 4,
+      "freshly_assembled_dex": {
+        "classes.dex": "4a829c58b982a562672d80257316721b0c990b6eef8cfd9067e8120bf2cfd1ad",
+        "classes2.dex": "d55a33eb4eca55818b0a12844d61dc1efc30360bba4d94306e540bcf5727bfc0"
+      }
+    },
+    {
+      "app": "选课",
+      "matching_payloads": 470,
+      "layout_loads_annotated": 3,
+      "activities": 3,
+      "freshly_assembled_dex": {
+        "classes.dex": "5ae40202390fbb813f1c3ee1ee38bbf1768564a772d3357d1ec767cfd153f70a"
+      }
+    },
+    {
+      "app": "错题本",
+      "matching_payloads": 2058,
+      "layout_loads_annotated": 22,
+      "activities": 13,
+      "freshly_assembled_dex": {
+        "classes.dex": "9e988dfca39098ba21c65755920219bbb8dc9bfd1b33c28b1402746330cc1b4e",
+        "classes2.dex": "76d939a7fa37ce4aeb3b786c79b56f8c27bebdc9601f53f936bb080318e0d702",
+        "classes3.dex": "5a8f82e02ab039c048c6783e7060ce55be36d990188b254617cfab12b8a18458",
+        "classes4.dex": "4ccfcc520f34b611b4f79ce429cf34142c4c958d2d82350b775259bc011791e5"
+      }
+    },
+    {
+      "app": "问卷调查",
+      "matching_payloads": 856,
+      "layout_loads_annotated": 5,
+      "activities": 5,
+      "freshly_assembled_dex": {
+        "classes.dex": "29b6a94d2fb87b2e39a1769d591160af1e99fdabb99d6cdf81d3e5cc3cb969db"
+      }
+    },
+    {
+      "app": "随身答",
+      "matching_payloads": 1890,
+      "layout_loads_annotated": 7,
+      "activities": 7,
+      "freshly_assembled_dex": {
+        "classes.dex": "09bafef849ee233fe4536108fe4ac677abe58364fa4f6b5bd5a2a3f9a6a92556",
+        "classes2.dex": "98a940ebfedbc0c156385296d1a9083c07f6e0fd745cee7ed10aee3a8b8b7563",
+        "classes3.dex": "304e5debef2e5f8c0d59956a0359973c7689277f96dd801593bddfb752aeed2c",
+        "classes4.dex": "f889406c2674388a76e547427e18f9552ebb1c9c3f3b08b7dc8b8e522f32580d",
+        "classes5.dex": "5bccb2c8d827fccc9f6a741147bd2fe25bb913c729a8d86a05bf1437066bae6f"
+      }
+    },
+    {
+      "app": "领创平板管理-2025.9.1",
+      "matching_payloads": 1012,
+      "layout_loads_annotated": 26,
+      "activities": 25,
+      "freshly_assembled_dex": {
+        "classes.dex": "68fce6d82f1ea5f88c4beaf5c139c1529fa24502bf840a88de1a69694d4107a9"
+      }
+    }
+  ]
+}

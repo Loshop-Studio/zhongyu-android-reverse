@@ -1,0 +1,9949 @@
+{
+  "a": {
+    "classes": 1,
+    "methods": 17,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "a"
+    ]
+  },
+  "a6": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "android.app": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "AppComponentFactory"
+    ]
+  },
+  "android.app.job": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "JobServiceEngine"
+    ]
+  },
+  "android.graphics": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": []
+  },
+  "android.os": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "OutcomeReceiver"
+    ]
+  },
+  "android.support.v4.app": {
+    "classes": 4,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "RemoteActionCompatParcelizer",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "android.support.v4.graphics.drawable": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "IconCompatParcelizer"
+    ]
+  },
+  "android.support.v4.media": {
+    "classes": 24,
+    "methods": 112,
+    "storage": {},
+    "sample": [
+      "MediaDescriptionCompat",
+      "MediaMetadataCompat",
+      "RatingCompat",
+      "a"
+    ]
+  },
+  "android.support.v4.media.session": {
+    "classes": 21,
+    "methods": 38,
+    "storage": {},
+    "sample": [
+      "ParcelableVolumeInfo",
+      "PlaybackStateCompat",
+      "a",
+      "b"
+    ]
+  },
+  "android.support.v4.os": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "ResultReceiver"
+    ]
+  },
+  "android.text": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "SegmentFinder"
+    ]
+  },
+  "android.view": {
+    "classes": 4,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "OnReceiveContentListener",
+      "ScrollCaptureCallback",
+      "WindowInsetsAnimationControlListener"
+    ]
+  },
+  "android.view.accessibility": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": []
+  },
+  "android.view.autofill": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": []
+  },
+  "android.view.inspector": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "InspectionCompanion"
+    ]
+  },
+  "android.view.translation": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "ViewTranslationCallback"
+    ]
+  },
+  "android.window": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "OnBackAnimationCallback",
+      "OnBackInvokedCallback"
+    ]
+  },
+  "androidx.activity": {
+    "classes": 90,
+    "methods": 517,
+    "storage": {},
+    "sample": [
+      "ActivityViewModelLazyKt",
+      "Api26Impl",
+      "Api34Impl",
+      "BackEventCompat"
+    ]
+  },
+  "androidx.activity.compose": {
+    "classes": 48,
+    "methods": 167,
+    "storage": {},
+    "sample": [
+      "ActivityComposeUtilsKt",
+      "ActivityResultLauncherHolder",
+      "ActivityResultRegistryKt",
+      "BackHandlerKt"
+    ]
+  },
+  "androidx.activity.contextaware": {
+    "classes": 6,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "ContextAware",
+      "ContextAwareHelper",
+      "ContextAwareKt",
+      "OnContextAvailableListener"
+    ]
+  },
+  "androidx.activity.ktx": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.activity.result": {
+    "classes": 30,
+    "methods": 149,
+    "storage": {},
+    "sample": [
+      "ActivityResult",
+      "ActivityResultCallback",
+      "ActivityResultCaller",
+      "ActivityResultCallerKt"
+    ]
+  },
+  "androidx.activity.result.contract": {
+    "classes": 34,
+    "methods": 177,
+    "storage": {},
+    "sample": [
+      "ActivityResultContract",
+      "ActivityResultContracts"
+    ]
+  },
+  "androidx.annotation": {
+    "classes": 78,
+    "methods": 82,
+    "storage": {},
+    "sample": [
+      "AnimRes",
+      "AnimatorRes",
+      "AnyRes",
+      "AnyThread"
+    ]
+  },
+  "androidx.annotation.experimental": {
+    "classes": 4,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "Experimental",
+      "R",
+      "UseExperimental"
+    ]
+  },
+  "androidx.appcompat": {
+    "classes": 14,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.appcompat.app": {
+    "classes": 98,
+    "methods": 966,
+    "storage": {},
+    "sample": [
+      "ActionBar",
+      "ActionBarDrawerToggle",
+      "AlertController",
+      "AlertDialog"
+    ]
+  },
+  "androidx.appcompat.content.res": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "AppCompatResources"
+    ]
+  },
+  "androidx.appcompat.graphics.drawable": {
+    "classes": 18,
+    "methods": 242,
+    "storage": {},
+    "sample": [
+      "AnimatedStateListDrawableCompat",
+      "DrawableContainerCompat",
+      "DrawableWrapperCompat",
+      "DrawerArrowDrawable"
+    ]
+  },
+  "androidx.appcompat.resources": {
+    "classes": 5,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "Compatibility",
+      "R"
+    ]
+  },
+  "androidx.appcompat.text": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "AllCapsTransformationMethod"
+    ]
+  },
+  "androidx.appcompat.view": {
+    "classes": 17,
+    "methods": 161,
+    "storage": {},
+    "sample": [
+      "ActionBarPolicy",
+      "ActionMode",
+      "CollapsibleActionView",
+      "ContextThemeWrapper"
+    ]
+  },
+  "androidx.appcompat.view.menu": {
+    "classes": 44,
+    "methods": 674,
+    "storage": {},
+    "sample": [
+      "ActionMenuItem",
+      "ActionMenuItemView",
+      "BaseMenuPresenter",
+      "BaseMenuWrapper"
+    ]
+  },
+  "androidx.appcompat.widget": {
+    "classes": 263,
+    "methods": 2528,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "AbsActionBarView",
+      "ActionBarBackgroundDrawable",
+      "ActionBarContainer",
+      "ActionBarContextView"
+    ]
+  },
+  "androidx.arch.core": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.arch.core.executor": {
+    "classes": 6,
+    "methods": 29,
+    "storage": {},
+    "sample": [
+      "ArchTaskExecutor",
+      "DefaultTaskExecutor",
+      "TaskExecutor",
+      "a"
+    ]
+  },
+  "androidx.arch.core.internal": {
+    "classes": 8,
+    "methods": 48,
+    "storage": {},
+    "sample": [
+      "FastSafeIterableMap",
+      "SafeIterableMap"
+    ]
+  },
+  "androidx.arch.core.util": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "Function"
+    ]
+  },
+  "androidx.asynclayoutinflater": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.asynclayoutinflater.view": {
+    "classes": 6,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "AsyncLayoutInflater"
+    ]
+  },
+  "androidx.autofill": {
+    "classes": 12,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "HintConstants",
+      "R"
+    ]
+  },
+  "androidx.camera.camera2": {
+    "classes": 3,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "Camera2Config",
+      "R"
+    ]
+  },
+  "androidx.camera.camera2.impl": {
+    "classes": 3,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "Camera2ImplConfig",
+      "package-info"
+    ]
+  },
+  "androidx.camera.camera2.internal": {
+    "classes": 189,
+    "methods": 1486,
+    "storage": {},
+    "sample": [
+      "AndroidRZoomImpl",
+      "AutoValue_Camera2CameraImpl_UseCaseInfo",
+      "AutoValue_CameraDeviceId",
+      "AutoValue_SupportedSurfaceCombination_FeatureSettings"
+    ]
+  },
+  "androidx.camera.camera2.internal.annotation": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "CameraExecutor"
+    ]
+  },
+  "androidx.camera.camera2.internal.compat": {
+    "classes": 52,
+    "methods": 274,
+    "storage": {},
+    "sample": [
+      "ApiCompat",
+      "CameraAccessExceptionCompat",
+      "CameraCaptureSessionCompat",
+      "CameraCaptureSessionCompatApi28Impl"
+    ]
+  },
+  "androidx.camera.camera2.internal.compat.params": {
+    "classes": 28,
+    "methods": 260,
+    "storage": {},
+    "sample": [
+      "CaptureRequestParameterCompat",
+      "DynamicRangeConversions",
+      "DynamicRangesCompat",
+      "DynamicRangesCompatApi33Impl"
+    ]
+  },
+  "androidx.camera.camera2.internal.compat.quirk": {
+    "classes": 55,
+    "methods": 215,
+    "storage": {},
+    "sample": [
+      "AbnormalStreamWhenImageAnalysisBindWithTemplateRecordQuirk",
+      "AeFpsRangeLegacyQuirk",
+      "AfRegionFlipHorizontallyQuirk",
+      "AspectRatioLegacyApi21Quirk"
+    ]
+  },
+  "androidx.camera.camera2.internal.compat.workaround": {
+    "classes": 32,
+    "methods": 92,
+    "storage": {},
+    "sample": [
+      "AeFpsRange",
+      "AutoFlashAEModeDisabler",
+      "CameraCharacteristicsProvider",
+      "DisplaySizeCorrector"
+    ]
+  },
+  "androidx.camera.camera2.internal.concurrent": {
+    "classes": 1,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "Camera2CameraCoordinator"
+    ]
+  },
+  "androidx.camera.camera2.interop": {
+    "classes": 11,
+    "methods": 70,
+    "storage": {},
+    "sample": [
+      "Camera2CameraControl",
+      "Camera2CameraInfo",
+      "Camera2Interop",
+      "CaptureRequestOptions"
+    ]
+  },
+  "androidx.camera.core": {
+    "classes": 209,
+    "methods": 1288,
+    "storage": {},
+    "sample": [
+      "AndroidImageProxy",
+      "AndroidImageReaderProxy",
+      "AspectRatio",
+      "AutoValue_CameraState"
+    ]
+  },
+  "androidx.camera.core.concurrent": {
+    "classes": 3,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "CameraCoordinator"
+    ]
+  },
+  "androidx.camera.core.imagecapture": {
+    "classes": 56,
+    "methods": 430,
+    "storage": {
+      "位图": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "AutoValue_Bitmap2JpegBytes_In",
+      "AutoValue_CaptureNode_In",
+      "AutoValue_Image2JpegBytes_In",
+      "AutoValue_JpegBytes2Disk_In"
+    ]
+  },
+  "androidx.camera.core.impl": {
+    "classes": 200,
+    "methods": 1256,
+    "storage": {},
+    "sample": [
+      "AttachedSurfaceInfo",
+      "AutoValue_AttachedSurfaceInfo",
+      "AutoValue_CameraThreadConfig",
+      "AutoValue_Config_Option"
+    ]
+  },
+  "androidx.camera.core.impl.annotation": {
+    "classes": 2,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "ExecutedBy",
+      "package-info"
+    ]
+  },
+  "androidx.camera.core.impl.capability": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "PreviewCapabilitiesImpl"
+    ]
+  },
+  "androidx.camera.core.impl.compat": {
+    "classes": 4,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "EncoderProfilesProxyCompat",
+      "EncoderProfilesProxyCompatApi31Impl",
+      "EncoderProfilesProxyCompatApi33Impl",
+      "EncoderProfilesProxyCompatBaseImpl"
+    ]
+  },
+  "androidx.camera.core.impl.stabilization": {
+    "classes": 2,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "StabilizationMode"
+    ]
+  },
+  "androidx.camera.core.impl.utils": {
+    "classes": 45,
+    "methods": 325,
+    "storage": {},
+    "sample": [
+      "Absent",
+      "AspectRatioUtil",
+      "ByteOrderedDataInputStream",
+      "ByteOrderedDataOutputStream"
+    ]
+  },
+  "androidx.camera.core.impl.utils.executor": {
+    "classes": 21,
+    "methods": 81,
+    "storage": {},
+    "sample": [
+      "AudioExecutor",
+      "CameraXExecutors",
+      "DirectExecutor",
+      "HandlerScheduledExecutorService"
+    ]
+  },
+  "androidx.camera.core.impl.utils.futures": {
+    "classes": 27,
+    "methods": 128,
+    "storage": {},
+    "sample": [
+      "AsyncFunction",
+      "ChainingListenableFuture",
+      "FutureCallback",
+      "FutureChain"
+    ]
+  },
+  "androidx.camera.core.internal": {
+    "classes": 24,
+    "methods": 166,
+    "storage": {},
+    "sample": [
+      "AutoValue_CameraUseCaseAdapter_CameraId",
+      "AutoValue_ImmutableZoomState",
+      "ByteBufferOutputStream",
+      "CameraCaptureResultImageInfo"
+    ]
+  },
+  "androidx.camera.core.internal.compat": {
+    "classes": 8,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "ImageWriterCompat",
+      "ImageWriterCompatApi23Impl",
+      "ImageWriterCompatApi26Impl",
+      "ImageWriterCompatApi29Impl"
+    ]
+  },
+  "androidx.camera.core.internal.compat.quirk": {
+    "classes": 12,
+    "methods": 40,
+    "storage": {},
+    "sample": [
+      "CaptureFailedRetryQuirk",
+      "DeviceQuirks",
+      "DeviceQuirksLoader",
+      "ImageCaptureRotationOptionQuirk"
+    ]
+  },
+  "androidx.camera.core.internal.compat.workaround": {
+    "classes": 7,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "CaptureFailedRetryEnabler",
+      "ExifRotationAvailability",
+      "InvalidJpegDataParser",
+      "JpegMetadataCorrector"
+    ]
+  },
+  "androidx.camera.core.internal.utils": {
+    "classes": 11,
+    "methods": 59,
+    "storage": {
+      "位图": 1
+    },
+    "sample": [
+      "ArrayRingBuffer",
+      "ImageUtil",
+      "RingBuffer",
+      "SizeUtil"
+    ]
+  },
+  "androidx.camera.core.processing": {
+    "classes": 40,
+    "methods": 272,
+    "storage": {
+      "位图": 1
+    },
+    "sample": [
+      "AutoValue_DefaultSurfaceProcessor_PendingSnapshot",
+      "AutoValue_Packet",
+      "AutoValue_SurfaceProcessorNode_In",
+      "DefaultSurfaceProcessor"
+    ]
+  },
+  "androidx.camera.core.processing.concurrent": {
+    "classes": 13,
+    "methods": 83,
+    "storage": {},
+    "sample": [
+      "AutoValue_DualOutConfig",
+      "AutoValue_DualSurfaceProcessorNode_In",
+      "DualOpenGlRenderer",
+      "DualOutConfig"
+    ]
+  },
+  "androidx.camera.core.processing.util": {
+    "classes": 17,
+    "methods": 116,
+    "storage": {},
+    "sample": [
+      "AutoValue_GraphicDeviceInfo",
+      "AutoValue_OutConfig",
+      "AutoValue_OutputSurface",
+      "GLUtils"
+    ]
+  },
+  "androidx.camera.core.resolutionselector": {
+    "classes": 8,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "AspectRatioStrategy",
+      "ResolutionFilter",
+      "ResolutionSelector",
+      "ResolutionStrategy"
+    ]
+  },
+  "androidx.camera.core.streamsharing": {
+    "classes": 18,
+    "methods": 203,
+    "storage": {},
+    "sample": [
+      "DynamicRangeUtils",
+      "ResolutionsMerger",
+      "StreamSharing",
+      "StreamSharingBuilder"
+    ]
+  },
+  "androidx.camera.lifecycle": {
+    "classes": 17,
+    "methods": 133,
+    "storage": {},
+    "sample": [
+      "AutoValue_LifecycleCameraRepository_Key",
+      "ExperimentalCameraProviderConfiguration",
+      "LifecycleCamera",
+      "LifecycleCameraProvider"
+    ]
+  },
+  "androidx.camera.video": {
+    "classes": 136,
+    "methods": 941,
+    "storage": {},
+    "sample": [
+      "AudioSpec",
+      "AudioStats",
+      "AutoValue_AudioSpec",
+      "AutoValue_AudioStats"
+    ]
+  },
+  "androidx.camera.video.impl": {
+    "classes": 2,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "VideoCaptureConfig",
+      "package-info"
+    ]
+  },
+  "androidx.camera.video.internal": {
+    "classes": 10,
+    "methods": 72,
+    "storage": {},
+    "sample": [
+      "AutoValue_VideoValidatedEncoderProfilesProxy",
+      "BackupHdrProfileEncoderProfilesProvider",
+      "BufferProvider",
+      "DebugUtils"
+    ]
+  },
+  "androidx.camera.video.internal.audio": {
+    "classes": 31,
+    "methods": 208,
+    "storage": {},
+    "sample": [
+      "AudioSettings",
+      "AudioSource",
+      "AudioSourceAccessException",
+      "AudioStream"
+    ]
+  },
+  "androidx.camera.video.internal.compat": {
+    "classes": 7,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "Api23Impl",
+      "Api24Impl",
+      "Api26Impl",
+      "Api28Impl"
+    ]
+  },
+  "androidx.camera.video.internal.compat.quirk": {
+    "classes": 25,
+    "methods": 115,
+    "storage": {},
+    "sample": [
+      "AudioEncoderIgnoresInputTimestampQuirk",
+      "AudioTimestampFramePositionIncorrectQuirk",
+      "CameraUseInconsistentTimebaseQuirk",
+      "CodecStuckOnFlushQuirk"
+    ]
+  },
+  "androidx.camera.video.internal.config": {
+    "classes": 22,
+    "methods": 94,
+    "storage": {},
+    "sample": [
+      "AudioConfigUtil",
+      "AudioEncoderConfigAudioProfileResolver",
+      "AudioEncoderConfigDefaultResolver",
+      "AudioMimeInfo"
+    ]
+  },
+  "androidx.camera.video.internal.encoder": {
+    "classes": 61,
+    "methods": 413,
+    "storage": {},
+    "sample": [
+      "AudioEncoderConfig",
+      "AudioEncoderInfo",
+      "AudioEncoderInfoImpl",
+      "AutoValue_AudioEncoderConfig"
+    ]
+  },
+  "androidx.camera.video.internal.utils": {
+    "classes": 5,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "CodecUtil",
+      "DynamicRangeUtil",
+      "EncoderProfilesUtil",
+      "OutputUtil"
+    ]
+  },
+  "androidx.camera.video.internal.workaround": {
+    "classes": 8,
+    "methods": 40,
+    "storage": {},
+    "sample": [
+      "CorrectNegativeLatLongForMediaMuxer",
+      "QualityAddedEncoderProfilesProvider",
+      "QualityResolutionModifiedEncoderProfilesProvider",
+      "QualityValidatedEncoderProfilesProvider"
+    ]
+  },
+  "androidx.camera.view": {
+    "classes": 63,
+    "methods": 440,
+    "storage": {},
+    "sample": [
+      "CameraController",
+      "ExperimentalPreviewViewScreenFlash",
+      "FlashModeConverter",
+      "ForwardingLiveData"
+    ]
+  },
+  "androidx.camera.view.impl": {
+    "classes": 9,
+    "methods": 31,
+    "storage": {},
+    "sample": [
+      "ZoomGestureDetector",
+      "package-info"
+    ]
+  },
+  "androidx.camera.view.internal": {
+    "classes": 3,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "ScreenFlashUiInfo",
+      "package-info"
+    ]
+  },
+  "androidx.camera.view.internal.compat.quirk": {
+    "classes": 4,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "DeviceQuirks",
+      "DeviceQuirksLoader",
+      "SurfaceViewNotCroppedByParentQuirk",
+      "SurfaceViewStretchedQuirk"
+    ]
+  },
+  "androidx.camera.view.transform": {
+    "classes": 4,
+    "methods": 23,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "CoordinateTransform",
+      "FileTransformFactory",
+      "ImageProxyTransformFactory",
+      "OutputTransform"
+    ]
+  },
+  "androidx.camera.view.video": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "AudioConfig"
+    ]
+  },
+  "androidx.cardview": {
+    "classes": 6,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.cardview.widget": {
+    "classes": 12,
+    "methods": 152,
+    "storage": {},
+    "sample": [
+      "CardView",
+      "CardViewApi17Impl",
+      "CardViewApi21Impl",
+      "CardViewBaseImpl"
+    ]
+  },
+  "androidx.collection": {
+    "classes": 157,
+    "methods": 3338,
+    "storage": {},
+    "sample": [
+      "ArrayMap",
+      "ArrayMapKt",
+      "ArraySet",
+      "ArraySetJvmUtil"
+    ]
+  },
+  "androidx.collection.internal": {
+    "classes": 6,
+    "methods": 27,
+    "storage": {},
+    "sample": [
+      "ContainerHelpersKt",
+      "Lock",
+      "LockExtKt",
+      "LruHashMap"
+    ]
+  },
+  "androidx.compose.animation": {
+    "classes": 257,
+    "methods": 1392,
+    "storage": {},
+    "sample": [
+      "AndroidActualDefaultDecayAnimationSpec_androidKt",
+      "AndroidFlingSpline",
+      "AnimateBoundsModifierKt",
+      "AnimatedContentKt"
+    ]
+  },
+  "androidx.compose.animation.core": {
+    "classes": 222,
+    "methods": 1484,
+    "storage": {},
+    "sample": [
+      "ActualJvm_jvmKt",
+      "Animatable",
+      "AnimatableKt",
+      "AnimateAsStateKt"
+    ]
+  },
+  "androidx.compose.animation.core.internal": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "JvmDefaultWithCompatibility_jvmKt"
+    ]
+  },
+  "androidx.compose.animation.internal": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "JvmDefaultWithCompatibility_jvmKt"
+    ]
+  },
+  "androidx.compose.foundation": {
+    "classes": 262,
+    "methods": 1414,
+    "storage": {},
+    "sample": [
+      "AbstractClickableNode",
+      "ActualJvm_jvmKt",
+      "AndroidEdgeEffectOverscrollEffect",
+      "AndroidEdgeEffectOverscrollFactory"
+    ]
+  },
+  "androidx.compose.foundation.content": {
+    "classes": 12,
+    "methods": 81,
+    "storage": {},
+    "sample": [
+      "MediaType",
+      "PlatformTransferableContent",
+      "ReceiveContentElement",
+      "ReceiveContentKt"
+    ]
+  },
+  "androidx.compose.foundation.content.internal": {
+    "classes": 11,
+    "methods": 48,
+    "storage": {},
+    "sample": [
+      "DragAndDropRequestPermission_androidKt",
+      "DynamicReceiveContentConfiguration",
+      "ReceiveContentConfiguration",
+      "ReceiveContentConfigurationImpl"
+    ]
+  },
+  "androidx.compose.foundation.contextmenu": {
+    "classes": 32,
+    "methods": 139,
+    "storage": {},
+    "sample": [
+      "ContextMenuArea_androidKt",
+      "ContextMenuColors",
+      "ContextMenuGestures_androidKt",
+      "ContextMenuKey"
+    ]
+  },
+  "androidx.compose.foundation.draganddrop": {
+    "classes": 35,
+    "methods": 211,
+    "storage": {},
+    "sample": [
+      "AndroidDragAndDropSource_androidKt",
+      "AndroidDragAndDropSource_androidKt__LegacyDragAndDropSourceWithDefaultPainter_androidKt",
+      "CacheDrawScopeDragShadowCallback",
+      "DragAndDropSourceDefaults"
+    ]
+  },
+  "androidx.compose.foundation.gestures": {
+    "classes": 356,
+    "methods": 1787,
+    "storage": {},
+    "sample": [
+      "AnchoredDragFinishedSignal",
+      "AnchoredDragScope",
+      "AnchoredDraggableDefaults",
+      "AnchoredDraggableElement"
+    ]
+  },
+  "androidx.compose.foundation.gestures.snapping": {
+    "classes": 30,
+    "methods": 143,
+    "storage": {},
+    "sample": [
+      "AnimationResult",
+      "ApproachAnimation",
+      "DecayApproachAnimation",
+      "FinalSnappingItem"
+    ]
+  },
+  "androidx.compose.foundation.interaction": {
+    "classes": 31,
+    "methods": 63,
+    "storage": {},
+    "sample": [
+      "DragInteraction",
+      "DragInteractionKt",
+      "FocusInteraction",
+      "FocusInteractionKt"
+    ]
+  },
+  "androidx.compose.foundation.internal": {
+    "classes": 7,
+    "methods": 91,
+    "storage": {},
+    "sample": [
+      "ClipboardUtils",
+      "ClipboardUtils_androidKt",
+      "DecodeHelper",
+      "EncodeHelper"
+    ]
+  },
+  "androidx.compose.foundation.layout": {
+    "classes": 391,
+    "methods": 2328,
+    "storage": {},
+    "sample": [
+      "AddedInsets",
+      "AlignmentLineKt",
+      "AlignmentLineOffsetDpElement",
+      "AlignmentLineOffsetDpNode"
+    ]
+  },
+  "androidx.compose.foundation.layout.internal": {
+    "classes": 2,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "InlineClassHelperKt",
+      "JvmDefaultWithCompatibility_jvmKt"
+    ]
+  },
+  "androidx.compose.foundation.lazy": {
+    "classes": 101,
+    "methods": 535,
+    "storage": {},
+    "sample": [
+      "DefaultLazyListPrefetchStrategy",
+      "LazyDslKt",
+      "LazyItemScope",
+      "LazyItemScopeImpl"
+    ]
+  },
+  "androidx.compose.foundation.lazy.grid": {
+    "classes": 117,
+    "methods": 559,
+    "storage": {},
+    "sample": [
+      "DefaultLazyGridPrefetchStrategy",
+      "GridCells",
+      "GridItemSpan",
+      "GridSlotCache"
+    ]
+  },
+  "androidx.compose.foundation.lazy.layout": {
+    "classes": 148,
+    "methods": 784,
+    "storage": {},
+    "sample": [
+      "AndroidPrefetchScheduler",
+      "Averages",
+      "AwaitFirstLayoutModifier",
+      "DefaultLazyKey"
+    ]
+  },
+  "androidx.compose.foundation.lazy.staggeredgrid": {
+    "classes": 104,
+    "methods": 556,
+    "storage": {},
+    "sample": [
+      "LazyGridStaggeredGridSlotsProvider",
+      "LazyStaggeredGridBeyondBoundsModifierKt",
+      "LazyStaggeredGridBeyondBoundsState",
+      "LazyStaggeredGridCellsKt"
+    ]
+  },
+  "androidx.compose.foundation.pager": {
+    "classes": 89,
+    "methods": 461,
+    "storage": {},
+    "sample": [
+      "DefaultPagerNestedScrollConnection",
+      "DefaultPagerState",
+      "LazyLayoutPagerKt",
+      "LazyLayoutSemanticStateKt"
+    ]
+  },
+  "androidx.compose.foundation.platform": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "Synchronization_androidKt"
+    ]
+  },
+  "androidx.compose.foundation.relocation": {
+    "classes": 17,
+    "methods": 71,
+    "storage": {},
+    "sample": [
+      "BringIntoViewRequester",
+      "BringIntoViewRequesterElement",
+      "BringIntoViewRequesterImpl",
+      "BringIntoViewRequesterKt"
+    ]
+  },
+  "androidx.compose.foundation.selection": {
+    "classes": 21,
+    "methods": 92,
+    "storage": {},
+    "sample": [
+      "SelectableElement",
+      "SelectableGroupKt",
+      "SelectableKt",
+      "SelectableNode"
+    ]
+  },
+  "androidx.compose.foundation.shape": {
+    "classes": 16,
+    "methods": 128,
+    "storage": {},
+    "sample": [
+      "AbsoluteCutCornerShape",
+      "AbsoluteCutCornerShapeKt",
+      "AbsoluteRoundedCornerShape",
+      "AbsoluteRoundedCornerShapeKt"
+    ]
+  },
+  "androidx.compose.foundation.text": {
+    "classes": 327,
+    "methods": 1419,
+    "storage": {},
+    "sample": [
+      "AndroidCursorHandle_androidKt",
+      "AnnotatedStringResolveInlineContentKt",
+      "AutoSizeStepBased",
+      "AutofillHighlightKt"
+    ]
+  },
+  "androidx.compose.foundation.text.handwriting": {
+    "classes": 16,
+    "methods": 81,
+    "storage": {},
+    "sample": [
+      "HandwritingDetectorElement",
+      "HandwritingDetectorNode",
+      "HandwritingDetector_androidKt",
+      "HandwritingHandlerElement"
+    ]
+  },
+  "androidx.compose.foundation.text.input": {
+    "classes": 36,
+    "methods": 274,
+    "storage": {},
+    "sample": [
+      "AllCapsTransformation",
+      "FilterChain",
+      "InputTransformation",
+      "InputTransformationByValue"
+    ]
+  },
+  "androidx.compose.foundation.text.input.internal": {
+    "classes": 221,
+    "methods": 1455,
+    "storage": {},
+    "sample": [
+      "AndroidLegacyPlatformTextInputServiceAdapter",
+      "AndroidTextFieldKeyEventHandler",
+      "AndroidTextInputSession_androidKt",
+      "Api25CommitContentImpl"
+    ]
+  },
+  "androidx.compose.foundation.text.input.internal.selection": {
+    "classes": 90,
+    "methods": 486,
+    "storage": {},
+    "sample": [
+      "AndroidTextFieldMagnifier_androidKt",
+      "CursorAndWedgeAffinity",
+      "PressDownGestureKt",
+      "TapOnPosition"
+    ]
+  },
+  "androidx.compose.foundation.text.input.internal.undo": {
+    "classes": 10,
+    "methods": 64,
+    "storage": {},
+    "sample": [
+      "TextDeleteType",
+      "TextEditType",
+      "TextFieldEditUndoBehavior",
+      "TextUndoOperation"
+    ]
+  },
+  "androidx.compose.foundation.text.modifiers": {
+    "classes": 41,
+    "methods": 347,
+    "storage": {},
+    "sample": [
+      "InlineDensity",
+      "LayoutUtilsKt",
+      "MinLinesConstrainer",
+      "MinLinesConstrainerKt"
+    ]
+  },
+  "androidx.compose.foundation.text.selection": {
+    "classes": 188,
+    "methods": 1087,
+    "storage": {},
+    "sample": [
+      "AndroidSelectionHandles_androidKt",
+      "BaseTextPreparedSelection",
+      "BoundaryFunction",
+      "ClicksCounter"
+    ]
+  },
+  "androidx.compose.material.icons": {
+    "classes": 14,
+    "methods": 33,
+    "storage": {},
+    "sample": [
+      "Icons",
+      "IconsKt",
+      "R"
+    ]
+  },
+  "androidx.compose.material.icons.automirrored.filled": {
+    "classes": 7,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "ArrowBackKt",
+      "ArrowForwardKt",
+      "ExitToAppKt",
+      "KeyboardArrowLeftKt"
+    ]
+  },
+  "androidx.compose.material.icons.automirrored.outlined": {
+    "classes": 7,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "ArrowBackKt",
+      "ArrowForwardKt",
+      "ExitToAppKt",
+      "KeyboardArrowLeftKt"
+    ]
+  },
+  "androidx.compose.material.icons.automirrored.rounded": {
+    "classes": 7,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "ArrowBackKt",
+      "ArrowForwardKt",
+      "ExitToAppKt",
+      "KeyboardArrowLeftKt"
+    ]
+  },
+  "androidx.compose.material.icons.automirrored.sharp": {
+    "classes": 7,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "ArrowBackKt",
+      "ArrowForwardKt",
+      "ExitToAppKt",
+      "KeyboardArrowLeftKt"
+    ]
+  },
+  "androidx.compose.material.icons.automirrored.twotone": {
+    "classes": 7,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "ArrowBackKt",
+      "ArrowForwardKt",
+      "ExitToAppKt",
+      "KeyboardArrowLeftKt"
+    ]
+  },
+  "androidx.compose.material.icons.filled": {
+    "classes": 49,
+    "methods": 56,
+    "storage": {},
+    "sample": [
+      "AccountBoxKt",
+      "AccountCircleKt",
+      "AddCircleKt",
+      "AddKt"
+    ]
+  },
+  "androidx.compose.material.icons.outlined": {
+    "classes": 49,
+    "methods": 56,
+    "storage": {},
+    "sample": [
+      "AccountBoxKt",
+      "AccountCircleKt",
+      "AddCircleKt",
+      "AddKt"
+    ]
+  },
+  "androidx.compose.material.icons.rounded": {
+    "classes": 49,
+    "methods": 56,
+    "storage": {},
+    "sample": [
+      "AccountBoxKt",
+      "AccountCircleKt",
+      "AddCircleKt",
+      "AddKt"
+    ]
+  },
+  "androidx.compose.material.icons.sharp": {
+    "classes": 49,
+    "methods": 56,
+    "storage": {},
+    "sample": [
+      "AccountBoxKt",
+      "AccountCircleKt",
+      "AddCircleKt",
+      "AddKt"
+    ]
+  },
+  "androidx.compose.material.icons.twotone": {
+    "classes": 49,
+    "methods": 56,
+    "storage": {},
+    "sample": [
+      "AccountBoxKt",
+      "AccountCircleKt",
+      "AddCircleKt",
+      "AddKt"
+    ]
+  },
+  "androidx.compose.material.ripple": {
+    "classes": 47,
+    "methods": 265,
+    "storage": {},
+    "sample": [
+      "AndroidRippleIndicationInstance",
+      "AndroidRippleNode",
+      "CommonRipple",
+      "CommonRippleIndicationInstance"
+    ]
+  },
+  "androidx.compose.material3": {
+    "classes": 1428,
+    "methods": 6995,
+    "storage": {},
+    "sample": [
+      "AlertDialogDefaults",
+      "AlertDialogKt",
+      "AnalogTimePickerState",
+      "AndroidAlertDialog_androidKt"
+    ]
+  },
+  "androidx.compose.material3.carousel": {
+    "classes": 53,
+    "methods": 337,
+    "storage": {},
+    "sample": [
+      "Arrangement",
+      "CarouselAlignment",
+      "CarouselDefaults",
+      "CarouselItemInfo"
+    ]
+  },
+  "androidx.compose.material3.internal": {
+    "classes": 165,
+    "methods": 924,
+    "storage": {},
+    "sample": [
+      "AccessibilityServiceStateProvider_androidKt",
+      "AccessibilityUtilKt",
+      "AnchorAlignmentOffsetPosition",
+      "AnchoredDragFinishedSignal"
+    ]
+  },
+  "androidx.compose.material3.pulltorefresh": {
+    "classes": 29,
+    "methods": 178,
+    "storage": {},
+    "sample": [
+      "ArrowValues",
+      "PullToRefreshDefaults",
+      "PullToRefreshElement",
+      "PullToRefreshKt"
+    ]
+  },
+  "androidx.compose.material3.tokens": {
+    "classes": 71,
+    "methods": 1916,
+    "storage": {},
+    "sample": [
+      "AssistChipTokens",
+      "BadgeTokens",
+      "BottomAppBarTokens",
+      "CheckboxTokens"
+    ]
+  },
+  "androidx.compose.runtime": {
+    "classes": 343,
+    "methods": 2532,
+    "storage": {},
+    "sample": [
+      "AbstractApplier",
+      "ActualAndroid_androidKt",
+      "ActualAndroid_androidKt__MonotonicFrameClock_androidKt",
+      "ActualJvm_jvmKt"
+    ]
+  },
+  "androidx.compose.runtime.changelist": {
+    "classes": 52,
+    "methods": 420,
+    "storage": {},
+    "sample": [
+      "ChangeList",
+      "ComposerChangeListWriter",
+      "FixupList",
+      "Operation"
+    ]
+  },
+  "androidx.compose.runtime.collection": {
+    "classes": 13,
+    "methods": 224,
+    "storage": {},
+    "sample": [
+      "ArrayUtils_androidKt",
+      "ExtensionsKt",
+      "MultiValueMap",
+      "MutableVector"
+    ]
+  },
+  "androidx.compose.runtime.external.kotlinx.collections.immutable": {
+    "classes": 14,
+    "methods": 125,
+    "storage": {},
+    "sample": [
+      "ExtensionsKt",
+      "ImmutableCollection",
+      "ImmutableList",
+      "ImmutableMap"
+    ]
+  },
+  "androidx.compose.runtime.external.kotlinx.collections.immutable.adapters": {
+    "classes": 4,
+    "methods": 83,
+    "storage": {},
+    "sample": [
+      "ImmutableCollectionAdapter",
+      "ImmutableListAdapter",
+      "ImmutableMapAdapter",
+      "ImmutableSetAdapter"
+    ]
+  },
+  "androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.immutableList": {
+    "classes": 16,
+    "methods": 176,
+    "storage": {},
+    "sample": [
+      "AbstractListIterator",
+      "AbstractPersistentList",
+      "BufferIterator",
+      "ObjectRef"
+    ]
+  },
+  "androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.immutableMap": {
+    "classes": 30,
+    "methods": 234,
+    "storage": {},
+    "sample": [
+      "AbstractMapBuilderEntries",
+      "MapEntry",
+      "MutableMapEntry",
+      "PersistentHashMap"
+    ]
+  },
+  "androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.immutableSet": {
+    "classes": 10,
+    "methods": 132,
+    "storage": {},
+    "sample": [
+      "PersistentHashSet",
+      "PersistentHashSetBuilder",
+      "PersistentHashSetIterator",
+      "PersistentHashSetMutableIterator"
+    ]
+  },
+  "androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.persistentOrderedMap": {
+    "classes": 19,
+    "methods": 141,
+    "storage": {},
+    "sample": [
+      "LinkedValue",
+      "MutableMapEntry",
+      "PersistentOrderedMap",
+      "PersistentOrderedMapBuilder"
+    ]
+  },
+  "androidx.compose.runtime.external.kotlinx.collections.immutable.implementations.persistentOrderedSet": {
+    "classes": 6,
+    "methods": 62,
+    "storage": {},
+    "sample": [
+      "Links",
+      "PersistentOrderedSet",
+      "PersistentOrderedSetBuilder",
+      "PersistentOrderedSetIterator"
+    ]
+  },
+  "androidx.compose.runtime.external.kotlinx.collections.immutable.internal": {
+    "classes": 6,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "CommonFunctionsKt",
+      "DeltaCounter",
+      "EndOfChain",
+      "ForEachOneBitKt"
+    ]
+  },
+  "androidx.compose.runtime.internal": {
+    "classes": 60,
+    "methods": 288,
+    "storage": {},
+    "sample": [
+      "AtomicInt",
+      "Atomic_jvmKt",
+      "ComposableLambda",
+      "ComposableLambdaImpl"
+    ]
+  },
+  "androidx.compose.runtime.platform": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "Synchronization_androidKt"
+    ]
+  },
+  "androidx.compose.runtime.reflect": {
+    "classes": 3,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "ComposableInfo",
+      "ComposableMethod",
+      "ComposableMethodKt"
+    ]
+  },
+  "androidx.compose.runtime.saveable": {
+    "classes": 34,
+    "methods": 119,
+    "storage": {},
+    "sample": [
+      "ListSaverKt",
+      "MapSaverKt",
+      "R",
+      "RememberSaveableKt"
+    ]
+  },
+  "androidx.compose.runtime.snapshots": {
+    "classes": 79,
+    "methods": 851,
+    "storage": {},
+    "sample": [
+      "AutoboxingStateValueProperty",
+      "GlobalSnapshot",
+      "ListUtilsKt",
+      "MutableSnapshot"
+    ]
+  },
+  "androidx.compose.runtime.snapshots.tooling": {
+    "classes": 4,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "SnapshotInstanceObservers",
+      "SnapshotObserver",
+      "SnapshotObserverKt"
+    ]
+  },
+  "androidx.compose.runtime.tooling": {
+    "classes": 12,
+    "methods": 39,
+    "storage": {},
+    "sample": [
+      "CompositionData",
+      "CompositionDataKt",
+      "CompositionGroup",
+      "CompositionInstance"
+    ]
+  },
+  "androidx.compose.ui": {
+    "classes": 57,
+    "methods": 362,
+    "storage": {},
+    "sample": [
+      "AbsoluteAlignment",
+      "Actual_androidKt",
+      "Actual_jvmKt",
+      "Alignment"
+    ]
+  },
+  "androidx.compose.ui.autofill": {
+    "classes": 33,
+    "methods": 248,
+    "storage": {},
+    "sample": [
+      "AndroidAutofill",
+      "AndroidAutofillManager",
+      "AndroidAutofillManager_androidKt",
+      "AndroidAutofillType_androidKt"
+    ]
+  },
+  "androidx.compose.ui.contentcapture": {
+    "classes": 13,
+    "methods": 98,
+    "storage": {},
+    "sample": [
+      "AndroidContentCaptureManager",
+      "ContentCaptureEvent",
+      "ContentCaptureEventType",
+      "ContentCaptureManager"
+    ]
+  },
+  "androidx.compose.ui.draganddrop": {
+    "classes": 26,
+    "methods": 121,
+    "storage": {},
+    "sample": [
+      "AndroidDragAndDropManager",
+      "ComposeDragShadowBuilder",
+      "DragAndDropEvent",
+      "DragAndDropManager"
+    ]
+  },
+  "androidx.compose.ui.draw": {
+    "classes": 36,
+    "methods": 253,
+    "storage": {},
+    "sample": [
+      "AlphaKt",
+      "BlurKt",
+      "BlurredEdgeTreatment",
+      "BuildDrawCacheParams"
+    ]
+  },
+  "androidx.compose.ui.focus": {
+    "classes": 111,
+    "methods": 686,
+    "storage": {},
+    "sample": [
+      "BeyondBoundsLayoutKt",
+      "CancelIndicatingFocusBoundaryScope",
+      "CustomDestinationResult",
+      "FocusChangedElement"
+    ]
+  },
+  "androidx.compose.ui.geometry": {
+    "classes": 20,
+    "methods": 300,
+    "storage": {},
+    "sample": [
+      "CornerRadius",
+      "CornerRadiusKt",
+      "GeometryUtilsKt",
+      "InlineClassHelperKt"
+    ]
+  },
+  "androidx.compose.ui.graphics": {
+    "classes": 188,
+    "methods": 1899,
+    "storage": {},
+    "sample": [
+      "AndroidBlendMode_androidKt",
+      "AndroidCanvas",
+      "AndroidCanvas_androidKt",
+      "AndroidColorFilter_androidKt"
+    ]
+  },
+  "androidx.compose.ui.graphics.colorspace": {
+    "classes": 36,
+    "methods": 392,
+    "storage": {},
+    "sample": [
+      "Adaptation",
+      "ColorModel",
+      "ColorSpace",
+      "ColorSpaceKt"
+    ]
+  },
+  "androidx.compose.ui.graphics.drawscope": {
+    "classes": 23,
+    "methods": 337,
+    "storage": {},
+    "sample": [
+      "CanvasDrawScope",
+      "CanvasDrawScopeKt",
+      "ContentDrawScope",
+      "DrawContext"
+    ]
+  },
+  "androidx.compose.ui.graphics.internal": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "JvmDefaultWithCompatibility_androidKt"
+    ]
+  },
+  "androidx.compose.ui.graphics.layer": {
+    "classes": 45,
+    "methods": 501,
+    "storage": {},
+    "sample": [
+      "ChildLayerDependenciesTracker",
+      "CompositingStrategy",
+      "GraphicsLayer",
+      "GraphicsLayerImpl"
+    ]
+  },
+  "androidx.compose.ui.graphics.layer.view": {
+    "classes": 3,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "DrawChildContainer",
+      "PlaceholderHardwareCanvas",
+      "ViewLayerContainer"
+    ]
+  },
+  "androidx.compose.ui.graphics.painter": {
+    "classes": 6,
+    "methods": 49,
+    "storage": {},
+    "sample": [
+      "BitmapPainter",
+      "BitmapPainterKt",
+      "BrushPainter",
+      "ColorPainter"
+    ]
+  },
+  "androidx.compose.ui.graphics.vector": {
+    "classes": 104,
+    "methods": 742,
+    "storage": {},
+    "sample": [
+      "DrawCache",
+      "FastFloatParserKt",
+      "GroupComponent",
+      "ImageVector"
+    ]
+  },
+  "androidx.compose.ui.graphics.vector.compat": {
+    "classes": 3,
+    "methods": 75,
+    "storage": {},
+    "sample": [
+      "AndroidVectorParser",
+      "AndroidVectorResources",
+      "XmlVectorParser_androidKt"
+    ]
+  },
+  "androidx.compose.ui.hapticfeedback": {
+    "classes": 5,
+    "methods": 44,
+    "storage": {},
+    "sample": [
+      "HapticFeedback",
+      "HapticFeedbackType",
+      "PlatformHapticFeedback",
+      "PlatformHapticFeedbackType"
+    ]
+  },
+  "b": {
+    "classes": 3,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "c6": {
+    "classes": 6,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "d": {
+    "classes": 3,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "d6": {
+    "classes": 19,
+    "methods": 104,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "g": {
+    "classes": 1,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "io.reactivex.internal.disposables": {
+    "classes": 3,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "CancellableDisposable",
+      "DisposableHelper",
+      "EmptyDisposable"
+    ]
+  },
+  "io.reactivex.internal.observers": {
+    "classes": 2,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "BasicIntQueueDisposable",
+      "LambdaObserver"
+    ]
+  },
+  "io.reactivex.internal.operators.observable": {
+    "classes": 15,
+    "methods": 110,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "io.reactivex.internal.schedulers": {
+    "classes": 18,
+    "methods": 57,
+    "storage": {},
+    "sample": [
+      "AbstractDirectTask",
+      "RxThreadFactory",
+      "ScheduledDirectTask",
+      "ScheduledRunnable"
+    ]
+  },
+  "io.reactivex.internal.util": {
+    "classes": 4,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "AtomicThrowable",
+      "SuppressAnimalSniffer",
+      "a"
+    ]
+  },
+  "javax.annotation": {
+    "classes": 20,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "CheckForNull",
+      "CheckForSigned",
+      "CheckReturnValue",
+      "Detainted"
+    ]
+  },
+  "javax.annotation.concurrent": {
+    "classes": 4,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "GuardedBy",
+      "Immutable",
+      "NotThreadSafe",
+      "ThreadSafe"
+    ]
+  },
+  "javax.annotation.meta": {
+    "classes": 6,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "Exclusive",
+      "Exhaustive",
+      "TypeQualifier",
+      "TypeQualifierDefault"
+    ]
+  },
+  "kotlin": {
+    "classes": 45,
+    "methods": 123,
+    "storage": {},
+    "sample": [
+      "BuilderInference",
+      "ConsistentCopyVisibility",
+      "ContextFunctionTypeParams",
+      "Deprecated"
+    ]
+  },
+  "kotlin.annotation": {
+    "classes": 6,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "AnnotationRetention",
+      "AnnotationTarget",
+      "MustBeDocumented",
+      "Repeatable"
+    ]
+  },
+  "u5": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "v5": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "w5": {
+    "classes": 2,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "x5": {
+    "classes": 2,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "y5": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "z5": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a0": {
+    "classes": 4,
+    "methods": 16,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a1": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "androidx.compose.ui.input": {
+    "classes": 4,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "InputMode",
+      "InputModeManager",
+      "InputModeManagerImpl"
+    ]
+  },
+  "androidx.compose.ui.input.key": {
+    "classes": 15,
+    "methods": 677,
+    "storage": {},
+    "sample": [
+      "InterceptedKeyInputNode",
+      "Key",
+      "KeyEvent",
+      "KeyEventType"
+    ]
+  },
+  "androidx.compose.ui.input.nestedscroll": {
+    "classes": 16,
+    "methods": 111,
+    "storage": {},
+    "sample": [
+      "NestedScrollConnection",
+      "NestedScrollDispatcher",
+      "NestedScrollElement",
+      "NestedScrollModifierKt"
+    ]
+  },
+  "androidx.compose.ui.input.pointer": {
+    "classes": 88,
+    "methods": 761,
+    "storage": {},
+    "sample": [
+      "AndroidPointerIcon",
+      "AndroidPointerIconType",
+      "AwaitPointerEventScope",
+      "CancelTimeoutCancellationException"
+    ]
+  },
+  "androidx.compose.ui.input.pointer.util": {
+    "classes": 8,
+    "methods": 75,
+    "storage": {},
+    "sample": [
+      "DataPointAtTime",
+      "ExperimentalVelocityTrackerApi",
+      "PointerIdArray",
+      "VelocityTracker"
+    ]
+  },
+  "androidx.compose.ui.input.rotary": {
+    "classes": 5,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "RotaryInputElement",
+      "RotaryInputModifierKt",
+      "RotaryInputModifierNode",
+      "RotaryInputNode"
+    ]
+  },
+  "androidx.compose.ui.internal": {
+    "classes": 2,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "InlineClassHelperKt",
+      "JvmDefaultWithCompatibility_jvmKt"
+    ]
+  },
+  "androidx.compose.ui.layout": {
+    "classes": 178,
+    "methods": 1097,
+    "storage": {},
+    "sample": [
+      "AlignmentLine",
+      "AlignmentLineKt",
+      "ApproachIntrinsicMeasureScope",
+      "ApproachIntrinsicsMeasureScope"
+    ]
+  },
+  "androidx.compose.ui.modifier": {
+    "classes": 23,
+    "methods": 94,
+    "storage": {},
+    "sample": [
+      "BackwardsCompatLocalMap",
+      "EmptyMap",
+      "ModifierLocal",
+      "ModifierLocalConsumer"
+    ]
+  },
+  "androidx.compose.ui.node": {
+    "classes": 199,
+    "methods": 1996,
+    "storage": {},
+    "sample": [
+      "AlignmentLines",
+      "AlignmentLinesOwner",
+      "BackwardsCompatNode",
+      "BackwardsCompatNodeKt"
+    ]
+  },
+  "androidx.compose.ui.platform": {
+    "classes": 361,
+    "methods": 2248,
+    "storage": {},
+    "sample": [
+      "AbstractComposeView",
+      "AccessibilityIterators",
+      "AccessibilityManager",
+      "AndroidAccessibilityManager"
+    ]
+  },
+  "androidx.compose.ui.platform.accessibility": {
+    "classes": 3,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "CollectionInfo_androidKt"
+    ]
+  },
+  "androidx.compose.ui.platform.actionmodecallback": {
+    "classes": 5,
+    "methods": 44,
+    "storage": {},
+    "sample": [
+      "FloatingTextActionModeCallback",
+      "MenuItemOption",
+      "PrimaryTextActionModeCallback",
+      "TextActionModeCallback"
+    ]
+  },
+  "androidx.compose.ui.platform.coreshims": {
+    "classes": 11,
+    "methods": 54,
+    "storage": {},
+    "sample": [
+      "AutofillIdCompat",
+      "ContentCaptureSessionCompat",
+      "ViewCompatShims",
+      "ViewStructureCompat"
+    ]
+  },
+  "androidx.compose.ui.relocation": {
+    "classes": 3,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "BringIntoViewModifierNode",
+      "BringIntoViewModifierNodeKt"
+    ]
+  },
+  "androidx.compose.ui.res": {
+    "classes": 13,
+    "methods": 53,
+    "storage": {},
+    "sample": [
+      "ColorResources_androidKt",
+      "FontResources_androidKt",
+      "ImageResources_androidKt",
+      "ImageVectorCache"
+    ]
+  },
+  "androidx.compose.ui.scrollcapture": {
+    "classes": 19,
+    "methods": 90,
+    "storage": {},
+    "sample": [
+      "ComposeScrollCaptureCallback",
+      "ComposeScrollCaptureCallback_androidKt",
+      "DisableAnimationMotionDurationScale",
+      "RelativeScroller"
+    ]
+  },
+  "androidx.compose.ui.semantics": {
+    "classes": 57,
+    "methods": 586,
+    "storage": {},
+    "sample": [
+      "AccessibilityAction",
+      "AppendedSemanticsElement",
+      "ClearAndSetSemanticsElement",
+      "CollectionInfo"
+    ]
+  },
+  "androidx.compose.ui.spatial": {
+    "classes": 17,
+    "methods": 177,
+    "storage": {},
+    "sample": [
+      "EmptyFillMeasurePolicy",
+      "RectList",
+      "RectListDebuggerModifierElement",
+      "RectListDebuggerModifierNode"
+    ]
+  },
+  "androidx.compose.ui.state": {
+    "classes": 2,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "ToggleableState",
+      "ToggleableStateKt"
+    ]
+  },
+  "androidx.compose.ui.text": {
+    "classes": 163,
+    "methods": 1361,
+    "storage": {},
+    "sample": [
+      "ActualAtomicReferenceJvm_jvmKt",
+      "AndroidParagraph",
+      "AndroidParagraph_androidKt",
+      "AndroidTextStyle_androidKt"
+    ]
+  },
+  "androidx.compose.ui.text.android": {
+    "classes": 51,
+    "methods": 417,
+    "storage": {},
+    "sample": [
+      "AndroidLayoutApi34",
+      "BoringLayoutFactory",
+      "BoringLayoutFactory33",
+      "BoringLayoutFactoryDefault"
+    ]
+  },
+  "androidx.compose.ui.text.android.selection": {
+    "classes": 12,
+    "methods": 59,
+    "storage": {},
+    "sample": [
+      "Api34SegmentFinder",
+      "GraphemeClusterSegmentFinder",
+      "GraphemeClusterSegmentFinderApi29",
+      "GraphemeClusterSegmentFinderUnderApi29"
+    ]
+  },
+  "androidx.compose.ui.text.android.style": {
+    "classes": 19,
+    "methods": 68,
+    "storage": {},
+    "sample": [
+      "BaselineShiftSpan",
+      "FontFeatureSpan",
+      "IndentationFixSpan",
+      "IndentationFixSpan_androidKt"
+    ]
+  },
+  "androidx.compose.ui.text.font": {
+    "classes": 107,
+    "methods": 652,
+    "storage": {},
+    "sample": [
+      "AndroidAssetFont",
+      "AndroidFileDescriptorFont",
+      "AndroidFileFont",
+      "AndroidFont"
+    ]
+  },
+  "androidx.compose.ui.text.input": {
+    "classes": 79,
+    "methods": 579,
+    "storage": {},
+    "sample": [
+      "BackspaceCommand",
+      "CommitTextCommand",
+      "CursorAnchorInfoApi33Helper",
+      "CursorAnchorInfoApi34Helper"
+    ]
+  },
+  "androidx.compose.ui.text.internal": {
+    "classes": 2,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "InlineClassHelperKt",
+      "JvmDefaultWithCompatibility_jvmKt"
+    ]
+  },
+  "androidx.compose.ui.text.intl": {
+    "classes": 11,
+    "methods": 61,
+    "storage": {},
+    "sample": [
+      "AndroidLocaleDelegateAPI23",
+      "AndroidLocaleDelegateAPI24",
+      "AndroidLocaleDelegate_androidKt",
+      "AndroidPlatformLocale_androidKt"
+    ]
+  },
+  "androidx.compose.ui.text.platform": {
+    "classes": 34,
+    "methods": 136,
+    "storage": {},
+    "sample": [
+      "AndroidAccessibilitySpannableString_androidKt",
+      "AndroidDefaultTypeface",
+      "AndroidFontListTypeface",
+      "AndroidGenericFontFamilyTypeface"
+    ]
+  },
+  "androidx.compose.ui.text.platform.extensions": {
+    "classes": 6,
+    "methods": 48,
+    "storage": {},
+    "sample": [
+      "LocaleListHelperMethods",
+      "PlaceholderExtensions_androidKt",
+      "SpannableExtensions_androidKt",
+      "TextPaintExtensions_androidKt"
+    ]
+  },
+  "androidx.compose.ui.text.platform.style": {
+    "classes": 7,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "BulletSpan_androidKt",
+      "CustomBulletSpan",
+      "DrawStyleSpan",
+      "DrawStyleSpan_androidKt"
+    ]
+  },
+  "androidx.compose.ui.text.style": {
+    "classes": 49,
+    "methods": 461,
+    "storage": {},
+    "sample": [
+      "BaselineShift",
+      "BaselineShiftKt",
+      "BrushStyle",
+      "ColorStyle"
+    ]
+  },
+  "androidx.compose.ui.tooling.preview": {
+    "classes": 15,
+    "methods": 29,
+    "storage": {},
+    "sample": [
+      "Device",
+      "Devices",
+      "Preview",
+      "PreviewDynamicColors"
+    ]
+  },
+  "androidx.compose.ui.tooling.preview.datasource": {
+    "classes": 4,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "CollectionPreviewParameterProvider",
+      "LoremIpsum",
+      "LoremIpsum_androidKt"
+    ]
+  },
+  "androidx.compose.ui.unit": {
+    "classes": 44,
+    "methods": 566,
+    "storage": {},
+    "sample": [
+      "AndroidDensity_androidKt",
+      "Constraints",
+      "ConstraintsKt",
+      "Density"
+    ]
+  },
+  "androidx.compose.ui.unit.fontscaling": {
+    "classes": 5,
+    "methods": 35,
+    "storage": {},
+    "sample": [
+      "FontScaleConverter",
+      "FontScaleConverterFactory",
+      "FontScaleConverterTable",
+      "MathUtils"
+    ]
+  },
+  "androidx.compose.ui.unit.internal": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "JvmDefaultWithCompatibility_jvmKt"
+    ]
+  },
+  "androidx.compose.ui.util": {
+    "classes": 6,
+    "methods": 70,
+    "storage": {},
+    "sample": [
+      "AndroidTrace_androidKt",
+      "InlineClassHelperKt",
+      "InlineClassHelper_jvmKt",
+      "ListUtilsKt"
+    ]
+  },
+  "androidx.compose.ui.viewinterop": {
+    "classes": 54,
+    "methods": 300,
+    "storage": {},
+    "sample": [
+      "AndroidViewHolder",
+      "AndroidViewHolder_androidKt",
+      "AndroidView_androidKt",
+      "FocusGroupNode_androidKt"
+    ]
+  },
+  "androidx.compose.ui.window": {
+    "classes": 66,
+    "methods": 305,
+    "storage": {},
+    "sample": [
+      "AlignmentOffsetPositionProvider",
+      "AndroidDialog_androidKt",
+      "AndroidPopup_androidKt",
+      "Api33Impl"
+    ]
+  },
+  "androidx.concurrent.futures": {
+    "classes": 22,
+    "methods": 110,
+    "storage": {},
+    "sample": [
+      "AbstractResolvableFuture",
+      "CallbackToFutureAdapter",
+      "DirectExecutor",
+      "ListenableFutureKt"
+    ]
+  },
+  "androidx.constraintlayout.core": {
+    "classes": 18,
+    "methods": 222,
+    "storage": {},
+    "sample": [
+      "ArrayLinkedVariables",
+      "ArrayRow",
+      "Cache",
+      "GoalRow"
+    ]
+  },
+  "androidx.constraintlayout.core.dsl": {
+    "classes": 49,
+    "methods": 474,
+    "storage": {},
+    "sample": [
+      "Barrier",
+      "Chain",
+      "Constraint",
+      "ConstraintSet"
+    ]
+  },
+  "androidx.constraintlayout.core.motion": {
+    "classes": 10,
+    "methods": 228,
+    "storage": {},
+    "sample": [
+      "CustomAttribute",
+      "CustomVariable",
+      "Motion",
+      "MotionConstrainedPoint"
+    ]
+  },
+  "androidx.constraintlayout.core.motion.key": {
+    "classes": 7,
+    "methods": 97,
+    "storage": {},
+    "sample": [
+      "MotionConstraintSet",
+      "MotionKey",
+      "MotionKeyAttributes",
+      "MotionKeyCycle"
+    ]
+  },
+  "androidx.constraintlayout.core.motion.parse": {
+    "classes": 4,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "KeyParser",
+      "a"
+    ]
+  },
+  "androidx.constraintlayout.core.motion.utils": {
+    "classes": 55,
+    "methods": 309,
+    "storage": {},
+    "sample": [
+      "ArcCurveFit",
+      "CurveFit",
+      "DifferentialInterpolator",
+      "Easing"
+    ]
+  },
+  "androidx.constraintlayout.core.parser": {
+    "classes": 13,
+    "methods": 138,
+    "storage": {},
+    "sample": [
+      "CLArray",
+      "CLContainer",
+      "CLElement",
+      "CLKey"
+    ]
+  },
+  "androidx.constraintlayout.core.state": {
+    "classes": 34,
+    "methods": 470,
+    "storage": {},
+    "sample": [
+      "ConstraintReference",
+      "ConstraintSetParser",
+      "CoreMotionScene",
+      "CorePixelDp"
+    ]
+  },
+  "androidx.constraintlayout.core.state.helpers": {
+    "classes": 13,
+    "methods": 129,
+    "storage": {},
+    "sample": [
+      "AlignHorizontallyReference",
+      "AlignVerticallyReference",
+      "BarrierReference",
+      "ChainReference"
+    ]
+  },
+  "androidx.constraintlayout.core.utils": {
+    "classes": 2,
+    "methods": 75,
+    "storage": {},
+    "sample": [
+      "GridCore",
+      "GridEngine"
+    ]
+  },
+  "androidx.constraintlayout.core.widgets": {
+    "classes": 20,
+    "methods": 444,
+    "storage": {},
+    "sample": [
+      "Barrier",
+      "Chain",
+      "ChainHead",
+      "ConstraintAnchor"
+    ]
+  },
+  "androidx.constraintlayout.core.widgets.analyzer": {
+    "classes": 24,
+    "methods": 169,
+    "storage": {},
+    "sample": [
+      "BaselineDimensionDependency",
+      "BasicMeasure",
+      "ChainRun",
+      "Dependency"
+    ]
+  },
+  "androidx.constraintlayout.helper.widget": {
+    "classes": 10,
+    "methods": 174,
+    "storage": {},
+    "sample": [
+      "Carousel",
+      "CircularFlow",
+      "Flow",
+      "Grid"
+    ]
+  },
+  "androidx.constraintlayout.motion.utils": {
+    "classes": 48,
+    "methods": 120,
+    "storage": {},
+    "sample": [
+      "CustomSupport",
+      "StopLogic",
+      "ViewOscillator",
+      "ViewSpline"
+    ]
+  },
+  "androidx.constraintlayout.motion.widget": {
+    "classes": 53,
+    "methods": 908,
+    "storage": {},
+    "sample": [
+      "Animatable",
+      "CustomFloatAttributes",
+      "Debug",
+      "DesignTool"
+    ]
+  },
+  "androidx.constraintlayout.utils.widget": {
+    "classes": 15,
+    "methods": 168,
+    "storage": {},
+    "sample": [
+      "ImageFilterButton",
+      "ImageFilterView",
+      "MockView",
+      "MotionButton"
+    ]
+  },
+  "androidx.constraintlayout.widget": {
+    "classes": 41,
+    "methods": 561,
+    "storage": {},
+    "sample": [
+      "Barrier",
+      "ConstraintAttribute",
+      "ConstraintHelper",
+      "ConstraintLayout"
+    ]
+  },
+  "androidx.coordinatorlayout": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.coordinatorlayout.widget": {
+    "classes": 14,
+    "methods": 194,
+    "storage": {},
+    "sample": [
+      "CoordinatorLayout",
+      "DirectedAcyclicGraph",
+      "ViewGroupUtils"
+    ]
+  },
+  "androidx.core": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.core.accessibilityservice": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "AccessibilityServiceInfoCompat"
+    ]
+  },
+  "androidx.core.animation": {
+    "classes": 13,
+    "methods": 62,
+    "storage": {},
+    "sample": [
+      "AnimatorKt"
+    ]
+  },
+  "androidx.core.app": {
+    "classes": 212,
+    "methods": 1402,
+    "storage": {
+      "偏好设置": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "ActivityCompat",
+      "ActivityManagerCompat",
+      "ActivityOptionsCompat",
+      "ActivityRecreator"
+    ]
+  },
+  "androidx.core.app.unusedapprestrictions": {
+    "classes": 8,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "IUnusedAppRestrictionsBackportCallback",
+      "IUnusedAppRestrictionsBackportService"
+    ]
+  },
+  "androidx.core.content": {
+    "classes": 50,
+    "methods": 277,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "ContentProviderCompat",
+      "ContentResolverCompat",
+      "ContentValuesKt",
+      "ContextCompat"
+    ]
+  },
+  "androidx.core.content.pm": {
+    "classes": 21,
+    "methods": 194,
+    "storage": {},
+    "sample": [
+      "ActivityInfoCompat",
+      "PackageInfoCompat",
+      "PermissionInfoCompat",
+      "ShortcutInfoChangeListener"
+    ]
+  },
+  "androidx.core.content.res": {
+    "classes": 29,
+    "methods": 204,
+    "storage": {},
+    "sample": [
+      "CamColor",
+      "CamUtils",
+      "ColorStateListInflaterCompat",
+      "ComplexColorCompat"
+    ]
+  },
+  "androidx.core.database": {
+    "classes": 4,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "CursorKt",
+      "CursorWindowCompat",
+      "DatabaseUtilsCompat"
+    ]
+  },
+  "androidx.core.database.sqlite": {
+    "classes": 3,
+    "methods": 6,
+    "storage": {
+      "SQLite": 1
+    },
+    "sample": [
+      "SQLiteCursorCompat",
+      "SQLiteDatabaseKt"
+    ]
+  },
+  "androidx.core.graphics": {
+    "classes": 55,
+    "methods": 430,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "BitmapCompat",
+      "BitmapKt",
+      "BlendModeColorFilterCompat",
+      "BlendModeCompat"
+    ]
+  },
+  "androidx.core.graphics.drawable": {
+    "classes": 23,
+    "methods": 216,
+    "storage": {
+      "文件流": 1,
+      "位图": 2
+    },
+    "sample": [
+      "BitmapDrawableKt",
+      "ColorDrawableKt",
+      "DrawableCompat",
+      "DrawableKt"
+    ]
+  },
+  "androidx.core.hardware.display": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "DisplayManagerCompat",
+      "ExperimentalDisplayApi"
+    ]
+  },
+  "androidx.core.hardware.fingerprint": {
+    "classes": 6,
+    "methods": 36,
+    "storage": {},
+    "sample": [
+      "FingerprintManagerCompat"
+    ]
+  },
+  "androidx.core.internal": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "package-info"
+    ]
+  },
+  "androidx.core.internal.view": {
+    "classes": 3,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "SupportMenu",
+      "SupportMenuItem",
+      "SupportSubMenu"
+    ]
+  },
+  "androidx.core.ktx": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.core.location": {
+    "classes": 48,
+    "methods": 314,
+    "storage": {},
+    "sample": [
+      "GnssStatusCompat",
+      "GnssStatusWrapper",
+      "GpsStatusWrapper",
+      "LocationCompat"
+    ]
+  },
+  "androidx.core.math": {
+    "classes": 1,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "MathUtils"
+    ]
+  },
+  "androidx.core.net": {
+    "classes": 11,
+    "methods": 53,
+    "storage": {},
+    "sample": [
+      "ConnectivityManagerCompat",
+      "DatagramSocketWrapper",
+      "MailTo",
+      "ParseException"
+    ]
+  },
+  "androidx.core.os": {
+    "classes": 69,
+    "methods": 317,
+    "storage": {},
+    "sample": [
+      "BufferFillPolicy",
+      "BuildCompat",
+      "BundleApi21ImplKt",
+      "BundleCompat"
+    ]
+  },
+  "androidx.core.provider": {
+    "classes": 40,
+    "methods": 158,
+    "storage": {},
+    "sample": [
+      "CallbackWrapper",
+      "CalleeHandler",
+      "DocumentsContractCompat",
+      "FontProvider"
+    ]
+  },
+  "androidx.core.service.quicksettings": {
+    "classes": 5,
+    "methods": 20,
+    "storage": {},
+    "sample": [
+      "PendingIntentActivityWrapper",
+      "TileServiceCompat"
+    ]
+  },
+  "androidx.core.telephony": {
+    "classes": 6,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "SubscriptionManagerCompat",
+      "TelephonyManagerCompat"
+    ]
+  },
+  "androidx.core.telephony.mbms": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "MbmsHelper"
+    ]
+  },
+  "androidx.core.text": {
+    "classes": 31,
+    "methods": 184,
+    "storage": {},
+    "sample": [
+      "BidiFormatter",
+      "CharSequenceKt",
+      "HtmlCompat",
+      "HtmlKt"
+    ]
+  },
+  "androidx.core.text.method": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "LinkMovementMethodCompat"
+    ]
+  },
+  "androidx.core.text.util": {
+    "classes": 20,
+    "methods": 91,
+    "storage": {},
+    "sample": [
+      "FindAddress",
+      "LinkifyCompat",
+      "LocalePreferences",
+      "a"
+    ]
+  },
+  "androidx.core.transition": {
+    "classes": 12,
+    "methods": 63,
+    "storage": {},
+    "sample": [
+      "TransitionKt"
+    ]
+  },
+  "androidx.core.util": {
+    "classes": 56,
+    "methods": 335,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "AndroidXConsumerKt",
+      "AndroidXContinuationConsumer",
+      "AtomicFile",
+      "AtomicFileKt"
+    ]
+  },
+  "androidx.core.view": {
+    "classes": 216,
+    "methods": 1564,
+    "storage": {},
+    "sample": [
+      "AccessibilityDelegateCompat",
+      "ActionProvider",
+      "ContentInfoCompat",
+      "DifferentialMotionFlingController"
+    ]
+  },
+  "androidx.core.view.accessibility": {
+    "classes": 44,
+    "methods": 469,
+    "storage": {},
+    "sample": [
+      "AccessibilityClickableSpanCompat",
+      "AccessibilityEventCompat",
+      "AccessibilityManagerCompat",
+      "AccessibilityNodeInfoCompat"
+    ]
+  },
+  "androidx.core.view.animation": {
+    "classes": 3,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "PathInterpolatorApi14",
+      "PathInterpolatorCompat"
+    ]
+  },
+  "androidx.core.view.autofill": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "AutofillIdCompat"
+    ]
+  },
+  "androidx.core.view.contentcapture": {
+    "classes": 4,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "ContentCaptureSessionCompat"
+    ]
+  },
+  "androidx.core.view.inputmethod": {
+    "classes": 12,
+    "methods": 69,
+    "storage": {},
+    "sample": [
+      "EditorInfoCompat",
+      "InputConnectionCompat",
+      "InputContentInfoCompat"
+    ]
+  },
+  "androidx.core.view.insets": {
+    "classes": 15,
+    "methods": 154,
+    "storage": {},
+    "sample": [
+      "ColorProtection",
+      "GradientProtection",
+      "Protection",
+      "ProtectionGroup"
+    ]
+  },
+  "androidx.core.viewtree": {
+    "classes": 3,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "R",
+      "ViewTree"
+    ]
+  },
+  "androidx.core.widget": {
+    "classes": 52,
+    "methods": 436,
+    "storage": {},
+    "sample": [
+      "AutoScrollHelper",
+      "AutoSizeableTextView",
+      "CheckedTextViewCompat",
+      "CompoundButtonCompat"
+    ]
+  },
+  "androidx.cursoradapter": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.cursoradapter.widget": {
+    "classes": 9,
+    "methods": 61,
+    "storage": {},
+    "sample": [
+      "CursorAdapter",
+      "CursorFilter",
+      "ResourceCursorAdapter",
+      "SimpleCursorAdapter"
+    ]
+  },
+  "androidx.customview": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.customview.poolingcontainer": {
+    "classes": 5,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "PoolingContainer",
+      "PoolingContainerListener",
+      "PoolingContainerListenerHolder",
+      "R"
+    ]
+  },
+  "androidx.customview.view": {
+    "classes": 3,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "AbsSavedState"
+    ]
+  },
+  "androidx.customview.widget": {
+    "classes": 13,
+    "methods": 151,
+    "storage": {},
+    "sample": [
+      "ExploreByTouchHelper",
+      "FocusStrategy",
+      "Openable",
+      "ViewDragHelper"
+    ]
+  },
+  "androidx.databinding": {
+    "classes": 84,
+    "methods": 485,
+    "storage": {},
+    "sample": [
+      "BaseObservable",
+      "BaseObservableField",
+      "Bindable",
+      "BindingAdapter"
+    ]
+  },
+  "androidx.databinding.adapters": {
+    "classes": 82,
+    "methods": 230,
+    "storage": {},
+    "sample": [
+      "AbsListViewBindingAdapter",
+      "AbsSeekBarBindingAdapter",
+      "AbsSpinnerBindingAdapter",
+      "ActionMenuViewBindingAdapter"
+    ]
+  },
+  "androidx.databinding.ktx": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.databinding.library": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.databinding.library.baseAdapters": {
+    "classes": 6,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "BR",
+      "DataBinderMapperImpl",
+      "R"
+    ]
+  },
+  "androidx.documentfile": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.documentfile.provider": {
+    "classes": 5,
+    "methods": 95,
+    "storage": {},
+    "sample": [
+      "DocumentFile",
+      "DocumentsContractApi19",
+      "RawDocumentFile",
+      "SingleDocumentFile"
+    ]
+  },
+  "androidx.drawerlayout": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.drawerlayout.widget": {
+    "classes": 12,
+    "methods": 150,
+    "storage": {},
+    "sample": [
+      "DrawerLayout"
+    ]
+  },
+  "androidx.dynamicanimation": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.dynamicanimation.animation": {
+    "classes": 36,
+    "methods": 191,
+    "storage": {},
+    "sample": [
+      "AnimationHandler",
+      "DynamicAnimation",
+      "FlingAnimation",
+      "FloatPropertyCompat"
+    ]
+  },
+  "androidx.emoji2": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.emoji2.text": {
+    "classes": 67,
+    "methods": 370,
+    "storage": {},
+    "sample": [
+      "ConcurrencyHelpers",
+      "DefaultEmojiCompatConfig",
+      "DefaultGlyphChecker",
+      "EmojiCompat"
+    ]
+  },
+  "androidx.emoji2.text.flatbuffer": {
+    "classes": 51,
+    "methods": 514,
+    "storage": {},
+    "sample": [
+      "ArrayReadWriteBuf",
+      "BaseVector",
+      "BooleanVector",
+      "ByteBufferReadWriteBuf"
+    ]
+  },
+  "androidx.emoji2.viewsintegration": {
+    "classes": 18,
+    "methods": 111,
+    "storage": {},
+    "sample": [
+      "EmojiEditTextHelper",
+      "EmojiEditableFactory",
+      "EmojiInputConnection",
+      "EmojiInputFilter"
+    ]
+  },
+  "androidx.exifinterface": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.exifinterface.media": {
+    "classes": 12,
+    "methods": 179,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "ExifInterface",
+      "ExifInterfaceUtils"
+    ]
+  },
+  "androidx.fragment": {
+    "classes": 5,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.fragment.app": {
+    "classes": 167,
+    "methods": 1460,
+    "storage": {},
+    "sample": [
+      "BackStackRecord",
+      "BackStackRecordState",
+      "BackStackState",
+      "DefaultSpecialEffectsController"
+    ]
+  },
+  "androidx.fragment.app.strictmode": {
+    "classes": 19,
+    "methods": 76,
+    "storage": {},
+    "sample": [
+      "FragmentReuseViolation",
+      "FragmentStrictMode",
+      "FragmentTagUsageViolation",
+      "GetRetainInstanceUsageViolation"
+    ]
+  },
+  "androidx.fragment.ktx": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.graphics.path": {
+    "classes": 14,
+    "methods": 88,
+    "storage": {},
+    "sample": [
+      "ConicConverter",
+      "PathIterator",
+      "PathIteratorApi34Impl",
+      "PathIteratorImpl"
+    ]
+  },
+  "androidx.inspection.compose.ui": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "ProguardDetection"
+    ]
+  },
+  "androidx.interpolator": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.interpolator.view.animation": {
+    "classes": 4,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "FastOutLinearInInterpolator",
+      "FastOutSlowInInterpolator",
+      "LinearOutSlowInInterpolator",
+      "LookupTableInterpolator"
+    ]
+  },
+  "androidx.legacy.app": {
+    "classes": 5,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "ActionBarDrawerToggle"
+    ]
+  },
+  "androidx.legacy.content": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "WakefulBroadcastReceiver"
+    ]
+  },
+  "androidx.legacy.coreui": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.legacy.coreutils": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.legacy.v4": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.legacy.widget": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "Space"
+    ]
+  },
+  "androidx.lifecycle": {
+    "classes": 172,
+    "methods": 793,
+    "storage": {},
+    "sample": [
+      "AbstractSavedStateViewModelFactory",
+      "AndroidViewModel",
+      "AndroidViewModel_androidKt",
+      "Api26Impl"
+    ]
+  },
+  "androidx.lifecycle.compose": {
+    "classes": 29,
+    "methods": 126,
+    "storage": {},
+    "sample": [
+      "DropUnlessLifecycleKt",
+      "FlowExtKt",
+      "LifecycleEffectKt",
+      "LifecycleExtKt"
+    ]
+  },
+  "androidx.lifecycle.internal": {
+    "classes": 3,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "CanonicalName_jvmKt",
+      "SavedStateHandleImpl",
+      "SavedStateHandleImpl_androidKt"
+    ]
+  },
+  "androidx.lifecycle.ktx": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.lifecycle.lifecycle.viewmodel.anchor": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.lifecycle.livedata": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.lifecycle.livedata.core": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.lifecycle.livedata.core.ktx": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.lifecycle.process": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.lifecycle.runtime": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.lifecycle.runtime.compose": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.lifecycle.serialization": {
+    "classes": 3,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "SavedStateHandleDelegate",
+      "SavedStateHandleDelegateKt",
+      "a"
+    ]
+  },
+  "androidx.lifecycle.service": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.lifecycle.viewmodel": {
+    "classes": 16,
+    "methods": 43,
+    "storage": {},
+    "sample": [
+      "CreationExtras",
+      "CreationExtrasKt",
+      "InitializerViewModelFactory",
+      "InitializerViewModelFactoryBuilder"
+    ]
+  },
+  "androidx.lifecycle.viewmodel.compose": {
+    "classes": 13,
+    "methods": 54,
+    "storage": {},
+    "sample": [
+      "LocalViewModelStoreOwner",
+      "LocalViewModelStoreOwner_androidKt",
+      "R",
+      "SavedStateHandleSaveableApi"
+    ]
+  },
+  "androidx.lifecycle.viewmodel.internal": {
+    "classes": 10,
+    "methods": 37,
+    "storage": {},
+    "sample": [
+      "CanonicalName_jvmKt",
+      "CloseableCoroutineScope",
+      "CloseableCoroutineScopeKt",
+      "DefaultViewModelProviderFactory"
+    ]
+  },
+  "androidx.lifecycle.viewmodel.ktx": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.lifecycle.viewmodel.savedstate": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.loader": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.loader.app": {
+    "classes": 7,
+    "methods": 57,
+    "storage": {},
+    "sample": [
+      "LoaderManager",
+      "LoaderManagerImpl"
+    ]
+  },
+  "androidx.loader.content": {
+    "classes": 16,
+    "methods": 118,
+    "storage": {},
+    "sample": [
+      "AsyncTaskLoader",
+      "CursorLoader",
+      "Loader",
+      "ModernAsyncTask"
+    ]
+  },
+  "androidx.localbroadcastmanager": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.localbroadcastmanager.content": {
+    "classes": 4,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "LocalBroadcastManager"
+    ]
+  },
+  "androidx.media": {
+    "classes": 89,
+    "methods": 357,
+    "storage": {},
+    "sample": [
+      "AudioAttributesCompat",
+      "AudioAttributesCompatParcelizer",
+      "AudioAttributesImpl",
+      "AudioAttributesImplApi21"
+    ]
+  },
+  "androidx.media.app": {
+    "classes": 3,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "NotificationCompat"
+    ]
+  },
+  "androidx.media.session": {
+    "classes": 2,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "MediaButtonReceiver"
+    ]
+  },
+  "androidx.multidex": {
+    "classes": 16,
+    "methods": 59,
+    "storage": {
+      "ZIP": 3,
+      "偏好设置": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "BuildConfig",
+      "MultiDex",
+      "MultiDexApplication",
+      "MultiDexExtractor"
+    ]
+  },
+  "androidx.navigation": {
+    "classes": 157,
+    "methods": 1305,
+    "storage": {},
+    "sample": [
+      "ActionOnlyNavDirections",
+      "ActivityKt",
+      "ActivityKt__Activity_androidKt",
+      "ActivityNavArgsLazyKt"
+    ]
+  },
+  "androidx.navigation.common": {
+    "classes": 3,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.navigation.compose": {
+    "classes": 58,
+    "methods": 350,
+    "storage": {},
+    "sample": [
+      "BackStackEntryIdViewModel",
+      "ComposeNavGraphNavigator",
+      "ComposeNavigator",
+      "ComposeNavigatorDestinationBuilder"
+    ]
+  },
+  "androidx.navigation.compose.internal": {
+    "classes": 2,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "NavComposeUtils_androidKt",
+      "WeakReference"
+    ]
+  },
+  "androidx.navigation.internal": {
+    "classes": 24,
+    "methods": 302,
+    "storage": {},
+    "sample": [
+      "AtomicInt",
+      "Log",
+      "NavBackStackEntryImpl",
+      "NavBackStackEntryStateImpl"
+    ]
+  },
+  "androidx.navigation.serialization": {
+    "classes": 34,
+    "methods": 277,
+    "storage": {},
+    "sample": [
+      "ArgStore",
+      "InternalAndroidNavType",
+      "InternalNavType",
+      "InternalType"
+    ]
+  },
+  "androidx.preference": {
+    "classes": 105,
+    "methods": 748,
+    "storage": {
+      "偏好设置": 2
+    },
+    "sample": [
+      "AndroidResources",
+      "CheckBoxPreference",
+      "CollapsiblePreferenceGroupController",
+      "DialogPreference"
+    ]
+  },
+  "androidx.preference.internal": {
+    "classes": 3,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "AbstractMultiSelectListPreference",
+      "PreferenceImageView",
+      "package-info"
+    ]
+  },
+  "androidx.print": {
+    "classes": 8,
+    "methods": 46,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "PrintHelper",
+      "R"
+    ]
+  },
+  "androidx.profileinstaller": {
+    "classes": 30,
+    "methods": 171,
+    "storage": {
+      "文件流": 3
+    },
+    "sample": [
+      "BenchmarkOperation",
+      "DeviceProfileWriter",
+      "DexProfileData",
+      "Encoding"
+    ]
+  },
+  "androidx.recyclerview": {
+    "classes": 5,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.recyclerview.widget": {
+    "classes": 203,
+    "methods": 2109,
+    "storage": {},
+    "sample": [
+      "AdapterHelper",
+      "AdapterListUpdateCallback",
+      "AsyncDifferConfig",
+      "AsyncListDiffer"
+    ]
+  },
+  "androidx.resourceinspection.annotation": {
+    "classes": 3,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "AppCompatShadowedAttributes",
+      "Attribute"
+    ]
+  },
+  "androidx.savedstate": {
+    "classes": 25,
+    "methods": 201,
+    "storage": {},
+    "sample": [
+      "R",
+      "Recreator",
+      "SavedStateKt",
+      "SavedStateKt__SavedStateKt"
+    ]
+  },
+  "androidx.savedstate.compose": {
+    "classes": 2,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "LocalSavedStateRegistryOwnerKt",
+      "R"
+    ]
+  },
+  "androidx.savedstate.compose.serialization.serializers": {
+    "classes": 6,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "MutableStateSerializer",
+      "MutableStateSerializerKt",
+      "SnapshotStateListSerializer",
+      "SnapshotStateListSerializerKt"
+    ]
+  },
+  "androidx.savedstate.internal": {
+    "classes": 6,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "CanonicalName_jvmKt",
+      "SavedStateRegistryImpl",
+      "SynchronizedObject",
+      "SynchronizedObjectKt"
+    ]
+  },
+  "androidx.savedstate.ktx": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.savedstate.serialization": {
+    "classes": 20,
+    "methods": 162,
+    "storage": {},
+    "sample": [
+      "ClassDiscriminatorMode",
+      "ClassDiscriminatorModeKt",
+      "EmptyArrayDecoder",
+      "SavedStateCodecUtilsKt"
+    ]
+  },
+  "androidx.savedstate.serialization.serializers": {
+    "classes": 22,
+    "methods": 125,
+    "storage": {},
+    "sample": [
+      "BuiltInSerializerKt",
+      "CharSequenceArraySerializer",
+      "CharSequenceListSerializer",
+      "CharSequenceSerializer"
+    ]
+  },
+  "androidx.slidingpanelayout": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.slidingpanelayout.widget": {
+    "classes": 9,
+    "methods": 99,
+    "storage": {},
+    "sample": [
+      "SlidingPaneLayout"
+    ]
+  },
+  "androidx.startup": {
+    "classes": 7,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "AppInitializer",
+      "InitializationProvider",
+      "Initializer",
+      "R"
+    ]
+  },
+  "androidx.swiperefreshlayout": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.swiperefreshlayout.widget": {
+    "classes": 18,
+    "methods": 190,
+    "storage": {},
+    "sample": [
+      "CircleImageView",
+      "CircularProgressDrawable",
+      "SwipeRefreshLayout"
+    ]
+  },
+  "androidx.tracing": {
+    "classes": 6,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "R",
+      "Trace",
+      "TraceApi18Impl",
+      "TraceApi29Impl"
+    ]
+  },
+  "androidx.tracing.ktx": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.transition": {
+    "classes": 141,
+    "methods": 884,
+    "storage": {},
+    "sample": [
+      "ArcMotion",
+      "AutoTransition",
+      "CanvasUtils",
+      "ChangeBounds"
+    ]
+  },
+  "androidx.vectordrawable": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.vectordrawable.animated": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.vectordrawable.graphics.drawable": {
+    "classes": 25,
+    "methods": 305,
+    "storage": {},
+    "sample": [
+      "AndroidResources",
+      "Animatable2Compat",
+      "AnimatedVectorDrawableCompat",
+      "AnimationUtilsCompat"
+    ]
+  },
+  "androidx.versionedparcelable": {
+    "classes": 16,
+    "methods": 225,
+    "storage": {
+      "Java 对象流": 1
+    },
+    "sample": [
+      "CustomVersionedParcelable",
+      "NonParcelField",
+      "ParcelField",
+      "ParcelImpl"
+    ]
+  },
+  "androidx.viewbinding": {
+    "classes": 3,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "R",
+      "ViewBinding",
+      "ViewBindings"
+    ]
+  },
+  "androidx.viewpager": {
+    "classes": 11,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.viewpager.widget": {
+    "classes": 24,
+    "methods": 210,
+    "storage": {},
+    "sample": [
+      "PagerAdapter",
+      "PagerTabStrip",
+      "PagerTitleStrip",
+      "ViewPager"
+    ]
+  },
+  "androidx.viewpager2": {
+    "classes": 2,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "androidx.viewpager2.adapter": {
+    "classes": 17,
+    "methods": 86,
+    "storage": {},
+    "sample": [
+      "FragmentStateAdapter",
+      "FragmentViewHolder",
+      "StatefulAdapter"
+    ]
+  },
+  "androidx.viewpager2.widget": {
+    "classes": 33,
+    "methods": 223,
+    "storage": {},
+    "sample": [
+      "AnimateLayoutChangeDetector",
+      "CompositeOnPageChangeCallback",
+      "CompositePageTransformer",
+      "FakeDrag"
+    ]
+  },
+  "b0": {
+    "classes": 38,
+    "methods": 166,
+    "storage": {
+      "文件流": 1,
+      "位图": 1
+    },
+    "sample": [
+      "a",
+      "a0",
+      "b",
+      "b0"
+    ]
+  },
+  "b1": {
+    "classes": 4,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "c0": {
+    "classes": 12,
+    "methods": 58,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "c1": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "coil3": {
+    "classes": 29,
+    "methods": 101,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "coil3.annotation": {
+    "classes": 7,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "DelicateCoilApi",
+      "ExperimentalCoilApi",
+      "InternalCoilApi",
+      "MainThread"
+    ]
+  },
+  "coil3.compose": {
+    "classes": 23,
+    "methods": 74,
+    "storage": {},
+    "sample": [
+      "AsyncImagePainter",
+      "ConstraintsSizeResolver",
+      "CrossfadePainter",
+      "ImagePainter"
+    ]
+  },
+  "coil3.compose.internal": {
+    "classes": 5,
+    "methods": 31,
+    "storage": {},
+    "sample": [
+      "AbstractContentPainterNode",
+      "ContentPainterElement",
+      "ContentPainterNode",
+      "SubcomposeContentPainterElement"
+    ]
+  },
+  "coil3.core": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": []
+  },
+  "coil3.decode": {
+    "classes": 26,
+    "methods": 79,
+    "storage": {},
+    "sample": [
+      "DataSource",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "coil3.disk": {
+    "classes": 12,
+    "methods": 42,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "coil3.intercept": {
+    "classes": 13,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "coil3.network": {
+    "classes": 22,
+    "methods": 91,
+    "storage": {},
+    "sample": [
+      "HttpException",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "coil3.network.internal": {
+    "classes": 4,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "coil3.network.okhttp.internal": {
+    "classes": 6,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "coil3.request": {
+    "classes": 4,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "CachePolicy",
+      "LifecycleRequestDelegate",
+      "NullRequestDataException",
+      "ViewTargetRequestDelegate"
+    ]
+  },
+  "coil3.size": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "Precision",
+      "Scale"
+    ]
+  },
+  "coil3.target": {
+    "classes": 2,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "GenericViewTarget",
+      "ImageViewTarget"
+    ]
+  },
+  "coil3.transition": {
+    "classes": 1,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "CrossfadeDrawable"
+    ]
+  },
+  "coil3.util": {
+    "classes": 14,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.alibaba.sdk.android.oss": {
+    "classes": 8,
+    "methods": 352,
+    "storage": {},
+    "sample": [
+      "ClientConfiguration",
+      "ClientException",
+      "OSS",
+      "OSSClient"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.callback": {
+    "classes": 3,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "OSSCompletedCallback",
+      "OSSProgressCallback",
+      "OSSRetryCallback"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.common": {
+    "classes": 18,
+    "methods": 90,
+    "storage": {},
+    "sample": [
+      "DefaultLogPrinter",
+      "HttpMethod",
+      "HttpProtocol",
+      "LogLevel"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.common.auth": {
+    "classes": 9,
+    "methods": 47,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "HmacSHA1Signature",
+      "OSSAuthCredentialsProvider",
+      "OSSCredentialProvider",
+      "OSSCustomSignerCredentialProvider"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.common.utils": {
+    "classes": 18,
+    "methods": 145,
+    "storage": {
+      "文件流": 1,
+      "JSON": 2,
+      "偏好设置": 1
+    },
+    "sample": [
+      "BinaryUtil",
+      "CRC64",
+      "CaseInsensitiveHashMap",
+      "DateUtil"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.exception": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "InconsistentException"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.internal": {
+    "classes": 76,
+    "methods": 476,
+    "storage": {
+      "Java 对象流": 3,
+      "文件流": 4
+    },
+    "sample": [
+      "AbstractResponseParser",
+      "BaseMultipartUploadTask",
+      "CheckCRC64DownloadInputStream",
+      "ExtensionRequestOperation"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.model": {
+    "classes": 96,
+    "methods": 767,
+    "storage": {},
+    "sample": [
+      "AbortMultipartUploadRequest",
+      "AbortMultipartUploadResult",
+      "AppendObjectRequest",
+      "AppendObjectResult"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.network": {
+    "classes": 9,
+    "methods": 42,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "CancellationHandler",
+      "ExecutionContext",
+      "NetworkProgressHelper",
+      "OSSRequestTask"
+    ]
+  },
+  "com.alibaba.sdk.android.oss.signer": {
+    "classes": 11,
+    "methods": 82,
+    "storage": {},
+    "sample": [
+      "HmacSHA1Signature",
+      "HmacSHA256Signature",
+      "OSSSignerBase",
+      "OSSSignerParams"
+    ]
+  },
+  "com.alibaba.sdk.android.oss_android_sdk": {
+    "classes": 3,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "BuildConfig",
+      "R"
+    ]
+  },
+  "com.blankj.utilcode": {
+    "classes": 15,
+    "methods": 16,
+    "storage": {},
+    "sample": []
+  },
+  "com.blankj.utilcode.constant": {
+    "classes": 3,
+    "methods": 0,
+    "storage": {},
+    "sample": []
+  },
+  "com.blankj.utilcode.util": {
+    "classes": 50,
+    "methods": 196,
+    "storage": {
+      "偏好设置": 2,
+      "JSON": 1,
+      "ZIP": 1,
+      "文件流": 3,
+      "位图": 1
+    },
+    "sample": [
+      "UtilsFileProvider",
+      "UtilsTransActivity",
+      "UtilsTransActivity4MainProcess",
+      "a"
+    ]
+  },
+  "com.bumptech.glide": {
+    "classes": 25,
+    "methods": 76,
+    "storage": {},
+    "sample": [
+      "GeneratedAppGlideModule",
+      "Priority",
+      "a",
+      "b"
+    ]
+  },
+  "com.bumptech.glide.annotation": {
+    "classes": 5,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "Excludes",
+      "GlideExtension",
+      "GlideModule",
+      "GlideOption"
+    ]
+  },
+  "com.bumptech.glide.annotation.compiler": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "Index"
+    ]
+  },
+  "com.bumptech.glide.gifdecoder": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": []
+  },
+  "com.bumptech.glide.load": {
+    "classes": 6,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "DataSource",
+      "DecodeFormat",
+      "EncodeStrategy",
+      "HttpException"
+    ]
+  },
+  "com.bumptech.glide.load.engine": {
+    "classes": 8,
+    "methods": 57,
+    "storage": {},
+    "sample": [
+      "CallbackException",
+      "GlideException",
+      "a",
+      "b"
+    ]
+  },
+  "com.bumptech.glide.load.resource.bitmap": {
+    "classes": 4,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "com.bumptech.glide.load.resource.gif": {
+    "classes": 1,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "GifDrawable"
+    ]
+  },
+  "com.bumptech.glide.manager": {
+    "classes": 2,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "RequestManagerFragment",
+      "SupportRequestManagerFragment"
+    ]
+  },
+  "com.bumptech.glide.request": {
+    "classes": 2,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "com.bumptech.glide.util": {
+    "classes": 2,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "CachedHashCodeArrayMap",
+      "Synthetic"
+    ]
+  },
+  "com.canhub.cropper": {
+    "classes": 65,
+    "methods": 284,
+    "storage": {
+      "位图": 1
+    },
+    "sample": [
+      "CropException",
+      "CropFileProvider",
+      "CropImageActivity",
+      "CropImageContract"
+    ]
+  },
+  "com.canhub.cropper.databinding": {
+    "classes": 2,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "CropImageActivityBinding",
+      "CropImageViewBinding"
+    ]
+  },
+  "com.chad.library": {
+    "classes": 10,
+    "methods": 11,
+    "storage": {},
+    "sample": []
+  },
+  "com.chad.library.adapter.base": {
+    "classes": 10,
+    "methods": 66,
+    "storage": {},
+    "sample": [
+      "BaseBinderAdapter",
+      "BaseDelegateMultiAdapter",
+      "BaseMultiItemQuickAdapter",
+      "BaseNodeAdapter"
+    ]
+  },
+  "com.chad.library.adapter.base.binder": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": []
+  },
+  "com.chad.library.adapter.base.diff": {
+    "classes": 2,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "BrvahListUpdateCallback"
+    ]
+  },
+  "com.chad.library.adapter.base.dragswipe": {
+    "classes": 1,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "DragAndSwipeCallback"
+    ]
+  },
+  "com.chad.library.adapter.base.viewholder": {
+    "classes": 2,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "BaseDataBindingHolder",
+      "BaseViewHolder"
+    ]
+  },
+  "com.flyco.tablayout": {
+    "classes": 7,
+    "methods": 186,
+    "storage": {},
+    "sample": [
+      "CommonTabLayout",
+      "SegmentTabLayout",
+      "SlidingTabLayout"
+    ]
+  },
+  "com.flyco.tablayout.widget": {
+    "classes": 1,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "MsgView"
+    ]
+  },
+  "com.google.accompanist.drawablepainter": {
+    "classes": 2,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "DrawablePainter",
+      "EmptyPainter"
+    ]
+  },
+  "com.google.android.material": {
+    "classes": 16,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "R"
+    ]
+  },
+  "com.google.android.material.animation": {
+    "classes": 13,
+    "methods": 68,
+    "storage": {},
+    "sample": [
+      "AnimatableView",
+      "AnimationUtils",
+      "AnimatorSetCompat",
+      "ArgbEvaluatorCompat"
+    ]
+  },
+  "com.google.android.material.appbar": {
+    "classes": 35,
+    "methods": 444,
+    "storage": {},
+    "sample": [
+      "AppBarLayout",
+      "CollapsingToolbarLayout",
+      "HeaderBehavior",
+      "HeaderScrollingViewBehavior"
+    ]
+  },
+  "com.google.android.material.badge": {
+    "classes": 12,
+    "methods": 270,
+    "storage": {},
+    "sample": [
+      "BadgeDrawable",
+      "BadgeState",
+      "BadgeUtils",
+      "ExperimentalBadgeUtils"
+    ]
+  },
+  "com.google.android.material.behavior": {
+    "classes": 9,
+    "methods": 57,
+    "storage": {},
+    "sample": [
+      "HideBottomViewOnScrollBehavior",
+      "SwipeDismissBehavior"
+    ]
+  },
+  "com.google.android.material.bottomappbar": {
+    "classes": 22,
+    "methods": 182,
+    "storage": {},
+    "sample": [
+      "BottomAppBar",
+      "BottomAppBarTopEdgeTreatment",
+      "a"
+    ]
+  },
+  "com.google.android.material.bottomnavigation": {
+    "classes": 7,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "BottomNavigationItemView",
+      "BottomNavigationMenuView",
+      "BottomNavigationView",
+      "LabelVisibilityMode"
+    ]
+  },
+  "com.google.android.material.bottomsheet": {
+    "classes": 29,
+    "methods": 253,
+    "storage": {},
+    "sample": [
+      "BottomSheetBehavior",
+      "BottomSheetDialog",
+      "BottomSheetDialogFragment",
+      "BottomSheetDragHandleView"
+    ]
+  },
+  "com.google.android.material.button": {
+    "classes": 14,
+    "methods": 210,
+    "storage": {},
+    "sample": [
+      "MaterialButton",
+      "MaterialButtonHelper",
+      "MaterialButtonToggleGroup"
+    ]
+  },
+  "com.google.android.material.canvas": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "CanvasCompat"
+    ]
+  },
+  "com.google.android.material.card": {
+    "classes": 6,
+    "methods": 142,
+    "storage": {},
+    "sample": [
+      "MaterialCardView",
+      "MaterialCardViewHelper",
+      "a"
+    ]
+  },
+  "com.google.android.material.carousel": {
+    "classes": 28,
+    "methods": 307,
+    "storage": {},
+    "sample": [
+      "Arrangement",
+      "Carousel",
+      "CarouselLayoutManager",
+      "CarouselOrientationHelper"
+    ]
+  },
+  "com.google.android.material.checkbox": {
+    "classes": 7,
+    "methods": 74,
+    "storage": {},
+    "sample": [
+      "MaterialCheckBox"
+    ]
+  },
+  "com.google.android.material.chip": {
+    "classes": 14,
+    "methods": 440,
+    "storage": {},
+    "sample": [
+      "Chip",
+      "ChipDrawable",
+      "ChipGroup",
+      "a"
+    ]
+  },
+  "com.google.android.material.circularreveal": {
+    "classes": 15,
+    "methods": 118,
+    "storage": {},
+    "sample": [
+      "CircularRevealCompat",
+      "CircularRevealFrameLayout",
+      "CircularRevealGridLayout",
+      "CircularRevealHelper"
+    ]
+  },
+  "com.google.android.material.circularreveal.cardview": {
+    "classes": 1,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "CircularRevealCardView"
+    ]
+  },
+  "com.google.android.material.circularreveal.coordinatorlayout": {
+    "classes": 1,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "CircularRevealCoordinatorLayout"
+    ]
+  },
+  "com.google.android.material.color": {
+    "classes": 45,
+    "methods": 227,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "ColorContrast",
+      "ColorContrastOptions",
+      "ColorResourcesLoaderCreator",
+      "ColorResourcesOverride"
+    ]
+  },
+  "com.google.android.material.color.utilities": {
+    "classes": 54,
+    "methods": 745,
+    "storage": {},
+    "sample": [
+      "Blend",
+      "Cam16",
+      "ColorUtils",
+      "Contrast"
+    ]
+  },
+  "com.google.android.material.datepicker": {
+    "classes": 72,
+    "methods": 549,
+    "storage": {},
+    "sample": [
+      "CalendarConstraints",
+      "CalendarItemStyle",
+      "CalendarStyle",
+      "CompositeDateValidator"
+    ]
+  },
+  "com.google.android.material.dialog": {
+    "classes": 3,
+    "methods": 88,
+    "storage": {},
+    "sample": [
+      "InsetDialogOnTouchListener",
+      "MaterialAlertDialogBuilder",
+      "MaterialDialogs"
+    ]
+  },
+  "com.google.android.material.divider": {
+    "classes": 2,
+    "methods": 44,
+    "storage": {},
+    "sample": [
+      "MaterialDivider",
+      "MaterialDividerItemDecoration"
+    ]
+  },
+  "com.google.android.material.drawable": {
+    "classes": 4,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "DrawableUtils",
+      "ScaledDrawableWrapper"
+    ]
+  },
+  "com.google.android.material.elevation": {
+    "classes": 2,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "ElevationOverlayProvider",
+      "SurfaceColors"
+    ]
+  },
+  "com.google.android.material.expandable": {
+    "classes": 3,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "ExpandableTransformationWidget",
+      "ExpandableWidget",
+      "ExpandableWidgetHelper"
+    ]
+  },
+  "com.google.android.material.floatingactionbutton": {
+    "classes": 47,
+    "methods": 483,
+    "storage": {},
+    "sample": [
+      "AnimatorTracker",
+      "BaseMotionStrategy",
+      "BorderDrawable",
+      "ExtendedFloatingActionButton"
+    ]
+  },
+  "com.google.android.material.imageview": {
+    "classes": 2,
+    "methods": 41,
+    "storage": {},
+    "sample": [
+      "ShapeableImageView"
+    ]
+  },
+  "com.google.android.material.internal": {
+    "classes": 94,
+    "methods": 662,
+    "storage": {},
+    "sample": [
+      "BaselineLayout",
+      "CheckableGroup",
+      "CheckableImageButton",
+      "ClippableRoundedCornerLayout"
+    ]
+  },
+  "com.google.android.material.materialswitch": {
+    "classes": 1,
+    "methods": 36,
+    "storage": {},
+    "sample": [
+      "MaterialSwitch"
+    ]
+  },
+  "com.google.android.material.math": {
+    "classes": 1,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "MathUtils"
+    ]
+  },
+  "com.google.android.material.motion": {
+    "classes": 17,
+    "methods": 86,
+    "storage": {},
+    "sample": [
+      "MaterialBackAnimationHelper",
+      "MaterialBackHandler",
+      "MaterialBackOrchestrator",
+      "MaterialBottomContainerBackHelper"
+    ]
+  },
+  "com.google.android.material.navigation": {
+    "classes": 28,
+    "methods": 374,
+    "storage": {},
+    "sample": [
+      "DrawerLayoutUtils",
+      "NavigationBarItemView",
+      "NavigationBarMenu",
+      "NavigationBarMenuView"
+    ]
+  },
+  "com.google.android.material.navigationrail": {
+    "classes": 4,
+    "methods": 45,
+    "storage": {},
+    "sample": [
+      "NavigationRailItemView",
+      "NavigationRailMenuView",
+      "NavigationRailView"
+    ]
+  },
+  "com.google.android.material.progressindicator": {
+    "classes": 40,
+    "methods": 357,
+    "storage": {},
+    "sample": [
+      "AnimatorDurationScaleProvider",
+      "BaseProgressIndicator",
+      "BaseProgressIndicatorSpec",
+      "CircularDrawingDelegate"
+    ]
+  },
+  "com.google.android.material.radiobutton": {
+    "classes": 1,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "MaterialRadioButton"
+    ]
+  },
+  "com.google.android.material.resources": {
+    "classes": 10,
+    "methods": 61,
+    "storage": {},
+    "sample": [
+      "CancelableFontCallback",
+      "MaterialAttributes",
+      "MaterialResources",
+      "TextAppearance"
+    ]
+  },
+  "com.google.android.material.ripple": {
+    "classes": 5,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "RippleDrawableCompat",
+      "RippleUtils"
+    ]
+  },
+  "com.google.android.material.search": {
+    "classes": 39,
+    "methods": 382,
+    "storage": {},
+    "sample": [
+      "SearchBar",
+      "SearchBarAnimationHelper",
+      "SearchView",
+      "SearchViewAnimationHelper"
+    ]
+  },
+  "com.google.android.material.shadow": {
+    "classes": 3,
+    "methods": 36,
+    "storage": {},
+    "sample": [
+      "ShadowDrawableWrapper",
+      "ShadowRenderer",
+      "ShadowViewDelegate"
+    ]
+  },
+  "com.google.android.material.shape": {
+    "classes": 48,
+    "methods": 432,
+    "storage": {},
+    "sample": [
+      "AbsoluteCornerSize",
+      "AdjustedCornerSize",
+      "ClampedCornerSize",
+      "CornerFamily"
+    ]
+  },
+  "com.google.android.material.sidesheet": {
+    "classes": 24,
+    "methods": 247,
+    "storage": {},
+    "sample": [
+      "LeftSheetDelegate",
+      "RightSheetDelegate",
+      "Sheet",
+      "SheetCallback"
+    ]
+  },
+  "com.google.android.material.slider": {
+    "classes": 23,
+    "methods": 433,
+    "storage": {},
+    "sample": [
+      "BaseOnChangeListener",
+      "BaseOnSliderTouchListener",
+      "BaseSlider",
+      "BasicLabelFormatter"
+    ]
+  },
+  "com.google.android.material.snackbar": {
+    "classes": 36,
+    "methods": 241,
+    "storage": {},
+    "sample": [
+      "BaseTransientBottomBar",
+      "ContentViewCallback",
+      "Snackbar",
+      "SnackbarContentLayout"
+    ]
+  },
+  "com.google.android.material.stateful": {
+    "classes": 2,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "ExtendableSavedState"
+    ]
+  },
+  "com.google.android.material.switchmaterial": {
+    "classes": 1,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "SwitchMaterial"
+    ]
+  },
+  "com.google.android.material.tabs": {
+    "classes": 27,
+    "methods": 262,
+    "storage": {},
+    "sample": [
+      "ElasticTabIndicatorInterpolator",
+      "FadeTabIndicatorInterpolator",
+      "TabIndicatorInterpolator",
+      "TabItem"
+    ]
+  },
+  "com.google.android.material.textfield": {
+    "classes": 48,
+    "methods": 716,
+    "storage": {},
+    "sample": [
+      "ClearTextEndIconDelegate",
+      "CustomEndIconDelegate",
+      "CutoutDrawable",
+      "DropdownMenuEndIconDelegate"
+    ]
+  },
+  "com.google.android.material.textview": {
+    "classes": 1,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "MaterialTextView"
+    ]
+  },
+  "com.google.android.material.theme": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "MaterialComponentsViewInflater"
+    ]
+  },
+  "com.google.android.material.theme.overlay": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "MaterialThemeOverlay"
+    ]
+  },
+  "com.google.android.material.timepicker": {
+    "classes": 45,
+    "methods": 309,
+    "storage": {},
+    "sample": [
+      "ChipTextInputComboView",
+      "ClickActionDelegate",
+      "ClockFaceView",
+      "ClockHandView"
+    ]
+  },
+  "com.google.android.material.tooltip": {
+    "classes": 2,
+    "methods": 39,
+    "storage": {},
+    "sample": [
+      "TooltipDrawable"
+    ]
+  },
+  "com.google.android.material.transformation": {
+    "classes": 15,
+    "methods": 75,
+    "storage": {},
+    "sample": [
+      "ExpandableBehavior",
+      "ExpandableTransformationBehavior",
+      "FabTransformationBehavior",
+      "FabTransformationScrimBehavior"
+    ]
+  },
+  "com.google.android.material.transition": {
+    "classes": 50,
+    "methods": 324,
+    "storage": {},
+    "sample": [
+      "FadeModeEvaluator",
+      "FadeModeEvaluators",
+      "FadeModeResult",
+      "FadeProvider"
+    ]
+  },
+  "com.google.android.material.transition.platform": {
+    "classes": 56,
+    "methods": 351,
+    "storage": {},
+    "sample": [
+      "FadeModeEvaluator",
+      "FadeModeEvaluators",
+      "FadeModeResult",
+      "FadeProvider"
+    ]
+  },
+  "com.google.auto.value": {
+    "classes": 5,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "AutoAnnotation",
+      "AutoOneOf",
+      "AutoValue"
+    ]
+  },
+  "com.google.auto.value.extension.memoized": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "Memoized"
+    ]
+  },
+  "com.google.errorprone.annotations": {
+    "classes": 25,
+    "methods": 20,
+    "storage": {},
+    "sample": [
+      "CanIgnoreReturnValue",
+      "CheckReturnValue",
+      "CompatibleWith",
+      "CompileTimeConstant"
+    ]
+  },
+  "com.google.errorprone.annotations.concurrent": {
+    "classes": 4,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "GuardedBy",
+      "LazyInit",
+      "LockMethod",
+      "UnlockMethod"
+    ]
+  },
+  "com.google.flatbuffers": {
+    "classes": 2,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "com.google.gson": {
+    "classes": 38,
+    "methods": 130,
+    "storage": {},
+    "sample": [
+      "FieldNamingPolicy",
+      "JsonIOException",
+      "JsonParseException",
+      "JsonSyntaxException"
+    ]
+  },
+  "com.google.gson.annotations": {
+    "classes": 5,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "Expose",
+      "JsonAdapter",
+      "SerializedName",
+      "Since"
+    ]
+  },
+  "com.google.gson.internal": {
+    "classes": 24,
+    "methods": 122,
+    "storage": {},
+    "sample": [
+      "LazilyParsedNumber",
+      "LinkedTreeMap",
+      "a",
+      "b"
+    ]
+  },
+  "com.google.gson.stream": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "JsonToken",
+      "MalformedJsonException"
+    ]
+  },
+  "d0": {
+    "classes": 10,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "d1": {
+    "classes": 3,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "e0": {
+    "classes": 2,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "e1": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "e6": {
+    "classes": 12,
+    "methods": 61,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "f0": {
+    "classes": 31,
+    "methods": 110,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "b",
+      "b0"
+    ]
+  },
+  "f6": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "g0": {
+    "classes": 5,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "g1": {
+    "classes": 58,
+    "methods": 180,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "a1",
+      "b"
+    ]
+  },
+  "h0": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "h1": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "h6": {
+    "classes": 9,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "i0": {
+    "classes": 26,
+    "methods": 113,
+    "storage": {
+      "文件流": 2,
+      "位图": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "i1": {
+    "classes": 3,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "i6": {
+    "classes": 4,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "j": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "j0": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "j1": {
+    "classes": 8,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "j6": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "k": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "k0": {
+    "classes": 2,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "k1": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "k6": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "kotlin.collections": {
+    "classes": 40,
+    "methods": 438,
+    "storage": {},
+    "sample": [
+      "EmptyList",
+      "EmptyMap",
+      "EmptySet",
+      "a"
+    ]
+  },
+  "kotlin.collections.builders": {
+    "classes": 7,
+    "methods": 176,
+    "storage": {},
+    "sample": [
+      "ListBuilder",
+      "MapBuilder",
+      "SerializedCollection",
+      "SerializedMap"
+    ]
+  },
+  "kotlin.concurrent.atomics": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "ExperimentalAtomicApi"
+    ]
+  },
+  "kotlin.contracts": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "ExperimentalContracts"
+    ]
+  },
+  "kotlin.coroutines": {
+    "classes": 5,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "CombinedContext",
+      "EmptyCoroutineContext",
+      "RestrictsSuspension",
+      "a"
+    ]
+  },
+  "kotlin.coroutines.intrinsics": {
+    "classes": 5,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "CoroutineSingletons"
+    ]
+  },
+  "kotlin.coroutines.jvm.internal": {
+    "classes": 6,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "BaseContinuationImpl",
+      "ContinuationImpl",
+      "DebugMetadata",
+      "RestrictedContinuationImpl"
+    ]
+  },
+  "kotlin.enums": {
+    "classes": 3,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "EnumEntriesList",
+      "EnumEntriesSerializationProxy",
+      "a"
+    ]
+  },
+  "kotlin.experimental": {
+    "classes": 5,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "ExpectRefinement",
+      "ExperimentalNativeApi",
+      "ExperimentalObjCName",
+      "ExperimentalObjCRefinement"
+    ]
+  },
+  "kotlin.internal": {
+    "classes": 17,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "AccessibleLateinitPropertyLiteral",
+      "ContractsDsl",
+      "DynamicExtension",
+      "Exact"
+    ]
+  },
+  "kotlin.io": {
+    "classes": 9,
+    "methods": 28,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "AccessDeniedException",
+      "FileAlreadyExistsException",
+      "FileSystemException",
+      "FileWalkDirection"
+    ]
+  },
+  "kotlin.io.encoding": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "ExperimentalEncodingApi"
+    ]
+  },
+  "kotlin.io.path": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "ExperimentalPathApi"
+    ]
+  },
+  "kotlin.js": {
+    "classes": 5,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "ExperimentalJsCollectionsApi",
+      "ExperimentalJsExport",
+      "ExperimentalJsFileName",
+      "ExperimentalJsReflectionCreateInstance"
+    ]
+  },
+  "kotlin.jvm": {
+    "classes": 24,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "ImplicitlyActualizedByJvmDeclaration",
+      "JvmDefault",
+      "JvmDefaultWithCompatibility",
+      "JvmDefaultWithoutCompatibility"
+    ]
+  },
+  "kotlin.jvm.internal": {
+    "classes": 42,
+    "methods": 219,
+    "storage": {},
+    "sample": [
+      "AdaptedFunctionReference",
+      "CallableReference",
+      "FunctionReference",
+      "FunctionReferenceImpl"
+    ]
+  },
+  "kotlin.random": {
+    "classes": 2,
+    "methods": 22,
+    "storage": {},
+    "sample": []
+  },
+  "kotlin.reflect": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "KVariance",
+      "KVisibility"
+    ]
+  },
+  "l1": {
+    "classes": 2,
+    "methods": 58,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "l6": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "m": {
+    "classes": 5,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "m0": {
+    "classes": 7,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "m6": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "n": {
+    "classes": 11,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "n0": {
+    "classes": 3,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "n6": {
+    "classes": 10,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "o": {
+    "classes": 3,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "o0": {
+    "classes": 10,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "o6": {
+    "classes": 3,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "p": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "q": {
+    "classes": 9,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "q0": {
+    "classes": 4,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "r0": {
+    "classes": 4,
+    "methods": 43,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "r6": {
+    "classes": 10,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "s": {
+    "classes": 15,
+    "methods": 54,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "s0": {
+    "classes": 10,
+    "methods": 62,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "s6": {
+    "classes": 6,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "t": {
+    "classes": 9,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "t0": {
+    "classes": 2,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "t6": {
+    "classes": 1,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "u": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "u0": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "u6": {
+    "classes": 3,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "v": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "v0": {
+    "classes": 11,
+    "methods": 51,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "v6": {
+    "classes": 3,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "w": {
+    "classes": 7,
+    "methods": 28,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "w0": {
+    "classes": 8,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "w6": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "x": {
+    "classes": 4,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "x6": {
+    "classes": 6,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "y": {
+    "classes": 9,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "y0": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "y6": {
+    "classes": 19,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "z": {
+    "classes": 13,
+    "methods": 68,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "z0": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "z6": {
+    "classes": 16,
+    "methods": 55,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a2": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "a3": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a4": {
+    "classes": 1,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a5": {
+    "classes": 8,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b2": {
+    "classes": 4,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b3": {
+    "classes": 5,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b4": {
+    "classes": 79,
+    "methods": 440,
+    "storage": {
+      "Protobuf": 19
+    },
+    "sample": [
+      "a",
+      "a0",
+      "a1",
+      "a2"
+    ]
+  },
+  "b5": {
+    "classes": 10,
+    "methods": 29,
+    "storage": {
+      "偏好设置": 2
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "c2": {
+    "classes": 3,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "c3": {
+    "classes": 3,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "c4": {
+    "classes": 3,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "c5": {
+    "classes": 3,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.google.protobuf": {
+    "classes": 715,
+    "methods": 17653,
+    "storage": {
+      "Protobuf": 254
+    },
+    "sample": [
+      "AbstractMessage",
+      "AbstractMessageLite",
+      "AbstractParser",
+      "AbstractProtobufList"
+    ]
+  },
+  "com.google.protobuf.compiler": {
+    "classes": 20,
+    "methods": 831,
+    "storage": {
+      "Protobuf": 9
+    },
+    "sample": [
+      "PluginProtos"
+    ]
+  },
+  "com.itkacher.okprofiler": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": []
+  },
+  "com.jaredrummler.android.colorpicker": {
+    "classes": 21,
+    "methods": 98,
+    "storage": {},
+    "sample": [
+      "ColorPanelView",
+      "ColorPickerDialog",
+      "ColorPickerView",
+      "ColorPreference"
+    ]
+  },
+  "com.stormdzh.lame4android": {
+    "classes": 3,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "Lame",
+      "PCMFormat"
+    ]
+  },
+  "com.tencent.bugly": {
+    "classes": 5,
+    "methods": 58,
+    "storage": {},
+    "sample": [
+      "BuglyStrategy",
+      "CrashModule",
+      "R"
+    ]
+  },
+  "com.tencent.bugly.crashreport": {
+    "classes": 7,
+    "methods": 95,
+    "storage": {
+      "WebView": 1
+    },
+    "sample": [
+      "BuglyHintException",
+      "BuglyLog",
+      "CrashReport",
+      "a"
+    ]
+  },
+  "com.tencent.bugly.crashreport.biz": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "UserInfoBean"
+    ]
+  },
+  "com.tencent.bugly.crashreport.common.info": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "PlugInBean"
+    ]
+  },
+  "com.tencent.bugly.crashreport.common.strategy": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "StrategyBean"
+    ]
+  },
+  "com.tencent.bugly.crashreport.crash": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "CrashDetailBean"
+    ]
+  },
+  "com.tencent.bugly.crashreport.crash.anr": {
+    "classes": 5,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "TraceFileHelper",
+      "a",
+      "b"
+    ]
+  },
+  "com.tencent.bugly.crashreport.crash.h5": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {
+      "JSON": 1
+    },
+    "sample": [
+      "H5JavaScriptInterface"
+    ]
+  },
+  "com.tencent.bugly.crashreport.crash.jni": {
+    "classes": 3,
+    "methods": 64,
+    "storage": {},
+    "sample": [
+      "NativeCrashHandler",
+      "NativeExceptionHandler",
+      "a"
+    ]
+  },
+  "com.tencent.bugly.crashreport.inner": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "InnerApi"
+    ]
+  },
+  "com.tencent.bugly.proguard": {
+    "classes": 125,
+    "methods": 769,
+    "storage": {
+      "偏好设置": 4,
+      "JSON": 1,
+      "文件流": 5,
+      "ZIP": 2,
+      "SQLite": 3,
+      "Java 对象流": 1
+    },
+    "sample": [
+      "a",
+      "a0",
+      "a1",
+      "aa"
+    ]
+  },
+  "com.xuexiang.xui": {
+    "classes": 14,
+    "methods": 15,
+    "storage": {},
+    "sample": []
+  },
+  "com.xuexiang.xui.adapter": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "FragmentAdapter",
+      "FragmentStateAdapter"
+    ]
+  },
+  "com.xuexiang.xui.adapter.recyclerview": {
+    "classes": 7,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "BaseRecyclerAdapter",
+      "DividerItemDecoration",
+      "GridDividerItemDecoration",
+      "RecyclerViewHolder"
+    ]
+  },
+  "com.xuexiang.xui.adapter.recyclerview.sticky": {
+    "classes": 2,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "StickyHeadContainer",
+      "StickyItemDecoration"
+    ]
+  },
+  "com.xuexiang.xui.utils": {
+    "classes": 12,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.xuexiang.xui.widget": {
+    "classes": 6,
+    "methods": 49,
+    "storage": {},
+    "sample": [
+      "StickyNestedScrollView",
+      "XUIKeyboardScrollView",
+      "XUIObservableScrollView",
+      "XUIWrapContentExpandableListView"
+    ]
+  },
+  "com.xuexiang.xui.widget.actionbar": {
+    "classes": 1,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "TitleBar"
+    ]
+  },
+  "com.xuexiang.xui.widget.activity": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "BaseGuideActivity",
+      "BaseSplashActivity"
+    ]
+  },
+  "com.xuexiang.xui.widget.alpha": {
+    "classes": 7,
+    "methods": 56,
+    "storage": {},
+    "sample": [
+      "XUIAlphaButton",
+      "XUIAlphaFrameLayout",
+      "XUIAlphaImageButton",
+      "XUIAlphaImageView"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.recycler": {
+    "classes": 4,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "BannerLayout",
+      "RecyclerViewBannerBase"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.recycler.layout": {
+    "classes": 9,
+    "methods": 65,
+    "storage": {},
+    "sample": [
+      "BannerLayoutManager",
+      "CenterScrollListener",
+      "CenterSnapHelper",
+      "OverFlyingLayoutManager"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.transform": {
+    "classes": 6,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "DepthTransformer",
+      "FadeSlideTransformer",
+      "FlowTransformer",
+      "RotateDownTransformer"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.widget.banner": {
+    "classes": 3,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "SimpleGuideBanner",
+      "SimpleImageBanner",
+      "SimpleTextBanner"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.widget.banner.base": {
+    "classes": 3,
+    "methods": 32,
+    "storage": {},
+    "sample": [
+      "BaseBanner",
+      "BaseImageBanner",
+      "BaseIndicatorBanner"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.widget.loopviewpager": {
+    "classes": 2,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "LoopPagerAdapterWrapper",
+      "LoopViewPager"
+    ]
+  },
+  "com.xuexiang.xui.widget.behavior": {
+    "classes": 4,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "BaseBehavior",
+      "BottomNavigationViewBehavior",
+      "FloatingActionButtonBehavior",
+      "ToolBarBehavior"
+    ]
+  },
+  "com.xuexiang.xui.widget.button": {
+    "classes": 14,
+    "methods": 84,
+    "storage": {},
+    "sample": [
+      "ButtonView",
+      "CountDownButton",
+      "RippleView",
+      "SmoothCheckBox"
+    ]
+  },
+  "com.xuexiang.xui.widget.button.roundbutton": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "RoundButton"
+    ]
+  },
+  "com.xuexiang.xui.widget.button.shadowbutton": {
+    "classes": 4,
+    "methods": 46,
+    "storage": {},
+    "sample": [
+      "BaseShadowButton",
+      "RippleShadowShadowButton",
+      "ShadowButton",
+      "ShadowImageView"
+    ]
+  },
+  "com.xuexiang.xui.widget.button.shinebutton": {
+    "classes": 4,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "PorterImageView",
+      "PorterShapeImageView",
+      "ShineButton",
+      "ShineView"
+    ]
+  },
+  "com.xuexiang.xui.widget.button.switchbutton": {
+    "classes": 3,
+    "methods": 61,
+    "storage": {},
+    "sample": [
+      "SwitchButton",
+      "a"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog": {
+    "classes": 3,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "BaseDialog",
+      "LoadingDialog",
+      "MiniLoadingDialog"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.bottomsheet": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "BottomSheetItemView"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.materialdialog": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "GravityEnum",
+      "StackingBehavior"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.materialdialog.internal": {
+    "classes": 2,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "MDButton",
+      "MDRootLayout"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.materialdialog.simplelist": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "MaterialSimpleListAdapter"
+    ]
+  },
+  "com.xuexiang.xui.widget.edittext": {
+    "classes": 6,
+    "methods": 48,
+    "storage": {},
+    "sample": [
+      "ClearEditText",
+      "MultiLineEditText",
+      "PasswordEditText",
+      "ValidatorEditText"
+    ]
+  },
+  "com.xuexiang.xui.widget.edittext.materialedittext": {
+    "classes": 5,
+    "methods": 156,
+    "storage": {},
+    "sample": [
+      "MaterialEditText"
+    ]
+  },
+  "com.xuexiang.xui.widget.edittext.materialedittext.validation": {
+    "classes": 4,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "METLengthChecker",
+      "METValidator",
+      "NotAllowEmptyValidator",
+      "RegexpValidator"
+    ]
+  },
+  "com.xuexiang.xui.widget.edittext.verify": {
+    "classes": 3,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "PwdEditText",
+      "PwdTextView",
+      "VerifyCodeEditText"
+    ]
+  },
+  "com.xuexiang.xui.widget.flowlayout": {
+    "classes": 2,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "FlowLayout",
+      "FlowTagLayout"
+    ]
+  },
+  "com.xuexiang.xui.widget.grouplist": {
+    "classes": 7,
+    "methods": 32,
+    "storage": {},
+    "sample": [
+      "XUICommonListItemView",
+      "XUIGroupListSectionHeaderFooterView",
+      "XUIGroupListView"
+    ]
+  },
+  "com.xuexiang.xui.widget.guidview": {
+    "classes": 4,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "FocusShape",
+      "GuideCaseView",
+      "GuideImageView",
+      "a"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview": {
+    "classes": 2,
+    "methods": 38,
+    "storage": {},
+    "sample": [
+      "IconImageView",
+      "RadiusImageView"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.crop": {
+    "classes": 4,
+    "methods": 68,
+    "storage": {
+      "位图": 1
+    },
+    "sample": [
+      "CropImageView",
+      "CropOverlayView",
+      "Edge",
+      "Handle"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.edit": {
+    "classes": 11,
+    "methods": 53,
+    "storage": {},
+    "sample": [
+      "BrushDrawingView",
+      "FilterImageView",
+      "PhotoEditorView",
+      "PhotoFilter"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.nine": {
+    "classes": 2,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "GridImageView",
+      "NineGridImageView"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.photoview": {
+    "classes": 1,
+    "methods": 35,
+    "storage": {},
+    "sample": [
+      "PhotoView"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.preview": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": []
+  },
+  "com.xuexiang.xui.widget.imageview.preview.enitity": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "IPreviewInfo"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.preview.ui": {
+    "classes": 3,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "BasePhotoFragment",
+      "PreviewActivity",
+      "VideoPlayerActivity"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.preview.view": {
+    "classes": 6,
+    "methods": 40,
+    "storage": {},
+    "sample": [
+      "BezierBannerView",
+      "PhotoViewPager",
+      "SmoothImageView",
+      "a"
+    ]
+  },
+  "com.xuexiang.xui.widget.layout": {
+    "classes": 6,
+    "methods": 109,
+    "storage": {},
+    "sample": [
+      "ExpandableLayout",
+      "XUIButton",
+      "XUIFrameLayout",
+      "XUILinearLayout"
+    ]
+  },
+  "com.xuexiang.xui.widget.layout.linkage": {
+    "classes": 1,
+    "methods": 27,
+    "storage": {},
+    "sample": [
+      "LinkageScrollLayout"
+    ]
+  },
+  "com.xuexiang.xui.widget.layout.linkage.view": {
+    "classes": 6,
+    "methods": 66,
+    "storage": {},
+    "sample": [
+      "LinkageLinearLayout",
+      "LinkageRecyclerView",
+      "LinkageScrollView",
+      "LinkageTextView"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker": {
+    "classes": 3,
+    "methods": 75,
+    "storage": {},
+    "sample": [
+      "RulerView",
+      "XRangeSlider",
+      "XSeekBar"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.wheelview": {
+    "classes": 2,
+    "methods": 32,
+    "storage": {},
+    "sample": [
+      "WheelView"
+    ]
+  },
+  "com.xuexiang.xui.widget.popupwindow": {
+    "classes": 3,
+    "methods": 25,
+    "storage": {},
+    "sample": []
+  },
+  "com.xuexiang.xui.widget.popupwindow.bar": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "Cookie"
+    ]
+  },
+  "com.xuexiang.xui.widget.popupwindow.easypopup": {
+    "classes": 2,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "HorizontalGravity",
+      "VerticalGravity"
+    ]
+  },
+  "com.xuexiang.xui.widget.popupwindow.popup": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": []
+  },
+  "com.xuexiang.xui.widget.popupwindow.status": {
+    "classes": 2,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "Status",
+      "StatusView"
+    ]
+  },
+  "com.xuexiang.xui.widget.progress": {
+    "classes": 2,
+    "methods": 56,
+    "storage": {},
+    "sample": [
+      "CircleProgressView",
+      "HorizontalProgressView"
+    ]
+  },
+  "com.xuexiang.xui.widget.progress.loading": {
+    "classes": 4,
+    "methods": 33,
+    "storage": {},
+    "sample": [
+      "ARCLoadingView",
+      "LoadingViewLayout",
+      "MiniLoadingView",
+      "RotateLoadingView"
+    ]
+  },
+  "com.xuexiang.xui.widget.progress.materialprogressbar": {
+    "classes": 27,
+    "methods": 145,
+    "storage": {},
+    "sample": [
+      "MaterialProgressBar",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.xuexiang.xui.widget.progress.ratingbar": {
+    "classes": 9,
+    "methods": 54,
+    "storage": {},
+    "sample": [
+      "AnimationRatingBar",
+      "PartialView",
+      "RatingBar",
+      "RotationRatingBar"
+    ]
+  },
+  "com.xuexiang.xui.widget.searchview": {
+    "classes": 15,
+    "methods": 74,
+    "storage": {},
+    "sample": [
+      "MaterialSearchView",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.xuexiang.xui.widget.shadow": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "ShadowButton",
+      "ShadowTextView"
+    ]
+  },
+  "com.xuexiang.xui.widget.slideback.widget": {
+    "classes": 2,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "SlideBackIconView",
+      "SlideBackInterceptLayout"
+    ]
+  },
+  "com.xuexiang.xui.widget.spinner": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "DropDownMenu"
+    ]
+  },
+  "com.xuexiang.xui.widget.spinner.editspinner": {
+    "classes": 1,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "EditSpinner"
+    ]
+  },
+  "com.xuexiang.xui.widget.spinner.materialspinner": {
+    "classes": 1,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "MaterialSpinner"
+    ]
+  },
+  "com.xuexiang.xui.widget.statelayout": {
+    "classes": 2,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "MultipleStatusView",
+      "StatefulLayout"
+    ]
+  },
+  "com.xuexiang.xui.widget.tabbar": {
+    "classes": 14,
+    "methods": 106,
+    "storage": {},
+    "sample": [
+      "EasyIndicator",
+      "MultiTabControlView",
+      "TabControlView",
+      "TabSegment"
+    ]
+  },
+  "com.xuexiang.xui.widget.tabbar.vertical": {
+    "classes": 3,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "TabBadgeView",
+      "TabView",
+      "XTabView"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview": {
+    "classes": 4,
+    "methods": 43,
+    "storage": {},
+    "sample": [
+      "AutoMoveTextView",
+      "BadgeView",
+      "ExpandableTextView",
+      "MarqueeTextView"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview.autofit": {
+    "classes": 2,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "AutoFitLayout",
+      "AutoFitTextView"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview.badge": {
+    "classes": 1,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "BadgeView"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview.label": {
+    "classes": 4,
+    "methods": 74,
+    "storage": {},
+    "sample": [
+      "LabelButtonView",
+      "LabelImageView",
+      "LabelTextView",
+      "LabelView"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview.marqueen": {
+    "classes": 1,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "MarqueeView"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview.supertextview": {
+    "classes": 4,
+    "methods": 73,
+    "storage": {},
+    "sample": [
+      "BaseTextView",
+      "CommonTextView",
+      "SuperButton",
+      "SuperTextView"
+    ]
+  },
+  "com.xw.repo": {
+    "classes": 2,
+    "methods": 33,
+    "storage": {},
+    "sample": [
+      "BubbleSeekBar"
+    ]
+  },
+  "com.xw.repo.bubbleseekbar": {
+    "classes": 12,
+    "methods": 13,
+    "storage": {},
+    "sample": []
+  },
+  "com.zykj.blackboard": {
+    "classes": 18,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "BuildConfig",
+      "R"
+    ]
+  },
+  "com.zykj.blackboard.bean": {
+    "classes": 9,
+    "methods": 178,
+    "storage": {},
+    "sample": [
+      "Author",
+      "BackgroundLineConfig",
+      "BoardConfig",
+      "CommonSourceResult"
+    ]
+  },
+  "com.zykj.blackboard.core.action": {
+    "classes": 41,
+    "methods": 368,
+    "storage": {},
+    "sample": [
+      "ActionManager",
+      "BaseTouchAction",
+      "BaseWriteAction",
+      "CursorAction"
+    ]
+  },
+  "com.zykj.blackboard.core.action.newSelectAtion": {
+    "classes": 38,
+    "methods": 141,
+    "storage": {},
+    "sample": [
+      "NewSelectAction",
+      "NewSelectDrawControl",
+      "NewSelectFunctionMode",
+      "NewSelectFunctionType"
+    ]
+  },
+  "com.zykj.blackboard.core.action.newSelectAtion.function": {
+    "classes": 24,
+    "methods": 264,
+    "storage": {
+      "位图": 1
+    },
+    "sample": [
+      "BaseSelectFunction",
+      "DefaultFunction",
+      "FunctionBackgroundRectF",
+      "FunctionManager"
+    ]
+  },
+  "com.zykj.blackboard.core.canvas": {
+    "classes": 10,
+    "methods": 64,
+    "storage": {},
+    "sample": [
+      "MatrixAdapter",
+      "SketchPlayView",
+      "SketchRecorderView",
+      "a"
+    ]
+  },
+  "com.zykj.blackboard.core.canvas.control": {
+    "classes": 11,
+    "methods": 198,
+    "storage": {},
+    "sample": [
+      "DrawControl",
+      "DrawControlKt",
+      "GraphControl",
+      "IGraphControl"
+    ]
+  },
+  "com.zykj.blackboard.core.canvas.view": {
+    "classes": 14,
+    "methods": 96,
+    "storage": {},
+    "sample": [
+      "ActiveLayer",
+      "ActiveView",
+      "BackgroundLayer",
+      "BackgroundView"
+    ]
+  },
+  "com.zykj.blackboard.core.data": {
+    "classes": 2,
+    "methods": 53,
+    "storage": {
+      "ObjectBox": 2,
+      "文件流": 1,
+      "Protobuf": 1
+    },
+    "sample": [
+      "SourceLoad",
+      "SourceSave"
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao": {
+    "classes": 176,
+    "methods": 1323,
+    "storage": {
+      "ObjectBox": 24
+    },
+    "sample": [
+      "AudioInfoEntity",
+      "AudioInfoEntityCursor",
+      "AudioInfoEntity_",
+      "AudioRecordEntity"
+    ]
+  },
+  "com.zykj.blackboard.core.edit": {
+    "classes": 28,
+    "methods": 321,
+    "storage": {
+      "ObjectBox": 2,
+      "Protobuf": 1,
+      "位图": 2
+    },
+    "sample": [
+      "AudioControl",
+      "BasePageControl",
+      "BoardControl",
+      "HistoryControl"
+    ]
+  },
+  "com.zykj.blackboard.core.execute": {
+    "classes": 6,
+    "methods": 43,
+    "storage": {},
+    "sample": [
+      "BaseCommandExecuteFactory",
+      "CommandExecute",
+      "CommandFactory",
+      "EventPlayThread"
+    ]
+  },
+  "com.zykj.blackboard.core.execute.version6": {
+    "classes": 12,
+    "methods": 54,
+    "storage": {},
+    "sample": [
+      "CameraExecute",
+      "CameraMatrixExecute",
+      "CommandExecuteFactory6",
+      "ConfigExecute"
+    ]
+  },
+  "com.zykj.blackboard.core.graph": {
+    "classes": 5,
+    "methods": 57,
+    "storage": {
+      "Protobuf": 1
+    },
+    "sample": [
+      "Graph",
+      "IDraw",
+      "IGraph",
+      "IGraphChange"
+    ]
+  },
+  "com.zykj.blackboard.core.graph.group": {
+    "classes": 14,
+    "methods": 110,
+    "storage": {
+      "Protobuf": 3,
+      "位图": 1
+    },
+    "sample": [
+      "FileGraph",
+      "GeometryGraph",
+      "GroupGraph",
+      "IChangeField"
+    ]
+  },
+  "com.zykj.blackboard.core.graph.root": {
+    "classes": 1,
+    "methods": 11,
+    "storage": {
+      "Protobuf": 1
+    },
+    "sample": [
+      "BoundedContainerGraph"
+    ]
+  },
+  "com.zykj.blackboard.core.graph.stroke": {
+    "classes": 3,
+    "methods": 42,
+    "storage": {},
+    "sample": [
+      "BeelineStrokeGraph",
+      "StrokeGraph",
+      "WritingGraph"
+    ]
+  },
+  "com.zykj.blackboard.core.graphBuilder": {
+    "classes": 10,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "BeelineStrokeGraphBuilder",
+      "BoundedContainerGraphBuilder",
+      "GeometryGraphBuilder",
+      "GraphBuild"
+    ]
+  },
+  "com.zykj.blackboard.core.loader": {
+    "classes": 5,
+    "methods": 49,
+    "storage": {
+      "Protobuf": 1,
+      "ObjectBox": 1
+    },
+    "sample": [
+      "CacheSourceLoader",
+      "EntityConvertEzy",
+      "LocalSourceLoader",
+      "SimpleSourceLoader"
+    ]
+  },
+  "com.zykj.blackboard.core.play": {
+    "classes": 29,
+    "methods": 237,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "AudioCommandThread",
+      "BasePlayPageControl",
+      "CameraMatrixThread",
+      "CommandThread"
+    ]
+  },
+  "com.zykj.blackboard.core.record": {
+    "classes": 7,
+    "methods": 43,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "DataRecorder",
+      "ITimeRecord",
+      "SourceRouterRecord",
+      "TimeRecord"
+    ]
+  },
+  "com.zykj.blackboard.core.record.dataRecorder": {
+    "classes": 38,
+    "methods": 192,
+    "storage": {
+      "Protobuf": 12,
+      "文件流": 5
+    },
+    "sample": [
+      "AudioRecord",
+      "CommandRecord",
+      "FileSourceRecord",
+      "GeometrySourceRecord"
+    ]
+  },
+  "com.zykj.blackboard.crop": {
+    "classes": 4,
+    "methods": 27,
+    "storage": {},
+    "sample": [
+      "CropManager",
+      "SimpleBackgroundView",
+      "SimpleFixView"
+    ]
+  },
+  "com.zykj.blackboard.enums": {
+    "classes": 6,
+    "methods": 36,
+    "storage": {},
+    "sample": [
+      "DocumentType",
+      "PlayStatus",
+      "SelectGraphEnum",
+      "SelectGraphEnumKt"
+    ]
+  },
+  "com.zykj.blackboard.exception": {
+    "classes": 5,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "EmptyDataException",
+      "FileVerificationException",
+      "HighVersionException",
+      "LowVersionException"
+    ]
+  },
+  "com.zykj.blackboard.extensions": {
+    "classes": 1,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "ExtensionsKt"
+    ]
+  },
+  "com.zykj.blackboard.listener": {
+    "classes": 11,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "ErrorListener",
+      "EventListener",
+      "GraphDeleteListener",
+      "IAreaMoveListener"
+    ]
+  },
+  "com.zykj.blackboard.proxy": {
+    "classes": 3,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "CustomColorView",
+      "ImageCropView",
+      "TextEditView"
+    ]
+  },
+  "com.zykj.blackboard.utils": {
+    "classes": 36,
+    "methods": 163,
+    "storage": {
+      "ObjectBox": 2,
+      "Protobuf": 4,
+      "文件流": 4,
+      "位图": 2
+    },
+    "sample": [
+      "AppContext",
+      "AudioUtils",
+      "BitmapUtil",
+      "BoardBox"
+    ]
+  },
+  "com.zykj.blackboard.widgets": {
+    "classes": 5,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "TextDialog"
+    ]
+  },
+  "com.zykj.board": {
+    "classes": 101,
+    "methods": 3764,
+    "storage": {
+      "Protobuf": 70
+    },
+    "sample": [
+      "a",
+      "a0",
+      "a1",
+      "b"
+    ]
+  },
+  "com.zykj.lib.ui": {
+    "classes": 16,
+    "methods": 17,
+    "storage": {},
+    "sample": []
+  },
+  "com.zykj.merge.sketch": {
+    "classes": 19,
+    "methods": 20,
+    "storage": {},
+    "sample": [
+      "BuildConfig",
+      "R"
+    ]
+  },
+  "com.zykj.merge.sketch.config": {
+    "classes": 2,
+    "methods": 38,
+    "storage": {},
+    "sample": [
+      "RecorderConfig"
+    ]
+  },
+  "com.zykj.merge.sketch.constant": {
+    "classes": 2,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "Constant",
+      "PlayStatus"
+    ]
+  },
+  "com.zykj.merge.sketch.listener": {
+    "classes": 4,
+    "methods": 33,
+    "storage": {},
+    "sample": [
+      "MoveProxy",
+      "Play",
+      "PlayStatusListener"
+    ]
+  },
+  "com.zykj.merge.sketch.utils": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "VersionUtils"
+    ]
+  },
+  "com.zykj.merge.sketch.view": {
+    "classes": 24,
+    "methods": 202,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "BlackBoardProxyView",
+      "MergeSketchPlayView",
+      "NewSketchProxyView",
+      "OldSketchProxyView"
+    ]
+  },
+  "com.zykj.message": {
+    "classes": 6,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "KillSelfService",
+      "UnInstallActivity",
+      "UnLoginActivity",
+      "a"
+    ]
+  },
+  "com.zykj.message.client": {
+    "classes": 62,
+    "methods": 194,
+    "storage": {},
+    "sample": [
+      "MessageClient",
+      "a",
+      "a0",
+      "b"
+    ]
+  },
+  "com.zykj.message.server.bean": {
+    "classes": 3,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "ServerInfo",
+      "Status",
+      "UserInfo"
+    ]
+  },
+  "com.zykj.mistake": {
+    "classes": 12,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "DataBinderMapperImpl"
+    ]
+  },
+  "com.zykj.mistake.activity": {
+    "classes": 53,
+    "methods": 204,
+    "storage": {
+      "偏好设置": 4,
+      "文件流": 1,
+      "位图": 1
+    },
+    "sample": [
+      "LegacyMistakeActivity",
+      "MainActivity",
+      "MistakeCreateOrEditActivity",
+      "MistakeDetailActivity"
+    ]
+  },
+  "com.zykj.mistake.adapter": {
+    "classes": 9,
+    "methods": 37,
+    "storage": {},
+    "sample": [
+      "DetailNoteImageAdapter",
+      "DetailPagerAdapter",
+      "MainLessonAdapter",
+      "MistakeListAdapter"
+    ]
+  },
+  "com.zykj.mistake.application": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "MistakeApplication"
+    ]
+  },
+  "com.zykj.mistake.base": {
+    "classes": 6,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "BaseActivity",
+      "BaseFragment",
+      "BaseMVPActivity",
+      "BaseMVPFragment"
+    ]
+  },
+  "com.zykj.mistake.data": {
+    "classes": 9,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "CollectionLimitException",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.zykj.mistake.databinding": {
+    "classes": 48,
+    "methods": 163,
+    "storage": {},
+    "sample": [
+      "ActivityLegacyMistakeBinding",
+      "ActivityLegacyMistakeBindingImpl",
+      "ActivityLessonPlayerBinding",
+      "ActivityLessonPlayerBindingImpl"
+    ]
+  },
+  "com.zykj.mistake.dialog": {
+    "classes": 6,
+    "methods": 45,
+    "storage": {
+      "WebView": 1
+    },
+    "sample": [
+      "AnswerDialogFragment",
+      "BaseDialogFragment",
+      "ConvertDialog",
+      "ImageDialogFragment"
+    ]
+  },
+  "com.zykj.mistake.entity": {
+    "classes": 1,
+    "methods": 20,
+    "storage": {},
+    "sample": [
+      "EditMistakeData"
+    ]
+  },
+  "com.zykj.mistake.entity.req": {
+    "classes": 24,
+    "methods": 294,
+    "storage": {},
+    "sample": [
+      "AddItemsToCollectionReq",
+      "AddMistakeQstReviewStateReq",
+      "AddPictureNoteReq",
+      "CreateOrUpdateCollectionReq"
+    ]
+  },
+  "com.zykj.mistake.entity.resp": {
+    "classes": 49,
+    "methods": 633,
+    "storage": {},
+    "sample": [
+      "CameraPermissionResp",
+      "CreateOrEditTagResp",
+      "CreateOrUpdateCollectionResp",
+      "CreateOrUpdateCollectionResult"
+    ]
+  },
+  "com.zykj.mistake.feature.ask": {
+    "classes": 64,
+    "methods": 230,
+    "storage": {},
+    "sample": [
+      "MistakeAskMaterialViewModel",
+      "a",
+      "a0",
+      "b"
+    ]
+  },
+  "com.zykj.mistake.feature.collection.component": {
+    "classes": 21,
+    "methods": 57,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.zykj.mistake.feature.collection.detail": {
+    "classes": 81,
+    "methods": 348,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "MistakeCollectionDetailViewModel",
+      "a",
+      "a0",
+      "a1"
+    ]
+  },
+  "com.zykj.mistake.feature.collection.filter": {
+    "classes": 71,
+    "methods": 272,
+    "storage": {},
+    "sample": [
+      "MistakeCollectionFilterResultViewModel",
+      "a",
+      "a0",
+      "b"
+    ]
+  },
+  "com.zykj.mistake.feature.collection.list": {
+    "classes": 43,
+    "methods": 160,
+    "storage": {},
+    "sample": [
+      "MistakeCollectionViewModel",
+      "a",
+      "a0",
+      "b"
+    ]
+  },
+  "com.zykj.mistake.feature.home": {
+    "classes": 28,
+    "methods": 85,
+    "storage": {},
+    "sample": [
+      "HomeTab",
+      "MainHomeViewModel",
+      "a",
+      "b"
+    ]
+  },
+  "com.zykj.mistake.feature.mistake.model": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "MistakeTagType"
+    ]
+  },
+  "com.zykj.mistake.feature.notebook.detail": {
+    "classes": 233,
+    "methods": 988,
+    "storage": {
+      "文件流": 2,
+      "偏好设置": 1,
+      "位图": 1
+    },
+    "sample": [
+      "DraftActionMode",
+      "MistakeDetailNewViewModel",
+      "a",
+      "a0"
+    ]
+  },
+  "com.zykj.mistake.feature.notebook.list": {
+    "classes": 97,
+    "methods": 386,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "JoinCollectionDialogMode",
+      "MistakeNotebookViewModel",
+      "a",
+      "a0"
+    ]
+  },
+  "com.zykj.mistake.feature.review": {
+    "classes": 44,
+    "methods": 157,
+    "storage": {},
+    "sample": [
+      "ReviewViewModel",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.zykj.mistake.fragment": {
+    "classes": 7,
+    "methods": 44,
+    "storage": {},
+    "sample": [
+      "EmptyFragment",
+      "MicroClassFragment",
+      "MistakeCollectionLegacyFragment",
+      "NoteFragment"
+    ]
+  },
+  "com.zykj.mistake.main": {
+    "classes": 60,
+    "methods": 219,
+    "storage": {},
+    "sample": [
+      "MainShellViewModel",
+      "RemoveDialogTarget",
+      "TagEditorTarget",
+      "a"
+    ]
+  },
+  "com.zykj.mistake.main.drawer": {
+    "classes": 14,
+    "methods": 42,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "com.zykj.mistake.main.loading": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": []
+  },
+  "com.zykj.mistake.network": {
+    "classes": 9,
+    "methods": 80,
+    "storage": {},
+    "sample": [
+      "ApiException",
+      "ApiResp",
+      "a",
+      "b"
+    ]
+  },
+  "com.zykj.mistake.platform.picker": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "CollectionDatePickerTarget"
+    ]
+  },
+  "com.zykj.mistake.presenter": {
+    "classes": 7,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "MainPresenter",
+      "MistakeCreateOrEditPresenter",
+      "MistakeDetailPresenter",
+      "MistakeListPresenter"
+    ]
+  },
+  "com.zykj.mistake.service": {
+    "classes": 7,
+    "methods": 31,
+    "storage": {
+      "偏好设置": 2,
+      "ZIP": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "UploadFolderIntentService",
+      "UploadIntentService",
+      "a",
+      "b"
+    ]
+  },
+  "com.zykj.mistake.update.network": {
+    "classes": 3,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "UpdateResp"
+    ]
+  },
+  "com.zykj.mistake.update.view": {
+    "classes": 1,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "PercentCircleView"
+    ]
+  },
+  "com.zykj.mistake.utils": {
+    "classes": 33,
+    "methods": 133,
+    "storage": {
+      "文件流": 3,
+      "位图": 1,
+      "偏好设置": 1
+    },
+    "sample": [
+      "NoteRemoteFileInfo",
+      "QuestionType",
+      "a",
+      "b"
+    ]
+  },
+  "com.zykj.mistake.widget": {
+    "classes": 10,
+    "methods": 122,
+    "storage": {
+      "WebView": 1
+    },
+    "sample": [
+      "BaseProView",
+      "CustomViewPager",
+      "FlowLayout",
+      "IntrinsicWidthImageView"
+    ]
+  },
+  "com.zykj.paint": {
+    "classes": 72,
+    "methods": 1789,
+    "storage": {
+      "Protobuf": 27,
+      "文件流": 1
+    },
+    "sample": [
+      "Actions",
+      "BuildConfig",
+      "R",
+      "SketchSyncView"
+    ]
+  },
+  "com.zykj.paint.data": {
+    "classes": 2,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "Rect2D",
+      "Vector2D"
+    ]
+  },
+  "com.zykj.paint.draw": {
+    "classes": 2,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "ISketchDraw",
+      "PolylineDrawer"
+    ]
+  },
+  "com.zykj.paint.exchange": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "ActionType"
+    ]
+  },
+  "com.zykj.paint.extensions": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "GraphExtKt"
+    ]
+  },
+  "com.zykj.paint.graphic": {
+    "classes": 5,
+    "methods": 51,
+    "storage": {},
+    "sample": [
+      "Graph",
+      "Layer",
+      "Map",
+      "PolyLine"
+    ]
+  },
+  "com.zykj.paint.player": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "PlayActionListener",
+      "PlayStatusListener"
+    ]
+  },
+  "com.zykj.paint.record": {
+    "classes": 16,
+    "methods": 86,
+    "storage": {
+      "文件流": 4
+    },
+    "sample": [
+      "AESUtils",
+      "AmrEncoder",
+      "AudioEncoder",
+      "AudioFileUtils"
+    ]
+  },
+  "com.zykj.paint.record.control": {
+    "classes": 9,
+    "methods": 99,
+    "storage": {},
+    "sample": [
+      "BaseControl",
+      "CompassesControl",
+      "DefaultControl",
+      "EraserControl"
+    ]
+  },
+  "com.zykj.paint.record.model": {
+    "classes": 5,
+    "methods": 59,
+    "storage": {},
+    "sample": [
+      "CompassSnapShot",
+      "GraphSnapShot",
+      "MapSnapShot",
+      "PictureSnapShot"
+    ]
+  },
+  "com.zykj.paint.render": {
+    "classes": 22,
+    "methods": 152,
+    "storage": {
+      "位图": 1
+    },
+    "sample": [
+      "MapRender",
+      "MapViewer",
+      "SketchPlayer",
+      "SketchRender"
+    ]
+  },
+  "com.zykj.paint.runner": {
+    "classes": 11,
+    "methods": 65,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "ActionProcessor",
+      "ActionRunner",
+      "ImageActionRunner",
+      "LayerActionRunner"
+    ]
+  },
+  "com.zykj.paint.util": {
+    "classes": 2,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "LineUtils",
+      "TimeUtils"
+    ]
+  },
+  "com.zykj.sketch": {
+    "classes": 163,
+    "methods": 5089,
+    "storage": {
+      "Protobuf": 71
+    },
+    "sample": [
+      "BuildConfig",
+      "EzyDrawBoard",
+      "GraphSnapshot",
+      "R"
+    ]
+  },
+  "com.zykj.sketch.core": {
+    "classes": 15,
+    "methods": 158,
+    "storage": {
+      "Protobuf": 1
+    },
+    "sample": [
+      "ActionExecute",
+      "ActionRecord",
+      "ActionRecordExecute",
+      "ActionStrategyFactory"
+    ]
+  },
+  "com.zykj.sketch.core.action": {
+    "classes": 8,
+    "methods": 97,
+    "storage": {},
+    "sample": [
+      "BaseAction",
+      "EraseViewAction",
+      "EraseWritingAction",
+      "SelectAction"
+    ]
+  },
+  "com.zykj.sketch.core.config": {
+    "classes": 3,
+    "methods": 35,
+    "storage": {},
+    "sample": [
+      "GraphConfig",
+      "SketchConfig"
+    ]
+  },
+  "com.zykj.sketch.core.data": {
+    "classes": 13,
+    "methods": 113,
+    "storage": {
+      "Protobuf": 1,
+      "文件流": 1
+    },
+    "sample": [
+      "AudioTask",
+      "BoardDataFactory",
+      "CORNER",
+      "GraphTask"
+    ]
+  },
+  "com.zykj.sketch.core.graph": {
+    "classes": 17,
+    "methods": 163,
+    "storage": {
+      "位图": 3
+    },
+    "sample": [
+      "BoundedContainerGraph",
+      "CircleGraph",
+      "Graph",
+      "GraphExtKt"
+    ]
+  },
+  "com.zykj.sketch.core.listener": {
+    "classes": 25,
+    "methods": 134,
+    "storage": {},
+    "sample": [
+      "ActionChangeListener",
+      "AudioOperation",
+      "EventListener",
+      "GraphMatrixListener"
+    ]
+  },
+  "com.zykj.sketch.core.player": {
+    "classes": 17,
+    "methods": 150,
+    "storage": {
+      "Protobuf": 1,
+      "文件流": 1,
+      "位图": 1
+    },
+    "sample": [
+      "AudioThread",
+      "PaintThread",
+      "PlayControl",
+      "PlayThread"
+    ]
+  },
+  "com.zykj.sketch.core.record": {
+    "classes": 36,
+    "methods": 266,
+    "storage": {
+      "文件流": 1,
+      "位图": 1
+    },
+    "sample": [
+      "AudioControl",
+      "GraphOperation",
+      "RecordControl",
+      "SketchRecorderView"
+    ]
+  },
+  "com.zykj.sketch.core.version": {
+    "classes": 80,
+    "methods": 255,
+    "storage": {},
+    "sample": [
+      "GraphTaskParseVersion1",
+      "GraphTaskParseVersion2",
+      "GraphTaskParseVersion3",
+      "GraphTaskParseVersion4"
+    ]
+  },
+  "com.zykj.sketch.exception": {
+    "classes": 3,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "EmptyDataException",
+      "HighVersionException",
+      "LowVersionException"
+    ]
+  },
+  "com.zykj.sketch.extensions": {
+    "classes": 1,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "ExtensionsKt"
+    ]
+  },
+  "com.zykj.sketch.utils": {
+    "classes": 9,
+    "methods": 49,
+    "storage": {
+      "文件流": 2,
+      "位图": 1,
+      "Protobuf": 1
+    },
+    "sample": [
+      "EventConvertUtils",
+      "FileUtils",
+      "LogUtils",
+      "ProtoFileUtils"
+    ]
+  },
+  "com.zykj.sketch.widgets": {
+    "classes": 10,
+    "methods": 95,
+    "storage": {
+      "WebView": 1
+    },
+    "sample": [
+      "DrawTempView",
+      "DrawView",
+      "PPTWebView",
+      "SurfaceDrawView"
+    ]
+  },
+  "com.zykj.view": {
+    "classes": 39,
+    "methods": 256,
+    "storage": {
+      "Protobuf": 9
+    },
+    "sample": [
+      "BR",
+      "BuildConfig",
+      "DataBinderMapperImpl",
+      "EzySimpleBoardData"
+    ]
+  },
+  "com.zykj.view.board.board": {
+    "classes": 160,
+    "methods": 1238,
+    "storage": {},
+    "sample": [
+      "BackgroundToolState",
+      "BackgroundType",
+      "BoardCallbackConfig",
+      "BoardEvent"
+    ]
+  },
+  "com.zykj.view.board.crop": {
+    "classes": 12,
+    "methods": 120,
+    "storage": {},
+    "sample": [
+      "BlackboardCropConfig",
+      "BlackboardCropFragment",
+      "a",
+      "b"
+    ]
+  },
+  "com.zykj.view.board.evaluation": {
+    "classes": 17,
+    "methods": 208,
+    "storage": {
+      "偏好设置": 2,
+      "文件流": 1,
+      "位图": 1
+    },
+    "sample": [
+      "BlackboardEvaluationConfig",
+      "BlackboardEvaluationFragment",
+      "a",
+      "b"
+    ]
+  },
+  "com.zykj.view.board.play": {
+    "classes": 39,
+    "methods": 339,
+    "storage": {},
+    "sample": [
+      "NewPlayerConfig",
+      "PlayActionListener",
+      "PlaySettingAdapter",
+      "PlaySettingPopup"
+    ]
+  },
+  "com.zykj.view.board.simple": {
+    "classes": 40,
+    "methods": 258,
+    "storage": {},
+    "sample": [
+      "DataStateKt",
+      "SimpleBoardEvent",
+      "SimpleFragment",
+      "SimplePenSize"
+    ]
+  },
+  "com.zykj.view.databinding": {
+    "classes": 48,
+    "methods": 381,
+    "storage": {},
+    "sample": [
+      "ViewActivityEzyCameraBinding",
+      "ViewActivityEzyCameraBindingImpl",
+      "ViewActivityEzyCropBinding",
+      "ViewActivityEzyCropBindingImpl"
+    ]
+  },
+  "com.zykj.view.dialog": {
+    "classes": 7,
+    "methods": 52,
+    "storage": {},
+    "sample": [
+      "CommonTipDialog",
+      "TextEditDialog",
+      "a",
+      "b"
+    ]
+  },
+  "com.zykj.view.simpleBoard": {
+    "classes": 6,
+    "methods": 92,
+    "storage": {
+      "位图": 1
+    },
+    "sample": [
+      "ActionManager",
+      "DrawControl",
+      "SimpleBoardConfig",
+      "SimpleBoardView"
+    ]
+  },
+  "com.zykj.view.simpleBoard.action": {
+    "classes": 7,
+    "methods": 67,
+    "storage": {},
+    "sample": [
+      "BaseAction",
+      "EraserAction",
+      "LineAction",
+      "SeeAction"
+    ]
+  },
+  "com.zykj.view.simpleBoard.view": {
+    "classes": 4,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "BoardImageView",
+      "BoardPathView",
+      "BoardTempPathView",
+      "IBoardView"
+    ]
+  },
+  "com.zykj.view.ui.camera": {
+    "classes": 13,
+    "methods": 58,
+    "storage": {},
+    "sample": [
+      "EzyCameraActivity",
+      "EzyCameraContract",
+      "ImagePickFragment",
+      "ImagePickFragmentKt"
+    ]
+  },
+  "com.zykj.view.ui.crop": {
+    "classes": 4,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "EzyCropActivity",
+      "EzyCropContract"
+    ]
+  },
+  "com.zykj.view.utils": {
+    "classes": 18,
+    "methods": 131,
+    "storage": {
+      "偏好设置": 2,
+      "Protobuf": 2,
+      "文件流": 1
+    },
+    "sample": [
+      "ColorUtils",
+      "CustomColorManager",
+      "ExtKt",
+      "ImagePicker"
+    ]
+  },
+  "com.zykj.view.widget": {
+    "classes": 14,
+    "methods": 138,
+    "storage": {},
+    "sample": [
+      "DoubleSeekBar",
+      "LimitEditText",
+      "SketchBoardTouchFrameLayout",
+      "SketchProgressView"
+    ]
+  },
+  "com.zykj.view.widget.customColor": {
+    "classes": 3,
+    "methods": 39,
+    "storage": {},
+    "sample": [
+      "CustomColorFrameLayout",
+      "CustomColorLayout",
+      "LatestColorLayout"
+    ]
+  },
+  "com.zykj.view.widget.radio": {
+    "classes": 3,
+    "methods": 36,
+    "storage": {},
+    "sample": [
+      "CustomColorRadioButton",
+      "NormalColorRadioButton",
+      "WithSelectedRadioButton"
+    ]
+  },
+  "d2": {
+    "classes": 5,
+    "methods": 28,
+    "storage": {
+      "位图": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "d3": {
+    "classes": 3,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "d4": {
+    "classes": 4,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "d5": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "e2": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "e3": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "e5": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "f2": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "f3": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "f4": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "f5": {
+    "classes": 7,
+    "methods": 14,
+    "storage": {
+      "WebView": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "g2": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "g3": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "g4": {
+    "classes": 2,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "g5": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "h2": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "h3": {
+    "classes": 4,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "h4": {
+    "classes": 3,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "h5": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "i2": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "i3": {
+    "classes": 3,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "i4": {
+    "classes": 2,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "i5": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "io.github.inflationx.calligraphy3": {
+    "classes": 18,
+    "methods": 82,
+    "storage": {},
+    "sample": [
+      "BuildConfig",
+      "Calligraphy",
+      "CalligraphyConfig",
+      "CalligraphyInterceptor"
+    ]
+  },
+  "io.github.inflationx.viewpump": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": []
+  },
+  "io.microshow.rxffmpeg": {
+    "classes": 4,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "RxFFmpegInvoke"
+    ]
+  },
+  "io.microshow.rxffmpeg.player": {
+    "classes": 5,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "RxFFmpegPlayerController",
+      "RxFFmpegPlayerControllerImpl",
+      "RxFFmpegPlayerView",
+      "ScaleTextureView"
+    ]
+  },
+  "io.objectbox": {
+    "classes": 11,
+    "methods": 158,
+    "storage": {
+      "ObjectBox": 6
+    },
+    "sample": [
+      "BoxStore",
+      "Cursor",
+      "EntityInfo",
+      "Property"
+    ]
+  },
+  "io.objectbox.android": {
+    "classes": 11,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "ObjectBoxLiveData"
+    ]
+  },
+  "io.objectbox.annotation": {
+    "classes": 16,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "Backlink",
+      "BaseEntity",
+      "Convert",
+      "DefaultValue"
+    ]
+  },
+  "io.objectbox.annotation.apihint": {
+    "classes": 3,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "Beta",
+      "Experimental",
+      "Internal"
+    ]
+  },
+  "io.objectbox.converter": {
+    "classes": 2,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "NullToEmptyStringConverter",
+      "PropertyConverter"
+    ]
+  },
+  "io.objectbox.exception": {
+    "classes": 14,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "ConstraintViolationException",
+      "DbDetachedException",
+      "DbException",
+      "DbExceptionListener"
+    ]
+  },
+  "io.objectbox.internal": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "ToManyGetter",
+      "ToOneGetter"
+    ]
+  },
+  "io.objectbox.query": {
+    "classes": 4,
+    "methods": 25,
+    "storage": {
+      "ObjectBox": 1
+    },
+    "sample": [
+      "Query",
+      "QueryBuilder"
+    ]
+  },
+  "io.objectbox.relation": {
+    "classes": 6,
+    "methods": 81,
+    "storage": {
+      "ObjectBox": 2
+    },
+    "sample": [
+      "ListFactory",
+      "RelationInfo",
+      "ToMany",
+      "ToOne"
+    ]
+  },
+  "io.reactivex": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "BackpressureStrategy"
+    ]
+  },
+  "io.reactivex.annotations": {
+    "classes": 8,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "BackpressureKind",
+      "BackpressureSupport",
+      "Beta",
+      "CheckReturnValue"
+    ]
+  },
+  "io.reactivex.exceptions": {
+    "classes": 7,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "CompositeException",
+      "MissingBackpressureException",
+      "OnErrorNotImplementedException",
+      "ProtocolViolationException"
+    ]
+  },
+  "j2": {
+    "classes": 4,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "j3": {
+    "classes": 3,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "j4": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "j5": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "k2": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "k3": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "k4": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "k5": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "l2": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "l4": {
+    "classes": 13,
+    "methods": 29,
+    "storage": {
+      "WebView": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "l5": {
+    "classes": 3,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "m1": {
+    "classes": 13,
+    "methods": 29,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "m2": {
+    "classes": 4,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "m3": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "m4": {
+    "classes": 6,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "m5": {
+    "classes": 6,
+    "methods": 14,
+    "storage": {
+      "ObjectBox": 2,
+      "文件流": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "n1": {
+    "classes": 3,
+    "methods": 10,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "n2": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "n3": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "o1": {
+    "classes": 3,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "o2": {
+    "classes": 1,
+    "methods": 43,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "a"
+    ]
+  },
+  "o3": {
+    "classes": 2,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "o5": {
+    "classes": 3,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "p2": {
+    "classes": 5,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "p3": {
+    "classes": 19,
+    "methods": 36,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "p4": {
+    "classes": 11,
+    "methods": 49,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "p5": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "q2": {
+    "classes": 3,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "q3": {
+    "classes": 4,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "q4": {
+    "classes": 13,
+    "methods": 29,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "q5": {
+    "classes": 11,
+    "methods": 32,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "r2": {
+    "classes": 11,
+    "methods": 29,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "r3": {
+    "classes": 3,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "r4": {
+    "classes": 3,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "r5": {
+    "classes": 5,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "s2": {
+    "classes": 2,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "s3": {
+    "classes": 3,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "s4": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "s5": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "t1": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "t2": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "t3": {
+    "classes": 4,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "t4": {
+    "classes": 9,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "t5": {
+    "classes": 3,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "u2": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "u3": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "u4": {
+    "classes": 7,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "v1": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "v3": {
+    "classes": 2,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "w1": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "w2": {
+    "classes": 7,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "w3": {
+    "classes": 7,
+    "methods": 14,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "w4": {
+    "classes": 4,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "x1": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "x2": {
+    "classes": 5,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "x4": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "y1": {
+    "classes": 1,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "y4": {
+    "classes": 7,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "z2": {
+    "classes": 3,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "z3": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "z4": {
+    "classes": 8,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a7": {
+    "classes": 4,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a8": {
+    "classes": 6,
+    "methods": 6,
+    "storage": {
+      "偏好设置": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b7": {
+    "classes": 2,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b8": {
+    "classes": 3,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "c7": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "c8": {
+    "classes": 5,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "d7": {
+    "classes": 5,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "d8": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "e7": {
+    "classes": 22,
+    "methods": 98,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "g7": {
+    "classes": 13,
+    "methods": 55,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "h7": {
+    "classes": 7,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "i7": {
+    "classes": 7,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "k7": {
+    "classes": 14,
+    "methods": 64,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "kotlin.text": {
+    "classes": 28,
+    "methods": 139,
+    "storage": {},
+    "sample": [
+      "Regex",
+      "RegexOption",
+      "a",
+      "b"
+    ]
+  },
+  "kotlin.time": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "DurationUnit",
+      "ExperimentalTime"
+    ]
+  },
+  "kotlin.uuid": {
+    "classes": 3,
+    "methods": 29,
+    "storage": {},
+    "sample": [
+      "ExperimentalUuidApi",
+      "Uuid",
+      "UuidSerialized"
+    ]
+  },
+  "kotlinx.android.extensions": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "CacheImplementation",
+      "ContainerOptions"
+    ]
+  },
+  "kotlinx.android.parcel": {
+    "classes": 6,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "IgnoredOnParcel",
+      "Parcelize",
+      "RawValue",
+      "TypeParceler"
+    ]
+  },
+  "kotlinx.coroutines": {
+    "classes": 93,
+    "methods": 401,
+    "storage": {},
+    "sample": [
+      "CompletionHandlerException",
+      "CoroutineStart",
+      "CoroutinesInternalError",
+      "DelicateCoroutinesApi"
+    ]
+  },
+  "kotlinx.coroutines.channels": {
+    "classes": 24,
+    "methods": 115,
+    "storage": {},
+    "sample": [
+      "BufferOverflow",
+      "ClosedReceiveChannelException",
+      "ClosedSendChannelException",
+      "a"
+    ]
+  },
+  "kotlinx.coroutines.flow": {
+    "classes": 70,
+    "methods": 209,
+    "storage": {},
+    "sample": [
+      "SharingCommand",
+      "a",
+      "a0",
+      "b"
+    ]
+  },
+  "kotlinx.coroutines.flow.internal": {
+    "classes": 32,
+    "methods": 117,
+    "storage": {},
+    "sample": [
+      "AbortFlowException",
+      "ChildCancelledException",
+      "SafeCollector",
+      "a"
+    ]
+  },
+  "kotlinx.coroutines.internal": {
+    "classes": 5,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "BenignDataRace",
+      "DiagnosticCoroutineContextException",
+      "ExceptionSuccessfullyProcessed",
+      "a"
+    ]
+  },
+  "kotlinx.coroutines.scheduling": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": []
+  },
+  "kotlinx.coroutines.sync": {
+    "classes": 4,
+    "methods": 20,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "kotlinx.parcelize": {
+    "classes": 6,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "IgnoredOnParcel",
+      "Parcelize",
+      "RawValue",
+      "TypeParceler"
+    ]
+  },
+  "kotlinx.serialization": {
+    "classes": 21,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "Contextual",
+      "EncodeDefault",
+      "ExperimentalSerializationApi",
+      "InheritableSerialInfo"
+    ]
+  },
+  "kotlinx.serialization.internal": {
+    "classes": 3,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "CoreFriendModuleApi",
+      "NamedCompanion",
+      "SuppressAnimalSniffer"
+    ]
+  },
+  "kotlinx.serialization.json": {
+    "classes": 8,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "ClassDiscriminatorMode",
+      "JsonClassDiscriminator",
+      "JsonDslMarker",
+      "JsonIgnoreUnknownKeys"
+    ]
+  },
+  "kotlinx.serialization.json.internal": {
+    "classes": 34,
+    "methods": 218,
+    "storage": {},
+    "sample": [
+      "JsonDecodingException",
+      "JsonEncodingException",
+      "JsonException",
+      "JsonFriendModuleApi"
+    ]
+  },
+  "kotlinx.serialization.modules": {
+    "classes": 2,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "SerializerAlreadyRegisteredException",
+      "a"
+    ]
+  },
+  "l7": {
+    "classes": 6,
+    "methods": 122,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "m7": {
+    "classes": 80,
+    "methods": 423,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "a1",
+      "a2"
+    ]
+  },
+  "n7": {
+    "classes": 26,
+    "methods": 142,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "o7": {
+    "classes": 7,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "okhttp3": {
+    "classes": 46,
+    "methods": 226,
+    "storage": {},
+    "sample": [
+      "Protocol",
+      "TlsVersion",
+      "a",
+      "a0"
+    ]
+  },
+  "okhttp3.internal": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "SuppressSignatureCheck"
+    ]
+  },
+  "okhttp3.internal.connection": {
+    "classes": 17,
+    "methods": 71,
+    "storage": {},
+    "sample": [
+      "RouteException",
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "okhttp3.internal.http2": {
+    "classes": 3,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "ConnectionShutdownException",
+      "ErrorCode",
+      "StreamResetException"
+    ]
+  },
+  "okhttp3.internal.publicsuffix": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "PublicSuffixDatabase"
+    ]
+  },
+  "okio": {
+    "classes": 88,
+    "methods": 1184,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "-Base64",
+      "-DeflaterSinkExtensions",
+      "-DeprecatedOkio",
+      "-DeprecatedUpgrade"
+    ]
+  },
+  "okio.internal": {
+    "classes": 23,
+    "methods": 337,
+    "storage": {},
+    "sample": [
+      "-Buffer",
+      "-BufferedSource",
+      "-ByteString",
+      "-ByteStringNonJs"
+    ]
+  },
+  "org.angmarch.views": {
+    "classes": 17,
+    "methods": 63,
+    "storage": {},
+    "sample": [
+      "NiceSpinner",
+      "PopUpTextAlignment",
+      "a",
+      "b"
+    ]
+  },
+  "org.greenrobot.essentials.collections": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": []
+  },
+  "org.intellij.lang.annotations": {
+    "classes": 25,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "Flow",
+      "Identifier",
+      "Language",
+      "MagicConstant"
+    ]
+  },
+  "org.jetbrains.annotations": {
+    "classes": 27,
+    "methods": 19,
+    "storage": {},
+    "sample": [
+      "Blocking",
+      "BlockingExecutor",
+      "Contract",
+      "MustBeInvokedByOverriders"
+    ]
+  },
+  "org.jspecify.annotations": {
+    "classes": 4,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "NonNull",
+      "NullMarked",
+      "NullUnmarked",
+      "Nullable"
+    ]
+  },
+  "p7": {
+    "classes": 3,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "q7": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "r7": {
+    "classes": 3,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "retrofit2": {
+    "classes": 49,
+    "methods": 178,
+    "storage": {},
+    "sample": [
+      "HttpException",
+      "SkipCallbackExecutor",
+      "SkipCallbackExecutorImpl",
+      "a"
+    ]
+  },
+  "retrofit2.adapter.rxjava2": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "HttpException"
+    ]
+  },
+  "retrofit2.http": {
+    "classes": 25,
+    "methods": 27,
+    "storage": {},
+    "sample": [
+      "Body",
+      "DELETE",
+      "Field",
+      "FieldMap"
+    ]
+  },
+  "retrofit2.internal": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "EverythingIsNonNull"
+    ]
+  },
+  "s7": {
+    "classes": 5,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "t7": {
+    "classes": 7,
+    "methods": 32,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "top.zibin.luban": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": []
+  },
+  "u7": {
+    "classes": 28,
+    "methods": 122,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "b",
+      "b0"
+    ]
+  },
+  "v7": {
+    "classes": 14,
+    "methods": 106,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "w7": {
+    "classes": 14,
+    "methods": 47,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "x7": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "z7": {
+    "classes": 4,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  }
+}

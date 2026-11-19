@@ -1,0 +1,137 @@
+[
+  {
+    "app": "中育云笔记",
+    "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+    "java_locations": 1978,
+    "original_methods_with_code": 1977,
+    "project_namespace_comments": 261,
+    "dex": {
+      "classes.dex": 574,
+      "classes2.dex": 541,
+      "classes3.dex": 430,
+      "classes4.dex": 57,
+      "classes5.dex": 176,
+      "classes6.dex": 199
+    }
+  },
+  {
+    "app": "中育管控桌面",
+    "apk_sha256": "e0b46dee805fe516503ac7d2b8e1b7d585de43063a012f8056e3bbd1018a9949",
+    "java_locations": 1864,
+    "original_methods_with_code": 1863,
+    "project_namespace_comments": 94,
+    "dex": {
+      "classes.dex": 756,
+      "classes2.dex": 418,
+      "classes3.dex": 330,
+      "classes4.dex": 359
+    }
+  },
+  {
+    "app": "优课畅学",
+    "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+    "java_locations": 1910,
+    "original_methods_with_code": 1909,
+    "project_namespace_comments": 254,
+    "dex": {
+      "classes.dex": 562,
+      "classes2.dex": 580,
+      "classes3.dex": 352,
+      "classes4.dex": 184,
+      "classes5.dex": 231
+    }
+  },
+  {
+    "app": "在线专栏",
+    "apk_sha256": "b571a8d19d808d3200b26689036145a1d0924c0170db035a2233725030b8ccce",
+    "java_locations": 316,
+    "original_methods_with_code": 316,
+    "project_namespace_comments": 11,
+    "dex": {
+      "classes.dex": 294,
+      "classes2.dex": 22
+    }
+  },
+  {
+    "app": "新测评",
+    "apk_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+    "java_locations": 1985,
+    "original_methods_with_code": 1984,
+    "project_namespace_comments": 207,
+    "dex": {
+      "classes.dex": 574,
+      "classes2.dex": 549,
+      "classes3.dex": 311,
+      "classes4.dex": 206,
+      "classes5.dex": 344
+    }
+  },
+  {
+    "app": "网阅联考",
+    "apk_sha256": "179f7fdc30cc9aef61b9d1f78b1cf09d30c4872acb98a7ae5697ea7026ad4999",
+    "java_locations": 801,
+    "original_methods_with_code": 801,
+    "project_namespace_comments": 6,
+    "dex": {
+      "classes.dex": 457,
+      "classes2.dex": 344
+    }
+  },
+  {
+    "app": "选课",
+    "apk_sha256": "765cd06135eb47fa90bc0acbdc1c6c1360e6045a1b56bc5601edcf0049233568",
+    "java_locations": 76,
+    "original_methods_with_code": 76,
+    "project_namespace_comments": 1,
+    "dex": {
+      "classes.dex": 76
+    }
+  },
+  {
+    "app": "错题本",
+    "apk_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+    "java_locations": 1642,
+    "original_methods_with_code": 1640,
+    "project_namespace_comments": 174,
+    "dex": {
+      "classes.dex": 902,
+      "classes2.dex": 374,
+      "classes3.dex": 251,
+      "classes4.dex": 113
+    }
+  },
+  {
+    "app": "问卷调查",
+    "apk_sha256": "02326056adda51ed9dcae1fc6cc81d2817e6942899fd8b5c97e0808cae991edc",
+    "java_locations": 212,
+    "original_methods_with_code": 212,
+    "project_namespace_comments": 0,
+    "dex": {
+      "classes.dex": 212
+    }
+  },
+  {
+    "app": "随身答",
+    "apk_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+    "java_locations": 1984,
+    "original_methods_with_code": 1983,
+    "project_namespace_comments": 119,
+    "dex": {
+      "classes.dex": 575,
+      "classes2.dex": 566,
+      "classes3.dex": 349,
+      "classes4.dex": 130,
+      "classes5.dex": 363
+    }
+  },
+  {
+    "app": "领创平板管理-2025.9.1",
+    "apk_sha256": "cd7482fdff9ebcb75b775cd846e25700f9d6f1c5adee49b06cd23f62d7252fef",
+    "java_locations": 356,
+    "original_methods_with_code": 356,
+    "project_namespace_comments": 13,
+    "dex": {
+      "classes.dex": 356
+    }
+  }
+]

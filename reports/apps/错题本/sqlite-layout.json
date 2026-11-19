@@ -1,0 +1,42 @@
+{
+  "tables": {
+    "ge_1002": [
+      {
+        "table": "ge_1002",
+        "columns": [
+          {
+            "name": "_id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "_time",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_datas",
+            "type": "BLOB",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS ge_1002 (_id integer primary key autoincrement, _time INTEGER, _datas blob)",
+        "owners": [
+          "com/tencent/bugly/proguard/x"
+        ]
+      }
+    ]
+  },
+  "indexes": [],
+  "unresolved": []
+}

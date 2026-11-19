@@ -1,0 +1,41 @@
+{
+  "apk_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+  "model_sha256": "15880a58a77ad341b4875bfa427d900ef1de906529548e49b7d93f06a4c80077",
+  "host_runtime": "ai-edge-litert 2.3.0",
+  "runtime_input": "Synthetic float32 tensors, no camera, sheet or labels supplied",
+  "scores": {
+    "cpu": {
+      "zero": [
+        0.8529682159423828,
+        0.1470317542552948
+      ],
+      "one": [
+        1.0,
+        1.7367116317106024e-13
+      ],
+      "diagonal": [
+        0.18247666954994202,
+        0.8175233602523804
+      ]
+    },
+    "reference": {
+      "zero": [
+        0.8529682159423828,
+        0.1470317542552948
+      ],
+      "one": [
+        1.0,
+        1.7367116317106024e-13
+      ],
+      "diagonal": [
+        0.18247666954994202,
+        0.8175233602523804
+      ]
+    }
+  },
+  "max_absolute_difference": {
+    "zero": 0.0,
+    "one": 0.0,
+    "diagonal": 0.0
+  }
+}

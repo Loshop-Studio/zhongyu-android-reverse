@@ -1,0 +1,78 @@
+[
+ {
+  "member": "lib/armeabi-v7a/libc++_shared.so",
+  "size": 558988,
+  "format": "ELF",
+  "sha256": "0897bb8b4f392f77648560dd7b6c6619730e764c6b77ff88c6bd1e65702e80d1",
+  "role": "Android NDK C++ 运行时",
+  "machine": "ARM",
+  "build_id": "565e2e2bc27c5fecbf535e9957d227efec13476d",
+  "needed": [
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 1597,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libcrashsdk.so",
+  "size": 407740,
+  "format": "ELF",
+  "sha256": "1efb4ccb45a99640b75cd0cb9bd552a803e4fdc76986ef0efee563e4b6c8d2f7",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "3e36b6fe967b43ab077e9ce24ce71d24a5e70745",
+  "needed": [
+   "liblog.so",
+   "libz.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 10,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmarsxlog.so",
+  "size": 333844,
+  "format": "ELF",
+  "sha256": "76188ca00cbb97482a5e20a8cdc87c0660c3d968845186a766fe8ed635a5d1c1",
+  "role": "Mars Xlog 日志",
+  "machine": "ARM",
+  "build_id": "e3957157fe96953fff3f342afcf2d96b443b7946",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libc++_shared.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 47,
+  "static_jni_exports": 14,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libumeng-spy.so",
+  "size": 141024,
+  "format": "ELF",
+  "sha256": "372ac4aa95aee26c54919de8b20ab88c75b0e9e7a8dd42a9717993625ec2fa43",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "6745a23e4406f8602bf608b87e502cd37b94c349",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 106,
+  "static_jni_exports": 1,
+  "jni_onload": true,
+  "has_debug_info": false
+ }
+]

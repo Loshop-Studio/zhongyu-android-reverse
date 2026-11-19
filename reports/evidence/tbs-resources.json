@@ -1,0 +1,191 @@
+{
+  "original_apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+  "installed_apk_sha256": "27de7a18cebb8602a31f53a615b57c96a2471e2e3f07a8575d7e7fad0aa52c7a",
+  "tbs_version": "045614",
+  "entry": "tbs_jars_fusion_dex.jar:com.tencent.tbs.core.X5CoreEntryLegacy",
+  "manifest_file_count": 25,
+  "matching_digest_entries": 49,
+  "matching_apk_build_and_device_members": 50,
+  "container_types": {
+    "properties": 3,
+    "JSON": 2,
+    "ZIP/JAR/APK": 13,
+    "ELF": 29,
+    "DataPack v5": 3
+  },
+  "grit_revision": "b6fd3d68433cebc7c10c602932c1736bcde0474a",
+  "grit_module_sha256": "4daf2567f10b8c08b2710d8fd9c58b2b8890d62e5d758602973b02f87f77001a",
+  "packs": {
+    "libresources.so": {
+      "sha256": "46eafe4e8438872006074705721d54c2f0df0ca13fbef8e97d72b018ad746414",
+      "physical_resources": 41,
+      "aliases": {},
+      "accessible_ids": 41,
+      "payload_types": {
+        "PNG": 4,
+        "text": 1,
+        "gzip": 35,
+        "FLAC": 1
+      },
+      "gzip_inflated_bytes": 126959,
+      "grit_read_all_ids": true,
+      "grit_byte_exact_rebuild": true
+    },
+    "libwebviewchromium.so": {
+      "sha256": "b9e179a993f5f7977f857d534f06f7a887dc7269a7290aa55fd0aef2bbcc01a0",
+      "physical_resources": 12,
+      "aliases": {},
+      "accessible_ids": 12,
+      "payload_types": {
+        "PNG": 3,
+        "gzip": 9
+      },
+      "gzip_inflated_bytes": 82902,
+      "grit_read_all_ids": true,
+      "grit_byte_exact_rebuild": true
+    },
+    "libzh_cn.so": {
+      "sha256": "c2628613df024d0fde88ecfb0577d0afe44f4e2cff8f241769f5a69e1035c72a",
+      "physical_resources": 294,
+      "aliases": {
+        "15251": 15245,
+        "15252": 15246,
+        "15254": 15253,
+        "20100": 16293,
+        "20104": 20103,
+        "20107": 20106,
+        "20111": 20110,
+        "20112": 20110,
+        "20113": 20110,
+        "20143": 20142,
+        "20144": 20142,
+        "20153": 20152,
+        "20170": 20169,
+        "20208": 20175,
+        "20240": 20174,
+        "20252": 20114,
+        "20275": 20255,
+        "20276": 20256,
+        "20288": 20115,
+        "20290": 20120,
+        "20327": 20264,
+        "20328": 20257,
+        "20329": 20258,
+        "20330": 20259,
+        "20331": 20260,
+        "20334": 20267
+      },
+      "accessible_ids": 320,
+      "payload_types": {
+        "text": 294
+      },
+      "gzip_inflated_bytes": 0,
+      "grit_read_all_ids": true,
+      "grit_byte_exact_rebuild": true
+    }
+  },
+  "nested_archives": {
+    "TencentLocationSDK.jar": {
+      "members": 2,
+      "dex_class_counts": {
+        "classes.dex": 237
+      },
+      "jvm_classes": 0,
+      "resource_table": false
+    },
+    "apache_dex.jar": {
+      "members": 2,
+      "dex_class_counts": {
+        "classes.dex": 405
+      },
+      "jvm_classes": 0,
+      "resource_table": false
+    },
+    "audio_base.jar": {
+      "members": 52,
+      "dex_class_counts": {},
+      "jvm_classes": 52,
+      "resource_table": false
+    },
+    "native_ad_plugin_dex.jar": {
+      "members": 2,
+      "dex_class_counts": {
+        "classes.dex": 275
+      },
+      "jvm_classes": 0,
+      "resource_table": false
+    },
+    "res.apk": {
+      "members": 190,
+      "dex_class_counts": {
+        "classes.dex": 12
+      },
+      "jvm_classes": 0,
+      "resource_table": true
+    },
+    "tbs_bugly_dex.jar": {
+      "members": 2,
+      "dex_class_counts": {
+        "classes.dex": 122
+      },
+      "jvm_classes": 0,
+      "resource_table": false
+    },
+    "tbs_hercules_plugin.jar": {
+      "members": 20,
+      "dex_class_counts": {
+        "classes.dex": 90
+      },
+      "jvm_classes": 0,
+      "resource_table": true
+    },
+    "tbs_jars_fusion_dex.jar": {
+      "members": 8,
+      "dex_class_counts": {
+        "classes.dex": 6102
+      },
+      "jvm_classes": 0,
+      "resource_table": true
+    },
+    "tbs_jsapi_plugin.jar": {
+      "members": 17,
+      "dex_class_counts": {
+        "classes.dex": 60
+      },
+      "jvm_classes": 0,
+      "resource_table": true
+    },
+    "tbs_sdk_extension_dex.jar": {
+      "members": 6,
+      "dex_class_counts": {
+        "classes.dex": 164
+      },
+      "jvm_classes": 0,
+      "resource_table": true
+    },
+    "tbs_ug_plugin.jar": {
+      "members": 116,
+      "dex_class_counts": {
+        "classes.dex": 592
+      },
+      "jvm_classes": 0,
+      "resource_table": true
+    },
+    "video_impl_dex.jar": {
+      "members": 2,
+      "dex_class_counts": {
+        "classes.dex": 525
+      },
+      "jvm_classes": 0,
+      "resource_table": false
+    },
+    "videores.apk": {
+      "members": 80,
+      "dex_class_counts": {
+        "classes.dex": 324
+      },
+      "jvm_classes": 0,
+      "resource_table": true
+    }
+  }
+}

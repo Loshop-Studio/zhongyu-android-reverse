@@ -1,0 +1,1893 @@
+{
+  "a.a": {
+    "classes": 3,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "a.a.d": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "a.a.e": {
+    "classes": 9,
+    "methods": 20,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.a.e.f": {
+    "classes": 3,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "a.b": {
+    "classes": 2,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "a.b.c": {
+    "classes": 43,
+    "methods": 270,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.b.d.a": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a.b.e.a": {
+    "classes": 15,
+    "methods": 138,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.b.f": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a.b.g": {
+    "classes": 13,
+    "methods": 107,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.b.g.i": {
+    "classes": 38,
+    "methods": 457,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.b.h": {
+    "classes": 100,
+    "methods": 679,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "a1",
+      "b"
+    ]
+  },
+  "a.c.a.a": {
+    "classes": 4,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "a.c.a.b": {
+    "classes": 8,
+    "methods": 39,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "a.d.a": {
+    "classes": 3,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "a.e": {
+    "classes": 15,
+    "methods": 192,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.f.a.a": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a.f.b": {
+    "classes": 14,
+    "methods": 112,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.f.b.i": {
+    "classes": 13,
+    "methods": 78,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.f.b.i.l": {
+    "classes": 17,
+    "methods": 87,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.f.c": {
+    "classes": 20,
+    "methods": 80,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.g": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a.g.b": {
+    "classes": 2,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "a.h": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a.h.b": {
+    "classes": 9,
+    "methods": 69,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.h.c": {
+    "classes": 5,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a.h.c.b": {
+    "classes": 12,
+    "methods": 27,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.h.d": {
+    "classes": 13,
+    "methods": 64,
+    "storage": {
+      "文件流": 2
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.h.d.l": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a.h.e.a": {
+    "classes": 3,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "a.h.f": {
+    "classes": 3,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "a.h.g": {
+    "classes": 19,
+    "methods": 36,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.h.h": {
+    "classes": 11,
+    "methods": 37,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.h.i": {
+    "classes": 4,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.h.j": {
+    "classes": 46,
+    "methods": 207,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.h.j.a0": {
+    "classes": 11,
+    "methods": 41,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.h.j.b0": {
+    "classes": 8,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.h.k": {
+    "classes": 8,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.i.a": {
+    "classes": 6,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "a.j.a": {
+    "classes": 3,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a.j.b": {
+    "classes": 11,
+    "methods": 67,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.k": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a.k.b": {
+    "classes": 109,
+    "methods": 611,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "a1",
+      "b"
+    ]
+  },
+  "a.l.a.a": {
+    "classes": 4,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.m": {
+    "classes": 27,
+    "methods": 84,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.n.a": {
+    "classes": 5,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "a.o": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "a.o.b": {
+    "classes": 48,
+    "methods": 237,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "b",
+      "b0"
+    ]
+  },
+  "a.p": {
+    "classes": 5,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "a.q": {
+    "classes": 56,
+    "methods": 244,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "b",
+      "b0"
+    ]
+  },
+  "a.r.a.a": {
+    "classes": 19,
+    "methods": 178,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "a.s": {
+    "classes": 3,
+    "methods": 42,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "a.t.a": {
+    "classes": 15,
+    "methods": 111,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "android.support.v4.app": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "RemoteActionCompatParcelizer"
+    ]
+  },
+  "android.support.v4.graphics.drawable": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "IconCompatParcelizer"
+    ]
+  },
+  "androidx.activity": {
+    "classes": 13,
+    "methods": 48,
+    "storage": {},
+    "sample": [
+      "ComponentActivity",
+      "ImmLeaksCleaner",
+      "OnBackPressedDispatcher"
+    ]
+  },
+  "androidx.activity.result": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": []
+  },
+  "androidx.annotation": {
+    "classes": 1,
+    "methods": 0,
+    "storage": {},
+    "sample": [
+      "Keep"
+    ]
+  },
+  "androidx.appcompat.app": {
+    "classes": 6,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "AlertController"
+    ]
+  },
+  "androidx.appcompat.view.menu": {
+    "classes": 5,
+    "methods": 49,
+    "storage": {},
+    "sample": [
+      "ActionMenuItemView",
+      "ExpandedMenuView",
+      "ListMenuItemView"
+    ]
+  },
+  "androidx.appcompat.widget": {
+    "classes": 59,
+    "methods": 528,
+    "storage": {},
+    "sample": [
+      "ActionBarContainer",
+      "ActionBarContextView",
+      "ActionBarOverlayLayout",
+      "ActionMenuView"
+    ]
+  },
+  "androidx.constraintlayout.widget": {
+    "classes": 5,
+    "methods": 53,
+    "storage": {},
+    "sample": [
+      "ConstraintLayout",
+      "Guideline"
+    ]
+  },
+  "androidx.coordinatorlayout.widget": {
+    "classes": 11,
+    "methods": 119,
+    "storage": {},
+    "sample": [
+      "CoordinatorLayout"
+    ]
+  },
+  "androidx.core.app": {
+    "classes": 4,
+    "methods": 12,
+    "storage": {},
+    "sample": [
+      "CoreComponentFactory",
+      "RemoteActionCompat",
+      "RemoteActionCompatParcelizer"
+    ]
+  },
+  "androidx.core.content": {
+    "classes": 3,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "FileProvider"
+    ]
+  },
+  "androidx.core.graphics.drawable": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "IconCompat",
+      "IconCompatParcelizer"
+    ]
+  },
+  "androidx.core.widget": {
+    "classes": 5,
+    "methods": 101,
+    "storage": {},
+    "sample": [
+      "NestedScrollView"
+    ]
+  },
+  "androidx.fragment.app": {
+    "classes": 2,
+    "methods": 3,
+    "storage": {},
+    "sample": []
+  },
+  "androidx.lifecycle": {
+    "classes": 12,
+    "methods": 30,
+    "storage": {},
+    "sample": [
+      "CompositeGeneratedAdaptersObserver",
+      "FullLifecycleObserverAdapter",
+      "LiveData",
+      "ReflectiveGenericLifecycleObserver"
+    ]
+  },
+  "androidx.recyclerview.widget": {
+    "classes": 58,
+    "methods": 649,
+    "storage": {},
+    "sample": [
+      "GridLayoutManager",
+      "LinearLayoutManager",
+      "RecyclerView",
+      "StaggeredGridLayoutManager"
+    ]
+  },
+  "androidx.savedstate": {
+    "classes": 3,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "Recreator"
+    ]
+  },
+  "androidx.versionedparcelable": {
+    "classes": 3,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "CustomVersionedParcelable",
+      "ParcelImpl"
+    ]
+  },
+  "androidx.viewpager2.adapter": {
+    "classes": 3,
+    "methods": 3,
+    "storage": {},
+    "sample": []
+  },
+  "b.a.a.a": {
+    "classes": 1,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a": {
+    "classes": 2,
+    "methods": 21,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.b.a.a.a0.a": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a.b0": {
+    "classes": 5,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.a.a.c": {
+    "classes": 10,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.a.a.d": {
+    "classes": 9,
+    "methods": 31,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.a.a.e": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a.f": {
+    "classes": 7,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.a.a.g": {
+    "classes": 2,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.b.a.a.h": {
+    "classes": 1,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a.i": {
+    "classes": 2,
+    "methods": 51,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a.j": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a.k": {
+    "classes": 3,
+    "methods": 71,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.b.a.a.l": {
+    "classes": 8,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "b.b.a.a.l.d": {
+    "classes": 1,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a.m": {
+    "classes": 47,
+    "methods": 165,
+    "storage": {},
+    "sample": [
+      "a",
+      "a0",
+      "b",
+      "b0"
+    ]
+  },
+  "b.b.a.a.n": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a.o": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a.p": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a.q": {
+    "classes": 16,
+    "methods": 62,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.a.a.r": {
+    "classes": 19,
+    "methods": 76,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.a.a.s": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a.t": {
+    "classes": 6,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.a.a.u": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a.v": {
+    "classes": 2,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.b.a.a.w": {
+    "classes": 25,
+    "methods": 111,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.a.a.x": {
+    "classes": 8,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.a.a.y": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.a.a.z": {
+    "classes": 35,
+    "methods": 109,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.b": {
+    "classes": 32,
+    "methods": 86,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.b.a0": {
+    "classes": 38,
+    "methods": 138,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.b.a0.a0": {
+    "classes": 3,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "b.b.b.a0.z": {
+    "classes": 65,
+    "methods": 223,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.b.a0.z.t": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.b.b0": {
+    "classes": 1,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.b.b.c0": {
+    "classes": 5,
+    "methods": 60,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.b.b.z": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.c.a": {
+    "classes": 3,
+    "methods": 34,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "b.c.a.d": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.c.a.e.a": {
+    "classes": 3,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "b.c.a.e.b.a.a.a": {
+    "classes": 4,
+    "methods": 18,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.c.a.e.b.a.b": {
+    "classes": 4,
+    "methods": 29,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.c.a.e.c": {
+    "classes": 9,
+    "methods": 29,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.c.a.e.d.a": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.c.a.e.e": {
+    "classes": 2,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.c.a.e.e.b": {
+    "classes": 2,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.c.a.e.f.a": {
+    "classes": 8,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.c.a.e.f.b": {
+    "classes": 13,
+    "methods": 73,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.c.a.e.f.b.f": {
+    "classes": 5,
+    "methods": 16,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.c.a.e.f.b.g": {
+    "classes": 3,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "b.c.a.e.f.c": {
+    "classes": 2,
+    "methods": 10,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.c.a.e.f.c.c": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.c.a.e.f.c.d": {
+    "classes": 5,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "b.c.a.e.f.c.e": {
+    "classes": 10,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.c.a.e.f.c.f": {
+    "classes": 2,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.c.a.e.g.a": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.c.a.e.g.a.b": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.c.a.e.g.a.c": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.c.a.e.g.a.d": {
+    "classes": 2,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.c.a.e.g.a.e": {
+    "classes": 3,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "b.c.a.e.h.a": {
+    "classes": 26,
+    "methods": 84,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.d.a": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.d.a.b": {
+    "classes": 23,
+    "methods": 70,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.d.a.c": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.d.a.d": {
+    "classes": 5,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "b.d.a.d.c": {
+    "classes": 6,
+    "methods": 27,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "b.d.b": {
+    "classes": 7,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "b.d.b.h": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "b.d.b.i": {
+    "classes": 10,
+    "methods": 15,
+    "storage": {
+      "文件流": 1
+    },
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "c.a.a.a": {
+    "classes": 3,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "com.google.android.material.appbar": {
+    "classes": 8,
+    "methods": 87,
+    "storage": {},
+    "sample": [
+      "AppBarLayout",
+      "MaterialToolbar"
+    ]
+  },
+  "com.google.android.material.behavior": {
+    "classes": 5,
+    "methods": 25,
+    "storage": {},
+    "sample": [
+      "HideBottomViewOnScrollBehavior",
+      "SwipeDismissBehavior"
+    ]
+  },
+  "com.google.android.material.bottomappbar": {
+    "classes": 5,
+    "methods": 52,
+    "storage": {},
+    "sample": [
+      "BottomAppBar"
+    ]
+  },
+  "com.google.android.material.bottomsheet": {
+    "classes": 8,
+    "methods": 57,
+    "storage": {},
+    "sample": [
+      "BottomSheetBehavior"
+    ]
+  },
+  "com.google.android.material.button": {
+    "classes": 5,
+    "methods": 76,
+    "storage": {},
+    "sample": [
+      "MaterialButton"
+    ]
+  },
+  "com.google.android.material.chip": {
+    "classes": 9,
+    "methods": 211,
+    "storage": {},
+    "sample": [
+      "Chip",
+      "ChipGroup"
+    ]
+  },
+  "com.google.android.material.datepicker": {
+    "classes": 1,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "MaterialCalendarGridView"
+    ]
+  },
+  "com.google.android.material.floatingactionbutton": {
+    "classes": 10,
+    "methods": 133,
+    "storage": {},
+    "sample": [
+      "ExtendedFloatingActionButton",
+      "FloatingActionButton"
+    ]
+  },
+  "com.google.android.material.internal": {
+    "classes": 7,
+    "methods": 46,
+    "storage": {},
+    "sample": [
+      "BaselineLayout",
+      "CheckableImageButton",
+      "NavigationMenuItemView",
+      "NavigationMenuView"
+    ]
+  },
+  "com.google.android.material.snackbar": {
+    "classes": 3,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "SnackbarContentLayout"
+    ]
+  },
+  "com.google.android.material.textfield": {
+    "classes": 11,
+    "methods": 208,
+    "storage": {},
+    "sample": [
+      "TextInputEditText",
+      "TextInputLayout"
+    ]
+  },
+  "com.google.android.material.textview": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "MaterialTextView"
+    ]
+  },
+  "com.google.android.material.theme": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "MaterialComponentsViewInflater"
+    ]
+  },
+  "com.google.android.material.transformation": {
+    "classes": 10,
+    "methods": 47,
+    "storage": {},
+    "sample": [
+      "ExpandableBehavior",
+      "ExpandableTransformationBehavior",
+      "FabTransformationBehavior",
+      "FabTransformationScrimBehavior"
+    ]
+  },
+  "com.xuexiang.xui": {
+    "classes": 1,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "XUIInitProvider"
+    ]
+  },
+  "com.xuexiang.xui.adapter.recyclerview": {
+    "classes": 2,
+    "methods": 8,
+    "storage": {},
+    "sample": [
+      "XGridLayoutManager",
+      "XLinearLayoutManager"
+    ]
+  },
+  "com.xuexiang.xui.widget.actionbar": {
+    "classes": 2,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "TitleBar"
+    ]
+  },
+  "com.xuexiang.xui.widget.alpha": {
+    "classes": 2,
+    "methods": 13,
+    "storage": {},
+    "sample": [
+      "XUIAlphaButton",
+      "XUIAlphaTextView"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.recycler.layout": {
+    "classes": 6,
+    "methods": 75,
+    "storage": {},
+    "sample": [
+      "BannerLayoutManager",
+      "OverFlyingLayoutManager"
+    ]
+  },
+  "com.xuexiang.xui.widget.banner.widget.banner": {
+    "classes": 2,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "SimpleGuideBanner"
+    ]
+  },
+  "com.xuexiang.xui.widget.behavior": {
+    "classes": 4,
+    "methods": 14,
+    "storage": {},
+    "sample": [
+      "BaseBehavior",
+      "BottomNavigationViewBehavior",
+      "FloatingActionButtonBehavior",
+      "ToolBarBehavior"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.bottomsheet": {
+    "classes": 1,
+    "methods": 6,
+    "storage": {},
+    "sample": [
+      "BottomSheetItemView"
+    ]
+  },
+  "com.xuexiang.xui.widget.dialog.materialdialog.internal": {
+    "classes": 5,
+    "methods": 26,
+    "storage": {},
+    "sample": [
+      "MDButton",
+      "MDRootLayout"
+    ]
+  },
+  "com.xuexiang.xui.widget.edittext.materialedittext": {
+    "classes": 5,
+    "methods": 156,
+    "storage": {},
+    "sample": [
+      "MaterialEditText"
+    ]
+  },
+  "com.xuexiang.xui.widget.edittext.materialedittext.validation": {
+    "classes": 4,
+    "methods": 11,
+    "storage": {},
+    "sample": [
+      "METLengthChecker",
+      "METValidator",
+      "NotAllowEmptyValidator",
+      "RegexpValidator"
+    ]
+  },
+  "com.xuexiang.xui.widget.edittext.verify": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "PwdEditText"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.crop": {
+    "classes": 1,
+    "methods": 23,
+    "storage": {},
+    "sample": [
+      "CropOverlayView"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.preview.ui": {
+    "classes": 6,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "PreviewActivity",
+      "VideoPlayerActivity"
+    ]
+  },
+  "com.xuexiang.xui.widget.imageview.preview.view": {
+    "classes": 12,
+    "methods": 48,
+    "storage": {},
+    "sample": [
+      "BezierBannerView",
+      "PhotoViewPager",
+      "SmoothImageView"
+    ]
+  },
+  "com.xuexiang.xui.widget.picker.wheelview": {
+    "classes": 3,
+    "methods": 41,
+    "storage": {},
+    "sample": [
+      "WheelView"
+    ]
+  },
+  "com.xuexiang.xui.widget.progress.loading": {
+    "classes": 3,
+    "methods": 17,
+    "storage": {},
+    "sample": [
+      "ARCLoadingView",
+      "MiniLoadingView"
+    ]
+  },
+  "com.xuexiang.xui.widget.progress.materialprogressbar": {
+    "classes": 9,
+    "methods": 78,
+    "storage": {},
+    "sample": [
+      "IndeterminateCircularProgressDrawable",
+      "IndeterminateHorizontalProgressDrawable",
+      "MaterialProgressBar"
+    ]
+  },
+  "com.xuexiang.xui.widget.textview": {
+    "classes": 1,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "AutoMoveTextView"
+    ]
+  },
+  "com.zykj.message": {
+    "classes": 9,
+    "methods": 33,
+    "storage": {},
+    "sample": [
+      "KillSelfService",
+      "UnInstallActivity",
+      "UnLoginActivity"
+    ]
+  },
+  "com.zykj.satisfaction": {
+    "classes": 5,
+    "methods": 14,
+    "storage": {
+      "WebView": 2
+    },
+    "sample": [
+      "MainActivity",
+      "MyApplication"
+    ]
+  },
+  "com.zykj.satisfaction.update": {
+    "classes": 4,
+    "methods": 28,
+    "storage": {},
+    "sample": [
+      "PercentCircleView",
+      "UpdateResp"
+    ]
+  },
+  "d": {
+    "classes": 4,
+    "methods": 9,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "d.e": {
+    "classes": 10,
+    "methods": 99,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "d.f.a": {
+    "classes": 3,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "d.f.b": {
+    "classes": 7,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "d.g": {
+    "classes": 3,
+    "methods": 15,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "d.h": {
+    "classes": 2,
+    "methods": 3,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "d.i": {
+    "classes": 9,
+    "methods": 24,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "e": {
+    "classes": 21,
+    "methods": 53,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "e.q": {
+    "classes": 2,
+    "methods": 5,
+    "storage": {},
+    "sample": [
+      "a",
+      "b"
+    ]
+  },
+  "e.q.c": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "e.q.d": {
+    "classes": 6,
+    "methods": 22,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "e.q.e": {
+    "classes": 1,
+    "methods": 1,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "e.q.f": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "e.q.g": {
+    "classes": 16,
+    "methods": 46,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "e.q.g.i": {
+    "classes": 17,
+    "methods": 27,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "e.q.h": {
+    "classes": 1,
+    "methods": 4,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "e.q.i": {
+    "classes": 4,
+    "methods": 7,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "f": {
+    "classes": 8,
+    "methods": 53,
+    "storage": {},
+    "sample": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "f.h": {
+    "classes": 1,
+    "methods": 2,
+    "storage": {},
+    "sample": [
+      "a"
+    ]
+  },
+  "io.github.inflationx.calligraphy3": {
+    "classes": 18,
+    "methods": 82,
+    "storage": {},
+    "sample": [
+      "BuildConfig",
+      "Calligraphy",
+      "CalligraphyConfig",
+      "CalligraphyInterceptor"
+    ]
+  }
+}

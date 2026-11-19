@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="8"
+    android:versionName="1.0.5"
+    android:compileSdkVersion="33"
+    android:compileSdkVersionCodename="13"
+    package="com.zykj.satisfaction"
+    platformBuildVersionCode="33"
+    platformBuildVersionName="13">
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="28" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="com.zykj.permission.MESSAGE_SERVICE" />
+
+    <uses-permission
+        android:name="com.zykj.message.USER_INFO" />
+
+    <application
+        android:theme="@ref/0x7f10000a"
+        android:label="@ref/0x7f0f001b"
+        android:icon="@ref/0x7f0d0000"
+        android:name="com.zykj.satisfaction.MyApplication"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:networkSecurityConfig="@ref/0x7f120001"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+        <activity
+            android:name="com.zykj.satisfaction.MainActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f10000a"
+            android:name="com.zykj.message.UnInstallActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f10000a"
+            android:name="com.zykj.message.UnLoginActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.zykj.satisfaction.fileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f120000" />
+        </provider>
+
+        <provider
+            android:name="com.xuexiang.xui.XUIInitProvider"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.zykj.satisfaction.xui-init-provider" />
+
+        <activity
+            android:theme="@ref/0x7f10033f"
+            android:name="com.xuexiang.xui.widget.imageview.preview.ui.PreviewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f10033f"
+            android:name="com.xuexiang.xui.widget.imageview.preview.ui.VideoPlayerActivity" />
+
+        <service
+            android:name="com.zykj.message.KillSelfService"
+            android:exported="false" />
+    </application>
+</manifest>

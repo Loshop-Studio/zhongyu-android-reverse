@@ -1,0 +1,64 @@
+[
+  {
+    "app": "中育云笔记",
+    "install": "Serving...\nPerforming Incremental Install\nFailure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]\nPerforming Streamed Install\nadb: failed to install dist/中育云笔记.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]",
+    "launch": null
+  },
+  {
+    "app": "中育管控桌面",
+    "install": "Serving...\nPerforming Incremental Install\nFailure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]\nPerforming Streamed Install\nadb: failed to install dist/中育管控桌面.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]",
+    "launch": null
+  },
+  {
+    "app": "优课畅学",
+    "install": "Serving...\nPerforming Incremental Install\nFailure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]\nPerforming Streamed Install\nadb: failed to install dist/优课畅学.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]",
+    "launch": null
+  },
+  {
+    "app": "在线专栏",
+    "install": "Serving...\nPerforming Incremental Install\nSuccess\nInstall command complete in 697 ms\nAll files should be loaded. Notifying the device.",
+    "launch": "Starting: Intent { cmp=com.zykj.subscriber/.MainActivity }\nWarning: Activity not started, intent has been delivered to currently running top-most instance.\nStatus: ok\nLaunchState: UNKNOWN (0)\nActivity: com.zykj.subscriber/com.zykj.message.UnInstallActivity\nTotalTime: 0\nWaitTime: 2676\nComplete",
+    "process_alive": true,
+    "activity": "mResumedActivity: ActivityRecord{1617226 u0 com.zykj.subscriber/com.zykj.message.UnInstallActivity t9}"
+  },
+  {
+    "app": "新测评",
+    "install": "Serving...\nPerforming Incremental Install\nFailure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]\nPerforming Streamed Install\nadb: failed to install dist/新测评.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]",
+    "launch": null
+  },
+  {
+    "app": "网阅联考",
+    "install": "Serving...\nPerforming Incremental Install\nFailure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]\nPerforming Streamed Install\nAll files should be loaded. Notifying the device.\nadb: failed to install dist/网阅联考.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]",
+    "launch": null
+  },
+  {
+    "app": "选课",
+    "install": "Serving...\nPerforming Incremental Install\nSuccess\nInstall command complete in 41 ms\nAll files should be loaded. Notifying the device.",
+    "launch": "Starting: Intent { cmp=com.zykj.curricula/.MainActivity }\nWarning: Activity not started, intent has been delivered to currently running top-most instance.\nStatus: ok\nLaunchState: UNKNOWN (0)\nActivity: com.zykj.curricula/com.zykj.message.UnInstallActivity\nTotalTime: 0\nWaitTime: 222\nComplete",
+    "process_alive": true,
+    "activity": "mResumedActivity: ActivityRecord{6e4ceec u0 com.zykj.curricula/com.zykj.message.UnInstallActivity t10}"
+  },
+  {
+    "app": "错题本",
+    "install": "Serving...\nPerforming Incremental Install\nFailure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]\nPerforming Streamed Install\nadb: failed to install dist/错题本.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]",
+    "launch": null
+  },
+  {
+    "app": "问卷调查",
+    "install": "Serving...\nPerforming Incremental Install\nSuccess\nInstall command complete in 40 ms\nAll files should be loaded. Notifying the device.",
+    "launch": "Starting: Intent { cmp=com.zykj.satisfaction/.MainActivity }\nWarning: Activity not started, intent has been delivered to currently running top-most instance.\nStatus: ok\nLaunchState: UNKNOWN (0)\nActivity: com.zykj.satisfaction/com.zykj.message.UnInstallActivity\nTotalTime: 0\nWaitTime: 223\nComplete",
+    "process_alive": true,
+    "activity": "mResumedActivity: ActivityRecord{99a68dd u0 com.zykj.satisfaction/com.zykj.message.UnInstallActivity t11}"
+  },
+  {
+    "app": "随身答",
+    "install": "Serving...\nPerforming Incremental Install\nFailure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]\nPerforming Streamed Install\nadb: failed to install dist/随身答.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]",
+    "launch": null
+  },
+  {
+    "app": "领创平板管理-2025.9.1",
+    "install": "系统已有同名桌面，保留现有安装",
+    "existing_package_path": "package:/system_ext/priv-app/Launcher3QuickStep/Launcher3QuickStep.apk",
+    "launch": null
+  }
+]

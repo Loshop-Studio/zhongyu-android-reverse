@@ -1,0 +1,438 @@
+{
+  "calls": {
+    "文件流": [
+      "androidx/core/graphics/drawable/IconCompat",
+      "androidx/room/k0",
+      "anet/channel/util/SerializeHelper",
+      "anetwork/channel/download/DownloadManager$b",
+      "com/alibaba/sdk/android/crashdefend/c/a",
+      "com/alibaba/sdk/android/oss/common/utils/BinaryUtil",
+      "com/alibaba/sdk/android/oss/internal/ResumableUploadTask",
+      "com/alibaba/sdk/android/oss/internal/SequenceUploadTask",
+      "com/alibaba/sdk/android/oss/network/OSSRequestTask",
+      "com/alibaba/sdk/android/push/util/DownloadUtil",
+      "com/bumptech/glide/disklrucache/DiskLruCache$Editor",
+      "com/bumptech/glide/disklrucache/DiskLruCache$Value",
+      "com/bumptech/glide/disklrucache/DiskLruCache",
+      "com/bumptech/glide/load/ImageHeaderParserUtils$3",
+      "com/bumptech/glide/load/ImageHeaderParserUtils$5",
+      "com/bumptech/glide/load/model/FileLoader$StreamFactory$1",
+      "com/bumptech/glide/load/model/StreamEncoder",
+      "com/bumptech/glide/load/resource/bitmap/BitmapEncoder",
+      "com/efs/sdk/base/a/b/g$a",
+      "com/efs/sdk/base/a/b/g",
+      "com/efs/sdk/base/a/e/f$1",
+      "com/efs/sdk/base/a/h/b/a",
+      "com/efs/sdk/base/a/h/b",
+      "com/efs/sdk/base/a/h/g",
+      "com/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl",
+      "com/efs/sdk/pa/a/c",
+      "com/ta/a/c/a",
+      "com/uc/crashsdk/a/b",
+      "com/uc/crashsdk/a/c",
+      "com/uc/crashsdk/a/g",
+      "com/uc/crashsdk/e",
+      "com/umeng/analytics/filter/EventList",
+      "com/umeng/commonsdk/framework/UMFrUtils",
+      "com/umeng/commonsdk/stateless/d",
+      "com/umeng/commonsdk/statistics/common/DeviceConfig",
+      "com/umeng/commonsdk/statistics/common/HelperUtils",
+      "com/umeng/commonsdk/statistics/idtracking/ImprintHandler",
+      "com/umeng/commonsdk/statistics/idtracking/e",
+      "com/umeng/commonsdk/utils/UMUtils",
+      "com/xuexiang/xui/utils/DeviceUtils",
+      "com/xuexiang/xui/widget/imageview/edit/PhotoEditor$5$1",
+      "com/zykj/download/work/DownloadOssFileWork",
+      "com/zykj/http/progress/ProgressRequestBody",
+      "com/zykj/subscriber/update/c",
+      "n0/b",
+      "okio/Okio__JvmOkioKt",
+      "org/android/spdy/SoInstallMgrSdk",
+      "r0/a",
+      "r0/c",
+      "t/h",
+      "t/n"
+    ],
+    "位图": [
+      "androidx/core/graphics/drawable/IconCompat",
+      "com/alibaba/sdk/android/push/util/DownloadUtil",
+      "com/bumptech/glide/load/resource/bitmap/BitmapEncoder",
+      "com/bumptech/glide/load/resource/bitmap/ImageReader$ParcelFileDescriptorImageReader",
+      "com/bumptech/glide/load/resource/transcode/BitmapBytesTranscoder",
+      "com/xuexiang/xui/utils/Utils",
+      "com/xuexiang/xui/widget/imageview/crop/CropImageView",
+      "com/xuexiang/xui/widget/imageview/edit/PhotoEditor$5$1"
+    ],
+    "Java 对象流": [
+      "androidx/work/a",
+      "anet/channel/util/SerializeHelper",
+      "com/alibaba/sdk/android/oss/internal/ResumableUploadTask",
+      "com/alibaba/sdk/android/oss/internal/SequenceUploadTask",
+      "com/alibaba/sdk/android/push/notification/CustomNotificationBuilder"
+    ],
+    "偏好设置": [
+      "androidx/work/impl/a$g",
+      "anet/channel/GlobalAppRuntimeInfo",
+      "anet/channel/TaobaoNetworkAdapter",
+      "anet/channel/c/a",
+      "anet/channel/detect/k",
+      "anet/channel/e/a$b",
+      "anet/channel/e/a",
+      "anet/channel/e/c",
+      "anetwork/channel/config/NetworkConfigCenter",
+      "anetwork/channel/cookie/CookieManager$a",
+      "anetwork/channel/cookie/CookieManager",
+      "com/alibaba/sdk/android/ams/common/a/a",
+      "com/alibaba/sdk/android/oss/common/utils/OSSSharedPreferences",
+      "com/alibaba/sdk/android/push/common/util/b",
+      "com/alibaba/sdk/android/push/d/a/a",
+      "com/alibaba/sdk/android/push/notification/CustomNotificationBuilder",
+      "com/efs/sdk/base/a/c/a/c",
+      "com/efs/sdk/base/a/c/a/e",
+      "com/efs/sdk/base/a/e/b",
+      "com/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl",
+      "com/efs/sdk/base/newsharedpreferences/SharedPreferencesUtils$SharedPreferencesWrapper",
+      "com/efs/sdk/base/newsharedpreferences/SharedPreferencesUtils",
+      "com/efs/sdk/pa/config/ConfigManager",
+      "com/ta/utdid2/b/a/a",
+      "com/taobao/accs/ACCSManager",
+      "com/taobao/accs/ChannelService",
+      "com/taobao/accs/internal/ACCSManagerImpl",
+      "com/taobao/accs/utl/OrangeAdapter",
+      "com/taobao/accs/utl/UtilityImpl",
+      "com/taobao/accs/utl/Utils",
+      "com/taobao/accs/utl/f",
+      "com/taobao/agoo/a/a",
+      "com/taobao/agoo/b",
+      "com/umeng/analytics/b",
+      "com/umeng/analytics/pro/h",
+      "com/umeng/analytics/pro/n",
+      "com/umeng/analytics/pro/r",
+      "com/umeng/analytics/pro/t",
+      "com/umeng/analytics/pro/w",
+      "com/umeng/analytics/pro/x",
+      "com/umeng/analytics/process/UMProcessDBDatasSender",
+      "com/umeng/common/a",
+      "com/umeng/common/b",
+      "com/umeng/commonsdk/UMConfigureImpl",
+      "com/umeng/commonsdk/framework/UMFrUtils",
+      "com/umeng/commonsdk/internal/c$1",
+      "com/umeng/commonsdk/internal/c$3",
+      "com/umeng/commonsdk/internal/c$4",
+      "com/umeng/commonsdk/internal/c",
+      "com/umeng/commonsdk/internal/utils/f",
+      "com/umeng/commonsdk/internal/utils/j",
+      "com/umeng/commonsdk/internal/utils/k",
+      "com/umeng/commonsdk/statistics/b",
+      "com/umeng/commonsdk/statistics/c",
+      "com/umeng/commonsdk/statistics/common/DeviceConfig",
+      "com/umeng/commonsdk/statistics/common/d",
+      "com/umeng/commonsdk/statistics/idtracking/Envelope",
+      "com/umeng/commonsdk/statistics/idtracking/e$a",
+      "com/umeng/commonsdk/statistics/idtracking/i",
+      "com/umeng/commonsdk/statistics/internal/PreferenceWrapper",
+      "com/umeng/commonsdk/statistics/internal/StatTracer",
+      "com/umeng/commonsdk/utils/UMUtils",
+      "com/umeng/umzid/ZIDManager",
+      "com/umeng/umzid/a",
+      "com/umeng/umzid/c",
+      "com/xuexiang/xui/widget/guidview/GuideCaseView",
+      "com/zykj/subscriber/MainActivity$b",
+      "com/zykj/subscriber/MainActivity$e",
+      "com/zykj/subscriber/MainActivity",
+      "g1/c",
+      "g1/f",
+      "l2/b",
+      "n0/b",
+      "org/android/agoo/common/Config"
+    ],
+    "JSON": [
+      "anet/channel/AwcnConfig",
+      "anet/channel/detect/ExceptionDetector",
+      "anet/channel/e/a$b",
+      "anet/channel/statist/RequestStatistic",
+      "anet/channel/statist/SessionConnStat",
+      "anet/channel/strategy/l$a",
+      "anet/channel/strategy/l$b",
+      "anet/channel/strategy/l$c",
+      "anet/channel/strategy/l$d",
+      "anet/channel/strategy/l$e",
+      "anet/channel/strategy/l",
+      "anetwork/channel/config/NetworkConfigCenter",
+      "anetwork/channel/cookie/CookieManager$a",
+      "anetwork/channel/entity/f",
+      "com/alibaba/sdk/android/crashdefend/c/a",
+      "com/alibaba/sdk/android/oss/common/auth/OSSAuthCredentialsProvider",
+      "com/alibaba/sdk/android/oss/common/utils/HttpdnsMini$QueryHostTask",
+      "com/alibaba/sdk/android/oss/common/utils/OSSUtils",
+      "com/alibaba/sdk/android/push/common/util/JSONUtils",
+      "com/alibaba/sdk/android/push/e/i",
+      "com/alibaba/sdk/android/push/notification/PushData",
+      "com/alibaba/sdk/android/push/notification/d",
+      "com/aliyun/ams/emas/push/f",
+      "com/efs/sdk/base/a/a/a",
+      "com/efs/sdk/base/a/c/a/c",
+      "com/efs/sdk/base/a/c/a/d",
+      "com/efs/sdk/base/protocol/record/EfsJSONLog",
+      "com/google/gson/Gson$1",
+      "com/google/gson/Gson$2",
+      "com/google/gson/Gson$3",
+      "com/google/gson/Gson$4",
+      "com/google/gson/Gson$5",
+      "com/google/gson/Gson",
+      "com/google/gson/GsonBuilder",
+      "com/google/gson/internal/Excluder$1",
+      "com/google/gson/internal/bind/ArrayTypeAdapter$1",
+      "com/google/gson/internal/bind/CollectionTypeAdapterFactory",
+      "com/google/gson/internal/bind/MapTypeAdapterFactory",
+      "com/google/gson/internal/bind/ObjectTypeAdapter",
+      "com/google/gson/internal/bind/ReflectiveTypeAdapterFactory",
+      "com/google/gson/internal/bind/TreeTypeAdapter$GsonContextImpl",
+      "com/google/gson/internal/bind/TreeTypeAdapter",
+      "com/google/gson/internal/bind/TypeAdapterRuntimeTypeWrapper",
+      "com/google/gson/internal/bind/TypeAdapters$26",
+      "com/ta/a/a/a",
+      "com/ta/utdid2/device/b",
+      "com/taobao/accs/AccsState",
+      "com/taobao/accs/data/Message",
+      "com/taobao/accs/data/d",
+      "com/taobao/accs/net/j",
+      "com/taobao/accs/net/l",
+      "com/taobao/accs/utl/JsonUtility$JsonObjectBuilder",
+      "com/taobao/accs/utl/JsonUtility",
+      "com/taobao/agoo/a/a/a",
+      "com/taobao/agoo/a/a/c",
+      "com/taobao/agoo/a/a/d",
+      "com/taobao/agoo/a/a",
+      "com/taobao/agoo/a/b",
+      "com/umeng/analytics/b",
+      "com/umeng/analytics/pro/h",
+      "com/umeng/analytics/pro/k",
+      "com/umeng/analytics/pro/n",
+      "com/umeng/analytics/pro/p",
+      "com/umeng/analytics/pro/q",
+      "com/umeng/analytics/pro/r",
+      "com/umeng/analytics/pro/t",
+      "com/umeng/analytics/pro/u",
+      "com/umeng/analytics/process/UMProcessDBDatasSender$ConstructMessageCallback",
+      "com/umeng/analytics/process/UMProcessDBDatasSender",
+      "com/umeng/analytics/process/UMProcessDBHelper",
+      "com/umeng/commonsdk/debug/UMLog",
+      "com/umeng/commonsdk/framework/UMEnvelopeBuild",
+      "com/umeng/commonsdk/framework/UMWorkDispatch",
+      "com/umeng/commonsdk/internal/c",
+      "com/umeng/commonsdk/internal/crash/UMCrashManager",
+      "com/umeng/commonsdk/internal/d",
+      "com/umeng/commonsdk/internal/utils/a",
+      "com/umeng/commonsdk/internal/utils/c$1",
+      "com/umeng/commonsdk/internal/utils/f",
+      "com/umeng/commonsdk/internal/utils/k",
+      "com/umeng/commonsdk/statistics/b",
+      "com/umeng/commonsdk/statistics/idtracking/Envelope",
+      "com/umeng/commonsdk/utils/JSONArraySortUtil",
+      "com/umeng/commonsdk/vchannel/Sender",
+      "com/umeng/commonsdk/vchannel/b",
+      "com/umeng/umcrash/UMCrash$CrashClientImpl",
+      "com/umeng/umcrash/UMCrash",
+      "com/umeng/umzid/ZIDManager",
+      "com/zykj/http/interceptor/CommonResponseInterceptor",
+      "com/zykj/http/interceptor/NetWorkResponseWithRefreshTokenInterceptor",
+      "com/zykj/http/interceptor/ResponseInterceptor",
+      "com/zykj/http/interceptor/ResponseWithRefreshTokenInterceptor",
+      "com/zykj/subscriber/MainActivity$b",
+      "com/zykj/subscriber/MainActivity$e",
+      "com/zykj/subscriber/update/c",
+      "i2/a",
+      "j2/a$a",
+      "l1/b",
+      "org/android/agoo/common/MsgDO",
+      "org/android/agoo/control/AgooFactory",
+      "org/android/agoo/control/NotifManager",
+      "org/android/agoo/control/a",
+      "org/android/agoo/control/d",
+      "org/android/agoo/control/m",
+      "org/android/agoo/message/MessageService",
+      "retrofit2/converter/gson/GsonConverterFactory",
+      "retrofit2/converter/gson/GsonRequestBodyConverter",
+      "retrofit2/converter/gson/GsonResponseBodyConverter"
+    ],
+    "SQLite": [
+      "com/alibaba/sdk/android/oss/common/OSSSQLiteHelper",
+      "com/taobao/accs/a/a",
+      "com/umeng/analytics/pro/ak",
+      "com/umeng/analytics/pro/b",
+      "com/umeng/analytics/pro/e",
+      "com/umeng/analytics/pro/f",
+      "com/umeng/analytics/pro/g",
+      "com/umeng/analytics/pro/h",
+      "com/umeng/analytics/process/UMProcessDBHelper",
+      "com/umeng/analytics/process/b",
+      "com/umeng/analytics/process/c$a",
+      "org/android/agoo/message/MessageService$a",
+      "org/android/agoo/message/MessageService",
+      "s0/c$a",
+      "t0/a"
+    ],
+    "ZIP": [
+      "com/uc/crashsdk/g",
+      "n0/b",
+      "org/android/spdy/SoInstallMgrSdk"
+    ],
+    "WebView": [
+      "com/zykj/subscriber/MainActivity$b$b",
+      "com/zykj/subscriber/MainActivity$j",
+      "com/zykj/subscriber/MainActivity"
+    ]
+  },
+  "objectbox_entity_metadata": {},
+  "sqlite_ddl": {
+    "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)": [
+      "androidx/room/i0",
+      "androidx/work/impl/WorkDatabase_Impl$a",
+      "com/zykj/download/data/AppDatabase_Impl$a",
+      "com/zykj/subscriber/dao/PDFPreviewDatabase_Impl$a"
+    ],
+    "CREATE TABLE IF NOT EXISTS `Dependency` (`work_spec_id` TEXT NOT NULL, `prerequisite_id` TEXT NOT NULL, PRIMARY KEY(`work_spec_id`, `prerequisite_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE , FOREIGN KEY(`prerequisite_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )": [
+      "androidx/work/impl/WorkDatabase_Impl$a"
+    ],
+    "CREATE INDEX IF NOT EXISTS `index_Dependency_work_spec_id` ON `Dependency` (`work_spec_id`)": [
+      "androidx/work/impl/WorkDatabase_Impl$a"
+    ],
+    "CREATE INDEX IF NOT EXISTS `index_Dependency_prerequisite_id` ON `Dependency` (`prerequisite_id`)": [
+      "androidx/work/impl/WorkDatabase_Impl$a"
+    ],
+    "CREATE TABLE IF NOT EXISTS `WorkSpec` (`id` TEXT NOT NULL, `state` INTEGER NOT NULL, `worker_class_name` TEXT NOT NULL, `input_merger_class_name` TEXT, `input` BLOB NOT NULL, `output` BLOB NOT NULL, `initial_delay` INTEGER NOT NULL, `interval_duration` INTEGER NOT NULL, `flex_duration` INTEGER NOT NULL, `run_attempt_count` INTEGER NOT NULL, `backoff_policy` INTEGER NOT NULL, `backoff_delay_duration` INTEGER NOT NULL, `period_start_time` INTEGER NOT NULL, `minimum_retention_duration` INTEGER NOT NULL, `schedule_requested_at` INTEGER NOT NULL, `run_in_foreground` INTEGER NOT NULL, `required_network_type` INTEGER, `requires_charging` INTEGER NOT NULL, `requires_device_idle` INTEGER NOT NULL, `requires_battery_not_low` INTEGER NOT NULL, `requires_storage_not_low` INTEGER NOT NULL, `trigger_content_update_delay` INTEGER NOT NULL, `trigger_max_content_delay` INTEGER NOT NULL, `content_uri_triggers` BLOB, PRIMARY KEY(`id`))": [
+      "androidx/work/impl/WorkDatabase_Impl$a"
+    ],
+    "CREATE INDEX IF NOT EXISTS `index_WorkSpec_schedule_requested_at` ON `WorkSpec` (`schedule_requested_at`)": [
+      "androidx/work/impl/WorkDatabase_Impl$a"
+    ],
+    "CREATE INDEX IF NOT EXISTS `index_WorkSpec_period_start_time` ON `WorkSpec` (`period_start_time`)": [
+      "androidx/work/impl/WorkDatabase_Impl$a"
+    ],
+    "CREATE TABLE IF NOT EXISTS `WorkTag` (`tag` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`tag`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )": [
+      "androidx/work/impl/WorkDatabase_Impl$a"
+    ],
+    "CREATE INDEX IF NOT EXISTS `index_WorkTag_work_spec_id` ON `WorkTag` (`work_spec_id`)": [
+      "androidx/work/impl/WorkDatabase_Impl$a"
+    ],
+    "CREATE TABLE IF NOT EXISTS `SystemIdInfo` (`work_spec_id` TEXT NOT NULL, `system_id` INTEGER NOT NULL, PRIMARY KEY(`work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )": [
+      "androidx/work/impl/WorkDatabase_Impl$a",
+      "androidx/work/impl/a$a"
+    ],
+    "CREATE TABLE IF NOT EXISTS `WorkName` (`name` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`name`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )": [
+      "androidx/work/impl/WorkDatabase_Impl$a"
+    ],
+    "CREATE INDEX IF NOT EXISTS `index_WorkName_work_spec_id` ON `WorkName` (`work_spec_id`)": [
+      "androidx/work/impl/WorkDatabase_Impl$a"
+    ],
+    "CREATE TABLE IF NOT EXISTS `WorkProgress` (`work_spec_id` TEXT NOT NULL, `progress` BLOB NOT NULL, PRIMARY KEY(`work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )": [
+      "androidx/work/impl/WorkDatabase_Impl$a",
+      "androidx/work/impl/a$d"
+    ],
+    "CREATE TABLE IF NOT EXISTS `Preference` (`key` TEXT NOT NULL, `long_value` INTEGER, PRIMARY KEY(`key`))": [
+      "androidx/work/impl/WorkDatabase_Impl$a",
+      "androidx/work/impl/a$h"
+    ],
+    "CREATE INDEX IF NOT EXISTS `index_WorkSpec_period_start_time` ON `workspec` (`period_start_time`)": [
+      "androidx/work/impl/a$e"
+    ],
+    "create table if not exists part_info(id INTEGER primary key,upload_id VARCHAR(255),num INTEGER,crc64 INTEGER,size INTEGER,etag VARCHAR(255))": [
+      "com/alibaba/sdk/android/oss/common/OSSSQLiteHelper"
+    ],
+    "CREATE TABLE IF NOT EXISTS traffic(_id INTEGER PRIMARY KEY AUTOINCREMENT, date TEXT, host TEXT,serviceid TEXT, bid TEXT, isbackground TEXT, size TEXT)": [
+      "com/taobao/accs/a/a"
+    ],
+    "CREATE TABLE IF NOT EXISTS stf(_id INTEGER PRIMARY KEY AUTOINCREMENT, _tp TEXT, _hd TEXT, _bd TEXT, _ts TEXT, _uuid TEXT, _re1 TEXT, _re2 TEXT)": [
+      "com/umeng/analytics/pro/ak"
+    ],
+    "create table if not exists __er(id INTEGER primary key autoincrement, __i TEXT, __a TEXT, __t INTEGER, __av TEXT, __vc TEXT)": [
+      "com/umeng/analytics/pro/e"
+    ],
+    "create table if not exists __et(id INTEGER primary key autoincrement, __i TEXT, __e TEXT, __s TEXT, __t INTEGER, __av TEXT, __vc TEXT)": [
+      "com/umeng/analytics/pro/e"
+    ],
+    "create table if not exists __sd(id INTEGER primary key autoincrement, __ii TEXT unique, __a TEXT, __b TEXT, __c TEXT, __d TEXT, __e TEXT, __f TEXT, __g TEXT, __sp TEXT, __pp TEXT, __av TEXT, __vc TEXT)": [
+      "com/umeng/analytics/pro/e"
+    ],
+    "create table if not exists __is(id INTEGER primary key autoincrement, __ii TEXT unique, __e TEXT, __sp TEXT, __pp TEXT, __av TEXT, __vc TEXT)": [
+      "com/umeng/analytics/pro/e"
+    ],
+    "create table if not exists __et_p(id INTEGER primary key autoincrement, __i TEXT, __e TEXT, __s TEXT, __t INTEGER, __pn TEXT, __av TEXT, __vc TEXT)": [
+      "com/umeng/analytics/process/b"
+    ],
+    "CREATE TABLE IF NOT EXISTS `download` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `downloadUrl` TEXT NOT NULL, `localPath` TEXT NOT NULL, `totalSize` INTEGER NOT NULL, `downloadSize` INTEGER NOT NULL, `verifyCode` TEXT, `flag` INTEGER NOT NULL)": [
+      "com/zykj/download/data/AppDatabase_Impl$a"
+    ],
+    "CREATE TABLE IF NOT EXISTS `upload` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)": [
+      "com/zykj/download/data/AppDatabase_Impl$a"
+    ],
+    "CREATE TABLE IF NOT EXISTS `previewInfo` (`path` TEXT NOT NULL, `pageIndex` INTEGER NOT NULL, `pageOffset` REAL NOT NULL, PRIMARY KEY(`path`))": [
+      "com/zykj/subscriber/dao/PDFPreviewDatabase_Impl$a"
+    ],
+    "create table message(id text UNIQUE not null,state integer,body_code integer,report long,target_time long,interval integer,type text,message text,notify integer,create_time date,task_id text);": [
+      "org/android/agoo/message/MessageService$a"
+    ],
+    "CREATE INDEX id_index ON message(id)": [
+      "org/android/agoo/message/MessageService$a"
+    ],
+    "CREATE INDEX body_code_index ON message(body_code)": [
+      "org/android/agoo/message/MessageService$a"
+    ],
+    "create table accs_message(id text UNIQUE not null,state text,message text,create_time date);": [
+      "org/android/agoo/message/MessageService$a"
+    ]
+  },
+  "bin_literals": {},
+  "protobuf_files": [],
+  "assets": [
+    "assets/error.html",
+    "assets/tae_sdk_plugins/cloudpush.properties"
+  ],
+  "native_libraries": [
+    "lib/arm64-v8a/libc++_shared.so",
+    "lib/arm64-v8a/libcrashsdk.so",
+    "lib/arm64-v8a/libjniPdfium.so",
+    "lib/arm64-v8a/libmarsxlog.so",
+    "lib/arm64-v8a/libmodft2.so",
+    "lib/arm64-v8a/libmodpdfium.so",
+    "lib/arm64-v8a/libmodpng.so",
+    "lib/arm64-v8a/libtnet-3.1.14.so",
+    "lib/arm64-v8a/libumeng-spy.so",
+    "lib/armeabi-v7a/libc++_shared.so",
+    "lib/armeabi-v7a/libcrashsdk.so",
+    "lib/armeabi-v7a/libjniPdfium.so",
+    "lib/armeabi-v7a/libmarsxlog.so",
+    "lib/armeabi-v7a/libmodft2.so",
+    "lib/armeabi-v7a/libmodpdfium.so",
+    "lib/armeabi-v7a/libmodpng.so",
+    "lib/armeabi-v7a/libtnet-3.1.14.so",
+    "lib/armeabi-v7a/libumeng-spy.so",
+    "lib/armeabi/libcrashsdk.so",
+    "lib/armeabi/libjniPdfium.so",
+    "lib/armeabi/libmodft2.so",
+    "lib/armeabi/libmodpdfium.so",
+    "lib/armeabi/libmodpng.so",
+    "lib/armeabi/libumeng-spy.so",
+    "lib/mips/libjniPdfium.so",
+    "lib/mips/libmodft2.so",
+    "lib/mips/libmodpdfium.so",
+    "lib/mips/libmodpng.so",
+    "lib/x86/libc++_shared.so",
+    "lib/x86/libcrashsdk.so",
+    "lib/x86/libjniPdfium.so",
+    "lib/x86/libmarsxlog.so",
+    "lib/x86/libmodft2.so",
+    "lib/x86/libmodpdfium.so",
+    "lib/x86/libmodpng.so",
+    "lib/x86/libtnet-3.1.14.so",
+    "lib/x86/libumeng-spy.so",
+    "lib/x86_64/libc++_shared.so",
+    "lib/x86_64/libjniPdfium.so",
+    "lib/x86_64/libmarsxlog.so",
+    "lib/x86_64/libmodft2.so",
+    "lib/x86_64/libmodpdfium.so",
+    "lib/x86_64/libmodpng.so",
+    "lib/x86_64/libtnet-3.1.14.so"
+  ]
+}

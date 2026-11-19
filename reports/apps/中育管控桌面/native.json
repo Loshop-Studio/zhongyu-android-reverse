@@ -1,0 +1,138 @@
+[
+ {
+  "member": "lib/armeabi-v7a/libBugly_Native.so",
+  "size": 182320,
+  "format": "ELF",
+  "sha256": "4371a120224530de6b0522f82e4fab656f43fa0377c168d6ca81b9aacdcb4bd3",
+  "role": "Bugly 原生崩溃采集",
+  "machine": "ARM",
+  "build_id": "6d6208d619e458a40d44ffd6b1014f776acf50be",
+  "needed": [
+   "libdl.so",
+   "liblog.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 240,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+  "size": 7252,
+  "format": "ELF",
+  "sha256": "41399eba6fc2a60f6f14642375c1824f3cf25eb8fec7397d753730a3ceda3e2b",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "fa98a997cdd9b43f190a4bd20f3dad441b4062f0",
+  "needed": [
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 1,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+  "size": 4416,
+  "format": "ELF",
+  "sha256": "716c5d8d2cac8ca0edf65da8f139c7886b726ac79d542a14edeb94994ba6d3dc",
+  "role": "DataStore 进程间计数",
+  "machine": "ARM",
+  "build_id": "c2c541cc4337a0fc28271329ef238d6bddf6d70d",
+  "needed": [
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 9,
+  "static_jni_exports": 4,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libjniPdfium.so",
+  "size": 107796,
+  "format": "ELF",
+  "sha256": "eca0f44c753770ba33d091ca7ea34be8183728b1f54a0e39b6f765a9e70c446e",
+  "role": "PDFium 的 JNI 桥",
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libmodpdfium.so",
+   "liblog.so",
+   "libandroid.so",
+   "libjnigraphics.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 194,
+  "static_jni_exports": 19,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmodft2.so",
+  "size": 521640,
+  "format": "ELF",
+  "sha256": "44ce4ea58531fe07328b0121ebddbc139dbdc577e5bcede9df7eb689d5687c28",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "f521547e9e60e7b2c8db59e3a51a555b",
+  "needed": [
+   "libmodpng.so",
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 294,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmodpdfium.so",
+  "size": 4802700,
+  "format": "ELF",
+  "sha256": "be44e26142d2cd8f8e607c0dac00ea1df1528813a49a4af1f4cad05452428b0e",
+  "role": "PDF 解析与渲染",
+  "machine": "ARM",
+  "build_id": "e5b848086b5a1beeb2586ff80ec67458",
+  "needed": [
+   "libdl.so",
+   "libmodft2.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 6193,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmodpng.so",
+  "size": 148852,
+  "format": "ELF",
+  "sha256": "5599b9e871f38e90d9d9a636978e085c7f38ed70cd9eeef36eb7eb4d1672f3ed",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "4cc053d066de7c74404c92a7a87c4cd9",
+  "needed": [
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 428,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ }
+]

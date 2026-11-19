@@ -1,0 +1,164 @@
+{
+  "android": "11",
+  "apps": [
+    {
+      "app": "中育云笔记",
+      "resource_ids_preserved": 11148,
+      "added_resources": [],
+      "edited_value": "app_name_main",
+      "edited_qualifiers": 1,
+      "android_label": "Local build 01",
+      "equal_other_table_values": true,
+      "signature_verified": true,
+      "installed_sha256": "473eb6fe4964a0e6219210e2f29887c2a3ac45c721297822f45dc372ca938300",
+      "matching_nonresource_members": 263,
+      "matching_dex": 6
+    },
+    {
+      "app": "中育管控桌面",
+      "resource_ids_preserved": 11415,
+      "added_resources": [],
+      "edited_value": "app_name",
+      "edited_qualifiers": 1,
+      "android_label": "Local build 02",
+      "equal_other_table_values": true,
+      "signature_verified": true,
+      "installed_sha256": "e8cc0252e0822e04e93b8626b5bb78891ecc2418eb8e321491f2e79bed0bed10",
+      "matching_nonresource_members": 250,
+      "matching_dex": 4
+    },
+    {
+      "app": "优课畅学",
+      "resource_ids_preserved": 11238,
+      "added_resources": [],
+      "edited_value": "app_name",
+      "edited_qualifiers": 2,
+      "android_label": "Local build 03",
+      "equal_other_table_values": true,
+      "signature_verified": true,
+      "installed_sha256": "b4b286bd7139d369ce0755010536c2ea95b03ff8fb4c0d1d51acbd32703438b2",
+      "matching_nonresource_members": 280,
+      "matching_dex": 5
+    },
+    {
+      "app": "在线专栏",
+      "resource_ids_preserved": 6369,
+      "added_resources": [],
+      "edited_value": "app_name",
+      "edited_qualifiers": 2,
+      "android_label": "Local build 04",
+      "equal_other_table_values": true,
+      "signature_verified": true,
+      "installed_sha256": "e991cf24ceb094d82fb5aedf4a2eba8c6e06810789cbd04eabd537174c7c3afd",
+      "matching_nonresource_members": 126,
+      "matching_dex": 2
+    },
+    {
+      "app": "新测评",
+      "resource_ids_preserved": 9952,
+      "added_resources": [],
+      "edited_value": "app_name",
+      "edited_qualifiers": 2,
+      "android_label": "Local build 05",
+      "equal_other_table_values": true,
+      "signature_verified": true,
+      "installed_sha256": "5875db79acd4ae87c6b2cbe267efbc594bfdad4a4b52ad0e284d68ca4e9470d3",
+      "matching_nonresource_members": 285,
+      "matching_dex": 5
+    },
+    {
+      "app": "网阅联考",
+      "resource_ids_preserved": 6308,
+      "added_resources": [],
+      "edited_value": "app_name",
+      "edited_qualifiers": 2,
+      "android_label": "Local build 06",
+      "equal_other_table_values": true,
+      "signature_verified": true,
+      "installed_sha256": "7f8633b5c86281e6a7364b3a1ac920184df22d829b76593e1f9268a7a10a9fbd",
+      "matching_nonresource_members": 140,
+      "matching_dex": 2
+    },
+    {
+      "app": "选课",
+      "resource_ids_preserved": 1806,
+      "added_resources": [],
+      "edited_value": "app_name",
+      "edited_qualifiers": 2,
+      "android_label": "Local build 07",
+      "equal_other_table_values": true,
+      "signature_verified": true,
+      "installed_sha256": "f828dc73b5948727f7c30ed76811b823beca300e8042171128342ad7a46ed4f3",
+      "matching_nonresource_members": 40,
+      "matching_dex": 1
+    },
+    {
+      "app": "错题本",
+      "resource_ids_preserved": 10051,
+      "added_resources": [],
+      "edited_value": "app_name",
+      "edited_qualifiers": 2,
+      "android_label": "Local build 08",
+      "equal_other_table_values": true,
+      "signature_verified": true,
+      "installed_sha256": "4069c5daa42fa8c11ab2c7c3c99331483bce28466145520af38f6d872432d3d5",
+      "matching_nonresource_members": 232,
+      "matching_dex": 4
+    },
+    {
+      "app": "问卷调查",
+      "resource_ids_preserved": 5663,
+      "added_resources": [
+        "string/verified_screen_label"
+      ],
+      "edited_value": "app_name",
+      "edited_qualifiers": 2,
+      "android_label": "Local build 09",
+      "equal_other_table_values": true,
+      "signature_verified": true,
+      "manifest_activity_label_id": "0x7f0f0089",
+      "installed_sha256": "db57bac14cf88ac9a6950a5e257755424afc1f9c4ce3eca066690654e0582189",
+      "matching_nonresource_members": 52,
+      "matching_dex": 1
+    },
+    {
+      "app": "随身答",
+      "resource_ids_preserved": 10042,
+      "added_resources": [],
+      "edited_value": "app_name",
+      "edited_qualifiers": 2,
+      "android_label": "Local build 10",
+      "equal_other_table_values": true,
+      "signature_verified": true,
+      "installed_sha256": "abf2f5a0f5bfc5445dc5a8464ab9a6b65a2438e270356f22175961cb85cb383f",
+      "matching_nonresource_members": 295,
+      "matching_dex": 5
+    },
+    {
+      "app": "领创平板管理-2025.9.1",
+      "resource_ids_preserved": 2498,
+      "added_resources": [],
+      "edited_value": "app_name",
+      "edited_qualifiers": 2,
+      "android_label": "Local build 11",
+      "equal_other_table_values": true,
+      "signature_verified": true,
+      "installed_sha256": "365dcaf19de6a9981b8f577b205710707817a2ee5ff3d2b1c719886d81f9b06a",
+      "matching_nonresource_members": 188,
+      "matching_dex": 1
+    }
+  ],
+  "native_screen": {
+    "package": "com.zykj.satisfaction",
+    "class": "android.widget.TextView",
+    "resource-id": "com.zykj.satisfaction:id/tv_hint",
+    "bounds": "[404,1074][676,1104]",
+    "text": "Local resource build verified"
+  },
+  "rebuild_after_error": {
+    "app": "问卷调查",
+    "failed_gradle_exit": 1,
+    "previous_signed_apk_preserved": true,
+    "restored_original_resource_members": 804
+  }
+}

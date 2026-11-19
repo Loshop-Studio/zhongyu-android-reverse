@@ -1,0 +1,445 @@
+{
+  "scope": "Non-directory ZIP members directly or recursively inside assets/ in each original APK",
+  "files": 59,
+  "unique_paths": 33,
+  "unique_digests": 49,
+  "format_counts": {
+    "ART baseline profile": 7,
+    "ART profile metadata": 7,
+    "BKS v2 keystore": 7,
+    "CSV": 1,
+    "HTML": 4,
+    "JPEG": 1,
+    "JSON array": 1,
+    "JSON object": 7,
+    "JavaScript": 1,
+    "OkHttp length-prefixed public suffix list": 2,
+    "PEM certificate": 1,
+    "PEM public key": 1,
+    "PNG": 8,
+    "TensorFlow Lite FlatBuffer": 2,
+    "TrueType font": 5,
+    "hex-encoded DER RSA public key": 1,
+    "properties text": 3
+  },
+  "apps": [
+    {
+      "app": "中育云笔记",
+      "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+      "files": [
+        {
+          "path": "assets/dexopt/baseline.prof",
+          "format": "ART baseline profile",
+          "bytes": 14103,
+          "sha256": "761d550247c014ff4d1548db2c3d91e3ad7a4533b7c1ab03ed7fc58de2450ac6"
+        },
+        {
+          "path": "assets/dexopt/baseline.profm",
+          "format": "ART profile metadata",
+          "bytes": 1401,
+          "sha256": "528811176408eb2dd63e0e346f9330ec5bdc0607f6c3892828eafcd2777a32dc"
+        },
+        {
+          "path": "assets/grs_sdk_global_route_config_opendevicesdk.json",
+          "format": "JSON object",
+          "bytes": 7356,
+          "sha256": "82dfe770713531e0acfe7070fa0aee56518c16e9e147e14ef66d3edc46afc668"
+        },
+        {
+          "path": "assets/grs_sdk_global_route_config_opensdkService.json",
+          "format": "JSON object",
+          "bytes": 10277,
+          "sha256": "04dbafd08d136814d01ea6a6fd261a8f55e2404322693f3165af484401a878e7"
+        },
+        {
+          "path": "assets/grs_sdk_server_config.json",
+          "format": "JSON object",
+          "bytes": 370,
+          "sha256": "3c4d369f6c9f7e5a91aa0fcc341a9c8afa27e855f9b2f35615d47200873a2080"
+        },
+        {
+          "path": "assets/grs_sp.bks",
+          "format": "BKS v2 keystore",
+          "bytes": 1470,
+          "sha256": "9a804f1a36accc9f537c3cb650d22f02bf62e55eb3b763af68cb23acf240f48e"
+        },
+        {
+          "path": "assets/hmsincas.bks",
+          "format": "BKS v2 keystore",
+          "bytes": 3670,
+          "sha256": "d7eb2c2cbe3faad3e1ad004ee1d1465113d83d03a05adaceed164b7a18d50586"
+        },
+        {
+          "path": "assets/hmsrootcas.bks",
+          "format": "BKS v2 keystore",
+          "bytes": 35423,
+          "sha256": "2ef187ccd7da705457ed282cd1cb05f86bdcf0476755117269d8814399bec044"
+        },
+        {
+          "path": "assets/iconfont.ttf",
+          "format": "TrueType font",
+          "bytes": 7588,
+          "sha256": "ad28d6cead5792c0b703340ef61b256c4c85770563b73a27f44aa44891aea707"
+        },
+        {
+          "path": "assets/nsfw.tflite",
+          "format": "TensorFlow Lite FlatBuffer",
+          "bytes": 23591976,
+          "sha256": "a476ef325f4f776602d944fd28133e945f77a74e37dafba37936110b35b7810d"
+        },
+        {
+          "path": "assets/placeholder.jpg",
+          "format": "JPEG",
+          "bytes": 38232,
+          "sha256": "d7cbab548daed3e794ef132a3a7d185f9f9e3222809a9e203a1d9f62a3da19c6"
+        },
+        {
+          "path": "assets/tae_sdk_plugins/cloudpush.properties",
+          "format": "properties text",
+          "bytes": 132,
+          "sha256": "dd0f06756188b3099af23036aa1420ed4fc205cbcfe28768a7f4c2640b8ff2b2"
+        }
+      ]
+    },
+    {
+      "app": "中育管控桌面",
+      "apk_sha256": "e0b46dee805fe516503ac7d2b8e1b7d585de43063a012f8056e3bbd1018a9949",
+      "files": [
+        {
+          "path": "assets/China-City-List-latest.csv",
+          "format": "CSV",
+          "bytes": 415029,
+          "sha256": "beba34473ec0f659f57e9dfa4cfe5168e841a173aaf77332867d9f6150596a1e"
+        },
+        {
+          "path": "assets/PublicSuffixDatabase.list",
+          "format": "OkHttp length-prefixed public suffix list",
+          "bytes": 132737,
+          "sha256": "c75ab827afd7ffff59a51b14729c25dbfc3b45237eb40ccf02bec7b7d44304a4"
+        },
+        {
+          "path": "assets/china_city_data.json",
+          "format": "JSON array",
+          "bytes": 192610,
+          "sha256": "eccab44f9ba466b425736d219ade5203dbc99083af0206c718f2caac53a42487"
+        },
+        {
+          "path": "assets/dexopt/baseline.prof",
+          "format": "ART baseline profile",
+          "bytes": 15535,
+          "sha256": "a9482e0cc290195ef165d35888e6a6e672e7a6438a11c8d0800e172f6d00aa0e"
+        },
+        {
+          "path": "assets/dexopt/baseline.profm",
+          "format": "ART profile metadata",
+          "bytes": 1532,
+          "sha256": "5fb139a0688bdcbd3552cb7026ad582b5fc77f3c73aadac045e898ec9d2dd6a5"
+        }
+      ]
+    },
+    {
+      "app": "优课畅学",
+      "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+      "files": [
+        {
+          "path": "assets/PublicSuffixDatabase.list",
+          "format": "OkHttp length-prefixed public suffix list",
+          "bytes": 132737,
+          "sha256": "c75ab827afd7ffff59a51b14729c25dbfc3b45237eb40ccf02bec7b7d44304a4"
+        },
+        {
+          "path": "assets/dexopt/baseline.prof",
+          "format": "ART baseline profile",
+          "bytes": 14211,
+          "sha256": "3e3f8c0b9325b1e654a592dcdadad4f7bb335172590ac48afea01eb0cefd1c74"
+        },
+        {
+          "path": "assets/dexopt/baseline.profm",
+          "format": "ART profile metadata",
+          "bytes": 1385,
+          "sha256": "e92f0ae2d43e6c6a7fdf07697cf89876a815cf5881bad3ae75186c69d2f93093"
+        },
+        {
+          "path": "assets/error.html",
+          "format": "HTML",
+          "bytes": 591,
+          "sha256": "fa21ba7ac0c36eddf7ac07300c5085a1e9365b8d0c8d455fe0938462a05c1f6b"
+        },
+        {
+          "path": "assets/fennen.png",
+          "format": "PNG",
+          "bytes": 3062,
+          "sha256": "5a5f3c0231a9b4b287bca071b8a884617f581344c16f88ad354b313cc0d8b827"
+        },
+        {
+          "path": "assets/huaijiu.png",
+          "format": "PNG",
+          "bytes": 3285,
+          "sha256": "614e6b4ce9c0ac5b4d5b0905b1035c0bb7b8b2a981aaa295d9389ceca2b0e75f"
+        },
+        {
+          "path": "assets/iconfont.ttf",
+          "format": "TrueType font",
+          "bytes": 7588,
+          "sha256": "ad28d6cead5792c0b703340ef61b256c4c85770563b73a27f44aa44891aea707"
+        },
+        {
+          "path": "assets/landiao.png",
+          "format": "PNG",
+          "bytes": 3198,
+          "sha256": "65217da6beb1a19a3dccbd999656a33c844ec614c67f524c7a975123791bf1ae"
+        },
+        {
+          "path": "assets/langman.png",
+          "format": "PNG",
+          "bytes": 3175,
+          "sha256": "b519b9a799d92fa39dc1d58f641c938010b0cb594bce6ef71e6484b072c98131"
+        },
+        {
+          "path": "assets/qingliang.png",
+          "format": "PNG",
+          "bytes": 3016,
+          "sha256": "ef14f1daec97ccc7c58c904be6a48fcc54bcd07004fd6f8f7f15ed103f49d7a6"
+        },
+        {
+          "path": "assets/qingxin.png",
+          "format": "PNG",
+          "bytes": 3112,
+          "sha256": "dbe89f17d50041abac478ec739f22cd90a09178ce25193cf4cedd26d1eb609d2"
+        },
+        {
+          "path": "assets/rixi.png",
+          "format": "PNG",
+          "bytes": 3224,
+          "sha256": "33c81c47c389782710f5a8f1b18f929de92ca20807a8f760fb015c3c25bc2295"
+        },
+        {
+          "path": "assets/utils.js",
+          "format": "JavaScript",
+          "bytes": 609,
+          "sha256": "e6a312dac05f3ec128f2b021e45d82a94d2dd2aad28a464a18ac87440ad2ff0a"
+        },
+        {
+          "path": "assets/weimei.png",
+          "format": "PNG",
+          "bytes": 2886,
+          "sha256": "94d7dfc384fdf8816f7d9583cf65ab191ae492df2e2d6a9894e84892e7e01a9a"
+        }
+      ]
+    },
+    {
+      "app": "在线专栏",
+      "apk_sha256": "b571a8d19d808d3200b26689036145a1d0924c0170db035a2233725030b8ccce",
+      "files": [
+        {
+          "path": "assets/error.html",
+          "format": "HTML",
+          "bytes": 1311,
+          "sha256": "1ec699f9665a19e6c1ce56ec10195143d9821be5058d8c995264d59dd11067cc"
+        },
+        {
+          "path": "assets/tae_sdk_plugins/cloudpush.properties",
+          "format": "properties text",
+          "bytes": 132,
+          "sha256": "dd0f06756188b3099af23036aa1420ed4fc205cbcfe28768a7f4c2640b8ff2b2"
+        }
+      ]
+    },
+    {
+      "app": "新测评",
+      "apk_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+      "files": [
+        {
+          "path": "assets/dexopt/baseline.prof",
+          "format": "ART baseline profile",
+          "bytes": 12539,
+          "sha256": "2093ef9434cd682dffca231c1b50bc6c71d20b2eaf9c3a71db36e8797303ac86"
+        },
+        {
+          "path": "assets/dexopt/baseline.profm",
+          "format": "ART profile metadata",
+          "bytes": 1343,
+          "sha256": "b9c3515591262a1a412c1f7526b15d7daa8284eced2a410f7beffffe84b166e9"
+        },
+        {
+          "path": "assets/iconfont.ttf",
+          "format": "TrueType font",
+          "bytes": 7588,
+          "sha256": "ad28d6cead5792c0b703340ef61b256c4c85770563b73a27f44aa44891aea707"
+        },
+        {
+          "path": "assets/sel_judge_06.tflite",
+          "format": "TensorFlow Lite FlatBuffer",
+          "bytes": 42448,
+          "sha256": "15880a58a77ad341b4875bfa427d900ef1de906529548e49b7d93f06a4c80077"
+        }
+      ]
+    },
+    {
+      "app": "网阅联考",
+      "apk_sha256": "179f7fdc30cc9aef61b9d1f78b1cf09d30c4872acb98a7ae5697ea7026ad4999",
+      "files": [
+        {
+          "path": "assets/dexopt/baseline.prof",
+          "format": "ART baseline profile",
+          "bytes": 6705,
+          "sha256": "a68046667ad9d364a111e47a8d21139516e9720dbb3f1d5a1abba310581495a8"
+        },
+        {
+          "path": "assets/dexopt/baseline.profm",
+          "format": "ART profile metadata",
+          "bytes": 368,
+          "sha256": "df0389b2650477f535d005f40bfe7408404ca66f717ceaa6f3bcd76321e9bed2"
+        }
+      ]
+    },
+    {
+      "app": "选课",
+      "apk_sha256": "765cd06135eb47fa90bc0acbdc1c6c1360e6045a1b56bc5601edcf0049233568",
+      "files": []
+    },
+    {
+      "app": "错题本",
+      "apk_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+      "files": [
+        {
+          "path": "assets/dexopt/baseline.prof",
+          "format": "ART baseline profile",
+          "bytes": 12363,
+          "sha256": "d7881fb949e3ad1b21adcca62a4a8273b6a5c1d094ae471696efb538cd6bbd00"
+        },
+        {
+          "path": "assets/dexopt/baseline.profm",
+          "format": "ART profile metadata",
+          "bytes": 1181,
+          "sha256": "793bc240e84932ed3b830c55709c8abd2f2ed10e77c91b4e945ad7b464ea0af9"
+        },
+        {
+          "path": "assets/error.html",
+          "format": "HTML",
+          "bytes": 1311,
+          "sha256": "1ec699f9665a19e6c1ce56ec10195143d9821be5058d8c995264d59dd11067cc"
+        },
+        {
+          "path": "assets/iconfont.ttf",
+          "format": "TrueType font",
+          "bytes": 7588,
+          "sha256": "ad28d6cead5792c0b703340ef61b256c4c85770563b73a27f44aa44891aea707"
+        }
+      ]
+    },
+    {
+      "app": "问卷调查",
+      "apk_sha256": "02326056adda51ed9dcae1fc6cc81d2817e6942899fd8b5c97e0808cae991edc",
+      "files": []
+    },
+    {
+      "app": "随身答",
+      "apk_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+      "files": [
+        {
+          "path": "assets/dexopt/baseline.prof",
+          "format": "ART baseline profile",
+          "bytes": 13400,
+          "sha256": "b238dbc113ec81c3ed1b38d35ac28a07b1fd515c4099b66fb033b59e0a3b459e"
+        },
+        {
+          "path": "assets/dexopt/baseline.profm",
+          "format": "ART profile metadata",
+          "bytes": 1344,
+          "sha256": "865d48a7e780590d468a4ca46a167ab57d9024b353fff6a1f46b14ae7942a123"
+        },
+        {
+          "path": "assets/iconfont.ttf",
+          "format": "TrueType font",
+          "bytes": 7588,
+          "sha256": "ad28d6cead5792c0b703340ef61b256c4c85770563b73a27f44aa44891aea707"
+        }
+      ]
+    },
+    {
+      "app": "领创平板管理-2025.9.1",
+      "apk_sha256": "cd7482fdff9ebcb75b775cd846e25700f9d6f1c5adee49b06cd23f62d7252fef",
+      "files": [
+        {
+          "path": "assets/ag_sdk_cbg_root.cer",
+          "format": "PEM certificate",
+          "bytes": 1931,
+          "sha256": "0a2524f990393c4fbd2a6b45a0071d3c34e605413b8eddb67108317d0472ebc9"
+        },
+        {
+          "path": "assets/dsa_public_key_pkcs8.pem",
+          "format": "PEM public key",
+          "bytes": 666,
+          "sha256": "4ef659ed45cbfbec6811a3f393f8da211cec17446c110b0fbbb9e58e81959426"
+        },
+        {
+          "path": "assets/grs_sdk_global_route_config_apptouchupdatesdk.json",
+          "format": "JSON object",
+          "bytes": 2570,
+          "sha256": "bdb3b759a31da2e7d3ab26d9bb0b3cda8b16df23fba25ed5fdaa1999209df49b"
+        },
+        {
+          "path": "assets/grs_sdk_global_route_config_opensdkService.json",
+          "format": "JSON object",
+          "bytes": 9896,
+          "sha256": "ea123a8f53e9f1df2fbac46926b71a6b27c7d309ef3fef5543cd53e78143c29f"
+        },
+        {
+          "path": "assets/grs_sdk_global_route_config_updatesdk.json",
+          "format": "JSON object",
+          "bytes": 3269,
+          "sha256": "84d084cfb67fbdbea9acb40cab2be9f4e7d3d927d30be55d933e7a44e52c3cdf"
+        },
+        {
+          "path": "assets/grs_sdk_server_config.json",
+          "format": "JSON object",
+          "bytes": 326,
+          "sha256": "aa06cfa68c404949f057e7b5c7cb9437aafd77aade3ea3c2d89b124a3430c72e"
+        },
+        {
+          "path": "assets/grs_sp.bks",
+          "format": "BKS v2 keystore",
+          "bytes": 1470,
+          "sha256": "9a804f1a36accc9f537c3cb650d22f02bf62e55eb3b763af68cb23acf240f48e"
+        },
+        {
+          "path": "assets/hianalytics_njjn",
+          "format": "hex-encoded DER RSA public key",
+          "bytes": 588,
+          "sha256": "9fca48eaa1bc32f809cf430a37e71a58e4d0bbaaee83a8379976e4bd3026f05b"
+        },
+        {
+          "path": "assets/hmsincas.bks",
+          "format": "BKS v2 keystore",
+          "bytes": 3081,
+          "sha256": "74266824f816ac2ffecee939186704a78915839fa4caa0317304eb731ed82cbd"
+        },
+        {
+          "path": "assets/hmsrootcas.bks",
+          "format": "BKS v2 keystore",
+          "bytes": 35423,
+          "sha256": "2ef187ccd7da705457ed282cd1cb05f86bdcf0476755117269d8814399bec044"
+        },
+        {
+          "path": "assets/protocal.html",
+          "format": "HTML",
+          "bytes": 10298,
+          "sha256": "72dd285969f31818c58b8054c6ce46e7edf6ad546650e67962c27d9b19c7b80c"
+        },
+        {
+          "path": "assets/tae_sdk_plugins/cloudpush.properties",
+          "format": "properties text",
+          "bytes": 132,
+          "sha256": "dd0f06756188b3099af23036aa1420ed4fc205cbcfe28768a7f4c2640b8ff2b2"
+        },
+        {
+          "path": "assets/updatesdkcas.bks",
+          "format": "BKS v2 keystore",
+          "bytes": 34844,
+          "sha256": "925778136204db53cf07fb8303fd6e84e159835c3a8e0542b5ddffaa75e0b125"
+        }
+      ]
+    }
+  ]
+}

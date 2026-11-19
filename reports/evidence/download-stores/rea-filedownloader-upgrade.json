@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "领创平板管理-2025.9.1.apk",
+    "digest": {
+      "sha256": "cd7482fdff9ebcb75b775cd846e25700f9d6f1c5adee49b06cd23f62d7252fef"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/领创平板管理-2025.9.1.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.huawei.hem.mf",
+    "method": {
+      "name": "onUpgrade",
+      "reported_signature": "onUpgrade(android.database.sqlite.SQLiteDatabase, int, int): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Landroid/database/sqlite/SQLiteDatabase;II)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // android.database.sqlite.SQLiteOpenHelper\n    public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2) {\n        if (i < 2) {\n            sQLiteDatabase.execSQL(\"ALTER TABLE filedownloader ADD COLUMN pathAsDirectory TINYINT(1) DEFAULT 0\");\n            sQLiteDatabase.execSQL(\"ALTER TABLE filedownloader ADD COLUMN filename VARCHAR\");\n        }\n        if (i < 3) {\n            sQLiteDatabase.execSQL(\"ALTER TABLE filedownloader ADD COLUMN connectionCount INTEGER DEFAULT 1\");\n            sQLiteDatabase.execSQL(\"CREATE TABLE IF NOT EXISTS filedownloaderConnection( id INTEGER, connectionIndex INTEGER, startOffset INTEGER, currentOffset INTEGER, endOffset INTEGER, PRIMARY KEY ( id, connectionIndex ))\");\n        }\n        if (i < 4) {\n            ContentValues contentValues = new ContentValues();\n            contentValues.put(\"endOffset\", (Integer) (-1));\n            sQLiteDatabase.update(\"filedownloaderConnection\", contentValues, \"endOffset = ? AND startOffset > ?\", new String[]{MessageService.MSG_DB_READY_REPORT, MessageService.MSG_DB_READY_REPORT});\n        }\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_58d7476ddc668e182c376a366fbe839ad7c279c3394fd582c040ea6599deefe2"
+}

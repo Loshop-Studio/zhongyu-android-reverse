@@ -1,0 +1,160 @@
+{
+  "app": "中育管控桌面",
+  "apk_sha256": "e0b46dee805fe516503ac7d2b8e1b7d585de43063a012f8056e3bbd1018a9949",
+  "android": "11",
+  "assets": {
+    "China-City-List-latest.csv": {
+      "bytes": 415029,
+      "sha256": "beba34473ec0f659f57e9dfa4cfe5168e841a173aaf77332867d9f6150596a1e"
+    },
+    "china_city_data.json": {
+      "bytes": 192610,
+      "sha256": "eccab44f9ba466b425736d219ade5203dbc99083af0206c718f2caac53a42487"
+    }
+  },
+  "weather": {
+    "rows": 3204,
+    "field_order": [
+      "location_id",
+      "location_en",
+      "location_zh",
+      "country_code",
+      "country_en",
+      "country_zh",
+      "province_en",
+      "province_zh",
+      "city_en",
+      "city_zh",
+      "time_zone",
+      "latitude",
+      "longitude",
+      "administrative_code"
+    ],
+    "empty_fields": {
+      "time_zone": 4,
+      "administrative_code": 19
+    },
+    "selected_rows": 394,
+    "distinct_native_lookup_names": 389,
+    "native_map_matches_all_entries": true,
+    "replaced_entries_in_read_order": [
+      [
+        "和田地区",
+        "101131301",
+        "101131308"
+      ],
+      [
+        "阿勒泰地区",
+        "101131401",
+        "101131410"
+      ],
+      [
+        "连云港市",
+        "101191001",
+        "101191007"
+      ],
+      [
+        "恩施土家族苗族自治州",
+        "101201001",
+        "101201009"
+      ],
+      [
+        "防城港市",
+        "101301401",
+        "101301405"
+      ]
+    ],
+    "missing_lookup": ""
+  },
+  "picker": {
+    "nodes_by_depth": [
+      34,
+      353,
+      3209
+    ],
+    "native_ids_names_order_match_all_nodes": true,
+    "distinct_district_lookup_names": 3209,
+    "field_sets": [
+      {
+        "keys": [
+          "cityList",
+          "id",
+          "name"
+        ],
+        "nodes": 375
+      },
+      {
+        "keys": [
+          "id",
+          "name"
+        ],
+        "nodes": 3073
+      },
+      {
+        "keys": [
+          "cityList",
+          "gisBd09Lat",
+          "gisBd09Lng",
+          "gisGcj02Lat",
+          "gisGcj02Lng",
+          "id",
+          "name",
+          "pinYin"
+        ],
+        "nodes": 12
+      },
+      {
+        "keys": [
+          "createAccount",
+          "createTime",
+          "gisBd09Lat",
+          "gisBd09Lng",
+          "gisGcj02Lat",
+          "gisGcj02Lng",
+          "id",
+          "modifyAccount",
+          "modifyTime",
+          "name",
+          "orderid",
+          "pinYin",
+          "status",
+          "stubGroupCnt"
+        ],
+        "nodes": 135
+      },
+      {
+        "keys": [
+          "createAccount",
+          "createTime",
+          "gisBd09Lat",
+          "gisBd09Lng",
+          "gisGcj02Lat",
+          "gisGcj02Lng",
+          "id",
+          "modifyAccount",
+          "modifyTime",
+          "name",
+          "orderId",
+          "pinYin",
+          "status",
+          "stubGroupCnt"
+        ],
+        "nodes": 1
+      }
+    ],
+    "id_lengths_by_depth": [
+      {
+        "2": 31,
+        "6": 3
+      },
+      {
+        "4": 342,
+        "6": 11
+      },
+      {
+        "6": 3127,
+        "9": 82
+      }
+    ]
+  }
+}

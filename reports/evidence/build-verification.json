@@ -1,0 +1,331 @@
+[
+  {
+    "app": "中育云笔记",
+    "original_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+    "rebuilt_sha256": "d14ee5068baae0ad8dd683b066b84cebee9a0733e9f7e8f1a4e33d7c38362cdc",
+    "missing": [],
+    "extra": [],
+    "changed_non_dex_payloads": [],
+    "classes": {
+      "classes.dex": {
+        "original": 15990,
+        "rebuilt": 15990,
+        "different_descriptors": 0
+      },
+      "classes2.dex": {
+        "original": 10538,
+        "rebuilt": 10538,
+        "different_descriptors": 0
+      },
+      "classes3.dex": {
+        "original": 7033,
+        "rebuilt": 7033,
+        "different_descriptors": 0
+      },
+      "classes4.dex": {
+        "original": 1094,
+        "rebuilt": 1094,
+        "different_descriptors": 0
+      },
+      "classes5.dex": {
+        "original": 6404,
+        "rebuilt": 6404,
+        "different_descriptors": 0
+      },
+      "classes6.dex": {
+        "original": 3710,
+        "rebuilt": 3710,
+        "different_descriptors": 0
+      }
+    },
+    "signature_status": 0,
+    "schemes": [
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): true"
+    ]
+  },
+  {
+    "app": "中育管控桌面",
+    "original_sha256": "e0b46dee805fe516503ac7d2b8e1b7d585de43063a012f8056e3bbd1018a9949",
+    "rebuilt_sha256": "373eabe14730a01227ef054f2b915dd149040c1f81533cd6865165f2fe2e1c4f",
+    "missing": [],
+    "extra": [],
+    "changed_non_dex_payloads": [],
+    "classes": {
+      "classes.dex": {
+        "original": 17469,
+        "rebuilt": 17469,
+        "different_descriptors": 0
+      },
+      "classes2.dex": {
+        "original": 7769,
+        "rebuilt": 7769,
+        "different_descriptors": 0
+      },
+      "classes3.dex": {
+        "original": 7908,
+        "rebuilt": 7908,
+        "different_descriptors": 0
+      },
+      "classes4.dex": {
+        "original": 6045,
+        "rebuilt": 6045,
+        "different_descriptors": 0
+      }
+    },
+    "signature_status": 0,
+    "schemes": [
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): true"
+    ]
+  },
+  {
+    "app": "优课畅学",
+    "original_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+    "rebuilt_sha256": "eee482f82b34de932ebbf6156aeb5af54c00f0447bb98aab7e15ab1b335df9c7",
+    "missing": [],
+    "extra": [],
+    "changed_non_dex_payloads": [],
+    "classes": {
+      "classes.dex": {
+        "original": 15824,
+        "rebuilt": 15824,
+        "different_descriptors": 0
+      },
+      "classes2.dex": {
+        "original": 9860,
+        "rebuilt": 9860,
+        "different_descriptors": 0
+      },
+      "classes3.dex": {
+        "original": 8139,
+        "rebuilt": 8139,
+        "different_descriptors": 0
+      },
+      "classes4.dex": {
+        "original": 4311,
+        "rebuilt": 4311,
+        "different_descriptors": 0
+      },
+      "classes5.dex": {
+        "original": 4751,
+        "rebuilt": 4751,
+        "different_descriptors": 0
+      }
+    },
+    "signature_status": 0,
+    "schemes": [
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): true"
+    ]
+  },
+  {
+    "app": "在线专栏",
+    "original_sha256": "b571a8d19d808d3200b26689036145a1d0924c0170db035a2233725030b8ccce",
+    "rebuilt_sha256": "bdcee948d02362d5e7eedb787c19d38281b2726b08d8a22de735e964926b8c48",
+    "missing": [],
+    "extra": [],
+    "changed_non_dex_payloads": [],
+    "classes": {
+      "classes.dex": {
+        "original": 8115,
+        "rebuilt": 8115,
+        "different_descriptors": 0
+      },
+      "classes2.dex": {
+        "original": 830,
+        "rebuilt": 830,
+        "different_descriptors": 0
+      }
+    },
+    "signature_status": 0,
+    "schemes": [
+      "Verified using v1 scheme (JAR signing): true",
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): true"
+    ]
+  },
+  {
+    "app": "新测评",
+    "original_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+    "rebuilt_sha256": "cb590fa6a24668d9e0d922a1ba404e43ae08fdf17285c8e32d3ee537f2e484c3",
+    "missing": [],
+    "extra": [],
+    "changed_non_dex_payloads": [],
+    "classes": {
+      "classes.dex": {
+        "original": 16140,
+        "rebuilt": 16140,
+        "different_descriptors": 0
+      },
+      "classes2.dex": {
+        "original": 10366,
+        "rebuilt": 10366,
+        "different_descriptors": 0
+      },
+      "classes3.dex": {
+        "original": 7078,
+        "rebuilt": 7078,
+        "different_descriptors": 0
+      },
+      "classes4.dex": {
+        "original": 3696,
+        "rebuilt": 3696,
+        "different_descriptors": 0
+      },
+      "classes5.dex": {
+        "original": 5935,
+        "rebuilt": 5935,
+        "different_descriptors": 0
+      }
+    },
+    "signature_status": 0,
+    "schemes": [
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): true"
+    ]
+  },
+  {
+    "app": "网阅联考",
+    "original_sha256": "179f7fdc30cc9aef61b9d1f78b1cf09d30c4872acb98a7ae5697ea7026ad4999",
+    "rebuilt_sha256": "8e918d4a384ef8e39cc21deeb8557d17459c2729fe696c079b3c6cb72ab87f1c",
+    "missing": [],
+    "extra": [],
+    "changed_non_dex_payloads": [],
+    "classes": {
+      "classes.dex": {
+        "original": 9628,
+        "rebuilt": 9628,
+        "different_descriptors": 0
+      },
+      "classes2.dex": {
+        "original": 6142,
+        "rebuilt": 6142,
+        "different_descriptors": 0
+      }
+    },
+    "signature_status": 0,
+    "schemes": [
+      "Verified using v1 scheme (JAR signing): true",
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): true"
+    ]
+  },
+  {
+    "app": "选课",
+    "original_sha256": "765cd06135eb47fa90bc0acbdc1c6c1360e6045a1b56bc5601edcf0049233568",
+    "rebuilt_sha256": "afa93bd2d84b948a904dfd3d321eb7268dd44cb73991e74e37a3694a43b95625",
+    "missing": [],
+    "extra": [],
+    "changed_non_dex_payloads": [],
+    "classes": {
+      "classes.dex": {
+        "original": 2397,
+        "rebuilt": 2397,
+        "different_descriptors": 0
+      }
+    },
+    "signature_status": 0,
+    "schemes": [
+      "Verified using v1 scheme (JAR signing): true",
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): true"
+    ]
+  },
+  {
+    "app": "错题本",
+    "original_sha256": "d88208c20bcb0693c68d53073c70ed2bebe8ef733dbfd3893db5676c1849e7da",
+    "rebuilt_sha256": "48b2cb0c2a64a3bd69e5ac8f286badc8ba077be426e9359f2b440b449189d4ed",
+    "missing": [],
+    "extra": [],
+    "changed_non_dex_payloads": [],
+    "classes": {
+      "classes.dex": {
+        "original": 9417,
+        "rebuilt": 9417,
+        "different_descriptors": 0
+      },
+      "classes2.dex": {
+        "original": 7997,
+        "rebuilt": 7997,
+        "different_descriptors": 0
+      },
+      "classes3.dex": {
+        "original": 4622,
+        "rebuilt": 4622,
+        "different_descriptors": 0
+      },
+      "classes4.dex": {
+        "original": 965,
+        "rebuilt": 965,
+        "different_descriptors": 0
+      }
+    },
+    "signature_status": 0,
+    "schemes": [
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): true"
+    ]
+  },
+  {
+    "app": "问卷调查",
+    "original_sha256": "02326056adda51ed9dcae1fc6cc81d2817e6942899fd8b5c97e0808cae991edc",
+    "rebuilt_sha256": "1c29dea108fb0bd67b0d8384cceaab8877554c1f89e568b85fe93b3abfcd220f",
+    "missing": [],
+    "extra": [],
+    "changed_non_dex_payloads": [],
+    "classes": {
+      "classes.dex": {
+        "original": 1837,
+        "rebuilt": 1837,
+        "different_descriptors": 0
+      }
+    },
+    "signature_status": 0,
+    "schemes": [
+      "Verified using v1 scheme (JAR signing): true",
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): true"
+    ]
+  },
+  {
+    "app": "随身答",
+    "original_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+    "rebuilt_sha256": "98d512ee0ac870e7e54cea4b72a172c22ce2126fe27af4cda67e9297ce00ca7c",
+    "missing": [],
+    "extra": [],
+    "changed_non_dex_payloads": [],
+    "classes": {
+      "classes.dex": {
+        "original": 15742,
+        "rebuilt": 15742,
+        "different_descriptors": 0
+      },
+      "classes2.dex": {
+        "original": 10031,
+        "rebuilt": 10031,
+        "different_descriptors": 0
+      },
+      "classes3.dex": {
+        "original": 8076,
+        "rebuilt": 8076,
+        "different_descriptors": 0
+      },
+      "classes4.dex": {
+        "original": 3154,
+        "rebuilt": 3154,
+        "different_descriptors": 0
+      },
+      "classes5.dex": {
+        "original": 6964,
+        "rebuilt": 6964,
+        "different_descriptors": 0
+      }
+    },
+    "signature_status": 0,
+    "schemes": [
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): true"
+    ]
+  }
+]

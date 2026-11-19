@@ -1,0 +1,470 @@
+{
+  "tables": {
+    "__er": [
+      {
+        "table": "__er",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "__i",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__a",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__t",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__av",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__vc",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table if not exists __er(id INTEGER primary key autoincrement, __i TEXT, __a TEXT, __t INTEGER, __av TEXT, __vc TEXT)",
+        "owners": [
+          "com/umeng/analytics/pro/e"
+        ]
+      }
+    ],
+    "__et": [
+      {
+        "table": "__et",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "__i",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__e",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__s",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__t",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__av",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__vc",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table if not exists __et(id INTEGER primary key autoincrement, __i TEXT, __e TEXT, __s TEXT, __t INTEGER, __av TEXT, __vc TEXT)",
+        "owners": [
+          "com/umeng/analytics/pro/e"
+        ]
+      }
+    ],
+    "__et_p": [
+      {
+        "table": "__et_p",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "__i",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__e",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__s",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__t",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__pn",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__av",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__vc",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table if not exists __et_p(id INTEGER primary key autoincrement, __i TEXT, __e TEXT, __s TEXT, __t INTEGER, __pn TEXT, __av TEXT, __vc TEXT)",
+        "owners": [
+          "com/umeng/analytics/process/b"
+        ]
+      }
+    ],
+    "__is": [
+      {
+        "table": "__is",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "__ii",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__e",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__sp",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__pp",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__av",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__vc",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table if not exists __is(id INTEGER primary key autoincrement, __ii TEXT unique, __e TEXT, __sp TEXT, __pp TEXT, __av TEXT, __vc TEXT)",
+        "owners": [
+          "com/umeng/analytics/pro/e"
+        ]
+      }
+    ],
+    "__sd": [
+      {
+        "table": "__sd",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "__ii",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__a",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__b",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__c",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__d",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__e",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__f",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__g",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__sp",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__pp",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__av",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "__vc",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "create table if not exists __sd(id INTEGER primary key autoincrement, __ii TEXT unique, __a TEXT, __b TEXT, __c TEXT, __d TEXT, __e TEXT, __f TEXT, __g TEXT, __sp TEXT, __pp TEXT, __av TEXT, __vc TEXT)",
+        "owners": [
+          "com/umeng/analytics/pro/e"
+        ]
+      }
+    ],
+    "stf": [
+      {
+        "table": "stf",
+        "columns": [
+          {
+            "name": "_id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "_tp",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_hd",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_bd",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_ts",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_uuid",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_re1",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_re2",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS stf(_id INTEGER PRIMARY KEY AUTOINCREMENT, _tp TEXT, _hd TEXT, _bd TEXT, _ts TEXT, _uuid TEXT, _re1 TEXT, _re2 TEXT)",
+        "owners": [
+          "com/umeng/analytics/pro/ak"
+        ]
+      }
+    ]
+  },
+  "indexes": [],
+  "unresolved": []
+}

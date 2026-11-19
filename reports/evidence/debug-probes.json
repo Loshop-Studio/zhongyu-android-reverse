@@ -1,0 +1,56 @@
+{
+  "entry": "DebugProbesKt.bin",
+  "format": "JVM class file",
+  "major": 52,
+  "minor": 0,
+  "class": "kotlin.coroutines.jvm.internal.DebugProbesKt",
+  "source": "DebugProbes.kt",
+  "methods": [
+    "probeCoroutineCreated",
+    "probeCoroutineResumed",
+    "probeCoroutineSuspended"
+  ],
+  "variants": [
+    {
+      "sha256": "cd3da36122413f84be484c77cde4a77729f9e8f81a285408d073300c8385ca3a",
+      "bytes": 1733,
+      "kotlin_metadata_version": "2,1,0",
+      "apps": [
+        "中育云笔记",
+        "中育管控桌面",
+        "新测评",
+        "错题本",
+        "随身答"
+      ]
+    },
+    {
+      "sha256": "86fecd0235d45839845081c1f91c9a58b40b0ae787f242bdba8f9150da45d0eb",
+      "bytes": 1738,
+      "kotlin_metadata_version": "1,9,0",
+      "apps": [
+        "优课畅学"
+      ]
+    },
+    {
+      "sha256": "2607dd7a7379d775a8b8c011f0336576f57320617e9d6a5e152b52dbcdc9ddae",
+      "bytes": 1714,
+      "kotlin_metadata_version": "1,5,1",
+      "apps": [
+        "在线专栏"
+      ]
+    },
+    {
+      "sha256": "158a19eb94aa2f3e2f459db69ee10276c73b945dd6c5f8fc223cf2d85e2b5e33",
+      "bytes": 1738,
+      "kotlin_metadata_version": "1,6,0",
+      "apps": [
+        "网阅联考"
+      ]
+    }
+  ],
+  "apps_without_entry": [
+    "选课",
+    "问卷调查",
+    "领创平板管理-2025.9.1"
+  ]
+}

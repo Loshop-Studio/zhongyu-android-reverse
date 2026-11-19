@@ -1,0 +1,127 @@
+{
+  "apps": [
+    {
+      "app": "中育云笔记",
+      "member": "okhttp3/internal/publicsuffix/publicsuffixes.gz",
+      "container": "gzip",
+      "packed_bytes": 41394,
+      "packed_sha256": "9af43e9995ec749e7a30eec4e5a87770d7e2027847084a07cca82060eff0c791",
+      "decoded_bytes": 115042,
+      "decoded_sha256": "5beda335cfa1a9a9f84c4d17f2267ad7304c3c23d14d41256032d78db274431f",
+      "rule_count": 9499,
+      "exception_count": 8,
+      "reencoded_equals_decoded_member": true
+    },
+    {
+      "app": "中育管控桌面",
+      "member": "assets/PublicSuffixDatabase.list",
+      "container": "raw",
+      "packed_bytes": 132737,
+      "packed_sha256": "c75ab827afd7ffff59a51b14729c25dbfc3b45237eb40ccf02bec7b7d44304a4",
+      "decoded_bytes": 132737,
+      "decoded_sha256": "c75ab827afd7ffff59a51b14729c25dbfc3b45237eb40ccf02bec7b7d44304a4",
+      "rule_count": 9764,
+      "exception_count": 8,
+      "reencoded_equals_decoded_member": true
+    },
+    {
+      "app": "优课畅学",
+      "member": "assets/PublicSuffixDatabase.list",
+      "container": "raw",
+      "packed_bytes": 132737,
+      "packed_sha256": "c75ab827afd7ffff59a51b14729c25dbfc3b45237eb40ccf02bec7b7d44304a4",
+      "decoded_bytes": 132737,
+      "decoded_sha256": "c75ab827afd7ffff59a51b14729c25dbfc3b45237eb40ccf02bec7b7d44304a4",
+      "rule_count": 9764,
+      "exception_count": 8,
+      "reencoded_equals_decoded_member": true
+    },
+    {
+      "app": "在线专栏",
+      "member": "okhttp3/internal/publicsuffix/publicsuffixes.gz",
+      "container": "gzip",
+      "packed_bytes": 37730,
+      "packed_sha256": "a1ef3d0e4ec2cbce14c1884ab0f3a4fef46e258de83530dc562ebb805bdb12fd",
+      "decoded_bytes": 104170,
+      "decoded_sha256": "431223ad7c331d1bbfc0e8d5096aa49831408383ccc064b6c8e35e2d4322acf5",
+      "rule_count": 8845,
+      "exception_count": 8,
+      "reencoded_equals_decoded_member": true
+    },
+    {
+      "app": "新测评",
+      "member": "okhttp3/internal/publicsuffix/publicsuffixes.gz",
+      "container": "gzip",
+      "packed_bytes": 41394,
+      "packed_sha256": "9af43e9995ec749e7a30eec4e5a87770d7e2027847084a07cca82060eff0c791",
+      "decoded_bytes": 115042,
+      "decoded_sha256": "5beda335cfa1a9a9f84c4d17f2267ad7304c3c23d14d41256032d78db274431f",
+      "rule_count": 9499,
+      "exception_count": 8,
+      "reencoded_equals_decoded_member": true
+    },
+    {
+      "app": "网阅联考",
+      "member": "okhttp3/internal/publicsuffix/publicsuffixes.gz",
+      "container": "gzip",
+      "packed_bytes": 37730,
+      "packed_sha256": "a1ef3d0e4ec2cbce14c1884ab0f3a4fef46e258de83530dc562ebb805bdb12fd",
+      "decoded_bytes": 104170,
+      "decoded_sha256": "431223ad7c331d1bbfc0e8d5096aa49831408383ccc064b6c8e35e2d4322acf5",
+      "rule_count": 8845,
+      "exception_count": 8,
+      "reencoded_equals_decoded_member": true
+    },
+    {
+      "app": "错题本",
+      "member": "okhttp3/internal/publicsuffix/publicsuffixes.gz",
+      "container": "gzip",
+      "packed_bytes": 41394,
+      "packed_sha256": "9af43e9995ec749e7a30eec4e5a87770d7e2027847084a07cca82060eff0c791",
+      "decoded_bytes": 115042,
+      "decoded_sha256": "5beda335cfa1a9a9f84c4d17f2267ad7304c3c23d14d41256032d78db274431f",
+      "rule_count": 9499,
+      "exception_count": 8,
+      "reencoded_equals_decoded_member": true
+    },
+    {
+      "app": "问卷调查",
+      "member": "okhttp3/internal/publicsuffix/publicsuffixes.gz",
+      "container": "gzip",
+      "packed_bytes": 37730,
+      "packed_sha256": "a1ef3d0e4ec2cbce14c1884ab0f3a4fef46e258de83530dc562ebb805bdb12fd",
+      "decoded_bytes": 104170,
+      "decoded_sha256": "431223ad7c331d1bbfc0e8d5096aa49831408383ccc064b6c8e35e2d4322acf5",
+      "rule_count": 8845,
+      "exception_count": 8,
+      "reencoded_equals_decoded_member": true
+    },
+    {
+      "app": "随身答",
+      "member": "okhttp3/internal/publicsuffix/publicsuffixes.gz",
+      "container": "gzip",
+      "packed_bytes": 41394,
+      "packed_sha256": "9af43e9995ec749e7a30eec4e5a87770d7e2027847084a07cca82060eff0c791",
+      "decoded_bytes": 115042,
+      "decoded_sha256": "5beda335cfa1a9a9f84c4d17f2267ad7304c3c23d14d41256032d78db274431f",
+      "rule_count": 9499,
+      "exception_count": 8,
+      "reencoded_equals_decoded_member": true
+    },
+    {
+      "app": "领创平板管理-2025.9.1",
+      "member": "okhttp3/internal/publicsuffix/publicsuffixes.gz",
+      "container": "gzip",
+      "packed_bytes": 36752,
+      "packed_sha256": "420a2e20f274a847b47e25997dea20860baaa5e192b940ce14b3a07d5864791f",
+      "decoded_bytes": 101915,
+      "decoded_sha256": "b1a95c6e1a243b84be2ea1924c86cc8813da83facb7b00fac6ffdded17ccb128",
+      "rule_count": 8664,
+      "exception_count": 8,
+      "reencoded_equals_decoded_member": true
+    }
+  ],
+  "apps_without_resource": [
+    "选课"
+  ]
+}

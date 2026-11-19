@@ -1,0 +1,4053 @@
+{
+  "com.zykj.base.BaseViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/base/BaseViewModel.smali",
+    "fields": [
+      {
+        "field": "isDialogVisible",
+        "type": "com.kunminx.architecture.ui.callback.UnPeekLiveData",
+        "generic_descriptor": "Lcom/kunminx/architecture/ui/callback/UnPeekLiveData<Ljava/lang/Boolean;>;"
+      },
+      {
+        "field": "toastLiveData",
+        "type": "com.kunminx.architecture.ui.callback.UnPeekLiveData",
+        "generic_descriptor": "Lcom/kunminx/architecture/ui/callback/UnPeekLiveData<Lcom/zykj/base/bean/toast/ToastMessage;>;"
+      }
+    ]
+  },
+  "com.zykj.base.bean.toast.ToastErrorCodeMessage": {
+    "smali": "android/新测评/smali_classes4/com/zykj/base/bean/toast/ToastErrorCodeMessage.smali",
+    "fields": [
+      {
+        "field": "errorInfo",
+        "type": "com.zykj.lib.error.code.ErrorCodeInfo"
+      }
+    ]
+  },
+  "com.zykj.base.bean.toast.ToastErrorMessage": {
+    "smali": "android/新测评/smali_classes4/com/zykj/base/bean/toast/ToastErrorMessage.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "java.lang.Integer"
+      }
+    ]
+  },
+  "com.zykj.base.bean.toast.ToastMessage": {
+    "smali": "android/新测评/smali_classes4/com/zykj/base/bean/toast/ToastMessage.smali",
+    "fields": [
+      {
+        "field": "message",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "messageResId",
+        "type": "java.lang.Integer"
+      }
+    ]
+  },
+  "com.zykj.blackboard.bean.BackgroundLineConfig": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/bean/BackgroundLineConfig.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "int"
+      },
+      {
+        "field": "b",
+        "type": "float"
+      },
+      {
+        "field": "c",
+        "type": "com.zykj.blackboard.bean.BackgroundLineConfig$BackgroundLineType"
+      },
+      {
+        "field": "d",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.bean.BoardConfig": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/bean/BoardConfig.smali",
+    "fields": [
+      {
+        "field": "addTextOriginalText",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "addTextOriginalTextColor",
+        "type": "int"
+      },
+      {
+        "field": "addTextOriginalTextMaxSize",
+        "type": "float"
+      },
+      {
+        "field": "addTextOriginalTextMinSize",
+        "type": "float"
+      },
+      {
+        "field": "addTextOriginalTextSize",
+        "type": "float"
+      },
+      {
+        "field": "addTextRectF",
+        "type": "android.graphics.RectF"
+      },
+      {
+        "field": "author",
+        "type": "f4.a"
+      },
+      {
+        "field": "backgroundColor",
+        "type": "int"
+      },
+      {
+        "field": "backgroundColorOutside",
+        "type": "int"
+      },
+      {
+        "field": "backgroundLineConfig",
+        "type": "com.zykj.blackboard.bean.BackgroundLineConfig"
+      },
+      {
+        "field": "beelinePaintColor",
+        "type": "int"
+      },
+      {
+        "field": "beelinePaintWidth",
+        "type": "float"
+      },
+      {
+        "field": "cursorColor",
+        "type": "int"
+      },
+      {
+        "field": "cursorOffset",
+        "type": "float"
+      },
+      {
+        "field": "cursorWidth",
+        "type": "float"
+      },
+      {
+        "field": "eraserWidth",
+        "type": "float"
+      },
+      {
+        "field": "geometryActionEnum",
+        "type": "com.zykj.blackboard.core.action.GeometryActionEnum"
+      },
+      {
+        "field": "geometryMinSize",
+        "type": "float"
+      },
+      {
+        "field": "geometryStrokeColor",
+        "type": "int"
+      },
+      {
+        "field": "geometryStrokeWidth",
+        "type": "float"
+      },
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "highlighterColorAlpha",
+        "type": "float"
+      },
+      {
+        "field": "imageCropView",
+        "type": "d5.b"
+      },
+      {
+        "field": "isDottedLine",
+        "type": "boolean"
+      },
+      {
+        "field": "isFingerDraw",
+        "type": "boolean"
+      },
+      {
+        "field": "isGroupGraphComplete",
+        "type": "boolean"
+      },
+      {
+        "field": "isImageBackground",
+        "type": "boolean"
+      },
+      {
+        "field": "maxImageSize",
+        "type": "int"
+      },
+      {
+        "field": "mode",
+        "type": "com.zykj.board.EzyModeEnum$ModeEnum"
+      },
+      {
+        "field": "moveActionConfig",
+        "type": "f4.c"
+      },
+      {
+        "field": "multiImageOffset",
+        "type": "float"
+      },
+      {
+        "field": "paintColor",
+        "type": "int"
+      },
+      {
+        "field": "paintDottedLineItemLength",
+        "type": "float"
+      },
+      {
+        "field": "paintDottedLineSpacing",
+        "type": "float"
+      },
+      {
+        "field": "paintWidth",
+        "type": "float"
+      },
+      {
+        "field": "selectButtonHeight",
+        "type": "float"
+      },
+      {
+        "field": "selectCustomColorView",
+        "type": "d5.a"
+      },
+      {
+        "field": "selectEditColorChangeListener",
+        "type": "kotlin.jvm.functions.Function1",
+        "generic_descriptor": "Lkotlin/jvm/functions/Function1<-Ljava/lang/Integer;Lkotlin/Unit;>;"
+      },
+      {
+        "field": "selectEditColorList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/Integer;>;"
+      },
+      {
+        "field": "selectHighlighterLevel",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/Float;>;"
+      },
+      {
+        "field": "selectIconWidth",
+        "type": "float"
+      },
+      {
+        "field": "selectIncludeGraphEnumListByClick",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<+Lcom/zykj/blackboard/enums/SelectGraphEnum;>;"
+      },
+      {
+        "field": "selectIncludeGraphEnumListByDrag",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<+Lcom/zykj/blackboard/enums/SelectGraphEnum;>;"
+      },
+      {
+        "field": "selectWriteLevel",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/Float;>;"
+      },
+      {
+        "field": "textEditView",
+        "type": "d5.c"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.AudioInfoEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/AudioInfoEntity.smali",
+    "fields": [
+      {
+        "field": "commandEnum",
+        "type": "com.zykj.board.EzyCommandEnum$CommandEnum"
+      },
+      {
+        "field": "data",
+        "type": "byte[]"
+      },
+      {
+        "field": "delayTime",
+        "type": "long"
+      },
+      {
+        "field": "duration",
+        "type": "long"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isPlay",
+        "type": "boolean"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/AudioRecordEntity;>;"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.AudioInfoEntityCursor": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/AudioInfoEntityCursor.smali",
+    "fields": [
+      {
+        "field": "j",
+        "type": "com.zykj.blackboard.core.data.dao.CommandEnumConverter"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.AudioRecordEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/AudioRecordEntity.smali",
+    "fields": [
+      {
+        "field": "audioInfoEntity",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/AudioInfoEntity;>;"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.AuthorEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/AuthorEntity.smali",
+    "fields": [
+      {
+        "field": "authorId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "authorName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "duration",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "schoolId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "startTime",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "url",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.BackgroundLineConfigEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/BackgroundLineConfigEntity.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "lineColor",
+        "type": "int"
+      },
+      {
+        "field": "lineSpace",
+        "type": "float"
+      },
+      {
+        "field": "lineType",
+        "type": "com.zykj.board.EzyBackgroundLineTypeEnum$BackgroundLineTypeEnum"
+      },
+      {
+        "field": "lineWidth",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.BackgroundLineConfigEntityCursor": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/BackgroundLineConfigEntityCursor.smali",
+    "fields": [
+      {
+        "field": "j",
+        "type": "com.zykj.blackboard.core.data.dao.BackgroundLineTypeEnumConverter"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.BlackBoardEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/BlackBoardEntity.smali",
+    "fields": [
+      {
+        "field": "dir",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "pages",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/PageEntity;>;"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.CommandInfoEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/CommandInfoEntity.smali",
+    "fields": [
+      {
+        "field": "commandEnum",
+        "type": "com.zykj.board.EzyCommandEnum$CommandEnum"
+      },
+      {
+        "field": "data",
+        "type": "byte[]"
+      },
+      {
+        "field": "delayTime",
+        "type": "long"
+      },
+      {
+        "field": "duration",
+        "type": "long"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isPlay",
+        "type": "boolean"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/CommandRecordEntity;>;"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.CommandInfoEntityCursor": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/CommandInfoEntityCursor.smali",
+    "fields": [
+      {
+        "field": "j",
+        "type": "com.zykj.blackboard.core.data.dao.CommandEnumConverter"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.CommandRecordEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/CommandRecordEntity.smali",
+    "fields": [
+      {
+        "field": "commandInfoEntity",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/CommandInfoEntity;>;"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.FileInfoEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/FileInfoEntity.smali",
+    "fields": [
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/FileRecordEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.FileRecordEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/FileRecordEntity.smali",
+    "fields": [
+      {
+        "field": "fileInfoEntity",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/FileInfoEntity;>;"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.GeometryInfoEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/GeometryInfoEntity.smali",
+    "fields": [
+      {
+        "field": "color",
+        "type": "int"
+      },
+      {
+        "field": "geometryType",
+        "type": "int"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "pointList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/GeometryPointFEntity;>;"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/GeometryRecordEntity;>;"
+      },
+      {
+        "field": "style",
+        "type": "int"
+      },
+      {
+        "field": "textSize",
+        "type": "float"
+      },
+      {
+        "field": "width",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.GeometryPointFEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/GeometryPointFEntity.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/GeometryInfoEntity;>;"
+      },
+      {
+        "field": "x",
+        "type": "float"
+      },
+      {
+        "field": "y",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.GeometryRecordEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/GeometryRecordEntity.smali",
+    "fields": [
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "geometryInfoEntityList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/GeometryInfoEntity;>;"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.HeaderEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/HeaderEntity.smali",
+    "fields": [
+      {
+        "field": "author",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/AuthorEntity;>;"
+      },
+      {
+        "field": "convertUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "createDate",
+        "type": "long"
+      },
+      {
+        "field": "defaultBackgroundColor",
+        "type": "int"
+      },
+      {
+        "field": "defaultBackgroundLineConfig",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/BackgroundLineConfigEntity;>;"
+      },
+      {
+        "field": "duration",
+        "type": "long"
+      },
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "lastBackgroundColor",
+        "type": "int"
+      },
+      {
+        "field": "lastBackgroundLineConfig",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/BackgroundLineConfigEntity;>;"
+      },
+      {
+        "field": "moveConfig",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;>;"
+      },
+      {
+        "field": "page",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/PageEntity;>;"
+      },
+      {
+        "field": "provider",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/AuthorEntity;>;"
+      },
+      {
+        "field": "updateDate",
+        "type": "long"
+      },
+      {
+        "field": "version",
+        "type": "int"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.MatrixEventEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/MatrixEventEntity.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "matrixInfo",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/MatrixInfoEntity;>;"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/MatrixRecordEntity;>;"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.MatrixInfoEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/MatrixInfoEntity.smali",
+    "fields": [
+      {
+        "field": "eventTime",
+        "type": "long"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "perSp0",
+        "type": "float"
+      },
+      {
+        "field": "perSp1",
+        "type": "float"
+      },
+      {
+        "field": "perSp2",
+        "type": "float"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/MatrixEventEntity;>;"
+      },
+      {
+        "field": "scaleX",
+        "type": "float"
+      },
+      {
+        "field": "scaleY",
+        "type": "float"
+      },
+      {
+        "field": "skewX",
+        "type": "float"
+      },
+      {
+        "field": "skewY",
+        "type": "float"
+      },
+      {
+        "field": "transX",
+        "type": "float"
+      },
+      {
+        "field": "transY",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.MatrixRecordEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/MatrixRecordEntity.smali",
+    "fields": [
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "matrixEventEntity",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/MatrixEventEntity;>;"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.MoveConfigEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/MoveConfigEntity.smali",
+    "fields": [
+      {
+        "field": "horizontalTranslate",
+        "type": "boolean"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isEnable",
+        "type": "boolean"
+      },
+      {
+        "field": "maxHeightTimes",
+        "type": "int"
+      },
+      {
+        "field": "maxWidthTimes",
+        "type": "int"
+      },
+      {
+        "field": "rotate",
+        "type": "boolean"
+      },
+      {
+        "field": "scale",
+        "type": "boolean"
+      },
+      {
+        "field": "verticalTranslate",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.PageEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/PageEntity.smali",
+    "fields": [
+      {
+        "field": "blackBoardEntity",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/BlackBoardEntity;>;"
+      },
+      {
+        "field": "commandFileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "commandIndex",
+        "type": "int"
+      },
+      {
+        "field": "dirName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "headerEntity",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/HeaderEntity;>;"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isChange",
+        "type": "boolean"
+      },
+      {
+        "field": "recordEntity",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.RecordEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/RecordEntity.smali",
+    "fields": [
+      {
+        "field": "audioList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/AudioRecordEntity;>;"
+      },
+      {
+        "field": "commandList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/CommandRecordEntity;>;"
+      },
+      {
+        "field": "fileList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/FileRecordEntity;>;"
+      },
+      {
+        "field": "geometryList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/GeometryRecordEntity;>;"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "matrixList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/MatrixRecordEntity;>;"
+      },
+      {
+        "field": "page",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/PageEntity;>;"
+      },
+      {
+        "field": "textList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/TextRecordEntity;>;"
+      },
+      {
+        "field": "touchList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/TouchRecordEntity;>;"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.TextInfoEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/TextInfoEntity.smali",
+    "fields": [
+      {
+        "field": "color",
+        "type": "int"
+      },
+      {
+        "field": "content",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/TextRecordEntity;>;"
+      },
+      {
+        "field": "style",
+        "type": "int"
+      },
+      {
+        "field": "textSize",
+        "type": "float"
+      },
+      {
+        "field": "width",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.TextRecordEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/TextRecordEntity.smali",
+    "fields": [
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "textInfoEntityList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/TextInfoEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.TouchEventEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/TouchEventEntity.smali",
+    "fields": [
+      {
+        "field": "color",
+        "type": "int"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "itemLength",
+        "type": "float"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/TouchRecordEntity;>;"
+      },
+      {
+        "field": "spacing",
+        "type": "float"
+      },
+      {
+        "field": "style",
+        "type": "int"
+      },
+      {
+        "field": "textSize",
+        "type": "float"
+      },
+      {
+        "field": "touchInfoList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/TouchInfoEntity;>;"
+      },
+      {
+        "field": "width",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.TouchInfoEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/TouchInfoEntity.smali",
+    "fields": [
+      {
+        "field": "eventTime",
+        "type": "long"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/TouchEventEntity;>;"
+      },
+      {
+        "field": "x",
+        "type": "float"
+      },
+      {
+        "field": "y",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.TouchRecordEntity": {
+    "smali": "android/新测评/smali_classes4/com/zykj/blackboard/core/data/dao/TouchRecordEntity.smali",
+    "fields": [
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "touchEventList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/TouchEventEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.base.BaseViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/base/BaseViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "kotlinx.coroutines.flow.MutableSharedFlow"
+      },
+      {
+        "field": "b",
+        "type": "androidx.compose.runtime.MutableState"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.AddMistakeReq": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/AddMistakeReq.smali",
+    "fields": [
+      {
+        "field": "attainedLevel",
+        "type": "java.lang.Integer"
+      },
+      {
+        "field": "diff",
+        "type": "java.lang.Integer"
+      },
+      {
+        "field": "errorReason",
+        "type": "java.lang.Integer"
+      },
+      {
+        "field": "examId",
+        "type": "long"
+      },
+      {
+        "field": "extraStems",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "isRelatedGroup",
+        "type": "boolean"
+      },
+      {
+        "field": "questionId",
+        "type": "long"
+      },
+      {
+        "field": "stemShoot",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "tagIdList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/Integer;>;"
+      },
+      {
+        "field": "title",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "topicId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.AskForHelpReq": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/AskForHelpReq.smali",
+    "fields": [
+      {
+        "field": "askForHelp",
+        "type": "boolean"
+      },
+      {
+        "field": "examTaskId",
+        "type": "long"
+      },
+      {
+        "field": "questionId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.BaseGuideQuestion": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/BaseGuideQuestion.smali",
+    "fields": [
+      {
+        "field": "askForHelp",
+        "type": "boolean"
+      },
+      {
+        "field": "completed",
+        "type": "boolean"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "myScore",
+        "type": "double"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "number",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "score",
+        "type": "double"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.ClassItem": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/ClassItem.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.CommitAnswer": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/CommitAnswer.smali",
+    "fields": [
+      {
+        "field": "answers",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.CommitSelfCorrectReq": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/CommitSelfCorrectReq.smali",
+    "fields": [
+      {
+        "field": "questionId",
+        "type": "long"
+      },
+      {
+        "field": "results",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/SelfCorrectResult;>;"
+      },
+      {
+        "field": "taskId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.CommitTaskAnswer": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/CommitTaskAnswer.smali",
+    "fields": [
+      {
+        "field": "answers",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/CommitAnswer;>;"
+      },
+      {
+        "field": "draft",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "questionId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.CreateTagReq": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/CreateTagReq.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.DetailAnswerInfo": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/DetailAnswerInfo.smali",
+    "fields": [
+      {
+        "field": "examAnswers",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "examComments",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "examMicroLessonComment",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "originResult",
+        "type": "java.lang.Integer"
+      },
+      {
+        "field": "originScore",
+        "type": "java.lang.Double"
+      },
+      {
+        "field": "result",
+        "type": "int"
+      },
+      {
+        "field": "reviseMicroLessonComment",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "revisingAnswers",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "revisingComments",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "score",
+        "type": "double"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "whenShowAnswer",
+        "type": "int"
+      },
+      {
+        "field": "whenShowMicroLesson",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.DetailGroupQstAnswer": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/DetailGroupQstAnswer.smali",
+    "fields": [
+      {
+        "field": "answers",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.DetailSubQuestion": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/DetailSubQuestion.smali",
+    "fields": [
+      {
+        "field": "displayNumber",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "number",
+        "type": "int"
+      },
+      {
+        "field": "options",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "originScore",
+        "type": "java.lang.Double"
+      },
+      {
+        "field": "qstType",
+        "type": "int"
+      },
+      {
+        "field": "questionId",
+        "type": "long"
+      },
+      {
+        "field": "score",
+        "type": "double"
+      },
+      {
+        "field": "subQuestions",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/DetailSubQuestion;>;"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.ExamProgress": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/ExamProgress.smali",
+    "fields": [
+      {
+        "field": "revisingCount",
+        "type": "int"
+      },
+      {
+        "field": "revisingStudents",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "testingCount",
+        "type": "int"
+      },
+      {
+        "field": "testingStudents",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.ExamState": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/ExamState.smali",
+    "fields": [
+      {
+        "field": "value",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.ExamTaskType": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/ExamTaskType.smali",
+    "fields": [
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.GetTaskListReq": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/GetTaskListReq.smali",
+    "fields": [
+      {
+        "field": "endTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "examTaskType",
+        "type": "java.lang.Integer"
+      },
+      {
+        "field": "gradeId",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "keyword",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "maxResultCount",
+        "type": "int"
+      },
+      {
+        "field": "skipCount",
+        "type": "int"
+      },
+      {
+        "field": "startTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "submitAllow",
+        "type": "java.lang.Integer"
+      },
+      {
+        "field": "taskListType",
+        "type": "int"
+      },
+      {
+        "field": "topicIds",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/Long;>;"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.GetTaskListResponse": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/GetTaskListResponse.smali",
+    "fields": [
+      {
+        "field": "items",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/TaskInfo;>;"
+      },
+      {
+        "field": "totalCount",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.GetTopicList": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/GetTopicList.smali",
+    "fields": [
+      {
+        "field": "content",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isActive",
+        "type": "boolean"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "sort",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.GuideGroup": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/GuideGroup.smali",
+    "fields": [
+      {
+        "field": "description",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "number",
+        "type": "int"
+      },
+      {
+        "field": "qstCount",
+        "type": "int"
+      },
+      {
+        "field": "questions",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<TT;>;"
+      },
+      {
+        "field": "score",
+        "type": "double"
+      },
+      {
+        "field": "showGroupNumber",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.GuideNoStemQuestion": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/GuideNoStemQuestion.smali",
+    "fields": [
+      {
+        "field": "answerWithQuestion",
+        "type": "boolean"
+      },
+      {
+        "field": "qstFlows",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/GuideSubQuestion;>;"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.GuideNormalQuestion": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/GuideNormalQuestion.smali",
+    "fields": [
+      {
+        "field": "answerByGroup",
+        "type": "boolean"
+      },
+      {
+        "field": "hasMicroClass",
+        "type": "boolean"
+      },
+      {
+        "field": "itemType",
+        "type": "int"
+      },
+      {
+        "field": "needRevise",
+        "type": "boolean"
+      },
+      {
+        "field": "originScore",
+        "type": "java.lang.Double"
+      },
+      {
+        "field": "relatedGroupId",
+        "type": "long"
+      },
+      {
+        "field": "revisingResult",
+        "type": "int"
+      },
+      {
+        "field": "state",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.GuideSubQuestion": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/GuideSubQuestion.smali",
+    "fields": [
+      {
+        "field": "number",
+        "type": "int"
+      },
+      {
+        "field": "options",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "qstType",
+        "type": "int"
+      },
+      {
+        "field": "subQuestions",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/GuideSubQuestion;>;"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.GuideTaskInfo": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/GuideTaskInfo.smali",
+    "fields": [
+      {
+        "field": "correctWithSelf",
+        "type": "boolean"
+      },
+      {
+        "field": "enableScore",
+        "type": "boolean"
+      },
+      {
+        "field": "endTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "examId",
+        "type": "long"
+      },
+      {
+        "field": "examName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "examState",
+        "type": "int"
+      },
+      {
+        "field": "gradeId",
+        "type": "long"
+      },
+      {
+        "field": "gradeName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "groups",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/GuideGroup<TT;>;>;"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isRepresentative",
+        "type": "boolean"
+      },
+      {
+        "field": "myScore",
+        "type": "double"
+      },
+      {
+        "field": "noQstStem",
+        "type": "boolean"
+      },
+      {
+        "field": "score",
+        "type": "double"
+      },
+      {
+        "field": "specificTrainingType",
+        "type": "int"
+      },
+      {
+        "field": "startTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "state",
+        "type": "int"
+      },
+      {
+        "field": "testDescription",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "testTips",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "topicId",
+        "type": "long"
+      },
+      {
+        "field": "topicName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "whenShowAnswer",
+        "type": "int"
+      },
+      {
+        "field": "whenShowMicroLesson",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.HomeFilterCondition": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/HomeFilterCondition.smali",
+    "fields": [
+      {
+        "field": "checkedEvaluationType",
+        "type": "com.zykj.evaluation.ui.home.c$a"
+      },
+      {
+        "field": "checkedGrade",
+        "type": "com.zykj.evaluation.ui.home.c$b"
+      },
+      {
+        "field": "checkedOverdueType",
+        "type": "com.zykj.evaluation.ui.home.c$c"
+      },
+      {
+        "field": "checkedSubject",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/ui/home/c$d;>;"
+      },
+      {
+        "field": "checkedTime",
+        "type": "com.zykj.evaluation.ui.home.c$e"
+      },
+      {
+        "field": "keyword",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.MicroClassInfo": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/MicroClassInfo.smali",
+    "fields": [
+      {
+        "field": "address",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "creationTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "creatorUserId",
+        "type": "long"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isRevising",
+        "type": "boolean"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "snapshot",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.MonitorPictureReq": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/MonitorPictureReq.smali",
+    "fields": [
+      {
+        "field": "appName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "packageName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "pictures",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.PageSize": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/PageSize.smali",
+    "fields": [
+      {
+        "field": "value",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.PaperBlank": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/PaperBlank.smali",
+    "fields": [
+      {
+        "field": "position",
+        "type": "com.zykj.evaluation.bean.PaperPosition",
+        "gson_serialized_name": "Position"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String",
+        "gson_serialized_name": "Uuid"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.PaperConfig": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/PaperConfig.smali",
+    "fields": [
+      {
+        "field": "pages",
+        "type": "java.util.List",
+        "gson_serialized_name": "Pages",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/PaperPage;>;"
+      },
+      {
+        "field": "version",
+        "type": "java.lang.String",
+        "gson_serialized_name": "Version"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.PaperHand": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/PaperHand.smali",
+    "fields": [
+      {
+        "field": "uuid",
+        "type": "java.lang.String",
+        "gson_serialized_name": "Uuid"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.PaperJson": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/PaperJson.smali",
+    "fields": [
+      {
+        "field": "config",
+        "type": "com.zykj.evaluation.bean.PaperConfig",
+        "gson_serialized_name": "Config"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.PaperOption": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/PaperOption.smali",
+    "fields": [
+      {
+        "field": "label",
+        "type": "java.lang.String",
+        "gson_serialized_name": "Label"
+      },
+      {
+        "field": "position",
+        "type": "com.zykj.evaluation.bean.PaperPosition",
+        "gson_serialized_name": "Position"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.PaperPage": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/PaperPage.smali",
+    "fields": [
+      {
+        "field": "questions",
+        "type": "java.util.List",
+        "gson_serialized_name": "Questions",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/PaperQuestion;>;"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.PaperPoint": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/PaperPoint.smali",
+    "fields": [
+      {
+        "field": "xRate",
+        "type": "float",
+        "gson_serialized_name": "XRate"
+      },
+      {
+        "field": "yRate",
+        "type": "float",
+        "gson_serialized_name": "YRate"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.PaperPosition": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/PaperPosition.smali",
+    "fields": [
+      {
+        "field": "end",
+        "type": "com.zykj.evaluation.bean.PaperPoint",
+        "gson_serialized_name": "End"
+      },
+      {
+        "field": "start",
+        "type": "com.zykj.evaluation.bean.PaperPoint",
+        "gson_serialized_name": "Start"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.PaperQuestion": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/PaperQuestion.smali",
+    "fields": [
+      {
+        "field": "blanks",
+        "type": "java.util.List",
+        "gson_serialized_name": "Blanks",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/PaperBlank;>;"
+      },
+      {
+        "field": "groupKey",
+        "type": "java.lang.String",
+        "gson_serialized_name": "GroupKey"
+      },
+      {
+        "field": "id",
+        "type": "long",
+        "gson_serialized_name": "Id"
+      },
+      {
+        "field": "items",
+        "type": "java.util.List",
+        "gson_serialized_name": "Items",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/PaperHand;>;"
+      },
+      {
+        "field": "numericalOrder",
+        "type": "int",
+        "gson_serialized_name": "NumericalOrder"
+      },
+      {
+        "field": "position",
+        "type": "com.zykj.evaluation.bean.PaperPosition",
+        "gson_serialized_name": "Position"
+      },
+      {
+        "field": "selects",
+        "type": "java.util.List",
+        "gson_serialized_name": "Selects",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/PaperSelect;>;"
+      },
+      {
+        "field": "type",
+        "type": "int",
+        "gson_serialized_name": "Type"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.PaperResponse": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/PaperResponse.smali",
+    "fields": [
+      {
+        "field": "answerSheet",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.PaperSelect": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/PaperSelect.smali",
+    "fields": [
+      {
+        "field": "options",
+        "type": "java.util.List",
+        "gson_serialized_name": "Options",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/PaperOption;>;"
+      },
+      {
+        "field": "order",
+        "type": "int",
+        "gson_serialized_name": "Order"
+      },
+      {
+        "field": "position",
+        "type": "com.zykj.evaluation.bean.PaperPosition",
+        "gson_serialized_name": "Position"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String",
+        "gson_serialized_name": "Uuid"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.RevisingRecord": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/RevisingRecord.smali",
+    "fields": [
+      {
+        "field": "result",
+        "type": "int"
+      },
+      {
+        "field": "revisingAnswers",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "revisingComments",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.SelfCorrectResult": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/SelfCorrectResult.smali",
+    "fields": [
+      {
+        "field": "result",
+        "type": "int"
+      },
+      {
+        "field": "revisingAnswer",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.SetTaskFavoriteReq": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/SetTaskFavoriteReq.smali",
+    "fields": [
+      {
+        "field": "examTaskId",
+        "type": "long"
+      },
+      {
+        "field": "isCollect",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.SpecificTrainingType": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/SpecificTrainingType.smali",
+    "fields": [
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.TagInfo": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/TagInfo.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.TaskCount": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/TaskCount.smali",
+    "fields": [
+      {
+        "field": "End",
+        "type": "int"
+      },
+      {
+        "field": "ExamCorrecting",
+        "type": "int"
+      },
+      {
+        "field": "Revising",
+        "type": "int"
+      },
+      {
+        "field": "RevisingCorrecting",
+        "type": "int"
+      },
+      {
+        "field": "Testing",
+        "type": "int"
+      },
+      {
+        "field": "WaitExamCorrect",
+        "type": "int"
+      },
+      {
+        "field": "WaitRevisingCorrect",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.TaskDetailInfo": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/TaskDetailInfo.smali",
+    "fields": [
+      {
+        "field": "answerList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/DetailAnswerInfo;>;"
+      },
+      {
+        "field": "answerWithQuestion",
+        "type": "boolean"
+      },
+      {
+        "field": "askForHelp",
+        "type": "boolean"
+      },
+      {
+        "field": "examDraft",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isInMistakeBook",
+        "type": "boolean"
+      },
+      {
+        "field": "itemType",
+        "type": "int"
+      },
+      {
+        "field": "lastRoundRevisingRecords",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/RevisingRecord;>;"
+      },
+      {
+        "field": "microClassToQuestionList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/MicroClassInfo;>;"
+      },
+      {
+        "field": "microClassToStudentList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/MicroClassInfo;>;"
+      },
+      {
+        "field": "number",
+        "type": "int"
+      },
+      {
+        "field": "originScore",
+        "type": "java.lang.Double"
+      },
+      {
+        "field": "path",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "qstAnswers",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/DetailGroupQstAnswer;>;"
+      },
+      {
+        "field": "qstFlows",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/DetailSubQuestion;>;"
+      },
+      {
+        "field": "qstFlowsCount",
+        "type": "int"
+      },
+      {
+        "field": "qstLastModifyTime",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "revisingAnswerd",
+        "type": "boolean"
+      },
+      {
+        "field": "revisingDraft",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "revisingResult",
+        "type": "int"
+      },
+      {
+        "field": "score",
+        "type": "double"
+      },
+      {
+        "field": "stem",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "totalAnswerScore",
+        "type": "double"
+      },
+      {
+        "field": "totalScore",
+        "type": "double"
+      },
+      {
+        "field": "typicalErrorAnswers",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/TypicalAnswer;>;"
+      },
+      {
+        "field": "typicalRightAnswers",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/bean/TypicalAnswer;>;"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.TaskInfo": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/TaskInfo.smali",
+    "fields": [
+      {
+        "field": "address",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "answerPad",
+        "type": "boolean"
+      },
+      {
+        "field": "answerSheet",
+        "type": "boolean"
+      },
+      {
+        "field": "answeringUrge",
+        "type": "int"
+      },
+      {
+        "field": "correctOnline",
+        "type": "boolean"
+      },
+      {
+        "field": "correctOnlineState",
+        "type": "int"
+      },
+      {
+        "field": "correctWithSelf",
+        "type": "boolean"
+      },
+      {
+        "field": "creationTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "endTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "examId",
+        "type": "long"
+      },
+      {
+        "field": "examName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "examState",
+        "type": "int"
+      },
+      {
+        "field": "examTaskId",
+        "type": "long"
+      },
+      {
+        "field": "isCollect",
+        "type": "boolean"
+      },
+      {
+        "field": "isExempted",
+        "type": "boolean"
+      },
+      {
+        "field": "isNoStem",
+        "type": "boolean"
+      },
+      {
+        "field": "isRead",
+        "type": "boolean"
+      },
+      {
+        "field": "revisingUrge",
+        "type": "int"
+      },
+      {
+        "field": "serialNum",
+        "type": "int"
+      },
+      {
+        "field": "size",
+        "type": "int"
+      },
+      {
+        "field": "specificTrainingType",
+        "type": "int"
+      },
+      {
+        "field": "startTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "taskState",
+        "type": "int"
+      },
+      {
+        "field": "testPagerId",
+        "type": "long"
+      },
+      {
+        "field": "topicId",
+        "type": "long"
+      },
+      {
+        "field": "topicName",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.TaskListType": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/TaskListType.smali",
+    "fields": [
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.TaskState": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/TaskState.smali",
+    "fields": [
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "state",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.TypicalAnswer": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/TypicalAnswer.smali",
+    "fields": [
+      {
+        "field": "answers",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "comments",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "fullname",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.UploadData": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/UploadData.smali",
+    "fields": [
+      {
+        "field": "commitState",
+        "type": "int"
+      },
+      {
+        "field": "localPath",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "uploadUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.bundle.AnswerData": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/bundle/AnswerData.smali",
+    "fields": [
+      {
+        "field": "answerPath",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.bundle.AnswerSheetBundle": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/bundle/AnswerSheetBundle.smali",
+    "fields": [
+      {
+        "field": "address",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "isNoStem",
+        "type": "boolean"
+      },
+      {
+        "field": "path",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "serialNum",
+        "type": "int"
+      },
+      {
+        "field": "taskId",
+        "type": "long"
+      },
+      {
+        "field": "taskState",
+        "type": "int"
+      },
+      {
+        "field": "testPagerId",
+        "type": "long"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.bundle.DetailBundle": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/bundle/DetailBundle.smali",
+    "fields": [
+      {
+        "field": "canShowAnswer",
+        "type": "boolean"
+      },
+      {
+        "field": "canShowMicroClass",
+        "type": "boolean"
+      },
+      {
+        "field": "currentIndex",
+        "type": "int"
+      },
+      {
+        "field": "examDescription",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "examId",
+        "type": "long"
+      },
+      {
+        "field": "examName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "isEnableScore",
+        "type": "boolean"
+      },
+      {
+        "field": "isNoStem",
+        "type": "boolean"
+      },
+      {
+        "field": "isRepresentative",
+        "type": "boolean"
+      },
+      {
+        "field": "questionList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/evaluation/ui/detail/GuideQuestion;>;"
+      },
+      {
+        "field": "specificTrainingType",
+        "type": "int"
+      },
+      {
+        "field": "taskId",
+        "type": "long"
+      },
+      {
+        "field": "topicId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.bundle.MistakeDataBundle": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/bundle/MistakeDataBundle.smali",
+    "fields": [
+      {
+        "field": "examId",
+        "type": "long"
+      },
+      {
+        "field": "examName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "isRelatedGroup",
+        "type": "boolean"
+      },
+      {
+        "field": "questionId",
+        "type": "long"
+      },
+      {
+        "field": "stemLocalPath",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "taskId",
+        "type": "long"
+      },
+      {
+        "field": "topicId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.bundle.SketchPlayBundle": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/bundle/SketchPlayBundle.smali",
+    "fields": [
+      {
+        "field": "examId",
+        "type": "long"
+      },
+      {
+        "field": "questionId",
+        "type": "long"
+      },
+      {
+        "field": "url",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.constant.MistakeTag": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/constant/MistakeTag.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.constant.QuestionTypeEnum": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/constant/QuestionTypeEnum.smali",
+    "fields": [
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.bean.constant.WhenShowState": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/bean/constant/WhenShowState.smali",
+    "fields": [
+      {
+        "field": "state",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.evaluation.di.entity.SubmitTaskDao_Impl": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/di/entity/SubmitTaskDao_Impl.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.room.RoomDatabase"
+      },
+      {
+        "field": "b",
+        "type": "androidx.room.EntityInsertAdapter"
+      }
+    ]
+  },
+  "com.zykj.evaluation.di.entity.UploadAnswerDao_Impl": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/di/entity/UploadAnswerDao_Impl.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.room.RoomDatabase"
+      },
+      {
+        "field": "b",
+        "type": "androidx.room.EntityInsertAdapter"
+      },
+      {
+        "field": "c",
+        "type": "com.zykj.evaluation.di.converter.UploadDataConverter"
+      },
+      {
+        "field": "d",
+        "type": "androidx.room.EntityDeleteOrUpdateAdapter"
+      }
+    ]
+  },
+  "com.zykj.evaluation.di.entity.UploadCorrectSelfQuestionDao_Impl": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/di/entity/UploadCorrectSelfQuestionDao_Impl.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.room.RoomDatabase"
+      },
+      {
+        "field": "b",
+        "type": "androidx.room.EntityInsertAdapter"
+      },
+      {
+        "field": "c",
+        "type": "com.zykj.evaluation.di.converter.UploadDataConverter"
+      },
+      {
+        "field": "d",
+        "type": "com.zykj.evaluation.di.converter.CommitSelfCorrectConverter"
+      }
+    ]
+  },
+  "com.zykj.evaluation.di.entity.UploadQuestionDao_Impl": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/di/entity/UploadQuestionDao_Impl.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.room.RoomDatabase"
+      },
+      {
+        "field": "b",
+        "type": "androidx.room.EntityInsertAdapter"
+      },
+      {
+        "field": "c",
+        "type": "com.zykj.evaluation.di.converter.UploadDataConverter"
+      },
+      {
+        "field": "d",
+        "type": "com.zykj.evaluation.di.converter.CommitTaskAnswerConverter"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.MainViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/MainViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "b",
+        "type": "kotlinx.coroutines.flow.MutableSharedFlow"
+      },
+      {
+        "field": "c",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "d",
+        "type": "com.zykj.evaluation.upload.OssTaskManger"
+      },
+      {
+        "field": "e",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.datepicker.DatePickerViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/datepicker/DatePickerViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "java.text.SimpleDateFormat"
+      },
+      {
+        "field": "b",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "c",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "d",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "e",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "f",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "g",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "h",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "i",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.detail.BaseDetailViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/detail/BaseDetailViewModel.smali",
+    "fields": [
+      {
+        "field": "c",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "d",
+        "type": "p5.j"
+      },
+      {
+        "field": "e",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "f",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "g",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "h",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "i",
+        "type": "java.util.List"
+      },
+      {
+        "field": "j",
+        "type": "int"
+      },
+      {
+        "field": "k",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "l",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "m",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "n",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "o",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "p",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "q",
+        "type": "g7.e"
+      },
+      {
+        "field": "r",
+        "type": "androidx.compose.runtime.MutableState"
+      },
+      {
+        "field": "s",
+        "type": "androidx.compose.runtime.MutableState"
+      },
+      {
+        "field": "t",
+        "type": "androidx.collection.ArrayMap"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.detail.correcting.CorrectingDetailViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/detail/correcting/CorrectingDetailViewModel.smali",
+    "fields": [
+      {
+        "field": "w",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "x",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.detail.done.DoneDetailViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/detail/done/DoneDetailViewModel.smali",
+    "fields": [
+      {
+        "field": "w",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "x",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.detail.mistake.MistakeViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/detail/mistake/MistakeViewModel.smali",
+    "fields": [
+      {
+        "field": "c",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "d",
+        "type": "p5.j"
+      },
+      {
+        "field": "e",
+        "type": "com.zykj.evaluation.upload.OssTaskManger"
+      },
+      {
+        "field": "f",
+        "type": "int"
+      },
+      {
+        "field": "g",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "h",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "i",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "j",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "k",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "l",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "m",
+        "type": "g7.e"
+      },
+      {
+        "field": "n",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "o",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.detail.mistake.TagData": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/detail/mistake/TagData.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isSelected",
+        "type": "boolean"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.detail.revising.RevisingDetailViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/detail/revising/RevisingDetailViewModel.smali",
+    "fields": [
+      {
+        "field": "w",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "x",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.detail.toCorrect.ToCorrectDetailViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/detail/toCorrect/ToCorrectDetailViewModel.smali",
+    "fields": [
+      {
+        "field": "A",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      },
+      {
+        "field": "B",
+        "type": "boolean"
+      },
+      {
+        "field": "C",
+        "type": "java.util.ArrayList"
+      },
+      {
+        "field": "w",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "x",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "y",
+        "type": "com.zykj.evaluation.di.AppDatabase"
+      },
+      {
+        "field": "z",
+        "type": "com.zykj.evaluation.upload.OssTaskManger"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.detail.toCorrectSelf.ToCorrectSelfDetailViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/detail/toCorrectSelf/ToCorrectSelfDetailViewModel.smali",
+    "fields": [
+      {
+        "field": "A",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      },
+      {
+        "field": "B",
+        "type": "androidx.collection.ArrayMap"
+      },
+      {
+        "field": "w",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "x",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "y",
+        "type": "com.zykj.evaluation.di.AppDatabase"
+      },
+      {
+        "field": "z",
+        "type": "com.zykj.evaluation.upload.OssTaskManger"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.detail.todo.TodoDetailViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/detail/todo/TodoDetailViewModel.smali",
+    "fields": [
+      {
+        "field": "A",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      },
+      {
+        "field": "B",
+        "type": "boolean"
+      },
+      {
+        "field": "w",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "x",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "y",
+        "type": "com.zykj.evaluation.di.AppDatabase"
+      },
+      {
+        "field": "z",
+        "type": "com.zykj.evaluation.upload.OssTaskManger"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.guide.BaseGuideViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/guide/BaseGuideViewModel.smali",
+    "fields": [
+      {
+        "field": "c",
+        "type": "p5.j"
+      },
+      {
+        "field": "d",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "e",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "f",
+        "type": "androidx.compose.runtime.MutableState"
+      },
+      {
+        "field": "g",
+        "type": "g7.e"
+      },
+      {
+        "field": "h",
+        "type": "com.zykj.evaluation.bean.GuideTaskInfo"
+      },
+      {
+        "field": "i",
+        "type": "com.zykj.evaluation.bean.ExamProgress"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.guide.noStem.NoStemViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/guide/noStem/NoStemViewModel.smali",
+    "fields": [
+      {
+        "field": "l",
+        "type": "p5.j"
+      },
+      {
+        "field": "m",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "n",
+        "type": "com.zykj.evaluation.upload.OssTaskManger"
+      },
+      {
+        "field": "o",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      },
+      {
+        "field": "p",
+        "type": "com.zykj.evaluation.di.AppDatabase"
+      },
+      {
+        "field": "q",
+        "type": "androidx.compose.runtime.MutableState"
+      },
+      {
+        "field": "r",
+        "type": "androidx.collection.ArrayMap"
+      },
+      {
+        "field": "s",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "t",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.guide.normal.GuideViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/guide/normal/GuideViewModel.smali",
+    "fields": [
+      {
+        "field": "l",
+        "type": "p5.j"
+      },
+      {
+        "field": "m",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "n",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      },
+      {
+        "field": "o",
+        "type": "androidx.compose.runtime.MutableState"
+      },
+      {
+        "field": "p",
+        "type": "androidx.compose.runtime.MutableState"
+      },
+      {
+        "field": "q",
+        "type": "java.util.List"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.guide.normal.correcting.CorrectingGuideViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/guide/normal/correcting/CorrectingGuideViewModel.smali",
+    "fields": [
+      {
+        "field": "r",
+        "type": "p5.j"
+      },
+      {
+        "field": "s",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "t",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.guide.normal.done.DoneGuideViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/guide/normal/done/DoneGuideViewModel.smali",
+    "fields": [
+      {
+        "field": "r",
+        "type": "p5.j"
+      },
+      {
+        "field": "s",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "t",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      },
+      {
+        "field": "u",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.guide.normal.revising.RevisingGuideViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/guide/normal/revising/RevisingGuideViewModel.smali",
+    "fields": [
+      {
+        "field": "r",
+        "type": "p5.j"
+      },
+      {
+        "field": "s",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "t",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.guide.normal.toCorrect.ToCorrectGuideViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/guide/normal/toCorrect/ToCorrectGuideViewModel.smali",
+    "fields": [
+      {
+        "field": "r",
+        "type": "p5.j"
+      },
+      {
+        "field": "s",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "t",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      },
+      {
+        "field": "u",
+        "type": "com.zykj.evaluation.di.AppDatabase"
+      },
+      {
+        "field": "v",
+        "type": "java.util.ArrayList"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.guide.normal.toCorrectSelf.ToCorrectSelfGuideViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/guide/normal/toCorrectSelf/ToCorrectSelfGuideViewModel.smali",
+    "fields": [
+      {
+        "field": "r",
+        "type": "p5.j"
+      },
+      {
+        "field": "s",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "t",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.guide.normal.toDo.TodoGuideViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/guide/normal/toDo/TodoGuideViewModel.smali",
+    "fields": [
+      {
+        "field": "r",
+        "type": "p5.j"
+      },
+      {
+        "field": "s",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "t",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      },
+      {
+        "field": "u",
+        "type": "com.zykj.evaluation.di.AppDatabase"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.home.HomeViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/home/HomeViewModel.smali",
+    "fields": [
+      {
+        "field": "c",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "d",
+        "type": "p5.j"
+      },
+      {
+        "field": "e",
+        "type": "h7.b"
+      },
+      {
+        "field": "f",
+        "type": "com.zykj.evaluation.di.AppDatabase"
+      },
+      {
+        "field": "g",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      },
+      {
+        "field": "h",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "i",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "j",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "k",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "l",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "m",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "n",
+        "type": "kotlinx.coroutines.Job"
+      },
+      {
+        "field": "o",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.progress.ProgressViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/progress/ProgressViewModel.smali",
+    "fields": [
+      {
+        "field": "c",
+        "type": "androidx.compose.runtime.MutableState"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.sheet.AnswerSheetViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/sheet/AnswerSheetViewModel.smali",
+    "fields": [
+      {
+        "field": "c",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "d",
+        "type": "com.zykj.evaluation.upload.OssTaskManger"
+      },
+      {
+        "field": "e",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "f",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "g",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "h",
+        "type": "androidx.compose.runtime.MutableState"
+      },
+      {
+        "field": "i",
+        "type": "androidx.compose.runtime.MutableState"
+      },
+      {
+        "field": "j",
+        "type": "androidx.compose.runtime.MutableState"
+      },
+      {
+        "field": "k",
+        "type": "b7.c1"
+      },
+      {
+        "field": "l",
+        "type": "java.lang.String[]"
+      },
+      {
+        "field": "m",
+        "type": "g7.e"
+      },
+      {
+        "field": "n",
+        "type": "boolean"
+      },
+      {
+        "field": "o",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.sheet.composition.CompositionViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/sheet/composition/CompositionViewModel.smali",
+    "fields": [
+      {
+        "field": "r",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "s",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.sheet.normal.NormalViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/sheet/normal/NormalViewModel.smali",
+    "fields": [
+      {
+        "field": "A",
+        "type": "org.json.JSONObject"
+      },
+      {
+        "field": "B",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "C",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "D",
+        "type": "byte[]"
+      },
+      {
+        "field": "E",
+        "type": "x6.j[]"
+      },
+      {
+        "field": "F",
+        "type": "java.util.List[]"
+      },
+      {
+        "field": "G",
+        "type": "java.util.List[]"
+      },
+      {
+        "field": "H",
+        "type": "java.util.Map"
+      },
+      {
+        "field": "I",
+        "type": "boolean"
+      },
+      {
+        "field": "J",
+        "type": "boolean"
+      },
+      {
+        "field": "r",
+        "type": "p5.j"
+      },
+      {
+        "field": "s",
+        "type": "p5.k"
+      },
+      {
+        "field": "t",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "u",
+        "type": "com.zykj.evaluation.upload.OssTaskManger"
+      },
+      {
+        "field": "v",
+        "type": "com.zykj.evaluation.submit.SubmitTaskManger"
+      },
+      {
+        "field": "w",
+        "type": "com.zykj.evaluation.di.AppDatabase"
+      },
+      {
+        "field": "x",
+        "type": "androidx.compose.runtime.MutableState"
+      },
+      {
+        "field": "y",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "z",
+        "type": "com.zykj.evaluation.bean.PaperConfig"
+      }
+    ]
+  },
+  "com.zykj.evaluation.ui.sketch.SketchPlayViewModel": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/ui/sketch/SketchPlayViewModel.smali",
+    "fields": [
+      {
+        "field": "c",
+        "type": "p5.j"
+      },
+      {
+        "field": "d",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "e",
+        "type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "field": "f",
+        "type": "g7.e"
+      },
+      {
+        "field": "g",
+        "type": "androidx.compose.runtime.MutableState"
+      }
+    ]
+  },
+  "com.zykj.evaluation.upload.OssData": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/upload/OssData.smali",
+    "fields": [
+      {
+        "field": "objectKey",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "token",
+        "type": "com.zykj.evaluation.upload.OssToken"
+      }
+    ]
+  },
+  "com.zykj.evaluation.utils.NeedReviseData": {
+    "smali": "android/新测评/smali_classes4/com/zykj/evaluation/utils/NeedReviseData.smali",
+    "fields": [
+      {
+        "field": "needRevise",
+        "type": "boolean"
+      },
+      {
+        "field": "questionId",
+        "type": "long"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.http.bean.ApiResp": {
+    "smali": "android/新测评/smali_classes4/com/zykj/http/bean/ApiResp.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "int",
+        "gson_serialized_name": "code"
+      },
+      {
+        "field": "error",
+        "type": "com.zykj.http.bean.ErrorInfo",
+        "gson_serialized_name": "error"
+      },
+      {
+        "field": "msg",
+        "type": "java.lang.String",
+        "gson_serialized_name": "msg"
+      },
+      {
+        "field": "result",
+        "type": "java.lang.Object",
+        "generic_descriptor": "TT;"
+      },
+      {
+        "field": "success",
+        "type": "boolean",
+        "gson_serialized_name": "success"
+      }
+    ]
+  },
+  "com.zykj.http.bean.ErrorInfo": {
+    "smali": "android/新测评/smali_classes4/com/zykj/http/bean/ErrorInfo.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "int"
+      },
+      {
+        "field": "details",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "message",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.http.bean.HeaderBean": {
+    "smali": "android/新测评/smali_classes4/com/zykj/http/bean/HeaderBean.smali",
+    "fields": [
+      {
+        "field": "accessToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "appName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "refreshToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "serverUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "versionCode",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.ServerInfo": {
+    "smali": "android/新测评/smali/com/zykj/message/server/bean/ServerInfo.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.message.server.bean.Status"
+      },
+      {
+        "field": "b",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "c",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "d",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "e",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.Status": {
+    "smali": "android/新测评/smali/com/zykj/message/server/bean/Status.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.UserInfo": {
+    "smali": "android/新测评/smali/com/zykj/message/server/bean/UserInfo.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "b",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "c",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "d",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "e",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "f",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "g",
+        "type": "java.lang.Integer"
+      }
+    ]
+  },
+  "com.zykj.paint.record.model.CompassSnapShot": {
+    "smali": "android/新测评/smali_classes5/com/zykj/paint/record/model/CompassSnapShot.smali",
+    "fields": [
+      {
+        "field": "degree",
+        "type": "double"
+      },
+      {
+        "field": "downDegree",
+        "type": "double"
+      },
+      {
+        "field": "downWidth",
+        "type": "int"
+      },
+      {
+        "field": "hand",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "left",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "leftDownMartix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "leftMartix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "pencil",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "pencilMartix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "radius",
+        "type": "float"
+      },
+      {
+        "field": "right",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "rightDownMartix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "rightMartix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "top",
+        "type": "int"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.paint.record.model.GraphSnapShot": {
+    "smali": "android/新测评/smali_classes5/com/zykj/paint/record/model/GraphSnapShot.smali",
+    "fields": [
+      {
+        "field": "bitmap",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "center",
+        "type": "float[]"
+      },
+      {
+        "field": "graphId",
+        "type": "int"
+      },
+      {
+        "field": "isSelect",
+        "type": "boolean"
+      },
+      {
+        "field": "mCanvas",
+        "type": "android.graphics.Canvas"
+      },
+      {
+        "field": "markerCenter",
+        "type": "float[]"
+      },
+      {
+        "field": "matrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "midMatrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "origin",
+        "type": "float[]"
+      },
+      {
+        "field": "paint",
+        "type": "android.graphics.Paint"
+      },
+      {
+        "field": "sketchBitmap",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "sketchMatrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "sketchView",
+        "type": "com.zykj.paint.SketchSyncView"
+      },
+      {
+        "field": "snapShotPaint",
+        "type": "android.graphics.Paint"
+      },
+      {
+        "field": "temp",
+        "type": "double"
+      }
+    ]
+  },
+  "com.zykj.paint.record.model.MapSnapShot": {
+    "smali": "android/新测评/smali_classes5/com/zykj/paint/record/model/MapSnapShot.smali",
+    "fields": [
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "lastInvertSketchMatrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "lastSketchMatrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "localDisplayList",
+        "type": "com.zykj.paint.Actions$EzyActionList$Builder"
+      },
+      {
+        "field": "mProgressDialog",
+        "type": "android.app.ProgressDialog"
+      },
+      {
+        "field": "mSketchCanvas",
+        "type": "android.graphics.Canvas"
+      },
+      {
+        "field": "midSketchMatrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.paint.record.model.PictureSnapShot": {
+    "smali": "android/新测评/smali_classes5/com/zykj/paint/record/model/PictureSnapShot.smali",
+    "fields": [
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "localDisplayList",
+        "type": "com.zykj.paint.Actions$EzyActionList$Builder"
+      },
+      {
+        "field": "mapSnapShot",
+        "type": "com.zykj.paint.record.model.MapSnapShot"
+      },
+      {
+        "field": "midSketchMatrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.paint.record.model.RulerSnapShot": {
+    "smali": "android/新测评/smali_classes5/com/zykj/paint/record/model/RulerSnapShot.smali",
+    "fields": [
+      {
+        "field": "bgPaint",
+        "type": "android.graphics.Paint"
+      },
+      {
+        "field": "degree",
+        "type": "float"
+      },
+      {
+        "field": "downDegree",
+        "type": "float"
+      },
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "rectF",
+        "type": "android.graphics.RectF"
+      },
+      {
+        "field": "ruler",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.sketch.core.data.ThumbnailBean": {
+    "smali": "android/新测评/smali_classes5/com/zykj/sketch/core/data/ThumbnailBean.smali",
+    "fields": [
+      {
+        "field": "bitmap",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "limitRenderRectF",
+        "type": "android.graphics.RectF"
+      },
+      {
+        "field": "maxRenderRectF",
+        "type": "android.graphics.RectF"
+      }
+    ]
+  },
+  "com.zykj.view.board.board.BoardViewModel": {
+    "smali": "android/新测评/smali_classes5/com/zykj/view/board/board/BoardViewModel.smali",
+    "fields": [
+      {
+        "field": "A",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "B",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "C",
+        "type": "boolean"
+      },
+      {
+        "field": "a",
+        "type": "com.zykj.blackboard.core.edit.IBoardControl"
+      },
+      {
+        "field": "b",
+        "type": "d5.c"
+      },
+      {
+        "field": "c",
+        "type": "d5.b"
+      },
+      {
+        "field": "d",
+        "type": "d5.a"
+      },
+      {
+        "field": "e",
+        "type": "int"
+      },
+      {
+        "field": "f",
+        "type": "android.graphics.PointF"
+      },
+      {
+        "field": "g",
+        "type": "kotlinx.coroutines.flow.MutableSharedFlow"
+      },
+      {
+        "field": "h",
+        "type": "kotlinx.coroutines.flow.SharedFlow"
+      },
+      {
+        "field": "i",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "j",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "k",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "l",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "m",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "n",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "o",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "p",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "q",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "r",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "s",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "t",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "u",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "v",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "w",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "x",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "y",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "z",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      }
+    ]
+  },
+  "com.zykj.view.board.simple.SimpleViewModel": {
+    "smali": "android/新测评/smali_classes5/com/zykj/view/board/simple/SimpleViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "b",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "c",
+        "type": "kotlinx.coroutines.flow.MutableSharedFlow"
+      },
+      {
+        "field": "d",
+        "type": "kotlinx.coroutines.flow.SharedFlow"
+      }
+    ]
+  }
+}

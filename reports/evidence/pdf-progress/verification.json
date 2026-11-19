@@ -1,0 +1,390 @@
+[
+  {
+    "app": "中育云笔记",
+    "file": "FRIDAY_NOTE_DB",
+    "apk_sha256": "577454c536e7828151cdc6674cd2c0161dcea577f75b8ec31ec198f013bb3464",
+    "db_sha256": "1027e8e15db442cd9fa20d3c09aa117a730a9aa67dec242bb58d3a4f87976876",
+    "phases": [
+      {
+        "phase": "write",
+        "pid": 3543,
+        "first_open": {
+          "path": "/offline/甲组/讲义'一.pdf",
+          "current_page_index": 0,
+          "page_count": 12
+        },
+        "fragment_callbacks": 2,
+        "different_spelling_missing": true,
+        "positions": [
+          {
+            "path": "/offline/甲组/讲义'一.pdf",
+            "current_page_index": 7,
+            "page_count": 12
+          },
+          {
+            "path": "/offline/乙组/讲义'一.pdf",
+            "current_page_index": 0,
+            "page_count": 3
+          }
+        ],
+        "migration": {
+          "from": 10,
+          "to": 11,
+          "previous_row": "kept",
+          "pdf_ddl": "CREATE TABLE 'PdfEntity' ('id' TEXT PRIMARY KEY NOT NULL,'currentPage' INTEGER NOT NULL,'pageCount' INTEGER NOT NULL)"
+        },
+        "dispatch_cases": {
+          "lookup": {
+            "calls": [
+              "lookup",
+              "emit-page"
+            ],
+            "suspension_labels": [],
+            "outcome": "unit"
+          },
+          "missing": {
+            "calls": [
+              "lookup",
+              "emit-missing"
+            ],
+            "suspension_labels": [],
+            "outcome": "unit"
+          },
+          "lookup-wait": {
+            "calls": [
+              "lookup",
+              "emit-page"
+            ],
+            "suspension_labels": [
+              1
+            ],
+            "outcome": "unit"
+          },
+          "missing-lookup-wait": {
+            "calls": [
+              "lookup",
+              "emit-missing"
+            ],
+            "suspension_labels": [
+              1
+            ],
+            "outcome": "unit"
+          },
+          "emit-wait": {
+            "calls": [
+              "lookup",
+              "emit-page"
+            ],
+            "suspension_labels": [
+              2
+            ],
+            "outcome": "unit"
+          },
+          "lookup-wait-emit-wait": {
+            "calls": [
+              "lookup",
+              "emit-page"
+            ],
+            "suspension_labels": [
+              1,
+              2
+            ],
+            "outcome": "unit"
+          },
+          "lookup-wait-fail": {
+            "calls": [
+              "lookup"
+            ],
+            "suspension_labels": [
+              1
+            ],
+            "outcome": "java.lang.IllegalArgumentException"
+          },
+          "emit-wait-fail": {
+            "calls": [
+              "lookup",
+              "emit-page"
+            ],
+            "suspension_labels": [
+              2
+            ],
+            "outcome": "java.lang.IllegalArgumentException"
+          },
+          "save": {
+            "calls": [
+              "insert"
+            ],
+            "suspension_labels": [],
+            "outcome": "unit"
+          },
+          "save-wait": {
+            "calls": [
+              "insert"
+            ],
+            "suspension_labels": [
+              3
+            ],
+            "outcome": "unit"
+          },
+          "save-wait-fail": {
+            "calls": [
+              "insert"
+            ],
+            "suspension_labels": [
+              3
+            ],
+            "outcome": "java.lang.IllegalArgumentException"
+          },
+          "invalid-label": {
+            "calls": [],
+            "suspension_labels": [],
+            "outcome": "java.lang.IllegalStateException"
+          },
+          "unknown-action": {
+            "calls": [],
+            "suspension_labels": [],
+            "outcome": "kotlin.NoWhenBranchMatchedException"
+          }
+        }
+      },
+      {
+        "phase": "reopen",
+        "pid": 3589,
+        "different_spelling_missing": true,
+        "positions": [
+          {
+            "path": "/offline/甲组/讲义'一.pdf",
+            "current_page_index": 7,
+            "page_count": 12
+          },
+          {
+            "path": "/offline/乙组/讲义'一.pdf",
+            "current_page_index": 0,
+            "page_count": 3
+          }
+        ]
+      }
+    ],
+    "decoded": {
+      "format": "pdf-progress",
+      "user_version": 12,
+      "documents": [
+        {
+          "path": "/offline/乙组/讲义'一.pdf",
+          "current_page_index": 0,
+          "page_count": 3
+        },
+        {
+          "path": "/offline/甲组/讲义'一.pdf",
+          "current_page_index": 7,
+          "page_count": 12
+        }
+      ]
+    },
+    "wal_check": {
+      "updated_index": -1,
+      "updated_count": 0,
+      "all_input_hashes_preserved": true,
+      "source_files": [
+        "sample with # and %.db",
+        "sample with # and %.db-wal"
+      ]
+    },
+    "recovered_method_sha256": "ade527f76cd6debfe5bf7de08c43d6d07cc606fbf77f5a6586b4494cc2433582",
+    "differential_cases": 13
+  },
+  {
+    "app": "优课畅学",
+    "file": "study.db",
+    "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+    "db_sha256": "2ea0223c6d405b317228ff537d54d131d828195ac935fce6a8dd7003c69edcb7",
+    "phases": [
+      {
+        "phase": "write",
+        "pid": 3652,
+        "first_open": {
+          "path": "/offline/甲组/讲义'一.pdf",
+          "current_page_index": 0,
+          "page_count": 12
+        },
+        "fragment_callbacks": 2,
+        "different_spelling_missing": true,
+        "positions": [
+          {
+            "path": "/offline/甲组/讲义'一.pdf",
+            "current_page_index": 7,
+            "page_count": 12
+          },
+          {
+            "path": "/offline/乙组/讲义'一.pdf",
+            "current_page_index": 0,
+            "page_count": 3
+          }
+        ],
+        "migration": {
+          "from": 1,
+          "to": 2,
+          "previous_row": "kept",
+          "pdf_ddl": "CREATE TABLE 'PdfEntity' ('id' TEXT PRIMARY KEY NOT NULL,'currentPage' INTEGER NOT NULL,'pageCount' INTEGER NOT NULL)"
+        },
+        "dispatch_cases": {
+          "lookup": {
+            "calls": [
+              "lookup",
+              "emit-page"
+            ],
+            "suspension_labels": [],
+            "outcome": "unit"
+          },
+          "missing": {
+            "calls": [
+              "lookup",
+              "emit-missing"
+            ],
+            "suspension_labels": [],
+            "outcome": "unit"
+          },
+          "lookup-wait": {
+            "calls": [
+              "lookup",
+              "emit-page"
+            ],
+            "suspension_labels": [
+              1
+            ],
+            "outcome": "unit"
+          },
+          "missing-lookup-wait": {
+            "calls": [
+              "lookup",
+              "emit-missing"
+            ],
+            "suspension_labels": [
+              1
+            ],
+            "outcome": "unit"
+          },
+          "emit-wait": {
+            "calls": [
+              "lookup",
+              "emit-page"
+            ],
+            "suspension_labels": [
+              2
+            ],
+            "outcome": "unit"
+          },
+          "lookup-wait-emit-wait": {
+            "calls": [
+              "lookup",
+              "emit-page"
+            ],
+            "suspension_labels": [
+              1,
+              2
+            ],
+            "outcome": "unit"
+          },
+          "lookup-wait-fail": {
+            "calls": [
+              "lookup"
+            ],
+            "suspension_labels": [
+              1
+            ],
+            "outcome": "java.lang.IllegalArgumentException"
+          },
+          "emit-wait-fail": {
+            "calls": [
+              "lookup",
+              "emit-page"
+            ],
+            "suspension_labels": [
+              2
+            ],
+            "outcome": "java.lang.IllegalArgumentException"
+          },
+          "save": {
+            "calls": [
+              "insert"
+            ],
+            "suspension_labels": [],
+            "outcome": "unit"
+          },
+          "save-wait": {
+            "calls": [
+              "insert"
+            ],
+            "suspension_labels": [
+              3
+            ],
+            "outcome": "unit"
+          },
+          "save-wait-fail": {
+            "calls": [
+              "insert"
+            ],
+            "suspension_labels": [
+              3
+            ],
+            "outcome": "java.lang.IllegalArgumentException"
+          },
+          "invalid-label": {
+            "calls": [],
+            "suspension_labels": [],
+            "outcome": "java.lang.IllegalStateException"
+          },
+          "unknown-action": {
+            "calls": [],
+            "suspension_labels": [],
+            "outcome": "kotlin.NoWhenBranchMatchedException"
+          }
+        }
+      },
+      {
+        "phase": "reopen",
+        "pid": 3699,
+        "different_spelling_missing": true,
+        "positions": [
+          {
+            "path": "/offline/甲组/讲义'一.pdf",
+            "current_page_index": 7,
+            "page_count": 12
+          },
+          {
+            "path": "/offline/乙组/讲义'一.pdf",
+            "current_page_index": 0,
+            "page_count": 3
+          }
+        ]
+      }
+    ],
+    "decoded": {
+      "format": "pdf-progress",
+      "user_version": 3,
+      "documents": [
+        {
+          "path": "/offline/乙组/讲义'一.pdf",
+          "current_page_index": 0,
+          "page_count": 3
+        },
+        {
+          "path": "/offline/甲组/讲义'一.pdf",
+          "current_page_index": 7,
+          "page_count": 12
+        }
+      ]
+    },
+    "wal_check": {
+      "updated_index": -1,
+      "updated_count": 0,
+      "all_input_hashes_preserved": true,
+      "source_files": [
+        "sample with # and %.db",
+        "sample with # and %.db-wal"
+      ]
+    },
+    "recovered_method_sha256": "692bb53d16268be4e79a2ce515a64b0efb2d3078eff8207ccdc5da36db197fc5",
+    "differential_cases": 13
+  }
+]

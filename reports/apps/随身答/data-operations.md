@@ -1,0 +1,38 @@
+# 随身答 数据操作
+
+方法签名保留 DEX 类型。每行列出方法内直接调用的存储或编解码接口。
+
+| 实现 | 方法 | 操作 |
+|---|---|---|
+| [com/zykj/paint/render/SketchViewer](../../../android/随身答/smali_classes2/com/zykj/paint/render/SketchViewer.smali) | `renderTemp()V` | 解码本地图片（BitmapFactory.decodeFile） |
+| [com/zykj/paint/runner/ActionProcessor](../../../android/随身答/smali_classes2/com/zykj/paint/runner/ActionProcessor.smali) | `renderImage(Lcom/zykj/paint/Actions$EzyAction;)V` | 从数据流解码图片（BitmapFactory.decodeStream） |
+| [com/zykj/paint/runner/ImageActionRunner](../../../android/随身答/smali_classes2/com/zykj/paint/runner/ImageActionRunner.smali) | `run(Lcom/zykj/paint/Actions$EzyAction;)V` | 从数据流解码图片（BitmapFactory.decodeStream） |
+| [com/zykj/blackboard/core/action/newSelectAtion/function/ImageFunction$handleClick$1$1](../../../android/随身答/smali_classes4/com/zykj/blackboard/core/action/newSelectAtion/function/ImageFunction$handleClick$1$1.smali) | `invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;` | 解码本地图片（BitmapFactory.decodeFile） |
+| [com/zykj/blackboard/core/edit/PageControl](../../../android/随身答/smali_classes4/com/zykj/blackboard/core/edit/PageControl.smali) | `C(Ljava/lang/String;)Lcom/zykj/blackboard/core/graph/group/ImageGraph;` | 解码本地图片（BitmapFactory.decodeFile） |
+| [com/zykj/blackboard/core/graph/group/ImageGraph](../../../android/随身答/smali_classes4/com/zykj/blackboard/core/graph/group/ImageGraph.smali) | `L(Landroid/graphics/Canvas;Landroid/graphics/Matrix;)V` | 解码本地图片（BitmapFactory.decodeFile） |
+| [com/zykj/download/data/AppDatabase_Impl$a](../../../android/随身答/smali_classes4/com/zykj/download/data/AppDatabase_Impl$a.smali) | `createAllTables(Landroidx/sqlite/db/SupportSQLiteDatabase;)V` | 执行 SQLite 语句（SupportSQLiteDatabase.execSQL） |
+| [com/zykj/download/data/AppDatabase_Impl$a](../../../android/随身答/smali_classes4/com/zykj/download/data/AppDatabase_Impl$a.smali) | `dropAllTables(Landroidx/sqlite/db/SupportSQLiteDatabase;)V` | 执行 SQLite 语句（SupportSQLiteDatabase.execSQL） |
+| [com/zykj/download/data/AppDatabase_Impl](../../../android/随身答/smali_classes4/com/zykj/download/data/AppDatabase_Impl.smali) | `clearAllTables()V` | 执行 SQLite 语句（SupportSQLiteDatabase.execSQL）、查询 SQLite（SupportSQLiteDatabase.query） |
+| [com/zykj/download/work/UploadFileOssWork](../../../android/随身答/smali_classes4/com/zykj/download/work/UploadFileOssWork.smali) | `initParameter()V` | 读取 JSON（Gson.fromJson） |
+| [com/zykj/http/interceptor/CommonResponseInterceptor](../../../android/随身答/smali_classes4/com/zykj/http/interceptor/CommonResponseInterceptor.smali) | `parseJson(Ljava/lang/String;)Lcom/zykj/http/bean/CommonApiResp;` | 读取 JSON（Gson.fromJson） |
+| [com/zykj/http/interceptor/CommonResponseInterceptor](../../../android/随身答/smali_classes4/com/zykj/http/interceptor/CommonResponseInterceptor.smali) | `reBuildResponse(Lcom/zykj/http/bean/CommonApiResp;)Ll8/z;` | 写入 JSON（Gson.toJson） |
+| [com/zykj/http/interceptor/NetWorkResponseWithRefreshTokenInterceptor](../../../android/随身答/smali_classes4/com/zykj/http/interceptor/NetWorkResponseWithRefreshTokenInterceptor.smali) | `parseJson(Ljava/lang/String;)Lcom/zykj/http/bean/ApiResp;` | 读取 JSON（Gson.fromJson） |
+| [com/zykj/http/interceptor/ResponseInterceptor](../../../android/随身答/smali_classes4/com/zykj/http/interceptor/ResponseInterceptor.smali) | `parseJson(Ljava/lang/String;)Lcom/zykj/http/bean/ApiResp;` | 读取 JSON（Gson.fromJson） |
+| [com/zykj/http/interceptor/ResponseInterceptor](../../../android/随身答/smali_classes4/com/zykj/http/interceptor/ResponseInterceptor.smali) | `reBuildResponse(Lcom/zykj/http/bean/ApiResp;)Ll8/z;` | 写入 JSON（Gson.toJson） |
+| [com/zykj/http/interceptor/ResponseWithRefreshTokenInterceptor](../../../android/随身答/smali_classes4/com/zykj/http/interceptor/ResponseWithRefreshTokenInterceptor.smali) | `parseJson(Ljava/lang/String;)Lcom/zykj/http/bean/ApiResp;` | 读取 JSON（Gson.fromJson） |
+| [com/zykj/http/interceptor/ResponseWithRefreshTokenInterceptor](../../../android/随身答/smali_classes4/com/zykj/http/interceptor/ResponseWithRefreshTokenInterceptor.smali) | `reBuildResponse(Lcom/zykj/http/bean/ApiResp;)Ll8/z;` | 写入 JSON（Gson.toJson） |
+| [com/zykj/sketch/core/graph/ImageGraph](../../../android/随身答/smali_classes5/com/zykj/sketch/core/graph/ImageGraph.smali) | `<init>(Lcom/zykj/sketch/core/listener/IControl;IIIILjava/lang/String;I)V` | 解码本地图片（BitmapFactory.decodeFile） |
+| [com/zykj/sketch/core/graph/ImageGraph](../../../android/随身答/smali_classes5/com/zykj/sketch/core/graph/ImageGraph.smali) | `reloadBitmap(Ljava/io/File;)V` | 解码本地图片（BitmapFactory.decodeFile） |
+| [com/zykj/sketch/core/graph/ImageGraph](../../../android/随身答/smali_classes5/com/zykj/sketch/core/graph/ImageGraph.smali) | `render(Landroid/graphics/Canvas;)V` | 解码本地图片（BitmapFactory.decodeFile） |
+| [com/zykj/sketch/core/graph/ImageHistoryGraph](../../../android/随身答/smali_classes5/com/zykj/sketch/core/graph/ImageHistoryGraph.smali) | `<init>(Lcom/zykj/sketch/core/listener/IControl;IIIILjava/lang/String;)V` | 解码本地图片（BitmapFactory.decodeFile） |
+| [com/zykj/sketch/core/graph/ViewGraph](../../../android/随身答/smali_classes5/com/zykj/sketch/core/graph/ViewGraph.smali) | `compressImage(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;` | 编码位图（Bitmap.compress）、从数据流解码图片（BitmapFactory.decodeStream） |
+| [com/zykj/sketch/core/player/PlayControl](../../../android/随身答/smali_classes5/com/zykj/sketch/core/player/PlayControl.smali) | `loadData(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V` | 解码本地图片（BitmapFactory.decodeFile） |
+| [com/zykj/sketch/core/record/RecordControl](../../../android/随身答/smali_classes5/com/zykj/sketch/core/record/RecordControl.smali) | `addImage(Ljava/lang/String;IIIILkotlin/jvm/functions/Function1;)V` | 解码本地图片（BitmapFactory.decodeFile） |
+| [com/zykj/sketch/core/record/RecordControl](../../../android/随身答/smali_classes5/com/zykj/sketch/core/record/RecordControl.smali) | `loadData(Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V` | 解码本地图片（BitmapFactory.decodeFile） |
+| [com/zykj/sketch/utils/FileUtils$Companion](../../../android/随身答/smali_classes5/com/zykj/sketch/utils/FileUtils$Companion.smali) | `saveBitmap2SDCard(Landroid/graphics/Bitmap;Ljava/lang/String;)Ljava/lang/String;` | 编码位图（Bitmap.compress） |
+| [com/zykj/sketch/utils/FileUtils$Companion](../../../android/随身答/smali_classes5/com/zykj/sketch/utils/FileUtils$Companion.smali) | `saveImage2SDCard(Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;Z)Ljava/lang/String;` | 编码位图（Bitmap.compress） |
+| [com/zykj/view/board/evaluation/BlackboardEvaluationFragment$h](../../../android/随身答/smali_classes5/com/zykj/view/board/evaluation/BlackboardEvaluationFragment$h.smali) | `d(I)V` | 保存整数偏好（SharedPreferences$Editor.putInt） |
+| [com/zykj/view/board/evaluation/BlackboardEvaluationFragment](../../../android/随身答/smali_classes5/com/zykj/view/board/evaluation/BlackboardEvaluationFragment.smali) | `S0(Landroid/content/SharedPreferences;)I` | 读取整数偏好（SharedPreferences.getInt）、保存整数偏好（SharedPreferences$Editor.putInt） |
+| [com/zykj/view/board/evaluation/BlackboardEvaluationFragment](../../../android/随身答/smali_classes5/com/zykj/view/board/evaluation/BlackboardEvaluationFragment.smali) | `U(IZZ)V` | 保存整数偏好（SharedPreferences$Editor.putInt） |
+| [com/zykj/view/board/evaluation/BlackboardEvaluationFragment](../../../android/随身答/smali_classes5/com/zykj/view/board/evaluation/BlackboardEvaluationFragment.smali) | `f0(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;` | 解码本地图片（BitmapFactory.decodeFile）、编码位图（Bitmap.compress） |
+| [com/zykj/view/board/evaluation/BlackboardEvaluationFragment](../../../android/随身答/smali_classes5/com/zykj/view/board/evaluation/BlackboardEvaluationFragment.smali) | `m0()V` | 读取整数偏好（SharedPreferences.getInt） |

@@ -1,0 +1,65 @@
+{
+  "com.zykj.message.server.bean.ServerInfo": {
+    "smali": "android/选课/smali/com/zykj/message/server/bean/ServerInfo.smali",
+    "fields": [
+      {
+        "field": "imToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "serverUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "status",
+        "type": "com.zykj.message.server.bean.Status"
+      },
+      {
+        "field": "token",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.Status": {
+    "smali": "android/选课/smali/com/zykj/message/server/bean/Status.smali",
+    "fields": [
+      {
+        "field": "status",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.UserInfo": {
+    "smali": "android/选课/smali/com/zykj/message/server/bean/UserInfo.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "password",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "photo",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "realName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "role",
+        "type": "java.lang.Integer"
+      },
+      {
+        "field": "schoolCode",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "userName",
+        "type": "java.lang.String"
+      }
+    ]
+  }
+}

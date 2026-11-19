@@ -1,0 +1,408 @@
+[
+ {
+  "member": "lib/armeabi-v7a/libBugly_Native.so",
+  "size": 182320,
+  "format": "ELF",
+  "sha256": "4371a120224530de6b0522f82e4fab656f43fa0377c168d6ca81b9aacdcb4bd3",
+  "role": "Bugly 原生崩溃采集",
+  "machine": "ARM",
+  "build_id": "6d6208d619e458a40d44ffd6b1014f776acf50be",
+  "needed": [
+   "libdl.so",
+   "liblog.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 240,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+  "size": 7252,
+  "format": "ELF",
+  "sha256": "41399eba6fc2a60f6f14642375c1824f3cf25eb8fec7397d753730a3ceda3e2b",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "fa98a997cdd9b43f190a4bd20f3dad441b4062f0",
+  "needed": [
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 1,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libc++_shared.so",
+  "size": 677448,
+  "format": "ELF",
+  "sha256": "8ac5090bbd0be7401af5fff6044ded6f1e6ced692fcd3581fa3cb937b519a16a",
+  "role": "Android NDK C++ 运行时",
+  "machine": "ARM",
+  "build_id": "95752c27d02e4255fda2f8c70eeace994be66200",
+  "needed": [
+   "libc.so",
+   "libm.so",
+   "libdl.so"
+  ],
+  "symbols": 1563,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libijkffmpeg.so",
+  "size": 7502724,
+  "format": "ELF",
+  "sha256": "1bdf73ed1f49f12dbf11c82ac6d71ec1421e10bee407ec697664d66f488f659c",
+  "role": "IJK 的 FFmpeg 媒体组件",
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libm.so",
+   "libz.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 3664,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libijkplayer.so",
+  "size": 362588,
+  "format": "ELF",
+  "sha256": "f84434117bc5816b559091128494ca7bf2376be19118b530f82ecd2289f7e525",
+  "role": "IJK 播放器",
+  "machine": "ARM",
+  "build_id": "75cd45b8abff4a4048b295b36a3a5e53c80e85c7",
+  "needed": [
+   "libdl.so",
+   "libijkffmpeg.so",
+   "libijksdl.so",
+   "liblog.so",
+   "libandroid.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 600,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libijksdl.so",
+  "size": 311788,
+  "format": "ELF",
+  "sha256": "30de942b2cbe7898f2ccf3b0c11e50e59477093cc05ae874fceff10a16b6921a",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "0433821bc46cb390649afebd3628fe6ed0f94b85",
+  "needed": [
+   "libdl.so",
+   "libijkffmpeg.so",
+   "liblog.so",
+   "libandroid.so",
+   "libOpenSLES.so",
+   "libEGL.so",
+   "libGLESv2.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 884,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libimage_processing_util_jni.so",
+  "size": 20380,
+  "format": "ELF",
+  "sha256": "e48e356bbe1902ae9a66178a4a0141c993b82ee9f70dde52ad83e4af3eca984f",
+  "role": "图像处理 JNI",
+  "machine": "ARM",
+  "build_id": "12e91d3874791a1d92920ec94bc2690acebe48aa",
+  "needed": [
+   "liblog.so",
+   "libandroid.so",
+   "libjnigraphics.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 6,
+  "static_jni_exports": 6,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libjniPdfium.so",
+  "size": 50648,
+  "format": "ELF",
+  "sha256": "7ac42ea9dddc3a6094dfe79052e13982622bed9f5599e121d4fc4ba032e117cc",
+  "role": "PDFium 的 JNI 桥",
+  "machine": "ARM",
+  "build_id": "fca2b4665d346b50bafffac985e6e97aa90bce97",
+  "needed": [
+   "libmodpdfium.so",
+   "libc++_shared.so",
+   "liblog.so",
+   "libandroid.so",
+   "libjnigraphics.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so"
+  ],
+  "symbols": 49,
+  "static_jni_exports": 25,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmodft2.so",
+  "size": 521640,
+  "format": "ELF",
+  "sha256": "ffcc7bc29a253591e24d053c7ea99d9ac93d4d3a4c5f48b01b2b77fe9fe0d0b8",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "69da4eaed94c4154222df18aaf00c731",
+  "needed": [
+   "libmodpng.so",
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 294,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmodpdfium.so",
+  "size": 4683804,
+  "format": "ELF",
+  "sha256": "777afe0e36cd2ccb1f5b504d49a5cd04c3b33a87c9e66de569bc155d59dacc0d",
+  "role": "PDF 解析与渲染",
+  "machine": "ARM",
+  "build_id": "7b4e95ec9ec86243db5b3538f715d118",
+  "needed": [
+   "libdl.so",
+   "libmodft2.so",
+   "libc++_shared.so",
+   "libc.so",
+   "libm.so"
+  ],
+  "symbols": 6008,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmodpng.so",
+  "size": 148852,
+  "format": "ELF",
+  "sha256": "ae48482367a0daf48ed2b6764bf2ce8f82a87a44971f789cadb20dbfc37b75ac",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "397eaa404cbcc105a264a4611c2707b6",
+  "needed": [
+   "libz.so",
+   "libc.so",
+   "libm.so",
+   "libstdc++.so"
+  ],
+  "symbols": 428,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libmp3lame.so",
+  "size": 157356,
+  "format": "ELF",
+  "sha256": "543d1181de6e4780a7b7b1571abb8c3349939c2541bc21c29beede6527ea76e7",
+  "role": "MP3 编码",
+  "machine": "ARM",
+  "build_id": "b7fb3f87c0bcb405e4e50f37b1a29e0d4c37f246",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 330,
+  "static_jni_exports": 7,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libobjectbox-jni.so",
+  "size": 985320,
+  "format": "ELF",
+  "sha256": "866b1ac82e8281cae9d199bc0335612bc0c35b1772692abc8d5a43f87dd82fd5",
+  "role": "ObjectBox 的 JNI 桥",
+  "machine": "ARM",
+  "build_id": "e0237b22c9d9908bf4ed267269266684885dfd74",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 890,
+  "static_jni_exports": 151,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/librxffmpeg-core.so",
+  "size": 9675800,
+  "format": "ELF",
+  "sha256": "e07009fb8b1c8c84cdb6ea6dcbb77334a0381428aca3a74f344249f54fae5ba0",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libc.so",
+   "libm.so",
+   "libz.so",
+   "libdl.so",
+   "liblog.so"
+  ],
+  "symbols": 10129,
+  "static_jni_exports": 0,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/librxffmpeg-invoke.so",
+  "size": 292652,
+  "format": "ELF",
+  "sha256": "ac5780430d8f6da367ace31ccc0ac585f7d9aba8c5bed784f51425259df89ccc",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "ad60f3fe41b30bc1459c7241a2a84e5086bfbd1d",
+  "needed": [
+   "librxffmpeg-core.so",
+   "libandroid.so",
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 192,
+  "static_jni_exports": 5,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/librxffmpeg-player.so",
+  "size": 128752,
+  "format": "ELF",
+  "sha256": "f384f39a0ad0ca81514ff545fbe0810c10099f124731e91c8873ddce1d14f885",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "94107d3c70dbd9f514c0b82774555398358eac91",
+  "needed": [
+   "librxffmpeg-core.so",
+   "libOpenSLES.so",
+   "libandroid.so",
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 201,
+  "static_jni_exports": 13,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libsophix.so",
+  "size": 73992,
+  "format": "ELF",
+  "sha256": "bd2a7209de70794fe2e8a6dfe0f5f698d3157371a0a4aaa085669a3f3b7eb4ff",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "2841f2c6cde98cc5b6b67a68cb8a0f57258b209d",
+  "needed": [
+   "liblog.so",
+   "libm.so",
+   "libstdc++.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 19,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libsurface_util_jni.so",
+  "size": 3440,
+  "format": "ELF",
+  "sha256": "f110d6a305fef5be5664d58cfb054366b002bc516066b4ec880c38a68428756f",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "9c4bf428125edd1dc6796d75abaa3aede32de4b5",
+  "needed": [
+   "libandroid.so",
+   "libm.so",
+   "libdl.so",
+   "libc.so"
+  ],
+  "symbols": 1,
+  "static_jni_exports": 1,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtensorflowlite_jni.so",
+  "size": 1707244,
+  "format": "ELF",
+  "sha256": "86ff20885f2a71695b64982f882be00bb98c6aa2786cc586abfb3d38768abf90",
+  "role": null,
+  "machine": "ARM",
+  "build_id": null,
+  "needed": [
+   "libm.so",
+   "libdl.so",
+   "liblog.so",
+   "libc.so"
+  ],
+  "symbols": 100,
+  "static_jni_exports": 47,
+  "jni_onload": false,
+  "has_debug_info": false
+ },
+ {
+  "member": "lib/armeabi-v7a/libtnet-3.1.14.so",
+  "size": 250244,
+  "format": "ELF",
+  "sha256": "de9f3f460bd8e1911f5a896185a89e9969379cab4cce8497581dbcf754bf3732",
+  "role": null,
+  "machine": "ARM",
+  "build_id": "7771e90b6fd86c315de60b69d7345b51ea069a3b",
+  "needed": [
+   "libz.so",
+   "liblog.so",
+   "libstdc++.so",
+   "libm.so",
+   "libc.so",
+   "libdl.so"
+  ],
+  "symbols": 122,
+  "static_jni_exports": 0,
+  "jni_onload": true,
+  "has_debug_info": false
+ }
+]

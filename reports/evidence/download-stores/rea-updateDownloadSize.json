@@ -1,0 +1,41 @@
+{
+  "subject": {
+    "name": "在线专栏.apk",
+    "digest": {
+      "sha256": "b571a8d19d808d3200b26689036145a1d0924c0170db035a2233725030b8ccce"
+    },
+    "local_path": "/home/jdz/Documents/ChatGPT/zy-reverse/中育apk/在线专栏.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "operation": "inspect_android_method",
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2560
+    },
+    "class_name": "com.zykj.download.work.DownloadFileWorkProxy",
+    "method": {
+      "name": "updateDownloadSize",
+      "reported_signature": "updateDownloadSize(v1.b, long, q2.d<? super o2.r>): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lv1/b;JLq2/d;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Nullable\n    public final Object updateDownloadSize(@NotNull v1.b bVar, long j4, @NotNull q2.d<? super r> dVar) {\n        bVar.j(j4);\n        this.appDataBase.E().a(bVar);\n        return r.f9764a;\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "evidence_id": "ev_b61f1260c867576780fb912e87b54db977a850f2d8b4fb535e546100afe6a58e"
+}

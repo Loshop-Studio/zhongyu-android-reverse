@@ -1,0 +1,161 @@
+{
+  "package": "com.zhongyukejiao.learningexpert",
+  "databases": [
+    {
+      "file": "bugly_db_",
+      "user_version": 16,
+      "objects": [
+        {
+          "type": "table",
+          "name": "android_metadata",
+          "table": "android_metadata",
+          "sql": "CREATE TABLE android_metadata (locale TEXT)"
+        },
+        {
+          "type": "table",
+          "name": "dl_1002",
+          "table": "dl_1002",
+          "sql": "CREATE TABLE dl_1002 (_id integer primary key autoincrement, _dUrl varchar(100), _sFile varchar(100), _sLen INTEGER, _tLen INTEGER, _MD5 varchar(100), _DLTIME INTEGER)"
+        },
+        {
+          "type": "table",
+          "name": "ge_1002",
+          "table": "ge_1002",
+          "sql": "CREATE TABLE ge_1002 (_id integer primary key autoincrement, _time INTEGER, _datas blob)"
+        },
+        {
+          "type": "table",
+          "name": "sqlite_sequence",
+          "table": "sqlite_sequence",
+          "sql": "CREATE TABLE sqlite_sequence(name,seq)"
+        },
+        {
+          "type": "table",
+          "name": "st_1002",
+          "table": "st_1002",
+          "sql": "CREATE TABLE st_1002 ( _id integer , _tp text , _tm int , _dt blob,primary key(_id,_tp ))"
+        },
+        {
+          "type": "table",
+          "name": "t_cr",
+          "table": "t_cr",
+          "sql": "CREATE TABLE t_cr ( _id INTEGER PRIMARY KEY , _tm int , _s1 text , _up int , _me int , _uc int , _dt blob )"
+        },
+        {
+          "type": "table",
+          "name": "t_lr",
+          "table": "t_lr",
+          "sql": "CREATE TABLE t_lr ( _id INTEGER PRIMARY KEY , _tp int , _tm int , _pc text , _th text , _dt blob )"
+        },
+        {
+          "type": "table",
+          "name": "t_pf",
+          "table": "t_pf",
+          "sql": "CREATE TABLE t_pf ( _id integer , _tp text , _tm int , _dt blob,primary key(_id,_tp ))"
+        },
+        {
+          "type": "table",
+          "name": "t_sla",
+          "table": "t_sla",
+          "sql": "CREATE TABLE t_sla ( _id TEXT NOT NULL , _tm INTEGER NOT NULL , _dt TEXT NOT NULL , PRIMARY KEY(_id) )"
+        },
+        {
+          "type": "table",
+          "name": "t_ui",
+          "table": "t_ui",
+          "sql": "CREATE TABLE t_ui ( _id INTEGER PRIMARY KEY , _tm int , _ut int , _tp int , _dt blob , _pc text )"
+        }
+      ]
+    },
+    {
+      "file": "database",
+      "user_version": 37,
+      "objects": [
+        {
+          "type": "table",
+          "name": "android_metadata",
+          "table": "android_metadata",
+          "sql": "CREATE TABLE android_metadata (locale TEXT)"
+        }
+      ]
+    },
+    {
+      "file": "tbsbeacon_db_0M300GVKSH1IMBEK",
+      "user_version": 30,
+      "objects": [
+        {
+          "type": "table",
+          "name": "android_metadata",
+          "table": "android_metadata",
+          "sql": "CREATE TABLE android_metadata (locale TEXT)"
+        },
+        {
+          "type": "table",
+          "name": "sqlite_sequence",
+          "table": "sqlite_sequence",
+          "sql": "CREATE TABLE sqlite_sequence(name,seq)"
+        },
+        {
+          "type": "table",
+          "name": "t_strategy",
+          "table": "t_strategy",
+          "sql": "CREATE TABLE t_strategy ( _id INTEGER PRIMARY KEY AUTOINCREMENT, _key int unique , _ut int , _datas blob)"
+        }
+      ]
+    },
+    {
+      "file": "tbsbeacon_db_com.zhongyukejiao.learningexpert",
+      "user_version": 1,
+      "objects": [
+        {
+          "type": "table",
+          "name": "android_metadata",
+          "table": "android_metadata",
+          "sql": "CREATE TABLE android_metadata (locale TEXT)"
+        },
+        {
+          "type": "table",
+          "name": "sqlite_sequence",
+          "table": "sqlite_sequence",
+          "sql": "CREATE TABLE sqlite_sequence(name,seq)"
+        },
+        {
+          "type": "table",
+          "name": "t_n_e",
+          "table": "t_n_e",
+          "sql": "CREATE TABLE t_n_e ( _id INTEGER PRIMARY KEY AUTOINCREMENT, _appKey text ,_time int ,_length int ,_data  blob)"
+        },
+        {
+          "type": "table",
+          "name": "t_r_e",
+          "table": "t_r_e",
+          "sql": "CREATE TABLE t_r_e ( _id INTEGER PRIMARY KEY AUTOINCREMENT, _appKey text ,_time int ,_length int ,_data  blob)"
+        }
+      ]
+    },
+    {
+      "file": "tes_db",
+      "user_version": 1,
+      "objects": [
+        {
+          "type": "table",
+          "name": "android_metadata",
+          "table": "android_metadata",
+          "sql": "CREATE TABLE android_metadata (locale TEXT)"
+        },
+        {
+          "type": "table",
+          "name": "plugins",
+          "table": "plugins",
+          "sql": "CREATE TABLE plugins ( ID INTEGER PRIMARY KEY autoincrement, title TEXT, url TEXT, iconUrl TEXT, packageName TEXT, appSubtype INTEGER, version TEXT, packageSize INTEGER, updateStatus INTEGER DEFAULT -1, updateUrl TEXT, updatePackageSize INTEGER,isInstall INTEGER DEFAULT 0,isNotice INTEGER  DEFAULT 1,isOpen INTEGER  DEFAULT 0,isforceupdate INTEGER  DEFAULT 0,location INTEGER DEFAULT 0, order_index INTEGER, extString1 TEXT,extString2 TEXT,extInteger1 INTEGER,signature TEXT, extString3 TEXT, extString4 TEXT, extInteger2 INTEGER,downPath TEXT DEFAULT NULL, installPath TEXT  DEFAULT NULL, unzipPath TEXT DEFAULT NULL, isZipFileUpdate INTEGER DEFAULT 0, installVersion TEXT  DEFAULT NULL, infofrom INTEGER DEFAULT 0, antihijackurl TEXT  DEFAULT NULL,needUpdate INTEGER DEFAULT 0 )"
+        },
+        {
+          "type": "table",
+          "name": "sqlite_sequence",
+          "table": "sqlite_sequence",
+          "sql": "CREATE TABLE sqlite_sequence(name,seq)"
+        }
+      ]
+    }
+  ]
+}

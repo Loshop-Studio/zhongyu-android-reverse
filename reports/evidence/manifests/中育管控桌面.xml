@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="10034"
+    android:versionName="1.0.34"
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    package="com.zykj.manage"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="28" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.MAIN" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+        </intent>
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <permission
+        android:name="com.zykj.manage.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.zykj.manage.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:label="获取登陆信息"
+        android:name="com.zykj.message.USER_INFO"
+        android:protectionLevel="0x0"
+        android:description="@ref/0x7f11001f" />
+
+    <application
+        android:theme="@ref/0x7f120012"
+        android:label="@ref/0x7f11001f"
+        android:icon="@ref/0x7f0e000b"
+        android:name="com.zykj.huiwei.launcher.app.App"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@ref/0x7f140000"
+        android:networkSecurityConfig="@ref/0x7f140004"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+        <activity
+            android:name="com.zykj.huiwei.launcher.ui.activity.CrashActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="0" />
+
+        <activity
+            android:name="com.zykj.huiwei.launcher.ui.MainActivity"
+            android:exported="true"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x22"
+            android:resumeWhilePausing="true"
+            android:resizeableActivity="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.zykj.launcher.login" />
+
+                <action
+                    android:name="com.zykj.launcher.home" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <action
+                    android:name="com.zykj.action.zykj.LOGIN" />
+
+                <category
+                    android:name="android.intent.category.HOME" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.zykj.huiwei.launcher.receiver.LogoutReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.zykj.action.zykj.LOGOUT" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.zykj.huiwei.launcher.GalleryFileProvider"
+            android:exported="false"
+            android:authorities="com.zykj.manage.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140002" />
+        </provider>
+
+        <service
+            android:name="com.zykj.huiwei.launcher.server.MyService"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.zykj.action.zykj.message.service" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.zykj.huiwei.launcher.server.MyFloatingToolService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.zykj.huiwei.launcher.ui.activity.FileActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:theme="@ref/0x7f12029f"
+            android:label="@ref/0x7f1101a6"
+            android:name="com.zykj.gallery.ui.share.ShareActivity"
+            android:exported="true"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <data
+                    android:mimeType="share/file" />
+
+                <action
+                    android:name="com.zykj.launcher.pickfile" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f12029f"
+            android:label="@ref/0x7f1101a5"
+            android:name="com.zykj.gallery.ui.activity.GalleryActivity"
+            android:exported="false"
+            android:screenOrientation="0" />
+
+        <service
+            android:name="cn.com.techvision.launchercore.internal.LauncherService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="cn.com.techvision.launcher.core.FileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140003" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f120004"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f120004"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity"
+            android:exported="false"
+            android:multiprocess="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <provider
+            android:name="com.blankj.utilcode.util.UtilsFileProvider"
+            android:exported="false"
+            android:authorities="com.zykj.manage.utilcode.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140006" />
+        </provider>
+
+        <service
+            android:name="com.blankj.utilcode.util.MessengerUtils$ServerService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.zykj.manage.messenger" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.lljjcoder.style.citylist.CityListSelectActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x31" />
+
+        <activity
+            android:name="com.lljjcoder.style.citythreelist.ProvinceActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x31" />
+
+        <activity
+            android:name="com.lljjcoder.style.citythreelist.CityActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x31" />
+
+        <activity
+            android:name="com.lljjcoder.style.citythreelist.AreaActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x31" />
+
+        <provider
+            android:name="com.xuexiang.xui.XUIInitProvider"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.zykj.manage.xui-init-provider" />
+
+        <activity
+            android:theme="@ref/0x7f1204fd"
+            android:name="com.xuexiang.xui.widget.imageview.preview.ui.PreviewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1204fd"
+            android:name="com.xuexiang.xui.widget.imageview.preview.ui.VideoPlayerActivity" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.zykj.manage.androidx-startup">
+
+            <meta-data
+                android:name="com.dylanc.longan.AppInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="okhttp3.internal.platform.PlatformInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@ref/0x7f050002"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@ref/0x7f050004"
+            android:exported="true"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@ref/0x7f050003"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@ref/0x7f050002"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.work.multiprocess.RemoteWorkManagerService"
+            android:exported="false" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f120361"
+            android:name="com.zykj.message.server.TransferActivity"
+            android:exported="true"
+            android:launchMode="3">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="com.zykj.action.zykj.message.service.awaken" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1202a0"
+            android:name="com.zykj.policy.ui.PolicyDetailActivity"
+            android:screenOrientation="0" />
+    </application>
+</manifest>

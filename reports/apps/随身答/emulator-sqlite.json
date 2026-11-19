@@ -1,0 +1,71 @@
+{
+  "package": "com.zykj.student.dialogue",
+  "databases": [
+    {
+      "file": "bugly_db_",
+      "user_version": 16,
+      "objects": [
+        {
+          "type": "table",
+          "name": "android_metadata",
+          "table": "android_metadata",
+          "sql": "CREATE TABLE android_metadata (locale TEXT)"
+        },
+        {
+          "type": "table",
+          "name": "dl_1002",
+          "table": "dl_1002",
+          "sql": "CREATE TABLE dl_1002 (_id integer primary key autoincrement, _dUrl varchar(100), _sFile varchar(100), _sLen INTEGER, _tLen INTEGER, _MD5 varchar(100), _DLTIME INTEGER)"
+        },
+        {
+          "type": "table",
+          "name": "ge_1002",
+          "table": "ge_1002",
+          "sql": "CREATE TABLE ge_1002 (_id integer primary key autoincrement, _time INTEGER, _datas blob)"
+        },
+        {
+          "type": "table",
+          "name": "sqlite_sequence",
+          "table": "sqlite_sequence",
+          "sql": "CREATE TABLE sqlite_sequence(name,seq)"
+        },
+        {
+          "type": "table",
+          "name": "st_1002",
+          "table": "st_1002",
+          "sql": "CREATE TABLE st_1002 ( _id integer , _tp text , _tm int , _dt blob,primary key(_id,_tp ))"
+        },
+        {
+          "type": "table",
+          "name": "t_cr",
+          "table": "t_cr",
+          "sql": "CREATE TABLE t_cr ( _id INTEGER PRIMARY KEY , _tm int , _s1 text , _up int , _me int , _uc int , _dt blob )"
+        },
+        {
+          "type": "table",
+          "name": "t_lr",
+          "table": "t_lr",
+          "sql": "CREATE TABLE t_lr ( _id INTEGER PRIMARY KEY , _tp int , _tm int , _pc text , _th text , _dt blob )"
+        },
+        {
+          "type": "table",
+          "name": "t_pf",
+          "table": "t_pf",
+          "sql": "CREATE TABLE t_pf ( _id integer , _tp text , _tm int , _dt blob,primary key(_id,_tp ))"
+        },
+        {
+          "type": "table",
+          "name": "t_sla",
+          "table": "t_sla",
+          "sql": "CREATE TABLE t_sla ( _id TEXT NOT NULL , _tm INTEGER NOT NULL , _dt TEXT NOT NULL , PRIMARY KEY(_id) )"
+        },
+        {
+          "type": "table",
+          "name": "t_ui",
+          "table": "t_ui",
+          "sql": "CREATE TABLE t_ui ( _id INTEGER PRIMARY KEY , _tm int , _ut int , _tp int , _dt blob , _pc text )"
+        }
+      ]
+    }
+  ]
+}

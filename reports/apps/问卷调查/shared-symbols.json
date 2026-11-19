@@ -1,0 +1,19 @@
+[
+ {
+  "dex_class": "b/d/a/d/c/b",
+  "candidate": "com/zykj/message/server/bean/Status",
+  "reference_apps": [
+   "中育云笔记",
+   "中育管控桌面",
+   "优课畅学",
+   "在线专栏",
+   "新测评",
+   "网阅联考",
+   "随身答"
+  ],
+  "sha256": "87542bc59429c8c05bf80a177477acf852d649dfd17f1e4175f879905b00f2df",
+  "distinct_literals": 3,
+  "framework_calls": 4,
+  "source": "android/问卷调查/smali/b/d/a/d/c/b.smali"
+ }
+]

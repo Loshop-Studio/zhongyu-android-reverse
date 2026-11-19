@@ -1,0 +1,3030 @@
+{
+ "app": "选课",
+ "apk_sha256": "765cd06135eb47fa90bc0acbdc1c6c1360e6045a1b56bc5601edcf0049233568",
+ "entries": 428,
+ "changed_paths": 271,
+ "files": [
+  {
+   "id": "0x7f010000",
+   "resource": "anim/abc_fade_in",
+   "config": "",
+   "apk_member": "res/anim/abc_fade_in.xml",
+   "source": "res/anim/abc_fade_in.xml"
+  },
+  {
+   "id": "0x7f010001",
+   "resource": "anim/abc_fade_out",
+   "config": "",
+   "apk_member": "res/anim/abc_fade_out.xml",
+   "source": "res/anim/abc_fade_out.xml"
+  },
+  {
+   "id": "0x7f010002",
+   "resource": "anim/abc_grow_fade_in_from_bottom",
+   "config": "",
+   "apk_member": "res/anim/abc_grow_fade_in_from_bottom.xml",
+   "source": "res/anim/abc_grow_fade_in_from_bottom.xml"
+  },
+  {
+   "id": "0x7f010003",
+   "resource": "anim/abc_popup_enter",
+   "config": "",
+   "apk_member": "res/anim/abc_popup_enter.xml",
+   "source": "res/anim/abc_popup_enter.xml"
+  },
+  {
+   "id": "0x7f010004",
+   "resource": "anim/abc_popup_exit",
+   "config": "",
+   "apk_member": "res/anim/abc_popup_exit.xml",
+   "source": "res/anim/abc_popup_exit.xml"
+  },
+  {
+   "id": "0x7f010005",
+   "resource": "anim/abc_shrink_fade_out_from_bottom",
+   "config": "",
+   "apk_member": "res/anim/abc_shrink_fade_out_from_bottom.xml",
+   "source": "res/anim/abc_shrink_fade_out_from_bottom.xml"
+  },
+  {
+   "id": "0x7f010006",
+   "resource": "anim/abc_slide_in_bottom",
+   "config": "",
+   "apk_member": "res/anim/abc_slide_in_bottom.xml",
+   "source": "res/anim/abc_slide_in_bottom.xml"
+  },
+  {
+   "id": "0x7f010007",
+   "resource": "anim/abc_slide_in_top",
+   "config": "",
+   "apk_member": "res/anim/abc_slide_in_top.xml",
+   "source": "res/anim/abc_slide_in_top.xml"
+  },
+  {
+   "id": "0x7f010008",
+   "resource": "anim/abc_slide_out_bottom",
+   "config": "",
+   "apk_member": "res/anim/abc_slide_out_bottom.xml",
+   "source": "res/anim/abc_slide_out_bottom.xml"
+  },
+  {
+   "id": "0x7f010009",
+   "resource": "anim/abc_slide_out_top",
+   "config": "",
+   "apk_member": "res/anim/abc_slide_out_top.xml",
+   "source": "res/anim/abc_slide_out_top.xml"
+  },
+  {
+   "id": "0x7f01000a",
+   "resource": "anim/abc_tooltip_enter",
+   "config": "",
+   "apk_member": "res/anim/abc_tooltip_enter.xml",
+   "source": "res/anim/abc_tooltip_enter.xml"
+  },
+  {
+   "id": "0x7f01000b",
+   "resource": "anim/abc_tooltip_exit",
+   "config": "",
+   "apk_member": "res/anim/abc_tooltip_exit.xml",
+   "source": "res/anim/abc_tooltip_exit.xml"
+  },
+  {
+   "id": "0x7f040000",
+   "resource": "color/abc_background_cache_hint_selector_material_dark",
+   "config": "",
+   "apk_member": "res/color/abc_background_cache_hint_selector_material_dark.xml",
+   "source": "res/color/abc_background_cache_hint_selector_material_dark.xml"
+  },
+  {
+   "id": "0x7f040001",
+   "resource": "color/abc_background_cache_hint_selector_material_light",
+   "config": "",
+   "apk_member": "res/color/abc_background_cache_hint_selector_material_light.xml",
+   "source": "res/color/abc_background_cache_hint_selector_material_light.xml"
+  },
+  {
+   "id": "0x7f040002",
+   "resource": "color/abc_btn_colored_borderless_text_material",
+   "config": "",
+   "apk_member": "res/color/abc_btn_colored_borderless_text_material.xml",
+   "source": "res/color/abc_btn_colored_borderless_text_material.xml"
+  },
+  {
+   "id": "0x7f040002",
+   "resource": "color/abc_btn_colored_borderless_text_material",
+   "config": "v21",
+   "apk_member": "res/color-v21/abc_btn_colored_borderless_text_material.xml",
+   "source": "res/color-v21/abc_btn_colored_borderless_text_material.xml"
+  },
+  {
+   "id": "0x7f040002",
+   "resource": "color/abc_btn_colored_borderless_text_material",
+   "config": "v23",
+   "apk_member": "res/color-v23/abc_btn_colored_borderless_text_material.xml",
+   "source": "res/color-v23/abc_btn_colored_borderless_text_material.xml"
+  },
+  {
+   "id": "0x7f040003",
+   "resource": "color/abc_btn_colored_text_material",
+   "config": "",
+   "apk_member": "res/color/abc_btn_colored_text_material.xml",
+   "source": "res/color/abc_btn_colored_text_material.xml"
+  },
+  {
+   "id": "0x7f040003",
+   "resource": "color/abc_btn_colored_text_material",
+   "config": "v23",
+   "apk_member": "res/color-v23/abc_btn_colored_text_material.xml",
+   "source": "res/color-v23/abc_btn_colored_text_material.xml"
+  },
+  {
+   "id": "0x7f040004",
+   "resource": "color/abc_color_highlight_material",
+   "config": "v23",
+   "apk_member": "res/color-v23/abc_color_highlight_material.xml",
+   "source": "res/color-v23/abc_color_highlight_material.xml"
+  },
+  {
+   "id": "0x7f040005",
+   "resource": "color/abc_hint_foreground_material_dark",
+   "config": "",
+   "apk_member": "res/color/abc_hint_foreground_material_dark.xml",
+   "source": "res/color/abc_hint_foreground_material_dark.xml"
+  },
+  {
+   "id": "0x7f040006",
+   "resource": "color/abc_hint_foreground_material_light",
+   "config": "",
+   "apk_member": "res/color/abc_hint_foreground_material_light.xml",
+   "source": "res/color/abc_hint_foreground_material_light.xml"
+  },
+  {
+   "id": "0x7f040008",
+   "resource": "color/abc_primary_text_disable_only_material_dark",
+   "config": "",
+   "apk_member": "res/color/abc_primary_text_disable_only_material_dark.xml",
+   "source": "res/color/abc_primary_text_disable_only_material_dark.xml"
+  },
+  {
+   "id": "0x7f040009",
+   "resource": "color/abc_primary_text_disable_only_material_light",
+   "config": "",
+   "apk_member": "res/color/abc_primary_text_disable_only_material_light.xml",
+   "source": "res/color/abc_primary_text_disable_only_material_light.xml"
+  },
+  {
+   "id": "0x7f04000a",
+   "resource": "color/abc_primary_text_material_dark",
+   "config": "",
+   "apk_member": "res/color/abc_primary_text_material_dark.xml",
+   "source": "res/color/abc_primary_text_material_dark.xml"
+  },
+  {
+   "id": "0x7f04000b",
+   "resource": "color/abc_primary_text_material_light",
+   "config": "",
+   "apk_member": "res/color/abc_primary_text_material_light.xml",
+   "source": "res/color/abc_primary_text_material_light.xml"
+  },
+  {
+   "id": "0x7f04000c",
+   "resource": "color/abc_search_url_text",
+   "config": "",
+   "apk_member": "res/color/abc_search_url_text.xml",
+   "source": "res/color/abc_search_url_text.xml"
+  },
+  {
+   "id": "0x7f040010",
+   "resource": "color/abc_secondary_text_material_dark",
+   "config": "",
+   "apk_member": "res/color/abc_secondary_text_material_dark.xml",
+   "source": "res/color/abc_secondary_text_material_dark.xml"
+  },
+  {
+   "id": "0x7f040011",
+   "resource": "color/abc_secondary_text_material_light",
+   "config": "",
+   "apk_member": "res/color/abc_secondary_text_material_light.xml",
+   "source": "res/color/abc_secondary_text_material_light.xml"
+  },
+  {
+   "id": "0x7f040012",
+   "resource": "color/abc_tint_btn_checkable",
+   "config": "",
+   "apk_member": "res/color/abc_tint_btn_checkable.xml",
+   "source": "res/color/abc_tint_btn_checkable.xml"
+  },
+  {
+   "id": "0x7f040012",
+   "resource": "color/abc_tint_btn_checkable",
+   "config": "v23",
+   "apk_member": "res/color-v23/abc_tint_btn_checkable.xml",
+   "source": "res/color-v23/abc_tint_btn_checkable.xml"
+  },
+  {
+   "id": "0x7f040013",
+   "resource": "color/abc_tint_default",
+   "config": "",
+   "apk_member": "res/color/abc_tint_default.xml",
+   "source": "res/color/abc_tint_default.xml"
+  },
+  {
+   "id": "0x7f040013",
+   "resource": "color/abc_tint_default",
+   "config": "v23",
+   "apk_member": "res/color-v23/abc_tint_default.xml",
+   "source": "res/color-v23/abc_tint_default.xml"
+  },
+  {
+   "id": "0x7f040014",
+   "resource": "color/abc_tint_edittext",
+   "config": "",
+   "apk_member": "res/color/abc_tint_edittext.xml",
+   "source": "res/color/abc_tint_edittext.xml"
+  },
+  {
+   "id": "0x7f040014",
+   "resource": "color/abc_tint_edittext",
+   "config": "v23",
+   "apk_member": "res/color-v23/abc_tint_edittext.xml",
+   "source": "res/color-v23/abc_tint_edittext.xml"
+  },
+  {
+   "id": "0x7f040015",
+   "resource": "color/abc_tint_seek_thumb",
+   "config": "",
+   "apk_member": "res/color/abc_tint_seek_thumb.xml",
+   "source": "res/color/abc_tint_seek_thumb.xml"
+  },
+  {
+   "id": "0x7f040015",
+   "resource": "color/abc_tint_seek_thumb",
+   "config": "v23",
+   "apk_member": "res/color-v23/abc_tint_seek_thumb.xml",
+   "source": "res/color-v23/abc_tint_seek_thumb.xml"
+  },
+  {
+   "id": "0x7f040016",
+   "resource": "color/abc_tint_spinner",
+   "config": "",
+   "apk_member": "res/color/abc_tint_spinner.xml",
+   "source": "res/color/abc_tint_spinner.xml"
+  },
+  {
+   "id": "0x7f040016",
+   "resource": "color/abc_tint_spinner",
+   "config": "v23",
+   "apk_member": "res/color-v23/abc_tint_spinner.xml",
+   "source": "res/color-v23/abc_tint_spinner.xml"
+  },
+  {
+   "id": "0x7f040017",
+   "resource": "color/abc_tint_switch_track",
+   "config": "",
+   "apk_member": "res/color/abc_tint_switch_track.xml",
+   "source": "res/color/abc_tint_switch_track.xml"
+  },
+  {
+   "id": "0x7f040017",
+   "resource": "color/abc_tint_switch_track",
+   "config": "v23",
+   "apk_member": "res/color-v23/abc_tint_switch_track.xml",
+   "source": "res/color-v23/abc_tint_switch_track.xml"
+  },
+  {
+   "id": "0x7f04005a",
+   "resource": "color/switch_thumb_material_dark",
+   "config": "",
+   "apk_member": "res/color/switch_thumb_material_dark.xml",
+   "source": "res/color/switch_thumb_material_dark.xml"
+  },
+  {
+   "id": "0x7f04005b",
+   "resource": "color/switch_thumb_material_light",
+   "config": "",
+   "apk_member": "res/color/switch_thumb_material_light.xml",
+   "source": "res/color/switch_thumb_material_light.xml"
+  },
+  {
+   "id": "0x7f060000",
+   "resource": "drawable/$ic_launcher_foreground__0",
+   "config": "anydpi-v24",
+   "apk_member": "res/drawable-anydpi-v24/$ic_launcher_foreground__0.xml",
+   "source": "res/drawable-anydpi-v24/$ic_launcher_foreground__0.xml"
+  },
+  {
+   "id": "0x7f060001",
+   "resource": "drawable/abc_ab_share_pack_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",
+   "source": "res/drawable-hdpi/abc_ab_share_pack_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060001",
+   "resource": "drawable/abc_ab_share_pack_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",
+   "source": "res/drawable-mdpi/abc_ab_share_pack_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060001",
+   "resource": "drawable/abc_ab_share_pack_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",
+   "source": "res/drawable-xhdpi/abc_ab_share_pack_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060001",
+   "resource": "drawable/abc_ab_share_pack_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",
+   "source": "res/drawable-xxhdpi/abc_ab_share_pack_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060002",
+   "resource": "drawable/abc_action_bar_item_background_material",
+   "config": "v21",
+   "apk_member": "res/drawable-v21/abc_action_bar_item_background_material.xml",
+   "source": "res/drawable-v21/abc_action_bar_item_background_material.xml"
+  },
+  {
+   "id": "0x7f060003",
+   "resource": "drawable/abc_btn_borderless_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_btn_borderless_material.xml",
+   "source": "res/drawable/abc_btn_borderless_material.xml"
+  },
+  {
+   "id": "0x7f060004",
+   "resource": "drawable/abc_btn_check_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_btn_check_material.xml",
+   "source": "res/drawable/abc_btn_check_material.xml"
+  },
+  {
+   "id": "0x7f060005",
+   "resource": "drawable/abc_btn_check_to_on_mtrl_000",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+   "source": "res/drawable-hdpi/abc_btn_check_to_on_mtrl_000.png"
+  },
+  {
+   "id": "0x7f060005",
+   "resource": "drawable/abc_btn_check_to_on_mtrl_000",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+   "source": "res/drawable-mdpi/abc_btn_check_to_on_mtrl_000.png"
+  },
+  {
+   "id": "0x7f060005",
+   "resource": "drawable/abc_btn_check_to_on_mtrl_000",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+   "source": "res/drawable-xhdpi/abc_btn_check_to_on_mtrl_000.png"
+  },
+  {
+   "id": "0x7f060005",
+   "resource": "drawable/abc_btn_check_to_on_mtrl_000",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+   "source": "res/drawable-xxhdpi/abc_btn_check_to_on_mtrl_000.png"
+  },
+  {
+   "id": "0x7f060005",
+   "resource": "drawable/abc_btn_check_to_on_mtrl_000",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+   "source": "res/drawable-xxxhdpi/abc_btn_check_to_on_mtrl_000.png"
+  },
+  {
+   "id": "0x7f060006",
+   "resource": "drawable/abc_btn_check_to_on_mtrl_015",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+   "source": "res/drawable-hdpi/abc_btn_check_to_on_mtrl_015.png"
+  },
+  {
+   "id": "0x7f060006",
+   "resource": "drawable/abc_btn_check_to_on_mtrl_015",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+   "source": "res/drawable-mdpi/abc_btn_check_to_on_mtrl_015.png"
+  },
+  {
+   "id": "0x7f060006",
+   "resource": "drawable/abc_btn_check_to_on_mtrl_015",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+   "source": "res/drawable-xhdpi/abc_btn_check_to_on_mtrl_015.png"
+  },
+  {
+   "id": "0x7f060006",
+   "resource": "drawable/abc_btn_check_to_on_mtrl_015",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+   "source": "res/drawable-xxhdpi/abc_btn_check_to_on_mtrl_015.png"
+  },
+  {
+   "id": "0x7f060006",
+   "resource": "drawable/abc_btn_check_to_on_mtrl_015",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+   "source": "res/drawable-xxxhdpi/abc_btn_check_to_on_mtrl_015.png"
+  },
+  {
+   "id": "0x7f060007",
+   "resource": "drawable/abc_btn_colored_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_btn_colored_material.xml",
+   "source": "res/drawable/abc_btn_colored_material.xml"
+  },
+  {
+   "id": "0x7f060007",
+   "resource": "drawable/abc_btn_colored_material",
+   "config": "v21",
+   "apk_member": "res/drawable-v21/abc_btn_colored_material.xml",
+   "source": "res/drawable-v21/abc_btn_colored_material.xml"
+  },
+  {
+   "id": "0x7f060008",
+   "resource": "drawable/abc_btn_default_mtrl_shape",
+   "config": "",
+   "apk_member": "res/drawable/abc_btn_default_mtrl_shape.xml",
+   "source": "res/drawable/abc_btn_default_mtrl_shape.xml"
+  },
+  {
+   "id": "0x7f060009",
+   "resource": "drawable/abc_btn_radio_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_btn_radio_material.xml",
+   "source": "res/drawable/abc_btn_radio_material.xml"
+  },
+  {
+   "id": "0x7f06000a",
+   "resource": "drawable/abc_btn_radio_to_on_mtrl_000",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+   "source": "res/drawable-hdpi/abc_btn_radio_to_on_mtrl_000.png"
+  },
+  {
+   "id": "0x7f06000a",
+   "resource": "drawable/abc_btn_radio_to_on_mtrl_000",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+   "source": "res/drawable-mdpi/abc_btn_radio_to_on_mtrl_000.png"
+  },
+  {
+   "id": "0x7f06000a",
+   "resource": "drawable/abc_btn_radio_to_on_mtrl_000",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+   "source": "res/drawable-xhdpi/abc_btn_radio_to_on_mtrl_000.png"
+  },
+  {
+   "id": "0x7f06000a",
+   "resource": "drawable/abc_btn_radio_to_on_mtrl_000",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+   "source": "res/drawable-xxhdpi/abc_btn_radio_to_on_mtrl_000.png"
+  },
+  {
+   "id": "0x7f06000a",
+   "resource": "drawable/abc_btn_radio_to_on_mtrl_000",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+   "source": "res/drawable-xxxhdpi/abc_btn_radio_to_on_mtrl_000.png"
+  },
+  {
+   "id": "0x7f06000b",
+   "resource": "drawable/abc_btn_radio_to_on_mtrl_015",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+   "source": "res/drawable-hdpi/abc_btn_radio_to_on_mtrl_015.png"
+  },
+  {
+   "id": "0x7f06000b",
+   "resource": "drawable/abc_btn_radio_to_on_mtrl_015",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+   "source": "res/drawable-mdpi/abc_btn_radio_to_on_mtrl_015.png"
+  },
+  {
+   "id": "0x7f06000b",
+   "resource": "drawable/abc_btn_radio_to_on_mtrl_015",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+   "source": "res/drawable-xhdpi/abc_btn_radio_to_on_mtrl_015.png"
+  },
+  {
+   "id": "0x7f06000b",
+   "resource": "drawable/abc_btn_radio_to_on_mtrl_015",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+   "source": "res/drawable-xxhdpi/abc_btn_radio_to_on_mtrl_015.png"
+  },
+  {
+   "id": "0x7f06000b",
+   "resource": "drawable/abc_btn_radio_to_on_mtrl_015",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+   "source": "res/drawable-xxxhdpi/abc_btn_radio_to_on_mtrl_015.png"
+  },
+  {
+   "id": "0x7f06000c",
+   "resource": "drawable/abc_btn_switch_to_on_mtrl_00001",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+   "source": "res/drawable-hdpi/abc_btn_switch_to_on_mtrl_00001.9.png"
+  },
+  {
+   "id": "0x7f06000c",
+   "resource": "drawable/abc_btn_switch_to_on_mtrl_00001",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+   "source": "res/drawable-mdpi/abc_btn_switch_to_on_mtrl_00001.9.png"
+  },
+  {
+   "id": "0x7f06000c",
+   "resource": "drawable/abc_btn_switch_to_on_mtrl_00001",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+   "source": "res/drawable-xhdpi/abc_btn_switch_to_on_mtrl_00001.9.png"
+  },
+  {
+   "id": "0x7f06000c",
+   "resource": "drawable/abc_btn_switch_to_on_mtrl_00001",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+   "source": "res/drawable-xxhdpi/abc_btn_switch_to_on_mtrl_00001.9.png"
+  },
+  {
+   "id": "0x7f06000c",
+   "resource": "drawable/abc_btn_switch_to_on_mtrl_00001",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+   "source": "res/drawable-xxxhdpi/abc_btn_switch_to_on_mtrl_00001.9.png"
+  },
+  {
+   "id": "0x7f06000d",
+   "resource": "drawable/abc_btn_switch_to_on_mtrl_00012",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+   "source": "res/drawable-hdpi/abc_btn_switch_to_on_mtrl_00012.9.png"
+  },
+  {
+   "id": "0x7f06000d",
+   "resource": "drawable/abc_btn_switch_to_on_mtrl_00012",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+   "source": "res/drawable-mdpi/abc_btn_switch_to_on_mtrl_00012.9.png"
+  },
+  {
+   "id": "0x7f06000d",
+   "resource": "drawable/abc_btn_switch_to_on_mtrl_00012",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+   "source": "res/drawable-xhdpi/abc_btn_switch_to_on_mtrl_00012.9.png"
+  },
+  {
+   "id": "0x7f06000d",
+   "resource": "drawable/abc_btn_switch_to_on_mtrl_00012",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+   "source": "res/drawable-xxhdpi/abc_btn_switch_to_on_mtrl_00012.9.png"
+  },
+  {
+   "id": "0x7f06000d",
+   "resource": "drawable/abc_btn_switch_to_on_mtrl_00012",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+   "source": "res/drawable-xxxhdpi/abc_btn_switch_to_on_mtrl_00012.9.png"
+  },
+  {
+   "id": "0x7f06000e",
+   "resource": "drawable/abc_cab_background_internal_bg",
+   "config": "",
+   "apk_member": "res/drawable/abc_cab_background_internal_bg.xml",
+   "source": "res/drawable/abc_cab_background_internal_bg.xml"
+  },
+  {
+   "id": "0x7f06000f",
+   "resource": "drawable/abc_cab_background_top_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_cab_background_top_material.xml",
+   "source": "res/drawable/abc_cab_background_top_material.xml"
+  },
+  {
+   "id": "0x7f060010",
+   "resource": "drawable/abc_cab_background_top_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
+   "source": "res/drawable-hdpi/abc_cab_background_top_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060010",
+   "resource": "drawable/abc_cab_background_top_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
+   "source": "res/drawable-mdpi/abc_cab_background_top_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060010",
+   "resource": "drawable/abc_cab_background_top_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
+   "source": "res/drawable-xhdpi/abc_cab_background_top_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060010",
+   "resource": "drawable/abc_cab_background_top_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
+   "source": "res/drawable-xxhdpi/abc_cab_background_top_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060011",
+   "resource": "drawable/abc_control_background_material",
+   "config": "v23",
+   "apk_member": "res/drawable-v23/abc_control_background_material.xml",
+   "source": "res/drawable-v23/abc_control_background_material.xml"
+  },
+  {
+   "id": "0x7f060012",
+   "resource": "drawable/abc_dialog_material_background",
+   "config": "",
+   "apk_member": "res/drawable/abc_dialog_material_background.xml",
+   "source": "res/drawable/abc_dialog_material_background.xml"
+  },
+  {
+   "id": "0x7f060012",
+   "resource": "drawable/abc_dialog_material_background",
+   "config": "v21",
+   "apk_member": "res/drawable-v21/abc_dialog_material_background.xml",
+   "source": "res/drawable-v21/abc_dialog_material_background.xml"
+  },
+  {
+   "id": "0x7f060012",
+   "resource": "drawable/abc_dialog_material_background",
+   "config": "watch-v20",
+   "apk_member": "res/drawable-watch-v20/abc_dialog_material_background.xml",
+   "source": "res/drawable-watch-v20/abc_dialog_material_background.xml"
+  },
+  {
+   "id": "0x7f060013",
+   "resource": "drawable/abc_edit_text_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_edit_text_material.xml",
+   "source": "res/drawable/abc_edit_text_material.xml"
+  },
+  {
+   "id": "0x7f060013",
+   "resource": "drawable/abc_edit_text_material",
+   "config": "v21",
+   "apk_member": "res/drawable-v21/abc_edit_text_material.xml",
+   "source": "res/drawable-v21/abc_edit_text_material.xml"
+  },
+  {
+   "id": "0x7f060014",
+   "resource": "drawable/abc_ic_ab_back_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_ic_ab_back_material.xml",
+   "source": "res/drawable/abc_ic_ab_back_material.xml"
+  },
+  {
+   "id": "0x7f060015",
+   "resource": "drawable/abc_ic_arrow_drop_right_black_24dp",
+   "config": "",
+   "apk_member": "res/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+   "source": "res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+  },
+  {
+   "id": "0x7f060016",
+   "resource": "drawable/abc_ic_clear_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_ic_clear_material.xml",
+   "source": "res/drawable/abc_ic_clear_material.xml"
+  },
+  {
+   "id": "0x7f060017",
+   "resource": "drawable/abc_ic_commit_search_api_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
+   "source": "res/drawable-hdpi/abc_ic_commit_search_api_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f060017",
+   "resource": "drawable/abc_ic_commit_search_api_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
+   "source": "res/drawable-mdpi/abc_ic_commit_search_api_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f060017",
+   "resource": "drawable/abc_ic_commit_search_api_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
+   "source": "res/drawable-xhdpi/abc_ic_commit_search_api_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f060017",
+   "resource": "drawable/abc_ic_commit_search_api_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
+   "source": "res/drawable-xxhdpi/abc_ic_commit_search_api_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f060018",
+   "resource": "drawable/abc_ic_go_search_api_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_ic_go_search_api_material.xml",
+   "source": "res/drawable/abc_ic_go_search_api_material.xml"
+  },
+  {
+   "id": "0x7f060019",
+   "resource": "drawable/abc_ic_menu_copy_mtrl_am_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
+   "source": "res/drawable-hdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f060019",
+   "resource": "drawable/abc_ic_menu_copy_mtrl_am_alpha",
+   "config": "ldrtl-hdpi",
+   "apk_member": "res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+   "source": "res/drawable-ldrtl-hdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f060019",
+   "resource": "drawable/abc_ic_menu_copy_mtrl_am_alpha",
+   "config": "ldrtl-mdpi",
+   "apk_member": "res/drawable-ldrtl-mdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+   "source": "res/drawable-ldrtl-mdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f060019",
+   "resource": "drawable/abc_ic_menu_copy_mtrl_am_alpha",
+   "config": "ldrtl-xhdpi",
+   "apk_member": "res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+   "source": "res/drawable-ldrtl-xhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f060019",
+   "resource": "drawable/abc_ic_menu_copy_mtrl_am_alpha",
+   "config": "ldrtl-xxhdpi",
+   "apk_member": "res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+   "source": "res/drawable-ldrtl-xxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f060019",
+   "resource": "drawable/abc_ic_menu_copy_mtrl_am_alpha",
+   "config": "ldrtl-xxxhdpi",
+   "apk_member": "res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+   "source": "res/drawable-ldrtl-xxxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f060019",
+   "resource": "drawable/abc_ic_menu_copy_mtrl_am_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
+   "source": "res/drawable-mdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f060019",
+   "resource": "drawable/abc_ic_menu_copy_mtrl_am_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
+   "source": "res/drawable-xhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f060019",
+   "resource": "drawable/abc_ic_menu_copy_mtrl_am_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
+   "source": "res/drawable-xxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f060019",
+   "resource": "drawable/abc_ic_menu_copy_mtrl_am_alpha",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
+   "source": "res/drawable-xxxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f06001a",
+   "resource": "drawable/abc_ic_menu_cut_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+   "source": "res/drawable-hdpi/abc_ic_menu_cut_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001a",
+   "resource": "drawable/abc_ic_menu_cut_mtrl_alpha",
+   "config": "ldrtl-hdpi",
+   "apk_member": "res/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+   "source": "res/drawable-ldrtl-hdpi/abc_ic_menu_cut_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001a",
+   "resource": "drawable/abc_ic_menu_cut_mtrl_alpha",
+   "config": "ldrtl-mdpi",
+   "apk_member": "res/drawable-ldrtl-mdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+   "source": "res/drawable-ldrtl-mdpi/abc_ic_menu_cut_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001a",
+   "resource": "drawable/abc_ic_menu_cut_mtrl_alpha",
+   "config": "ldrtl-xhdpi",
+   "apk_member": "res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+   "source": "res/drawable-ldrtl-xhdpi/abc_ic_menu_cut_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001a",
+   "resource": "drawable/abc_ic_menu_cut_mtrl_alpha",
+   "config": "ldrtl-xxhdpi",
+   "apk_member": "res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+   "source": "res/drawable-ldrtl-xxhdpi/abc_ic_menu_cut_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001a",
+   "resource": "drawable/abc_ic_menu_cut_mtrl_alpha",
+   "config": "ldrtl-xxxhdpi",
+   "apk_member": "res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+   "source": "res/drawable-ldrtl-xxxhdpi/abc_ic_menu_cut_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001a",
+   "resource": "drawable/abc_ic_menu_cut_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+   "source": "res/drawable-mdpi/abc_ic_menu_cut_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001a",
+   "resource": "drawable/abc_ic_menu_cut_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+   "source": "res/drawable-xhdpi/abc_ic_menu_cut_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001a",
+   "resource": "drawable/abc_ic_menu_cut_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+   "source": "res/drawable-xxhdpi/abc_ic_menu_cut_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001a",
+   "resource": "drawable/abc_ic_menu_cut_mtrl_alpha",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+   "source": "res/drawable-xxxhdpi/abc_ic_menu_cut_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001b",
+   "resource": "drawable/abc_ic_menu_overflow_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_ic_menu_overflow_material.xml",
+   "source": "res/drawable/abc_ic_menu_overflow_material.xml"
+  },
+  {
+   "id": "0x7f06001c",
+   "resource": "drawable/abc_ic_menu_paste_mtrl_am_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
+   "source": "res/drawable-hdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f06001c",
+   "resource": "drawable/abc_ic_menu_paste_mtrl_am_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
+   "source": "res/drawable-mdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f06001c",
+   "resource": "drawable/abc_ic_menu_paste_mtrl_am_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
+   "source": "res/drawable-xhdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f06001c",
+   "resource": "drawable/abc_ic_menu_paste_mtrl_am_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
+   "source": "res/drawable-xxhdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f06001c",
+   "resource": "drawable/abc_ic_menu_paste_mtrl_am_alpha",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
+   "source": "res/drawable-xxxhdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
+  },
+  {
+   "id": "0x7f06001d",
+   "resource": "drawable/abc_ic_menu_selectall_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
+   "source": "res/drawable-hdpi/abc_ic_menu_selectall_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001d",
+   "resource": "drawable/abc_ic_menu_selectall_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
+   "source": "res/drawable-mdpi/abc_ic_menu_selectall_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001d",
+   "resource": "drawable/abc_ic_menu_selectall_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
+   "source": "res/drawable-xhdpi/abc_ic_menu_selectall_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001d",
+   "resource": "drawable/abc_ic_menu_selectall_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
+   "source": "res/drawable-xxhdpi/abc_ic_menu_selectall_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001d",
+   "resource": "drawable/abc_ic_menu_selectall_mtrl_alpha",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
+   "source": "res/drawable-xxxhdpi/abc_ic_menu_selectall_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001e",
+   "resource": "drawable/abc_ic_menu_share_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+   "source": "res/drawable-hdpi/abc_ic_menu_share_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001e",
+   "resource": "drawable/abc_ic_menu_share_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+   "source": "res/drawable-mdpi/abc_ic_menu_share_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001e",
+   "resource": "drawable/abc_ic_menu_share_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+   "source": "res/drawable-xhdpi/abc_ic_menu_share_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001e",
+   "resource": "drawable/abc_ic_menu_share_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+   "source": "res/drawable-xxhdpi/abc_ic_menu_share_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001e",
+   "resource": "drawable/abc_ic_menu_share_mtrl_alpha",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+   "source": "res/drawable-xxxhdpi/abc_ic_menu_share_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06001f",
+   "resource": "drawable/abc_ic_search_api_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_ic_search_api_material.xml",
+   "source": "res/drawable/abc_ic_search_api_material.xml"
+  },
+  {
+   "id": "0x7f060020",
+   "resource": "drawable/abc_ic_star_black_16dp",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ic_star_black_16dp.png",
+   "source": "res/drawable-hdpi/abc_ic_star_black_16dp.png"
+  },
+  {
+   "id": "0x7f060020",
+   "resource": "drawable/abc_ic_star_black_16dp",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ic_star_black_16dp.png",
+   "source": "res/drawable-mdpi/abc_ic_star_black_16dp.png"
+  },
+  {
+   "id": "0x7f060020",
+   "resource": "drawable/abc_ic_star_black_16dp",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png",
+   "source": "res/drawable-xhdpi/abc_ic_star_black_16dp.png"
+  },
+  {
+   "id": "0x7f060020",
+   "resource": "drawable/abc_ic_star_black_16dp",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ic_star_black_16dp.png",
+   "source": "res/drawable-xxhdpi/abc_ic_star_black_16dp.png"
+  },
+  {
+   "id": "0x7f060020",
+   "resource": "drawable/abc_ic_star_black_16dp",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png",
+   "source": "res/drawable-xxxhdpi/abc_ic_star_black_16dp.png"
+  },
+  {
+   "id": "0x7f060021",
+   "resource": "drawable/abc_ic_star_black_36dp",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ic_star_black_36dp.png",
+   "source": "res/drawable-hdpi/abc_ic_star_black_36dp.png"
+  },
+  {
+   "id": "0x7f060021",
+   "resource": "drawable/abc_ic_star_black_36dp",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ic_star_black_36dp.png",
+   "source": "res/drawable-mdpi/abc_ic_star_black_36dp.png"
+  },
+  {
+   "id": "0x7f060021",
+   "resource": "drawable/abc_ic_star_black_36dp",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ic_star_black_36dp.png",
+   "source": "res/drawable-xhdpi/abc_ic_star_black_36dp.png"
+  },
+  {
+   "id": "0x7f060021",
+   "resource": "drawable/abc_ic_star_black_36dp",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ic_star_black_36dp.png",
+   "source": "res/drawable-xxhdpi/abc_ic_star_black_36dp.png"
+  },
+  {
+   "id": "0x7f060021",
+   "resource": "drawable/abc_ic_star_black_36dp",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png",
+   "source": "res/drawable-xxxhdpi/abc_ic_star_black_36dp.png"
+  },
+  {
+   "id": "0x7f060022",
+   "resource": "drawable/abc_ic_star_black_48dp",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ic_star_black_48dp.png",
+   "source": "res/drawable-hdpi/abc_ic_star_black_48dp.png"
+  },
+  {
+   "id": "0x7f060022",
+   "resource": "drawable/abc_ic_star_black_48dp",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ic_star_black_48dp.png",
+   "source": "res/drawable-mdpi/abc_ic_star_black_48dp.png"
+  },
+  {
+   "id": "0x7f060022",
+   "resource": "drawable/abc_ic_star_black_48dp",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ic_star_black_48dp.png",
+   "source": "res/drawable-xhdpi/abc_ic_star_black_48dp.png"
+  },
+  {
+   "id": "0x7f060022",
+   "resource": "drawable/abc_ic_star_black_48dp",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ic_star_black_48dp.png",
+   "source": "res/drawable-xxhdpi/abc_ic_star_black_48dp.png"
+  },
+  {
+   "id": "0x7f060022",
+   "resource": "drawable/abc_ic_star_black_48dp",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png",
+   "source": "res/drawable-xxxhdpi/abc_ic_star_black_48dp.png"
+  },
+  {
+   "id": "0x7f060023",
+   "resource": "drawable/abc_ic_star_half_black_16dp",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png",
+   "source": "res/drawable-hdpi/abc_ic_star_half_black_16dp.png"
+  },
+  {
+   "id": "0x7f060023",
+   "resource": "drawable/abc_ic_star_half_black_16dp",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png",
+   "source": "res/drawable-mdpi/abc_ic_star_half_black_16dp.png"
+  },
+  {
+   "id": "0x7f060023",
+   "resource": "drawable/abc_ic_star_half_black_16dp",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ic_star_half_black_16dp.png",
+   "source": "res/drawable-xhdpi/abc_ic_star_half_black_16dp.png"
+  },
+  {
+   "id": "0x7f060023",
+   "resource": "drawable/abc_ic_star_half_black_16dp",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png",
+   "source": "res/drawable-xxhdpi/abc_ic_star_half_black_16dp.png"
+  },
+  {
+   "id": "0x7f060023",
+   "resource": "drawable/abc_ic_star_half_black_16dp",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png",
+   "source": "res/drawable-xxxhdpi/abc_ic_star_half_black_16dp.png"
+  },
+  {
+   "id": "0x7f060024",
+   "resource": "drawable/abc_ic_star_half_black_36dp",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ic_star_half_black_36dp.png",
+   "source": "res/drawable-hdpi/abc_ic_star_half_black_36dp.png"
+  },
+  {
+   "id": "0x7f060024",
+   "resource": "drawable/abc_ic_star_half_black_36dp",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png",
+   "source": "res/drawable-mdpi/abc_ic_star_half_black_36dp.png"
+  },
+  {
+   "id": "0x7f060024",
+   "resource": "drawable/abc_ic_star_half_black_36dp",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png",
+   "source": "res/drawable-xhdpi/abc_ic_star_half_black_36dp.png"
+  },
+  {
+   "id": "0x7f060024",
+   "resource": "drawable/abc_ic_star_half_black_36dp",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ic_star_half_black_36dp.png",
+   "source": "res/drawable-xxhdpi/abc_ic_star_half_black_36dp.png"
+  },
+  {
+   "id": "0x7f060024",
+   "resource": "drawable/abc_ic_star_half_black_36dp",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png",
+   "source": "res/drawable-xxxhdpi/abc_ic_star_half_black_36dp.png"
+  },
+  {
+   "id": "0x7f060025",
+   "resource": "drawable/abc_ic_star_half_black_48dp",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_ic_star_half_black_48dp.png",
+   "source": "res/drawable-hdpi/abc_ic_star_half_black_48dp.png"
+  },
+  {
+   "id": "0x7f060025",
+   "resource": "drawable/abc_ic_star_half_black_48dp",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png",
+   "source": "res/drawable-mdpi/abc_ic_star_half_black_48dp.png"
+  },
+  {
+   "id": "0x7f060025",
+   "resource": "drawable/abc_ic_star_half_black_48dp",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_ic_star_half_black_48dp.png",
+   "source": "res/drawable-xhdpi/abc_ic_star_half_black_48dp.png"
+  },
+  {
+   "id": "0x7f060025",
+   "resource": "drawable/abc_ic_star_half_black_48dp",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_ic_star_half_black_48dp.png",
+   "source": "res/drawable-xxhdpi/abc_ic_star_half_black_48dp.png"
+  },
+  {
+   "id": "0x7f060025",
+   "resource": "drawable/abc_ic_star_half_black_48dp",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png",
+   "source": "res/drawable-xxxhdpi/abc_ic_star_half_black_48dp.png"
+  },
+  {
+   "id": "0x7f060026",
+   "resource": "drawable/abc_ic_voice_search_api_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_ic_voice_search_api_material.xml",
+   "source": "res/drawable/abc_ic_voice_search_api_material.xml"
+  },
+  {
+   "id": "0x7f060027",
+   "resource": "drawable/abc_item_background_holo_dark",
+   "config": "",
+   "apk_member": "res/drawable/abc_item_background_holo_dark.xml",
+   "source": "res/drawable/abc_item_background_holo_dark.xml"
+  },
+  {
+   "id": "0x7f060028",
+   "resource": "drawable/abc_item_background_holo_light",
+   "config": "",
+   "apk_member": "res/drawable/abc_item_background_holo_light.xml",
+   "source": "res/drawable/abc_item_background_holo_light.xml"
+  },
+  {
+   "id": "0x7f060029",
+   "resource": "drawable/abc_list_divider_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_list_divider_material.xml",
+   "source": "res/drawable/abc_list_divider_material.xml"
+  },
+  {
+   "id": "0x7f060029",
+   "resource": "drawable/abc_list_divider_material",
+   "config": "v21",
+   "apk_member": "res/drawable-v21/abc_list_divider_material.xml",
+   "source": "res/drawable-v21/abc_list_divider_material.xml"
+  },
+  {
+   "id": "0x7f06002a",
+   "resource": "drawable/abc_list_divider_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png",
+   "source": "res/drawable-hdpi/abc_list_divider_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06002a",
+   "resource": "drawable/abc_list_divider_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png",
+   "source": "res/drawable-mdpi/abc_list_divider_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06002a",
+   "resource": "drawable/abc_list_divider_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png",
+   "source": "res/drawable-xhdpi/abc_list_divider_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06002a",
+   "resource": "drawable/abc_list_divider_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png",
+   "source": "res/drawable-xxhdpi/abc_list_divider_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06002b",
+   "resource": "drawable/abc_list_focused_holo",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_list_focused_holo.9.png",
+   "source": "res/drawable-hdpi/abc_list_focused_holo.9.png"
+  },
+  {
+   "id": "0x7f06002b",
+   "resource": "drawable/abc_list_focused_holo",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_list_focused_holo.9.png",
+   "source": "res/drawable-mdpi/abc_list_focused_holo.9.png"
+  },
+  {
+   "id": "0x7f06002b",
+   "resource": "drawable/abc_list_focused_holo",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_list_focused_holo.9.png",
+   "source": "res/drawable-xhdpi/abc_list_focused_holo.9.png"
+  },
+  {
+   "id": "0x7f06002b",
+   "resource": "drawable/abc_list_focused_holo",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png",
+   "source": "res/drawable-xxhdpi/abc_list_focused_holo.9.png"
+  },
+  {
+   "id": "0x7f06002c",
+   "resource": "drawable/abc_list_longpressed_holo",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png",
+   "source": "res/drawable-hdpi/abc_list_longpressed_holo.9.png"
+  },
+  {
+   "id": "0x7f06002c",
+   "resource": "drawable/abc_list_longpressed_holo",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png",
+   "source": "res/drawable-mdpi/abc_list_longpressed_holo.9.png"
+  },
+  {
+   "id": "0x7f06002c",
+   "resource": "drawable/abc_list_longpressed_holo",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png",
+   "source": "res/drawable-xhdpi/abc_list_longpressed_holo.9.png"
+  },
+  {
+   "id": "0x7f06002c",
+   "resource": "drawable/abc_list_longpressed_holo",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png",
+   "source": "res/drawable-xxhdpi/abc_list_longpressed_holo.9.png"
+  },
+  {
+   "id": "0x7f06002d",
+   "resource": "drawable/abc_list_pressed_holo_dark",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png",
+   "source": "res/drawable-hdpi/abc_list_pressed_holo_dark.9.png"
+  },
+  {
+   "id": "0x7f06002d",
+   "resource": "drawable/abc_list_pressed_holo_dark",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png",
+   "source": "res/drawable-mdpi/abc_list_pressed_holo_dark.9.png"
+  },
+  {
+   "id": "0x7f06002d",
+   "resource": "drawable/abc_list_pressed_holo_dark",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png",
+   "source": "res/drawable-xhdpi/abc_list_pressed_holo_dark.9.png"
+  },
+  {
+   "id": "0x7f06002d",
+   "resource": "drawable/abc_list_pressed_holo_dark",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png",
+   "source": "res/drawable-xxhdpi/abc_list_pressed_holo_dark.9.png"
+  },
+  {
+   "id": "0x7f06002e",
+   "resource": "drawable/abc_list_pressed_holo_light",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png",
+   "source": "res/drawable-hdpi/abc_list_pressed_holo_light.9.png"
+  },
+  {
+   "id": "0x7f06002e",
+   "resource": "drawable/abc_list_pressed_holo_light",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png",
+   "source": "res/drawable-mdpi/abc_list_pressed_holo_light.9.png"
+  },
+  {
+   "id": "0x7f06002e",
+   "resource": "drawable/abc_list_pressed_holo_light",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png",
+   "source": "res/drawable-xhdpi/abc_list_pressed_holo_light.9.png"
+  },
+  {
+   "id": "0x7f06002e",
+   "resource": "drawable/abc_list_pressed_holo_light",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png",
+   "source": "res/drawable-xxhdpi/abc_list_pressed_holo_light.9.png"
+  },
+  {
+   "id": "0x7f06002f",
+   "resource": "drawable/abc_list_selector_background_transition_holo_dark",
+   "config": "",
+   "apk_member": "res/drawable/abc_list_selector_background_transition_holo_dark.xml",
+   "source": "res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+  },
+  {
+   "id": "0x7f060030",
+   "resource": "drawable/abc_list_selector_background_transition_holo_light",
+   "config": "",
+   "apk_member": "res/drawable/abc_list_selector_background_transition_holo_light.xml",
+   "source": "res/drawable/abc_list_selector_background_transition_holo_light.xml"
+  },
+  {
+   "id": "0x7f060031",
+   "resource": "drawable/abc_list_selector_disabled_holo_dark",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
+   "source": "res/drawable-hdpi/abc_list_selector_disabled_holo_dark.9.png"
+  },
+  {
+   "id": "0x7f060031",
+   "resource": "drawable/abc_list_selector_disabled_holo_dark",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
+   "source": "res/drawable-mdpi/abc_list_selector_disabled_holo_dark.9.png"
+  },
+  {
+   "id": "0x7f060031",
+   "resource": "drawable/abc_list_selector_disabled_holo_dark",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
+   "source": "res/drawable-xhdpi/abc_list_selector_disabled_holo_dark.9.png"
+  },
+  {
+   "id": "0x7f060031",
+   "resource": "drawable/abc_list_selector_disabled_holo_dark",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
+   "source": "res/drawable-xxhdpi/abc_list_selector_disabled_holo_dark.9.png"
+  },
+  {
+   "id": "0x7f060032",
+   "resource": "drawable/abc_list_selector_disabled_holo_light",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png",
+   "source": "res/drawable-hdpi/abc_list_selector_disabled_holo_light.9.png"
+  },
+  {
+   "id": "0x7f060032",
+   "resource": "drawable/abc_list_selector_disabled_holo_light",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png",
+   "source": "res/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png"
+  },
+  {
+   "id": "0x7f060032",
+   "resource": "drawable/abc_list_selector_disabled_holo_light",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png",
+   "source": "res/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png"
+  },
+  {
+   "id": "0x7f060032",
+   "resource": "drawable/abc_list_selector_disabled_holo_light",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png",
+   "source": "res/drawable-xxhdpi/abc_list_selector_disabled_holo_light.9.png"
+  },
+  {
+   "id": "0x7f060033",
+   "resource": "drawable/abc_list_selector_holo_dark",
+   "config": "",
+   "apk_member": "res/drawable/abc_list_selector_holo_dark.xml",
+   "source": "res/drawable/abc_list_selector_holo_dark.xml"
+  },
+  {
+   "id": "0x7f060034",
+   "resource": "drawable/abc_list_selector_holo_light",
+   "config": "",
+   "apk_member": "res/drawable/abc_list_selector_holo_light.xml",
+   "source": "res/drawable/abc_list_selector_holo_light.xml"
+  },
+  {
+   "id": "0x7f060035",
+   "resource": "drawable/abc_menu_hardkey_panel_mtrl_mult",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
+   "source": "res/drawable-hdpi/abc_menu_hardkey_panel_mtrl_mult.9.png"
+  },
+  {
+   "id": "0x7f060035",
+   "resource": "drawable/abc_menu_hardkey_panel_mtrl_mult",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
+   "source": "res/drawable-mdpi/abc_menu_hardkey_panel_mtrl_mult.9.png"
+  },
+  {
+   "id": "0x7f060035",
+   "resource": "drawable/abc_menu_hardkey_panel_mtrl_mult",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
+   "source": "res/drawable-xhdpi/abc_menu_hardkey_panel_mtrl_mult.9.png"
+  },
+  {
+   "id": "0x7f060035",
+   "resource": "drawable/abc_menu_hardkey_panel_mtrl_mult",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
+   "source": "res/drawable-xxhdpi/abc_menu_hardkey_panel_mtrl_mult.9.png"
+  },
+  {
+   "id": "0x7f060036",
+   "resource": "drawable/abc_popup_background_mtrl_mult",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png",
+   "source": "res/drawable-hdpi/abc_popup_background_mtrl_mult.9.png"
+  },
+  {
+   "id": "0x7f060036",
+   "resource": "drawable/abc_popup_background_mtrl_mult",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png",
+   "source": "res/drawable-mdpi/abc_popup_background_mtrl_mult.9.png"
+  },
+  {
+   "id": "0x7f060036",
+   "resource": "drawable/abc_popup_background_mtrl_mult",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png",
+   "source": "res/drawable-xhdpi/abc_popup_background_mtrl_mult.9.png"
+  },
+  {
+   "id": "0x7f060036",
+   "resource": "drawable/abc_popup_background_mtrl_mult",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png",
+   "source": "res/drawable-xxhdpi/abc_popup_background_mtrl_mult.9.png"
+  },
+  {
+   "id": "0x7f060037",
+   "resource": "drawable/abc_ratingbar_indicator_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_ratingbar_indicator_material.xml",
+   "source": "res/drawable/abc_ratingbar_indicator_material.xml"
+  },
+  {
+   "id": "0x7f060037",
+   "resource": "drawable/abc_ratingbar_indicator_material",
+   "config": "v21",
+   "apk_member": "res/drawable-v21/abc_ratingbar_indicator_material.xml",
+   "source": "res/drawable-v21/abc_ratingbar_indicator_material.xml"
+  },
+  {
+   "id": "0x7f060038",
+   "resource": "drawable/abc_ratingbar_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_ratingbar_material.xml",
+   "source": "res/drawable/abc_ratingbar_material.xml"
+  },
+  {
+   "id": "0x7f060038",
+   "resource": "drawable/abc_ratingbar_material",
+   "config": "v21",
+   "apk_member": "res/drawable-v21/abc_ratingbar_material.xml",
+   "source": "res/drawable-v21/abc_ratingbar_material.xml"
+  },
+  {
+   "id": "0x7f060039",
+   "resource": "drawable/abc_ratingbar_small_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_ratingbar_small_material.xml",
+   "source": "res/drawable/abc_ratingbar_small_material.xml"
+  },
+  {
+   "id": "0x7f060039",
+   "resource": "drawable/abc_ratingbar_small_material",
+   "config": "v21",
+   "apk_member": "res/drawable-v21/abc_ratingbar_small_material.xml",
+   "source": "res/drawable-v21/abc_ratingbar_small_material.xml"
+  },
+  {
+   "id": "0x7f06003a",
+   "resource": "drawable/abc_scrubber_control_off_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
+   "source": "res/drawable-hdpi/abc_scrubber_control_off_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06003a",
+   "resource": "drawable/abc_scrubber_control_off_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
+   "source": "res/drawable-mdpi/abc_scrubber_control_off_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06003a",
+   "resource": "drawable/abc_scrubber_control_off_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
+   "source": "res/drawable-xhdpi/abc_scrubber_control_off_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06003a",
+   "resource": "drawable/abc_scrubber_control_off_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
+   "source": "res/drawable-xxhdpi/abc_scrubber_control_off_mtrl_alpha.png"
+  },
+  {
+   "id": "0x7f06003b",
+   "resource": "drawable/abc_scrubber_control_to_pressed_mtrl_000",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+   "source": "res/drawable-hdpi/abc_scrubber_control_to_pressed_mtrl_000.png"
+  },
+  {
+   "id": "0x7f06003b",
+   "resource": "drawable/abc_scrubber_control_to_pressed_mtrl_000",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+   "source": "res/drawable-mdpi/abc_scrubber_control_to_pressed_mtrl_000.png"
+  },
+  {
+   "id": "0x7f06003b",
+   "resource": "drawable/abc_scrubber_control_to_pressed_mtrl_000",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+   "source": "res/drawable-xhdpi/abc_scrubber_control_to_pressed_mtrl_000.png"
+  },
+  {
+   "id": "0x7f06003b",
+   "resource": "drawable/abc_scrubber_control_to_pressed_mtrl_000",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+   "source": "res/drawable-xxhdpi/abc_scrubber_control_to_pressed_mtrl_000.png"
+  },
+  {
+   "id": "0x7f06003b",
+   "resource": "drawable/abc_scrubber_control_to_pressed_mtrl_000",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+   "source": "res/drawable-xxxhdpi/abc_scrubber_control_to_pressed_mtrl_000.png"
+  },
+  {
+   "id": "0x7f06003c",
+   "resource": "drawable/abc_scrubber_control_to_pressed_mtrl_005",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
+   "source": "res/drawable-hdpi/abc_scrubber_control_to_pressed_mtrl_005.png"
+  },
+  {
+   "id": "0x7f06003c",
+   "resource": "drawable/abc_scrubber_control_to_pressed_mtrl_005",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
+   "source": "res/drawable-mdpi/abc_scrubber_control_to_pressed_mtrl_005.png"
+  },
+  {
+   "id": "0x7f06003c",
+   "resource": "drawable/abc_scrubber_control_to_pressed_mtrl_005",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
+   "source": "res/drawable-xhdpi/abc_scrubber_control_to_pressed_mtrl_005.png"
+  },
+  {
+   "id": "0x7f06003c",
+   "resource": "drawable/abc_scrubber_control_to_pressed_mtrl_005",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
+   "source": "res/drawable-xxhdpi/abc_scrubber_control_to_pressed_mtrl_005.png"
+  },
+  {
+   "id": "0x7f06003c",
+   "resource": "drawable/abc_scrubber_control_to_pressed_mtrl_005",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
+   "source": "res/drawable-xxxhdpi/abc_scrubber_control_to_pressed_mtrl_005.png"
+  },
+  {
+   "id": "0x7f06003d",
+   "resource": "drawable/abc_scrubber_primary_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png",
+   "source": "res/drawable-hdpi/abc_scrubber_primary_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06003d",
+   "resource": "drawable/abc_scrubber_primary_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png",
+   "source": "res/drawable-mdpi/abc_scrubber_primary_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06003d",
+   "resource": "drawable/abc_scrubber_primary_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png",
+   "source": "res/drawable-xhdpi/abc_scrubber_primary_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06003d",
+   "resource": "drawable/abc_scrubber_primary_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png",
+   "source": "res/drawable-xxhdpi/abc_scrubber_primary_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06003e",
+   "resource": "drawable/abc_scrubber_track_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
+   "source": "res/drawable-hdpi/abc_scrubber_track_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06003e",
+   "resource": "drawable/abc_scrubber_track_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
+   "source": "res/drawable-mdpi/abc_scrubber_track_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06003e",
+   "resource": "drawable/abc_scrubber_track_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
+   "source": "res/drawable-xhdpi/abc_scrubber_track_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06003e",
+   "resource": "drawable/abc_scrubber_track_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
+   "source": "res/drawable-xxhdpi/abc_scrubber_track_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06003f",
+   "resource": "drawable/abc_seekbar_thumb_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_seekbar_thumb_material.xml",
+   "source": "res/drawable/abc_seekbar_thumb_material.xml"
+  },
+  {
+   "id": "0x7f060040",
+   "resource": "drawable/abc_seekbar_tick_mark_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_seekbar_tick_mark_material.xml",
+   "source": "res/drawable/abc_seekbar_tick_mark_material.xml"
+  },
+  {
+   "id": "0x7f060041",
+   "resource": "drawable/abc_seekbar_track_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_seekbar_track_material.xml",
+   "source": "res/drawable/abc_seekbar_track_material.xml"
+  },
+  {
+   "id": "0x7f060042",
+   "resource": "drawable/abc_spinner_mtrl_am_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
+   "source": "res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png"
+  },
+  {
+   "id": "0x7f060042",
+   "resource": "drawable/abc_spinner_mtrl_am_alpha",
+   "config": "ldrtl-hdpi",
+   "apk_member": "res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+   "source": "res/drawable-ldrtl-hdpi/abc_spinner_mtrl_am_alpha.9.png"
+  },
+  {
+   "id": "0x7f060042",
+   "resource": "drawable/abc_spinner_mtrl_am_alpha",
+   "config": "ldrtl-mdpi",
+   "apk_member": "res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+   "source": "res/drawable-ldrtl-mdpi/abc_spinner_mtrl_am_alpha.9.png"
+  },
+  {
+   "id": "0x7f060042",
+   "resource": "drawable/abc_spinner_mtrl_am_alpha",
+   "config": "ldrtl-xhdpi",
+   "apk_member": "res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+   "source": "res/drawable-ldrtl-xhdpi/abc_spinner_mtrl_am_alpha.9.png"
+  },
+  {
+   "id": "0x7f060042",
+   "resource": "drawable/abc_spinner_mtrl_am_alpha",
+   "config": "ldrtl-xxhdpi",
+   "apk_member": "res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+   "source": "res/drawable-ldrtl-xxhdpi/abc_spinner_mtrl_am_alpha.9.png"
+  },
+  {
+   "id": "0x7f060042",
+   "resource": "drawable/abc_spinner_mtrl_am_alpha",
+   "config": "ldrtl-xxxhdpi",
+   "apk_member": "res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+   "source": "res/drawable-ldrtl-xxxhdpi/abc_spinner_mtrl_am_alpha.9.png"
+  },
+  {
+   "id": "0x7f060042",
+   "resource": "drawable/abc_spinner_mtrl_am_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
+   "source": "res/drawable-mdpi/abc_spinner_mtrl_am_alpha.9.png"
+  },
+  {
+   "id": "0x7f060042",
+   "resource": "drawable/abc_spinner_mtrl_am_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
+   "source": "res/drawable-xhdpi/abc_spinner_mtrl_am_alpha.9.png"
+  },
+  {
+   "id": "0x7f060042",
+   "resource": "drawable/abc_spinner_mtrl_am_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
+   "source": "res/drawable-xxhdpi/abc_spinner_mtrl_am_alpha.9.png"
+  },
+  {
+   "id": "0x7f060042",
+   "resource": "drawable/abc_spinner_mtrl_am_alpha",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
+   "source": "res/drawable-xxxhdpi/abc_spinner_mtrl_am_alpha.9.png"
+  },
+  {
+   "id": "0x7f060043",
+   "resource": "drawable/abc_spinner_textfield_background_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_spinner_textfield_background_material.xml",
+   "source": "res/drawable/abc_spinner_textfield_background_material.xml"
+  },
+  {
+   "id": "0x7f060044",
+   "resource": "drawable/abc_switch_thumb_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_switch_thumb_material.xml",
+   "source": "res/drawable/abc_switch_thumb_material.xml"
+  },
+  {
+   "id": "0x7f060045",
+   "resource": "drawable/abc_switch_track_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png",
+   "source": "res/drawable-hdpi/abc_switch_track_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060045",
+   "resource": "drawable/abc_switch_track_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png",
+   "source": "res/drawable-mdpi/abc_switch_track_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060045",
+   "resource": "drawable/abc_switch_track_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
+   "source": "res/drawable-xhdpi/abc_switch_track_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060045",
+   "resource": "drawable/abc_switch_track_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
+   "source": "res/drawable-xxhdpi/abc_switch_track_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060045",
+   "resource": "drawable/abc_switch_track_mtrl_alpha",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
+   "source": "res/drawable-xxxhdpi/abc_switch_track_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060046",
+   "resource": "drawable/abc_tab_indicator_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_tab_indicator_material.xml",
+   "source": "res/drawable/abc_tab_indicator_material.xml"
+  },
+  {
+   "id": "0x7f060047",
+   "resource": "drawable/abc_tab_indicator_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
+   "source": "res/drawable-hdpi/abc_tab_indicator_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060047",
+   "resource": "drawable/abc_tab_indicator_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
+   "source": "res/drawable-mdpi/abc_tab_indicator_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060047",
+   "resource": "drawable/abc_tab_indicator_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
+   "source": "res/drawable-xhdpi/abc_tab_indicator_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060047",
+   "resource": "drawable/abc_tab_indicator_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
+   "source": "res/drawable-xxhdpi/abc_tab_indicator_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060047",
+   "resource": "drawable/abc_tab_indicator_mtrl_alpha",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
+   "source": "res/drawable-xxxhdpi/abc_tab_indicator_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060048",
+   "resource": "drawable/abc_text_cursor_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_text_cursor_material.xml",
+   "source": "res/drawable/abc_text_cursor_material.xml"
+  },
+  {
+   "id": "0x7f060049",
+   "resource": "drawable/abc_text_select_handle_left_mtrl_dark",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_text_select_handle_left_mtrl_dark.png",
+   "source": "res/drawable-hdpi/abc_text_select_handle_left_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f060049",
+   "resource": "drawable/abc_text_select_handle_left_mtrl_dark",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_text_select_handle_left_mtrl_dark.png",
+   "source": "res/drawable-mdpi/abc_text_select_handle_left_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f060049",
+   "resource": "drawable/abc_text_select_handle_left_mtrl_dark",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_text_select_handle_left_mtrl_dark.png",
+   "source": "res/drawable-xhdpi/abc_text_select_handle_left_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f060049",
+   "resource": "drawable/abc_text_select_handle_left_mtrl_dark",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png",
+   "source": "res/drawable-xxhdpi/abc_text_select_handle_left_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f060049",
+   "resource": "drawable/abc_text_select_handle_left_mtrl_dark",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png",
+   "source": "res/drawable-xxxhdpi/abc_text_select_handle_left_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f06004a",
+   "resource": "drawable/abc_text_select_handle_left_mtrl_light",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_text_select_handle_left_mtrl_light.png",
+   "source": "res/drawable-hdpi/abc_text_select_handle_left_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004a",
+   "resource": "drawable/abc_text_select_handle_left_mtrl_light",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_text_select_handle_left_mtrl_light.png",
+   "source": "res/drawable-mdpi/abc_text_select_handle_left_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004a",
+   "resource": "drawable/abc_text_select_handle_left_mtrl_light",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_text_select_handle_left_mtrl_light.png",
+   "source": "res/drawable-xhdpi/abc_text_select_handle_left_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004a",
+   "resource": "drawable/abc_text_select_handle_left_mtrl_light",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_text_select_handle_left_mtrl_light.png",
+   "source": "res/drawable-xxhdpi/abc_text_select_handle_left_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004a",
+   "resource": "drawable/abc_text_select_handle_left_mtrl_light",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_light.png",
+   "source": "res/drawable-xxxhdpi/abc_text_select_handle_left_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004b",
+   "resource": "drawable/abc_text_select_handle_middle_mtrl_dark",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_dark.png",
+   "source": "res/drawable-hdpi/abc_text_select_handle_middle_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f06004b",
+   "resource": "drawable/abc_text_select_handle_middle_mtrl_dark",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_text_select_handle_middle_mtrl_dark.png",
+   "source": "res/drawable-mdpi/abc_text_select_handle_middle_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f06004b",
+   "resource": "drawable/abc_text_select_handle_middle_mtrl_dark",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_dark.png",
+   "source": "res/drawable-xhdpi/abc_text_select_handle_middle_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f06004b",
+   "resource": "drawable/abc_text_select_handle_middle_mtrl_dark",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_dark.png",
+   "source": "res/drawable-xxhdpi/abc_text_select_handle_middle_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f06004c",
+   "resource": "drawable/abc_text_select_handle_middle_mtrl_light",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_light.png",
+   "source": "res/drawable-hdpi/abc_text_select_handle_middle_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004c",
+   "resource": "drawable/abc_text_select_handle_middle_mtrl_light",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_text_select_handle_middle_mtrl_light.png",
+   "source": "res/drawable-mdpi/abc_text_select_handle_middle_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004c",
+   "resource": "drawable/abc_text_select_handle_middle_mtrl_light",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_light.png",
+   "source": "res/drawable-xhdpi/abc_text_select_handle_middle_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004c",
+   "resource": "drawable/abc_text_select_handle_middle_mtrl_light",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_light.png",
+   "source": "res/drawable-xxhdpi/abc_text_select_handle_middle_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004d",
+   "resource": "drawable/abc_text_select_handle_right_mtrl_dark",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_text_select_handle_right_mtrl_dark.png",
+   "source": "res/drawable-hdpi/abc_text_select_handle_right_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f06004d",
+   "resource": "drawable/abc_text_select_handle_right_mtrl_dark",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_text_select_handle_right_mtrl_dark.png",
+   "source": "res/drawable-mdpi/abc_text_select_handle_right_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f06004d",
+   "resource": "drawable/abc_text_select_handle_right_mtrl_dark",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_text_select_handle_right_mtrl_dark.png",
+   "source": "res/drawable-xhdpi/abc_text_select_handle_right_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f06004d",
+   "resource": "drawable/abc_text_select_handle_right_mtrl_dark",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_text_select_handle_right_mtrl_dark.png",
+   "source": "res/drawable-xxhdpi/abc_text_select_handle_right_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f06004d",
+   "resource": "drawable/abc_text_select_handle_right_mtrl_dark",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_dark.png",
+   "source": "res/drawable-xxxhdpi/abc_text_select_handle_right_mtrl_dark.png"
+  },
+  {
+   "id": "0x7f06004e",
+   "resource": "drawable/abc_text_select_handle_right_mtrl_light",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_text_select_handle_right_mtrl_light.png",
+   "source": "res/drawable-hdpi/abc_text_select_handle_right_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004e",
+   "resource": "drawable/abc_text_select_handle_right_mtrl_light",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_text_select_handle_right_mtrl_light.png",
+   "source": "res/drawable-mdpi/abc_text_select_handle_right_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004e",
+   "resource": "drawable/abc_text_select_handle_right_mtrl_light",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_text_select_handle_right_mtrl_light.png",
+   "source": "res/drawable-xhdpi/abc_text_select_handle_right_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004e",
+   "resource": "drawable/abc_text_select_handle_right_mtrl_light",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_text_select_handle_right_mtrl_light.png",
+   "source": "res/drawable-xxhdpi/abc_text_select_handle_right_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004e",
+   "resource": "drawable/abc_text_select_handle_right_mtrl_light",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png",
+   "source": "res/drawable-xxxhdpi/abc_text_select_handle_right_mtrl_light.png"
+  },
+  {
+   "id": "0x7f06004f",
+   "resource": "drawable/abc_textfield_activated_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
+   "source": "res/drawable-hdpi/abc_textfield_activated_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06004f",
+   "resource": "drawable/abc_textfield_activated_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
+   "source": "res/drawable-mdpi/abc_textfield_activated_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06004f",
+   "resource": "drawable/abc_textfield_activated_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
+   "source": "res/drawable-xhdpi/abc_textfield_activated_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f06004f",
+   "resource": "drawable/abc_textfield_activated_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
+   "source": "res/drawable-xxhdpi/abc_textfield_activated_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060050",
+   "resource": "drawable/abc_textfield_default_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png",
+   "source": "res/drawable-hdpi/abc_textfield_default_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060050",
+   "resource": "drawable/abc_textfield_default_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png",
+   "source": "res/drawable-mdpi/abc_textfield_default_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060050",
+   "resource": "drawable/abc_textfield_default_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png",
+   "source": "res/drawable-xhdpi/abc_textfield_default_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060050",
+   "resource": "drawable/abc_textfield_default_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png",
+   "source": "res/drawable-xxhdpi/abc_textfield_default_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060051",
+   "resource": "drawable/abc_textfield_search_activated_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
+   "source": "res/drawable-hdpi/abc_textfield_search_activated_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060051",
+   "resource": "drawable/abc_textfield_search_activated_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
+   "source": "res/drawable-mdpi/abc_textfield_search_activated_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060051",
+   "resource": "drawable/abc_textfield_search_activated_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
+   "source": "res/drawable-xhdpi/abc_textfield_search_activated_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060051",
+   "resource": "drawable/abc_textfield_search_activated_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
+   "source": "res/drawable-xxhdpi/abc_textfield_search_activated_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060052",
+   "resource": "drawable/abc_textfield_search_default_mtrl_alpha",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png",
+   "source": "res/drawable-hdpi/abc_textfield_search_default_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060052",
+   "resource": "drawable/abc_textfield_search_default_mtrl_alpha",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png",
+   "source": "res/drawable-mdpi/abc_textfield_search_default_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060052",
+   "resource": "drawable/abc_textfield_search_default_mtrl_alpha",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png",
+   "source": "res/drawable-xhdpi/abc_textfield_search_default_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060052",
+   "resource": "drawable/abc_textfield_search_default_mtrl_alpha",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png",
+   "source": "res/drawable-xxhdpi/abc_textfield_search_default_mtrl_alpha.9.png"
+  },
+  {
+   "id": "0x7f060053",
+   "resource": "drawable/abc_textfield_search_material",
+   "config": "",
+   "apk_member": "res/drawable/abc_textfield_search_material.xml",
+   "source": "res/drawable/abc_textfield_search_material.xml"
+  },
+  {
+   "id": "0x7f060054",
+   "resource": "drawable/abc_vector_test",
+   "config": "",
+   "apk_member": "res/drawable/abc_vector_test.xml",
+   "source": "res/drawable/abc_vector_test.xml"
+  },
+  {
+   "id": "0x7f060055",
+   "resource": "drawable/ic_launcher_background",
+   "config": "anydpi-v21",
+   "apk_member": "res/drawable-anydpi-v21/ic_launcher_background.xml",
+   "source": "res/drawable-anydpi-v21/ic_launcher_background.xml"
+  },
+  {
+   "id": "0x7f060055",
+   "resource": "drawable/ic_launcher_background",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/ic_launcher_background.png",
+   "source": "res/drawable-hdpi/ic_launcher_background.png"
+  },
+  {
+   "id": "0x7f060055",
+   "resource": "drawable/ic_launcher_background",
+   "config": "ldpi",
+   "apk_member": "res/drawable-ldpi-v4/ic_launcher_background.png",
+   "source": "res/drawable-ldpi/ic_launcher_background.png"
+  },
+  {
+   "id": "0x7f060055",
+   "resource": "drawable/ic_launcher_background",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/ic_launcher_background.png",
+   "source": "res/drawable-mdpi/ic_launcher_background.png"
+  },
+  {
+   "id": "0x7f060055",
+   "resource": "drawable/ic_launcher_background",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/ic_launcher_background.png",
+   "source": "res/drawable-xhdpi/ic_launcher_background.png"
+  },
+  {
+   "id": "0x7f060055",
+   "resource": "drawable/ic_launcher_background",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/ic_launcher_background.png",
+   "source": "res/drawable-xxhdpi/ic_launcher_background.png"
+  },
+  {
+   "id": "0x7f060055",
+   "resource": "drawable/ic_launcher_background",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/ic_launcher_background.png",
+   "source": "res/drawable-xxxhdpi/ic_launcher_background.png"
+  },
+  {
+   "id": "0x7f060056",
+   "resource": "drawable/ic_launcher_foreground",
+   "config": "anydpi-v24",
+   "apk_member": "res/drawable-anydpi-v24/ic_launcher_foreground.xml",
+   "source": "res/drawable-anydpi-v24/ic_launcher_foreground.xml"
+  },
+  {
+   "id": "0x7f060057",
+   "resource": "drawable/icon_person_center",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/icon_person_center.png",
+   "source": "res/drawable-hdpi/icon_person_center.png"
+  },
+  {
+   "id": "0x7f060057",
+   "resource": "drawable/icon_person_center",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/icon_person_center.png",
+   "source": "res/drawable-mdpi/icon_person_center.png"
+  },
+  {
+   "id": "0x7f060057",
+   "resource": "drawable/icon_person_center",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/icon_person_center.png",
+   "source": "res/drawable-xhdpi/icon_person_center.png"
+  },
+  {
+   "id": "0x7f060057",
+   "resource": "drawable/icon_person_center",
+   "config": "xxhdpi",
+   "apk_member": "res/drawable-xxhdpi-v4/icon_person_center.png",
+   "source": "res/drawable-xxhdpi/icon_person_center.png"
+  },
+  {
+   "id": "0x7f060057",
+   "resource": "drawable/icon_person_center",
+   "config": "xxxhdpi",
+   "apk_member": "res/drawable-xxxhdpi-v4/icon_person_center.png",
+   "source": "res/drawable-xxxhdpi/icon_person_center.png"
+  },
+  {
+   "id": "0x7f060058",
+   "resource": "drawable/notification_action_background",
+   "config": "v21",
+   "apk_member": "res/drawable-v21/notification_action_background.xml",
+   "source": "res/drawable-v21/notification_action_background.xml"
+  },
+  {
+   "id": "0x7f060059",
+   "resource": "drawable/notification_bg",
+   "config": "",
+   "apk_member": "res/drawable/notification_bg.xml",
+   "source": "res/drawable/notification_bg.xml"
+  },
+  {
+   "id": "0x7f06005a",
+   "resource": "drawable/notification_bg_low",
+   "config": "",
+   "apk_member": "res/drawable/notification_bg_low.xml",
+   "source": "res/drawable/notification_bg_low.xml"
+  },
+  {
+   "id": "0x7f06005b",
+   "resource": "drawable/notification_bg_low_normal",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/notification_bg_low_normal.9.png",
+   "source": "res/drawable-hdpi/notification_bg_low_normal.9.png"
+  },
+  {
+   "id": "0x7f06005b",
+   "resource": "drawable/notification_bg_low_normal",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/notification_bg_low_normal.9.png",
+   "source": "res/drawable-mdpi/notification_bg_low_normal.9.png"
+  },
+  {
+   "id": "0x7f06005b",
+   "resource": "drawable/notification_bg_low_normal",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
+   "source": "res/drawable-xhdpi/notification_bg_low_normal.9.png"
+  },
+  {
+   "id": "0x7f06005c",
+   "resource": "drawable/notification_bg_low_pressed",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/notification_bg_low_pressed.9.png",
+   "source": "res/drawable-hdpi/notification_bg_low_pressed.9.png"
+  },
+  {
+   "id": "0x7f06005c",
+   "resource": "drawable/notification_bg_low_pressed",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/notification_bg_low_pressed.9.png",
+   "source": "res/drawable-mdpi/notification_bg_low_pressed.9.png"
+  },
+  {
+   "id": "0x7f06005c",
+   "resource": "drawable/notification_bg_low_pressed",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png",
+   "source": "res/drawable-xhdpi/notification_bg_low_pressed.9.png"
+  },
+  {
+   "id": "0x7f06005d",
+   "resource": "drawable/notification_bg_normal",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/notification_bg_normal.9.png",
+   "source": "res/drawable-hdpi/notification_bg_normal.9.png"
+  },
+  {
+   "id": "0x7f06005d",
+   "resource": "drawable/notification_bg_normal",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/notification_bg_normal.9.png",
+   "source": "res/drawable-mdpi/notification_bg_normal.9.png"
+  },
+  {
+   "id": "0x7f06005d",
+   "resource": "drawable/notification_bg_normal",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/notification_bg_normal.9.png",
+   "source": "res/drawable-xhdpi/notification_bg_normal.9.png"
+  },
+  {
+   "id": "0x7f06005e",
+   "resource": "drawable/notification_bg_normal_pressed",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png",
+   "source": "res/drawable-hdpi/notification_bg_normal_pressed.9.png"
+  },
+  {
+   "id": "0x7f06005e",
+   "resource": "drawable/notification_bg_normal_pressed",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png",
+   "source": "res/drawable-mdpi/notification_bg_normal_pressed.9.png"
+  },
+  {
+   "id": "0x7f06005e",
+   "resource": "drawable/notification_bg_normal_pressed",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png",
+   "source": "res/drawable-xhdpi/notification_bg_normal_pressed.9.png"
+  },
+  {
+   "id": "0x7f06005f",
+   "resource": "drawable/notification_icon_background",
+   "config": "",
+   "apk_member": "res/drawable/notification_icon_background.xml",
+   "source": "res/drawable/notification_icon_background.xml"
+  },
+  {
+   "id": "0x7f060062",
+   "resource": "drawable/notification_tile_bg",
+   "config": "",
+   "apk_member": "res/drawable/notification_tile_bg.xml",
+   "source": "res/drawable/notification_tile_bg.xml"
+  },
+  {
+   "id": "0x7f060063",
+   "resource": "drawable/notify_panel_notification_icon_bg",
+   "config": "hdpi",
+   "apk_member": "res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png",
+   "source": "res/drawable-hdpi/notify_panel_notification_icon_bg.png"
+  },
+  {
+   "id": "0x7f060063",
+   "resource": "drawable/notify_panel_notification_icon_bg",
+   "config": "mdpi",
+   "apk_member": "res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png",
+   "source": "res/drawable-mdpi/notify_panel_notification_icon_bg.png"
+  },
+  {
+   "id": "0x7f060063",
+   "resource": "drawable/notify_panel_notification_icon_bg",
+   "config": "xhdpi",
+   "apk_member": "res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png",
+   "source": "res/drawable-xhdpi/notify_panel_notification_icon_bg.png"
+  },
+  {
+   "id": "0x7f060064",
+   "resource": "drawable/shape_blue_frame_12",
+   "config": "",
+   "apk_member": "res/drawable/shape_blue_frame_12.xml",
+   "source": "res/drawable/shape_blue_frame_12.xml"
+  },
+  {
+   "id": "0x7f060065",
+   "resource": "drawable/shape_blue_frame_4",
+   "config": "",
+   "apk_member": "res/drawable/shape_blue_frame_4.xml",
+   "source": "res/drawable/shape_blue_frame_4.xml"
+  },
+  {
+   "id": "0x7f060066",
+   "resource": "drawable/shape_dark_blue_frame_12",
+   "config": "",
+   "apk_member": "res/drawable/shape_dark_blue_frame_12.xml",
+   "source": "res/drawable/shape_dark_blue_frame_12.xml"
+  },
+  {
+   "id": "0x7f060067",
+   "resource": "drawable/shape_white_4",
+   "config": "",
+   "apk_member": "res/drawable/shape_white_4.xml",
+   "source": "res/drawable/shape_white_4.xml"
+  },
+  {
+   "id": "0x7f060068",
+   "resource": "drawable/shape_white_gray_bottom",
+   "config": "",
+   "apk_member": "res/drawable/shape_white_gray_bottom.xml",
+   "source": "res/drawable/shape_white_gray_bottom.xml"
+  },
+  {
+   "id": "0x7f060069",
+   "resource": "drawable/shape_white_white_bg_12",
+   "config": "",
+   "apk_member": "res/drawable/shape_white_white_bg_12.xml",
+   "source": "res/drawable/shape_white_white_bg_12.xml"
+  },
+  {
+   "id": "0x7f06006a",
+   "resource": "drawable/shape_white_white_bg_4",
+   "config": "",
+   "apk_member": "res/drawable/shape_white_white_bg_4.xml",
+   "source": "res/drawable/shape_white_white_bg_4.xml"
+  },
+  {
+   "id": "0x7f06006b",
+   "resource": "drawable/shape_white_white_bg_5",
+   "config": "",
+   "apk_member": "res/drawable/shape_white_white_bg_5.xml",
+   "source": "res/drawable/shape_white_white_bg_5.xml"
+  },
+  {
+   "id": "0x7f06006c",
+   "resource": "drawable/tooltip_frame_dark",
+   "config": "",
+   "apk_member": "res/drawable/tooltip_frame_dark.xml",
+   "source": "res/drawable/tooltip_frame_dark.xml"
+  },
+  {
+   "id": "0x7f06006d",
+   "resource": "drawable/tooltip_frame_light",
+   "config": "",
+   "apk_member": "res/drawable/tooltip_frame_light.xml",
+   "source": "res/drawable/tooltip_frame_light.xml"
+  },
+  {
+   "id": "0x7f090000",
+   "resource": "layout/abc_action_bar_title_item",
+   "config": "",
+   "apk_member": "res/layout/abc_action_bar_title_item.xml",
+   "source": "res/layout/abc_action_bar_title_item.xml"
+  },
+  {
+   "id": "0x7f090001",
+   "resource": "layout/abc_action_bar_up_container",
+   "config": "",
+   "apk_member": "res/layout/abc_action_bar_up_container.xml",
+   "source": "res/layout/abc_action_bar_up_container.xml"
+  },
+  {
+   "id": "0x7f090002",
+   "resource": "layout/abc_action_menu_item_layout",
+   "config": "",
+   "apk_member": "res/layout/abc_action_menu_item_layout.xml",
+   "source": "res/layout/abc_action_menu_item_layout.xml"
+  },
+  {
+   "id": "0x7f090003",
+   "resource": "layout/abc_action_menu_layout",
+   "config": "",
+   "apk_member": "res/layout/abc_action_menu_layout.xml",
+   "source": "res/layout/abc_action_menu_layout.xml"
+  },
+  {
+   "id": "0x7f090004",
+   "resource": "layout/abc_action_mode_bar",
+   "config": "",
+   "apk_member": "res/layout/abc_action_mode_bar.xml",
+   "source": "res/layout/abc_action_mode_bar.xml"
+  },
+  {
+   "id": "0x7f090005",
+   "resource": "layout/abc_action_mode_close_item_material",
+   "config": "",
+   "apk_member": "res/layout/abc_action_mode_close_item_material.xml",
+   "source": "res/layout/abc_action_mode_close_item_material.xml"
+  },
+  {
+   "id": "0x7f090006",
+   "resource": "layout/abc_activity_chooser_view",
+   "config": "",
+   "apk_member": "res/layout/abc_activity_chooser_view.xml",
+   "source": "res/layout/abc_activity_chooser_view.xml"
+  },
+  {
+   "id": "0x7f090007",
+   "resource": "layout/abc_activity_chooser_view_list_item",
+   "config": "",
+   "apk_member": "res/layout/abc_activity_chooser_view_list_item.xml",
+   "source": "res/layout/abc_activity_chooser_view_list_item.xml"
+  },
+  {
+   "id": "0x7f090008",
+   "resource": "layout/abc_alert_dialog_button_bar_material",
+   "config": "",
+   "apk_member": "res/layout/abc_alert_dialog_button_bar_material.xml",
+   "source": "res/layout/abc_alert_dialog_button_bar_material.xml"
+  },
+  {
+   "id": "0x7f090008",
+   "resource": "layout/abc_alert_dialog_button_bar_material",
+   "config": "v22",
+   "apk_member": "res/layout-v22/abc_alert_dialog_button_bar_material.xml",
+   "source": "res/layout-v22/abc_alert_dialog_button_bar_material.xml"
+  },
+  {
+   "id": "0x7f090008",
+   "resource": "layout/abc_alert_dialog_button_bar_material",
+   "config": "watch-v20",
+   "apk_member": "res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+   "source": "res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+  },
+  {
+   "id": "0x7f090009",
+   "resource": "layout/abc_alert_dialog_material",
+   "config": "",
+   "apk_member": "res/layout/abc_alert_dialog_material.xml",
+   "source": "res/layout/abc_alert_dialog_material.xml"
+  },
+  {
+   "id": "0x7f09000a",
+   "resource": "layout/abc_alert_dialog_title_material",
+   "config": "",
+   "apk_member": "res/layout/abc_alert_dialog_title_material.xml",
+   "source": "res/layout/abc_alert_dialog_title_material.xml"
+  },
+  {
+   "id": "0x7f09000a",
+   "resource": "layout/abc_alert_dialog_title_material",
+   "config": "watch-v20",
+   "apk_member": "res/layout-watch-v20/abc_alert_dialog_title_material.xml",
+   "source": "res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+  },
+  {
+   "id": "0x7f09000b",
+   "resource": "layout/abc_cascading_menu_item_layout",
+   "config": "",
+   "apk_member": "res/layout/abc_cascading_menu_item_layout.xml",
+   "source": "res/layout/abc_cascading_menu_item_layout.xml"
+  },
+  {
+   "id": "0x7f09000c",
+   "resource": "layout/abc_dialog_title_material",
+   "config": "",
+   "apk_member": "res/layout/abc_dialog_title_material.xml",
+   "source": "res/layout/abc_dialog_title_material.xml"
+  },
+  {
+   "id": "0x7f09000d",
+   "resource": "layout/abc_expanded_menu_layout",
+   "config": "",
+   "apk_member": "res/layout/abc_expanded_menu_layout.xml",
+   "source": "res/layout/abc_expanded_menu_layout.xml"
+  },
+  {
+   "id": "0x7f09000e",
+   "resource": "layout/abc_list_menu_item_checkbox",
+   "config": "",
+   "apk_member": "res/layout/abc_list_menu_item_checkbox.xml",
+   "source": "res/layout/abc_list_menu_item_checkbox.xml"
+  },
+  {
+   "id": "0x7f09000f",
+   "resource": "layout/abc_list_menu_item_icon",
+   "config": "",
+   "apk_member": "res/layout/abc_list_menu_item_icon.xml",
+   "source": "res/layout/abc_list_menu_item_icon.xml"
+  },
+  {
+   "id": "0x7f090010",
+   "resource": "layout/abc_list_menu_item_layout",
+   "config": "",
+   "apk_member": "res/layout/abc_list_menu_item_layout.xml",
+   "source": "res/layout/abc_list_menu_item_layout.xml"
+  },
+  {
+   "id": "0x7f090011",
+   "resource": "layout/abc_list_menu_item_radio",
+   "config": "",
+   "apk_member": "res/layout/abc_list_menu_item_radio.xml",
+   "source": "res/layout/abc_list_menu_item_radio.xml"
+  },
+  {
+   "id": "0x7f090012",
+   "resource": "layout/abc_popup_menu_header_item_layout",
+   "config": "",
+   "apk_member": "res/layout/abc_popup_menu_header_item_layout.xml",
+   "source": "res/layout/abc_popup_menu_header_item_layout.xml"
+  },
+  {
+   "id": "0x7f090013",
+   "resource": "layout/abc_popup_menu_item_layout",
+   "config": "",
+   "apk_member": "res/layout/abc_popup_menu_item_layout.xml",
+   "source": "res/layout/abc_popup_menu_item_layout.xml"
+  },
+  {
+   "id": "0x7f090014",
+   "resource": "layout/abc_screen_content_include",
+   "config": "",
+   "apk_member": "res/layout/abc_screen_content_include.xml",
+   "source": "res/layout/abc_screen_content_include.xml"
+  },
+  {
+   "id": "0x7f090015",
+   "resource": "layout/abc_screen_simple",
+   "config": "",
+   "apk_member": "res/layout/abc_screen_simple.xml",
+   "source": "res/layout/abc_screen_simple.xml"
+  },
+  {
+   "id": "0x7f090016",
+   "resource": "layout/abc_screen_simple_overlay_action_mode",
+   "config": "",
+   "apk_member": "res/layout/abc_screen_simple_overlay_action_mode.xml",
+   "source": "res/layout/abc_screen_simple_overlay_action_mode.xml"
+  },
+  {
+   "id": "0x7f090017",
+   "resource": "layout/abc_screen_toolbar",
+   "config": "",
+   "apk_member": "res/layout/abc_screen_toolbar.xml",
+   "source": "res/layout/abc_screen_toolbar.xml"
+  },
+  {
+   "id": "0x7f090017",
+   "resource": "layout/abc_screen_toolbar",
+   "config": "v21",
+   "apk_member": "res/layout-v21/abc_screen_toolbar.xml",
+   "source": "res/layout-v21/abc_screen_toolbar.xml"
+  },
+  {
+   "id": "0x7f090017",
+   "resource": "layout/abc_screen_toolbar",
+   "config": "v26",
+   "apk_member": "res/layout-v26/abc_screen_toolbar.xml",
+   "source": "res/layout-v26/abc_screen_toolbar.xml"
+  },
+  {
+   "id": "0x7f090018",
+   "resource": "layout/abc_search_dropdown_item_icons_2line",
+   "config": "",
+   "apk_member": "res/layout/abc_search_dropdown_item_icons_2line.xml",
+   "source": "res/layout/abc_search_dropdown_item_icons_2line.xml"
+  },
+  {
+   "id": "0x7f090019",
+   "resource": "layout/abc_search_view",
+   "config": "",
+   "apk_member": "res/layout/abc_search_view.xml",
+   "source": "res/layout/abc_search_view.xml"
+  },
+  {
+   "id": "0x7f09001a",
+   "resource": "layout/abc_select_dialog_material",
+   "config": "",
+   "apk_member": "res/layout/abc_select_dialog_material.xml",
+   "source": "res/layout/abc_select_dialog_material.xml"
+  },
+  {
+   "id": "0x7f09001b",
+   "resource": "layout/abc_tooltip",
+   "config": "",
+   "apk_member": "res/layout/abc_tooltip.xml",
+   "source": "res/layout/abc_tooltip.xml"
+  },
+  {
+   "id": "0x7f09001c",
+   "resource": "layout/activity_main",
+   "config": "",
+   "apk_member": "res/layout/activity_main.xml",
+   "source": "res/layout/activity_main.xml"
+  },
+  {
+   "id": "0x7f09001d",
+   "resource": "layout/activity_un_install",
+   "config": "",
+   "apk_member": "res/layout/activity_un_install.xml",
+   "source": "res/layout/activity_un_install.xml"
+  },
+  {
+   "id": "0x7f09001e",
+   "resource": "layout/activity_un_login",
+   "config": "",
+   "apk_member": "res/layout/activity_un_login.xml",
+   "source": "res/layout/activity_un_login.xml"
+  },
+  {
+   "id": "0x7f09001f",
+   "resource": "layout/notification_action",
+   "config": "",
+   "apk_member": "res/layout/notification_action.xml",
+   "source": "res/layout/notification_action.xml"
+  },
+  {
+   "id": "0x7f09001f",
+   "resource": "layout/notification_action",
+   "config": "v21",
+   "apk_member": "res/layout-v21/notification_action.xml",
+   "source": "res/layout-v21/notification_action.xml"
+  },
+  {
+   "id": "0x7f090020",
+   "resource": "layout/notification_action_tombstone",
+   "config": "",
+   "apk_member": "res/layout/notification_action_tombstone.xml",
+   "source": "res/layout/notification_action_tombstone.xml"
+  },
+  {
+   "id": "0x7f090020",
+   "resource": "layout/notification_action_tombstone",
+   "config": "v21",
+   "apk_member": "res/layout-v21/notification_action_tombstone.xml",
+   "source": "res/layout-v21/notification_action_tombstone.xml"
+  },
+  {
+   "id": "0x7f090021",
+   "resource": "layout/notification_template_custom_big",
+   "config": "",
+   "apk_member": "res/layout-v16/notification_template_custom_big.xml",
+   "source": "res/layout/notification_template_custom_big.xml"
+  },
+  {
+   "id": "0x7f090021",
+   "resource": "layout/notification_template_custom_big",
+   "config": "v21",
+   "apk_member": "res/layout-v21/notification_template_custom_big.xml",
+   "source": "res/layout-v21/notification_template_custom_big.xml"
+  },
+  {
+   "id": "0x7f090022",
+   "resource": "layout/notification_template_icon_group",
+   "config": "",
+   "apk_member": "res/layout/notification_template_icon_group.xml",
+   "source": "res/layout/notification_template_icon_group.xml"
+  },
+  {
+   "id": "0x7f090022",
+   "resource": "layout/notification_template_icon_group",
+   "config": "v21",
+   "apk_member": "res/layout-v21/notification_template_icon_group.xml",
+   "source": "res/layout-v21/notification_template_icon_group.xml"
+  },
+  {
+   "id": "0x7f090023",
+   "resource": "layout/notification_template_part_chronometer",
+   "config": "",
+   "apk_member": "res/layout/notification_template_part_chronometer.xml",
+   "source": "res/layout/notification_template_part_chronometer.xml"
+  },
+  {
+   "id": "0x7f090024",
+   "resource": "layout/notification_template_part_time",
+   "config": "",
+   "apk_member": "res/layout/notification_template_part_time.xml",
+   "source": "res/layout/notification_template_part_time.xml"
+  },
+  {
+   "id": "0x7f090025",
+   "resource": "layout/select_dialog_item_material",
+   "config": "",
+   "apk_member": "res/layout/select_dialog_item_material.xml",
+   "source": "res/layout/select_dialog_item_material.xml"
+  },
+  {
+   "id": "0x7f090026",
+   "resource": "layout/select_dialog_multichoice_material",
+   "config": "",
+   "apk_member": "res/layout/select_dialog_multichoice_material.xml",
+   "source": "res/layout/select_dialog_multichoice_material.xml"
+  },
+  {
+   "id": "0x7f090027",
+   "resource": "layout/select_dialog_singlechoice_material",
+   "config": "",
+   "apk_member": "res/layout/select_dialog_singlechoice_material.xml",
+   "source": "res/layout/select_dialog_singlechoice_material.xml"
+  },
+  {
+   "id": "0x7f090028",
+   "resource": "layout/support_simple_spinner_dropdown_item",
+   "config": "",
+   "apk_member": "res/layout/support_simple_spinner_dropdown_item.xml",
+   "source": "res/layout/support_simple_spinner_dropdown_item.xml"
+  },
+  {
+   "id": "0x7f0a0000",
+   "resource": "mipmap/ic_launcher",
+   "config": "anydpi-v26",
+   "apk_member": "res/mipmap-anydpi-v26/ic_launcher.xml",
+   "source": "res/mipmap-anydpi-v26/ic_launcher.xml"
+  },
+  {
+   "id": "0x7f0a0000",
+   "resource": "mipmap/ic_launcher",
+   "config": "hdpi",
+   "apk_member": "res/mipmap-hdpi-v4/ic_launcher.png",
+   "source": "res/mipmap-hdpi/ic_launcher.png"
+  },
+  {
+   "id": "0x7f0a0000",
+   "resource": "mipmap/ic_launcher",
+   "config": "mdpi",
+   "apk_member": "res/mipmap-mdpi-v4/ic_launcher.png",
+   "source": "res/mipmap-mdpi/ic_launcher.png"
+  },
+  {
+   "id": "0x7f0a0000",
+   "resource": "mipmap/ic_launcher",
+   "config": "xhdpi",
+   "apk_member": "res/mipmap-xhdpi-v4/ic_launcher.png",
+   "source": "res/mipmap-xhdpi/ic_launcher.png"
+  },
+  {
+   "id": "0x7f0a0000",
+   "resource": "mipmap/ic_launcher",
+   "config": "xxhdpi",
+   "apk_member": "res/mipmap-xxhdpi-v4/ic_launcher.png",
+   "source": "res/mipmap-xxhdpi/ic_launcher.png"
+  },
+  {
+   "id": "0x7f0a0000",
+   "resource": "mipmap/ic_launcher",
+   "config": "xxxhdpi",
+   "apk_member": "res/mipmap-xxxhdpi-v4/ic_launcher.png",
+   "source": "res/mipmap-xxxhdpi/ic_launcher.png"
+  },
+  {
+   "id": "0x7f0a0001",
+   "resource": "mipmap/ic_launcher_round",
+   "config": "anydpi-v26",
+   "apk_member": "res/mipmap-anydpi-v26/ic_launcher_round.xml",
+   "source": "res/mipmap-anydpi-v26/ic_launcher_round.xml"
+  },
+  {
+   "id": "0x7f0a0001",
+   "resource": "mipmap/ic_launcher_round",
+   "config": "hdpi",
+   "apk_member": "res/mipmap-hdpi-v4/ic_launcher_round.png",
+   "source": "res/mipmap-hdpi/ic_launcher_round.png"
+  },
+  {
+   "id": "0x7f0a0001",
+   "resource": "mipmap/ic_launcher_round",
+   "config": "mdpi",
+   "apk_member": "res/mipmap-mdpi-v4/ic_launcher_round.png",
+   "source": "res/mipmap-mdpi/ic_launcher_round.png"
+  },
+  {
+   "id": "0x7f0a0001",
+   "resource": "mipmap/ic_launcher_round",
+   "config": "xhdpi",
+   "apk_member": "res/mipmap-xhdpi-v4/ic_launcher_round.png",
+   "source": "res/mipmap-xhdpi/ic_launcher_round.png"
+  },
+  {
+   "id": "0x7f0a0001",
+   "resource": "mipmap/ic_launcher_round",
+   "config": "xxhdpi",
+   "apk_member": "res/mipmap-xxhdpi-v4/ic_launcher_round.png",
+   "source": "res/mipmap-xxhdpi/ic_launcher_round.png"
+  },
+  {
+   "id": "0x7f0a0001",
+   "resource": "mipmap/ic_launcher_round",
+   "config": "xxxhdpi",
+   "apk_member": "res/mipmap-xxxhdpi-v4/ic_launcher_round.png",
+   "source": "res/mipmap-xxxhdpi/ic_launcher_round.png"
+  },
+  {
+   "id": "0x7f0a0002",
+   "resource": "mipmap/icon_curricula",
+   "config": "hdpi",
+   "apk_member": "res/mipmap-hdpi-v4/icon_curricula.png",
+   "source": "res/mipmap-hdpi/icon_curricula.png"
+  },
+  {
+   "id": "0x7f0a0002",
+   "resource": "mipmap/icon_curricula",
+   "config": "mdpi",
+   "apk_member": "res/mipmap-mdpi-v4/icon_curricula.png",
+   "source": "res/mipmap-mdpi/icon_curricula.png"
+  },
+  {
+   "id": "0x7f0a0002",
+   "resource": "mipmap/icon_curricula",
+   "config": "xhdpi",
+   "apk_member": "res/mipmap-xhdpi-v4/icon_curricula.png",
+   "source": "res/mipmap-xhdpi/icon_curricula.png"
+  },
+  {
+   "id": "0x7f0a0002",
+   "resource": "mipmap/icon_curricula",
+   "config": "xxhdpi",
+   "apk_member": "res/mipmap-xxhdpi-v4/icon_curricula.png",
+   "source": "res/mipmap-xxhdpi/icon_curricula.png"
+  },
+  {
+   "id": "0x7f0a0002",
+   "resource": "mipmap/icon_curricula",
+   "config": "xxxhdpi",
+   "apk_member": "res/mipmap-xxxhdpi-v4/icon_curricula.png",
+   "source": "res/mipmap-xxxhdpi/icon_curricula.png"
+  }
+ ],
+ "activity_references": [
+  {
+   "activity": "com.zykj.curricula.MainActivity",
+   "method": "onCreate(Landroid/os/Bundle;)V",
+   "id": "0x7f09001c",
+   "resource": "layout/activity_main",
+   "instruction": "const p1, 0x7f09001c",
+   "smali": "smali/com/zykj/curricula/MainActivity.smali"
+  },
+  {
+   "activity": "com.zykj.message.UnInstallActivity",
+   "method": "onCreate(Landroid/os/Bundle;)V",
+   "id": "0x7f09001d",
+   "resource": "layout/activity_un_install",
+   "instruction": "sget p1, Lcom/zykj/message/client/R$layout;->activity_un_install:I",
+   "smali": "smali/com/zykj/message/UnInstallActivity.smali"
+  },
+  {
+   "activity": "com.zykj.message.UnLoginActivity",
+   "method": "onCreate(Landroid/os/Bundle;)V",
+   "id": "0x7f09001e",
+   "resource": "layout/activity_un_login",
+   "instruction": "sget p1, Lcom/zykj/message/client/R$layout;->activity_un_login:I",
+   "smali": "smali/com/zykj/message/UnLoginActivity.smali"
+  }
+ ]
+}

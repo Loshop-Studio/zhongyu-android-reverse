@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+// Recovered from the int32 and float members of 优课畅学's Settings message.
+message StudyPageSettings {
+  int32 cachePageIndex = 1;
+  float cachePagePositionOffset = 2;
+}
+
+// StudentInfoSerializer reads the message retained as launcher.proto.g in DEX.
+message LauncherStudentInfo {
+  int64 id = 1;
+  string studentNumber = 2;
+  int32 classId = 3;
+  string className = 4;
+  string enterSchoolYear = 5;
+  string gradeName = 6;
+}

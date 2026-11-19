@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+: "${APKTOOL_JAR:=tools/lib/apktool-3.0.2.jar}"
+: "${JAVA_HOME:=/home/jdz/dev/jdk-21.0.13+9}"
+: "${ANDROID_HOME:=/home/jdz/dev/android-sdk}"
+export JAVA_HOME PATH="$JAVA_HOME/bin:$PATH"
+bt="${BUILD_TOOLS:-$ANDROID_HOME/build-tools/35.0.0}"
+mkdir -p dist .work/build
+# Parallel Gradle projects share one signing identity, including on the first build.
+(
+  flock -x 9
+  if [[ ! -f .work/build/debug.jks ]]; then
+    keys=$(mktemp -d .work/build/keys.XXXXXX)
+    trap 'rm -rf "$keys"' EXIT
+    keytool -genkeypair -alias androiddebugkey -keystore "$keys/debug.jks" -storepass android -keypass android -dname 'CN=Local Reconstruction' -keyalg RSA -validity 3650
+    mv "$keys/debug.jks" .work/build/debug.jks
+  fi
+) 9>.work/build/key.lock
+for project in "$@"; do
+  name=$(basename "$project" .apk)
+  test -f "android/$name/apktool.yml"
+  (
+    flock -x 9
+    java -Xmx850m -XX:ActiveProcessorCount=2 -jar "$APKTOOL_JAR" b -j 1 "android/$name" -o ".work/build/$name.apk"
+    python3 tools/build_resources.py "android/$name" "sources/$name/resources" ".work/build/$name.apk" "$APKTOOL_JAR"
+    "$bt/zipalign" -P 16 -f 4 ".work/build/$name.apk" ".work/build/$name-aligned.apk"
+    signed=".work/build/$name-signed.apk"
+    "$bt/apksigner" sign --ks .work/build/debug.jks --ks-pass pass:android --out "$signed" ".work/build/$name-aligned.apk"
+    "$bt/apksigner" verify "$signed"
+    if [[ -f "$signed.idsig" ]]; then mv -f "$signed.idsig" "dist/$name.apk.idsig"; fi
+    mv -f "$signed" "dist/$name.apk"
+  ) 9>".work/build/$name.lock"
+done

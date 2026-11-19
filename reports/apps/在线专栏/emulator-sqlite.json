@@ -1,0 +1,47 @@
+{
+  "package": "com.zykj.subscriber",
+  "databases": [
+    {
+      "file": "ua.db",
+      "user_version": 2,
+      "objects": [
+        {
+          "type": "table",
+          "name": "__er",
+          "table": "__er",
+          "sql": "CREATE TABLE __er(id INTEGER primary key autoincrement, __i TEXT, __a TEXT, __t INTEGER, __av TEXT, __vc TEXT)"
+        },
+        {
+          "type": "table",
+          "name": "__et",
+          "table": "__et",
+          "sql": "CREATE TABLE __et(id INTEGER primary key autoincrement, __i TEXT, __e TEXT, __s TEXT, __t INTEGER, __av TEXT, __vc TEXT)"
+        },
+        {
+          "type": "table",
+          "name": "__is",
+          "table": "__is",
+          "sql": "CREATE TABLE __is(id INTEGER primary key autoincrement, __ii TEXT unique, __e TEXT, __sp TEXT, __pp TEXT, __av TEXT, __vc TEXT)"
+        },
+        {
+          "type": "table",
+          "name": "__sd",
+          "table": "__sd",
+          "sql": "CREATE TABLE __sd(id INTEGER primary key autoincrement, __ii TEXT unique, __a TEXT, __b TEXT, __c TEXT, __d TEXT, __e TEXT, __f TEXT, __g TEXT, __sp TEXT, __pp TEXT, __av TEXT, __vc TEXT)"
+        },
+        {
+          "type": "table",
+          "name": "android_metadata",
+          "table": "android_metadata",
+          "sql": "CREATE TABLE android_metadata (locale TEXT)"
+        },
+        {
+          "type": "table",
+          "name": "sqlite_sequence",
+          "table": "sqlite_sequence",
+          "sql": "CREATE TABLE sqlite_sequence(name,seq)"
+        }
+      ]
+    }
+  ]
+}

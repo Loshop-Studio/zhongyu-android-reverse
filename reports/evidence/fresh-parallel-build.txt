@@ -1,0 +1,3 @@
+Two clean projects compiled concurrently with an initially absent local keystore.
+选课.apk signed certificate SHA-256 53e140ac69e364cc69436cf07f78d69962c44f13686949178333d8d862aff014
+问卷调查.apk signed certificate SHA-256 53e140ac69e364cc69436cf07f78d69962c44f13686949178333d8d862aff014

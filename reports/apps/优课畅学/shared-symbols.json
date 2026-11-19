@@ -1,0 +1,68 @@
+[
+ {
+  "dex_class": "u5/d",
+  "candidate": "com/zykj/view/dialog/CommonTipDialog",
+  "reference_apps": [
+   "错题本"
+  ],
+  "sha256": "3b7cdb7c62a8466d8cb990c3ff4f3aec32b57b9bf62e3a8c44e68d619d580f03",
+  "distinct_literals": 7,
+  "framework_calls": 12,
+  "source": "android/优课畅学/smali_classes5/u5/d.smali"
+ },
+ {
+  "dex_class": "w5/e",
+  "candidate": "com/zykj/view/simpleBoard/action/BaseAction",
+  "reference_apps": [
+   "错题本"
+  ],
+  "sha256": "22500bac58c3f4b54aec3b3529ff966a42081f42f5fe0b1906a1a08e78a17bd3",
+  "distinct_literals": 5,
+  "framework_calls": 17,
+  "source": "android/优课畅学/smali_classes5/w5/e.smali"
+ },
+ {
+  "dex_class": "w5/f",
+  "candidate": "com/zykj/view/simpleBoard/action/EraserAction",
+  "reference_apps": [
+   "错题本"
+  ],
+  "sha256": "341e36e2fd948e7fc48e92d75a17a3989ffd120cc5e4b5ad21e33be1093d3bb1",
+  "distinct_literals": 4,
+  "framework_calls": 4,
+  "source": "android/优课畅学/smali_classes5/w5/f.smali"
+ },
+ {
+  "dex_class": "w5/g",
+  "candidate": "com/zykj/view/simpleBoard/action/LineAction",
+  "reference_apps": [
+   "错题本"
+  ],
+  "sha256": "b2677d48b42157ca4fb493aa7b7a62a812c8414f6fcb93066468c2b70126348b",
+  "distinct_literals": 4,
+  "framework_calls": 11,
+  "source": "android/优课畅学/smali_classes5/w5/g.smali"
+ },
+ {
+  "dex_class": "w5/h",
+  "candidate": "com/zykj/view/simpleBoard/action/SeeAction",
+  "reference_apps": [
+   "错题本"
+  ],
+  "sha256": "02262061c749f25f172b970a45c3d930e396018bd1a9b37cd1cf497b1b2b46d2",
+  "distinct_literals": 4,
+  "framework_calls": 8,
+  "source": "android/优课畅学/smali_classes5/w5/h.smali"
+ },
+ {
+  "dex_class": "w5/i",
+  "candidate": "com/zykj/view/simpleBoard/action/WriteAction",
+  "reference_apps": [
+   "错题本"
+  ],
+  "sha256": "e0a8daed59b86251fe67078c8b142ec4d24e28c3b13faf9a365d6cf79ed84812",
+  "distinct_literals": 4,
+  "framework_calls": 12,
+  "source": "android/优课畅学/smali_classes5/w5/i.smali"
+ }
+]

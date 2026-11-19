@@ -1,0 +1,20 @@
+{
+  "calls": {
+    "文件流": [
+      "a/h/b/e",
+      "a/h/d/e",
+      "a/h/d/f",
+      "b/d/b/i/f"
+    ],
+    "WebView": [
+      "com/zykj/satisfaction/MainActivity$b",
+      "com/zykj/satisfaction/MainActivity"
+    ]
+  },
+  "objectbox_entity_metadata": {},
+  "sqlite_ddl": {},
+  "bin_literals": {},
+  "protobuf_files": [],
+  "assets": [],
+  "native_libraries": []
+}

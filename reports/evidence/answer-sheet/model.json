@@ -1,0 +1,448 @@
+{
+  "sha256": "15880a58a77ad341b4875bfa427d900ef1de906529548e49b7d93f06a4c80077",
+  "bytes": 42448,
+  "version": 3,
+  "description": "MLIR Converted.",
+  "opcodes": [
+    {
+      "kind": "CONV_2D",
+      "custom": "",
+      "version": 5
+    },
+    {
+      "kind": "MAX_POOL_2D",
+      "custom": "",
+      "version": 1
+    },
+    {
+      "kind": "RESHAPE",
+      "custom": "",
+      "version": 1
+    },
+    {
+      "kind": "FULLY_CONNECTED",
+      "custom": "",
+      "version": 9
+    },
+    {
+      "kind": "SOFTMAX",
+      "custom": "",
+      "version": 1
+    }
+  ],
+  "graphs": [
+    {
+      "name": "main",
+      "inputs": [
+        0
+      ],
+      "outputs": [
+        13
+      ],
+      "tensors": [
+        {
+          "index": 0,
+          "name": "serving_default_input_8:0",
+          "type": "FLOAT32",
+          "shape": [
+            1,
+            28,
+            28,
+            1
+          ],
+          "buffer": 1
+        },
+        {
+          "index": 1,
+          "name": "dense_7/bias",
+          "type": "FLOAT32",
+          "shape": [
+            2
+          ],
+          "buffer": 2
+        },
+        {
+          "index": 2,
+          "name": "conv2d_15/bias",
+          "type": "FLOAT32",
+          "shape": [
+            64
+          ],
+          "buffer": 3
+        },
+        {
+          "index": 3,
+          "name": "conv2d_14/bias",
+          "type": "FLOAT32",
+          "shape": [
+            32
+          ],
+          "buffer": 4
+        },
+        {
+          "index": 4,
+          "name": "sequential_7/flatten_7/Const",
+          "type": "INT32",
+          "shape": [
+            2
+          ],
+          "buffer": 5
+        },
+        {
+          "index": 5,
+          "name": "sequential_7/dense_7/MatMul",
+          "type": "INT8",
+          "shape": [
+            2,
+            9216
+          ],
+          "buffer": 6,
+          "quantization": {
+            "axis": 0,
+            "scale": [
+              0.0007064532837830484
+            ],
+            "zero_point": [
+              0
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "sequential_7/conv2d_14/Conv2D",
+          "type": "FLOAT32",
+          "shape": [
+            32,
+            3,
+            3,
+            1
+          ],
+          "buffer": 7
+        },
+        {
+          "index": 7,
+          "name": "sequential_7/conv2d_15/Conv2D",
+          "type": "INT8",
+          "shape": [
+            64,
+            3,
+            3,
+            32
+          ],
+          "buffer": 8,
+          "quantization": {
+            "axis": 0,
+            "scale": [
+              0.00113518419675529,
+              0.0011629702057689428,
+              0.0008806184632703662,
+              0.0009621837525628507,
+              0.0009521775646135211,
+              0.0009080913150683045,
+              0.001035052933730185,
+              0.0009150885744020343,
+              0.0009225123794749379,
+              0.0009088600054383278,
+              0.0012318190420046449,
+              0.0008599091088399291,
+              0.001016069669276476,
+              0.0010076301405206323,
+              0.0008497309754602611,
+              0.0010236817179247737,
+              0.0010378864826634526,
+              0.0008622229797765613,
+              0.0009025866747833788,
+              0.0010742730228230357,
+              0.0008664398919790983,
+              0.000877159705851227,
+              0.0008392765885218978,
+              0.0009180781780742109,
+              0.0010147502180188894,
+              0.0009947699727490544,
+              0.0009449173230677843,
+              0.0008762867655605078,
+              0.0011940104886889458,
+              0.0008140846621245146,
+              0.0008798635681159794,
+              0.0010151263559237123,
+              0.0008562055882066488,
+              0.0009051309898495674,
+              0.0009517318685539067,
+              0.0009908049833029509,
+              0.0010055981110781431,
+              0.0009395505767315626,
+              0.0009267361601814628,
+              0.0009451042278669775,
+              0.0007409059908241034,
+              0.0007969790603965521,
+              0.0010018947068601847,
+              0.0008140273275785148,
+              0.0008817610796540976,
+              0.0009283531690016389,
+              0.0008636022103019059,
+              0.0008477583760395646,
+              0.0009980198228731751,
+              0.0009425305179320276,
+              0.001193186966702342,
+              0.0008075767545960844,
+              0.000816827523522079,
+              0.0007681350107304752,
+              0.0008566940086893737,
+              0.0011099167168140411,
+              0.0009113401174545288,
+              0.0009590207482688129,
+              0.0009641687502153218,
+              0.0009867707267403603,
+              0.0010059574851766229,
+              0.0008675430435687304,
+              0.0010656657395884395,
+              0.000755850865971297
+            ],
+            "zero_point": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "index": 8,
+          "name": "sequential_7/conv2d_14/Relu;sequential_7/conv2d_14/BiasAdd;sequential_7/conv2d_14/Conv2D;conv2d_14/bias",
+          "type": "FLOAT32",
+          "shape": [
+            1,
+            26,
+            26,
+            32
+          ],
+          "buffer": 9
+        },
+        {
+          "index": 9,
+          "name": "sequential_7/conv2d_15/Relu;sequential_7/conv2d_15/BiasAdd;sequential_7/conv2d_15/Conv2D;conv2d_15/bias",
+          "type": "FLOAT32",
+          "shape": [
+            1,
+            24,
+            24,
+            64
+          ],
+          "buffer": 10
+        },
+        {
+          "index": 10,
+          "name": "sequential_7/max_pooling2d_7/MaxPool",
+          "type": "FLOAT32",
+          "shape": [
+            1,
+            12,
+            12,
+            64
+          ],
+          "buffer": 11
+        },
+        {
+          "index": 11,
+          "name": "sequential_7/flatten_7/Reshape",
+          "type": "FLOAT32",
+          "shape": [
+            1,
+            9216
+          ],
+          "buffer": 12
+        },
+        {
+          "index": 12,
+          "name": "sequential_7/dense_7/MatMul;sequential_7/dense_7/BiasAdd",
+          "type": "FLOAT32",
+          "shape": [
+            1,
+            2
+          ],
+          "buffer": 13
+        },
+        {
+          "index": 13,
+          "name": "StatefulPartitionedCall:0",
+          "type": "FLOAT32",
+          "shape": [
+            1,
+            2
+          ],
+          "buffer": 14
+        }
+      ],
+      "operators": [
+        {
+          "opcode": "CONV_2D",
+          "inputs": [
+            0,
+            6,
+            3
+          ],
+          "outputs": [
+            8
+          ]
+        },
+        {
+          "opcode": "CONV_2D",
+          "inputs": [
+            8,
+            7,
+            2
+          ],
+          "outputs": [
+            9
+          ]
+        },
+        {
+          "opcode": "MAX_POOL_2D",
+          "inputs": [
+            9
+          ],
+          "outputs": [
+            10
+          ]
+        },
+        {
+          "opcode": "RESHAPE",
+          "inputs": [
+            10,
+            4
+          ],
+          "outputs": [
+            11
+          ]
+        },
+        {
+          "opcode": "FULLY_CONNECTED",
+          "inputs": [
+            11,
+            5,
+            1
+          ],
+          "outputs": [
+            12
+          ]
+        },
+        {
+          "opcode": "SOFTMAX",
+          "inputs": [
+            12
+          ],
+          "outputs": [
+            13
+          ]
+        }
+      ]
+    }
+  ],
+  "buffer_count": 16,
+  "data_buffers": [
+    {
+      "index": 2,
+      "bytes": 8,
+      "sha256": "dc3aa94b5781ae07516c58892e5339a9e9df7eed90896e677308372665a31ff0"
+    },
+    {
+      "index": 3,
+      "bytes": 256,
+      "sha256": "04ea51f2fe8141e7146e8dd5eaa91e73465d8dd3df32e784b64754e104e1198d"
+    },
+    {
+      "index": 4,
+      "bytes": 128,
+      "sha256": "5025469f1fd800fa1806b390772c2a3837624bf5c98d98af35b0089d32566f73"
+    },
+    {
+      "index": 5,
+      "bytes": 8,
+      "sha256": "74c3630259f2d6c2d105899f032b94b69da95fdf150ab73734e62ce661220254"
+    },
+    {
+      "index": 6,
+      "bytes": 18432,
+      "sha256": "bbc28a65beb7a980afc689aac8044bcdb108b2b83362a9d29d45a9e89f9a573c"
+    },
+    {
+      "index": 7,
+      "bytes": 1152,
+      "sha256": "96d80c3bf57f719a0e2674cbe44892b5f0c18dcda7168c1221b9b4f291ff41b5"
+    },
+    {
+      "index": 8,
+      "bytes": 18432,
+      "sha256": "9d46901be3205d845ea1429a2ffdd676e1531e9a89a01fdeaf273c5a316cc09b"
+    },
+    {
+      "index": 15,
+      "bytes": 16,
+      "sha256": "6c5c4e8e66711e3a4b2c05c01d99d281b24adc9f2be58875ce66725ed9703a07"
+    }
+  ],
+  "metadata": {
+    "min_runtime_version": 15
+  },
+  "min_runtime_version": "1.5.0"
+}

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1304"
+    android:versionName="1.3.4"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.zykj.subscriber"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="28" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="com.zykj.permission.MESSAGE_SERVICE" />
+
+    <uses-permission
+        android:name="com.zykj.message.USER_INFO" />
+
+    <permission
+        android:label="@ref/0x7f0f0020"
+        android:name="com.zykj.subscriber.AGOO"
+        android:protectionLevel="0x2"
+        android:description="@ref/0x7f0f001f" />
+
+    <uses-permission
+        android:name="com.zykj.subscriber.AGOO" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <permission
+        android:label="@ref/0x7f0f001e"
+        android:name="com.zykj.subscriber.ACCS"
+        android:protectionLevel="0x2"
+        android:description="@ref/0x7f0f001d" />
+
+    <uses-permission
+        android:name="com.zykj.subscriber.ACCS" />
+
+    <application
+        android:theme="@ref/0x7f10013a"
+        android:label="@ref/0x7f0f0023"
+        android:icon="@ref/0x7f0d0007"
+        android:name="com.zykj.subscriber.application.MyApplication"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@ref/0x7f120001"
+        android:roundIcon="@ref/0x7f0d0007"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+        <activity
+            android:name="com.zykj.subscriber.MainActivity"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x3">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.zykj.subscriber.FileActivity"
+            android:windowSoftInputMode="0x22" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.zykj.subscriber.fileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f120000" />
+        </provider>
+
+        <provider
+            android:name="com.xuexiang.xui.XUIInitProvider"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.zykj.subscriber.xui-init-provider" />
+
+        <activity
+            android:theme="@ref/0x7f100346"
+            android:name="com.xuexiang.xui.widget.imageview.preview.ui.PreviewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f100346"
+            android:name="com.xuexiang.xui.widget.imageview.preview.ui.VideoPlayerActivity" />
+
+        <service
+            android:name="androidx.work.multiprocess.RemoteWorkManagerService"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.work.impl.WorkManagerInitializer"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.zykj.subscriber.workmanager-init"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@ref/0x7f050002"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@ref/0x7f050004"
+            android:exported="true"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@ref/0x7f050003"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@ref/0x7f050002"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <activity
+            android:theme="@ref/0x7f10000a"
+            android:name="com.zykj.message.UnInstallActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f10000a"
+            android:name="com.zykj.message.UnLoginActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <service
+            android:name="com.zykj.message.KillSelfService"
+            android:exported="false" />
+
+        <service
+            android:name="com.alibaba.sdk.android.push.channel.KeepChannelService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:process="@ref/0x7f0f0021" />
+
+        <service
+            android:name="org.android.agoo.accs.AgooService"
+            android:exported="false"
+            android:process="@ref/0x7f0f0022">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.aliyun.ams.emas.push.AgooInnerService"
+            android:exported="false"
+            android:process="@ref/0x7f0f0022">
+
+            <intent-filter>
+
+                <action
+                    android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.aliyun.ams.emas.push.MsgService"
+            android:exported="false"
+            android:process="@ref/0x7f0f0022">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x1030010"
+            android:name="com.aliyun.ams.emas.push.NotificationActivity"
+            android:exported="false"
+            android:process="@ref/0x7f0f0022"
+            android:launchMode="3"
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.taobao.accs.ChannelService"
+            android:enabled="false"
+            android:exported="false"
+            android:process="@ref/0x7f0f0021">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.taobao.accs.ChannelService$KernelService"
+            android:enabled="false"
+            android:exported="false"
+            android:process="@ref/0x7f0f0021" />
+
+        <service
+            android:name="com.taobao.accs.internal.AccsJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="false"
+            android:exported="false"
+            android:process="@ref/0x7f0f0021" />
+
+        <service
+            android:name="com.taobao.accs.data.MsgDistributeService"
+            android:exported="false"
+            android:process="@ref/0x7f0f0022">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.accs.EventReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:process="@ref/0x7f0f0021" />
+
+        <receiver
+            android:name="com.taobao.accs.ServiceReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:process="@ref/0x7f0f0021">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

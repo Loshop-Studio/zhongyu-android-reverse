@@ -1,0 +1,2256 @@
+{
+  "com.zykj.base.BaseViewModel": {
+    "smali": "android/中育管控桌面/smali_classes3/com/zykj/base/BaseViewModel.smali",
+    "fields": [
+      {
+        "field": "isDialogVisible",
+        "type": "com.kunminx.architecture.ui.callback.UnPeekLiveData",
+        "generic_descriptor": "Lcom/kunminx/architecture/ui/callback/UnPeekLiveData<Ljava/lang/Boolean;>;"
+      },
+      {
+        "field": "toastLiveData",
+        "type": "com.kunminx.architecture.ui.callback.UnPeekLiveData",
+        "generic_descriptor": "Lcom/kunminx/architecture/ui/callback/UnPeekLiveData<Lcom/zykj/base/bean/toast/ToastMessage;>;"
+      }
+    ]
+  },
+  "com.zykj.base.bean.toast.ToastErrorCodeMessage": {
+    "smali": "android/中育管控桌面/smali_classes3/com/zykj/base/bean/toast/ToastErrorCodeMessage.smali",
+    "fields": [
+      {
+        "field": "errorInfo",
+        "type": "com.zykj.lib.error.code.ErrorCodeInfo"
+      }
+    ]
+  },
+  "com.zykj.base.bean.toast.ToastErrorMessage": {
+    "smali": "android/中育管控桌面/smali_classes3/com/zykj/base/bean/toast/ToastErrorMessage.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "java.lang.Integer"
+      }
+    ]
+  },
+  "com.zykj.base.bean.toast.ToastMessage": {
+    "smali": "android/中育管控桌面/smali_classes3/com/zykj/base/bean/toast/ToastMessage.smali",
+    "fields": [
+      {
+        "field": "message",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "messageResId",
+        "type": "java.lang.Integer"
+      }
+    ]
+  },
+  "com.zykj.gallery.bean.GalleryBody": {
+    "smali": "android/中育管控桌面/smali/com/zykj/gallery/bean/GalleryBody.smali",
+    "fields": [
+      {
+        "field": "appName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "picture",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "size",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.gallery.bean.GalleryImgBean": {
+    "smali": "android/中育管控桌面/smali/com/zykj/gallery/bean/GalleryImgBean.smali",
+    "fields": [
+      {
+        "field": "appName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "bucketName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "checkTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "checkUser",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "className",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "createTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "gradeName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "movedToTrashTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "picture",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "pornResult",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "pornScore",
+        "type": "int"
+      },
+      {
+        "field": "size",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "state",
+        "type": "int"
+      },
+      {
+        "field": "studentId",
+        "type": "int"
+      },
+      {
+        "field": "studentName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "studentNumber",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.gallery.bean.ListBody": {
+    "smali": "android/中育管控桌面/smali/com/zykj/gallery/bean/ListBody.smali",
+    "fields": [
+      {
+        "field": "isRecycleBin",
+        "type": "boolean",
+        "gson_serialized_name": "IsRecycleBin"
+      },
+      {
+        "field": "maxResultCount",
+        "type": "int",
+        "gson_serialized_name": "MaxResultCount"
+      },
+      {
+        "field": "skipCount",
+        "type": "int",
+        "gson_serialized_name": "SkipCount"
+      }
+    ]
+  },
+  "com.zykj.gallery.bean.PagedData": {
+    "smali": "android/中育管控桌面/smali/com/zykj/gallery/bean/PagedData.smali",
+    "fields": [
+      {
+        "field": "items",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<TT;>;"
+      },
+      {
+        "field": "totalCount",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.gallery.bean.RecordImgBean": {
+    "smali": "android/中育管控桌面/smali/com/zykj/gallery/bean/RecordImgBean.smali",
+    "fields": [
+      {
+        "field": "appName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "packageName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "pictures",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      }
+    ]
+  },
+  "com.zykj.gallery.oss.OssData": {
+    "smali": "android/中育管控桌面/smali/com/zykj/gallery/oss/OssData.smali",
+    "fields": [
+      {
+        "field": "objectKey",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "token",
+        "type": "com.zykj.gallery.oss.OssToken"
+      }
+    ]
+  },
+  "com.zykj.gallery.ui.gallery.detail.DetailViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/gallery/ui/gallery/detail/DetailViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.gallery.repository.GalleryRepository"
+      },
+      {
+        "field": "b",
+        "type": "h3.d0"
+      },
+      {
+        "field": "c",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "d",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      }
+    ]
+  },
+  "com.zykj.gallery.ui.gallery.screenList.GalleryViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/gallery/ui/gallery/screenList/GalleryViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.gallery.repository.GalleryRepository"
+      },
+      {
+        "field": "b",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "c",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "d",
+        "type": "androidx.compose.runtime.snapshots.SnapshotStateList"
+      },
+      {
+        "field": "e",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "f",
+        "type": "com.zykj.gallery.ui.gallery.commonState.GalleryCommonState"
+      },
+      {
+        "field": "g",
+        "type": "kotlinx.coroutines.flow.Flow"
+      },
+      {
+        "field": "h",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "i",
+        "type": "androidx.compose.runtime.MutableState"
+      }
+    ]
+  },
+  "com.zykj.gallery.ui.share.page.ShareViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/gallery/ui/share/page/ShareViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.gallery.repository.GalleryRepository"
+      },
+      {
+        "field": "b",
+        "type": "com.zykj.gallery.ui.gallery.commonState.GalleryCommonState"
+      },
+      {
+        "field": "c",
+        "type": "kotlinx.coroutines.flow.Flow"
+      },
+      {
+        "field": "d",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "e",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "f",
+        "type": "kotlinx.coroutines.channels.Channel"
+      },
+      {
+        "field": "g",
+        "type": "kotlinx.coroutines.flow.Flow"
+      },
+      {
+        "field": "h",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "i",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "j",
+        "type": "kotlinx.coroutines.flow.Flow"
+      }
+    ]
+  },
+  "com.zykj.http.bean.ApiResp": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/http/bean/ApiResp.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "int",
+        "gson_serialized_name": "code"
+      },
+      {
+        "field": "error",
+        "type": "com.zykj.http.bean.ErrorInfo",
+        "gson_serialized_name": "error"
+      },
+      {
+        "field": "msg",
+        "type": "java.lang.String",
+        "gson_serialized_name": "msg"
+      },
+      {
+        "field": "result",
+        "type": "java.lang.Object",
+        "generic_descriptor": "TT;"
+      },
+      {
+        "field": "success",
+        "type": "boolean",
+        "gson_serialized_name": "success"
+      }
+    ]
+  },
+  "com.zykj.http.bean.ErrorInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/http/bean/ErrorInfo.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "int"
+      },
+      {
+        "field": "details",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "message",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.http.bean.HeaderBean": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/http/bean/HeaderBean.smali",
+    "fields": [
+      {
+        "field": "accessToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "appName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "refreshToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "serverUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "versionCode",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.AppPackageInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/AppPackageInfo.smali",
+    "fields": [
+      {
+        "field": "firstInstallTime",
+        "type": "long"
+      },
+      {
+        "field": "packageName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "size",
+        "type": "long"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.AvatarItem": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/AvatarItem.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "url",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.BaseAppInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/BaseAppInfo.smali",
+    "fields": [
+      {
+        "field": "activityName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "icon",
+        "type": "java.lang.Object"
+      },
+      {
+        "field": "label",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "packageName",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.CertificationInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/CertificationInfo.smali",
+    "fields": [
+      {
+        "field": "appsList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/huiwei/launcher/bean/AppPackageInfo;>;"
+      },
+      {
+        "field": "device",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.GetTaskListReq": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/GetTaskListReq.smali",
+    "fields": [
+      {
+        "field": "endTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "examTaskType",
+        "type": "java.lang.Integer"
+      },
+      {
+        "field": "gradeId",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "keyword",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "maxResultCount",
+        "type": "int"
+      },
+      {
+        "field": "skipCount",
+        "type": "int"
+      },
+      {
+        "field": "startTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "submitAllow",
+        "type": "java.lang.Integer"
+      },
+      {
+        "field": "taskListType",
+        "type": "int"
+      },
+      {
+        "field": "topicIds",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/Long;>;"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.GetTaskListResponse": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/GetTaskListResponse.smali",
+    "fields": [
+      {
+        "field": "items",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/huiwei/launcher/bean/TaskInfo;>;"
+      },
+      {
+        "field": "totalCount",
+        "type": "int"
+      },
+      {
+        "field": "totalUrge",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.HomeTime": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/HomeTime.smali",
+    "fields": [
+      {
+        "field": "date",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "time",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.Homework": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/Homework.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "time",
+        "type": "long"
+      },
+      {
+        "field": "title",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.LcAppInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/LcAppInfo.smali",
+    "fields": [
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "visible",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.Location": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/Location.smali",
+    "fields": [
+      {
+        "field": "city",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "province",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.PolicyTypeBean": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/PolicyTypeBean.smali",
+    "fields": [
+      {
+        "field": "type",
+        "type": "java.lang.Integer"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.StudentInfoBean": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/StudentInfoBean.smali",
+    "fields": [
+      {
+        "field": "classId",
+        "type": "int"
+      },
+      {
+        "field": "className",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "enterSchoolYear",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "gradeName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "number",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "user",
+        "type": "com.zykj.huiwei.launcher.bean.UserBean"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.SystemSettingsBean": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/SystemSettingsBean.smali",
+    "fields": [
+      {
+        "field": "userPasswordStrength",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.TaskInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/TaskInfo.smali",
+    "fields": [
+      {
+        "field": "address",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "answerPad",
+        "type": "boolean"
+      },
+      {
+        "field": "answerSheet",
+        "type": "boolean"
+      },
+      {
+        "field": "answeringUrge",
+        "type": "int"
+      },
+      {
+        "field": "correctOnline",
+        "type": "boolean"
+      },
+      {
+        "field": "correctOnlineState",
+        "type": "int"
+      },
+      {
+        "field": "correctWithSelf",
+        "type": "boolean"
+      },
+      {
+        "field": "creationTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "endTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "examId",
+        "type": "long"
+      },
+      {
+        "field": "examName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "examState",
+        "type": "int"
+      },
+      {
+        "field": "examTaskId",
+        "type": "long"
+      },
+      {
+        "field": "isCollect",
+        "type": "boolean"
+      },
+      {
+        "field": "isExempted",
+        "type": "boolean"
+      },
+      {
+        "field": "isNoStem",
+        "type": "boolean"
+      },
+      {
+        "field": "isRead",
+        "type": "boolean"
+      },
+      {
+        "field": "revisingUrge",
+        "type": "int"
+      },
+      {
+        "field": "serialNum",
+        "type": "int"
+      },
+      {
+        "field": "size",
+        "type": "int"
+      },
+      {
+        "field": "specificTrainingType",
+        "type": "int"
+      },
+      {
+        "field": "startTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "taskState",
+        "type": "int"
+      },
+      {
+        "field": "testPagerId",
+        "type": "long"
+      },
+      {
+        "field": "topicId",
+        "type": "long"
+      },
+      {
+        "field": "topicName",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.UpdateInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/UpdateInfo.smali",
+    "fields": [
+      {
+        "field": "appVersionId",
+        "type": "int"
+      },
+      {
+        "field": "creationTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "creatorUserId",
+        "type": "int"
+      },
+      {
+        "field": "description",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "disabled",
+        "type": "boolean"
+      },
+      {
+        "field": "downloads",
+        "type": "int"
+      },
+      {
+        "field": "fileUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "forceUpdate",
+        "type": "boolean"
+      },
+      {
+        "field": "icon",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "int"
+      },
+      {
+        "field": "lastModificationTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "packageName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "score",
+        "type": "float"
+      },
+      {
+        "field": "size",
+        "type": "int"
+      },
+      {
+        "field": "summary",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "versionCode",
+        "type": "int"
+      },
+      {
+        "field": "versionName",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.UserBean": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/UserBean.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "password",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "picture",
+        "type": "java.lang.String",
+        "gson_serialized_name": "pictrue"
+      },
+      {
+        "field": "roleType",
+        "type": "int"
+      },
+      {
+        "field": "schoolCode",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "surname",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "userName",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.paging.NotificationPagingSource": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/paging/NotificationPagingSource.smali",
+    "fields": [
+      {
+        "field": "req",
+        "type": "com.zykj.huiwei.launcher.bean.req.GetMessageReq"
+      },
+      {
+        "field": "service",
+        "type": "com.zykj.huiwei.launcher.api.NotificationService"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.req.AvatarSetReq": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/req/AvatarSetReq.smali",
+    "fields": [
+      {
+        "field": "profileId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.req.ForcePsdReq": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/req/ForcePsdReq.smali",
+    "fields": [
+      {
+        "field": "password",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.req.GetMessageReq": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/req/GetMessageReq.smali",
+    "fields": [
+      {
+        "field": "maxResultCount",
+        "type": "int"
+      },
+      {
+        "field": "publishTimeFrom",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "publishTimeTo",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "skipCount",
+        "type": "int"
+      },
+      {
+        "field": "title",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.req.LoginReq": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/req/LoginReq.smali",
+    "fields": [
+      {
+        "field": "clientType",
+        "type": "int"
+      },
+      {
+        "field": "deviceNumber",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "im",
+        "type": "boolean"
+      },
+      {
+        "field": "password",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "role",
+        "type": "int"
+      },
+      {
+        "field": "schoolName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "username",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.req.TrackInfoReq": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/req/TrackInfoReq.smali",
+    "fields": [
+      {
+        "field": "description",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "deviceNumber",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.req.UpdatePwdReq": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/req/UpdatePwdReq.smali",
+    "fields": [
+      {
+        "field": "oldPassword",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "password",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.req.UploadDnsInfoReq": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/req/UploadDnsInfoReq.smali",
+    "fields": [
+      {
+        "field": "appName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "appPackageName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "detailInfo",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.req.VersionInfoReq": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/req/VersionInfoReq.smali",
+    "fields": [
+      {
+        "field": "appType",
+        "type": "com.zykj.huiwei.launcher.bean.AppType"
+      },
+      {
+        "field": "packageName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "version",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.AppData": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/AppData.smali",
+    "fields": [
+      {
+        "field": "appInfo",
+        "type": "com.zykj.huiwei.launcher.bean.BaseAppInfo"
+      },
+      {
+        "field": "sort",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.Credential": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/Credential.smali",
+    "fields": [
+      {
+        "field": "accessKeyId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "accessKeySecret",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "appId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "bucket",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "endpoint",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "expiration",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "securityToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "strategy",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.DisableAppInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/DisableAppInfo.smali",
+    "fields": [
+      {
+        "field": "appName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "packageName",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.GatewayBean": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/GatewayBean.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "lcid",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "server",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "webServer",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.LoginResp": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/LoginResp.smali",
+    "fields": [
+      {
+        "field": "accessToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "clientCode",
+        "type": "boolean"
+      },
+      {
+        "field": "expireInSeconds",
+        "type": "int"
+      },
+      {
+        "field": "mobile",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "needChangePwd",
+        "type": "boolean"
+      },
+      {
+        "field": "needSmsVerification",
+        "type": "boolean"
+      },
+      {
+        "field": "passwordStrength",
+        "type": "java.lang.Integer"
+      },
+      {
+        "field": "refreshExpireInSeconds",
+        "type": "int"
+      },
+      {
+        "field": "refreshToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "roleType",
+        "type": "int"
+      },
+      {
+        "field": "rongCloudToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "userId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.MessageInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/MessageInfo.smali",
+    "fields": [
+      {
+        "field": "creationTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "creatorUserId",
+        "type": "int"
+      },
+      {
+        "field": "deleterUserId",
+        "type": "int"
+      },
+      {
+        "field": "deletionTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isDeleted",
+        "type": "boolean"
+      },
+      {
+        "field": "isRead",
+        "type": "boolean"
+      },
+      {
+        "field": "lastModificationTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "lastModifierUserId",
+        "type": "int"
+      },
+      {
+        "field": "parameter",
+        "type": "com.zykj.huiwei.launcher.bean.resp.Parameter"
+      },
+      {
+        "field": "senderInfo",
+        "type": "com.zykj.huiwei.launcher.bean.resp.SenderInfo"
+      },
+      {
+        "field": "title",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.MessageResp": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/MessageResp.smali",
+    "fields": [
+      {
+        "field": "items",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/huiwei/launcher/bean/resp/MessageInfo;>;"
+      },
+      {
+        "field": "totalCount",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.MessageType": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/MessageType.smali",
+    "fields": [
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.NoticeBean": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/NoticeBean.smali",
+    "fields": [
+      {
+        "field": "content",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "readCount",
+        "type": "int"
+      },
+      {
+        "field": "targetCount",
+        "type": "int"
+      },
+      {
+        "field": "title",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.Parameter": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/Parameter.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.SchoolSettingResp": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/SchoolSettingResp.smali",
+    "fields": [
+      {
+        "field": "emailAddress",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "mobile",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "schoolName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "schoolShortName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "wechat",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.SenderInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/SenderInfo.smali",
+    "fields": [
+      {
+        "field": "fullName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "gender",
+        "type": "int"
+      },
+      {
+        "field": "picture",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "roleType",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.SettingResp": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/SettingResp.smali",
+    "fields": [
+      {
+        "field": "dnOrder",
+        "type": "com.zykj.huiwei.launcher.bean.resp.SettingSwitch"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.TodoResp": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/TodoResp.smali",
+    "fields": [
+      {
+        "field": "homeworkCount",
+        "type": "int"
+      },
+      {
+        "field": "quoraCount",
+        "type": "int"
+      },
+      {
+        "field": "reviseCount",
+        "type": "int"
+      },
+      {
+        "field": "unReadSpecialCount",
+        "type": "int"
+      },
+      {
+        "field": "unReplySpecialCount",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.TokenResp": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/TokenResp.smali",
+    "fields": [
+      {
+        "field": "accessToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "expireInSeconds",
+        "type": "int"
+      },
+      {
+        "field": "refreshExpireInSeconds",
+        "type": "int"
+      },
+      {
+        "field": "refreshToken",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.UnReadMessageBean": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/UnReadMessageBean.smali",
+    "fields": [
+      {
+        "field": "count",
+        "type": "int"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.UnReadMessageResp": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/UnReadMessageResp.smali",
+    "fields": [
+      {
+        "field": "data",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/huiwei/launcher/bean/resp/UnReadMessageBean;>;"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.VersionInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/VersionInfo.smali",
+    "fields": [
+      {
+        "field": "description",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "forceUpdate",
+        "type": "boolean"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "size",
+        "type": "int"
+      },
+      {
+        "field": "versionCode",
+        "type": "int"
+      },
+      {
+        "field": "versionName",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.WeatherBean": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/WeatherBean.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "daily",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/zykj/huiwei/launcher/bean/resp/WeatherCityBean;>;"
+      },
+      {
+        "field": "fxLink",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "updateTime",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.WeatherCityBean": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/WeatherCityBean.smali",
+    "fields": [
+      {
+        "field": "fxDate",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "iconDay",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "iconNight",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "tempMax",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "tempMin",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "textDay",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "textNight",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "windDirDay",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "windDirNight",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "windScaleDay",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "windScaleNight",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.bean.resp.WebsitesUsedOftenBean": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/bean/resp/WebsitesUsedOftenBean.smali",
+    "fields": [
+      {
+        "field": "creationTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "creatorUserId",
+        "type": "int"
+      },
+      {
+        "field": "id",
+        "type": "int"
+      },
+      {
+        "field": "isActive",
+        "type": "boolean"
+      },
+      {
+        "field": "lastModificationTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "lastModifierUserId",
+        "type": "int"
+      },
+      {
+        "field": "logo",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "redirectUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "urlList",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.dao.PDFPreviewDatabase_Impl": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/dao/PDFPreviewDatabase_Impl.smali",
+    "fields": [
+      {
+        "field": "d",
+        "type": "kotlin.Lazy"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.dao.PDFPreviewInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/dao/PDFPreviewInfo.smali",
+    "fields": [
+      {
+        "field": "pageIndex",
+        "type": "int"
+      },
+      {
+        "field": "pageOffset",
+        "type": "float"
+      },
+      {
+        "field": "path",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.dao.PreviewDao_Impl": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/dao/PreviewDao_Impl.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.room.RoomDatabase"
+      },
+      {
+        "field": "b",
+        "type": "androidx.room.EntityInsertAdapter"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.ui.dialog.changePsdDialog.ChangePsdViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/ui/dialog/changePsdDialog/ChangePsdViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.huiwei.launcher.repository.UserRepository"
+      },
+      {
+        "field": "b",
+        "type": "androidx.lifecycle.SavedStateHandle"
+      },
+      {
+        "field": "c",
+        "type": "int"
+      },
+      {
+        "field": "d",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "e",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "f",
+        "type": "kotlinx.coroutines.flow.MutableSharedFlow"
+      },
+      {
+        "field": "g",
+        "type": "kotlinx.coroutines.flow.SharedFlow"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.ui.fragment.applist.HuiWeiAppListViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/ui/fragment/applist/HuiWeiAppListViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.huiwei.launcher.api.HomeService"
+      },
+      {
+        "field": "b",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "c",
+        "type": "kotlinx.coroutines.flow.Flow"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.ui.fragment.applist.LCAppListViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/ui/fragment/applist/LCAppListViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "kotlinx.coroutines.flow.Flow"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.viewmodels.AppUpdateViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/viewmodels/AppUpdateViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "b",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "c",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "d",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "e",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "f",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "g",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "h",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "i",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "j",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "k",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "l",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "m",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "n",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "o",
+        "type": "kotlinx.coroutines.flow.MutableSharedFlow"
+      },
+      {
+        "field": "p",
+        "type": "android.content.ServiceConnection"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.viewmodels.ChangeAvatarViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/viewmodels/ChangeAvatarViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.huiwei.launcher.repository.UserRepository"
+      },
+      {
+        "field": "b",
+        "type": "com.zykj.huiwei.launcher.repository.HomeRepository"
+      },
+      {
+        "field": "c",
+        "type": "androidx.datastore.core.DataStore"
+      },
+      {
+        "field": "d",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "e",
+        "type": "androidx.lifecycle.MutableLiveData"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.viewmodels.CustomerServiceViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/viewmodels/CustomerServiceViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.huiwei.launcher.repository.UserRepository"
+      },
+      {
+        "field": "b",
+        "type": "androidx.lifecycle.MutableLiveData"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.viewmodels.HomeViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/viewmodels/HomeViewModel.smali",
+    "fields": [
+      {
+        "field": "A",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "B",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "C",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "D",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "E",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "F",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "G",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "H",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "a",
+        "type": "com.zykj.huiwei.launcher.repository.HomeRepository"
+      },
+      {
+        "field": "b",
+        "type": "com.zykj.huiwei.launcher.repository.NotificationRepository"
+      },
+      {
+        "field": "c",
+        "type": "androidx.datastore.core.DataStore"
+      },
+      {
+        "field": "d",
+        "type": "androidx.datastore.core.DataStore"
+      },
+      {
+        "field": "e",
+        "type": "androidx.datastore.core.DataStore"
+      },
+      {
+        "field": "f",
+        "type": "w3.b"
+      },
+      {
+        "field": "g",
+        "type": "kotlin.Lazy"
+      },
+      {
+        "field": "h",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "i",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "j",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "k",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "l",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "m",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "n",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "o",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "p",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "q",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "r",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "s",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "t",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "u",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "v",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "w",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "x",
+        "type": "kotlinx.coroutines.flow.MutableSharedFlow"
+      },
+      {
+        "field": "y",
+        "type": "kotlinx.coroutines.flow.SharedFlow"
+      },
+      {
+        "field": "z",
+        "type": "androidx.lifecycle.LiveData"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.viewmodels.LoginViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/viewmodels/LoginViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.datastore.core.DataStore"
+      },
+      {
+        "field": "b",
+        "type": "androidx.datastore.core.DataStore"
+      },
+      {
+        "field": "c",
+        "type": "androidx.datastore.core.DataStore"
+      },
+      {
+        "field": "d",
+        "type": "androidx.datastore.core.DataStore"
+      },
+      {
+        "field": "e",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "f",
+        "type": "com.zykj.huiwei.launcher.repository.AuthRepository"
+      },
+      {
+        "field": "g",
+        "type": "w3.b"
+      },
+      {
+        "field": "h",
+        "type": "com.zykj.huiwei.launcher.repository.UserRepository"
+      },
+      {
+        "field": "i",
+        "type": "w3.a"
+      },
+      {
+        "field": "j",
+        "type": "android.app.Application"
+      },
+      {
+        "field": "k",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "l",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "m",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "n",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "o",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "p",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "q",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "r",
+        "type": "kotlinx.coroutines.flow.MutableSharedFlow"
+      },
+      {
+        "field": "s",
+        "type": "kotlinx.coroutines.flow.SharedFlow"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.viewmodels.MainViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/viewmodels/MainViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "b",
+        "type": "kotlinx.coroutines.flow.MutableSharedFlow"
+      },
+      {
+        "field": "c",
+        "type": "android.app.Application"
+      },
+      {
+        "field": "d",
+        "type": "com.zykj.gallery.repository.GalleryRepository"
+      },
+      {
+        "field": "e",
+        "type": "androidx.datastore.core.DataStore"
+      },
+      {
+        "field": "f",
+        "type": "kotlin.Lazy"
+      },
+      {
+        "field": "g",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "h",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      },
+      {
+        "field": "i",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "j",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.viewmodels.ModifyPasswordViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/viewmodels/ModifyPasswordViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.huiwei.launcher.repository.UserRepository"
+      },
+      {
+        "field": "b",
+        "type": "kotlin.text.Regex"
+      },
+      {
+        "field": "c",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "d",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "e",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "f",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "g",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "h",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "i",
+        "type": "androidx.lifecycle.MutableLiveData"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.viewmodels.NotificationViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/viewmodels/NotificationViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.huiwei.launcher.repository.NotificationRepository"
+      },
+      {
+        "field": "b",
+        "type": "androidx.datastore.core.DataStore"
+      },
+      {
+        "field": "c",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "d",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "e",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "f",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "g",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "h",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "i",
+        "type": "androidx.lifecycle.LiveData"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.viewmodels.ResetPwdViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/viewmodels/ResetPwdViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.huiwei.launcher.repository.UserRepository"
+      },
+      {
+        "field": "b",
+        "type": "androidx.lifecycle.SavedStateHandle"
+      },
+      {
+        "field": "c",
+        "type": "int"
+      },
+      {
+        "field": "d",
+        "type": "com.zykj.huiwei.launcher.viewmodels.PasswordSecurityLevel"
+      },
+      {
+        "field": "e",
+        "type": "kotlinx.coroutines.flow.MutableStateFlow"
+      },
+      {
+        "field": "f",
+        "type": "kotlinx.coroutines.flow.StateFlow"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.viewmodels.TipsViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/viewmodels/TipsViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "b",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "c",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "d",
+        "type": "androidx.lifecycle.MutableLiveData"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.viewmodels.UnAuthorViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/viewmodels/UnAuthorViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.lifecycle.MutableLiveData"
+      }
+    ]
+  },
+  "com.zykj.huiwei.launcher.viewmodels.VersionViewModel": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/huiwei/launcher/viewmodels/VersionViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "w3.d"
+      },
+      {
+        "field": "b",
+        "type": "androidx.datastore.core.DataStore"
+      },
+      {
+        "field": "c",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "d",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "e",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "f",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "g",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "h",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "i",
+        "type": "androidx.lifecycle.MutableLiveData"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.ServerInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/message/server/bean/ServerInfo.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.message.server.bean.Status"
+      },
+      {
+        "field": "b",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "c",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "d",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "e",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.Status": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/message/server/bean/Status.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.UserInfo": {
+    "smali": "android/中育管控桌面/smali_classes4/com/zykj/message/server/bean/UserInfo.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "b",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "c",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "d",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "e",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "f",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "g",
+        "type": "java.lang.Integer"
+      }
+    ]
+  }
+}

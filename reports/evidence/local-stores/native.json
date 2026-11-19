@@ -1,0 +1,103 @@
+[
+  {
+    "app": "新测评",
+    "apk_sha256": "99e07683d3983242510b7f3d41bb280bb3f4672bb655c9c3f7a5137d45f9c149",
+    "entry": "evaluation",
+    "files": {
+      "localAnswer.bin": {
+        "bytes": 89,
+        "sha256": "cbb51e8b21a4357315f31ab36c1cfebcdca2d78e73c7d82153f0648edeecad23"
+      },
+      "localCorrectResult.bin": {
+        "bytes": 26,
+        "sha256": "59e0a2df9447dadd15428faa4f4df2580ce8b885643507e28e5ad30bbacbc2b2"
+      },
+      "Correct_NeedRevise.bin": {
+        "bytes": 122,
+        "sha256": "9b3ed4d19b5581606230e91c3bc185b74d280f93dc0644ef5afa5b6fdac36271"
+      }
+    },
+    "native": "Android managers wrote and reopened all three files; independently encoded JSON produced equal maps and revision objects"
+  },
+  {
+    "app": "优课畅学",
+    "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+    "entry": "com.zykj.study.provide.SettingsSerializer",
+    "file": "settings.pb",
+    "bytes": 10,
+    "sha256": "37089436dc501502b35a21ffc26a41d0d1253741610ed1f2cd754ea7035d1f6d",
+    "input_sha256": "37089436dc501502b35a21ffc26a41d0d1253741610ed1f2cd754ea7035d1f6d",
+    "retained_future_field": true,
+    "decoded": "cachePageIndex: 11\ncachePagePositionOffset: 0.375\n127: 83\n",
+    "native": "Serializer read and rewrote com.zykj.study.proto.Settings; reopened equal message"
+  },
+  {
+    "app": "优课畅学",
+    "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+    "entry": "androidx.datastore.preferences.core.PreferencesFileSerializer",
+    "file": "types.preferences_pb",
+    "bytes": 149,
+    "sha256": "80351f8f62d3f2f107cf1fe6454a17615c9e477d81da95873563aece1c7cfc1a",
+    "input_sha256": "21878d09d3c7193d85dce181699195cf0f92e3347e1f4853386be4658fa03327",
+    "retained_future_field": false,
+    "decoded": "preferences {\n  key: \"bool\"\n  value {\n    boolean: false\n  }\n}\npreferences {\n  key: \"bytes\"\n  value {\n    bytes_value: \"\\000\\177\\377\"\n  }\n}\npreferences {\n  key: \"double\"\n  value {\n    double_value: 1.125\n  }\n}\npreferences {\n  key: \"float\"\n  value {\n    float_value: 0.375\n  }\n}\npreferences {\n  key: \"int\"\n  value {\n    integer: -7\n  }\n}\npreferences {\n  key: \"long\"\n  value {\n    long_value: 9007199254740993\n  }\n}\npreferences {\n  key: \"set\"\n  value {\n    string_set {\n      strings: \"\\347\\224\\262\"\n      strings: \"\\344\\271\\231\"\n    }\n  }\n}\npreferences {\n  key: \"text\"\n  value {\n    string_value: \"\\346\\234\\254\\345\\234\\260\\346\\240\\267\\346\\234\\254\"\n  }\n}\n",
+    "native": "PreferencesFileSerializer reopened 8 typed keys"
+  },
+  {
+    "app": "优课畅学",
+    "apk_sha256": "82cbb938b320313add4b7e1d3dab60d82eb536b8f45184698d30dcd85011fe6e",
+    "entry": "com.zykj.lib.ota.provide.UpdateSettingsSerializer",
+    "file": "updateSettings.pb",
+    "input_sha256": "e1027eafb6ec39b4c650ad4fc750f753fa1b6e3290f9e659a94fb9509e987be8",
+    "status": "original-reader-error",
+    "native": "java.lang.RuntimeException: Field ignoreVersionCode_ for t3.a not found. Known fields are [public static final t3.a t3.a.a, public static volatile com.google.protobuf.Parser t3.a.b]"
+  },
+  {
+    "app": "中育管控桌面",
+    "apk_sha256": "e0b46dee805fe516503ac7d2b8e1b7d585de43063a012f8056e3bbd1018a9949",
+    "entry": "com.zykj.huiwei.launcher.providers.StudentInfoSerializer",
+    "file": "studentInfo.pb",
+    "bytes": 55,
+    "sha256": "fd41e319d835003eb9b507ebc718debe52a3d976f860cffeb487a2aebf1765f1",
+    "input_sha256": "fd41e319d835003eb9b507ebc718debe52a3d976f860cffeb487a2aebf1765f1",
+    "retained_future_field": true,
+    "decoded": "id: 9007199254740993\nstudentNumber: \"LOCAL-07\"\nclassId: 17\nclassName: \"\\345\\220\\210\\346\\210\\220\\347\\217\\255\"\nenterSchoolYear: \"2025\"\ngradeName: \"\\346\\265\\213\\350\\257\\225\\345\\271\\264\\347\\272\\247\"\n127: 83\n",
+    "native": "Serializer read and rewrote com.zykj.huiwei.launcher.proto.g; reopened equal message"
+  },
+  {
+    "app": "中育管控桌面",
+    "apk_sha256": "e0b46dee805fe516503ac7d2b8e1b7d585de43063a012f8056e3bbd1018a9949",
+    "entry": "androidx.datastore.preferences.core.PreferencesFileSerializer",
+    "file": "types.preferences_pb",
+    "bytes": 149,
+    "sha256": "80351f8f62d3f2f107cf1fe6454a17615c9e477d81da95873563aece1c7cfc1a",
+    "input_sha256": "21878d09d3c7193d85dce181699195cf0f92e3347e1f4853386be4658fa03327",
+    "retained_future_field": false,
+    "decoded": "preferences {\n  key: \"bool\"\n  value {\n    boolean: false\n  }\n}\npreferences {\n  key: \"bytes\"\n  value {\n    bytes_value: \"\\000\\177\\377\"\n  }\n}\npreferences {\n  key: \"double\"\n  value {\n    double_value: 1.125\n  }\n}\npreferences {\n  key: \"float\"\n  value {\n    float_value: 0.375\n  }\n}\npreferences {\n  key: \"int\"\n  value {\n    integer: -7\n  }\n}\npreferences {\n  key: \"long\"\n  value {\n    long_value: 9007199254740993\n  }\n}\npreferences {\n  key: \"set\"\n  value {\n    string_set {\n      strings: \"\\347\\224\\262\"\n      strings: \"\\344\\271\\231\"\n    }\n  }\n}\npreferences {\n  key: \"text\"\n  value {\n    string_value: \"\\346\\234\\254\\345\\234\\260\\346\\240\\267\\346\\234\\254\"\n  }\n}\n",
+    "native": "PreferencesFileSerializer reopened 8 typed keys"
+  },
+  {
+    "app": "中育管控桌面",
+    "apk_sha256": "e0b46dee805fe516503ac7d2b8e1b7d585de43063a012f8056e3bbd1018a9949",
+    "entry": "com.zykj.huiwei.launcher.providers.UpdateSettingsSerializer",
+    "file": "updateSettings.pb",
+    "bytes": 6,
+    "sha256": "e1027eafb6ec39b4c650ad4fc750f753fa1b6e3290f9e659a94fb9509e987be8",
+    "input_sha256": "e1027eafb6ec39b4c650ad4fc750f753fa1b6e3290f9e659a94fb9509e987be8",
+    "retained_future_field": true,
+    "decoded": "ignoreVersionCode: 8107\n127: 83\n",
+    "native": "Serializer read and rewrote com.zykj.huiwei.launcher.proto.j; reopened equal message"
+  },
+  {
+    "app": "随身答",
+    "apk_sha256": "c9005f3b15d3af3db6cd34184aad31825cff3a24917bfe0d3011bd6c59567045",
+    "entry": "androidx.datastore.preferences.core.PreferencesFileSerializer",
+    "file": "types.preferences_pb",
+    "bytes": 149,
+    "sha256": "80351f8f62d3f2f107cf1fe6454a17615c9e477d81da95873563aece1c7cfc1a",
+    "input_sha256": "21878d09d3c7193d85dce181699195cf0f92e3347e1f4853386be4658fa03327",
+    "retained_future_field": false,
+    "decoded": "preferences {\n  key: \"bool\"\n  value {\n    boolean: false\n  }\n}\npreferences {\n  key: \"bytes\"\n  value {\n    bytes_value: \"\\000\\177\\377\"\n  }\n}\npreferences {\n  key: \"double\"\n  value {\n    double_value: 1.125\n  }\n}\npreferences {\n  key: \"float\"\n  value {\n    float_value: 0.375\n  }\n}\npreferences {\n  key: \"int\"\n  value {\n    integer: -7\n  }\n}\npreferences {\n  key: \"long\"\n  value {\n    long_value: 9007199254740993\n  }\n}\npreferences {\n  key: \"set\"\n  value {\n    string_set {\n      strings: \"\\347\\224\\262\"\n      strings: \"\\344\\271\\231\"\n    }\n  }\n}\npreferences {\n  key: \"text\"\n  value {\n    string_value: \"\\346\\234\\254\\345\\234\\260\\346\\240\\267\\346\\234\\254\"\n  }\n}\n",
+    "native": "PreferencesFileSerializer reopened 8 typed keys"
+  }
+]

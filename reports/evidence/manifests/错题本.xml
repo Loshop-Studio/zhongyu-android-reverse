@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="10205"
+    android:versionName="1.2.5"
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    package="com.zykj.mistake"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="28" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="com.zykj.dialogue.ask" />
+
+            <data
+                android:mimeType="share/file" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.MAIN" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.GET_CONTENT" />
+
+            <category
+                android:name="android.intent.category.OPENABLE" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.autofocus" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.zykj.mistake.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.zykj.mistake.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="com.zykj.permission.MESSAGE_SERVICE" />
+
+    <uses-permission
+        android:name="com.zykj.message.USER_INFO" />
+
+    <application
+        android:theme="@ref/0x7f12000e"
+        android:label="@ref/0x7f11001f"
+        android:icon="@ref/0x7f0f0020"
+        android:name="com.zykj.mistake.application.MistakeApplication"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:usesCleartextTraffic="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+        <activity
+            android:name="com.zykj.mistake.activity.MistakeCreateActivity"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.zykj.mistake.activity.MistakeCreateOrEditActivity"
+            android:screenOrientation="0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.zykj.mistake.activity.SketchActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:name="com.zykj.mistake.activity.SketchPlayerActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:name="com.zykj.mistake.activity.MistakeDetailActivity"
+            android:screenOrientation="0"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:name="com.zykj.mistake.activity.MistakeListActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:name="com.zykj.mistake.activity.LegacyMistakeActivity"
+            android:screenOrientation="0" />
+
+        <activity
+            android:name="com.zykj.mistake.activity.MainActivity"
+            android:screenOrientation="0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.zykj.mistake.service.UploadIntentService" />
+
+        <service
+            android:name="com.zykj.mistake.service.UploadFolderIntentService" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.zykj.mistake.fileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140000" />
+        </provider>
+
+        <activity
+            android:name="com.zykj.view.ui.crop.EzyCropActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.zykj.view.ui.camera.EzyCameraActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f120002"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f120002"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity"
+            android:exported="false"
+            android:multiprocess="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <provider
+            android:name="com.blankj.utilcode.util.UtilsFileProvider"
+            android:exported="false"
+            android:authorities="com.zykj.mistake.utilcode.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140002" />
+        </provider>
+
+        <service
+            android:name="com.blankj.utilcode.util.MessengerUtils$ServerService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.zykj.mistake.messenger" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.canhub.cropper.CropFileProvider"
+            android:exported="false"
+            android:authorities="com.zykj.mistake.cropper.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f140001" />
+        </provider>
+
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:exported="true" />
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x1030010"
+            android:name="com.xuexiang.xui.widget.imageview.preview.ui.PreviewActivity" />
+
+        <activity
+            android:theme="@ref/0x1030010"
+            android:name="com.xuexiang.xui.widget.imageview.preview.ui.VideoPlayerActivity" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.zykj.mistake.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f12000e"
+            android:name="com.zykj.message.UnInstallActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f12000e"
+            android:name="com.zykj.message.UnLoginActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <service
+            android:name="com.zykj.message.KillSelfService"
+            android:exported="false" />
+    </application>
+</manifest>

@@ -1,0 +1,4552 @@
+{
+  "com.friday.cloudsnote.viewModel.MainViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/cloudsnote/viewModel/MainViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "com.friday.common.dao.UserDao"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.common.network.StudentSession"
+      },
+      {
+        "field": "d",
+        "type": "d2.i"
+      }
+    ]
+  },
+  "com.friday.common.camera.CameraBean": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/camera/CameraBean.smali",
+    "fields": [
+      {
+        "field": "c",
+        "type": "int"
+      },
+      {
+        "field": "d",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "e",
+        "type": "boolean"
+      },
+      {
+        "field": "f",
+        "type": "int"
+      },
+      {
+        "field": "g",
+        "type": "int"
+      },
+      {
+        "field": "h",
+        "type": "boolean"
+      },
+      {
+        "field": "i",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "j",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.camera.CameraViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/camera/CameraViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "vd.k"
+      },
+      {
+        "field": "b",
+        "type": "float"
+      },
+      {
+        "field": "c",
+        "type": "vd.k"
+      },
+      {
+        "field": "d",
+        "type": "vd.p"
+      },
+      {
+        "field": "e",
+        "type": "android.graphics.Bitmap"
+      }
+    ]
+  },
+  "com.friday.common.classtest.MqttRequestEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/classtest/MqttRequestEntity.smali",
+    "fields": [
+      {
+        "field": "data",
+        "type": "com.friday.common.classtest.RequestScreencastData"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.classtest.MqttResponseEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/classtest/MqttResponseEntity.smali",
+    "fields": [
+      {
+        "field": "data",
+        "type": "com.friday.common.classtest.ResponseScreencastData"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.classtest.RequestScreencastData": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/classtest/RequestScreencastData.smali",
+    "fields": [
+      {
+        "field": "ip",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "isScreenCast",
+        "type": "boolean"
+      },
+      {
+        "field": "userId",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.classtest.ResponseScreenCaptureData": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/classtest/ResponseScreenCaptureData.smali",
+    "fields": [
+      {
+        "field": "data",
+        "type": "com.friday.common.entity.ScreenCaptureEntity"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.classtest.ResponseScreencastData": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/classtest/ResponseScreencastData.smali",
+    "fields": [
+      {
+        "field": "ftpPort",
+        "type": "java.lang.Integer"
+      },
+      {
+        "field": "studentList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/friday/common/classtest/MqttResponse$Student;>;"
+      },
+      {
+        "field": "timeStamp",
+        "type": "long"
+      },
+      {
+        "field": "topic",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.dao.FileDao_Impl": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/dao/FileDao_Impl.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.room.RoomDatabase"
+      },
+      {
+        "field": "b",
+        "type": "androidx.room.EntityInsertAdapter"
+      }
+    ]
+  },
+  "com.friday.common.dao.ImageSafetyDao_Impl": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/dao/ImageSafetyDao_Impl.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.room.RoomDatabase"
+      },
+      {
+        "field": "b",
+        "type": "androidx.room.EntityInsertAdapter"
+      }
+    ]
+  },
+  "com.friday.common.dao.PdfDao_Impl": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/dao/PdfDao_Impl.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.room.RoomDatabase"
+      },
+      {
+        "field": "b",
+        "type": "androidx.room.EntityInsertAdapter"
+      }
+    ]
+  },
+  "com.friday.common.dao.ResourceDao_Impl": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/dao/ResourceDao_Impl.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.room.RoomDatabase"
+      },
+      {
+        "field": "b",
+        "type": "androidx.room.EntityInsertAdapter"
+      }
+    ]
+  },
+  "com.friday.common.dao.ShareCacheDao_Impl": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/dao/ShareCacheDao_Impl.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.room.RoomDatabase"
+      },
+      {
+        "field": "b",
+        "type": "androidx.room.EntityInsertAdapter"
+      }
+    ]
+  },
+  "com.friday.common.dao.UserDao_Impl": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/dao/UserDao_Impl.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "androidx.room.RoomDatabase"
+      },
+      {
+        "field": "b",
+        "type": "androidx.room.EntityInsertAdapter"
+      }
+    ]
+  },
+  "com.friday.common.entity.AddShareTableRequest": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/AddShareTableRequest.smali",
+    "fields": [
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      },
+      {
+        "field": "userName",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.AnswerCache": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/AnswerCache.smali",
+    "fields": [
+      {
+        "field": "dataList",
+        "type": "java.util.ArrayList",
+        "generic_descriptor": "Ljava/util/ArrayList<Lcom/friday/common/entity/OptionListEntity;>;"
+      },
+      {
+        "field": "fromServer",
+        "type": "boolean"
+      },
+      {
+        "field": "guid",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "hasStopped",
+        "type": "java.lang.Boolean"
+      },
+      {
+        "field": "hasSubmit",
+        "type": "boolean"
+      },
+      {
+        "field": "homeworkPage",
+        "type": "int"
+      },
+      {
+        "field": "isSingle",
+        "type": "boolean"
+      },
+      {
+        "field": "isSubjective",
+        "type": "boolean"
+      },
+      {
+        "field": "options",
+        "type": "int"
+      },
+      {
+        "field": "qstCount",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.CreateNoteInput": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/CreateNoteInput.smali",
+    "fields": [
+      {
+        "field": "fileType",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "localPath",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "noteId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "noteName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "parentId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "userId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.friday.common.entity.ErrorRemote": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/ErrorRemote.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "int",
+        "gson_serialized_name": "code"
+      },
+      {
+        "field": "details",
+        "type": "java.lang.String",
+        "gson_serialized_name": "details"
+      },
+      {
+        "field": "message",
+        "type": "java.lang.String",
+        "gson_serialized_name": "message"
+      },
+      {
+        "field": "validationErrors",
+        "type": "java.lang.String",
+        "gson_serialized_name": "validationErrors"
+      }
+    ]
+  },
+  "com.friday.common.entity.EzyLoginRequest": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/EzyLoginRequest.smali",
+    "fields": [
+      {
+        "field": "clientType",
+        "type": "int"
+      },
+      {
+        "field": "deviceNumber",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "password",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "schoolName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "smsVerificationCode",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "username",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.FileBean": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/FileBean.smali",
+    "fields": [
+      {
+        "field": "noteList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/friday/common/entity/NoteBean;>;"
+      },
+      {
+        "field": "schoolCode",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "totalCount",
+        "type": "int"
+      },
+      {
+        "field": "userId",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.FileDownloadEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/FileDownloadEntity.smali",
+    "fields": [
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "isSuccess",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.friday.common.entity.FileEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/FileEntity.smali",
+    "fields": [
+      {
+        "field": "accountId",
+        "type": "long"
+      },
+      {
+        "field": "cached",
+        "type": "boolean"
+      },
+      {
+        "field": "createTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "depth",
+        "type": "int"
+      },
+      {
+        "field": "errorTimes",
+        "type": "int"
+      },
+      {
+        "field": "expiredTime",
+        "type": "long"
+      },
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileType",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "isRecycled",
+        "type": "boolean"
+      },
+      {
+        "field": "isShared",
+        "type": "boolean"
+      },
+      {
+        "field": "isSync",
+        "type": "boolean"
+      },
+      {
+        "field": "localFileUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "md5",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "ossFileUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "parentId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "preFileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "state",
+        "type": "int"
+      },
+      {
+        "field": "syncStatus",
+        "type": "int"
+      },
+      {
+        "field": "updateTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "version",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.FlagNote": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/FlagNote.smali",
+    "fields": [
+      {
+        "field": "userId",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.GetResourceEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/GetResourceEntity.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "resourceList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/friday/common/entity/ResourceEntity;>;"
+      },
+      {
+        "field": "totalCount",
+        "type": "int"
+      },
+      {
+        "field": "userId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.friday.common.entity.GetShareIdResponse": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/GetShareIdResponse.smali",
+    "fields": [
+      {
+        "field": "shareId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.friday.common.entity.IfStudentOnline": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/IfStudentOnline.smali",
+    "fields": [
+      {
+        "field": "userId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "uuid",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.ImageSafetyEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/ImageSafetyEntity.smali",
+    "fields": [
+      {
+        "field": "imageId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "riskScore",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.LoginResp": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/LoginResp.smali",
+    "fields": [
+      {
+        "field": "accessToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "clientCode",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "expireInSeconds",
+        "type": "int"
+      },
+      {
+        "field": "mobile",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "needChangePwd",
+        "type": "boolean"
+      },
+      {
+        "field": "needSmsVerification",
+        "type": "boolean"
+      },
+      {
+        "field": "refreshExpireInSeconds",
+        "type": "int"
+      },
+      {
+        "field": "refreshToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "roleType",
+        "type": "int"
+      },
+      {
+        "field": "rongCloudToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "userId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.friday.common.entity.MonitorRequest": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/MonitorRequest.smali",
+    "fields": [
+      {
+        "field": "appName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "note",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "packageName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "pictures",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "pornScore",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.MqttEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/MqttEntity.smali",
+    "fields": [
+      {
+        "field": "message",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "specifiedId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "type",
+        "type": "com.friday.common.entity.MqttType"
+      }
+    ]
+  },
+  "com.friday.common.entity.MyShareResponse": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/MyShareResponse.smali",
+    "fields": [
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "shareId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.friday.common.entity.NoteBean": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/NoteBean.smali",
+    "fields": [
+      {
+        "field": "createTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "expirationTimeStamp",
+        "type": "long"
+      },
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "isRecycleBin",
+        "type": "boolean"
+      },
+      {
+        "field": "isSelected",
+        "type": "boolean"
+      },
+      {
+        "field": "parentId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "shared",
+        "type": "boolean"
+      },
+      {
+        "field": "sharerId",
+        "type": "long"
+      },
+      {
+        "field": "type",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "updateTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "version",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.NoteResource": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/NoteResource.smali",
+    "fields": [
+      {
+        "field": "local",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "service",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.OnlineDemoEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/OnlineDemoEntity.smali",
+    "fields": [
+      {
+        "field": "accountId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "add",
+        "type": "boolean"
+      },
+      {
+        "field": "handsUp",
+        "type": "boolean"
+      },
+      {
+        "field": "mikeEnable",
+        "type": "boolean"
+      },
+      {
+        "field": "nickname",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "roomId",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.OptionEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/OptionEntity.smali",
+    "fields": [
+      {
+        "field": "isSelected",
+        "type": "boolean"
+      },
+      {
+        "field": "isSingle",
+        "type": "boolean"
+      },
+      {
+        "field": "option",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.OptionListEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/OptionListEntity.smali",
+    "fields": [
+      {
+        "field": "index",
+        "type": "int"
+      },
+      {
+        "field": "list",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/friday/common/entity/OptionEntity;>;"
+      }
+    ]
+  },
+  "com.friday.common.entity.OriginalShareInfo": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/OriginalShareInfo.smali",
+    "fields": [
+      {
+        "field": "shareFileList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/friday/common/entity/OriginalShareInfoChild;>;"
+      },
+      {
+        "field": "totalCount",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.OriginalShareInfoChild": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/OriginalShareInfoChild.smali",
+    "fields": [
+      {
+        "field": "createTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "ownerId",
+        "type": "long"
+      },
+      {
+        "field": "ownerName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "parentId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "shareId",
+        "type": "long"
+      },
+      {
+        "field": "shareTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      },
+      {
+        "field": "updateTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "version",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.OssFileResource": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/OssFileResource.smali",
+    "fields": [
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "value",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.OssFileType": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/OssFileType.smali",
+    "fields": [
+      {
+        "field": "value",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.OssReqData": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/OssReqData.smali",
+    "fields": [
+      {
+        "field": "objectKey",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "tokenReq",
+        "type": "com.friday.common.entity.OssTokenReq"
+      }
+    ]
+  },
+  "com.friday.common.entity.OssTokenReq": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/OssTokenReq.smali",
+    "fields": [
+      {
+        "field": "fc",
+        "type": "int"
+      },
+      {
+        "field": "fe",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fo",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fr",
+        "type": "int"
+      },
+      {
+        "field": "ft",
+        "type": "int"
+      },
+      {
+        "field": "nonce",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "sign",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "ts",
+        "type": "long"
+      }
+    ]
+  },
+  "com.friday.common.entity.OssTokenResponse": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/OssTokenResponse.smali",
+    "fields": [
+      {
+        "field": "accessKeyId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "accessKeySecret",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "bucket",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "endpoint",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "expiration",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "requestId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "securityToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "strategy",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.OssTokenResult": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/OssTokenResult.smali",
+    "fields": [
+      {
+        "field": "result",
+        "type": "com.friday.common.entity.OssTokenResponse"
+      },
+      {
+        "field": "success",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.friday.common.entity.PPTAnim": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/PPTAnim.smali",
+    "fields": [
+      {
+        "field": "idx",
+        "type": "int"
+      },
+      {
+        "field": "total",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.PPTInfo": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/PPTInfo.smali",
+    "fields": [
+      {
+        "field": "anim",
+        "type": "com.friday.common.entity.PPTAnim"
+      },
+      {
+        "field": "info",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "page",
+        "type": "com.friday.common.entity.PPTPage"
+      },
+      {
+        "field": "url",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.PPTPage": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/PPTPage.smali",
+    "fields": [
+      {
+        "field": "idx",
+        "type": "int"
+      },
+      {
+        "field": "total",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.PdfEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/PdfEntity.smali",
+    "fields": [
+      {
+        "field": "currentPage",
+        "type": "int"
+      },
+      {
+        "field": "id",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "pageCount",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.ResourceEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/ResourceEntity.smali",
+    "fields": [
+      {
+        "field": "createTimeStamp",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "md5",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "ossImageUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "pageIndex",
+        "type": "int"
+      },
+      {
+        "field": "pageName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "resourceType",
+        "type": "int"
+      },
+      {
+        "field": "toBeUploaded",
+        "type": "boolean"
+      },
+      {
+        "field": "updateTimeStamp",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "userId",
+        "type": "long"
+      },
+      {
+        "field": "wasDeleted",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.friday.common.entity.RestoreResponse": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/RestoreResponse.smali",
+    "fields": [
+      {
+        "field": "expirationTimeStamp",
+        "type": "long"
+      },
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "isRecycleBin",
+        "type": "boolean"
+      },
+      {
+        "field": "parentId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "updateTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "version",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.ScreenCaptureEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/ScreenCaptureEntity.smali",
+    "fields": [
+      {
+        "field": "deviceCode",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "versionCode",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.SendSmsBean": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/SendSmsBean.smali",
+    "fields": [
+      {
+        "field": "mobile",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "schoolCode",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "sn",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "userId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.friday.common.entity.ShareCacheEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/ShareCacheEntity.smali",
+    "fields": [
+      {
+        "field": "accountId",
+        "type": "long"
+      },
+      {
+        "field": "cacheId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "previewTime",
+        "type": "long"
+      },
+      {
+        "field": "version",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.TokenResponse": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/TokenResponse.smali",
+    "fields": [
+      {
+        "field": "error",
+        "type": "com.friday.common.entity.ErrorRemote"
+      },
+      {
+        "field": "result",
+        "type": "com.friday.common.entity.LoginResp"
+      },
+      {
+        "field": "success",
+        "type": "boolean"
+      },
+      {
+        "field": "targetUrl",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.UpdateRequest": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/UpdateRequest.smali",
+    "fields": [
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "parentId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "type",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.common.entity.UpdateResponse": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/UpdateResponse.smali",
+    "fields": [
+      {
+        "field": "version",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.common.entity.UpdateSpecifiedItem": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/UpdateSpecifiedItem.smali",
+    "fields": [
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fromPage",
+        "type": "com.friday.common.entity.FromPage"
+      }
+    ]
+  },
+  "com.friday.common.entity.User": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/common/entity/User.smali",
+    "fields": [
+      {
+        "field": "accountId",
+        "type": "long"
+      },
+      {
+        "field": "accountName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "albumPermission",
+        "type": "boolean"
+      },
+      {
+        "field": "cameraPermission",
+        "type": "boolean"
+      },
+      {
+        "field": "headPhotoUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "screenshotsPermission",
+        "type": "boolean"
+      },
+      {
+        "field": "unit",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "userName",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.document.adapter.MultiModeFileEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/adapter/MultiModeFileEntity.smali",
+    "fields": [
+      {
+        "field": "entity",
+        "type": "com.friday.common.entity.FileEntity"
+      },
+      {
+        "field": "isInMultiSelectMode",
+        "type": "boolean"
+      },
+      {
+        "field": "isSelected",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.friday.document.model.AddRelationBean": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/AddRelationBean.smali",
+    "fields": [
+      {
+        "field": "shareId",
+        "type": "long"
+      },
+      {
+        "field": "shareUserId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.friday.document.model.ConvertEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/ConvertEntity.smali",
+    "fields": [
+      {
+        "field": "data",
+        "type": "java.lang.String",
+        "gson_serialized_name": "Data"
+      },
+      {
+        "field": "error",
+        "type": "java.lang.Object",
+        "gson_serialized_name": "Error"
+      },
+      {
+        "field": "success",
+        "type": "boolean",
+        "gson_serialized_name": "Success"
+      }
+    ]
+  },
+  "com.friday.document.model.FolderLevelEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/FolderLevelEntity.smali",
+    "fields": [
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "ownerId",
+        "type": "long"
+      },
+      {
+        "field": "ownerName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "parentId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "shareTime",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.document.model.ManualSyncEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/ManualSyncEntity.smali",
+    "fields": [
+      {
+        "field": "fileEntity",
+        "type": "com.friday.common.entity.FileEntity"
+      },
+      {
+        "field": "syncState",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.document.model.ResourceDeleteEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/ResourceDeleteEntity.smali",
+    "fields": [
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "resourceIdList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      }
+    ]
+  },
+  "com.friday.document.model.ShareAddMemberReqBean": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/ShareAddMemberReqBean.smali",
+    "fields": [
+      {
+        "field": "ezyCourses",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/Integer;>;"
+      },
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.document.model.ShareClassEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/ShareClassEntity.smali",
+    "fields": [
+      {
+        "field": "checked",
+        "type": "boolean"
+      },
+      {
+        "field": "deleteMode",
+        "type": "boolean"
+      },
+      {
+        "field": "id",
+        "type": "int"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "shareStatus",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.document.model.ShareDelMemberReqBean": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/ShareDelMemberReqBean.smali",
+    "fields": [
+      {
+        "field": "ezyCourseId",
+        "type": "int"
+      },
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.document.model.ShareFile": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/ShareFile.smali",
+    "fields": [
+      {
+        "field": "createTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "ownerId",
+        "type": "long"
+      },
+      {
+        "field": "ownerName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "parentId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "shareId",
+        "type": "long"
+      },
+      {
+        "field": "shareTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "shared",
+        "type": "boolean"
+      },
+      {
+        "field": "type",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "updateTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "version",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.document.model.ShareIntentEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/ShareIntentEntity.smali",
+    "fields": [
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileType",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "originalUserId",
+        "type": "long"
+      },
+      {
+        "field": "originalUserName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "shareId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.friday.document.model.ShareListEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/ShareListEntity.smali",
+    "fields": [
+      {
+        "field": "isSelected",
+        "type": "boolean"
+      },
+      {
+        "field": "root",
+        "type": "boolean"
+      },
+      {
+        "field": "shareFile",
+        "type": "com.friday.document.model.ShareFile"
+      }
+    ]
+  },
+  "com.friday.document.model.StudentShareEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/StudentShareEntity.smali",
+    "fields": [
+      {
+        "field": "shareFileList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/friday/document/model/ShareFile;>;"
+      },
+      {
+        "field": "totalCount",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.document.model.TchByCloudEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/TchByCloudEntity.smali",
+    "fields": [
+      {
+        "field": "isSelected",
+        "type": "boolean"
+      },
+      {
+        "field": "picture",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "teacherId",
+        "type": "long"
+      },
+      {
+        "field": "teacherName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "updateTime",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.document.model.TchListEntity": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/model/TchListEntity.smali",
+    "fields": [
+      {
+        "field": "teachers",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Lcom/friday/document/model/TchByCloudEntity;>;"
+      }
+    ]
+  },
+  "com.friday.document.viewmodel.BaseFileViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/viewmodel/BaseFileViewModel.smali",
+    "fields": [
+      {
+        "field": "A",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "B",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "C",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "D",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "E",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "F",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "G",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "H",
+        "type": "vd.l"
+      },
+      {
+        "field": "I",
+        "type": "vd.u"
+      },
+      {
+        "field": "J",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "b",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.common.dao.ResourceDao"
+      },
+      {
+        "field": "d",
+        "type": "s2.a"
+      },
+      {
+        "field": "e",
+        "type": "com.friday.document.service.FileManager"
+      },
+      {
+        "field": "f",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "g",
+        "type": "qc.d"
+      },
+      {
+        "field": "h",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "i",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "j",
+        "type": "vd.k"
+      },
+      {
+        "field": "k",
+        "type": "vd.p"
+      },
+      {
+        "field": "l",
+        "type": "vd.k"
+      },
+      {
+        "field": "m",
+        "type": "vd.p"
+      },
+      {
+        "field": "n",
+        "type": "java.util.LinkedList"
+      },
+      {
+        "field": "o",
+        "type": "vd.k"
+      },
+      {
+        "field": "p",
+        "type": "vd.p"
+      },
+      {
+        "field": "q",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "r",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "s",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "t",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "u",
+        "type": "vd.l"
+      },
+      {
+        "field": "v",
+        "type": "vd.u"
+      },
+      {
+        "field": "w",
+        "type": "vd.k"
+      },
+      {
+        "field": "x",
+        "type": "vd.p"
+      },
+      {
+        "field": "y",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "z",
+        "type": "androidx.lifecycle.MutableLiveData"
+      }
+    ]
+  },
+  "com.friday.document.viewmodel.FolderViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/viewmodel/FolderViewModel.smali",
+    "fields": [
+      {
+        "field": "K",
+        "type": "com.friday.document.repositroy.FileRepository"
+      },
+      {
+        "field": "L",
+        "type": "vd.l"
+      },
+      {
+        "field": "M",
+        "type": "vd.c"
+      },
+      {
+        "field": "N",
+        "type": "java.util.List"
+      },
+      {
+        "field": "O",
+        "type": "java.util.List"
+      },
+      {
+        "field": "P",
+        "type": "vd.k"
+      },
+      {
+        "field": "Q",
+        "type": "vd.p"
+      }
+    ]
+  },
+  "com.friday.document.viewmodel.ManualSyncViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/viewmodel/ManualSyncViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.document.service.FileManager"
+      },
+      {
+        "field": "d",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "e",
+        "type": "vd.l"
+      },
+      {
+        "field": "f",
+        "type": "vd.u"
+      }
+    ]
+  },
+  "com.friday.document.viewmodel.NewestViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/viewmodel/NewestViewModel.smali",
+    "fields": [
+      {
+        "field": "K",
+        "type": "com.friday.document.repositroy.FileRepository"
+      },
+      {
+        "field": "L",
+        "type": "vd.c"
+      }
+    ]
+  },
+  "com.friday.document.viewmodel.PdfViewerViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/viewmodel/PdfViewerViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "c2.a1"
+      },
+      {
+        "field": "b",
+        "type": "vd.l"
+      },
+      {
+        "field": "c",
+        "type": "vd.u"
+      }
+    ]
+  },
+  "com.friday.document.viewmodel.RecycleBinViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/viewmodel/RecycleBinViewModel.smali",
+    "fields": [
+      {
+        "field": "K",
+        "type": "vd.c"
+      }
+    ]
+  },
+  "com.friday.document.viewmodel.ShareBaseViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/viewmodel/ShareBaseViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "s2.b"
+      },
+      {
+        "field": "c",
+        "type": "c2.g2"
+      },
+      {
+        "field": "d",
+        "type": "com.friday.common.dao.ResourceDao"
+      },
+      {
+        "field": "e",
+        "type": "com.friday.document.service.FileManager"
+      },
+      {
+        "field": "f",
+        "type": "vd.l"
+      },
+      {
+        "field": "g",
+        "type": "vd.u"
+      },
+      {
+        "field": "h",
+        "type": "vd.l"
+      },
+      {
+        "field": "i",
+        "type": "vd.u"
+      },
+      {
+        "field": "j",
+        "type": "vd.k"
+      },
+      {
+        "field": "k",
+        "type": "vd.p"
+      },
+      {
+        "field": "l",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "m",
+        "type": "java.util.HashMap"
+      },
+      {
+        "field": "n",
+        "type": "vd.l"
+      },
+      {
+        "field": "o",
+        "type": "vd.u"
+      }
+    ]
+  },
+  "com.friday.document.viewmodel.ShareByTeacherViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/viewmodel/ShareByTeacherViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "s2.b"
+      },
+      {
+        "field": "c",
+        "type": "vd.l"
+      },
+      {
+        "field": "d",
+        "type": "vd.u"
+      },
+      {
+        "field": "e",
+        "type": "vd.l"
+      },
+      {
+        "field": "f",
+        "type": "vd.u"
+      }
+    ]
+  },
+  "com.friday.document.viewmodel.ShareFileViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/viewmodel/ShareFileViewModel.smali",
+    "fields": [
+      {
+        "field": "d",
+        "type": "android.content.Context"
+      },
+      {
+        "field": "e",
+        "type": "s2.b"
+      },
+      {
+        "field": "f",
+        "type": "vd.l"
+      },
+      {
+        "field": "g",
+        "type": "vd.u"
+      },
+      {
+        "field": "h",
+        "type": "java.util.LinkedList"
+      },
+      {
+        "field": "i",
+        "type": "vd.l"
+      },
+      {
+        "field": "j",
+        "type": "vd.u"
+      },
+      {
+        "field": "k",
+        "type": "vd.l"
+      },
+      {
+        "field": "l",
+        "type": "vd.l"
+      },
+      {
+        "field": "m",
+        "type": "vd.u"
+      },
+      {
+        "field": "n",
+        "type": "vd.u"
+      }
+    ]
+  },
+  "com.friday.document.viewmodel.StudentShareViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/viewmodel/StudentShareViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "s2.b"
+      },
+      {
+        "field": "c",
+        "type": "d2.i"
+      },
+      {
+        "field": "d",
+        "type": "c2.g2"
+      },
+      {
+        "field": "e",
+        "type": "com.friday.common.dao.ResourceDao"
+      },
+      {
+        "field": "f",
+        "type": "com.friday.document.service.FileManager"
+      },
+      {
+        "field": "g",
+        "type": "vd.k"
+      },
+      {
+        "field": "h",
+        "type": "vd.p"
+      },
+      {
+        "field": "i",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "j",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "k",
+        "type": "vd.l"
+      },
+      {
+        "field": "l",
+        "type": "vd.u"
+      },
+      {
+        "field": "m",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "n",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "o",
+        "type": "int"
+      },
+      {
+        "field": "p",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "q",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "r",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "s",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "t",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "u",
+        "type": "java.util.HashMap"
+      },
+      {
+        "field": "v",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "w",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "x",
+        "type": "vd.l"
+      },
+      {
+        "field": "y",
+        "type": "vd.u"
+      }
+    ]
+  },
+  "com.friday.document.viewmodel.TeacherOnlyViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/viewmodel/TeacherOnlyViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "s2.a"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "d",
+        "type": "com.friday.document.service.FileManager"
+      },
+      {
+        "field": "e",
+        "type": "vd.k"
+      },
+      {
+        "field": "f",
+        "type": "vd.p"
+      }
+    ]
+  },
+  "com.friday.document.viewmodel.TxtEditViewModel": {
+    "smali": "android/中育云笔记/smali_classes3/com/friday/document/viewmodel/TxtEditViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "c",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "d",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "e",
+        "type": "androidx.lifecycle.MutableLiveData"
+      }
+    ]
+  },
+  "com.friday.lecture.model.ConnectMode": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/lecture/model/ConnectMode.smali",
+    "fields": [
+      {
+        "field": "keyboardList",
+        "type": "java.util.List",
+        "generic_descriptor": "Ljava/util/List<Ljava/lang/String;>;"
+      },
+      {
+        "field": "passwordMaxSize",
+        "type": "int"
+      }
+    ]
+  },
+  "com.friday.lecture.model.KeyboardData": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/lecture/model/KeyboardData.smali",
+    "fields": [
+      {
+        "field": "value",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.lecture.model.PaintColorEntity": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/lecture/model/PaintColorEntity.smali",
+    "fields": [
+      {
+        "field": "color",
+        "type": "int"
+      },
+      {
+        "field": "selected",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.friday.lecture.model.PolicyEntity": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/lecture/model/PolicyEntity.smali",
+    "fields": [
+      {
+        "field": "isCanLive",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.friday.lecture.model.SubjectiveHomeworkAnswer": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/lecture/model/SubjectiveHomeworkAnswer.smali",
+    "fields": [
+      {
+        "field": "localPath",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "remoteUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "student",
+        "type": "com.friday.common.classtest.MqttResponse$Student"
+      }
+    ]
+  },
+  "com.friday.lecture.viewmodel.offline.LectureDialogViewModel": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/lecture/viewmodel/offline/LectureDialogViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "vd.l"
+      },
+      {
+        "field": "c",
+        "type": "vd.u"
+      },
+      {
+        "field": "d",
+        "type": "vd.l"
+      },
+      {
+        "field": "e",
+        "type": "vd.u"
+      },
+      {
+        "field": "f",
+        "type": "vd.l"
+      },
+      {
+        "field": "g",
+        "type": "vd.u"
+      },
+      {
+        "field": "h",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "i",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "j",
+        "type": "android.content.Intent"
+      }
+    ]
+  },
+  "com.friday.login.service.GatewayBean": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/login/service/GatewayBean.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "server",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.login.viewmodel.LoginViewModel": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/login/viewmodel/LoginViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "d2.i"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.common.dao.UserDao"
+      },
+      {
+        "field": "d",
+        "type": "vd.l"
+      },
+      {
+        "field": "e",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "f",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "g",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "h",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "i",
+        "type": "androidx.lifecycle.MutableLiveData"
+      }
+    ]
+  },
+  "com.friday.main.model.AddRelationResponse": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/model/AddRelationResponse.smali",
+    "fields": [
+      {
+        "field": "isexist",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.friday.main.model.AddShareTableRequest": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/model/AddShareTableRequest.smali",
+    "fields": [
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "type",
+        "type": "int"
+      },
+      {
+        "field": "userName",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.main.model.GetShareIdResponse": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/model/GetShareIdResponse.smali",
+    "fields": [
+      {
+        "field": "shareId",
+        "type": "long"
+      }
+    ]
+  },
+  "com.friday.main.model.NimInfo": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/model/NimInfo.smali",
+    "fields": [
+      {
+        "field": "nimId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "nimRoomName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "nimToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "userId",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.main.model.NoteResource": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/model/NoteResource.smali",
+    "fields": [
+      {
+        "field": "local",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "service",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.main.model.OssTokenResponse": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/model/OssTokenResponse.smali",
+    "fields": [
+      {
+        "field": "accessKeyId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "accessKeySecret",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "requestId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "securityToken",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.main.model.ReceiveData": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/model/ReceiveData.smali",
+    "fields": [
+      {
+        "field": "filename",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "filetype",
+        "type": "int"
+      },
+      {
+        "field": "sharername",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.main.model.RestoreReq": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/model/RestoreReq.smali",
+    "fields": [
+      {
+        "field": "fileId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "parentId",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.main.model.Result": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/model/Result.smali",
+    "fields": [
+      {
+        "field": "appType",
+        "type": "int"
+      },
+      {
+        "field": "appVersionId",
+        "type": "int"
+      },
+      {
+        "field": "creationTime",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "creatorUserId",
+        "type": "int"
+      },
+      {
+        "field": "description",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "disabled",
+        "type": "boolean"
+      },
+      {
+        "field": "downloads",
+        "type": "int"
+      },
+      {
+        "field": "fileUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "forceUpdate",
+        "type": "boolean"
+      },
+      {
+        "field": "icon",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "int"
+      },
+      {
+        "field": "lastModificationTime",
+        "type": "java.lang.Object"
+      },
+      {
+        "field": "name",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "packageName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "score",
+        "type": "double"
+      },
+      {
+        "field": "size",
+        "type": "int"
+      },
+      {
+        "field": "summary",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "versionCode",
+        "type": "int"
+      },
+      {
+        "field": "versionName",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.main.model.VersionUpdate": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/model/VersionUpdate.smali",
+    "fields": [
+      {
+        "field": "__abp",
+        "type": "boolean"
+      },
+      {
+        "field": "error",
+        "type": "java.lang.Object"
+      },
+      {
+        "field": "result",
+        "type": "com.friday.main.model.Result"
+      },
+      {
+        "field": "success",
+        "type": "boolean"
+      },
+      {
+        "field": "targetUrl",
+        "type": "java.lang.Object"
+      },
+      {
+        "field": "unAuthorizedRequest",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.friday.main.viewmodel.DbViewModel": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/viewmodel/DbViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.common.dao.ResourceDao"
+      },
+      {
+        "field": "d",
+        "type": "c2.g2"
+      },
+      {
+        "field": "e",
+        "type": "c2.v0"
+      },
+      {
+        "field": "f",
+        "type": "vd.l"
+      },
+      {
+        "field": "g",
+        "type": "vd.u"
+      },
+      {
+        "field": "h",
+        "type": "vd.l"
+      },
+      {
+        "field": "i",
+        "type": "vd.u"
+      },
+      {
+        "field": "j",
+        "type": "vd.l"
+      },
+      {
+        "field": "k",
+        "type": "vd.u"
+      },
+      {
+        "field": "l",
+        "type": "vd.l"
+      },
+      {
+        "field": "m",
+        "type": "vd.u"
+      }
+    ]
+  },
+  "com.friday.main.viewmodel.FolderMoveViewModel": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/viewmodel/FolderMoveViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.common.dao.ResourceDao"
+      },
+      {
+        "field": "d",
+        "type": "c2.v0"
+      },
+      {
+        "field": "e",
+        "type": "u3.b"
+      },
+      {
+        "field": "f",
+        "type": "vd.l"
+      },
+      {
+        "field": "g",
+        "type": "vd.u"
+      },
+      {
+        "field": "h",
+        "type": "vd.l"
+      },
+      {
+        "field": "i",
+        "type": "vd.u"
+      },
+      {
+        "field": "j",
+        "type": "vd.k"
+      },
+      {
+        "field": "k",
+        "type": "vd.p"
+      },
+      {
+        "field": "l",
+        "type": "vd.k"
+      },
+      {
+        "field": "m",
+        "type": "vd.p"
+      },
+      {
+        "field": "n",
+        "type": "vd.k"
+      }
+    ]
+  },
+  "com.friday.main.viewmodel.FullScreenViewModel": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/viewmodel/FullScreenViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.common.dao.ResourceDao"
+      },
+      {
+        "field": "d",
+        "type": "c2.g2"
+      },
+      {
+        "field": "e",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "f",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "g",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "h",
+        "type": "androidx.lifecycle.LiveData"
+      }
+    ]
+  },
+  "com.friday.main.viewmodel.HomeViewModel": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/viewmodel/HomeViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "u3.a"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.common.network.StudentSession"
+      },
+      {
+        "field": "d",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "e",
+        "type": "com.friday.common.dao.UserDao"
+      },
+      {
+        "field": "f",
+        "type": "vd.l"
+      },
+      {
+        "field": "g",
+        "type": "vd.k"
+      },
+      {
+        "field": "h",
+        "type": "vd.l"
+      },
+      {
+        "field": "i",
+        "type": "vd.k"
+      },
+      {
+        "field": "j",
+        "type": "android.content.ServiceConnection"
+      },
+      {
+        "field": "k",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "l",
+        "type": "androidx.lifecycle.MutableLiveData"
+      }
+    ]
+  },
+  "com.friday.main.viewmodel.SearchViewModel": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/main/viewmodel/SearchViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "c",
+        "type": "j2.d"
+      },
+      {
+        "field": "d",
+        "type": "u3.b"
+      },
+      {
+        "field": "e",
+        "type": "com.friday.common.dao.ResourceDao"
+      },
+      {
+        "field": "f",
+        "type": "vd.l"
+      },
+      {
+        "field": "g",
+        "type": "vd.c"
+      },
+      {
+        "field": "h",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "i",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "j",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "k",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "l",
+        "type": "androidx.lifecycle.MutableLiveData"
+      }
+    ]
+  },
+  "com.friday.paint.model.NoteListEntity": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/paint/model/NoteListEntity.smali",
+    "fields": [
+      {
+        "field": "inClass",
+        "type": "boolean"
+      },
+      {
+        "field": "noteDir",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "selected",
+        "type": "boolean"
+      },
+      {
+        "field": "thumbnailFile",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.paint.model.PaintEntity": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/paint/model/PaintEntity.smali",
+    "fields": [
+      {
+        "field": "path",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.friday.paint.viewmodel.DoHomeworkViewModel": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/paint/viewmodel/DoHomeworkViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "com.friday.common.dao.UserDao"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.common.classtest.MqttResponse"
+      },
+      {
+        "field": "d",
+        "type": "int"
+      },
+      {
+        "field": "e",
+        "type": "int"
+      },
+      {
+        "field": "f",
+        "type": "boolean"
+      },
+      {
+        "field": "g",
+        "type": "int"
+      },
+      {
+        "field": "h",
+        "type": "boolean"
+      },
+      {
+        "field": "i",
+        "type": "boolean"
+      },
+      {
+        "field": "j",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "k",
+        "type": "java.util.ArrayList"
+      },
+      {
+        "field": "l",
+        "type": "boolean"
+      },
+      {
+        "field": "m",
+        "type": "java.util.ArrayList"
+      },
+      {
+        "field": "n",
+        "type": "vd.l"
+      },
+      {
+        "field": "o",
+        "type": "vd.u"
+      }
+    ]
+  },
+  "com.friday.paint.viewmodel.NewNoteViewModel": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/paint/viewmodel/NewNoteViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.common.dao.ResourceDao"
+      },
+      {
+        "field": "d",
+        "type": "com.friday.common.dao.UserDao"
+      },
+      {
+        "field": "e",
+        "type": "c2.v0"
+      },
+      {
+        "field": "f",
+        "type": "j2.d"
+      },
+      {
+        "field": "g",
+        "type": "boolean"
+      },
+      {
+        "field": "h",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "i",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "j",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "k",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "l",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "m",
+        "type": "java.util.Set"
+      },
+      {
+        "field": "n",
+        "type": "vd.k"
+      },
+      {
+        "field": "o",
+        "type": "vd.p"
+      },
+      {
+        "field": "p",
+        "type": "long"
+      },
+      {
+        "field": "q",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "r",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "s",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "t",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "u",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "v",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "w",
+        "type": "vd.k"
+      },
+      {
+        "field": "x",
+        "type": "vd.p"
+      },
+      {
+        "field": "y",
+        "type": "vd.k"
+      },
+      {
+        "field": "z",
+        "type": "vd.p"
+      }
+    ]
+  },
+  "com.friday.paint.viewmodel.NoteViewModel": {
+    "smali": "android/中育云笔记/smali_classes4/com/friday/paint/viewmodel/NoteViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.common.dao.ResourceDao"
+      },
+      {
+        "field": "d",
+        "type": "com.friday.common.dao.UserDao"
+      },
+      {
+        "field": "e",
+        "type": "c2.v0"
+      },
+      {
+        "field": "f",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "g",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "h",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "i",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "j",
+        "type": "java.util.List"
+      },
+      {
+        "field": "k",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "l",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "m",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "n",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "o",
+        "type": "java.util.HashMap"
+      },
+      {
+        "field": "p",
+        "type": "long"
+      },
+      {
+        "field": "q",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "r",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "s",
+        "type": "vd.k"
+      },
+      {
+        "field": "t",
+        "type": "vd.p"
+      },
+      {
+        "field": "u",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "v",
+        "type": "androidx.lifecycle.LiveData"
+      },
+      {
+        "field": "w",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "x",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "y",
+        "type": "vd.k"
+      },
+      {
+        "field": "z",
+        "type": "vd.p"
+      }
+    ]
+  },
+  "com.friday.user.viewmodel.UserViewModel": {
+    "smali": "android/中育云笔记/smali_classes5/com/friday/user/viewmodel/UserViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "com.friday.common.dao.UserDao"
+      },
+      {
+        "field": "c",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "d",
+        "type": "com.friday.common.dao.ResourceDao"
+      },
+      {
+        "field": "e",
+        "type": "c2.g2"
+      },
+      {
+        "field": "f",
+        "type": "c2.v0"
+      },
+      {
+        "field": "g",
+        "type": "d2.i"
+      },
+      {
+        "field": "h",
+        "type": "vd.l"
+      },
+      {
+        "field": "i",
+        "type": "vd.u"
+      },
+      {
+        "field": "j",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "k",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "l",
+        "type": "androidx.compose.runtime.MutableState"
+      }
+    ]
+  },
+  "com.zykj.blackboard.bean.BackgroundLineConfig": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/bean/BackgroundLineConfig.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "int"
+      },
+      {
+        "field": "b",
+        "type": "float"
+      },
+      {
+        "field": "c",
+        "type": "com.zykj.blackboard.bean.BackgroundLineConfig$BackgroundLineType"
+      },
+      {
+        "field": "d",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.AudioInfoEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/AudioInfoEntity.smali",
+    "fields": [
+      {
+        "field": "commandEnum",
+        "type": "com.zykj.board.EzyCommandEnum$CommandEnum"
+      },
+      {
+        "field": "data",
+        "type": "byte[]"
+      },
+      {
+        "field": "delayTime",
+        "type": "long"
+      },
+      {
+        "field": "duration",
+        "type": "long"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isPlay",
+        "type": "boolean"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/AudioRecordEntity;>;"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.AudioInfoEntityCursor": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/AudioInfoEntityCursor.smali",
+    "fields": [
+      {
+        "field": "l",
+        "type": "com.zykj.blackboard.core.data.dao.CommandEnumConverter"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.AudioRecordEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/AudioRecordEntity.smali",
+    "fields": [
+      {
+        "field": "audioInfoEntity",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/AudioInfoEntity;>;"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.AuthorEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/AuthorEntity.smali",
+    "fields": [
+      {
+        "field": "authorId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "authorName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "duration",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "schoolId",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "startTime",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "url",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.BackgroundLineConfigEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/BackgroundLineConfigEntity.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "lineColor",
+        "type": "int"
+      },
+      {
+        "field": "lineSpace",
+        "type": "float"
+      },
+      {
+        "field": "lineType",
+        "type": "com.zykj.board.EzyBackgroundLineTypeEnum$BackgroundLineTypeEnum"
+      },
+      {
+        "field": "lineWidth",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.BackgroundLineConfigEntityCursor": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/BackgroundLineConfigEntityCursor.smali",
+    "fields": [
+      {
+        "field": "l",
+        "type": "com.zykj.blackboard.core.data.dao.BackgroundLineTypeEnumConverter"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.BlackBoardEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/BlackBoardEntity.smali",
+    "fields": [
+      {
+        "field": "dir",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "pages",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/PageEntity;>;"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.CommandInfoEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/CommandInfoEntity.smali",
+    "fields": [
+      {
+        "field": "commandEnum",
+        "type": "com.zykj.board.EzyCommandEnum$CommandEnum"
+      },
+      {
+        "field": "data",
+        "type": "byte[]"
+      },
+      {
+        "field": "delayTime",
+        "type": "long"
+      },
+      {
+        "field": "duration",
+        "type": "long"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isPlay",
+        "type": "boolean"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/CommandRecordEntity;>;"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.CommandInfoEntityCursor": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/CommandInfoEntityCursor.smali",
+    "fields": [
+      {
+        "field": "l",
+        "type": "com.zykj.blackboard.core.data.dao.CommandEnumConverter"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.CommandRecordEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/CommandRecordEntity.smali",
+    "fields": [
+      {
+        "field": "commandInfoEntity",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/CommandInfoEntity;>;"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.FileInfoEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/FileInfoEntity.smali",
+    "fields": [
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/FileRecordEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.FileRecordEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/FileRecordEntity.smali",
+    "fields": [
+      {
+        "field": "fileInfoEntity",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/FileInfoEntity;>;"
+      },
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.GeometryInfoEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/GeometryInfoEntity.smali",
+    "fields": [
+      {
+        "field": "color",
+        "type": "int"
+      },
+      {
+        "field": "geometryType",
+        "type": "int"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "pointList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/GeometryPointFEntity;>;"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/GeometryRecordEntity;>;"
+      },
+      {
+        "field": "style",
+        "type": "int"
+      },
+      {
+        "field": "textSize",
+        "type": "float"
+      },
+      {
+        "field": "width",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.GeometryPointFEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/GeometryPointFEntity.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/GeometryInfoEntity;>;"
+      },
+      {
+        "field": "x",
+        "type": "float"
+      },
+      {
+        "field": "y",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.GeometryRecordEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/GeometryRecordEntity.smali",
+    "fields": [
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "geometryInfoEntityList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/GeometryInfoEntity;>;"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.HeaderEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/HeaderEntity.smali",
+    "fields": [
+      {
+        "field": "author",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/AuthorEntity;>;"
+      },
+      {
+        "field": "convertUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "createDate",
+        "type": "long"
+      },
+      {
+        "field": "defaultBackgroundColor",
+        "type": "int"
+      },
+      {
+        "field": "defaultBackgroundLineConfig",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/BackgroundLineConfigEntity;>;"
+      },
+      {
+        "field": "duration",
+        "type": "long"
+      },
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "lastBackgroundColor",
+        "type": "int"
+      },
+      {
+        "field": "lastBackgroundLineConfig",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/BackgroundLineConfigEntity;>;"
+      },
+      {
+        "field": "moveConfig",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/MoveConfigEntity;>;"
+      },
+      {
+        "field": "page",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/PageEntity;>;"
+      },
+      {
+        "field": "provider",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/AuthorEntity;>;"
+      },
+      {
+        "field": "updateDate",
+        "type": "long"
+      },
+      {
+        "field": "version",
+        "type": "int"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.MatrixEventEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/MatrixEventEntity.smali",
+    "fields": [
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "matrixInfo",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/MatrixInfoEntity;>;"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/MatrixRecordEntity;>;"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.MatrixInfoEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/MatrixInfoEntity.smali",
+    "fields": [
+      {
+        "field": "eventTime",
+        "type": "long"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "perSp0",
+        "type": "float"
+      },
+      {
+        "field": "perSp1",
+        "type": "float"
+      },
+      {
+        "field": "perSp2",
+        "type": "float"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/MatrixEventEntity;>;"
+      },
+      {
+        "field": "scaleX",
+        "type": "float"
+      },
+      {
+        "field": "scaleY",
+        "type": "float"
+      },
+      {
+        "field": "skewX",
+        "type": "float"
+      },
+      {
+        "field": "skewY",
+        "type": "float"
+      },
+      {
+        "field": "transX",
+        "type": "float"
+      },
+      {
+        "field": "transY",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.MatrixRecordEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/MatrixRecordEntity.smali",
+    "fields": [
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "matrixEventEntity",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/MatrixEventEntity;>;"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.MoveConfigEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/MoveConfigEntity.smali",
+    "fields": [
+      {
+        "field": "horizontalTranslate",
+        "type": "boolean"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isEnable",
+        "type": "boolean"
+      },
+      {
+        "field": "maxHeightTimes",
+        "type": "int"
+      },
+      {
+        "field": "maxWidthTimes",
+        "type": "int"
+      },
+      {
+        "field": "rotate",
+        "type": "boolean"
+      },
+      {
+        "field": "scale",
+        "type": "boolean"
+      },
+      {
+        "field": "verticalTranslate",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.PageEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/PageEntity.smali",
+    "fields": [
+      {
+        "field": "blackBoardEntity",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/BlackBoardEntity;>;"
+      },
+      {
+        "field": "commandFileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "commandIndex",
+        "type": "int"
+      },
+      {
+        "field": "dirName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "headerEntity",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/HeaderEntity;>;"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "isChange",
+        "type": "boolean"
+      },
+      {
+        "field": "recordEntity",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.RecordEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/RecordEntity.smali",
+    "fields": [
+      {
+        "field": "audioList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/AudioRecordEntity;>;"
+      },
+      {
+        "field": "commandList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/CommandRecordEntity;>;"
+      },
+      {
+        "field": "fileList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/FileRecordEntity;>;"
+      },
+      {
+        "field": "geometryList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/GeometryRecordEntity;>;"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "matrixList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/MatrixRecordEntity;>;"
+      },
+      {
+        "field": "page",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/PageEntity;>;"
+      },
+      {
+        "field": "textList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/TextRecordEntity;>;"
+      },
+      {
+        "field": "touchList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/TouchRecordEntity;>;"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.TextInfoEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/TextInfoEntity.smali",
+    "fields": [
+      {
+        "field": "color",
+        "type": "int"
+      },
+      {
+        "field": "content",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/TextRecordEntity;>;"
+      },
+      {
+        "field": "style",
+        "type": "int"
+      },
+      {
+        "field": "textSize",
+        "type": "float"
+      },
+      {
+        "field": "width",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.TextRecordEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/TextRecordEntity.smali",
+    "fields": [
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "textInfoEntityList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/TextInfoEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.TouchEventEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/TouchEventEntity.smali",
+    "fields": [
+      {
+        "field": "color",
+        "type": "int"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "itemLength",
+        "type": "float"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/TouchRecordEntity;>;"
+      },
+      {
+        "field": "spacing",
+        "type": "float"
+      },
+      {
+        "field": "style",
+        "type": "int"
+      },
+      {
+        "field": "textSize",
+        "type": "float"
+      },
+      {
+        "field": "touchInfoList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/TouchInfoEntity;>;"
+      },
+      {
+        "field": "width",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.TouchInfoEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/TouchInfoEntity.smali",
+    "fields": [
+      {
+        "field": "eventTime",
+        "type": "long"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/TouchEventEntity;>;"
+      },
+      {
+        "field": "x",
+        "type": "float"
+      },
+      {
+        "field": "y",
+        "type": "float"
+      }
+    ]
+  },
+  "com.zykj.blackboard.core.data.dao.TouchRecordEntity": {
+    "smali": "android/中育云笔记/smali_classes5/com/zykj/blackboard/core/data/dao/TouchRecordEntity.smali",
+    "fields": [
+      {
+        "field": "fileName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "id",
+        "type": "long"
+      },
+      {
+        "field": "record",
+        "type": "io.objectbox.relation.ToOne",
+        "generic_descriptor": "Lio/objectbox/relation/ToOne<Lcom/zykj/blackboard/core/data/dao/RecordEntity;>;"
+      },
+      {
+        "field": "touchEventList",
+        "type": "io.objectbox.relation.ToMany",
+        "generic_descriptor": "Lio/objectbox/relation/ToMany<Lcom/zykj/blackboard/core/data/dao/TouchEventEntity;>;"
+      },
+      {
+        "field": "validate",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.cloudhelper.viewmodel.PickNoteViewModel": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/cloudhelper/viewmodel/PickNoteViewModel.smali",
+    "fields": [
+      {
+        "field": "b",
+        "type": "pa.a"
+      },
+      {
+        "field": "c",
+        "type": "d2.i"
+      },
+      {
+        "field": "d",
+        "type": "com.friday.common.dao.FileDao"
+      },
+      {
+        "field": "e",
+        "type": "android.net.Uri"
+      },
+      {
+        "field": "f",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "g",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "h",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "i",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "j",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "k",
+        "type": "androidx.lifecycle.MutableLiveData"
+      },
+      {
+        "field": "l",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "m",
+        "type": "androidx.lifecycle.MutableLiveData"
+      }
+    ]
+  },
+  "com.zykj.http.bean.ApiResp": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/http/bean/ApiResp.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "int",
+        "gson_serialized_name": "code"
+      },
+      {
+        "field": "error",
+        "type": "com.zykj.http.bean.ErrorInfo",
+        "gson_serialized_name": "error"
+      },
+      {
+        "field": "msg",
+        "type": "java.lang.String",
+        "gson_serialized_name": "msg"
+      },
+      {
+        "field": "result",
+        "type": "java.lang.Object",
+        "generic_descriptor": "TT;"
+      },
+      {
+        "field": "success",
+        "type": "boolean",
+        "gson_serialized_name": "success"
+      }
+    ]
+  },
+  "com.zykj.http.bean.ErrorInfo": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/http/bean/ErrorInfo.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "int"
+      },
+      {
+        "field": "details",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "message",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.http.bean.HeaderBean": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/http/bean/HeaderBean.smali",
+    "fields": [
+      {
+        "field": "accessToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "appName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "refreshToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "serverUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "versionCode",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.ServerInfo": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/message/server/bean/ServerInfo.smali",
+    "fields": [
+      {
+        "field": "c",
+        "type": "com.zykj.message.server.bean.Status"
+      },
+      {
+        "field": "d",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "e",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "f",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "g",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.Status": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/message/server/bean/Status.smali",
+    "fields": [
+      {
+        "field": "c",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.UserInfo": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/message/server/bean/UserInfo.smali",
+    "fields": [
+      {
+        "field": "c",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "d",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "e",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "f",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "g",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "h",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "i",
+        "type": "java.lang.Integer"
+      }
+    ]
+  },
+  "com.zykj.paint.record.model.CompassSnapShot": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/paint/record/model/CompassSnapShot.smali",
+    "fields": [
+      {
+        "field": "degree",
+        "type": "double"
+      },
+      {
+        "field": "downDegree",
+        "type": "double"
+      },
+      {
+        "field": "downWidth",
+        "type": "int"
+      },
+      {
+        "field": "hand",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "left",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "leftDownMartix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "leftMartix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "pencil",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "pencilMartix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "radius",
+        "type": "float"
+      },
+      {
+        "field": "right",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "rightDownMartix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "rightMartix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "top",
+        "type": "int"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.paint.record.model.GraphSnapShot": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/paint/record/model/GraphSnapShot.smali",
+    "fields": [
+      {
+        "field": "bitmap",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "center",
+        "type": "float[]"
+      },
+      {
+        "field": "graphId",
+        "type": "int"
+      },
+      {
+        "field": "isSelect",
+        "type": "boolean"
+      },
+      {
+        "field": "mCanvas",
+        "type": "android.graphics.Canvas"
+      },
+      {
+        "field": "markerCenter",
+        "type": "float[]"
+      },
+      {
+        "field": "matrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "midMatrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "origin",
+        "type": "float[]"
+      },
+      {
+        "field": "paint",
+        "type": "android.graphics.Paint"
+      },
+      {
+        "field": "sketchBitmap",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "sketchMatrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "sketchView",
+        "type": "com.zykj.paint.SketchSyncView"
+      },
+      {
+        "field": "snapShotPaint",
+        "type": "android.graphics.Paint"
+      },
+      {
+        "field": "temp",
+        "type": "double"
+      }
+    ]
+  },
+  "com.zykj.paint.record.model.MapSnapShot": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/paint/record/model/MapSnapShot.smali",
+    "fields": [
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "lastInvertSketchMatrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "lastSketchMatrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "localDisplayList",
+        "type": "com.zykj.paint.Actions$EzyActionList$Builder"
+      },
+      {
+        "field": "mProgressDialog",
+        "type": "android.app.ProgressDialog"
+      },
+      {
+        "field": "mSketchCanvas",
+        "type": "android.graphics.Canvas"
+      },
+      {
+        "field": "midSketchMatrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.paint.record.model.PictureSnapShot": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/paint/record/model/PictureSnapShot.smali",
+    "fields": [
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "localDisplayList",
+        "type": "com.zykj.paint.Actions$EzyActionList$Builder"
+      },
+      {
+        "field": "mapSnapShot",
+        "type": "com.zykj.paint.record.model.MapSnapShot"
+      },
+      {
+        "field": "midSketchMatrix",
+        "type": "android.graphics.Matrix"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.paint.record.model.RulerSnapShot": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/paint/record/model/RulerSnapShot.smali",
+    "fields": [
+      {
+        "field": "bgPaint",
+        "type": "android.graphics.Paint"
+      },
+      {
+        "field": "degree",
+        "type": "float"
+      },
+      {
+        "field": "downDegree",
+        "type": "float"
+      },
+      {
+        "field": "height",
+        "type": "int"
+      },
+      {
+        "field": "rectF",
+        "type": "android.graphics.RectF"
+      },
+      {
+        "field": "ruler",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "width",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.sketch.core.data.ThumbnailBean": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/sketch/core/data/ThumbnailBean.smali",
+    "fields": [
+      {
+        "field": "bitmap",
+        "type": "android.graphics.Bitmap"
+      },
+      {
+        "field": "limitRenderRectF",
+        "type": "android.graphics.RectF"
+      },
+      {
+        "field": "maxRenderRectF",
+        "type": "android.graphics.RectF"
+      }
+    ]
+  },
+  "com.zykj.view.board.board.BoardViewModel": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/view/board/board/BoardViewModel.smali",
+    "fields": [
+      {
+        "field": "A",
+        "type": "vd.u"
+      },
+      {
+        "field": "B",
+        "type": "boolean"
+      },
+      {
+        "field": "a",
+        "type": "kb.b1"
+      },
+      {
+        "field": "b",
+        "type": "kb.a"
+      },
+      {
+        "field": "c",
+        "type": "com.zykj.blackboard.core.edit.IBoardControl"
+      },
+      {
+        "field": "d",
+        "type": "ma.j"
+      },
+      {
+        "field": "e",
+        "type": "ma.f"
+      },
+      {
+        "field": "f",
+        "type": "int"
+      },
+      {
+        "field": "g",
+        "type": "android.graphics.PointF"
+      },
+      {
+        "field": "h",
+        "type": "vd.k"
+      },
+      {
+        "field": "i",
+        "type": "vd.p"
+      },
+      {
+        "field": "j",
+        "type": "vd.l"
+      },
+      {
+        "field": "k",
+        "type": "vd.u"
+      },
+      {
+        "field": "l",
+        "type": "vd.l"
+      },
+      {
+        "field": "m",
+        "type": "vd.u"
+      },
+      {
+        "field": "n",
+        "type": "vd.l"
+      },
+      {
+        "field": "o",
+        "type": "vd.u"
+      },
+      {
+        "field": "p",
+        "type": "vd.l"
+      },
+      {
+        "field": "q",
+        "type": "vd.u"
+      },
+      {
+        "field": "r",
+        "type": "vd.l"
+      },
+      {
+        "field": "s",
+        "type": "vd.u"
+      },
+      {
+        "field": "t",
+        "type": "vd.l"
+      },
+      {
+        "field": "u",
+        "type": "vd.u"
+      },
+      {
+        "field": "v",
+        "type": "vd.l"
+      },
+      {
+        "field": "w",
+        "type": "vd.u"
+      },
+      {
+        "field": "x",
+        "type": "vd.l"
+      },
+      {
+        "field": "y",
+        "type": "vd.u"
+      },
+      {
+        "field": "z",
+        "type": "vd.l"
+      }
+    ]
+  },
+  "com.zykj.view.board.simple.SimpleViewModel": {
+    "smali": "android/中育云笔记/smali_classes6/com/zykj/view/board/simple/SimpleViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "vd.l"
+      },
+      {
+        "field": "b",
+        "type": "vd.u"
+      },
+      {
+        "field": "c",
+        "type": "vd.k"
+      },
+      {
+        "field": "d",
+        "type": "vd.p"
+      }
+    ]
+  }
+}

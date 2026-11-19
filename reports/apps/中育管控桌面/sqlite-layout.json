@@ -1,0 +1,2252 @@
+{
+  "tables": {
+    "Dependency": [
+      {
+        "table": "Dependency",
+        "columns": [
+          {
+            "name": "work_spec_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "prerequisite_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 2,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [
+          {
+            "group": 0,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "prerequisite_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          },
+          {
+            "group": 1,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "work_spec_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          }
+        ],
+        "sql": "CREATE TABLE IF NOT EXISTS `Dependency` (`work_spec_id` TEXT NOT NULL, `prerequisite_id` TEXT NOT NULL, PRIMARY KEY(`work_spec_id`, `prerequisite_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE , FOREIGN KEY(`prerequisite_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$1"
+        ]
+      }
+    ],
+    "Preference": [
+      {
+        "table": "Preference",
+        "columns": [
+          {
+            "name": "key",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "long_value",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `Preference` (`key` TEXT NOT NULL, `long_value` INTEGER, PRIMARY KEY(`key`))",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$1",
+          "androidx/work/impl/WorkMigration9To10"
+        ]
+      }
+    ],
+    "SystemIdInfo": [
+      {
+        "table": "SystemIdInfo",
+        "columns": [
+          {
+            "name": "work_spec_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "generation",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 2,
+            "hidden": 0
+          },
+          {
+            "name": "system_id",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [
+          {
+            "group": 0,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "work_spec_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          }
+        ],
+        "sql": "CREATE TABLE IF NOT EXISTS `SystemIdInfo` (`work_spec_id` TEXT NOT NULL, `generation` INTEGER NOT NULL DEFAULT 0, `system_id` INTEGER NOT NULL, PRIMARY KEY(`work_spec_id`, `generation`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$1"
+        ]
+      }
+    ],
+    "WorkName": [
+      {
+        "table": "WorkName",
+        "columns": [
+          {
+            "name": "name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "work_spec_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 2,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [
+          {
+            "group": 0,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "work_spec_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          }
+        ],
+        "sql": "CREATE TABLE IF NOT EXISTS `WorkName` (`name` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`name`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$1"
+        ]
+      }
+    ],
+    "WorkProgress": [
+      {
+        "table": "WorkProgress",
+        "columns": [
+          {
+            "name": "work_spec_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "progress",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [
+          {
+            "group": 0,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "work_spec_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          }
+        ],
+        "sql": "CREATE TABLE IF NOT EXISTS `WorkProgress` (`work_spec_id` TEXT NOT NULL, `progress` BLOB NOT NULL, PRIMARY KEY(`work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$1"
+        ]
+      }
+    ],
+    "WorkSpec": [
+      {
+        "table": "WorkSpec",
+        "columns": [
+          {
+            "name": "id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "state",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "worker_class_name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input_merger_class_name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "output",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "initial_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "interval_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "flex_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_attempt_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_delay_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "last_enqueue_time",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "-1",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "minimum_retention_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "schedule_requested_at",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_in_foreground",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "out_of_quota_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "period_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "generation",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "next_schedule_time_override",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "9223372036854775807",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "next_schedule_time_override_generation",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "stop_reason",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "-256",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trace_tag",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "required_network_type",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "required_network_request",
+            "type": "BLOB",
+            "not_null": true,
+            "default": "x''",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_charging",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_device_idle",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_battery_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_storage_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_content_update_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_max_content_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "content_uri_triggers",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `WorkSpec` (`id` TEXT NOT NULL, `state` INTEGER NOT NULL, `worker_class_name` TEXT NOT NULL, `input_merger_class_name` TEXT NOT NULL, `input` BLOB NOT NULL, `output` BLOB NOT NULL, `initial_delay` INTEGER NOT NULL, `interval_duration` INTEGER NOT NULL, `flex_duration` INTEGER NOT NULL, `run_attempt_count` INTEGER NOT NULL, `backoff_policy` INTEGER NOT NULL, `backoff_delay_duration` INTEGER NOT NULL, `last_enqueue_time` INTEGER NOT NULL DEFAULT -1, `minimum_retention_duration` INTEGER NOT NULL, `schedule_requested_at` INTEGER NOT NULL, `run_in_foreground` INTEGER NOT NULL, `out_of_quota_policy` INTEGER NOT NULL, `period_count` INTEGER NOT NULL DEFAULT 0, `generation` INTEGER NOT NULL DEFAULT 0, `next_schedule_time_override` INTEGER NOT NULL DEFAULT 9223372036854775807, `next_schedule_time_override_generation` INTEGER NOT NULL DEFAULT 0, `stop_reason` INTEGER NOT NULL DEFAULT -256, `trace_tag` TEXT, `required_network_type` INTEGER NOT NULL, `required_network_request` BLOB NOT NULL DEFAULT x'', `requires_charging` INTEGER NOT NULL, `requires_device_idle` INTEGER NOT NULL, `requires_battery_not_low` INTEGER NOT NULL, `requires_storage_not_low` INTEGER NOT NULL, `trigger_content_update_delay` INTEGER NOT NULL, `trigger_max_content_delay` INTEGER NOT NULL, `content_uri_triggers` BLOB NOT NULL, PRIMARY KEY(`id`))",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$1"
+        ]
+      },
+      {
+        "table": "WorkSpec",
+        "columns": [
+          {
+            "name": "id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "state",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "worker_class_name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input_merger_class_name",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "output",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "initial_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "interval_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "flex_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_attempt_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_delay_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "period_start_time",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "minimum_retention_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "schedule_requested_at",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_in_foreground",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "out_of_quota_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "required_network_type",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_charging",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_device_idle",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_battery_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_storage_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_content_update_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_max_content_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "content_uri_triggers",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE \"WorkSpec\" (`id` TEXT NOT NULL, `state` INTEGER NOT NULL, `worker_class_name` TEXT NOT NULL, `input_merger_class_name` TEXT, `input` BLOB NOT NULL, `output` BLOB NOT NULL, `initial_delay` INTEGER NOT NULL, `interval_duration` INTEGER NOT NULL, `flex_duration` INTEGER NOT NULL, `run_attempt_count` INTEGER NOT NULL, `backoff_policy` INTEGER NOT NULL, `backoff_delay_duration` INTEGER NOT NULL, `period_start_time` INTEGER NOT NULL, `minimum_retention_duration` INTEGER NOT NULL, `schedule_requested_at` INTEGER NOT NULL, `run_in_foreground` INTEGER NOT NULL, `out_of_quota_policy` INTEGER NOT NULL, `required_network_type` INTEGER NOT NULL, `requires_charging` INTEGER NOT NULL, `requires_device_idle` INTEGER NOT NULL, `requires_battery_not_low` INTEGER NOT NULL, `requires_storage_not_low` INTEGER NOT NULL, `trigger_content_update_delay` INTEGER NOT NULL, `trigger_max_content_delay` INTEGER NOT NULL, `content_uri_triggers` BLOB NOT NULL, PRIMARY KEY(`id`))",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_AutoMigration_13_14_Impl"
+        ]
+      }
+    ],
+    "WorkTag": [
+      {
+        "table": "WorkTag",
+        "columns": [
+          {
+            "name": "tag",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "work_spec_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 2,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [
+          {
+            "group": 0,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "work_spec_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          }
+        ],
+        "sql": "CREATE TABLE IF NOT EXISTS `WorkTag` (`tag` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`tag`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_Impl$1"
+        ]
+      }
+    ],
+    "_new_SystemIdInfo": [
+      {
+        "table": "_new_SystemIdInfo",
+        "columns": [
+          {
+            "name": "work_spec_id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "generation",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 2,
+            "hidden": 0
+          },
+          {
+            "name": "system_id",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [
+          {
+            "group": 0,
+            "position": 0,
+            "target": "WorkSpec",
+            "local_column": "work_spec_id",
+            "target_column": "id",
+            "on_update": "CASCADE",
+            "on_delete": "CASCADE",
+            "match": "NONE"
+          }
+        ],
+        "sql": "CREATE TABLE IF NOT EXISTS `_new_SystemIdInfo` (\n            `work_spec_id` TEXT NOT NULL, \n            `generation` INTEGER NOT NULL DEFAULT 0, \n            `system_id` INTEGER NOT NULL, \n            PRIMARY KEY(`work_spec_id`, `generation`), \n            FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) \n                ON UPDATE CASCADE ON DELETE CASCADE )",
+        "owners": [
+          "androidx/work/impl/Migration_15_16"
+        ]
+      }
+    ],
+    "_new_WorkSpec": [
+      {
+        "table": "_new_WorkSpec",
+        "columns": [
+          {
+            "name": "id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "state",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "worker_class_name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input_merger_class_name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "output",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "initial_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "interval_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "flex_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_attempt_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_delay_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "last_enqueue_time",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "minimum_retention_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "schedule_requested_at",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_in_foreground",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "out_of_quota_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "period_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "generation",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "required_network_type",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_charging",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_device_idle",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_battery_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_storage_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_content_update_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_max_content_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "content_uri_triggers",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `_new_WorkSpec` (\n                `id` TEXT NOT NULL,\n                `state` INTEGER NOT NULL,\n                `worker_class_name` TEXT NOT NULL,\n                `input_merger_class_name` TEXT NOT NULL,\n                `input` BLOB NOT NULL,\n                `output` BLOB NOT NULL,\n                `initial_delay` INTEGER NOT NULL,\n                `interval_duration` INTEGER NOT NULL,\n                `flex_duration` INTEGER NOT NULL,\n                `run_attempt_count` INTEGER NOT NULL,\n                `backoff_policy` INTEGER NOT NULL,\n                `backoff_delay_duration` INTEGER NOT NULL,\n                `last_enqueue_time` INTEGER NOT NULL,\n                `minimum_retention_duration` INTEGER NOT NULL,\n                `schedule_requested_at` INTEGER NOT NULL,\n                `run_in_foreground` INTEGER NOT NULL,\n                `out_of_quota_policy` INTEGER NOT NULL,\n                `period_count` INTEGER NOT NULL DEFAULT 0,\n                `generation` INTEGER NOT NULL DEFAULT 0,\n                `required_network_type` INTEGER NOT NULL,\n                `requires_charging` INTEGER NOT NULL,\n                `requires_device_idle` INTEGER NOT NULL,\n                `requires_battery_not_low` INTEGER NOT NULL,\n                `requires_storage_not_low` INTEGER NOT NULL,\n                `trigger_content_update_delay` INTEGER NOT NULL,\n                `trigger_max_content_delay` INTEGER NOT NULL,\n                `content_uri_triggers` BLOB NOT NULL,\n                PRIMARY KEY(`id`)\n                )",
+        "owners": [
+          "androidx/work/impl/Migration_16_17"
+        ]
+      },
+      {
+        "table": "_new_WorkSpec",
+        "columns": [
+          {
+            "name": "id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "state",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "worker_class_name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input_merger_class_name",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "output",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "initial_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "interval_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "flex_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_attempt_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_delay_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "period_start_time",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "minimum_retention_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "schedule_requested_at",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_in_foreground",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "out_of_quota_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "required_network_type",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_charging",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_device_idle",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_battery_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_storage_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_content_update_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_max_content_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "content_uri_triggers",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `_new_WorkSpec` (`id` TEXT NOT NULL, `state` INTEGER NOT NULL, `worker_class_name` TEXT NOT NULL, `input_merger_class_name` TEXT, `input` BLOB NOT NULL, `output` BLOB NOT NULL, `initial_delay` INTEGER NOT NULL, `interval_duration` INTEGER NOT NULL, `flex_duration` INTEGER NOT NULL, `run_attempt_count` INTEGER NOT NULL, `backoff_policy` INTEGER NOT NULL, `backoff_delay_duration` INTEGER NOT NULL, `period_start_time` INTEGER NOT NULL, `minimum_retention_duration` INTEGER NOT NULL, `schedule_requested_at` INTEGER NOT NULL, `run_in_foreground` INTEGER NOT NULL, `out_of_quota_policy` INTEGER NOT NULL, `required_network_type` INTEGER NOT NULL, `requires_charging` INTEGER NOT NULL, `requires_device_idle` INTEGER NOT NULL, `requires_battery_not_low` INTEGER NOT NULL, `requires_storage_not_low` INTEGER NOT NULL, `trigger_content_update_delay` INTEGER NOT NULL, `trigger_max_content_delay` INTEGER NOT NULL, `content_uri_triggers` BLOB NOT NULL, PRIMARY KEY(`id`))",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_AutoMigration_13_14_Impl"
+        ]
+      },
+      {
+        "table": "_new_WorkSpec",
+        "columns": [
+          {
+            "name": "id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "state",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "worker_class_name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input_merger_class_name",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "output",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "initial_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "interval_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "flex_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_attempt_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_delay_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "last_enqueue_time",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "minimum_retention_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "schedule_requested_at",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_in_foreground",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "out_of_quota_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "period_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "required_network_type",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_charging",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_device_idle",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_battery_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_storage_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_content_update_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_max_content_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "content_uri_triggers",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `_new_WorkSpec` (`id` TEXT NOT NULL, `state` INTEGER NOT NULL, `worker_class_name` TEXT NOT NULL, `input_merger_class_name` TEXT, `input` BLOB NOT NULL, `output` BLOB NOT NULL, `initial_delay` INTEGER NOT NULL, `interval_duration` INTEGER NOT NULL, `flex_duration` INTEGER NOT NULL, `run_attempt_count` INTEGER NOT NULL, `backoff_policy` INTEGER NOT NULL, `backoff_delay_duration` INTEGER NOT NULL, `last_enqueue_time` INTEGER NOT NULL, `minimum_retention_duration` INTEGER NOT NULL, `schedule_requested_at` INTEGER NOT NULL, `run_in_foreground` INTEGER NOT NULL, `out_of_quota_policy` INTEGER NOT NULL, `period_count` INTEGER NOT NULL DEFAULT 0, `required_network_type` INTEGER NOT NULL, `requires_charging` INTEGER NOT NULL, `requires_device_idle` INTEGER NOT NULL, `requires_battery_not_low` INTEGER NOT NULL, `requires_storage_not_low` INTEGER NOT NULL, `trigger_content_update_delay` INTEGER NOT NULL, `trigger_max_content_delay` INTEGER NOT NULL, `content_uri_triggers` BLOB NOT NULL, PRIMARY KEY(`id`))",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_AutoMigration_14_15_Impl"
+        ]
+      },
+      {
+        "table": "_new_WorkSpec",
+        "columns": [
+          {
+            "name": "id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "state",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "worker_class_name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input_merger_class_name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "output",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "initial_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "interval_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "flex_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_attempt_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_delay_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "last_enqueue_time",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "minimum_retention_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "schedule_requested_at",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_in_foreground",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "out_of_quota_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "period_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "generation",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "required_network_type",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_charging",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_device_idle",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_battery_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_storage_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_content_update_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_max_content_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "content_uri_triggers",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `_new_WorkSpec` (`id` TEXT NOT NULL, `state` INTEGER NOT NULL, `worker_class_name` TEXT NOT NULL, `input_merger_class_name` TEXT NOT NULL, `input` BLOB NOT NULL, `output` BLOB NOT NULL, `initial_delay` INTEGER NOT NULL, `interval_duration` INTEGER NOT NULL, `flex_duration` INTEGER NOT NULL, `run_attempt_count` INTEGER NOT NULL, `backoff_policy` INTEGER NOT NULL, `backoff_delay_duration` INTEGER NOT NULL, `last_enqueue_time` INTEGER NOT NULL, `minimum_retention_duration` INTEGER NOT NULL, `schedule_requested_at` INTEGER NOT NULL, `run_in_foreground` INTEGER NOT NULL, `out_of_quota_policy` INTEGER NOT NULL, `period_count` INTEGER NOT NULL DEFAULT 0, `generation` INTEGER NOT NULL DEFAULT 0, `required_network_type` INTEGER NOT NULL, `requires_charging` INTEGER NOT NULL, `requires_device_idle` INTEGER NOT NULL, `requires_battery_not_low` INTEGER NOT NULL, `requires_storage_not_low` INTEGER NOT NULL, `trigger_content_update_delay` INTEGER NOT NULL, `trigger_max_content_delay` INTEGER NOT NULL, `content_uri_triggers` BLOB NOT NULL, PRIMARY KEY(`id`))",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_AutoMigration_16_17_Impl"
+        ]
+      },
+      {
+        "table": "_new_WorkSpec",
+        "columns": [
+          {
+            "name": "id",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "state",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "worker_class_name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input_merger_class_name",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "input",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "output",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "initial_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "interval_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "flex_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_attempt_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "backoff_delay_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "last_enqueue_time",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "-1",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "minimum_retention_duration",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "schedule_requested_at",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "run_in_foreground",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "out_of_quota_policy",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "period_count",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "generation",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "next_schedule_time_override",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "9223372036854775807",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "next_schedule_time_override_generation",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "0",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "stop_reason",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": "-256",
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "required_network_type",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_charging",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_device_idle",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_battery_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "requires_storage_not_low",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_content_update_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "trigger_max_content_delay",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "content_uri_triggers",
+            "type": "BLOB",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `_new_WorkSpec` (`id` TEXT NOT NULL, `state` INTEGER NOT NULL, `worker_class_name` TEXT NOT NULL, `input_merger_class_name` TEXT NOT NULL, `input` BLOB NOT NULL, `output` BLOB NOT NULL, `initial_delay` INTEGER NOT NULL, `interval_duration` INTEGER NOT NULL, `flex_duration` INTEGER NOT NULL, `run_attempt_count` INTEGER NOT NULL, `backoff_policy` INTEGER NOT NULL, `backoff_delay_duration` INTEGER NOT NULL, `last_enqueue_time` INTEGER NOT NULL DEFAULT -1, `minimum_retention_duration` INTEGER NOT NULL, `schedule_requested_at` INTEGER NOT NULL, `run_in_foreground` INTEGER NOT NULL, `out_of_quota_policy` INTEGER NOT NULL, `period_count` INTEGER NOT NULL DEFAULT 0, `generation` INTEGER NOT NULL DEFAULT 0, `next_schedule_time_override` INTEGER NOT NULL DEFAULT 9223372036854775807, `next_schedule_time_override_generation` INTEGER NOT NULL DEFAULT 0, `stop_reason` INTEGER NOT NULL DEFAULT -256, `required_network_type` INTEGER NOT NULL, `requires_charging` INTEGER NOT NULL, `requires_device_idle` INTEGER NOT NULL, `requires_battery_not_low` INTEGER NOT NULL, `requires_storage_not_low` INTEGER NOT NULL, `trigger_content_update_delay` INTEGER NOT NULL, `trigger_max_content_delay` INTEGER NOT NULL, `content_uri_triggers` BLOB NOT NULL, PRIMARY KEY(`id`))",
+        "owners": [
+          "androidx/work/impl/WorkDatabase_AutoMigration_19_20_Impl"
+        ]
+      }
+    ],
+    "download": [
+      {
+        "table": "download",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "downloadUrl",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "localPath",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "totalSize",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "downloadSize",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "verifyCode",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "flag",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `download` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `downloadUrl` TEXT NOT NULL, `localPath` TEXT NOT NULL, `totalSize` INTEGER NOT NULL, `downloadSize` INTEGER NOT NULL, `verifyCode` TEXT, `flag` INTEGER NOT NULL)",
+        "owners": [
+          "com/zykj/download/data/AppDatabase_Impl$a"
+        ]
+      }
+    ],
+    "ge_1002": [
+      {
+        "table": "ge_1002",
+        "columns": [
+          {
+            "name": "_id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "_time",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "_datas",
+            "type": "BLOB",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS ge_1002 (_id integer primary key autoincrement, _time INTEGER, _datas blob)",
+        "owners": [
+          "com/tencent/bugly/proguard/x"
+        ]
+      }
+    ],
+    "previewInfo": [
+      {
+        "table": "previewInfo",
+        "columns": [
+          {
+            "name": "path",
+            "type": "TEXT",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "pageIndex",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          },
+          {
+            "name": "pageOffset",
+            "type": "REAL",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `previewInfo` (`path` TEXT NOT NULL, `pageIndex` INTEGER NOT NULL, `pageOffset` REAL NOT NULL, PRIMARY KEY(`path`))",
+        "owners": [
+          "com/zykj/huiwei/launcher/dao/PDFPreviewDatabase_Impl$createOpenDelegate$_openDelegate$1"
+        ]
+      }
+    ],
+    "room_master_table": [
+      {
+        "table": "room_master_table",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          },
+          {
+            "name": "identity_hash",
+            "type": "TEXT",
+            "not_null": false,
+            "default": null,
+            "primary_key_order": 0,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+        "owners": [
+          "androidx/room/BaseRoomConnectionManager",
+          "androidx/room/RoomOpenHelper",
+          "androidx/work/impl/WorkDatabase_Impl$1",
+          "com/zykj/download/data/AppDatabase_Impl$a",
+          "com/zykj/huiwei/launcher/dao/PDFPreviewDatabase_Impl$createOpenDelegate$_openDelegate$1"
+        ]
+      }
+    ],
+    "upload": [
+      {
+        "table": "upload",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "not_null": true,
+            "default": null,
+            "primary_key_order": 1,
+            "hidden": 0
+          }
+        ],
+        "foreign_keys": [],
+        "sql": "CREATE TABLE IF NOT EXISTS `upload` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)",
+        "owners": [
+          "com/zykj/download/data/AppDatabase_Impl$a"
+        ]
+      }
+    ]
+  },
+  "indexes": [
+    {
+      "index": "index_WorkSpec_schedule_requested_at",
+      "table": "WorkSpec",
+      "keys": [
+        {
+          "column": "schedule_requested_at",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_WorkSpec_schedule_requested_at`ON `WorkSpec` (`schedule_requested_at`)",
+      "owners": [
+        "androidx/work/impl/Migration_16_17"
+      ]
+    },
+    {
+      "index": "index_WorkSpec_last_enqueue_time",
+      "table": "WorkSpec",
+      "keys": [
+        {
+          "column": "last_enqueue_time",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_WorkSpec_last_enqueue_time` ON`WorkSpec` (`last_enqueue_time`)",
+      "owners": [
+        "androidx/work/impl/Migration_16_17"
+      ]
+    },
+    {
+      "index": "index_WorkSpec_schedule_requested_at",
+      "table": "WorkSpec",
+      "keys": [
+        {
+          "column": "schedule_requested_at",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_WorkSpec_schedule_requested_at` ON `WorkSpec` (`schedule_requested_at`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_AutoMigration_13_14_Impl",
+        "androidx/work/impl/WorkDatabase_AutoMigration_14_15_Impl",
+        "androidx/work/impl/WorkDatabase_AutoMigration_16_17_Impl",
+        "androidx/work/impl/WorkDatabase_AutoMigration_19_20_Impl",
+        "androidx/work/impl/WorkDatabase_Impl$1"
+      ]
+    },
+    {
+      "index": "index_WorkSpec_period_start_time",
+      "table": "WorkSpec",
+      "keys": [
+        {
+          "column": "period_start_time",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_WorkSpec_period_start_time` ON `WorkSpec` (`period_start_time`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_AutoMigration_13_14_Impl"
+      ]
+    },
+    {
+      "index": "index_WorkSpec_last_enqueue_time",
+      "table": "WorkSpec",
+      "keys": [
+        {
+          "column": "last_enqueue_time",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_WorkSpec_last_enqueue_time` ON `WorkSpec` (`last_enqueue_time`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_AutoMigration_14_15_Impl",
+        "androidx/work/impl/WorkDatabase_AutoMigration_16_17_Impl",
+        "androidx/work/impl/WorkDatabase_AutoMigration_19_20_Impl",
+        "androidx/work/impl/WorkDatabase_Impl$1"
+      ]
+    },
+    {
+      "index": "index_Dependency_work_spec_id",
+      "table": "Dependency",
+      "keys": [
+        {
+          "column": "work_spec_id",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_Dependency_work_spec_id` ON `Dependency` (`work_spec_id`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_Impl$1"
+      ]
+    },
+    {
+      "index": "index_Dependency_prerequisite_id",
+      "table": "Dependency",
+      "keys": [
+        {
+          "column": "prerequisite_id",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_Dependency_prerequisite_id` ON `Dependency` (`prerequisite_id`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_Impl$1"
+      ]
+    },
+    {
+      "index": "index_WorkTag_work_spec_id",
+      "table": "WorkTag",
+      "keys": [
+        {
+          "column": "work_spec_id",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_WorkTag_work_spec_id` ON `WorkTag` (`work_spec_id`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_Impl$1"
+      ]
+    },
+    {
+      "index": "index_WorkName_work_spec_id",
+      "table": "WorkName",
+      "keys": [
+        {
+          "column": "work_spec_id",
+          "descending": false,
+          "collation": "BINARY"
+        }
+      ],
+      "sql": "CREATE INDEX IF NOT EXISTS `index_WorkName_work_spec_id` ON `WorkName` (`work_spec_id`)",
+      "owners": [
+        "androidx/work/impl/WorkDatabase_Impl$1"
+      ]
+    }
+  ],
+  "unresolved": [],
+  "android_schema_evidence": {
+    "file": "../../evidence/sqlite-dynamic.json",
+    "apk_sha256": "e0b46dee805fe516503ac7d2b8e1b7d585de43063a012f8056e3bbd1018a9949",
+    "cases": [
+      {
+        "case": "migration",
+        "tables": [
+          "WorkSpec"
+        ]
+      }
+    ]
+  }
+}

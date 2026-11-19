@@ -1,0 +1,248 @@
+{
+  "com.zykj.base.BaseViewModel": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/base/BaseViewModel.smali",
+    "fields": [
+      {
+        "field": "isDialogVisible",
+        "type": "com.kunminx.architecture.ui.callback.UnPeekLiveData",
+        "generic_descriptor": "Lcom/kunminx/architecture/ui/callback/UnPeekLiveData<Ljava/lang/Boolean;>;"
+      },
+      {
+        "field": "toastLiveData",
+        "type": "com.kunminx.architecture.ui.callback.UnPeekLiveData",
+        "generic_descriptor": "Lcom/kunminx/architecture/ui/callback/UnPeekLiveData<Lcom/zykj/base/bean/toast/ToastMessage;>;"
+      }
+    ]
+  },
+  "com.zykj.base.bean.FragmentBean": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/base/bean/FragmentBean.smali",
+    "fields": [
+      {
+        "field": "fragment",
+        "type": "androidx.fragment.app.Fragment"
+      },
+      {
+        "field": "title",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.base.bean.toast.ToastErrorCodeMessage": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/base/bean/toast/ToastErrorCodeMessage.smali",
+    "fields": [
+      {
+        "field": "errorInfo",
+        "type": "com.zykj.lib.error.code.ErrorCodeInfo"
+      }
+    ]
+  },
+  "com.zykj.base.bean.toast.ToastErrorMessage": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/base/bean/toast/ToastErrorMessage.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "java.lang.Integer"
+      }
+    ]
+  },
+  "com.zykj.base.bean.toast.ToastMessage": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/base/bean/toast/ToastMessage.smali",
+    "fields": [
+      {
+        "field": "message",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "messageResId",
+        "type": "java.lang.Integer"
+      }
+    ]
+  },
+  "com.zykj.http.bean.ApiResp": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/http/bean/ApiResp.smali",
+    "fields": [
+      {
+        "field": "error",
+        "type": "com.zykj.http.bean.ErrorInfo"
+      },
+      {
+        "field": "result",
+        "type": "java.lang.Object",
+        "generic_descriptor": "TT;"
+      },
+      {
+        "field": "success",
+        "type": "boolean"
+      }
+    ]
+  },
+  "com.zykj.http.bean.CommonApiResp": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/http/bean/CommonApiResp.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "int"
+      },
+      {
+        "field": "message",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "result",
+        "type": "java.lang.Object",
+        "generic_descriptor": "TT;"
+      }
+    ]
+  },
+  "com.zykj.http.bean.ErrorInfo": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/http/bean/ErrorInfo.smali",
+    "fields": [
+      {
+        "field": "code",
+        "type": "int"
+      },
+      {
+        "field": "details",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "message",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.http.bean.HeaderBean": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/http/bean/HeaderBean.smali",
+    "fields": [
+      {
+        "field": "accessToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "appName",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "refreshToken",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "serverUrl",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "versionCode",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.http.bean.HeaderLiveData": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/http/bean/HeaderLiveData.smali",
+    "fields": [
+      {
+        "field": "lessonDeauthorized",
+        "type": "kotlinx.coroutines.flow.MutableSharedFlow",
+        "generic_descriptor": "Lkotlinx/coroutines/flow/MutableSharedFlow<Ljava/lang/Boolean;>;"
+      },
+      {
+        "field": "offlineMode",
+        "type": "androidx.lifecycle.MutableLiveData",
+        "generic_descriptor": "Landroidx/lifecycle/MutableLiveData<Ljava/lang/Boolean;>;"
+      },
+      {
+        "field": "unauthorized",
+        "type": "androidx.lifecycle.MutableLiveData",
+        "generic_descriptor": "Landroidx/lifecycle/MutableLiveData<Lcom/zykj/lib/error/code/ErrorCode;>;"
+      }
+    ]
+  },
+  "com.zykj.insight.bean.GetAllSettingsResp": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/insight/bean/GetAllSettingsResp.smali",
+    "fields": [
+      {
+        "field": "dnOrder",
+        "type": "com.zykj.insight.bean.SettingSwitch"
+      }
+    ]
+  },
+  "com.zykj.insight.ui.MainViewModel": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/insight/ui/MainViewModel.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.http.bean.HeaderLiveData"
+      },
+      {
+        "field": "b",
+        "type": "u1.g"
+      },
+      {
+        "field": "c",
+        "type": "androidx.compose.runtime.MutableState"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.ServerInfo": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/message/server/bean/ServerInfo.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "com.zykj.message.server.bean.Status"
+      },
+      {
+        "field": "b",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "c",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "d",
+        "type": "java.lang.String"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.Status": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/message/server/bean/Status.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "int"
+      }
+    ]
+  },
+  "com.zykj.message.server.bean.UserInfo": {
+    "smali": "android/网阅联考/smali_classes2/com/zykj/message/server/bean/UserInfo.smali",
+    "fields": [
+      {
+        "field": "a",
+        "type": "java.lang.Long"
+      },
+      {
+        "field": "b",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "c",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "d",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "e",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "f",
+        "type": "java.lang.String"
+      },
+      {
+        "field": "g",
+        "type": "java.lang.Integer"
+      }
+    ]
+  }
+}
