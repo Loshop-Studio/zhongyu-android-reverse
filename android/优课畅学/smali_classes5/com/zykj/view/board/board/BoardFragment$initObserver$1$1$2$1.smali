@@ -1,0 +1,533 @@
+.class final Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lx7/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lx7/p;"
+    }
+.end annotation
+
+.annotation runtime Lo7/d;
+    c = "com.zykj.view.board.board.BoardFragment$initObserver$1$1$2$1"
+    f = "BoardFragment.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field public a:I
+
+.field public synthetic b:Ljava/lang/Object;
+
+.field public final synthetic c:Lcom/zykj/view/board/board/BoardFragment;
+
+
+# direct methods
+.method public constructor <init>(Lcom/zykj/view/board/board/BoardFragment;Lm7/c;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;->c:Lcom/zykj/view/board/board/BoardFragment;
+
+    .line 2
+    .line 3
+    const/4 p1, 0x2
+
+    .line 4
+    invoke-direct {p0, p1, p2}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILm7/c;)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public final c(Lcom/zykj/view/board/board/p;Lm7/c;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;->create(Ljava/lang/Object;Lm7/c;)Lm7/c;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    check-cast p1, Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;
+
+    .line 6
+    .line 7
+    sget-object p2, Lh7/p;->a:Lh7/p;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, p2}, Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    return-object p1
+.end method
+
+.method public final create(Ljava/lang/Object;Lm7/c;)Lm7/c;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;->c:Lcom/zykj/view/board/board/BoardFragment;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1, p2}, Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;-><init>(Lcom/zykj/view/board/board/BoardFragment;Lm7/c;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iput-object p1, v0, Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;->b:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lcom/zykj/view/board/board/p;
+
+    check-cast p2, Lm7/c;
+
+    invoke-virtual {p0, p1, p2}, Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;->c(Lcom/zykj/view/board/board/p;Lm7/c;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;->b:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/zykj/view/board/board/p;
+
+    .line 4
+    .line 5
+    invoke-static {}, Ln7/a;->f()Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;->a:I
+
+    .line 9
+    .line 10
+    if-nez v1, :cond_5
+
+    .line 11
+    .line 12
+    invoke-static {p1}, Lkotlin/b;->b(Ljava/lang/Object;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object p1, p0, Lcom/zykj/view/board/board/BoardFragment$initObserver$1$1$2$1;->c:Lcom/zykj/view/board/board/BoardFragment;
+
+    .line 16
+    .line 17
+    invoke-static {p1}, Lcom/zykj/view/board/board/BoardFragment;->e0(Lcom/zykj/view/board/board/BoardFragment;)Lcom/zykj/view/databinding/ViewFragmentBoardBinding;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p1
+
+    .line 21
+    if-nez p1, :cond_0
+
+    .line 22
+    .line 23
+    const-string p1, "mBinding"
+
+    .line 24
+    .line 25
+    invoke-static {p1}, Lkotlin/jvm/internal/u;->y(Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    .line 28
+    const/4 p1, 0x0
+
+    .line 29
+    :cond_0
+    iget-object p1, p1, Lcom/zykj/view/databinding/ViewFragmentBoardBinding;->e:Lcom/zykj/view/databinding/ViewIncludeMenuBinding;
+
+    .line 30
+    .line 31
+    iget-object v1, p1, Lcom/zykj/view/databinding/ViewIncludeMenuBinding;->k:Landroidx/appcompat/widget/AppCompatImageView;
+
+    .line 32
+    .line 33
+    const-string v2, "ivWithdraw"
+
+    .line 34
+    .line 35
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/u;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-virtual {v0}, Lcom/zykj/view/board/board/p;->d()Z
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v2
+
+    .line 42
+    const/16 v3, 0x8
+
+    .line 43
+    .line 44
+    const/4 v4, 0x0
+
+    .line 45
+    if-eqz v2, :cond_1
+
+    .line 46
+    .line 47
+    move v2, v4
+
+    .line 48
+    goto :goto_0
+
+    .line 49
+    :cond_1
+    move v2, v3
+
+    .line 50
+    :goto_0
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 51
+    .line 52
+    .line 53
+    iget-object v1, p1, Lcom/zykj/view/databinding/ViewIncludeMenuBinding;->g:Landroidx/appcompat/widget/AppCompatImageView;
+
+    .line 54
+    .line 55
+    const-string v2, "ivRecover"
+
+    .line 56
+    .line 57
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/u;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {v0}, Lcom/zykj/view/board/board/p;->d()Z
+
+    .line 61
+    .line 62
+    .line 63
+    move-result v2
+
+    .line 64
+    if-eqz v2, :cond_2
+
+    .line 65
+    .line 66
+    move v2, v4
+
+    .line 67
+    goto :goto_1
+
+    .line 68
+    :cond_2
+    move v2, v3
+
+    .line 69
+    :goto_1
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 70
+    .line 71
+    .line 72
+    iget-object v1, p1, Lcom/zykj/view/databinding/ViewIncludeMenuBinding;->c:Landroidx/appcompat/widget/AppCompatImageView;
+
+    .line 73
+    .line 74
+    const-string v2, "ivEnlarge"
+
+    .line 75
+    .line 76
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/u;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 77
+    .line 78
+    .line 79
+    invoke-virtual {v0}, Lcom/zykj/view/board/board/p;->e()Z
+
+    .line 80
+    .line 81
+    .line 82
+    move-result v2
+
+    .line 83
+    if-eqz v2, :cond_3
+
+    .line 84
+    .line 85
+    move v2, v4
+
+    .line 86
+    goto :goto_2
+
+    .line 87
+    :cond_3
+    move v2, v3
+
+    .line 88
+    :goto_2
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 89
+    .line 90
+    .line 91
+    iget-object v1, p1, Lcom/zykj/view/databinding/ViewIncludeMenuBinding;->h:Landroidx/appcompat/widget/AppCompatImageView;
+
+    .line 92
+    .line 93
+    const-string v2, "ivReduce"
+
+    .line 94
+    .line 95
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/u;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 96
+    .line 97
+    .line 98
+    invoke-virtual {v0}, Lcom/zykj/view/board/board/p;->e()Z
+
+    .line 99
+    .line 100
+    .line 101
+    move-result v2
+
+    .line 102
+    if-eqz v2, :cond_4
+
+    .line 103
+    .line 104
+    move v3, v4
+
+    .line 105
+    :cond_4
+    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+
+    .line 106
+    .line 107
+    .line 108
+    iget-object v1, p1, Lcom/zykj/view/databinding/ViewIncludeMenuBinding;->k:Landroidx/appcompat/widget/AppCompatImageView;
+
+    .line 109
+    .line 110
+    invoke-virtual {v0}, Lcom/zykj/view/board/board/p;->h()Z
+
+    .line 111
+    .line 112
+    .line 113
+    move-result v2
+
+    .line 114
+    invoke-virtual {v1, v2}, Landroid/view/View;->setEnabled(Z)V
+
+    .line 115
+    .line 116
+    .line 117
+    iget-object v1, p1, Lcom/zykj/view/databinding/ViewIncludeMenuBinding;->g:Landroidx/appcompat/widget/AppCompatImageView;
+
+    .line 118
+    .line 119
+    invoke-virtual {v0}, Lcom/zykj/view/board/board/p;->f()Z
+
+    .line 120
+    .line 121
+    .line 122
+    move-result v2
+
+    .line 123
+    invoke-virtual {v1, v2}, Landroid/view/View;->setEnabled(Z)V
+
+    .line 124
+    .line 125
+    .line 126
+    iget-object v1, p1, Lcom/zykj/view/databinding/ViewIncludeMenuBinding;->j:Landroidx/appcompat/widget/AppCompatImageView;
+
+    .line 127
+    .line 128
+    invoke-virtual {v0}, Lcom/zykj/view/board/board/p;->g()Z
+
+    .line 129
+    .line 130
+    .line 131
+    move-result v2
+
+    .line 132
+    invoke-virtual {v1, v2}, Landroid/view/View;->setSelected(Z)V
+
+    .line 133
+    .line 134
+    .line 135
+    iget-object v1, p1, Lcom/zykj/view/databinding/ViewIncludeMenuBinding;->i:Landroidx/appcompat/widget/AppCompatImageView;
+
+    .line 136
+    .line 137
+    invoke-virtual {v0}, Lcom/zykj/view/board/board/p;->c()Lcom/zykj/view/board/board/q;
+
+    .line 138
+    .line 139
+    .line 140
+    move-result-object v2
+
+    .line 141
+    invoke-virtual {v2}, Lcom/zykj/view/board/board/q;->d()Z
+
+    .line 142
+    .line 143
+    .line 144
+    move-result v2
+
+    .line 145
+    invoke-virtual {v1, v2}, Landroid/view/View;->setSelected(Z)V
+
+    .line 146
+    .line 147
+    .line 148
+    iget-object v1, p1, Lcom/zykj/view/databinding/ViewIncludeMenuBinding;->f:Landroidx/appcompat/widget/AppCompatImageView;
+
+    .line 149
+    .line 150
+    invoke-virtual {v0}, Lcom/zykj/view/board/board/p;->c()Lcom/zykj/view/board/board/q;
+
+    .line 151
+    .line 152
+    .line 153
+    move-result-object v2
+
+    .line 154
+    invoke-virtual {v2}, Lcom/zykj/view/board/board/q;->c()Z
+
+    .line 155
+    .line 156
+    .line 157
+    move-result v2
+
+    .line 158
+    invoke-virtual {v1, v2}, Landroid/view/View;->setSelected(Z)V
+
+    .line 159
+    .line 160
+    .line 161
+    iget-object v1, p1, Lcom/zykj/view/databinding/ViewIncludeMenuBinding;->d:Landroidx/appcompat/widget/AppCompatImageView;
+
+    .line 162
+    .line 163
+    invoke-virtual {v0}, Lcom/zykj/view/board/board/p;->c()Lcom/zykj/view/board/board/q;
+
+    .line 164
+    .line 165
+    .line 166
+    move-result-object v2
+
+    .line 167
+    invoke-virtual {v2}, Lcom/zykj/view/board/board/q;->a()Z
+
+    .line 168
+    .line 169
+    .line 170
+    move-result v2
+
+    .line 171
+    invoke-virtual {v1, v2}, Landroid/view/View;->setSelected(Z)V
+
+    .line 172
+    .line 173
+    .line 174
+    iget-object p1, p1, Lcom/zykj/view/databinding/ViewIncludeMenuBinding;->e:Landroidx/appcompat/widget/AppCompatImageView;
+
+    .line 175
+    .line 176
+    invoke-virtual {v0}, Lcom/zykj/view/board/board/p;->c()Lcom/zykj/view/board/board/q;
+
+    .line 177
+    .line 178
+    .line 179
+    move-result-object v0
+
+    .line 180
+    invoke-virtual {v0}, Lcom/zykj/view/board/board/q;->b()Z
+
+    .line 181
+    .line 182
+    .line 183
+    move-result v0
+
+    .line 184
+    invoke-virtual {p1, v0}, Landroid/view/View;->setSelected(Z)V
+
+    .line 185
+    .line 186
+    .line 187
+    sget-object p1, Lh7/p;->a:Lh7/p;
+
+    .line 188
+    .line 189
+    return-object p1
+
+    .line 190
+    :cond_5
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 191
+    .line 192
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 193
+    .line 194
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 195
+    .line 196
+    .line 197
+    throw p1
+.end method

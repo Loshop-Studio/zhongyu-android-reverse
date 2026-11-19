@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/superplayer_ll_progress_head" android:layout_width="160.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/superplayer_iv_progress_thumbnail" android:visibility="gone" android:layout_width="160.0dp" android:layout_height="90.0dp" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/superplayer_white" android:id="@id/superplayer_tv_progress_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <ProgressBar android:id="@id/superplayer_pb_progress_bar" android:layout_width="100.0dp" android:layout_height="2.0dp" android:layout_marginTop="8.0dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/superplayer_laylist_vod_video_progress" android:layout_below="@id/superplayer_ll_progress_head" style="@style/SuperPlayerAppProgressBarStyle" />
+</LinearLayout>

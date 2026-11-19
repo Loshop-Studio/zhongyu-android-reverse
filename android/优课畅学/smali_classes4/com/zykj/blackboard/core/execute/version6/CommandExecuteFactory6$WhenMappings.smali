@@ -1,0 +1,136 @@
+.class public final synthetic Lcom/zykj/blackboard/core/execute/version6/CommandExecuteFactory6$WhenMappings;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/zykj/blackboard/core/execute/version6/CommandExecuteFactory6;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1001
+    name = "WhenMappings"
+.end annotation
+
+
+# static fields
+.field public static final synthetic $EnumSwitchMapping$0:[I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    invoke-static {}, Lcom/zykj/board/EzyCommandEnum$CommandEnum;->values()[Lcom/zykj/board/EzyCommandEnum$CommandEnum;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sget-object v1, Lcom/zykj/board/EzyCommandEnum$CommandEnum;->c:Lcom/zykj/board/EzyCommandEnum$CommandEnum;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+
+    sget-object v1, Lcom/zykj/board/EzyCommandEnum$CommandEnum;->d:Lcom/zykj/board/EzyCommandEnum$CommandEnum;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+
+    sget-object v1, Lcom/zykj/board/EzyCommandEnum$CommandEnum;->e:Lcom/zykj/board/EzyCommandEnum$CommandEnum;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+
+    sget-object v1, Lcom/zykj/board/EzyCommandEnum$CommandEnum;->i:Lcom/zykj/board/EzyCommandEnum$CommandEnum;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x4
+
+    aput v2, v0, v1
+
+    sget-object v1, Lcom/zykj/board/EzyCommandEnum$CommandEnum;->j:Lcom/zykj/board/EzyCommandEnum$CommandEnum;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x5
+
+    aput v2, v0, v1
+
+    sget-object v1, Lcom/zykj/board/EzyCommandEnum$CommandEnum;->k:Lcom/zykj/board/EzyCommandEnum$CommandEnum;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x6
+
+    aput v2, v0, v1
+
+    sget-object v1, Lcom/zykj/board/EzyCommandEnum$CommandEnum;->f:Lcom/zykj/board/EzyCommandEnum$CommandEnum;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x7
+
+    aput v2, v0, v1
+
+    sget-object v1, Lcom/zykj/board/EzyCommandEnum$CommandEnum;->l:Lcom/zykj/board/EzyCommandEnum$CommandEnum;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x8
+
+    aput v2, v0, v1
+
+    sget-object v1, Lcom/zykj/board/EzyCommandEnum$CommandEnum;->m:Lcom/zykj/board/EzyCommandEnum$CommandEnum;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x9
+
+    aput v2, v0, v1
+
+    sget-object v1, Lcom/zykj/board/EzyCommandEnum$CommandEnum;->n:Lcom/zykj/board/EzyCommandEnum$CommandEnum;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xa
+
+    aput v2, v0, v1
+
+    sput-object v0, Lcom/zykj/blackboard/core/execute/version6/CommandExecuteFactory6$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    return-void
+.end method

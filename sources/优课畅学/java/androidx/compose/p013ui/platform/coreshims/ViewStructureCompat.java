@@ -1,0 +1,88 @@
+package androidx.compose.p013ui.platform.coreshims;
+
+import android.os.Bundle;
+import android.view.ViewStructure;
+import androidx.annotation.RequiresApi;
+import androidx.annotation.RestrictTo;
+
+@RestrictTo({RestrictTo.Scope.LIBRARY})
+/* loaded from: classes2.dex */
+public class ViewStructureCompat {
+    private final Object mWrappedObj;
+
+    @RequiresApi(23)
+    public static class Api23Impl {
+        private Api23Impl() {
+        }
+
+        public static Bundle getExtras(ViewStructure viewStructure) {
+            return viewStructure.getExtras();
+        }
+
+        public static void setClassName(ViewStructure viewStructure, String str) {
+            viewStructure.setClassName(str);
+        }
+
+        public static void setContentDescription(ViewStructure viewStructure, CharSequence charSequence) {
+            viewStructure.setContentDescription(charSequence);
+        }
+
+        public static void setDimens(ViewStructure viewStructure, int i10, int i11, int i12, int i13, int i14, int i15) {
+            viewStructure.setDimens(i10, i11, i12, i13, i14, i15);
+        }
+
+        public static void setId(ViewStructure viewStructure, int i10, String str, String str2, String str3) {
+            viewStructure.setId(i10, str, str2, str3);
+        }
+
+        public static void setText(ViewStructure viewStructure, CharSequence charSequence) {
+            viewStructure.setText(charSequence);
+        }
+
+        public static void setTextStyle(ViewStructure viewStructure, float f10, int i10, int i11, int i12) {
+            viewStructure.setTextStyle(f10, i10, i11, i12);
+        }
+    }
+
+    private ViewStructureCompat(ViewStructure viewStructure) {
+        this.mWrappedObj = viewStructure;
+    }
+
+    @RequiresApi(23)
+    public static ViewStructureCompat toViewStructureCompat(ViewStructure viewStructure) {
+        return new ViewStructureCompat(viewStructure);
+    }
+
+    public Bundle getExtras() {
+        return Api23Impl.getExtras((ViewStructure) this.mWrappedObj);
+    }
+
+    public void setClassName(String str) {
+        Api23Impl.setClassName((ViewStructure) this.mWrappedObj, str);
+    }
+
+    public void setContentDescription(CharSequence charSequence) {
+        Api23Impl.setContentDescription((ViewStructure) this.mWrappedObj, charSequence);
+    }
+
+    public void setDimens(int i10, int i11, int i12, int i13, int i14, int i15) {
+        Api23Impl.setDimens((ViewStructure) this.mWrappedObj, i10, i11, i12, i13, i14, i15);
+    }
+
+    public void setId(int i10, String str, String str2, String str3) {
+        Api23Impl.setId((ViewStructure) this.mWrappedObj, i10, str, str2, str3);
+    }
+
+    public void setText(CharSequence charSequence) {
+        Api23Impl.setText((ViewStructure) this.mWrappedObj, charSequence);
+    }
+
+    public void setTextStyle(float f10, int i10, int i11, int i12) {
+        Api23Impl.setTextStyle((ViewStructure) this.mWrappedObj, f10, i10, i11, i12);
+    }
+
+    @RequiresApi(23)
+    public ViewStructure toViewStructure() {
+        return (ViewStructure) this.mWrappedObj;
+    }
+}

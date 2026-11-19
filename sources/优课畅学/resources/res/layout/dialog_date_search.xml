@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_date_dialog" android:tag="layout/dialog_date_search_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_bg" android:layout_width="@dimen/view_346" android:layout_height="@dimen/view_240">
+        <TextView android:textSize="@dimen/text_9" android:textColor="@color/dark" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/view_13" android:text="@string/dialog_date_choose_title" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/dialog_date_mcv" android:layout_width="@dimen/view_311" android:layout_height="@dimen/view_155">
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView android:id="@id/mcv_start_date" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/view_5" android:layout_weight="1.0" app:mcv_calendarMode="month" app:mcv_firstDayOfWeek="monday" app:mcv_showOtherDates="all" />
+            <View android:layout_gravity="center_vertical" android:background="@color/dialog_line" android:layout_width="@dimen/view_1" android:layout_height="@dimen/view_129" />
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView android:id="@id/mcv_end_date" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/view_5" android:layout_weight="1.0" app:mcv_calendarMode="month" app:mcv_firstDayOfWeek="monday" app:mcv_showOtherDates="all" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="@dimen/view_202" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_9">
+            <Button android:textSize="@dimen/text_7" android:textColor="@color/white" android:id="@id/bt_dialog_left" android:background="@drawable/dialog_btn_bg" android:layout_width="0.0dp" android:layout_height="@dimen/view_23" android:text="@string/dialog_reset" android:layout_weight="1.0" android:layout_marginEnd="@dimen/view_4" style="?android:borderlessButtonStyle" />
+            <Button android:textSize="@dimen/text_7" android:textColor="@color/white" android:id="@id/bt_dialog_right" android:background="@drawable/dialog_btn_bg" android:layout_width="0.0dp" android:layout_height="@dimen/view_23" android:text="@string/dialog_sure" android:layout_weight="1.0" android:layout_marginStart="@dimen/view_4" style="?android:borderlessButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

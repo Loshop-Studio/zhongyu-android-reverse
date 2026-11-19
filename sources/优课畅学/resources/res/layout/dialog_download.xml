@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/dialog_download_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/shape_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.zykj.lib.ota.view.ProgressBar android:id="@id/progressView" android:layout_width="@dimen/view_100" android:layout_height="@dimen/view_100" android:indeterminate="false" android:indeterminateOnly="false" app:pb_isCapRounded="false" app:pb_isHiddenText="false" app:pb_mode="circle" app:pb_reachedColor="#ffc73b" app:pb_reachedHeight="4.0dp" app:pb_textColor="#ffc73b" app:pb_textMargin="8.0dp" app:pb_textSize="14.0sp" app:pb_unReachedColor="#ecf0f1" app:pb_unReachedHeight="4.0dp" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fragment_micro_play" android:tag="layout/fragment_micro_play_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.zykj.view.board.play.SketchPlayFragment" android:id="@id/sketch_play_fragment" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

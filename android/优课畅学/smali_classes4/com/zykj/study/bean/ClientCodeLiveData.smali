@@ -1,0 +1,41 @@
+.class public final Lcom/zykj/study/bean/ClientCodeLiveData;
+.super Landroidx/lifecycle/MutableLiveData;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroidx/compose/runtime/internal/StabilityInferred;
+    parameters = 0x0
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroidx/lifecycle/MutableLiveData<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final $stable:I = 0x8
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Landroidx/lifecycle/MutableLiveData;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

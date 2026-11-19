@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xuexiang.xui.widget.tabbar.TabControlView android:gravity="center" android:layout_gravity="center" android:id="@id/control_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tcv_defaultSelection="0" app:tcv_item_padding_horizontal="@dimen/view_14" app:tcv_item_padding_vertical="@dimen/view_2" app:tcv_items="@array/teach_menu" app:tcv_textSize="@dimen/text_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

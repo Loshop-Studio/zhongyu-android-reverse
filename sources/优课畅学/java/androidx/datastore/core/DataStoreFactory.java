@@ -1,0 +1,100 @@
+package androidx.datastore.core;
+
+import androidx.datastore.core.handlers.NoOpCorruptionHandler;
+import androidx.datastore.core.handlers.ReplaceFileCorruptionHandler;
+import java.util.List;
+import kotlin.jvm.internal.AbstractC9133u;
+import kotlinx.coroutines.AbstractC9165e;
+import p134i7.AbstractC8807u;
+import p134i7.AbstractC8809v;
+import p135i8.AbstractC8874s1;
+import p135i8.C8843i0;
+import p135i8.InterfaceC8822b0;
+import p300x7.InterfaceC10559a;
+
+/* loaded from: classes2.dex */
+public final class DataStoreFactory {
+    public static final DataStoreFactory INSTANCE = new DataStoreFactory();
+
+    private DataStoreFactory() {
+    }
+
+    public static /* synthetic */ DataStore create$default(DataStoreFactory dataStoreFactory, Storage storage, ReplaceFileCorruptionHandler replaceFileCorruptionHandler, List list, InterfaceC8822b0 interfaceC8822b0, int i10, Object obj) {
+        if ((i10 & 2) != 0) {
+            replaceFileCorruptionHandler = null;
+        }
+        if ((i10 & 4) != 0) {
+            list = AbstractC8809v.m14771n();
+        }
+        if ((i10 & 8) != 0) {
+            interfaceC8822b0 = AbstractC9165e.m16552a(Actual_jvmKt.ioDispatcher().plus(AbstractC8874s1.m14910b(null, 1, null)));
+        }
+        return dataStoreFactory.create(storage, replaceFileCorruptionHandler, list, interfaceC8822b0);
+    }
+
+    public final <T> DataStore<T> create(Serializer<T> serializer, ReplaceFileCorruptionHandler<T> replaceFileCorruptionHandler, List<? extends DataMigration<T>> migrations, InterfaceC10559a produceFile) {
+        AbstractC9133u.m16133g(serializer, "serializer");
+        AbstractC9133u.m16133g(migrations, "migrations");
+        AbstractC9133u.m16133g(produceFile, "produceFile");
+        return create$default(this, serializer, replaceFileCorruptionHandler, migrations, null, produceFile, 8, null);
+    }
+
+    public final <T> DataStore<T> create(Serializer<T> serializer, ReplaceFileCorruptionHandler<T> replaceFileCorruptionHandler, InterfaceC10559a produceFile) {
+        AbstractC9133u.m16133g(serializer, "serializer");
+        AbstractC9133u.m16133g(produceFile, "produceFile");
+        return create$default(this, serializer, replaceFileCorruptionHandler, null, null, produceFile, 12, null);
+    }
+
+    public final <T> DataStore<T> create(Serializer<T> serializer, InterfaceC10559a produceFile) {
+        AbstractC9133u.m16133g(serializer, "serializer");
+        AbstractC9133u.m16133g(produceFile, "produceFile");
+        return create$default(this, serializer, null, null, null, produceFile, 14, null);
+    }
+
+    public static /* synthetic */ DataStore create$default(DataStoreFactory dataStoreFactory, Serializer serializer, ReplaceFileCorruptionHandler replaceFileCorruptionHandler, List list, InterfaceC8822b0 interfaceC8822b0, InterfaceC10559a interfaceC10559a, int i10, Object obj) {
+        if ((i10 & 2) != 0) {
+            replaceFileCorruptionHandler = null;
+        }
+        if ((i10 & 4) != 0) {
+            list = AbstractC8809v.m14771n();
+        }
+        if ((i10 & 8) != 0) {
+            interfaceC8822b0 = AbstractC9165e.m16552a(C8843i0.m14867b().plus(AbstractC8874s1.m14910b(null, 1, null)));
+        }
+        return dataStoreFactory.create(serializer, replaceFileCorruptionHandler, list, interfaceC8822b0, interfaceC10559a);
+    }
+
+    public final <T> DataStore<T> create(Storage<T> storage) {
+        AbstractC9133u.m16133g(storage, "storage");
+        return create$default(this, storage, null, null, null, 14, null);
+    }
+
+    public final <T> DataStore<T> create(Storage<T> storage, ReplaceFileCorruptionHandler<T> replaceFileCorruptionHandler) {
+        AbstractC9133u.m16133g(storage, "storage");
+        return create$default(this, storage, replaceFileCorruptionHandler, null, null, 12, null);
+    }
+
+    public final <T> DataStore<T> create(Storage<T> storage, ReplaceFileCorruptionHandler<T> replaceFileCorruptionHandler, List<? extends DataMigration<T>> migrations) {
+        AbstractC9133u.m16133g(storage, "storage");
+        AbstractC9133u.m16133g(migrations, "migrations");
+        return create$default(this, storage, replaceFileCorruptionHandler, migrations, null, 8, null);
+    }
+
+    public final <T> DataStore<T> create(Serializer<T> serializer, ReplaceFileCorruptionHandler<T> replaceFileCorruptionHandler, List<? extends DataMigration<T>> migrations, InterfaceC8822b0 scope, InterfaceC10559a produceFile) {
+        AbstractC9133u.m16133g(serializer, "serializer");
+        AbstractC9133u.m16133g(migrations, "migrations");
+        AbstractC9133u.m16133g(scope, "scope");
+        AbstractC9133u.m16133g(produceFile, "produceFile");
+        return create(new FileStorage(serializer, null, produceFile, 2, null), replaceFileCorruptionHandler, migrations, scope);
+    }
+
+    public final <T> DataStore<T> create(Storage<T> storage, ReplaceFileCorruptionHandler<T> replaceFileCorruptionHandler, List<? extends DataMigration<T>> migrations, InterfaceC8822b0 scope) {
+        AbstractC9133u.m16133g(storage, "storage");
+        AbstractC9133u.m16133g(migrations, "migrations");
+        AbstractC9133u.m16133g(scope, "scope");
+        if (replaceFileCorruptionHandler == null) {
+            replaceFileCorruptionHandler = (ReplaceFileCorruptionHandler<T>) new NoOpCorruptionHandler();
+        }
+        return new DataStoreImpl(storage, AbstractC8807u.m14755e(DataMigrationInitializer.Companion.getInitializer(migrations)), replaceFileCorruptionHandler, scope);
+    }
+}

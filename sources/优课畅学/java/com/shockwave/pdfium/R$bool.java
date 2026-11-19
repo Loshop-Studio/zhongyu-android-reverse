@@ -1,0 +1,9 @@
+package com.shockwave.pdfium;
+
+/* loaded from: classes4.dex */
+public final class R$bool {
+    public static int abc_action_bar_embed_tabs = 2131034112;
+
+    private R$bool() {
+    }
+}

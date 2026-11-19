@@ -1,0 +1,56 @@
+package androidx.compose.material.icons.filled;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.p013ui.graphics.Color;
+import androidx.compose.p013ui.graphics.SolidColor;
+import androidx.compose.p013ui.graphics.StrokeCap;
+import androidx.compose.p013ui.graphics.StrokeJoin;
+import androidx.compose.p013ui.graphics.vector.ImageVector;
+import androidx.compose.p013ui.graphics.vector.PathBuilder;
+import androidx.compose.p013ui.graphics.vector.VectorKt;
+import androidx.compose.p013ui.unit.C3156Dp;
+import kotlin.jvm.internal.AbstractC9133u;
+
+/* loaded from: classes.dex */
+public final class BeachAccessKt {
+    private static ImageVector _beachAccess;
+
+    public static final ImageVector getBeachAccess(Icons.Filled filled) {
+        ImageVector imageVector = _beachAccess;
+        if (imageVector != null) {
+            AbstractC9133u.m16130d(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Filled.BeachAccess", C3156Dp.m26899constructorimpl(24.0f), C3156Dp.m26899constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.Companion.m24302getBlack0d7_KjU(), null);
+        int iM24629getButtKaPHkGw = StrokeCap.Companion.m24629getButtKaPHkGw();
+        int iM24639getBevelLxFBmk8 = StrokeJoin.Companion.m24639getBevelLxFBmk8();
+        PathBuilder pathBuilder = new PathBuilder();
+        pathBuilder.moveTo(13.127f, 14.56f);
+        pathBuilder.lineToRelative(1.43f, -1.43f);
+        pathBuilder.lineToRelative(6.44f, 6.443f);
+        pathBuilder.lineTo(19.57f, 21.0f);
+        pathBuilder.close();
+        pathBuilder.moveTo(17.42f, 8.83f);
+        pathBuilder.lineToRelative(2.86f, -2.86f);
+        pathBuilder.curveToRelative(-3.95f, -3.95f, -10.35f, -3.96f, -14.3f, -0.02f);
+        pathBuilder.curveToRelative(3.93f, -1.3f, 8.31f, -0.25f, 11.44f, 2.88f);
+        pathBuilder.close();
+        pathBuilder.moveTo(5.95f, 5.98f);
+        pathBuilder.curveToRelative(-3.94f, 3.95f, -3.93f, 10.35f, 0.02f, 14.3f);
+        pathBuilder.lineToRelative(2.86f, -2.86f);
+        pathBuilder.curveTo(5.7f, 14.29f, 4.65f, 9.91f, 5.95f, 5.98f);
+        pathBuilder.close();
+        pathBuilder.moveTo(5.97f, 5.96f);
+        pathBuilder.lineToRelative(-0.01f, 0.01f);
+        pathBuilder.curveToRelative(-0.38f, 3.01f, 1.17f, 6.88f, 4.3f, 10.02f);
+        pathBuilder.lineToRelative(5.73f, -5.73f);
+        pathBuilder.curveToRelative(-3.13f, -3.13f, -7.01f, -4.68f, -10.02f, -4.3f);
+        pathBuilder.close();
+        ImageVector imageVectorBuild = ImageVector.Builder.m24961addPathoIyEayM$default(builder, pathBuilder.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, iM24629getButtKaPHkGw, iM24639getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _beachAccess = imageVectorBuild;
+        AbstractC9133u.m16130d(imageVectorBuild);
+        return imageVectorBuild;
+    }
+}

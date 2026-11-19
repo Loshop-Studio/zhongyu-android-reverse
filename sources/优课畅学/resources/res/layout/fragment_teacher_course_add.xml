@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/fragment_teacher_course_add" android:tag="layout/fragment_teacher_course_add_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xuexiang.xui.widget.actionbar.TitleBar android:id="@id/toolbar" android:layout_width="0.0dp" android:layout_height="@dimen/view_30" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tb_actionTextColor="@color/black_text" app:tb_dividerColor="@color/divider" app:tb_leftImageResource="@drawable/ic_arrow_left" app:tb_titleTextColor="@color/black_text" app:tb_titleTextSize="@dimen/text_10" app:tb_useThemeColor="false" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/sf_course" android:background="@color/gray" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <com.xuexiang.xui.widget.statelayout.MultipleStatusView android:id="@id/ms_course" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_course" android:paddingTop="@dimen/view_6" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/view_6" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="4" />
+        </com.xuexiang.xui.widget.statelayout.MultipleStatusView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include layout="@layout/layout_bind_view_model" />
+</androidx.constraintlayout.widget.ConstraintLayout>

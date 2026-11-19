@@ -1,0 +1,183 @@
+.class final Landroidx/compose/ui/spatial/RectManager$currentRectInfo$1;
+.super Lkotlin/jvm/internal/Lambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lx7/r;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/ui/spatial/RectManager;->currentRectInfo(ILandroidx/compose/ui/node/DelegatableNode;)Landroidx/compose/ui/spatial/RelativeLayoutBounds;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lx7/r;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $node:Landroidx/compose/ui/node/DelegatableNode;
+
+.field final synthetic $result:Lkotlin/jvm/internal/Ref$ObjectRef;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/internal/Ref$ObjectRef<",
+            "Landroidx/compose/ui/spatial/RelativeLayoutBounds;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic this$0:Landroidx/compose/ui/spatial/RectManager;
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/jvm/internal/Ref$ObjectRef;Landroidx/compose/ui/node/DelegatableNode;Landroidx/compose/ui/spatial/RectManager;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/internal/Ref$ObjectRef<",
+            "Landroidx/compose/ui/spatial/RelativeLayoutBounds;",
+            ">;",
+            "Landroidx/compose/ui/node/DelegatableNode;",
+            "Landroidx/compose/ui/spatial/RectManager;",
+            ")V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Landroidx/compose/ui/spatial/RectManager$currentRectInfo$1;->$result:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iput-object p2, p0, Landroidx/compose/ui/spatial/RectManager$currentRectInfo$1;->$node:Landroidx/compose/ui/node/DelegatableNode;
+
+    iput-object p3, p0, Landroidx/compose/ui/spatial/RectManager$currentRectInfo$1;->this$0:Landroidx/compose/ui/spatial/RectManager;
+
+    const/4 p1, 0x4
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    move-result p2
+
+    check-cast p3, Ljava/lang/Number;
+
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    move-result p3
+
+    check-cast p4, Ljava/lang/Number;
+
+    invoke-virtual {p4}, Ljava/lang/Number;->intValue()I
+
+    move-result p4
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Landroidx/compose/ui/spatial/RectManager$currentRectInfo$1;->invoke(IIII)V
+
+    sget-object p1, Lh7/p;->a:Lh7/p;
+
+    return-object p1
+.end method
+
+.method public final invoke(IIII)V
+    .locals 11
+
+    .line 2
+    iget-object v0, p0, Landroidx/compose/ui/spatial/RectManager$currentRectInfo$1;->$result:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    .line 3
+    iget-object v1, p0, Landroidx/compose/ui/spatial/RectManager$currentRectInfo$1;->$node:Landroidx/compose/ui/node/DelegatableNode;
+
+    int-to-long v2, p1
+
+    const/16 p1, 0x20
+
+    shl-long/2addr v2, p1
+
+    int-to-long v4, p2
+
+    const-wide v6, 0xffffffffL
+
+    and-long/2addr v4, v6
+
+    or-long/2addr v2, v4
+
+    int-to-long p2, p3
+
+    shl-long p1, p2, p1
+
+    int-to-long p3, p4
+
+    and-long/2addr p3, v6
+
+    or-long v4, p1, p3
+
+    .line 4
+    iget-object p1, p0, Landroidx/compose/ui/spatial/RectManager$currentRectInfo$1;->this$0:Landroidx/compose/ui/spatial/RectManager;
+
+    invoke-static {p1}, Landroidx/compose/ui/spatial/RectManager;->access$getThrottledCallbacks$p(Landroidx/compose/ui/spatial/RectManager;)Landroidx/compose/ui/spatial/ThrottledCallbacks;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/compose/ui/spatial/ThrottledCallbacks;->getWindowOffset-nOcc-ac()J
+
+    move-result-wide v6
+
+    .line 5
+    iget-object p1, p0, Landroidx/compose/ui/spatial/RectManager$currentRectInfo$1;->this$0:Landroidx/compose/ui/spatial/RectManager;
+
+    invoke-static {p1}, Landroidx/compose/ui/spatial/RectManager;->access$getThrottledCallbacks$p(Landroidx/compose/ui/spatial/RectManager;)Landroidx/compose/ui/spatial/ThrottledCallbacks;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/compose/ui/spatial/ThrottledCallbacks;->getScreenOffset-nOcc-ac()J
+
+    move-result-wide v8
+
+    .line 6
+    iget-object p1, p0, Landroidx/compose/ui/spatial/RectManager$currentRectInfo$1;->this$0:Landroidx/compose/ui/spatial/RectManager;
+
+    invoke-static {p1}, Landroidx/compose/ui/spatial/RectManager;->access$getThrottledCallbacks$p(Landroidx/compose/ui/spatial/RectManager;)Landroidx/compose/ui/spatial/ThrottledCallbacks;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/compose/ui/spatial/ThrottledCallbacks;->getViewToWindowMatrix-3i98HWw()[F
+
+    move-result-object v10
+
+    .line 7
+    invoke-static/range {v1 .. v10}, Landroidx/compose/ui/spatial/ThrottledCallbacksKt;->rectInfoFor-Q-MZNJw(Landroidx/compose/ui/node/DelegatableNode;JJJJ[F)Landroidx/compose/ui/spatial/RelativeLayoutBounds;
+
+    move-result-object p1
+
+    .line 8
+    iput-object p1, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->a:Ljava/lang/Object;
+
+    return-void
+.end method

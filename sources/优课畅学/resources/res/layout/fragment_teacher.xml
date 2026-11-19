@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fragment_teacher" android:tag="layout/fragment_teacher_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_8" android:textColor="#ff4876ff" android:id="@id/btn_create" android:background="?android:selectableItemBackgroundBorderless" android:padding="@dimen/view_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_teach_course" android:layout_alignParentEnd="true" style="@style/TextPrimary" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/sf_course" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/btn_create">
+        <com.xuexiang.xui.widget.statelayout.MultipleStatusView android:id="@id/ms_course" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@id/rv_course" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </com.xuexiang.xui.widget.statelayout.MultipleStatusView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include layout="@layout/layout_bind_view_model" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fragment_viewer" android:tag="layout/fragment_exercise_viewer_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/view_30">
+        <com.xuexiang.xui.widget.actionbar.TitleBar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent" app:tb_actionTextColor="@color/black_text" app:tb_actionTextSize="@dimen/text_8" app:tb_dividerColor="@color/divider" app:tb_leftImageResource="@drawable/ic_arrow_left" app:tb_titleTextColor="@color/black_text" app:tb_titleTextSize="@dimen/text_10" app:tb_useThemeColor="false" />
+        <LinearLayout android:paddingLeft="@dimen/view_8" android:paddingRight="@dimen/view_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:paddingHorizontal="@dimen/view_8">
+            <TextView android:textSize="@dimen/text_10" android:textColor="@color/colorPrimary" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_10" android:textColor="@color/text_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.zykj.study.view.MultipleStatusView android:id="@id/multiple_status_view" android:layout_width="match_parent" android:layout_height="match_parent" app:msv_emptyView="@layout/layout_status_no_exercise">
+        <LinearLayout android:orientation="horizontal" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:orientation="vertical" android:id="@id/exercise_subject" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/layout_exercise_subject" />
+            <View android:background="@color/divider" android:layout_width="1.0px" android:layout_height="match_parent" />
+            <include android:orientation="vertical" android:id="@id/exercise_answer" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/layout_exercise_answer_viewer" />
+        </LinearLayout>
+    </com.zykj.study.view.MultipleStatusView>
+    <include layout="@layout/layout_bind_view_model" />
+</LinearLayout>

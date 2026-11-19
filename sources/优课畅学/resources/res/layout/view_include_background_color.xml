@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="layout/view_include_background_color_0" android:background="@drawable/white_frame_border" android:paddingTop="@dimen/view_3" android:paddingBottom="@dimen/view_3" android:focusable="true" android:clickable="true" android:layout_width="@dimen/view_18" android:layout_height="wrap_content" android:paddingVertical="@dimen/view_3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:id="@id/rg_background_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/rb_background_white" android:tag="@color/color_white" android:background="@drawable/view_selector_color_white" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <RadioButton android:id="@id/rb_background_black" android:tag="@color/color_black" android:background="@drawable/view_selector_color_black" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <RadioButton android:id="@id/rb_background_blue" android:tag="@color/color_dark_blue" android:background="@drawable/view_selector_color_dark_blue" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <RadioButton android:id="@id/rb_background_green" android:tag="@color/color_dark_green" android:background="@drawable/view_selector_color_dark_green" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <RadioButton android:id="@id/rb_background_interweave" android:tag="#F6F0E9" android:background="@drawable/view_selector_background_interweave" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+        <RadioButton android:id="@id/rb_background_line" android:tag="#F6F0E8" android:background="@drawable/view_selector_background_line" android:layout_width="@dimen/view_12" android:layout_height="@dimen/view_12" android:layout_margin="@dimen/view_3" android:button="@null" />
+    </RadioGroup>
+</androidx.appcompat.widget.LinearLayoutCompat>

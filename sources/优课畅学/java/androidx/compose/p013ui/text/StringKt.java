@@ -1,0 +1,42 @@
+package androidx.compose.p013ui.text;
+
+import androidx.compose.p013ui.text.intl.Locale;
+import androidx.compose.p013ui.text.intl.LocaleList;
+import androidx.compose.p013ui.text.platform.AndroidStringDelegate_androidKt;
+
+/* loaded from: classes2.dex */
+public final class StringKt {
+    private static final PlatformStringDelegate stringDelegate = AndroidStringDelegate_androidKt.ActualStringDelegate();
+
+    public static final String capitalize(String str, Locale locale) {
+        return stringDelegate.capitalize(str, locale.getPlatformLocale());
+    }
+
+    public static final String decapitalize(String str, Locale locale) {
+        return stringDelegate.decapitalize(str, locale.getPlatformLocale());
+    }
+
+    public static final String toLowerCase(String str, Locale locale) {
+        return stringDelegate.toLowerCase(str, locale.getPlatformLocale());
+    }
+
+    public static final String toUpperCase(String str, Locale locale) {
+        return stringDelegate.toUpperCase(str, locale.getPlatformLocale());
+    }
+
+    public static final String capitalize(String str, LocaleList localeList) {
+        return capitalize(str, localeList.isEmpty() ? Locale.Companion.getCurrent() : localeList.get(0));
+    }
+
+    public static final String decapitalize(String str, LocaleList localeList) {
+        return decapitalize(str, localeList.isEmpty() ? Locale.Companion.getCurrent() : localeList.get(0));
+    }
+
+    public static final String toLowerCase(String str, LocaleList localeList) {
+        return toLowerCase(str, localeList.isEmpty() ? Locale.Companion.getCurrent() : localeList.get(0));
+    }
+
+    public static final String toUpperCase(String str, LocaleList localeList) {
+        return toUpperCase(str, localeList.isEmpty() ? Locale.Companion.getCurrent() : localeList.get(0));
+    }
+}

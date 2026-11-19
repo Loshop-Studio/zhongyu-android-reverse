@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_no_member_select" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_8" android:textColor="@color/label_text_color_optional" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selected_member_check_progress" android:drawablePadding="@dimen/view_12" android:lineSpacingExtra="@dimen/view_4" app:drawableTopCompat="@drawable/ic_no_select_member" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_exercise_train_multiple_choice_result_fail_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@id/answer_choice" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_edit_choice" />
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/view_8" />
+            <include android:id="@id/answer_micro" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_micro" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton android:id="@id/btn_revision" android:layout_width="match_parent" android:layout_height="@dimen/view_28" android:layout_marginTop="@dimen/view_12" android:text="@string/revision" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:rb_isRadiusAdjustBounds="true" style="@style/RoundButton.RED" />
+</LinearLayout>

@@ -1,0 +1,79 @@
+package androidx.compose.material.icons.sharp;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.p013ui.graphics.Color;
+import androidx.compose.p013ui.graphics.SolidColor;
+import androidx.compose.p013ui.graphics.StrokeCap;
+import androidx.compose.p013ui.graphics.StrokeJoin;
+import androidx.compose.p013ui.graphics.vector.ImageVector;
+import androidx.compose.p013ui.graphics.vector.PathBuilder;
+import androidx.compose.p013ui.graphics.vector.VectorKt;
+import androidx.compose.p013ui.unit.C3156Dp;
+import kotlin.jvm.internal.AbstractC9133u;
+
+/* loaded from: classes.dex */
+public final class SoupKitchenKt {
+    private static ImageVector _soupKitchen;
+
+    public static final ImageVector getSoupKitchen(Icons.Sharp sharp) {
+        ImageVector imageVector = _soupKitchen;
+        if (imageVector != null) {
+            AbstractC9133u.m16130d(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Sharp.SoupKitchen", C3156Dp.m26899constructorimpl(24.0f), C3156Dp.m26899constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.Companion.m24302getBlack0d7_KjU(), null);
+        int iM24629getButtKaPHkGw = StrokeCap.Companion.m24629getButtKaPHkGw();
+        int iM24639getBevelLxFBmk8 = StrokeJoin.Companion.m24639getBevelLxFBmk8();
+        PathBuilder pathBuilder = new PathBuilder();
+        pathBuilder.moveTo(6.4f, 7.0f);
+        pathBuilder.curveTo(6.06f, 7.55f, 6.0f, 7.97f, 6.0f, 8.38f);
+        pathBuilder.curveTo(6.0f, 9.15f, 7.0f, 11.0f, 7.0f, 12.0f);
+        pathBuilder.curveToRelative(0.0f, 0.95f, -0.4f, 1.5f, -0.4f, 1.5f);
+        pathBuilder.horizontalLineTo(5.1f);
+        pathBuilder.curveToRelative(0.0f, 0.0f, 0.4f, -0.55f, 0.4f, -1.5f);
+        pathBuilder.curveToRelative(0.0f, -1.0f, -1.0f, -2.85f, -1.0f, -3.62f);
+        pathBuilder.curveTo(4.5f, 7.97f, 4.56f, 7.55f, 4.9f, 7.0f);
+        pathBuilder.horizontalLineTo(6.4f);
+        pathBuilder.close();
+        pathBuilder.moveTo(11.4f, 7.0f);
+        pathBuilder.curveTo(11.06f, 7.55f, 11.0f, 7.97f, 11.0f, 8.38f);
+        pathBuilder.curveTo(11.0f, 9.15f, 12.0f, 11.0f, 12.0f, 12.0f);
+        pathBuilder.curveToRelative(0.0f, 0.95f, -0.4f, 1.5f, -0.4f, 1.5f);
+        pathBuilder.horizontalLineToRelative(1.5f);
+        pathBuilder.curveToRelative(0.0f, 0.0f, 0.4f, -0.55f, 0.4f, -1.5f);
+        pathBuilder.curveToRelative(0.0f, -1.0f, -1.0f, -2.85f, -1.0f, -3.62f);
+        pathBuilder.curveToRelative(0.0f, -0.41f, 0.06f, -0.83f, 0.4f, -1.38f);
+        pathBuilder.horizontalLineTo(11.4f);
+        pathBuilder.close();
+        pathBuilder.moveTo(8.15f, 7.0f);
+        pathBuilder.curveToRelative(-0.34f, 0.55f, -0.4f, 0.97f, -0.4f, 1.38f);
+        pathBuilder.curveToRelative(0.0f, 0.77f, 1.0f, 2.63f, 1.0f, 3.62f);
+        pathBuilder.curveToRelative(0.0f, 0.95f, -0.4f, 1.5f, -0.4f, 1.5f);
+        pathBuilder.horizontalLineToRelative(1.5f);
+        pathBuilder.curveToRelative(0.0f, 0.0f, 0.4f, -0.55f, 0.4f, -1.5f);
+        pathBuilder.curveToRelative(0.0f, -1.0f, -1.0f, -2.85f, -1.0f, -3.62f);
+        pathBuilder.curveToRelative(0.0f, -0.41f, 0.06f, -0.83f, 0.4f, -1.38f);
+        pathBuilder.horizontalLineTo(8.15f);
+        pathBuilder.close();
+        pathBuilder.moveTo(21.47f, 6.5f);
+        pathBuilder.curveToRelative(0.0f, 0.0f, 0.13f, -1.06f, 0.13f, -1.5f);
+        pathBuilder.curveToRelative(0.0f, -1.65f, -1.35f, -3.0f, -3.0f, -3.0f);
+        pathBuilder.curveToRelative(-1.54f, 0.0f, -2.81f, 1.16f, -2.98f, 2.65f);
+        pathBuilder.lineTo(14.53f, 15.0f);
+        pathBuilder.lineToRelative(-11.6f, 0.0f);
+        pathBuilder.curveToRelative(-0.02f, 3.87f, 3.09f, 7.0f, 6.82f, 7.0f);
+        pathBuilder.curveToRelative(3.48f, 0.0f, 6.34f, -2.73f, 6.71f, -6.23f);
+        pathBuilder.lineToRelative(1.15f, -10.87f);
+        pathBuilder.curveTo(17.66f, 4.39f, 18.08f, 4.0f, 18.6f, 4.0f);
+        pathBuilder.curveToRelative(0.55f, 0.0f, 1.0f, 0.45f, 1.0f, 1.0f);
+        pathBuilder.curveToRelative(0.0f, 0.3f, -0.1f, 1.25f, -0.1f, 1.25f);
+        pathBuilder.lineTo(21.47f, 6.5f);
+        pathBuilder.close();
+        ImageVector imageVectorBuild = ImageVector.Builder.m24961addPathoIyEayM$default(builder, pathBuilder.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, iM24629getButtKaPHkGw, iM24639getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _soupKitchen = imageVectorBuild;
+        AbstractC9133u.m16130d(imageVectorBuild);
+        return imageVectorBuild;
+    }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="layout/fragment_management_subscribe_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xuexiang.xui.widget.actionbar.TitleBar android:id="@id/title" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/view_30" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0" app:layout_constraintVertical_weight="0.0" app:tb_barHeight="@dimen/view_30" app:tb_dividerColor="@color/title_divider" app:tb_dividerHeight="1.0dp" app:tb_leftImageResource="@drawable/ic_arrow_left" app:tb_leftText="@string/title_exit" app:tb_titleText="@string/subscribe_management" app:tb_titleTextColor="@color/black" app:tb_titleTextSize="@dimen/text_10" app:tb_useThemeColor="false" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/view_10" app:layout_constraintTop_toBottomOf="@id/title" app:layout_constraintVertical_weight="0.0">
+        <androidx.appcompat.widget.LinearLayoutCompat android:background="@drawable/layout_subscribe_list_bg" android:layout_width="@dimen/view_125" android:layout_height="match_parent" android:layout_marginBottom="@dimen/view_10" android:layout_marginStart="@dimen/view_15">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/subscribe_tab_list" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="binding_1" android:background="@drawable/layout_subscribe_list_bg" android:paddingBottom="1.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/view_10" android:layout_marginStart="@dimen/view_10" android:layout_marginEnd="@dimen/view_15">
+            <include android:id="@id/free_subscriber_list_empty" layout="@layout/layout_free_subscriber_list_empty" />
+            <include android:id="@id/free_subscriber_list" layout="@layout/layout_free_subscriber_list" />
+            <include android:id="@id/self_course_subscriber_list" layout="@layout/layout_self_course_subscriber_list" />
+            <include android:id="@id/other_course_subscriber_list" layout="@layout/layout_other_course_subscriber_list" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="33.0dp" />
+    <include layout="@layout/layout_bind_view_model" />
+</androidx.appcompat.widget.LinearLayoutCompat>

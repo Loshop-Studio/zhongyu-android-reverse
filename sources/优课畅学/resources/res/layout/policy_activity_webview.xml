@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/policy_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/view_22">
+        <ImageView android:id="@id/ivBack" android:padding="@dimen/view_5" android:layout_width="@dimen/view_22" android:layout_height="@dimen/view_22" android:src="@drawable/icon_back" />
+    </FrameLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="#333333" android:id="@id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/view_5" android:paddingEnd="@dimen/view_5" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

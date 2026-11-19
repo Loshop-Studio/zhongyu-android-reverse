@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/tv_linearlayout" android:tag="layout/item_title_list_header_0" android:background="@drawable/item_tab_bg" android:layout_width="match_parent" android:layout_height="@dimen/view_23"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/colorPrimary" android:layout_width="@dimen/view_2" android:layout_height="@dimen/view_7" />
+    <TextView android:textSize="@dimen/text_9" android:textColor="@color/tab_text_color_selector" android:id="@id/tv_head" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/student_achievement" android:paddingStart="@dimen/view_2" />
+</LinearLayout>

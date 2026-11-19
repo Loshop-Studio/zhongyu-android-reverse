@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_micro_add_0" android:background="@drawable/shape_gray_frame_4" android:clipChildren="true" android:clipToPadding="true" android:layout_width="@dimen/view_75" android:layout_height="@dimen/view_43"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/view_11" android:layout_height="@dimen/view_11" android:src="@mipmap/icon_add" app:layout_constraintBottom_toTopOf="@id/text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_8" android:textColor="@color/gray_hint_text" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_exercise_micro" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

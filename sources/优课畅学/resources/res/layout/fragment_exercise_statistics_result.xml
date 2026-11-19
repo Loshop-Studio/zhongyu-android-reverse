@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_exercise_statistics_result_0" android:paddingLeft="@dimen/view_16" android:paddingTop="@dimen/view_8" android:paddingRight="@dimen/view_16" android:paddingBottom="@dimen/view_8" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/view_16" android:paddingVertical="@dimen/view_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:background="@color/colorPrimaryLight" android:paddingLeft="@dimen/view_15" android:paddingTop="@dimen/view_8" android:paddingRight="@dimen/view_15" android:paddingBottom="@dimen/view_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/view_15" android:paddingVertical="@dimen/view_8">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <View android:background="@color/colorPrimary" android:layout_width="@dimen/view_2" android:layout_height="@dimen/view_9" />
+            <TextView android:textSize="@dimen/view_8" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/complete_number" android:paddingStart="@dimen/view_2" />
+            <TextView android:textSize="@dimen/view_8" android:textColor="@color/text_title" android:id="@id/tv_member_with_completed" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <View android:background="@color/colorPrimary" android:layout_width="@dimen/view_2" android:layout_height="@dimen/view_9" />
+            <TextView android:textSize="@dimen/view_8" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/avg_score_label" android:paddingStart="@dimen/view_2" />
+            <TextView android:textSize="@dimen/view_8" android:id="@id/tv_avg_score" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/bg_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_8">
+        <TextView android:textSize="@dimen/text_8" android:textColor="@color/text_title" android:gravity="center" android:paddingTop="@dimen/view_4" android:paddingBottom="@dimen/view_4" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/supervise_group" android:layout_weight="1.0" android:paddingVertical="@dimen/view_4" />
+        <TextView android:textSize="@dimen/text_8" android:textColor="@color/text_title" android:gravity="center" android:paddingTop="@dimen/view_4" android:paddingBottom="@dimen/view_4" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/full_name" android:layout_weight="1.0" android:paddingVertical="@dimen/view_4" />
+        <TextView android:textSize="@dimen/text_8" android:textColor="@color/text_title" android:gravity="center" android:paddingTop="@dimen/view_4" android:paddingBottom="@dimen/view_4" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/achievement_label" android:layout_weight="1.0" android:paddingVertical="@dimen/view_4" />
+    </LinearLayout>
+    <com.zykj.study.view.MultipleStatusView android:id="@id/multiple_status_view" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </com.zykj.study.view.MultipleStatusView>
+</LinearLayout>

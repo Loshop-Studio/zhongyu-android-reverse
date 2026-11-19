@@ -1,0 +1,119 @@
+.class final Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1;
+.super Lkotlin/jvm/internal/Lambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lx7/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1;->a(Lcom/zykj/blackboard/core/play/IPlayControl;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lx7/l;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lcom/zykj/blackboard/core/play/IPlayControl;
+
+.field public final synthetic b:Lcom/zykj/merge/sketch/view/BlackBoardProxyView;
+
+.field public final synthetic c:Lx7/l;
+
+.field public final synthetic d:Lx7/l;
+
+
+# direct methods
+.method public constructor <init>(Lcom/zykj/blackboard/core/play/IPlayControl;Lcom/zykj/merge/sketch/view/BlackBoardProxyView;Lx7/l;Lx7/l;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1;->a:Lcom/zykj/blackboard/core/play/IPlayControl;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1;->b:Lcom/zykj/merge/sketch/view/BlackBoardProxyView;
+
+    .line 4
+    .line 5
+    iput-object p3, p0, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1;->c:Lx7/l;
+
+    .line 6
+    .line 7
+    iput-object p4, p0, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1;->d:Lx7/l;
+
+    .line 8
+    .line 9
+    const/4 p1, 0x1
+
+    .line 10
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Ljava/util/List;
+
+    invoke-virtual {p0, p1}, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1;->invoke(Ljava/util/List;)V
+
+    sget-object p1, Lh7/p;->a:Lh7/p;
+
+    return-object p1
+.end method
+
+.method public final invoke(Ljava/util/List;)V
+    .locals 5
+
+    const-string v0, "playPageControlList"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/u;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1;->a:Lcom/zykj/blackboard/core/play/IPlayControl;
+
+    invoke-static {p1}, Li7/v;->p(Ljava/util/List;)I
+
+    move-result p1
+
+    new-instance v1, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1$1;
+
+    iget-object v2, p0, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1;->b:Lcom/zykj/merge/sketch/view/BlackBoardProxyView;
+
+    iget-object v3, p0, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1;->a:Lcom/zykj/blackboard/core/play/IPlayControl;
+
+    iget-object v4, p0, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1;->c:Lx7/l;
+
+    invoke-direct {v1, v2, v3, v4}, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1$1;-><init>(Lcom/zykj/merge/sketch/view/BlackBoardProxyView;Lcom/zykj/blackboard/core/play/IPlayControl;Lx7/l;)V
+
+    new-instance v2, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1$2;
+
+    iget-object v3, p0, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1;->b:Lcom/zykj/merge/sketch/view/BlackBoardProxyView;
+
+    iget-object v4, p0, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1;->d:Lx7/l;
+
+    invoke-direct {v2, v3, v4}, Lcom/zykj/merge/sketch/view/BlackBoardProxyView$loadData$1$1$2;-><init>(Lcom/zykj/merge/sketch/view/BlackBoardProxyView;Lx7/l;)V
+
+    invoke-interface {v0, p1, v1, v2}, Lcom/zykj/blackboard/core/play/IPlayControl;->switchCurrentPlayPage(ILx7/a;Lx7/a;)Z
+
+    return-void
+.end method

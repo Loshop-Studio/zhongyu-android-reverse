@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/item_study_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:background="@drawable/selector_study_course_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView2" android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="@dimen/view_50" android:scaleType="fitXY" app:layout_constraintDimensionRatio="175:105" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/container" android:layout_alignBottom="@id/container" android:paddingStart="@dimen/view_8" android:layout_toEndOf="@id/container">
+        <include android:id="@id/item_course_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_6" layout="@layout/item_course_title" />
+        <TextView android:textSize="@dimen/text_7" android:textColor="@color/gray_hint_text" android:id="@id/tv_teacher_name" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_4" android:singleLine="true" android:layout_below="@id/item_course_title" />
+        <TextView android:textSize="@dimen/text_7" android:textColor="@color/text_card_title" android:id="@id/tv_progress" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_6" android:layout_marginBottom="@dimen/view_6" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_marginVertical="@dimen/view_6" />
+        <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:tag="binding_5" android:background="@drawable/ic_label" android:layout_width="@dimen/view_50" android:layout_height="@dimen/view_50" android:layout_alignParentTop="true" android:translationX="@dimen/view_10" android:rotation="27.0" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/text_7" android:textStyle="bold" android:textColor="#9a9a9a" android:id="@id/textView26" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

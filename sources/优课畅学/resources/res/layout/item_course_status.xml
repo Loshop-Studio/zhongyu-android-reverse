@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/item_course_status_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:tag="binding_1" android:layout_width="@dimen/view_8" android:layout_height="@dimen/view_8" android:src="@drawable/ic_subject" android:scaleType="fitXY" app:tint="@color/icon" />
+    <ImageView android:tag="binding_2" android:layout_width="@dimen/view_8" android:layout_height="@dimen/view_8" android:src="@drawable/ic_subject_under" android:scaleType="fitXY" app:tint="@color/icon" />
+    <TextView android:textSize="@dimen/text_7" android:textColor="@color/text_gray" android:id="@id/course_status" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="@dimen/view_3" android:layout_marginStart="@dimen/view_3" />
+    <ImageView android:tag="binding_4" android:layout_width="@dimen/view_8" android:layout_height="@dimen/view_8" android:src="@drawable/ic_public" android:layout_marginStart="@dimen/view_12" app:tint="@color/icon" />
+    <TextView android:textSize="@dimen/text_7" android:textColor="@color/text_gray" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_public" android:singleLine="true" android:layout_marginStart="@dimen/view_3" />
+    <ImageView android:tag="binding_6" android:layout_width="@dimen/view_8" android:layout_height="@dimen/view_8" android:src="@drawable/ic_private" android:layout_marginStart="@dimen/view_12" app:tint="@color/icon" />
+    <TextView android:textSize="@dimen/text_7" android:textColor="@color/text_gray" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_private" android:singleLine="true" android:layout_marginStart="@dimen/view_3" />
+</LinearLayout>

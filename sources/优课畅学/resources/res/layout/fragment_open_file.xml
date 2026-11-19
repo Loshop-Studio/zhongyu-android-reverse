@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fragment_open_file" android:tag="layout/fragment_open_file_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xuexiang.xui.widget.actionbar.TitleBar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="@dimen/view_30" app:layout_constraintTop_toTopOf="parent" app:tb_actionTextColor="@color/black_text" app:tb_actionTextSize="@dimen/text_8" app:tb_dividerColor="@color/divider" app:tb_leftImageResource="@drawable/ic_arrow_left" app:tb_titleTextColor="@color/black_text" app:tb_titleTextSize="@dimen/text_10" app:tb_useThemeColor="false" />
+    <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/nav_file_fragment" android:layout_width="match_parent" android:layout_height="match_parent" app:defaultNavHost="true" />
+</LinearLayout>

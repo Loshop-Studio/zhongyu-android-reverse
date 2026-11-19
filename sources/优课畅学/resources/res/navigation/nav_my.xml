@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_my" app:startDestination="@id/settingFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="MyFragment" android:name="com.zykj.study.ui.home.my.MyCourseFragment" android:id="@id/myCourseFragment" />
+    <fragment android:label="SettingFragment" android:name="com.zykj.study.ui.home.my.SettingFragment" android:id="@id/settingFragment" />
+    <fragment android:label="TeacherFragment" android:name="com.zykj.study.ui.home.my.TeacherFragment" android:id="@id/teacherFragment" />
+    <action android:id="@id/action_global_myCourseFragment" app:destination="@id/myCourseFragment" app:launchSingleTop="true" />
+    <action android:id="@id/action_global_settingFragment" app:destination="@id/settingFragment" app:launchSingleTop="true" />
+    <action android:id="@id/action_global_teacherFragment" app:destination="@id/teacherFragment" app:launchSingleTop="true" />
+</navigation>

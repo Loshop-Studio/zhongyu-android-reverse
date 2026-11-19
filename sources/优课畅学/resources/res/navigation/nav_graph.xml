@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph" app:startDestination="@id/guideFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="fragment_main" android:name="com.zykj.study.ui.MainFragment" android:id="@id/mainFragment">
+        <action android:id="@id/action_mainFragment_to_homeFragment" app:destination="@id/homeFragment" app:launchSingleTop="true" app:popUpTo="@id/mainFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_mainFragment_to_nav_login" app:destination="@id/nav_login" app:launchSingleTop="true" />
+    </fragment>
+    <fragment android:label="fragment_home" android:name="com.zykj.study.ui.home.HomeFragment" android:id="@id/homeFragment">
+        <action android:id="@id/action_homeFragment_to_editCourseFragment" app:destination="@id/editCourseFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_homeFragment_to_myCourseDetailsFragment" app:destination="@id/myCourseDetailsFragment" app:launchSingleTop="true">
+            <argument android:name="myCourse" app:argType="com.zykj.study.data.MyCourseEntity" app:nullable="false" />
+        </action>
+        <action android:id="@id/action_homeFragment_to_searchFragment" app:destination="@id/searchFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_homeFragment_to_courseDetailsFragment" app:destination="@id/courseDetailsFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_homeFragment_to_nav_qr_code" app:destination="@id/nav_qr_code" app:launchSingleTop="true" />
+        <action android:id="@id/action_homeFragment_to_microCodeFragment" app:destination="@id/microCodeFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_homeFragment_to_courseContentFragment" app:destination="@id/courseContentFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_homeFragment_to_teachCourseAddFragment" app:destination="@id/teachCourseAddFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_homeFragment_to_teachDetailsFragment" app:destination="@id/teachDetailsFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_homeFragment_to_nav_version_check" app:destination="@id/nav_version_check">
+            <argument android:name="packageName" app:argType="string" />
+            <argument android:name="versionCode" app:argType="integer" />
+            <argument android:name="versionName" app:argType="string" />
+            <argument android:name="appType" app:argType="com.zykj.lib.ota.bean.AppType" />
+            <argument android:name="silence" android:defaultValue="true" app:argType="boolean" />
+        </action>
+    </fragment>
+    <action android:id="@id/action_global_mainFragment" app:destination="@id/mainFragment" app:popUpTo="@id/mainFragment" app:popUpToInclusive="true" />
+    <fragment android:label="EditCourseFragment" android:name="com.zykj.study.ui.home.my.EditCourseFragment" android:id="@id/editCourseFragment">
+        <argument android:name="myCourseEntity" app:argType="com.zykj.study.data.MyCourseEntity" app:nullable="true" />
+        <action android:id="@id/action_editCourseFragment_to_nav_image" app:destination="@id/nav_image">
+            <argument android:name="fixAspectRatio" android:defaultValue="false" app:argType="boolean" />
+            <argument android:name="ratioX" android:defaultValue="0" app:argType="integer" />
+            <argument android:name="ratioY" android:defaultValue="0" app:argType="integer" />
+            <argument android:name="compress" android:defaultValue="false" app:argType="boolean" />
+        </action>
+        <action android:id="@id/action_editCourseFragment_to_catalogDialog" app:destination="@id/catalogDialog" app:launchSingleTop="true" />
+    </fragment>
+    <dialog android:label="CatalogDialog" android:name="com.zykj.study.dialog.CatalogDialog" android:id="@id/catalogDialog">
+        <argument android:name="periodId" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="subjectId" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="gradeId" android:defaultValue="0" app:argType="integer" />
+    </dialog>
+    <include app:graph="@navigation/nav_image_crop" />
+    <include app:graph="@navigation/nav_image_pick" />
+    <fragment android:label="MyCourseDetailsFragment" android:name="com.zykj.study.ui.home.my.MyCourseDetailsFragment" android:id="@id/myCourseDetailsFragment">
+        <argument android:name="myCourse" app:argType="com.zykj.study.data.MyCourseEntity" app:nullable="false" />
+        <action android:id="@id/action_myCourseDetailsFragment_to_editCourseFragment" app:destination="@id/editCourseFragment">
+            <argument android:name="myCourseEntity" app:argType="com.zykj.study.data.MyCourseEntity" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_myCourseDetailsFragment_to_courseContentFragment" app:destination="@id/courseContentFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_myCourseDetailsFragment_to_authorizedLessonFragment" app:destination="@id/authorizedLessonFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_myCourseDetailsFragment_to_managementSubscribeFragment" app:destination="@id/managementSubscribeFragment" />
+    </fragment>
+    <fragment android:label="AuthorizedLessonFragment" android:name="com.zykj.study.ui.home.my.AuthorizedLessonFragment" android:id="@id/authorizedLessonFragment">
+        <argument android:name="courseId" app:argType="integer" />
+    </fragment>
+    <fragment android:label="CourseContentFragment" android:name="com.zykj.study.ui.home.my.CourseContentFragment" android:id="@id/courseContentFragment">
+        <argument android:name="url" android:defaultValue="" app:argType="string" />
+        <argument android:name="title" android:defaultValue="" app:argType="string" />
+        <argument android:name="courseBean" app:argType="com.zykj.study.bean.course.CourseBean" app:nullable="true" />
+        <argument android:name="isAuthor" app:argType="boolean" app:nullable="false" />
+        <argument android:name="superviseId" app:argType="string" app:nullable="true" />
+        <action android:id="@id/action_courseContentFragment_to_openFileFragment" app:destination="@id/openFileFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_courseContentFragment_to_microPlayFragment" app:destination="@id/microPlayFragment" />
+        <action android:id="@id/action_courseContentFragment_to_nav_exercise" app:destination="@id/exerciseFragment" app:launchSingleTop="true">
+            <argument android:name="courseId" app:argType="integer" />
+            <argument android:name="catalogId" app:argType="integer" />
+            <argument android:name="groupId" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_courseContentFragment_to_exerciseViewerFragment" app:destination="@id/exerciseViewerFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_courseContentFragment_to_exerciseStatisticsFragment" app:destination="@id/exerciseStatisticsFragment" app:launchSingleTop="true" />
+    </fragment>
+    <fragment android:label="OpenFileFragment" android:name="com.zykj.study.ui.OpenFileFragment" android:id="@id/openFileFragment">
+        <argument android:name="path" android:defaultValue="" app:argType="string" />
+    </fragment>
+    <fragment android:label="SearchFragment" android:name="com.zykj.study.ui.home.find.search.SearchFragment" android:id="@id/searchFragment">
+        <action android:id="@id/action_searchFragment_to_courseDetailsFragment" app:destination="@id/courseDetailsFragment" app:launchSingleTop="true" />
+    </fragment>
+    <fragment android:label="CourseDetailsFragment" android:name="com.zykj.study.ui.home.find.CourseDetailsFragment" android:id="@id/courseDetailsFragment">
+        <argument android:name="courseDetails" app:argType="com.zykj.study.bean.course.CourseSimpleBean" app:nullable="false" />
+        <action android:id="@id/action_courseDetailsFragment_to_courseContentFragment" app:destination="@id/courseContentFragment" app:launchSingleTop="true" />
+    </fragment>
+    <include app:graph="@navigation/nav_qr_code" />
+    <fragment android:label="microCodeFragment" android:name="com.zykj.study.ui.home.find.MicroCodeFragment" android:id="@id/microCodeFragment">
+        <argument android:name="code" app:argType="string" />
+        <argument android:name="path" app:argType="string" />
+        <action android:id="@id/action_microFragment_to_microPlayFragment" app:destination="@id/microPlayFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_microCodeFragment_to_microCropFragment" app:destination="@id/microCropFragment" />
+    </fragment>
+    <fragment android:label="MicroFragment" android:name="com.zykj.study.ui.home.exercise.MicroEditFragment" android:id="@id/microEditFragment">
+        <argument android:name="path" app:argType="string" />
+        <argument android:name="groupId" app:argType="integer" />
+        <argument android:name="questionId" app:argType="string" />
+        <action android:id="@id/action_microEditFragment_to_microPlayFragment" app:destination="@id/microPlayFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_microEditFragment_to_microCropExtraFragment" app:destination="@id/microCropExtraFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_microEditFragment_to_microCropFragment" app:destination="@id/microCropFragment" />
+    </fragment>
+    <fragment android:label="MicroPlayFragment" android:name="com.zykj.study.ui.home.find.MicroPlayFragment" android:id="@id/microPlayFragment">
+        <argument android:name="path" app:argType="string" />
+    </fragment>
+    <fragment android:label="ExerciseFragment" android:name="com.zykj.study.ui.home.exercise.ExerciseFragment" android:id="@id/exerciseFragment">
+        <argument android:name="courseId" app:argType="integer" />
+        <argument android:name="catalogId" app:argType="integer" />
+        <argument android:name="groupId" app:argType="integer" />
+        <argument android:name="status" app:argType="integer" />
+        <action android:id="@id/action_exerciseFragment_to_exerciseTrainFragment" app:destination="@id/exerciseTrainFragment" app:launchSingleTop="true" app:popUpTo="@id/exerciseFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_exerciseFragment_to_exerciseHistoryFragment" app:destination="@id/exerciseHistoryFragment" app:launchSingleTop="true" app:popUpTo="@id/exerciseFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="ExerciseTrainFragment" android:name="com.zykj.study.ui.home.exercise.ExerciseTrainFragment" android:id="@id/exerciseTrainFragment">
+        <argument android:name="courseId" app:argType="integer" />
+        <argument android:name="catalogId" app:argType="integer" />
+        <argument android:name="groupId" app:argType="integer" />
+        <action android:id="@id/action_exerciseTrainFragment_to_microPlayFragment" app:destination="@id/microPlayFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_exerciseTrainFragment_to_exerciseHistoryFragment" app:destination="@id/exerciseHistoryFragment" app:launchSingleTop="true" app:popUpTo="@id/exerciseTrainFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="ExerciseHistoryFragment" android:name="com.zykj.study.ui.home.exercise.ExerciseHistoryFragment" android:id="@id/exerciseHistoryFragment">
+        <argument android:name="courseId" app:argType="integer" />
+        <argument android:name="catalogId" app:argType="integer" />
+        <argument android:name="groupId" app:argType="integer" />
+        <argument android:name="index" android:defaultValue="0" app:argType="integer" />
+        <action android:id="@id/action_exerciseHistoryFragment_to_microPlayFragment" app:destination="@id/microPlayFragment" app:launchSingleTop="true" />
+    </fragment>
+    <fragment android:label="ExerciseViewerFragment" android:name="com.zykj.study.ui.home.exercise.ExerciseViewerFragment" android:id="@id/exerciseViewerFragment">
+        <argument android:name="courseId" app:argType="integer" />
+        <argument android:name="catalogId" app:argType="integer" />
+        <argument android:name="groupId" app:argType="integer" />
+        <argument android:name="index" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="isAuthor" android:defaultValue="false" app:argType="boolean" />
+        <action android:id="@id/action_exerciseViewerFragment_to_microPlayFragment" app:destination="@id/microPlayFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_exerciseViewerFragment_to_microEditFragment" app:destination="@id/microEditFragment" app:launchSingleTop="true" />
+    </fragment>
+    <fragment android:label="MicroCropExtraFragment" android:name="com.zykj.study.ui.home.exercise.MicroCropExtraFragment" android:id="@id/microCropExtraFragment">
+        <action android:id="@id/action_microCropExtraFragment_to_imageCropFragment" app:destination="@id/nav_image_crop" app:launchSingleTop="true" app:popUpTo="@id/microCropExtraFragment" app:popUpToInclusive="true">
+            <argument android:name="path" app:argType="string" app:nullable="false" />
+            <argument android:name="fixAspectRatio" android:defaultValue="false" app:argType="boolean" />
+            <argument android:name="ratioX" android:defaultValue="0" app:argType="integer" />
+            <argument android:name="ratioY" android:defaultValue="0" app:argType="integer" />
+            <argument android:name="compress" android:defaultValue="false" app:argType="boolean" />
+        </action>
+    </fragment>
+    <fragment android:label="TeachCourseAddFragment" android:name="com.zykj.study.ui.home.my.TeachCourseAddFragment" android:id="@id/teachCourseAddFragment" />
+    <fragment android:label="TeachDetailsFragment" android:name="com.zykj.study.ui.home.my.TeachDetailsFragment" android:id="@id/teachDetailsFragment">
+        <argument android:name="superviseId" app:argType="integer" />
+        <argument android:name="courseBean" app:argType="com.zykj.study.bean.course.CourseBean" app:nullable="true" />
+        <action android:id="@id/action_teachDetailsFragment_to_studentExercisesFragment" app:destination="@id/studentExercisesFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_teachDetailsFragment_to_courseContentFragment" app:destination="@id/courseContentFragment" />
+    </fragment>
+    <fragment android:label="StudentExercisesFragment" android:name="com.zykj.study.ui.home.my.StudentExercisesFragment" android:id="@id/studentExercisesFragment">
+        <argument android:name="superviseId" app:argType="integer" />
+        <argument android:name="title" app:argType="string" />
+        <argument android:name="catalogId" app:argType="integer" />
+        <argument android:name="userId" app:argType="string" />
+        <argument android:name="fromScore" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+    <dialog android:label="ShowBigImageDialog" android:name="com.zykj.study.dialog.ShowBigImageDialog" android:id="@id/showBigImageDialog">
+        <argument android:name="url" app:argType="string" />
+    </dialog>
+    <dialog android:label="UpdateChoiceDialogMain" android:name="com.zykj.study.dialog.UpdateChoiceDialogMain" android:id="@id/updateChoiceDialogMain">
+        <argument android:name="versionInfoMain" app:argType="com.zykj.lib.ota.bean.VersionInfo" />
+    </dialog>
+    <include app:graph="@navigation/nav_version_check" />
+    <fragment android:label="GuideFragment" android:name="com.zykj.study.ui.GuideFragment" android:id="@id/guideFragment">
+        <action android:id="@id/action_guideFragment_to_mainFragment" app:destination="@id/mainFragment" app:launchSingleTop="true" app:popUpTo="@id/guideFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <include app:graph="@navigation/nav_login" />
+    <fragment android:label="ExerciseStatisticsFragment" android:name="com.zykj.study.ui.home.my.ExerciseStatisticsFragment" android:id="@id/exerciseStatisticsFragment">
+        <argument android:name="superviseId" app:argType="integer" />
+        <argument android:name="catalogId" app:argType="integer" />
+        <argument android:name="groupId" app:argType="integer" />
+    </fragment>
+    <action android:id="@id/action_global_showBigImageDialog" app:destination="@id/showBigImageDialog" />
+    <fragment android:label="ManagementSubscribeFragment" android:name="com.zykj.study.ui.home.my.ManagementSubscribeFragment" android:id="@id/managementSubscribeFragment">
+        <argument android:name="courseId" app:argType="integer" />
+        <action android:id="@id/action_managementSubscribeFragment_to_dateSelectedDialog" app:destination="@id/dateSelectedDialog" />
+        <action android:id="@id/action_managementSubscribeFragment_to_deleteSubscribeSingleDialog" app:destination="@id/deleteSubscribeSingleDialog" />
+        <action android:id="@id/action_managementSubscribeFragment_to_deleteSubscribeBatchDialog" app:destination="@id/deleteSubscribeBatchDialog" />
+    </fragment>
+    <dialog android:label="DateSelectedDialog" android:name="com.zykj.study.dialog.DateSelectedDialog" android:id="@id/dateSelectedDialog">
+        <argument android:name="start" app:argType="string" />
+        <argument android:name="end" app:argType="string" />
+    </dialog>
+    <dialog android:label="DeleteSubscribeSingleDialog" android:name="com.zykj.study.dialog.DeleteSubscribeSingleDialog" android:id="@id/deleteSubscribeSingleDialog">
+        <argument android:name="accountId" app:argType="string" />
+    </dialog>
+    <dialog android:label="DeleteSubscribeBatchDialog" android:name="com.zykj.study.dialog.DeleteSubscribeBatchDialog" android:id="@id/deleteSubscribeBatchDialog">
+        <argument android:name="number" app:argType="string" />
+    </dialog>
+    <fragment android:label="MicroCropFragment" android:name="com.zykj.study.ui.home.find.MicroCropFragment" android:id="@id/microCropFragment">
+        <argument android:name="requestKey" app:argType="string" />
+        <argument android:name="localPath" app:argType="string" />
+    </fragment>
+    <dialog android:label="CourseManageDialogFragment" android:name="com.zykj.study.ui.home.my.CourseManageDialogFragment" android:id="@id/courseManageDialogFragment">
+        <argument android:name="courseId" app:argType="long" />
+    </dialog>
+</navigation>

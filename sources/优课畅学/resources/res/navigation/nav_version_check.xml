@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_version_check" app:startDestination="@id/checkVersionProgressDialog"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <dialog android:label="CheckVersionProgressDialog" android:name="com.zykj.lib.ota.CheckVersionProgressDialog" android:id="@id/checkVersionProgressDialog">
+        <argument android:name="packageName" app:argType="string" />
+        <argument android:name="versionCode" app:argType="integer" />
+        <argument android:name="versionName" app:argType="string" />
+        <argument android:name="appType" app:argType="com.zykj.lib.ota.bean.AppType" />
+        <argument android:name="silence" android:defaultValue="true" app:argType="boolean" />
+        <action android:id="@id/action_checkVersionProgressDialog_to_updateChoiceDialog" app:destination="@id/updateChoiceDialog" app:launchSingleTop="true" app:popUpTo="@id/checkVersionProgressDialog" app:popUpToInclusive="true" />
+        <action android:id="@id/action_checkVersionProgressDialog_to_latestVersionDialog" app:destination="@id/latestVersionDialog" app:popUpTo="@id/checkVersionProgressDialog" app:popUpToInclusive="true" />
+    </dialog>
+    <dialog android:label="UpdateChoiceDialog" android:name="com.zykj.lib.ota.UpdateChoiceDialog" android:id="@id/updateChoiceDialog">
+        <argument android:name="versionInfo" app:argType="com.zykj.lib.ota.bean.VersionInfo" />
+        <action android:id="@id/action_updateChoiceDialog_to_downloadProgressDialog" app:destination="@id/downloadProgressDialog" app:launchSingleTop="true" app:popUpTo="@id/updateChoiceDialog" app:popUpToInclusive="true" />
+    </dialog>
+    <dialog android:label="DownloadProgressDialog" android:name="com.zykj.lib.ota.DownloadProgressDialog" android:id="@id/downloadProgressDialog">
+        <argument android:name="fileUrl" app:argType="string" />
+        <argument android:name="force" app:argType="boolean" />
+    </dialog>
+    <dialog android:label="LatestVersionDialog" android:name="com.zykj.lib.ota.LatestVersionDialog" android:id="@id/latestVersionDialog">
+        <argument android:name="versionName" app:argType="string" />
+    </dialog>
+</navigation>

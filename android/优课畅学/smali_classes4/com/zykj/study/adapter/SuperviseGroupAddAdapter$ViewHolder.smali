@@ -1,0 +1,109 @@
+.class public final Lcom/zykj/study/adapter/SuperviseGroupAddAdapter$ViewHolder;
+.super Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroidx/compose/runtime/internal/StabilityInferred;
+    parameters = 0x0
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/zykj/study/adapter/SuperviseGroupAddAdapter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "ViewHolder"
+.end annotation
+
+
+# instance fields
+.field public final a:Lcom/zykj/study/databinding/ItemSuperviseGroupAddBinding;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/zykj/study/databinding/ItemSuperviseGroupAddBinding;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "binding"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/u;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p1}, Landroidx/databinding/ViewDataBinding;->getRoot()Landroid/view/View;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    invoke-direct {p0, v0}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
+
+    .line 11
+    .line 12
+    .line 13
+    iput-object p1, p0, Lcom/zykj/study/adapter/SuperviseGroupAddAdapter$ViewHolder;->a:Lcom/zykj/study/databinding/ItemSuperviseGroupAddBinding;
+
+    .line 14
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lcom/zykj/study/bean/SelectModel;Landroid/view/View$OnClickListener;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "item"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/u;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "onclick"
+
+    .line 7
+    .line 8
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/u;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    iget-object v0, p0, Lcom/zykj/study/adapter/SuperviseGroupAddAdapter$ViewHolder;->a:Lcom/zykj/study/databinding/ItemSuperviseGroupAddBinding;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, p1}, Lcom/zykj/study/databinding/ItemSuperviseGroupAddBinding;->setEntity(Lcom/zykj/study/bean/SelectModel;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {v0, p2}, Lcom/zykj/study/databinding/ItemSuperviseGroupAddBinding;->setOnclick(Landroid/view/View$OnClickListener;)V
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {v0}, Landroidx/databinding/ViewDataBinding;->executePendingBindings()V
+
+    .line 20
+    .line 21
+    .line 22
+    return-void
+.end method

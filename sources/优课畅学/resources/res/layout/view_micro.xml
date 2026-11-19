@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_micro_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_micro_dismiss_or_show" android:padding="@dimen/view_8" android:layout_width="@dimen/view_24" android:layout_height="@dimen/view_24" android:layout_alignParentEnd="true" app:tint="@color/label_text_color_optional" />
+        <ImageView android:id="@id/iv_label_icon" android:layout_width="@dimen/view_10" android:layout_height="@dimen/view_10" android:src="@drawable/ic_micro_play" android:layout_alignTop="@id/iv_micro_dismiss_or_show" android:layout_alignBottom="@id/iv_micro_dismiss_or_show" />
+        <TextView android:textSize="@dimen/text_7" android:textColor="@color/black_text" android:gravity="center" android:id="@id/tv_micro_exercise_label" android:layout_width="wrap_content" android:layout_height="@dimen/view_24" android:text="@string/micro_exercise_label" android:layout_alignTop="@id/iv_micro_dismiss_or_show" android:layout_alignBottom="@id/iv_micro_dismiss_or_show" android:layout_marginStart="@dimen/view_6" android:layout_toEndOf="@id/iv_label_icon" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_8" android:layout_below="@id/iv_micro_dismiss_or_show" android:layout_alignStart="@id/tv_micro_exercise_label" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="3" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_micro_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/iv_micro_dismiss_or_show" android:layout_alignStart="@id/tv_micro_exercise_label">
+            <ImageView android:layout_width="@dimen/view_47" android:layout_height="@dimen/view_47" android:src="@mipmap/icon_empty_no_micro_lesson" />
+            <TextView android:textSize="@dimen/text_7" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_with_no_micro" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/include_chart_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_8" layout="@layout/layout_chart_details" />
+</LinearLayout>

@@ -1,0 +1,57 @@
+﻿syntax = "proto3";
+import "google/protobuf/any.proto";
+option java_package = "com.zykj.sketch";
+option java_outer_classname = "GraphSnapshot";
+
+message GraphData {
+    GraphType graphType = 1;
+
+    repeated GraphData childGraph = 2;
+    repeated float matrix = 3;
+    repeated float childExtendMatrix = 4;
+    float width = 6;
+    int32 color = 7;
+    bool isSelect = 8;
+    bool showDelete = 9;
+
+    google.protobuf.Any extra = 10;
+    string name = 11;
+
+    RectF outRect = 12;
+}
+
+message PointF {
+    float x = 1;
+    float y = 2;
+}
+
+message Touch {
+    repeated PointF pointF = 1;
+}
+
+message File {
+    string fileName = 1;
+    int32 width = 2;
+    int32 height = 3;
+    int32 viewWidth = 4;
+    int32 viewHeight = 5;
+    int32 positionFlag = 6;
+}
+
+ message RectF{
+     float left = 1;
+     float top = 2;
+     float right = 3;
+     float bottom = 4;
+}
+
+enum GraphType {
+    UNBOUNDED_CONTAINER_GRAPH = 0;
+    BOUNDED_CONTAINER_GRAPH = 1;
+    IMAGE_GRAPH = 2;
+    WEB_VIEW_GRAPH = 3;
+    WRITING_GROUP_GRAPH = 4;
+    STROKE_GRAPH = 5;
+    SHAPE_GRAPH = 6;
+}
+

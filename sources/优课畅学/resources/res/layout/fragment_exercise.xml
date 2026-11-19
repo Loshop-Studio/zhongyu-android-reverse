@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fragment_exercise" android:tag="layout/fragment_exercise_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xuexiang.xui.widget.actionbar.TitleBar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="@dimen/view_30" app:layout_constraintTop_toTopOf="parent" app:tb_actionTextColor="@color/black_text" app:tb_actionTextSize="@dimen/text_8" app:tb_dividerColor="@color/divider" app:tb_leftImageResource="@drawable/ic_arrow_left" app:tb_titleTextColor="@color/black_text" app:tb_titleTextSize="@dimen/text_10" app:tb_useThemeColor="false" />
+    <com.xuexiang.xui.widget.statelayout.MultipleStatusView android:id="@id/multiple_status_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.zykj.study.view.SpecialToastView android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+</LinearLayout>

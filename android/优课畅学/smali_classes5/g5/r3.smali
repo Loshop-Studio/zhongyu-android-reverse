@@ -1,0 +1,16 @@
+.class public abstract Lg5/r3;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static a:Ljava/lang/String; = "com.zykj.study.viewmodels.WebViewControlViewModel"
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "com.zykj.lib.login.proto";
+option java_multiple_files = true;
+
+enum RoleType {
+    Default = 0;
+    Student = 1;
+    Teacher = 2;
+    Parent = 3;
+    Administrator = 9;
+    SuperAdministrator = 20;
+}

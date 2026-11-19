@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyPageRouter";
+
+//Page的信息
+message PageRouter {
+    repeated PageInfo pageInfo = 1; //页码
+
+    //Page的信息
+    message PageInfo {
+        string name = 1; //文件夹名称
+        int32 pageIndex = 2; //页码
+    }
+}

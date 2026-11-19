@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_login" app:startDestination="@id/loginFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="LoginFragment" android:name="com.zykj.lib.login.ui.main.LoginFragment" android:id="@id/loginFragment" />
+    <fragment android:label="StudentFragment" android:name="com.zykj.lib.login.ui.student.StudentLoginFragment" android:id="@id/studentLoginFragment" />
+    <fragment android:label="TeacherLoginFragment" android:name="com.zykj.lib.login.ui.teacher.TeacherLoginFragment" android:id="@id/teacherLoginFragment" />
+    <dialog android:label="SendSmsDialog" android:name="com.zykj.lib.login.ui.teacher.sms.SendSmsDialog" android:id="@id/sendSmsDialog" />
+    <dialog android:label="ChangePwdDialog" android:name="com.zykj.lib.login.ui.teacher.pwd.ComposeModifyPasswordDialog" android:id="@id/changePwdDialog">
+        <argument android:name="arg_pwd_level" android:defaultValue="1" app:argType="integer" />
+    </dialog>
+</navigation>

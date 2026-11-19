@@ -1,0 +1,67 @@
+package androidx.databinding.library.baseAdapters;
+
+/* renamed from: androidx.databinding.library.baseAdapters.BR */
+/* loaded from: classes2.dex */
+public class C3721BR {
+    public static final int OnClick = 1;
+    public static final int _all = 0;
+    public static final int addClick = 2;
+    public static final int answerStandard = 3;
+    public static final int bean = 4;
+    public static final int clickListener = 5;
+    public static final int closeListener = 6;
+    public static final int data = 7;
+    public static final int deleteClick = 8;
+    public static final int deleteClickListener = 9;
+    public static final int detailsEntity = 10;
+    public static final int dictViewModel = 11;
+    public static final int editCourseViewModel = 12;
+    public static final int enable = 13;
+    public static final int enlargeListener = 14;
+    public static final int entity = 15;
+    public static final int errorMessage = 16;
+    public static final int examClickListener = 17;
+    public static final int exerciseBean = 18;
+    public static final int exerciseTrainViewModel = 19;
+    public static final int fromScore = 20;
+    public static final int group = 21;
+    public static final int index = 22;
+    public static final int isChild = 23;
+    public static final int isDataEmpty = 24;
+    public static final int isDialogVisible = 25;
+    public static final int isEmpty = 26;
+    public static final int isLeaf = 27;
+    public static final int isSelected = 28;
+    public static final int isTeacher = 29;
+    public static final int loginViewModel = 30;
+    public static final int menuClick = 31;
+    public static final int microViewModel = 32;
+    public static final int mobile = 33;
+    public static final int narrowListener = 34;
+    public static final int needShowPatch = 35;
+    public static final int onArrowClick = 36;
+    public static final int onClick = 37;
+    public static final int onClickManage = 38;
+    public static final int onclick = 39;
+    public static final int people = 40;
+    public static final int playClick = 41;
+    public static final int questionType = 42;
+    public static final int searchViewModel = 43;
+    public static final int settingViewModel = 44;
+    public static final int silence = 45;
+    public static final int snapshotUrl = 46;
+    public static final int tailoringListener = 47;
+    public static final int text = 48;
+    public static final int tinkerId = 49;
+    public static final int title = 50;
+    public static final int toastLiveData = 51;
+    public static final int totalMember = 52;
+    public static final int trainViewModel = 53;
+    public static final int url = 54;
+    public static final int userBean = 55;
+    public static final int userInfo = 56;
+    public static final int versionName = 57;
+    public static final int versionViewModel = 58;
+    public static final int viewModel = 59;
+    public static final int webViewControlViewModel = 60;
+}

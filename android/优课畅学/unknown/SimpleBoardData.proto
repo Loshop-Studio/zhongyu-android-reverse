@@ -1,0 +1,23 @@
+syntax = "proto3";
+import "google/protobuf/any.proto";
+option java_package = "com.zykj.view";
+option java_outer_classname = "EzySimpleBoardData";
+
+message SimpleBoardData {
+  repeated Path path = 1;
+}
+
+message PointF {
+  repeated float value = 1;
+}
+
+message Paint {
+  float width = 1; //画笔宽度
+  int32 color = 2; //画笔颜色
+  bool isDashed = 3; // 是否是虚线
+}
+
+message Path {
+  repeated PointF point = 1;
+  Paint paint = 2;
+}

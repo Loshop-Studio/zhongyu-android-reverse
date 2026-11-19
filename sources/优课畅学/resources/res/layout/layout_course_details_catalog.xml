@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/layout_course_details_catalog_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_9" android:textColor="@color/black_text" android:id="@id/textView22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_12" android:text="@string/course_catalog" android:layout_marginStart="@dimen/view_8" />
+    <com.xuexiang.xui.widget.statelayout.MultipleStatusView android:id="@id/multiple_status_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/view_4" android:layout_marginBottom="@dimen/view_10" android:paddingStart="@dimen/view_8" app:msv_emptyView="@layout/layout_status_course_no_catalog">
+        <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycle" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycle_progress" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </FrameLayout>
+    </com.xuexiang.xui.widget.statelayout.MultipleStatusView>
+</LinearLayout>

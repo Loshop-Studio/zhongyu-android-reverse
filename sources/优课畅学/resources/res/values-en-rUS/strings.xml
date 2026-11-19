@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">messageclient</string>
+    <string name="confirm">confirm</string>
+    <string name="exit_app">Log out</string>
+    <string name="go_login">To login</string>
+    <string name="no_install">ser center not installed，Please go to the app market to install and log in,and try again.</string>
+    <string name="no_login">User center is not logged in，Please log in and try again</string>
+    <string name="tips_audio_file_corrupted">The audio data is corrupted</string>
+    <string name="tips_file_corrupted">File is missed</string>
+    <string name="tips_file_not_found">File not found, please check file path.</string>
+    <string name="tips_height_version">The data is too new to parse</string>
+    <string name="tips_low_version">The data loaded is too old</string>
+    <string name="tips_max_image">The number of pictures cannot be more than %1$d</string>
+    <string name="tips_max_ppt">The number of PPT cannot be more than %1$d</string>
+</resources>

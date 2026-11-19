@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "com.zykj.lib.login.proto";
+option java_multiple_files = true;
+
+message ServerBean {
+    string schoolCode = 1;
+    string serverUrl = 2;
+    string accessToken = 3;
+    // 老师用的
+    string refreshToken = 4;
+    string webServerUrl = 5;
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/fragment_course_view" android:tag="layout/fragment_course_view_0" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.zykj.study.ui.home.my.CourseViewCatalogFragment" android:id="@id/fm_course_catalog" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <View android:background="@color/divider" android:layout_width="@dimen/view_1" android:layout_height="match_parent" />
+    <fragment android:name="com.zykj.study.ui.home.my.CourseViewStatisticsFragment" android:id="@id/fm_course_statistics" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+</LinearLayout>

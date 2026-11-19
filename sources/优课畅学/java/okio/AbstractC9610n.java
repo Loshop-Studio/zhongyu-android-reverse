@@ -1,0 +1,6 @@
+package okio;
+
+/* renamed from: okio.n */
+/* loaded from: classes5.dex */
+public abstract /* synthetic */ class AbstractC9610n {
+}

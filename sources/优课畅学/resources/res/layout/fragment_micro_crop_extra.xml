@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fragment_micro_crop_extra" android:tag="layout/fragment_micro_crop_extra_0" android:background="#b0b0b0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zykj.study.view.CustomX5WebView android:id="@id/web_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/view_80" android:layout_marginRight="@dimen/view_80" android:layout_centerInParent="true" android:layout_marginHorizontal="@dimen/view_80" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/white_frame_border_bg" android:layout_width="@dimen/view_40" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/view_20" android:layout_marginRight="@dimen/view_20" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:layout_marginHorizontal="@dimen/view_20">
+        <ImageView android:tag="binding_1" android:padding="@dimen/view_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_enlarge" app:tint="@color/colorPrimary" />
+        <ImageView android:tag="binding_2" android:padding="@dimen/view_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_narrow" app:tint="@color/colorPrimary" />
+        <ImageView android:tag="binding_3" android:padding="@dimen/view_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_tailoring" app:tint="@color/colorPrimary" />
+        <ImageView android:tag="binding_4" android:padding="@dimen/view_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_close_clear" app:tint="@color/colorPrimary" />
+    </LinearLayout>
+</RelativeLayout>

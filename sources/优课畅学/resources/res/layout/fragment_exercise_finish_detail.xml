@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_exercise_finish_detail_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_student" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="6" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="@dimen/view_66" android:layout_height="@dimen/view_66" android:src="@drawable/ic_empty_data" />
+        <TextView android:textSize="@dimen/text_8" android:textColor="#646566" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_7" android:text="暂无数据" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

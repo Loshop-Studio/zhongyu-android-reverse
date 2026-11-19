@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_image_crop" app:startDestination="@id/imageCropFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="ImageCropFragment" android:name="com.zykj.image.ImageCropFragment" android:id="@id/imageCropFragment">
+        <argument android:name="path" app:argType="string" app:nullable="false" />
+        <argument android:name="fixAspectRatio" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="ratioX" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="ratioY" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="compress" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+</navigation>

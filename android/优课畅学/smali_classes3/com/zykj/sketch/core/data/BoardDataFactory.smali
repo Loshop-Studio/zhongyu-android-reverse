@@ -1,0 +1,71 @@
+.class public final Lcom/zykj/sketch/core/data/BoardDataFactory;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/zykj/sketch/core/data/BoardDataFactory$Companion;
+    }
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lcom/zykj/sketch/core/data/BoardDataFactory$Companion;
+
+.field private static flag:I = 0x0
+
+.field public static final supportLastVersion:I = 0x2
+
+.field public static final version:I = 0x5
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/zykj/sketch/core/data/BoardDataFactory$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/zykj/sketch/core/data/BoardDataFactory$Companion;-><init>(Lkotlin/jvm/internal/n;)V
+
+    sput-object v0, Lcom/zykj/sketch/core/data/BoardDataFactory;->Companion:Lcom/zykj/sketch/core/data/BoardDataFactory$Companion;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static final synthetic access$getFlag$cp()I
+    .locals 1
+
+    .line 1
+    sget v0, Lcom/zykj/sketch/core/data/BoardDataFactory;->flag:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public static final synthetic access$setFlag$cp(I)V
+    .locals 0
+
+    .line 1
+    sput p0, Lcom/zykj/sketch/core/data/BoardDataFactory;->flag:I
+
+    .line 2
+    .line 3
+    return-void
+.end method

@@ -1,0 +1,370 @@
+.class final Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lx7/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lx7/p;"
+    }
+.end annotation
+
+.annotation runtime Lo7/d;
+    c = "androidx.compose.foundation.layout.WindowInsetsNestedScrollConnection$fling$2$1"
+    f = "WindowInsetsConnection.android.kt"
+    l = {
+        0x149
+    }
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field final synthetic $animationController:Landroid/view/WindowInsetsAnimationController;
+
+.field final synthetic $current:I
+
+.field final synthetic $endVelocity:Lkotlin/jvm/internal/Ref$FloatRef;
+
+.field final synthetic $flingAmount:F
+
+.field final synthetic $hidden:I
+
+.field final synthetic $shown:I
+
+.field final synthetic $spec:Landroidx/compose/foundation/layout/SplineBasedFloatDecayAnimationSpec;
+
+.field final synthetic $targetShown:Z
+
+.field label:I
+
+.field final synthetic this$0:Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;
+
+
+# direct methods
+.method public constructor <init>(IFLandroidx/compose/foundation/layout/SplineBasedFloatDecayAnimationSpec;IILandroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;Lkotlin/jvm/internal/Ref$FloatRef;Landroid/view/WindowInsetsAnimationController;ZLm7/c;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(IF",
+            "Landroidx/compose/foundation/layout/SplineBasedFloatDecayAnimationSpec;",
+            "II",
+            "Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;",
+            "Lkotlin/jvm/internal/Ref$FloatRef;",
+            "Landroid/view/WindowInsetsAnimationController;",
+            "Z",
+            "Lm7/c<",
+            "-",
+            "Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iput p1, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$current:I
+
+    .line 2
+    .line 3
+    iput p2, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$flingAmount:F
+
+    .line 4
+    .line 5
+    iput-object p3, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$spec:Landroidx/compose/foundation/layout/SplineBasedFloatDecayAnimationSpec;
+
+    .line 6
+    .line 7
+    iput p4, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$hidden:I
+
+    .line 8
+    .line 9
+    iput p5, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$shown:I
+
+    .line 10
+    .line 11
+    iput-object p6, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->this$0:Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;
+
+    .line 12
+    .line 13
+    iput-object p7, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$endVelocity:Lkotlin/jvm/internal/Ref$FloatRef;
+
+    .line 14
+    .line 15
+    iput-object p8, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$animationController:Landroid/view/WindowInsetsAnimationController;
+
+    .line 16
+    .line 17
+    iput-boolean p9, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$targetShown:Z
+
+    .line 18
+    .line 19
+    const/4 p1, 0x2
+
+    .line 20
+    invoke-direct {p0, p1, p10}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILm7/c;)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lm7/c;)Lm7/c;
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lm7/c<",
+            "*>;)",
+            "Lm7/c<",
+            "Lh7/p;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;
+
+    .line 2
+    .line 3
+    iget v1, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$current:I
+
+    .line 4
+    .line 5
+    iget v2, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$flingAmount:F
+
+    .line 6
+    .line 7
+    iget-object v3, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$spec:Landroidx/compose/foundation/layout/SplineBasedFloatDecayAnimationSpec;
+
+    .line 8
+    .line 9
+    iget v4, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$hidden:I
+
+    .line 10
+    .line 11
+    iget v5, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$shown:I
+
+    .line 12
+    .line 13
+    iget-object v6, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->this$0:Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;
+
+    .line 14
+    .line 15
+    iget-object v7, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$endVelocity:Lkotlin/jvm/internal/Ref$FloatRef;
+
+    .line 16
+    .line 17
+    iget-object v8, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$animationController:Landroid/view/WindowInsetsAnimationController;
+
+    .line 18
+    .line 19
+    iget-boolean v9, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$targetShown:Z
+
+    .line 20
+    .line 21
+    move-object v10, p2
+
+    .line 22
+    invoke-direct/range {v0 .. v10}, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;-><init>(IFLandroidx/compose/foundation/layout/SplineBasedFloatDecayAnimationSpec;IILandroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;Lkotlin/jvm/internal/Ref$FloatRef;Landroid/view/WindowInsetsAnimationController;ZLm7/c;)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-object v0
+.end method
+
+.method public final invoke(Li8/b0;Lm7/c;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Li8/b0;",
+            "Lm7/c<",
+            "-",
+            "Lh7/p;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->create(Ljava/lang/Object;Lm7/c;)Lm7/c;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;
+
+    sget-object p2, Lh7/p;->a:Lh7/p;
+
+    invoke-virtual {p1, p2}, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 2
+    check-cast p1, Li8/b0;
+
+    check-cast p2, Lm7/c;
+
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->invoke(Li8/b0;Lm7/c;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
+
+    .line 1
+    invoke-static {}, Ln7/a;->f()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget v1, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->label:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x1
+
+    .line 8
+    if-eqz v1, :cond_1
+
+    .line 9
+    .line 10
+    if-ne v1, v2, :cond_0
+
+    .line 11
+    .line 12
+    invoke-static {p1}, Lkotlin/b;->b(Ljava/lang/Object;)V
+
+    .line 13
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 17
+    .line 18
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 19
+    .line 20
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    throw p1
+
+    .line 24
+    :cond_1
+    invoke-static {p1}, Lkotlin/b;->b(Ljava/lang/Object;)V
+
+    .line 25
+    .line 26
+    .line 27
+    iget p1, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$current:I
+
+    .line 28
+    .line 29
+    int-to-float p1, p1
+
+    .line 30
+    iget v1, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$flingAmount:F
+
+    .line 31
+    .line 32
+    iget-object v3, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$spec:Landroidx/compose/foundation/layout/SplineBasedFloatDecayAnimationSpec;
+
+    .line 33
+    .line 34
+    new-instance v4, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1$1;
+
+    .line 35
+    .line 36
+    iget v5, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$hidden:I
+
+    .line 37
+    .line 38
+    iget v6, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$shown:I
+
+    .line 39
+    .line 40
+    iget-object v7, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->this$0:Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;
+
+    .line 41
+    .line 42
+    iget-object v8, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$endVelocity:Lkotlin/jvm/internal/Ref$FloatRef;
+
+    .line 43
+    .line 44
+    iget-object v9, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$animationController:Landroid/view/WindowInsetsAnimationController;
+
+    .line 45
+    .line 46
+    iget-boolean v10, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->$targetShown:Z
+
+    .line 47
+    .line 48
+    invoke-direct/range {v4 .. v10}, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1$1;-><init>(IILandroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection;Lkotlin/jvm/internal/Ref$FloatRef;Landroid/view/WindowInsetsAnimationController;Z)V
+
+    .line 49
+    .line 50
+    .line 51
+    iput v2, p0, Landroidx/compose/foundation/layout/WindowInsetsNestedScrollConnection$fling$2$1;->label:I
+
+    .line 52
+    .line 53
+    invoke-static {p1, v1, v3, v4, p0}, Landroidx/compose/animation/core/SuspendAnimationKt;->animateDecay(FFLandroidx/compose/animation/core/FloatDecayAnimationSpec;Lx7/p;Lm7/c;)Ljava/lang/Object;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object p1
+
+    .line 57
+    if-ne p1, v0, :cond_2
+
+    .line 58
+    .line 59
+    return-object v0
+
+    .line 60
+    :cond_2
+    :goto_0
+    sget-object p1, Lh7/p;->a:Lh7/p;
+
+    .line 61
+    .line 62
+    return-object p1
+.end method

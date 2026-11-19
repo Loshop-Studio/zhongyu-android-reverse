@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/item_course_teach_add_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/shape_white_4_top" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="@dimen/view_2" app:layout_constraintDimensionRatio="284:180" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/iv_cover" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_hint" android:textColor="@color/white" android:gravity="center_horizontal" android:tag="binding_2" android:background="@drawable/ic_label_teach_course" android:paddingTop="@dimen/view_2" android:layout_width="@dimen/view_20" android:layout_height="@dimen/view_24" android:text="@string/teach_course_label" android:layout_marginStart="@dimen/view_6" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:tag="binding_3" android:layout_width="@dimen/view_16" android:layout_height="@dimen/view_16" android:layout_margin="@dimen/view_4" android:src="@drawable/ic_checked" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:tag="binding_4" android:background="@drawable/shape_white_4_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@id/item_course_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/view_6" android:layout_marginTop="@dimen/view_6" android:layout_marginRight="@dimen/view_6" android:layout_marginHorizontal="@dimen/view_6" layout="@layout/item_course_title" />
+        <include android:id="@id/item_course_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/view_6" android:layout_marginTop="@dimen/view_6" android:layout_marginRight="@dimen/view_6" android:layout_marginBottom="@dimen/view_6" android:layout_marginHorizontal="@dimen/view_6" android:layout_marginVertical="@dimen/view_6" layout="@layout/item_course_status" />
+    </LinearLayout>
+</LinearLayout>

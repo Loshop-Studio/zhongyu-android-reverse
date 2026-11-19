@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/layout_course_synopsis_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/view_8" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_cover" android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="fitXY" app:layout_constraintDimensionRatio="545:342" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <RelativeLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_10">
+                <include android:id="@id/item_course_title" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/item_course_title" />
+                <TextView android:textSize="@dimen/text_7" android:textColor="@color/text_title" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_7" android:textColor="@color/gray_hint_text" android:id="@id/tv_teacher_name" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_4" app:layout_constraintStart_toStartOf="@id/textView7" app:layout_constraintTop_toBottomOf="@id/textView7" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_6">
+                <ImageView android:id="@id/imageView5" android:layout_width="@dimen/view_6" android:layout_height="@dimen/view_6" app:srcCompat="@drawable/ic_study" app:tint="@color/icon" />
+                <TextView android:textSize="@dimen/text_5" android:textColor="@color/text_sub_title" android:gravity="center" android:id="@id/textView4" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/view_2" />
+                <ImageView android:id="@id/imageView6" android:layout_width="@dimen/view_6" android:layout_height="@dimen/view_6" android:layout_marginStart="@dimen/view_12" app:srcCompat="@drawable/ic_like" app:tint="@color/icon" />
+                <TextView android:textSize="@dimen/text_5" android:textColor="@color/text_sub_title" android:gravity="center" android:id="@id/textView6" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/view_2" />
+            </LinearLayout>
+            <com.xuexiang.xui.widget.textview.ExpandableTextView android:id="@id/expand_text_view" android:background="@color/card_gray_bg" android:padding="@dimen/view_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_6" app:etv_maxCollapsedLines="4">
+                <TextView android:textColor="@color/gray_hint_text" android:gravity="center_vertical" android:id="@id/expandable_text" android:layout_width="match_parent" android:singleLine="false" style="@style/TextStyle.Content" />
+                <ImageButton android:layout_gravity="center|bottom" android:id="@id/expand_collapse" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tint="@color/icon" />
+            </com.xuexiang.xui.widget.textview.ExpandableTextView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@id/course_status_btn" layout="@layout/item_course_status_btn" />
+</LinearLayout>

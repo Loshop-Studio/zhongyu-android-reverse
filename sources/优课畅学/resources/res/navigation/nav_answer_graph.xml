@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_answer_graph" app:startDestination="@id/answerAreaFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="AnswerAreaFragment" android:name="com.zykj.study.ui.home.exercise.train.AnswerAreaFragment" android:id="@id/answerAreaFragment">
+        <action android:id="@id/action_answerAreaFragment_to_answerFragment" app:destination="@id/answerFragment" app:launchSingleTop="true" app:popUpTo="@id/answerAreaFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_answerAreaFragment_to_singleChoiceFragment" app:destination="@id/singleChoiceFragment" app:launchSingleTop="true" app:popUpTo="@id/answerAreaFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_answerAreaFragment_to_multipleChoiceFragment" app:destination="@id/multipleChoiceFragment" app:launchSingleTop="true" app:popUpTo="@id/answerAreaFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="SingleChoiceFragment" android:name="com.zykj.study.ui.home.exercise.train.SingleChoiceFragment" android:id="@id/singleChoiceFragment">
+        <argument android:name="exerciseId" app:argType="long" />
+        <argument android:name="groupId" app:argType="integer" />
+        <argument android:name="questionBean" app:argType="com.zykj.study.bean.exercise.QuestionBean" />
+        <argument android:name="isLastQuestion" app:argType="boolean" />
+        <action android:id="@id/action_singleChoiceFragment_to_singleChoiceResultSuccessFragment" app:destination="@id/singleChoiceResultSuccessFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_singleChoiceFragment_to_singleChoiceResultFailFragment" app:destination="@id/singleChoiceResultFailFragment" app:launchSingleTop="true" />
+    </fragment>
+    <fragment android:label="MultipleChoiceFragment" android:name="com.zykj.study.ui.home.exercise.train.MultipleChoiceFragment" android:id="@id/multipleChoiceFragment">
+        <argument android:name="exerciseId" app:argType="long" />
+        <argument android:name="groupId" app:argType="integer" />
+        <argument android:name="questionBean" app:argType="com.zykj.study.bean.exercise.QuestionBean" />
+        <argument android:name="isLastQuestion" app:argType="boolean" />
+        <action android:id="@id/action_multipleChoiceFragment_to_multipleChoiceResultSuccessFragment" app:destination="@id/multipleChoiceResultSuccessFragment" app:launchSingleTop="true" />
+        <action android:id="@id/action_multipleChoiceFragment_to_multipleChoiceResultFailFragment" app:destination="@id/multipleChoiceResultFailFragment" />
+    </fragment>
+    <fragment android:label="AnswerFragment" android:name="com.zykj.study.ui.home.exercise.train.AnswerFragment" android:id="@id/answerFragment">
+        <argument android:name="exerciseId" app:argType="long" />
+        <argument android:name="groupId" app:argType="integer" />
+        <argument android:name="questionBean" app:argType="com.zykj.study.bean.exercise.QuestionBean" />
+        <argument android:name="isLastQuestion" app:argType="boolean" />
+        <action android:id="@id/action_answerFragment_to_answerResultFragment" app:destination="@id/answerResultFragment" app:launchSingleTop="true" />
+    </fragment>
+    <fragment android:label="AnswerResultFragment" android:name="com.zykj.study.ui.home.exercise.train.AnswerResultFragment" android:id="@id/answerResultFragment" />
+    <fragment android:label="MultipleChoiceResultFragment" android:name="com.zykj.study.ui.home.exercise.train.MultipleChoiceResultSuccessFragment" android:id="@id/multipleChoiceResultSuccessFragment" />
+    <fragment android:label="SingleChoiceResultFragment" android:name="com.zykj.study.ui.home.exercise.train.SingleChoiceResultSuccessFragment" android:id="@id/singleChoiceResultSuccessFragment" />
+    <fragment android:label="SingleChoiceResultFailFragment" android:name="com.zykj.study.ui.home.exercise.train.SingleChoiceResultFailFragment" android:id="@id/singleChoiceResultFailFragment">
+        <argument android:name="selectList" app:argType="string[]" />
+    </fragment>
+    <fragment android:label="MultipleChoiceResultFailFragment" android:name="com.zykj.study.ui.home.exercise.train.MultipleChoiceResultFailFragment" android:id="@id/multipleChoiceResultFailFragment">
+        <argument android:name="selectList" app:argType="string[]" />
+    </fragment>
+    <dialog android:label="MicroPlayDialogFragment" android:name="com.zykj.study.ui.home.exercise.train.MicroPlayDialogFragment" android:id="@id/microPlayDialogFragment">
+        <argument android:name="path" app:argType="string" />
+    </dialog>
+    <dialog android:label="ShowBigImageDialog" android:name="com.zykj.study.dialog.ShowBigImageDialog" android:id="@id/showBigImageDialog">
+        <argument android:name="url" app:argType="string" />
+    </dialog>
+    <action android:id="@id/action_global_answerAreaFragment" app:destination="@id/answerAreaFragment" app:launchSingleTop="true" app:popUpTo="@id/answerAreaFragment" app:popUpToInclusive="true" />
+    <action android:id="@id/action_global_microPlayDialogFragment" app:destination="@id/microPlayDialogFragment" />
+    <action android:id="@id/action_global_showBigImageDialog" app:destination="@id/showBigImageDialog" />
+</navigation>

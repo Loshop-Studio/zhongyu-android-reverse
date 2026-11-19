@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/view_multiple_choice_viewer_0" android:layout_width="@dimen/view_45" android:layout_height="@dimen/view_34"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_7" android:textColor="@color/gray_hint_text" android:gravity="center" android:id="@id/tv_title" android:tag="binding_1" android:background="@drawable/shape_white_frame_gray_2" android:layout_width="@dimen/view_35" android:layout_height="@dimen/view_20" android:layout_centerVertical="true" />
+</RelativeLayout>

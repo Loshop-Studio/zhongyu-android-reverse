@@ -1,0 +1,27 @@
+package androidx.compose.p013ui.platform;
+
+import android.view.View;
+
+/* loaded from: classes2.dex */
+public interface ViewRootForInspector {
+
+    public static final class DefaultImpls {
+        @Deprecated
+        public static AbstractComposeView getSubCompositionView(ViewRootForInspector viewRootForInspector) {
+            return ViewRootForInspector.super.getSubCompositionView();
+        }
+
+        @Deprecated
+        public static View getViewRoot(ViewRootForInspector viewRootForInspector) {
+            return ViewRootForInspector.super.getViewRoot();
+        }
+    }
+
+    default AbstractComposeView getSubCompositionView() {
+        return null;
+    }
+
+    default View getViewRoot() {
+        return null;
+    }
+}

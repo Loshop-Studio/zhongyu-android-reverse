@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/fragment_home" android:tag="layout/fragment_home_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/view_46" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_find" android:tag="binding_1" android:background="?android:selectableItemBackgroundBorderless" android:padding="@dimen/view_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_find" android:layout_width="@dimen/view_15" android:layout_height="@dimen/view_15" app:srcCompat="@drawable/home_menu_drawable_find" />
+            <TextView android:textSize="@dimen/text_sub_title" android:textColor="@drawable/home_menu_text_color" android:id="@id/tv_find" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_3" android:text="@string/menu_find" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_study" android:tag="binding_2" android:background="?android:selectableItemBackgroundBorderless" android:padding="@dimen/view_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_study" android:layout_width="@dimen/view_15" android:layout_height="@dimen/view_15" app:srcCompat="@drawable/home_menu_drawable_study" />
+            <TextView android:textSize="@dimen/text_sub_title" android:textColor="@drawable/home_menu_text_color" android:id="@id/tv_study" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_3" android:text="@string/menu_study" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_message" android:tag="binding_3" android:background="?android:selectableItemBackgroundBorderless" android:padding="@dimen/view_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_message" android:layout_width="@dimen/view_15" android:layout_height="@dimen/view_15" app:srcCompat="@drawable/home_menu_drawable_message" />
+            <TextView android:textSize="@dimen/text_sub_title" android:textColor="@drawable/home_menu_text_color" android:id="@id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_3" android:text="@string/menu_message" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_my" android:tag="binding_4" android:background="?android:selectableItemBackgroundBorderless" android:padding="@dimen/view_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_my" android:layout_width="@dimen/view_15" android:layout_height="@dimen/view_15" app:srcCompat="@drawable/home_menu_drawable_my" />
+            <TextView android:textSize="@dimen/text_sub_title" android:textColor="@drawable/home_menu_text_color" android:id="@id/tv_my" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_3" android:text="@string/menu_my" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="1.0px" android:layout_height="match_parent" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

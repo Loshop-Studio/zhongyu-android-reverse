@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_super_player" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/superplayer_rl_player" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.zykj.video.play.SuperPlayerView android:id="@id/superVodPlayerView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

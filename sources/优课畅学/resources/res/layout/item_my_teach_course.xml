@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/rl_container" android:tag="layout/item_my_teach_course_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/view_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="@dimen/view_50" app:layout_constraintDimensionRatio="175:105" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/container" android:layout_alignBottom="@id/container" android:paddingStart="@dimen/view_10" android:layout_toEndOf="@id/container">
+        <include android:id="@id/item_course_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_6" layout="@layout/item_course_title" />
+        <TextView android:textSize="@dimen/text_7" android:textColor="@color/gray_hint_text" android:id="@id/tv_teacher_name" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_4" android:singleLine="true" android:layout_below="@id/item_course_title" />
+        <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/view_8" />
+        <RelativeLayout android:orientation="horizontal" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_6" android:layout_marginBottom="@dimen/view_6" android:layout_alignParentBottom="true" android:layout_marginVertical="@dimen/view_6">
+            <include android:id="@id/item_course_status" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/item_course_status" />
+            <TextView android:textSize="@dimen/text_7" android:textColor="@color/text_gray" android:id="@id/tv_member" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/view_8" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

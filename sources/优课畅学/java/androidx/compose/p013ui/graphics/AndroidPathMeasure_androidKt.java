@@ -1,0 +1,10 @@
+package androidx.compose.p013ui.graphics;
+
+import android.graphics.PathMeasure;
+
+/* loaded from: classes2.dex */
+public final class AndroidPathMeasure_androidKt {
+    public static final PathMeasure PathMeasure() {
+        return new AndroidPathMeasure(new PathMeasure());
+    }
+}

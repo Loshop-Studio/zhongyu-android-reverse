@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe" android:tag="layout/fragment_study_list_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xuexiang.xui.widget.statelayout.MultipleStatusView android:id="@id/multiple_status_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" app:msv_emptyView="@layout/layout_no_course_for_study">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_study" android:paddingLeft="@dimen/view_5" android:paddingTop="@dimen/view_8" android:paddingRight="@dimen/view_5" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/view_5" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </com.xuexiang.xui.widget.statelayout.MultipleStatusView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

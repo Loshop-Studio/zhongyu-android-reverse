@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="24.0dp" android:viewportWidth="58.0" android:viewportHeight="58.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_menu_my_pass__0" android:pathData="M40.7122,34.468C46.688,34.468 51.5551,39.0026 51.5551,44.6229L51.5551,51.5556C51.5551,53.3351 50.1125,54.7778 48.3329,54.7778L9.6665,54.7778C7.887,54.7778 6.4443,53.3351 6.4443,51.5556L6.4443,44.6247L6.4443,44.6247C6.4382,39.0033 11.3064,34.468 17.2878,34.468L40.7122,34.468ZM42.082,3.2222C43.0185,3.2222 43.7778,3.9928 43.7778,4.9433L43.7778,18.064C43.7778,26.2673 37.159,32.9057 29,32.9057C20.841,32.9057 14.2222,26.2673 14.2222,18.0639C14.2222,9.8606 20.8411,3.2222 29,3.2222L42.082,3.2222Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

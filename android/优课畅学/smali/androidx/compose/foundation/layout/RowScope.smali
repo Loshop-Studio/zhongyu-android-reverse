@@ -1,0 +1,110 @@
+.class public interface abstract Landroidx/compose/foundation/layout/RowScope;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Landroidx/compose/foundation/layout/LayoutScopeMarker;
+.end annotation
+
+.annotation build Landroidx/compose/runtime/Immutable;
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/compose/foundation/layout/RowScope$DefaultImpls;
+    }
+.end annotation
+
+
+# direct methods
+.method public static synthetic weight$default(Landroidx/compose/foundation/layout/RowScope;Landroidx/compose/ui/Modifier;FZILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    .locals 0
+
+    .line 1
+    if-nez p5, :cond_1
+
+    .line 2
+    .line 3
+    and-int/lit8 p4, p4, 0x2
+
+    .line 4
+    .line 5
+    if-eqz p4, :cond_0
+
+    .line 6
+    .line 7
+    const/4 p3, 0x1
+
+    .line 8
+    :cond_0
+    invoke-interface {p0, p1, p2, p3}, Landroidx/compose/foundation/layout/RowScope;->weight(Landroidx/compose/ui/Modifier;FZ)Landroidx/compose/ui/Modifier;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    return-object p0
+
+    .line 13
+    :cond_1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 14
+    .line 15
+    const-string p1, "Super calls with default arguments not supported in this target, function: weight"
+
+    .line 16
+    .line 17
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    throw p0
+.end method
+
+
+# virtual methods
+.method public abstract align(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/Alignment$Vertical;)Landroidx/compose/ui/Modifier;
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+.end method
+
+.method public abstract alignBy(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/layout/HorizontalAlignmentLine;)Landroidx/compose/ui/Modifier;
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+.end method
+
+.method public abstract alignBy(Landroidx/compose/ui/Modifier;Lx7/l;)Landroidx/compose/ui/Modifier;
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/ui/Modifier;",
+            "Lx7/l;",
+            ")",
+            "Landroidx/compose/ui/Modifier;"
+        }
+    .end annotation
+.end method
+
+.method public abstract alignByBaseline(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+.end method
+
+.method public abstract weight(Landroidx/compose/ui/Modifier;FZ)Landroidx/compose/ui/Modifier;
+    .param p2    # F
+        .annotation build Landroidx/annotation/FloatRange;
+            from = 0.0
+            fromInclusive = false
+        .end annotation
+    .end param
+    .annotation build Landroidx/compose/runtime/Stable;
+    .end annotation
+.end method

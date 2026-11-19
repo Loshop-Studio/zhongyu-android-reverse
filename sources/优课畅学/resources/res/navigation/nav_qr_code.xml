@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_qr_code" app:startDestination="@id/QRCodeFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="QRCodeFragment" android:name="com.zykj.image.QRCodeFragment" android:id="@id/QRCodeFragment" />
+</navigation>

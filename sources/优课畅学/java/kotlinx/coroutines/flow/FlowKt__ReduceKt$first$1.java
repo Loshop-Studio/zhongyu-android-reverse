@@ -1,0 +1,34 @@
+package kotlinx.coroutines.flow;
+
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import p169l8.AbstractC9268e;
+import p179m7.InterfaceC9324c;
+import p201o7.InterfaceC9539d;
+
+@InterfaceC9539d(m17800c = "kotlinx.coroutines.flow.FlowKt__ReduceKt", m17801f = "Reduce.kt", m17802l = {179}, m17803m = "first")
+/* loaded from: classes5.dex */
+public final class FlowKt__ReduceKt$first$1<T> extends ContinuationImpl {
+
+    /* renamed from: a */
+    public Object f17850a;
+
+    /* renamed from: b */
+    public Object f17851b;
+
+    /* renamed from: c */
+    public /* synthetic */ Object f17852c;
+
+    /* renamed from: d */
+    public int f17853d;
+
+    public FlowKt__ReduceKt$first$1(InterfaceC9324c interfaceC9324c) {
+        super(interfaceC9324c);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        this.f17852c = obj;
+        this.f17853d |= Integer.MIN_VALUE;
+        return AbstractC9268e.m17034x(null, this);
+    }
+}

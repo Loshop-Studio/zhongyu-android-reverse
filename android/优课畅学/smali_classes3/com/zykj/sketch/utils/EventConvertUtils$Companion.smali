@@ -1,0 +1,551 @@
+.class public final Lcom/zykj/sketch/utils/EventConvertUtils$Companion;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/zykj/sketch/utils/EventConvertUtils;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/n;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/zykj/sketch/utils/EventConvertUtils$Companion;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final event2MotionEvent(Landroid/view/MotionEvent;Landroid/graphics/Matrix;)Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent;
+    .locals 11
+
+    .line 1
+    const-string v0, "touchEvent"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/u;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "matrix"
+
+    .line 7
+    .line 8
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/u;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    new-array v1, v0, [Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerProperties$Builder;
+
+    .line 16
+    .line 17
+    const/4 v2, 0x0
+
+    .line 18
+    move v3, v2
+
+    .line 19
+    :goto_0
+    if-ge v3, v0, :cond_0
+
+    .line 20
+    .line 21
+    invoke-static {}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerProperties;->newBuilder()Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerProperties$Builder;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v4
+
+    .line 25
+    aput-object v4, v1, v3
+
+    .line 26
+    .line 27
+    add-int/lit8 v3, v3, 0x1
+
+    .line 28
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :cond_0
+    new-instance v3, Landroid/view/MotionEvent$PointerProperties;
+
+    .line 31
+    .line 32
+    invoke-direct {v3}, Landroid/view/MotionEvent$PointerProperties;-><init>()V
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v4
+
+    .line 39
+    move v5, v2
+
+    .line 40
+    :goto_1
+    if-ge v5, v4, :cond_1
+
+    .line 41
+    .line 42
+    invoke-virtual {p1, v5, v3}, Landroid/view/MotionEvent;->getPointerProperties(ILandroid/view/MotionEvent$PointerProperties;)V
+
+    .line 43
+    .line 44
+    .line 45
+    aget-object v6, v1, v5
+
+    .line 46
+    .line 47
+    iget v7, v3, Landroid/view/MotionEvent$PointerProperties;->id:I
+
+    .line 48
+    .line 49
+    invoke-virtual {v6, v7}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerProperties$Builder;->setId(I)Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerProperties$Builder;
+
+    .line 50
+    .line 51
+    .line 52
+    aget-object v6, v1, v5
+
+    .line 53
+    .line 54
+    iget v7, v3, Landroid/view/MotionEvent$PointerProperties;->toolType:I
+
+    .line 55
+    .line 56
+    invoke-virtual {v6, v7}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerProperties$Builder;->setToolType(I)Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerProperties$Builder;
+
+    .line 57
+    .line 58
+    .line 59
+    invoke-virtual {v3}, Landroid/view/MotionEvent$PointerProperties;->clear()V
+
+    .line 60
+    .line 61
+    .line 62
+    add-int/lit8 v5, v5, 0x1
+
+    .line 63
+    .line 64
+    goto :goto_1
+
+    .line 65
+    :cond_1
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
+
+    .line 66
+    .line 67
+    .line 68
+    move-result v3
+
+    .line 69
+    new-array v4, v3, [Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerCoords$Builder;
+
+    .line 70
+    .line 71
+    move v5, v2
+
+    .line 72
+    :goto_2
+    if-ge v5, v3, :cond_2
+
+    .line 73
+    .line 74
+    invoke-static {}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerCoords;->newBuilder()Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerCoords$Builder;
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-object v6
+
+    .line 78
+    aput-object v6, v4, v5
+
+    .line 79
+    .line 80
+    add-int/lit8 v5, v5, 0x1
+
+    .line 81
+    .line 82
+    goto :goto_2
+
+    .line 83
+    :cond_2
+    new-instance v5, Landroid/view/MotionEvent$PointerCoords;
+
+    .line 84
+    .line 85
+    invoke-direct {v5}, Landroid/view/MotionEvent$PointerCoords;-><init>()V
+
+    .line 86
+    .line 87
+    .line 88
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v6
+
+    .line 92
+    move v7, v2
+
+    .line 93
+    :goto_3
+    if-ge v7, v6, :cond_3
+
+    .line 94
+    .line 95
+    invoke-virtual {p1, v7, v5}, Landroid/view/MotionEvent;->getPointerCoords(ILandroid/view/MotionEvent$PointerCoords;)V
+
+    .line 96
+    .line 97
+    .line 98
+    new-instance v8, Landroid/graphics/PointF;
+
+    .line 99
+    .line 100
+    iget v9, v5, Landroid/view/MotionEvent$PointerCoords;->x:F
+
+    .line 101
+    .line 102
+    iget v10, v5, Landroid/view/MotionEvent$PointerCoords;->y:F
+
+    .line 103
+    .line 104
+    invoke-direct {v8, v9, v10}, Landroid/graphics/PointF;-><init>(FF)V
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-static {p2, v8}, Lcom/zykj/sketch/core/graph/GraphExtKt;->mapPoint(Landroid/graphics/Matrix;Landroid/graphics/PointF;)Landroid/graphics/PointF;
+
+    .line 108
+    .line 109
+    .line 110
+    move-result-object v8
+
+    .line 111
+    aget-object v9, v4, v7
+
+    .line 112
+    .line 113
+    iget v10, v8, Landroid/graphics/PointF;->x:F
+
+    .line 114
+    .line 115
+    invoke-virtual {v9, v10}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerCoords$Builder;->setX(F)Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerCoords$Builder;
+
+    .line 116
+    .line 117
+    .line 118
+    aget-object v9, v4, v7
+
+    .line 119
+    .line 120
+    iget v8, v8, Landroid/graphics/PointF;->y:F
+
+    .line 121
+    .line 122
+    invoke-virtual {v9, v8}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerCoords$Builder;->setY(F)Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerCoords$Builder;
+
+    .line 123
+    .line 124
+    .line 125
+    invoke-virtual {v5}, Landroid/view/MotionEvent$PointerCoords;->clear()V
+
+    .line 126
+    .line 127
+    .line 128
+    add-int/lit8 v7, v7, 0x1
+
+    .line 129
+    .line 130
+    goto :goto_3
+
+    .line 131
+    :cond_3
+    new-instance v5, Ljava/util/ArrayList;
+
+    .line 132
+    .line 133
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+
+    .line 134
+    .line 135
+    .line 136
+    move v6, v2
+
+    .line 137
+    :goto_4
+    const-string v7, "it.build()"
+
+    .line 138
+    .line 139
+    if-ge v6, v0, :cond_4
+
+    .line 140
+    .line 141
+    aget-object v8, v1, v6
+
+    .line 142
+    .line 143
+    invoke-virtual {v8}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerProperties$Builder;->build()Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerProperties;
+
+    .line 144
+    .line 145
+    .line 146
+    move-result-object v8
+
+    .line 147
+    invoke-static {v8, v7}, Lkotlin/jvm/internal/u;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 148
+    .line 149
+    .line 150
+    invoke-interface {v5, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 151
+    .line 152
+    .line 153
+    add-int/lit8 v6, v6, 0x1
+
+    .line 154
+    .line 155
+    goto :goto_4
+
+    .line 156
+    :cond_4
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 157
+    .line 158
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 159
+    .line 160
+    .line 161
+    :goto_5
+    if-ge v2, v3, :cond_5
+
+    .line 162
+    .line 163
+    aget-object v1, v4, v2
+
+    .line 164
+    .line 165
+    invoke-virtual {v1}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerCoords$Builder;->build()Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$PointerCoords;
+
+    .line 166
+    .line 167
+    .line 168
+    move-result-object v1
+
+    .line 169
+    invoke-static {v1, v7}, Lkotlin/jvm/internal/u;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 170
+    .line 171
+    .line 172
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 173
+    .line 174
+    .line 175
+    add-int/lit8 v2, v2, 0x1
+
+    .line 176
+    .line 177
+    goto :goto_5
+
+    .line 178
+    :cond_5
+    new-instance v1, Landroid/graphics/PointF;
+
+    .line 179
+    .line 180
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
+
+    .line 181
+    .line 182
+    .line 183
+    move-result v2
+
+    .line 184
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
+
+    .line 185
+    .line 186
+    .line 187
+    move-result v3
+
+    .line 188
+    invoke-direct {v1, v2, v3}, Landroid/graphics/PointF;-><init>(FF)V
+
+    .line 189
+    .line 190
+    .line 191
+    invoke-static {p2, v1}, Lcom/zykj/sketch/core/graph/GraphExtKt;->mapPoint(Landroid/graphics/Matrix;Landroid/graphics/PointF;)Landroid/graphics/PointF;
+
+    .line 192
+    .line 193
+    .line 194
+    move-result-object p2
+
+    .line 195
+    invoke-static {}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent;->newBuilder()Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;
+
+    .line 196
+    .line 197
+    .line 198
+    move-result-object v1
+
+    .line 199
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 200
+    .line 201
+    .line 202
+    move-result-wide v2
+
+    .line 203
+    invoke-virtual {v1, v2, v3}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;->setEventTime(J)Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;
+
+    .line 204
+    .line 205
+    .line 206
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
+
+    .line 207
+    .line 208
+    .line 209
+    move-result v2
+
+    .line 210
+    invoke-virtual {v1, v2}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;->setAction(I)Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;
+
+    .line 211
+    .line 212
+    .line 213
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
+
+    .line 214
+    .line 215
+    .line 216
+    move-result p1
+
+    .line 217
+    invoke-virtual {v1, p1}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;->setPointerCount(I)Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;
+
+    .line 218
+    .line 219
+    .line 220
+    iget p1, p2, Landroid/graphics/PointF;->x:F
+
+    .line 221
+    .line 222
+    invoke-virtual {v1, p1}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;->setX(F)Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;
+
+    .line 223
+    .line 224
+    .line 225
+    iget p1, p2, Landroid/graphics/PointF;->y:F
+
+    .line 226
+    .line 227
+    invoke-virtual {v1, p1}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;->setY(F)Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;
+
+    .line 228
+    .line 229
+    .line 230
+    invoke-virtual {v1, v5}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;->addAllPointerProperties(Ljava/lang/Iterable;)Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;
+
+    .line 231
+    .line 232
+    .line 233
+    invoke-virtual {v1, v0}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;->addAllPointerCoords(Ljava/lang/Iterable;)Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;
+
+    .line 234
+    .line 235
+    .line 236
+    invoke-virtual {v1}, Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent$Builder;->build()Lcom/zykj/sketch/EzyDrawBoard$ActionTouchEvent$TouchEvent;
+
+    .line 237
+    .line 238
+    .line 239
+    move-result-object p1
+
+    .line 240
+    return-object p1
+.end method
+
+.method public final mapPoint(Landroid/graphics/PointF;Landroid/graphics/Matrix;)Landroid/graphics/PointF;
+    .locals 1
+
+    .line 1
+    const-string v0, "pointF"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/u;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "matrix"
+
+    .line 7
+    .line 8
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/u;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-static {p2, p1}, Lcom/zykj/sketch/core/graph/GraphExtKt;->mapPoint(Landroid/graphics/Matrix;Landroid/graphics/PointF;)Landroid/graphics/PointF;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    return-object p1
+.end method

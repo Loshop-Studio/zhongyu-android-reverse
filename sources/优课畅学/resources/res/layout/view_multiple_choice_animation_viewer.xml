@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/view_multiple_choice_animation_viewer_0" android:layout_width="@dimen/view_50" android:layout_height="@dimen/view_24"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_7" android:textColor="@color/gray_hint_text" android:gravity="center" android:tag="binding_1" android:background="@drawable/shape_white_frame_gray_2" android:visibility="gone" android:layout_width="@dimen/view_30" android:layout_height="@dimen/view_14" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/text_7" android:textColor="@color/gray_hint_text" android:gravity="center" android:tag="binding_2" android:background="@drawable/shape_white_frame_gray_2" android:visibility="gone" android:layout_width="@dimen/view_35" android:layout_height="@dimen/view_20" android:layout_centerVertical="true" android:elevation="5.0dp" />
+</RelativeLayout>

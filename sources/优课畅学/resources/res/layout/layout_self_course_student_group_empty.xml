@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_group_no_student" android:layout_width="@dimen/view_104" android:layout_height="@dimen/view_57" app:srcCompat="@drawable/ic_no_supervise_group" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_8" android:textColor="@color/search_hint_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_7" android:text="@string/group_no_student" />
+</androidx.appcompat.widget.LinearLayoutCompat>

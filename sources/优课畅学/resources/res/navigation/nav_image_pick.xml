@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_image" app:startDestination="@id/imagePickFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/nav_image_crop" />
+    <fragment android:label="ImagePickFragment" android:name="com.zykj.image.ImagePickFragment" android:id="@id/imagePickFragment">
+        <argument android:name="fixAspectRatio" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="ratioX" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="ratioY" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="compress" android:defaultValue="false" app:argType="boolean" />
+        <action android:id="@id/action_imagePickFragment_to_nav_image_crop" app:destination="@id/nav_image_crop" app:launchSingleTop="true" app:popUpTo="@id/imagePickFragment" app:popUpToInclusive="true">
+            <argument android:name="path" app:argType="string" app:nullable="false" />
+            <argument android:name="fixAspectRatio" android:defaultValue="false" app:argType="boolean" />
+            <argument android:name="ratioX" android:defaultValue="0" app:argType="integer" />
+            <argument android:name="ratioY" android:defaultValue="0" app:argType="integer" />
+            <argument android:name="compress" android:defaultValue="false" app:argType="boolean" />
+        </action>
+    </fragment>
+</navigation>

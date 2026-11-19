@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_student_exercise" app:startDestination="@id/exerciseHistoryStudentFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="ExerciseHistoryStudentFragment" android:name="com.zykj.study.ui.home.exercise.ExerciseHistoryStudentFragment" android:id="@id/exerciseHistoryStudentFragment">
+        <argument android:name="exerciseBean" app:argType="com.zykj.study.bean.exercise.ExerciseBean" />
+        <argument android:name="groupId" app:argType="integer" />
+        <argument android:name="index" android:defaultValue="0" app:argType="integer" />
+        <action android:id="@id/action_exerciseHistoryStudentFragment_to_microPlayFragment" app:destination="@id/microPlayFragment" />
+    </fragment>
+    <action android:id="@id/action_global_exerciseHistoryStudentFragment" app:destination="@id/exerciseHistoryStudentFragment" app:launchSingleTop="true" />
+    <fragment android:label="MicroPlayFragment" android:name="com.zykj.study.ui.home.find.MicroPlayFragment" android:id="@id/microPlayFragment">
+        <argument android:name="path" app:argType="string" />
+    </fragment>
+    <dialog android:label="ShowBigImageDialog" android:name="com.zykj.study.dialog.ShowBigImageDialog" android:id="@id/showBigImageDialog">
+        <argument android:name="url" app:argType="string" />
+    </dialog>
+    <action android:id="@id/action_global_showBigImageDialog" app:destination="@id/showBigImageDialog" />
+</navigation>

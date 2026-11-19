@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:tag="layout/dialog_exercise_finish_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_white_frame_4" android:layout_width="@dimen/view_375" android:layout_height="@dimen/view_230">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_close" android:padding="@dimen/view_4" android:layout_width="@dimen/view_16" android:layout_height="@dimen/view_16" android:layout_marginTop="@dimen/view_3" android:src="@drawable/icon_close" android:layout_marginEnd="@dimen/view_3" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:layout_width="wrap_content" android:layout_height="@dimen/view_18" android:layout_marginStart="@dimen/view_14" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_close" app:tabIndicatorFullWidth="false" />
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager_read" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/tab_layout" app:layout_constraintRight_toLeftOf="@id/iv_close" app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

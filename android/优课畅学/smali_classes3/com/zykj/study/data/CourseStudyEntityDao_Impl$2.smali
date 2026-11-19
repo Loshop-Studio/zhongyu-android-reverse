@@ -1,0 +1,384 @@
+.class public final Lcom/zykj/study/data/CourseStudyEntityDao_Impl$2;
+.super Landroidx/room/EntityDeleteOrUpdateAdapter;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/zykj/study/data/CourseStudyEntityDao_Impl;-><init>(Landroidx/room/RoomDatabase;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroidx/room/EntityDeleteOrUpdateAdapter<",
+        "Lcom/zykj/study/data/CourseStudyEntity;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/zykj/study/data/CourseStudyEntityDao_Impl;
+
+
+# direct methods
+.method public constructor <init>(Lcom/zykj/study/data/CourseStudyEntityDao_Impl;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/zykj/study/data/CourseStudyEntityDao_Impl$2;->this$0:Lcom/zykj/study/data/CourseStudyEntityDao_Impl;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Landroidx/room/EntityDeleteOrUpdateAdapter;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public bind(Landroidx/sqlite/SQLiteStatement;Lcom/zykj/study/data/CourseStudyEntity;)V
+    .locals 4
+
+    const-string v0, "statement"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/u;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "entity"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/u;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    invoke-virtual {p2}, Lcom/zykj/study/data/CourseStudyEntity;->getUserName()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_0
+
+    .line 3
+    invoke-interface {p1, v1}, Landroidx/sqlite/SQLiteStatement;->bindNull(I)V
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    invoke-interface {p1, v1, v0}, Landroidx/sqlite/SQLiteStatement;->bindText(ILjava/lang/String;)V
+
+    .line 5
+    :goto_0
+    invoke-virtual {p2}, Lcom/zykj/study/data/CourseStudyEntity;->getProgress()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const/4 v2, 0x2
+
+    invoke-interface {p1, v2, v0, v1}, Landroidx/sqlite/SQLiteStatement;->bindLong(IJ)V
+
+    .line 6
+    invoke-virtual {p2}, Lcom/zykj/study/data/CourseStudyEntity;->getStudyUserId()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x3
+
+    if-nez v0, :cond_1
+
+    .line 7
+    invoke-interface {p1, v1}, Landroidx/sqlite/SQLiteStatement;->bindNull(I)V
+
+    goto :goto_1
+
+    .line 8
+    :cond_1
+    invoke-interface {p1, v1, v0}, Landroidx/sqlite/SQLiteStatement;->bindText(ILjava/lang/String;)V
+
+    .line 9
+    :goto_1
+    invoke-virtual {p2}, Lcom/zykj/study/data/CourseStudyEntity;->getLearnTime()Ljava/util/Date;
+
+    move-result-object v0
+
+    .line 10
+    iget-object v1, p0, Lcom/zykj/study/data/CourseStudyEntityDao_Impl$2;->this$0:Lcom/zykj/study/data/CourseStudyEntityDao_Impl;
+
+    invoke-static {v1}, Lcom/zykj/study/data/CourseStudyEntityDao_Impl;->access$get__converters$p(Lcom/zykj/study/data/CourseStudyEntityDao_Impl;)Lcom/zykj/study/data/Converters;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Lcom/zykj/study/data/Converters;->dateToLong(Ljava/util/Date;)Ljava/lang/Long;
+
+    move-result-object v0
+
+    const/4 v1, 0x4
+
+    if-nez v0, :cond_2
+
+    .line 11
+    invoke-interface {p1, v1}, Landroidx/sqlite/SQLiteStatement;->bindNull(I)V
+
+    goto :goto_2
+
+    .line 12
+    :cond_2
+    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v2
+
+    invoke-interface {p1, v1, v2, v3}, Landroidx/sqlite/SQLiteStatement;->bindLong(IJ)V
+
+    .line 13
+    :goto_2
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getId()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const/4 v2, 0x5
+
+    invoke-interface {p1, v2, v0, v1}, Landroidx/sqlite/SQLiteStatement;->bindLong(IJ)V
+
+    .line 14
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getUserId()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x6
+
+    if-nez v0, :cond_3
+
+    .line 15
+    invoke-interface {p1, v1}, Landroidx/sqlite/SQLiteStatement;->bindNull(I)V
+
+    goto :goto_3
+
+    .line 16
+    :cond_3
+    invoke-interface {p1, v1, v0}, Landroidx/sqlite/SQLiteStatement;->bindText(ILjava/lang/String;)V
+
+    .line 17
+    :goto_3
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getCover()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x7
+
+    if-nez v0, :cond_4
+
+    .line 18
+    invoke-interface {p1, v1}, Landroidx/sqlite/SQLiteStatement;->bindNull(I)V
+
+    goto :goto_4
+
+    .line 19
+    :cond_4
+    invoke-interface {p1, v1, v0}, Landroidx/sqlite/SQLiteStatement;->bindText(ILjava/lang/String;)V
+
+    .line 20
+    :goto_4
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getTitle()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0x8
+
+    if-nez v0, :cond_5
+
+    .line 21
+    invoke-interface {p1, v1}, Landroidx/sqlite/SQLiteStatement;->bindNull(I)V
+
+    goto :goto_5
+
+    .line 22
+    :cond_5
+    invoke-interface {p1, v1, v0}, Landroidx/sqlite/SQLiteStatement;->bindText(ILjava/lang/String;)V
+
+    .line 23
+    :goto_5
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getDescription()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0x9
+
+    if-nez v0, :cond_6
+
+    .line 24
+    invoke-interface {p1, v1}, Landroidx/sqlite/SQLiteStatement;->bindNull(I)V
+
+    goto :goto_6
+
+    .line 25
+    :cond_6
+    invoke-interface {p1, v1, v0}, Landroidx/sqlite/SQLiteStatement;->bindText(ILjava/lang/String;)V
+
+    .line 26
+    :goto_6
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getPeriodId()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const/16 v2, 0xa
+
+    invoke-interface {p1, v2, v0, v1}, Landroidx/sqlite/SQLiteStatement;->bindLong(IJ)V
+
+    .line 27
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getGradeId()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const/16 v2, 0xb
+
+    invoke-interface {p1, v2, v0, v1}, Landroidx/sqlite/SQLiteStatement;->bindLong(IJ)V
+
+    .line 28
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getSubjectId()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const/16 v2, 0xc
+
+    invoke-interface {p1, v2, v0, v1}, Landroidx/sqlite/SQLiteStatement;->bindLong(IJ)V
+
+    .line 29
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getLearning()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const/16 v2, 0xd
+
+    invoke-interface {p1, v2, v0, v1}, Landroidx/sqlite/SQLiteStatement;->bindLong(IJ)V
+
+    .line 30
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getLikes()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const/16 v2, 0xe
+
+    invoke-interface {p1, v2, v0, v1}, Landroidx/sqlite/SQLiteStatement;->bindLong(IJ)V
+
+    .line 31
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->isPublic()Z
+
+    move-result v0
+
+    const/16 v1, 0xf
+
+    int-to-long v2, v0
+
+    .line 32
+    invoke-interface {p1, v1, v2, v3}, Landroidx/sqlite/SQLiteStatement;->bindLong(IJ)V
+
+    .line 33
+    iget-object v0, p0, Lcom/zykj/study/data/CourseStudyEntityDao_Impl$2;->this$0:Lcom/zykj/study/data/CourseStudyEntityDao_Impl;
+
+    invoke-static {v0}, Lcom/zykj/study/data/CourseStudyEntityDao_Impl;->access$get__converters$p(Lcom/zykj/study/data/CourseStudyEntityDao_Impl;)Lcom/zykj/study/data/Converters;
+
+    move-result-object v0
+
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getStatus()Lcom/zykj/study/bean/course/CourseType;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/zykj/study/data/Converters;->sessionOrderTypeToString(Lcom/zykj/study/bean/course/CourseType;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0x10
+
+    .line 34
+    invoke-interface {p1, v1, v0}, Landroidx/sqlite/SQLiteStatement;->bindText(ILjava/lang/String;)V
+
+    .line 35
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getCreateTime()Ljava/util/Date;
+
+    move-result-object v0
+
+    .line 36
+    iget-object v1, p0, Lcom/zykj/study/data/CourseStudyEntityDao_Impl$2;->this$0:Lcom/zykj/study/data/CourseStudyEntityDao_Impl;
+
+    invoke-static {v1}, Lcom/zykj/study/data/CourseStudyEntityDao_Impl;->access$get__converters$p(Lcom/zykj/study/data/CourseStudyEntityDao_Impl;)Lcom/zykj/study/data/Converters;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Lcom/zykj/study/data/Converters;->dateToLong(Ljava/util/Date;)Ljava/lang/Long;
+
+    move-result-object v0
+
+    const/16 v1, 0x11
+
+    if-nez v0, :cond_7
+
+    .line 37
+    invoke-interface {p1, v1}, Landroidx/sqlite/SQLiteStatement;->bindNull(I)V
+
+    goto :goto_7
+
+    .line 38
+    :cond_7
+    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v2
+
+    invoke-interface {p1, v1, v2, v3}, Landroidx/sqlite/SQLiteStatement;->bindLong(IJ)V
+
+    .line 39
+    :goto_7
+    invoke-virtual {p2}, Lcom/zykj/study/bean/course/CourseBean;->getId()I
+
+    move-result p2
+
+    int-to-long v0, p2
+
+    const/16 p2, 0x12
+
+    invoke-interface {p1, p2, v0, v1}, Landroidx/sqlite/SQLiteStatement;->bindLong(IJ)V
+
+    return-void
+.end method
+
+.method public bridge synthetic bind(Landroidx/sqlite/SQLiteStatement;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p2, Lcom/zykj/study/data/CourseStudyEntity;
+
+    invoke-virtual {p0, p1, p2}, Lcom/zykj/study/data/CourseStudyEntityDao_Impl$2;->bind(Landroidx/sqlite/SQLiteStatement;Lcom/zykj/study/data/CourseStudyEntity;)V
+
+    return-void
+.end method
+
+.method public createQuery()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "UPDATE OR ABORT `course_study` SET `userName` = ?,`progress` = ?,`studyUserId` = ?,`learnTime` = ?,`id` = ?,`userId` = ?,`cover` = ?,`title` = ?,`description` = ?,`periodId` = ?,`gradeId` = ?,`subjectId` = ?,`learning` = ?,`likes` = ?,`isPublic` = ?,`status` = ?,`createTime` = ? WHERE `id` = ?"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

@@ -1,0 +1,19 @@
+﻿syntax = "proto3";
+option java_package = "com.zykj.board";
+option java_outer_classname = "EzyCommandEnum";
+
+enum CommandEnum {
+    ACTION_DEFAULT = 0; //默认，啥都不干
+    ACTION_GRAPH_ADD = 1;
+    ACTION_GRAPH_REMOVE = 2;
+    ACTION_GRAPH_MATRIX = 3;
+    ACTION_GRAPH_CHANGE = 4;
+    ACTION_GRAPH_CUSTOM = 5;
+    ACTION_AUDIO_START = 6;
+    ACTION_CAMERA = 7; //设置camera的变换矩阵
+    ACTION_CAMERA_MATRIX = 8; //camera变换矩阵
+    ACTION_CONFIG = 9; //设置
+    ACTION_RECORD_STOP = 10; //录制结束的一条命令
+    ACTION_CURSOR_MOVE = 11; //激光笔
+    ACTION_REBUILD = 12; // 对页面重新布置
+}

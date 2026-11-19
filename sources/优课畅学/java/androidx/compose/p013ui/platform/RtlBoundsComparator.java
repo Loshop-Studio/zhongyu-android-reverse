@@ -1,0 +1,29 @@
+package androidx.compose.p013ui.platform;
+
+import androidx.compose.p013ui.geometry.Rect;
+import androidx.compose.p013ui.semantics.SemanticsNode;
+import java.util.Comparator;
+
+/* loaded from: classes2.dex */
+final class RtlBoundsComparator implements Comparator<SemanticsNode> {
+    public static final RtlBoundsComparator INSTANCE = new RtlBoundsComparator();
+
+    private RtlBoundsComparator() {
+    }
+
+    @Override // java.util.Comparator
+    public int compare(SemanticsNode semanticsNode, SemanticsNode semanticsNode2) {
+        Rect boundsInWindow = semanticsNode.getBoundsInWindow();
+        Rect boundsInWindow2 = semanticsNode2.getBoundsInWindow();
+        int iCompare = Float.compare(boundsInWindow2.getRight(), boundsInWindow.getRight());
+        if (iCompare != 0) {
+            return iCompare;
+        }
+        int iCompare2 = Float.compare(boundsInWindow.getTop(), boundsInWindow2.getTop());
+        if (iCompare2 != 0) {
+            return iCompare2;
+        }
+        int iCompare3 = Float.compare(boundsInWindow.getBottom(), boundsInWindow2.getBottom());
+        return iCompare3 != 0 ? iCompare3 : Float.compare(boundsInWindow2.getLeft(), boundsInWindow.getLeft());
+    }
+}
